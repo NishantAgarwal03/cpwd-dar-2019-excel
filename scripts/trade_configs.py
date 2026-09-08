@@ -25,6 +25,10 @@ def get_all_trade_configs():
         },
         '02_Earth_Work': {
             'sheet_name': '02_Earth_Work',
+            'default_materials': [],
+            'material_section_title': ('3. MATERIAL COMPONENT BUILD-UP  (Earth Work items in the DAR are '
+                                      'labour-and-plant only - leave blank unless the operation genuinely '
+                                      'consumes material, e.g. imported earth or moorum)'),
             'trade_title': 'CPWD DAR 2019 — SUB-HEAD 02: EARTH WORK (CUSTOM ITEM BUILDER)',
             'trade_guidance': 'CPWD DAR Sub-head 02: Earthwork operations (surface excavation, trench excavation, filling, compaction). Operates without raw material inputs, applying labour crews and earthmoving machinery hire with standard 5-step compounding statutory markups.',
             'default_item_code': 'C-02.01',
@@ -169,7 +173,7 @@ def get_all_trade_configs():
                     'custom_desc': 'Cement mortar 1:4 (Rate pulled from 03_Mortars builder or DAR Item 3.9)',
                     'custom_unit': 'cum',
                     'coeff': 0.25,
-                    'custom_rate_formula': "='03_Mortars'!G51",
+                    'custom_rate_formula': "='03_Mortars'!G66",
                     'note': 'Live link to 03_Mortars output rate'
                 }
             ],
@@ -209,7 +213,7 @@ def get_all_trade_configs():
                     'custom_desc': 'Cement mortar 1:6 (Rate from 03_Mortars or DAR 3.11)',
                     'custom_unit': 'cum',
                     'coeff': 0.30,
-                    'custom_rate_formula': "='03_Mortars'!G51",
+                    'custom_rate_formula': "='03_Mortars'!G66",
                     'note': 'Mortar bedding rate'
                 }
             ],
@@ -246,7 +250,7 @@ def get_all_trade_configs():
                     'custom_desc': 'Cement mortar 1:3 (Bedding mortar from 03_Mortars or DAR 3.3)',
                     'custom_unit': 'cum',
                     'coeff': 0.20,
-                    'custom_rate_formula': "='03_Mortars'!G51",
+                    'custom_rate_formula': "='03_Mortars'!G66",
                     'note': 'Bedding mortar'
                 }
             ],
@@ -348,7 +352,7 @@ def get_all_trade_configs():
                     'custom_desc': 'Cement mortar 1:4 (Bedding mortar from 03_Mortars or DAR 3.9)',
                     'custom_unit': 'cum',
                     'coeff': 0.20,
-                    'custom_rate_formula': "='03_Mortars'!G51",
+                    'custom_rate_formula': "='03_Mortars'!G66",
                     'note': 'Bedding mortar'
                 },
                 {'code': '0367', 'coeff': 0.044, 'note': 'Cement for neat cement slurry (4.4 kg/sqm)'}

@@ -11,6 +11,8 @@
 - Extracted 3,024 labour/machinery productivity records and 1,217 sundries reference lines.
 - Generated CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1.xlsx with strict MS Excel 2016 compatibility.
 - Formulating the comprehensive workbook integrity, audit, and Git version control architecture requested by user.
+- Cross-volume items 13.50.1 / 13.50.3 / 13.57.1 / 18.78 (plus 4.2.5) resolved from WB1 data only; all five reproduce the DAR printed Say rate to within a paisa.
+- CPWD (W-A) exclusion implemented workbook-wide; audit suite extended to 10 checks.
 - Complete system of checks, Excel Tables, Defined Names, Sheet Protection, in-sheet dynamic audit bars, Python CI/CD audit suite, and Git version control implemented and verified.
 
 | Timestamp | Instruction | Status |
@@ -34,6 +36,5 @@
 | 2026-09-08 15:28 | Adopt standard parameter bifurcation architecture (Panel 1: Scope & Specification Inputs driving labour/yields; Panel 2: Operational & Environmental Drivers driving equipment/productivity) for Sheet 01 Carriage and establish framework for all subsequent trade sheets. | Completed |
 | 2026-09-08 15:35 | Execute and verify universal two-panel input bifurcation on 01_Carriage_of_Materials, link cell F6 to cell E19 labour gang, support both CPWD pro-rata (64.40 km / 12.88 L) and direct route (66.00 km) evaluations, enable defensive cell protection, and pass 7/7 test suite. | Completed |
 | 2026-09-08 15:43 | Audit and resolve Excel repair error in /xl/worksheets/sheet5.xml (01_Carriage_of_Materials), restore missing item/material dropdowns, and establish an automated OpenXML schema & data validation integrity audit test. | Completed |
-
-
-
+| 2026-09-08 16:08 | Read and analyze updated Custom_Rate_Analysis_Workbook_Problem_Solution_Statement (1).md without making changes to code yet. | Completed |
+| 2026-09-08 16:35 | Read corrected Problem & Solution Statement (two-workbook, WB1 18 sheets + WB2 14). Implement fix 1 (Resolved_Cross_Volume_Items, 5 items re-derived from WB1 data, CPWD (W-A) markup exclusion, consumers 08/09/10 repointed) and fix 2 (Labour_Machinery_Productivity regrouped by 18 work types with median crew coefficients). Apply the 01_Carriage two-panel input analysis to all 11 standard builders with per-clause cost-impact classification. | Completed |

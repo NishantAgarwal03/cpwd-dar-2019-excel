@@ -1,3 +1,5 @@
+import sys, os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir)))
 """
 Automated Comprehensive Workbook Audit & Verification Suite
 CPWD DAR 2019 Volume 1 Custom Rate Analysis Workbook
@@ -29,6 +31,7 @@ FORBIDDEN_365_FUNCS = [
 
 EXPECTED_SHEETS = [
     'Rates_Master', 'Global_Factors', 'Labour_Machinery_Productivity', 'Sundries_Reference',
+    'Resolved_Cross_Volume_Items',
     '01_Carriage_of_Materials', '02_Earth_Work', '03_Mortars', '04_Concrete_Work',
     '05_RCC_Work', '06_Masonry_Work', '07_Stone_Work', '08_Cladding_Work',
     '09_Wood_and_PVC_Work', '10_Steel_Work', '11_Flooring', '12_Roofing'
@@ -36,7 +39,7 @@ EXPECTED_SHEETS = [
 
 EXPECTED_TABLES = {
     'Rates_Master': 'tbl_RatesMaster',
-    'Labour_Machinery_Productivity': 'tbl_Productivity',
+    'Labour_Machinery_Productivity': 'tbl_ProductivityDetail',
     'Sundries_Reference': 'tbl_SundriesRef'
 }
 
@@ -116,7 +119,7 @@ def run_audits():
     total_checks += 1
     print("\n[CHECK 4] Defensive Sheet Protection & Cell Locking (12 Builders)...")
     protection_issues = []
-    trade_sheets = sheet_names[4:] # Sub-heads 01-12
+    trade_sheets = sheet_names[5:]  # Sub-heads 01-12 (5 infrastructure sheets precede them)
     for ts_name in trade_sheets:
         ws = wb[ts_name]
         if not ws.protection.sheet:
@@ -181,7 +184,7 @@ def run_audits():
     audit_bars_ok = True
     for ts_name in trade_sheets:
         ws = wb[ts_name]
-        audit_coord = "B14" if ts_name == "01_Carriage_of_Materials" else "B7"
+        audit_coord = "B14" if ts_name == "01_Carriage_of_Materials" else "B22"
         audit_val = str(ws[audit_coord].value or "")
         if not audit_val.startswith("="):
             print(f"  [FAIL] {ts_name} cell {audit_coord} is not a formula: {audit_val}")
@@ -192,7 +195,7 @@ def run_audits():
                 audit_bars_ok = False
                 
     if audit_bars_ok:
-        print("  [PASS] All 12 trade sheets contain active, dynamic audit formulas (B14 in Carriage, B7 in others).")
+        print("  [PASS] All 12 trade sheets contain active, dynamic audit formulas (B14 in Carriage, B22 in others).")
         passed_checks += 1
         
     # --- CHECK 7: Dynamic Carriage Analytical Simulator Verification ---
@@ -334,10 +337,17 @@ def run_audits():
             else:
                 dv_errors.append(f"Excel COM test failed or repair triggered: {stdout}")
         except Exception as e:
-            print(f"  [WARN] Excel COM execution skipped or timed out: {e}")
-            com_ok = True
+            # A timeout almost always means a stale EXCEL.EXE is holding the
+            # workbook (look for a ~$ lock file). Do NOT count that as a pass:
+            # the check simply did not run, and reporting it green would hide a
+            # real repair-dialog regression.
+            print("  [FAIL] Excel COM verification did not run: %s" % type(e).__name__)
+            print("         Close every open copy of the workbook (and any orphaned EXCEL.EXE "
+                  "processes), delete the ~$ lock file, then re-run this suite.")
+            dv_errors.append("Excel COM verification did not execute: %s" % type(e).__name__)
     else:
         com_ok = True
+        print("  [SKIP] Excel COM verification is Windows-only; skipped on this platform.")
 
     if not dv_errors and com_ok:
         print("  [PASS] All Data Validation string literals are strictly <= 255 characters (no OpenXML corruption).")
@@ -345,6 +355,76 @@ def run_audits():
         passed_checks += 1
     else:
         print(f"  [FAIL] Data validation issues found ({len(dv_errors)}): {dv_errors}")
+    # --- CHECK 9: Cross-Volume Resolution & CPWD (W-A) Markup Exclusion ---
+    total_checks += 1
+    print("\n[CHECK 9] Cross-Volume Resolution & CPWD (W-A) Markup Exclusion...")
+    try:
+        from scripts.verify_cross_volume import check_cross_volume
+        xv_ok, _ = check_cross_volume(wb)
+        if xv_ok:
+            passed_checks += 1
+    except Exception as exc:
+        print("  [FAIL] Cross-volume check raised: %s" % exc)
+
+    # --- CHECK 10: Two-Panel Input Analysis on every builder ---
+    total_checks += 1
+    print("\n[CHECK 10] Two-Panel Input Analysis & Cost-Impact Classification...")
+    from scripts.trade_layout import (R_P1_HEAD, R_P1_FIRST, R_P1_LAST, R_P2_HEAD,
+                                      R_P2_FIRST, R_P2_LAST, R_KEY, R_NOMEN)
+    VALID_IMPACT = {"DRIVES COST", "NOMENCLATURE ONLY", "USER-SUPPLIED COST"}
+    panel_ok = True
+    std_builders = [s for s in sheet_names if s[:2].isdigit() and s != "01_Carriage_of_Materials"]
+    for name in std_builders:
+        ws = wb[name]
+        if not str(ws.cell(row=R_P1_HEAD, column=1).value or "").startswith("1. PANEL 1"):
+            print("  [FAIL] %s: Panel 1 header missing at row %d." % (name, R_P1_HEAD))
+            panel_ok = False
+            continue
+        if not str(ws.cell(row=R_P2_HEAD, column=1).value or "").startswith("2. PANEL 2"):
+            print("  [FAIL] %s: Panel 2 header missing at row %d." % (name, R_P2_HEAD))
+            panel_ok = False
+            continue
+        impacts = [str(ws.cell(row=r, column=3).value or "")
+                   for r in range(R_P1_FIRST, R_P1_LAST + 1)]
+        classed = [i for i in impacts if i]
+        if len(classed) < 6:
+            print("  [FAIL] %s: only %d of 6 scope clauses carry a cost-impact class."
+                  % (name, len(classed)))
+            panel_ok = False
+            continue
+        bad = [i for i in classed if i not in VALID_IMPACT]
+        if bad:
+            print("  [FAIL] %s: unrecognised cost-impact class %s." % (name, bad))
+            panel_ok = False
+            continue
+        evid = [r for r in range(R_P1_FIRST, R_P1_LAST + 1)
+                if not str(ws.cell(row=r, column=5).value or "").strip()]
+        if evid:
+            print("  [FAIL] %s: scope rows %s state a verdict with no DAR evidence." % (name, evid))
+            panel_ok = False
+            continue
+        spare = [r for r in range(R_P2_FIRST, R_P2_LAST + 1)
+                 if str(ws.cell(row=r, column=1).value or "").startswith("(spare")]
+        if spare:
+            print("  [FAIL] %s: Panel 2 has %d unpopulated driver row(s)." % (name, len(spare)))
+            panel_ok = False
+            continue
+        if "COST-IMPACT KEY" not in str(ws.cell(row=R_KEY, column=1).value or ""):
+            print("  [FAIL] %s: cost-impact key strip missing at row %d." % (name, R_KEY))
+            panel_ok = False
+            continue
+        if not str(ws.cell(row=R_NOMEN, column=2).value or "").startswith("="):
+            print("  [FAIL] %s: nomenclature is not assembled from the Panel 1 selections." % name)
+            panel_ok = False
+            continue
+    if panel_ok:
+        print("  [PASS] All %d standard builders carry Panel 1 (6 classified scope clauses, each with "
+              "DAR evidence), Panel 2 (4 drivers), the cost-impact key and an auto-assembled "
+              "nomenclature." % len(std_builders))
+        print("  [PASS] 01_Carriage_of_Materials carries its own bespoke two-panel implementation "
+              "(verified separately in CHECK 7).")
+        passed_checks += 1
+
 
     print("\n" + "=" * 70)
     print(f"AUDIT SUMMARY: {passed_checks} / {total_checks} CHECKS PASSED")

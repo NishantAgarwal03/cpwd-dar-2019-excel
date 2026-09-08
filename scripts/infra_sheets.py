@@ -3,6 +3,7 @@ import openpyxl
 from openpyxl.workbook.defined_name import DefinedName
 from openpyxl.worksheet.table import Table, TableStyleInfo
 import json
+from scripts.work_types import classify, summarise, WORK_TYPE_GROUP, WORK_TYPE_INDEX
 
 def build_rates_master(wb, styles):
     ws = wb.create_sheet(title='Rates_Master')
@@ -195,7 +196,7 @@ def build_global_factors(wb, styles):
         ('07', 'Stone Work', 'YES', 'YES', 'YES', 'YES', 'Imports Mortar rates as Material line; applies full markup chain over stone, mortar, dressing and laying labour.'),
         ('08', 'Cladding Work', 'YES', 'YES', 'YES', 'YES', 'Imports both bedding mortar and pointing mortar rates; applies full markup chain over stone veneer, mortar, scaffolding.'),
         ('09', 'Wood & PVC Work', 'YES', 'YES', 'YES', 'YES', 'Applies full markup chain over timber in scantling (with 5% wastage allowance) and carpentry labour.'),
-        ('10', 'Steel Work', 'YES', 'YES', 'YES', 'YES', 'Applies markups over (W - Priming Coat), because priming coat (Item 13.50.3) already contains full statutory markups under Finishing.'),
+        ('10', 'Steel Work', 'YES', 'YES', 'YES', 'YES', 'Applies the CPWD (W-A) rule: the priming coat (resolved item 13.50.3) already carries Water, GST, CPOH and Cess, so it is tagged A and every markup is computed on (W-A), (X-A), (Y-A), (Z-A). Verified against DAR item 10.1.'),
         ('11', 'Flooring', 'YES', 'YES', 'YES', 'YES', 'Imports Mortar/Concrete bed rate; applies full markup chain over tiles, stone, laying labour and polishing.'),
         ('12', 'Roofing', 'YES', 'YES', 'YES', 'YES', 'Applies full markup chain over roofing sheets, fixing J-hooks/bolts, limpet washers, and carpenter/fixing labour.')
     ]
@@ -243,68 +244,200 @@ def build_global_factors(wb, styles):
     print('Global_Factors built with Statutory Factor Named Ranges and Named Formulas.')
 
 def build_labour_productivity(wb, styles):
+    """Work-type organised labour & machinery productivity reference.
+
+    Section 1 rolls every mined LABOUR/MACHINERY line up by WORK TYPE (per the
+    Problem & Solution Statement 2.2) so a user can look up "what crew does
+    brickwork need" without knowing which sub-head sheet it was printed on.
+    Section 2 keeps the full record-level detail behind it, now carrying the
+    same Work Type and Trade Group columns so it can be filtered the same way.
+    """
     ws = wb.create_sheet(title='Labour_Machinery_Productivity')
     ws.views.sheetView[0].showGridLines = True
-    
-    headers = ['Sub-Head', 'DAR Item No', 'Item Nomenclature', 'Output Basis', 'Resource Type', 'Code', 'Resource Description', 'Unit', 'Day Coeff / Qty', 'Basic Rate (Rs)']
-    for col_idx, h in enumerate(headers, 1):
-        c = ws.cell(row=1, column=col_idx, value=h)
+
+    with open('labour_productivity.json', 'r', encoding='utf-8') as pf:
+        records = json.load(pf)
+
+    for rec in records:
+        rec['work_type'] = classify(rec['subhead'], rec.get('item_desc'), rec.get('description'))
+
+    summary = summarise(records)
+
+    # ------------------------------------------------------------------
+    # Section 1: Work-type crew summary
+    # ------------------------------------------------------------------
+    ws.merge_cells('A1:L1')
+    t = ws['A1']
+    t.value = ('CPWD DAR 2019 - LABOUR & MACHINERY PRODUCTIVITY, ORGANISED BY WORK TYPE '
+               '(Section 1 = crew summary per work type / Section 2 = full source detail)')
+    t.font = styles['font_title']
+    t.fill = styles['fill_title']
+    t.alignment = styles['align_center']
+    ws.row_dimensions[1].height = 30
+
+    ws.merge_cells('A2:L2')
+    g = ws['A2']
+    g.value = ('Advisory reference only - nothing here is a compute dependency. "Typical Coeff" is the median '
+               'day-coefficient observed across every DAR item of that work type, at the output basis shown; '
+               'Low/High give the range actually printed in the book, and Observations says how many item lines '
+               'back it. Carry a crew into a builder sheet as a starting point, then edit the coefficients to '
+               'suit the item being priced.')
+    g.font = styles['font_note']
+    g.fill = styles['fill_note']
+    g.alignment = styles['align_wrap']
+    ws.row_dimensions[2].height = 40
+
+    ws.merge_cells('A4:L4')
+    s1 = ws['A4']
+    s1.value = '1. CREW SUMMARY BY WORK TYPE (median day-coefficient per output basis)'
+    s1.font = styles['font_white_bold']
+    s1.fill = styles['fill_header']
+    s1.alignment = styles['align_left']
+    ws.row_dimensions[4].height = 24
+
+    sum_headers = ['Work Type', 'Trade Group', 'Resource Type', 'Code', 'Resource Description', 'Unit',
+                   'Typical Coeff', 'Low', 'High', 'Observations', 'Output Basis', 'Basic Rate (Rs)']
+    for ci, h in enumerate(sum_headers, 1):
+        c = ws.cell(row=5, column=ci, value=h)
         c.font = styles['font_header']
         c.fill = styles['fill_header']
         c.alignment = styles['align_center']
         c.border = styles['border_header']
-    ws.row_dimensions[1].height = 28
-    
-    with open('labour_productivity.json', 'r', encoding='utf-8') as pf:
-        records = json.load(pf)
-        
-    for r_idx, rec in enumerate(records, 2):
-        ws.cell(row=r_idx, column=1, value=rec['subhead']).alignment = styles['align_left']
-        ws.cell(row=r_idx, column=2, value=rec['item_no']).alignment = styles['align_center']
-        ws.cell(row=r_idx, column=3, value=rec['item_desc']).alignment = styles['align_left']
-        ws.cell(row=r_idx, column=4, value=rec['basis']).alignment = styles['align_center']
-        ws.cell(row=r_idx, column=5, value=rec['type']).alignment = styles['align_center']
-        c_code = ws.cell(row=r_idx, column=6, value=rec['code'])
+    ws.row_dimensions[5].height = 26
+
+    sum_first = 6
+    prev_wt = None
+    for i, s in enumerate(summary):
+        r = sum_first + i
+        new_group = (s['work_type'] != prev_wt)
+        prev_wt = s['work_type']
+
+        ws.cell(row=r, column=1, value=s['work_type']).alignment = styles['align_left']
+        ws.cell(row=r, column=2, value=s['trade_group']).alignment = styles['align_center']
+        ws.cell(row=r, column=3, value=s['res_type']).alignment = styles['align_center']
+        cc = ws.cell(row=r, column=4, value=s['code'])
+        cc.alignment = styles['align_center']
+        cc.font = styles['font_bold']
+        ws.cell(row=r, column=5, value=s['description']).alignment = styles['align_left']
+        ws.cell(row=r, column=6, value=s['unit']).alignment = styles['align_center']
+
+        ct = ws.cell(row=r, column=7, value=s['typical'])
+        ct.alignment = styles['align_right']
+        ct.number_format = styles['fmt_qty']
+        ct.font = styles['font_bold']
+        ct.fill = styles['fill_result']
+
+        for col, key in ((8, 'low'), (9, 'high')):
+            cx = ws.cell(row=r, column=col, value=s[key])
+            cx.alignment = styles['align_right']
+            cx.number_format = styles['fmt_qty']
+
+        ws.cell(row=r, column=10, value=s['observations']).alignment = styles['align_center']
+        ws.cell(row=r, column=11, value=s['basis']).alignment = styles['align_center']
+        cr = ws.cell(row=r, column=12, value=s['rate'])
+        cr.alignment = styles['align_right']
+        cr.number_format = styles['fmt_currency']
+
+        for c in range(1, 13):
+            cell = ws.cell(row=r, column=c)
+            cell.border = styles['border_thin']
+            if c != 7:
+                cell.fill = styles['fill_lookup'] if new_group else styles['fill_calc']
+                cell.font = styles['font_regular']
+        if new_group:
+            ws.cell(row=r, column=1).font = styles['font_bold']
+        ws.cell(row=r, column=4).font = styles['font_bold']
+        ws.row_dimensions[r].height = 20
+
+    sum_last = sum_first + len(summary) - 1
+
+    # ------------------------------------------------------------------
+    # Section 2: full detail
+    # ------------------------------------------------------------------
+    sec2 = sum_last + 2
+    ws.merge_cells(start_row=sec2, start_column=1, end_row=sec2, end_column=12)
+    s2 = ws.cell(row=sec2, column=1)
+    s2.value = '2. FULL SOURCE DETAIL (every LABOUR / MACHINERY line mined from the base volumes)'
+    s2.font = styles['font_white_bold']
+    s2.fill = styles['fill_header']
+    s2.alignment = styles['align_left']
+    ws.row_dimensions[sec2].height = 24
+
+    det_headers = ['Work Type', 'Trade Group', 'Sub-Head', 'DAR Item No', 'Item Nomenclature', 'Output Basis',
+                   'Resource Type', 'Code', 'Resource Description', 'Unit', 'Day Coeff / Qty', 'Basic Rate (Rs)']
+    hdr_row = sec2 + 1
+    for ci, h in enumerate(det_headers, 1):
+        c = ws.cell(row=hdr_row, column=ci, value=h)
+        c.font = styles['font_header']
+        c.fill = styles['fill_header']
+        c.alignment = styles['align_center']
+        c.border = styles['border_header']
+    ws.row_dimensions[hdr_row].height = 26
+
+    records.sort(key=lambda x: (WORK_TYPE_INDEX[x['work_type']], x['subhead'], x['item_no'] or ''))
+
+    det_first = hdr_row + 1
+    for i, rec in enumerate(records):
+        r = det_first + i
+        ws.cell(row=r, column=1, value=rec['work_type']).alignment = styles['align_left']
+        ws.cell(row=r, column=2, value=WORK_TYPE_GROUP[rec['work_type']]).alignment = styles['align_center']
+        ws.cell(row=r, column=3, value=rec['subhead']).alignment = styles['align_left']
+        ws.cell(row=r, column=4, value=rec['item_no']).alignment = styles['align_center']
+        ws.cell(row=r, column=5, value=rec['item_desc']).alignment = styles['align_left']
+        ws.cell(row=r, column=6, value=rec['basis']).alignment = styles['align_center']
+        ws.cell(row=r, column=7, value=rec['type']).alignment = styles['align_center']
+        c_code = ws.cell(row=r, column=8, value=rec['code'])
         c_code.alignment = styles['align_center']
         c_code.font = styles['font_bold']
-        ws.cell(row=r_idx, column=7, value=rec['description']).alignment = styles['align_left']
-        ws.cell(row=r_idx, column=8, value=rec['unit']).alignment = styles['align_center']
-        
-        c_coeff = ws.cell(row=r_idx, column=9, value=rec['coefficient'])
+        ws.cell(row=r, column=9, value=rec['description']).alignment = styles['align_left']
+        ws.cell(row=r, column=10, value=rec['unit']).alignment = styles['align_center']
+
+        c_coeff = ws.cell(row=r, column=11, value=rec['coefficient'])
         c_coeff.alignment = styles['align_right']
         c_coeff.number_format = styles['fmt_qty']
-        
-        c_rate = ws.cell(row=r_idx, column=10, value=rec['rate'])
+
+        c_rate = ws.cell(row=r, column=12, value=rec['rate'])
         c_rate.alignment = styles['align_right']
         c_rate.number_format = styles['fmt_currency']
-        
-        row_fill = styles['fill_subtotal'] if r_idx % 2 == 0 else styles['fill_calc']
-        for c in range(1, 11):
-            cell = ws.cell(row=r_idx, column=c)
+
+        row_fill = styles['fill_subtotal'] if r % 2 == 0 else styles['fill_calc']
+        for c in range(1, 13):
+            cell = ws.cell(row=r, column=c)
             cell.fill = row_fill
             cell.border = styles['border_thin']
-            if c not in [6, 9, 10]:
+            if c not in [8, 11, 12]:
                 cell.font = styles['font_regular']
-        ws.row_dimensions[r_idx].height = 20
-        
-    ws.column_dimensions['A'].width = 22
-    ws.column_dimensions['B'].width = 14
-    ws.column_dimensions['C'].width = 45
-    ws.column_dimensions['D'].width = 18
-    ws.column_dimensions['E'].width = 16
-    ws.column_dimensions['F'].width = 12
-    ws.column_dimensions['G'].width = 40
-    ws.column_dimensions['H'].width = 12
-    ws.column_dimensions['I'].width = 18
-    ws.column_dimensions['J'].width = 16
-    
-    ws.freeze_panes = 'A2'
-    
-    tab = Table(displayName="tbl_Productivity", ref=f"A1:J{len(records)+1}")
+        ws.row_dimensions[r].height = 20
+
+    det_last = det_first + len(records) - 1
+
+    widths = {'A': 38, 'B': 20, 'C': 24, 'D': 14, 'E': 45, 'F': 16,
+              'G': 15, 'H': 12, 'I': 40, 'J': 12, 'K': 16, 'L': 16}
+    for col, w in widths.items():
+        ws.column_dimensions[col].width = w
+
+    ws.freeze_panes = 'A6'
+
+    tab = Table(displayName="tbl_ProductivityDetail", ref="A%d:L%d" % (hdr_row, det_last))
     tab.tableStyleInfo = TableStyleInfo(name="TableStyleLight1", showRowStripes=True)
     ws.add_table(tab)
-    wb.defined_names.add(DefinedName('Total_Labour_Norms', attr_text="COUNTA('Labour_Machinery_Productivity'!$A:$A)-1"))
-    print(f'Labour_Machinery_Productivity built: {len(records)} records with Table and Named Formula.')
+
+    wb.defined_names.add(DefinedName(
+        'Productivity_Summary',
+        attr_text="'Labour_Machinery_Productivity'!$A$%d:$L$%d" % (sum_first, sum_last)))
+    wb.defined_names.add(DefinedName(
+        'Productivity_Work_Types',
+        attr_text="'Labour_Machinery_Productivity'!$A$%d:$A$%d" % (sum_first, sum_last)))
+    wb.defined_names.add(DefinedName(
+        'Total_Labour_Norms',
+        attr_text="COUNTA('Labour_Machinery_Productivity'!$C$%d:$C$%d)" % (det_first, det_last)))
+    wb.defined_names.add(DefinedName(
+        'Total_Work_Type_Crews',
+        attr_text="ROWS('Labour_Machinery_Productivity'!$A$%d:$A$%d)" % (sum_first, sum_last)))
+
+    n_wt = len(set(s['work_type'] for s in summary))
+    print('Labour_Machinery_Productivity built: %d work types, %d crew-summary rows, %d detail records.'
+          % (n_wt, len(summary), len(records)))
 
 def build_sundries_reference(wb, styles):
     ws = wb.create_sheet(title='Sundries_Reference')

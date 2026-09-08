@@ -11,9 +11,10 @@ from scripts.infra_sheets import (
     build_sundries_reference
 )
 from scripts.trade_builder import build_standard_trade
-from scripts.trade_builder_earth import build_earthwork_trade
 from scripts.trade_builder_carr import build_carriage_trade
 from scripts.trade_configs import get_all_trade_configs
+from scripts.scope_inputs import merge_scope_metadata
+from scripts.cross_volume import build_resolved_cross_volume
 
 def generate_full_workbook():
     t0 = time.time()
@@ -28,11 +29,12 @@ def generate_full_workbook():
     styles = get_workbook_styles()
     
     # 1. Infrastructure Sheets
-    print("--- Generating 4 Shared Infrastructure Sheets ---")
+    print("--- Generating 5 Shared Infrastructure Sheets ---")
     build_rates_master(wb, styles)
     build_global_factors(wb, styles)
     build_labour_productivity(wb, styles)
     build_sundries_reference(wb, styles)
+    build_resolved_cross_volume(wb, styles)
     
     # Remove default sheet
     if default_sheet in wb.worksheets:
@@ -40,16 +42,15 @@ def generate_full_workbook():
         
     # 2. Trade Builder Sheets (01 to 12)
     print("--- Generating 12 Dedicated Trade Builder Sheets ---")
-    configs = get_all_trade_configs()
+    configs = merge_scope_metadata(get_all_trade_configs())
     
     # 01 Carriage
     build_carriage_trade(wb, configs['01_Carriage_of_Materials'], styles)
     
-    # 02 Earth Work
-    build_earthwork_trade(wb, configs['02_Earth_Work'], styles)
-    
-    # 03 to 12 Standard Trade Builders
+    # 02 to 12 Standard Trade Builders (02 carries an empty MATERIAL block:
+    # Earth Work items in the DAR are labour-and-plant only.)
     trade_keys = [
+        '02_Earth_Work',
         '03_Mortars',
         '04_Concrete_Work',
         '05_RCC_Work',
