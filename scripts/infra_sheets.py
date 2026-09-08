@@ -3,7 +3,27 @@ import openpyxl
 from openpyxl.workbook.defined_name import DefinedName
 from openpyxl.worksheet.table import Table, TableStyleInfo
 import json
+from openpyxl.styles import Protection
 from scripts.work_types import classify, summarise, WORK_TYPE_GROUP, WORK_TYPE_INDEX
+
+
+def lock_sheet(ws, editable_cells=(), editable_cols=(), first_data_row=2):
+    """Lock every cell, then reopen only what is genuinely meant to be edited.
+
+    `editable_cells`  - explicit coordinates (e.g. project parameters).
+    `editable_cols`   - column letters unlocked for every data row, used for the
+                        rate column on Rates_Master so rates can still be revised
+                        without exposing the code/description lookup keys.
+    """
+    for row in ws.iter_rows():
+        for c in row:
+            c.protection = Protection(locked=True)
+    for ref in editable_cells:
+        ws[ref].protection = Protection(locked=False)
+    for col in editable_cols:
+        for r in range(first_data_row, ws.max_row + 1):
+            ws[f'{col}{r}'].protection = Protection(locked=False)
+    ws.protection.sheet = True
 
 def build_rates_master(wb, styles):
     ws = wb.create_sheet(title='Rates_Master')
@@ -58,6 +78,11 @@ def build_rates_master(wb, styles):
     wb.defined_names.add(DefinedName('Master_Rates_Table', attr_text="'Rates_Master'!$A$2:$E$" + str(len(rates)+1)))
     wb.defined_names.add(DefinedName('Total_Active_Rates', attr_text="COUNTA('Rates_Master'!$A:$A)-1"))
     
+    # Column E (Basic Rate) stays editable so rates can be revised; the code,
+    # category, description and unit columns are locked because every INDEX/MATCH
+    # on every builder sheet depends on column A matching exactly.
+    lock_sheet(ws, editable_cols=('E',))
+
     tab = Table(displayName="tbl_RatesMaster", ref=f"A1:E{len(rates)+1}")
     tab.tableStyleInfo = TableStyleInfo(name="TableStyleLight1", showRowStripes=True)
     ws.add_table(tab)
@@ -231,6 +256,13 @@ def build_global_factors(wb, styles):
     
     ws.freeze_panes = 'A3'
     
+    # Only the project-parameter cells and the override column are editable.
+    # The "Effective Rate Applied" column holds the resolver formulas that every
+    # builder sheet reads through Factor_Water / Factor_GST / Factor_CPOH /
+    # Factor_Cess / Factor_Sundries, so it must not be overtypeable.
+    lock_sheet(ws, editable_cells=('B5', 'B6', 'B7', 'B8',
+                                   'E12', 'E13', 'E14', 'E15', 'E16'))
+
     wb.defined_names.add(DefinedName('Factor_Water', attr_text="'Global_Factors'!$F$12"))
     wb.defined_names.add(DefinedName('Factor_GST', attr_text="'Global_Factors'!$F$13"))
     wb.defined_names.add(DefinedName('Factor_CPOH', attr_text="'Global_Factors'!$F$14"))
@@ -418,6 +450,10 @@ def build_labour_productivity(wb, styles):
 
     ws.freeze_panes = 'A6'
 
+    # Advisory reference only - nothing here is an input, so the whole sheet is
+    # read-only. Filter and sort still work through the Excel Table.
+    lock_sheet(ws)
+
     tab = Table(displayName="tbl_ProductivityDetail", ref="A%d:L%d" % (hdr_row, det_last))
     tab.tableStyleInfo = TableStyleInfo(name="TableStyleLight1", showRowStripes=True)
     ws.add_table(tab)
@@ -495,6 +531,9 @@ def build_sundries_reference(wb, styles):
     
     ws.freeze_panes = 'A2'
     
+    # Lookup reference only - read-only, like the productivity sheet.
+    lock_sheet(ws)
+
     tab = Table(displayName="tbl_SundriesRef", ref=f"A1:H{len(records)+1}")
     tab.tableStyleInfo = TableStyleInfo(name="TableStyleLight1", showRowStripes=True)
     ws.add_table(tab)

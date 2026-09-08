@@ -56,48 +56,48 @@ R_NOM_OVERRIDE, R_NOMENCLATURE = 15, 16
 
 R_P2_HEAD, R_P2_COLS = 18, 19
 R_LEAD, R_SPEED_BM, R_SPEED_OV, R_SPEED_EFF, R_TURNAROUND = 20, 21, 22, 23, 24
-R_MODE, R_TRIPS_OV, R_TRIPS, R_DIST_BASIS, R_DISTANCE = 25, 26, 27, 28, 29
-R_DIESEL, R_MOBIL = 30, 31
+R_MODE, R_TRIPS_BASIS, R_TRIPS_OV, R_TRIPS = 25, 26, 27, 28
+R_DIST_BASIS, R_DISTANCE, R_DIESEL, R_MOBIL = 29, 30, 31, 32
 
-R_P3_HEAD, R_P3_COLS = 33, 34
-R_PAY_GROSS, R_PAY_NET, R_PAY_OV, R_PAY_EFF = 35, 36, 37, 38
-R_UNIT, R_SCALE, R_OUTPUT = 39, 40, 41
+R_P3_HEAD, R_P3_COLS = 34, 35
+R_PAY_GROSS, R_PAY_NET, R_PAY_OV, R_PAY_EFF = 36, 37, 38, 39
+R_UNIT, R_SCALE, R_OUTPUT = 40, 41, 42
 
-R_AUDIT = 43
+R_AUDIT = 44
 
-R_RES_HEAD, R_RES_COLS, R_RES_FIRST = 45, 46, 47
+R_RES_HEAD, R_RES_COLS, R_RES_FIRST = 46, 47, 48
 RES_ROWS = 8
-R_RES_LAST = R_RES_FIRST + RES_ROWS - 1                # 54
-R_W_SUB = 55
-R_TRIP_COST = 56
+R_RES_LAST = R_RES_FIRST + RES_ROWS - 1                # 55
+R_W_SUB = 56
+R_TRIP_COST = 57
 
-R_MU_HEAD, R_MU_COLS = 58, 59
-R_W, R_X1, R_X, R_Y1, R_Y, R_Z1, R_Z, R_Z2 = 60, 61, 62, 63, 64, 65, 66, 67
-R_TOTAL, R_TRIP_OH, R_RATE_UNIT, R_RATE_SCHED, R_SAY, R_SAY_NOTE = 68, 69, 70, 71, 72, 73
+R_MU_HEAD, R_MU_COLS = 59, 60
+R_W, R_X1, R_X, R_Y1, R_Y, R_Z1, R_Z, R_Z2 = 61, 62, 63, 64, 65, 66, 67, 68
+R_TOTAL, R_TRIP_OH, R_RATE_UNIT, R_RATE_SCHED, R_SAY, R_SAY_NOTE = 69, 70, 71, 72, 73, 74
 
-R_MAN_HEAD, R_MAN_BANNER, R_MAN_COLS = 75, 76, 77
-R_M_CODE, R_M_CAT, R_M_LEAD, R_M_STEPS = 78, 79, 80, 81
-R_M_GANG, R_M_GANG_ADD, R_M_WAGE = 82, 83, 84
-R_M_BASE, R_M_ADD, R_M_LABOUR, R_M_CPOH, R_M_TOTAL = 85, 86, 87, 88, 89
-R_M_CAP, R_M_UNIT, R_M_SCALE, R_M_RATE, R_M_SAY = 90, 91, 92, 93, 94
+R_MAN_HEAD, R_MAN_BANNER, R_MAN_COLS = 76, 77, 78
+R_M_CODE, R_M_CAT, R_M_LEAD, R_M_STEPS = 79, 80, 81, 82
+R_M_GANG, R_M_GANG_ADD, R_M_WAGE = 83, 84, 85
+R_M_BASE, R_M_ADD, R_M_LABOUR, R_M_CPOH, R_M_TOTAL = 86, 87, 88, 89, 90
+R_M_CAP, R_M_UNIT, R_M_SCALE, R_M_RATE, R_M_SAY = 91, 92, 93, 94, 95
 
-R_BM_HEAD = 96
-R_DS1_HEAD, R_DS1_COLS, R_DS1_FIRST = 97, 98, 99
+R_BM_HEAD = 97
+R_DS1_HEAD, R_DS1_COLS, R_DS1_FIRST = 98, 99, 100
 DS1_ROWS = 30
-R_DS1_LAST = R_DS1_FIRST + DS1_ROWS - 1                # 128
-R_DS1_NOTE = 129
+R_DS1_LAST = R_DS1_FIRST + DS1_ROWS - 1                # 129
+R_DS1_NOTE = 130
 
-R_T11_HEAD, R_T11_COLS, R_T11_FIRST = 131, 132, 133
+R_T11_HEAD, R_T11_COLS, R_T11_FIRST = 132, 133, 134
 T11_ROWS = 27
-R_T11_LAST = R_T11_FIRST + T11_ROWS - 1                # 159
+R_T11_LAST = R_T11_FIRST + T11_ROWS - 1                # 160
 
-R_T12_HEAD, R_T12_COLS, R_T12_FIRST = 161, 162, 163
+R_T12_HEAD, R_T12_COLS, R_T12_FIRST = 162, 163, 164
 T12_ROWS = 6
-R_T12_LAST = R_T12_FIRST + T12_ROWS - 1                # 168
+R_T12_LAST = R_T12_FIRST + T12_ROWS - 1                # 169
 
-R_SC_HEAD, R_SC_COLS, R_SC_FIRST = 170, 171, 172
+R_SC_HEAD, R_SC_COLS, R_SC_FIRST = 171, 172, 173
 SC_ROWS = 6
-R_SC_LAST = R_SC_FIRST + SC_ROWS - 1                   # 177
+R_SC_LAST = R_SC_FIRST + SC_ROWS - 1                   # 178
 
 PARAM_HEADERS = ['Parameter', 'Value', 'Unit', 'Cell Role',
                  'Where this value comes from, and the CPWD DAR 2019 basis for it', '', '', '', '']
@@ -173,6 +173,8 @@ def build_carriage_trade(wb, config, styles):
     dv_yesno = mkdv('"YES,NO"', False)
     dv_mode = mkdv('"STANDARD (DAYTIME),URBAN RESTRICTED HOURS"', False)
     dv_basis = mkdv('"DIRECT ROUTE (2NL + 6),CPWD PRO-RATA (Data Sheet 1)"', False)
+    dv_tripbasis = mkdv('"CPWD FRACTIONAL (Data Sheet 1 basis),WHOLE TRIPS (round down to integer)"',
+                        False)
     dv_unit = mkdv('"cum,tonne,metre,100 m,1000 Nos"', False)
     dv_cat = mkdv('"Category A (Bulk / Earth / Bricks),Category B (Heavy / Pipes / Steel)"', False)
     dv_mlead = mkdv('"50,100,150,200,250,300,350,400,450,500"', False)
@@ -184,12 +186,12 @@ def build_carriage_trade(wb, config, styles):
 
     ws.row_dimensions[7].height = 8
     ws.row_dimensions[17].height = 8
-    ws.row_dimensions[32].height = 8
-    ws.row_dimensions[42].height = 8
-    ws.row_dimensions[44].height = 8
-    ws.row_dimensions[57].height = 8
-    ws.row_dimensions[74].height = 8
-    ws.row_dimensions[95].height = 8
+    ws.row_dimensions[33].height = 8
+    ws.row_dimensions[43].height = 8
+    ws.row_dimensions[45].height = 8
+    ws.row_dimensions[58].height = 8
+    ws.row_dimensions[75].height = 8
+    ws.row_dimensions[96].height = 8
 
     # =====================================================================
     # PANEL 1 - what is being moved
@@ -293,17 +295,35 @@ def build_carriage_trade(wb, config, styles):
                'capped trip count in the override on the next row. DAR item 1.1.18 is the worked '
                'example: 3.00 trips instead of the 4.10 the formula gives at 10 km.', dv=dv_mode)
 
+    _param_row(ws, R_TRIPS_BASIS, styles, 'Trip count basis',
+               'CPWD FRACTIONAL (Data Sheet 1 basis)', '-', 'INPUT',
+               'CPWD FRACTIONAL is the book\'s own basis and the default. Data Sheet No. 1 quotes '
+               'trips as decimals throughout - 7.11 at 1 km, 4.10 at 10 km, 2.73 at 30 km - because N '
+               'is a productivity RATE per 8-hour shift, not a count of trips on one particular day; '
+               'the truck is hired by the day and the cost is spread over the average output. '
+               'WHOLE TRIPS rounds down to an integer, which is defensible when a real site or '
+               'regulatory constraint caps the trips, but it does NOT reproduce the printed DAR rates '
+               '- flooring 7.11 to 7 at 1 km raises the lime/moorum rate from Rs 104.94 to Rs 106.52. '
+               'Where the DAR itself fixes a whole trip count (item 1.1.18 uses exactly 3.00 under '
+               'urban restricted hours) it does so as an explicit cap, not as a rounding rule - use '
+               'the Trips override below for that.',
+               dv=dv_tripbasis, wrap_value=True)
+
     _param_row(ws, R_TRIPS_OV, styles, 'Trips override', None, 'trips per shift', 'OVERRIDE',
                'Leave blank to use the calculated trips below. Fill it in to force a trip count - this '
                'is how a restricted-hours item is priced. It is honoured in any mode.',
                number_format='0.00')
 
     _param_row(ws, R_TRIPS, styles, 'Daily trips achieved (N)', None, 'trips per shift', 'DERIVED',
-               'N = 8 / ((2L / S) + T) - an 8-hour shift divided by one round trip. Overridden by the '
-               'row above when that is filled.', number_format='0.00')
+               'N = 8 / ((2L / S) + T) - an 8-hour shift divided by one round trip. The Trips '
+               'override wins if it is filled; otherwise the Trip count basis decides whether the '
+               'result keeps its decimals (CPWD) or is rounded down to a whole trip.',
+               number_format='0.00')
     ws.cell(row=R_TRIPS, column=2).value = (
         f'=IF(B{R_TRIPS_OV}<>"", B{R_TRIPS_OV}, '
-        f'IFERROR(ROUND(8 / ((2 * B{R_LEAD} / B{R_SPEED_EFF}) + B{R_TURNAROUND}), 2), 0))')
+        f'IF(B{R_TRIPS_BASIS}="WHOLE TRIPS (round down to integer)", '
+        f'IFERROR(INT(8 / ((2 * B{R_LEAD} / B{R_SPEED_EFF}) + B{R_TURNAROUND})), 0), '
+        f'IFERROR(ROUND(8 / ((2 * B{R_LEAD} / B{R_SPEED_EFF}) + B{R_TURNAROUND}), 2), 0)))')
 
     _param_row(ws, R_DIST_BASIS, styles, 'Distance / fuel basis', 'DIRECT ROUTE (2NL + 6)', '-', 'INPUT',
                'DIRECT ROUTE computes km/day = 2NL + 6, the 6 km being the depot run - this reproduces '
@@ -997,7 +1017,7 @@ def build_carriage_trade(wb, config, styles):
             ws.cell(row=r, column=c).protection = Protection(locked=True)
 
     editable = [R_ITEM_CODE, R_MATERIAL, R_SCOPE, R_LIFT, R_GATE_FEE, R_NOM_OVERRIDE,
-                R_LEAD, R_SPEED_OV, R_TURNAROUND, R_MODE, R_TRIPS_OV, R_DIST_BASIS,
+                R_LEAD, R_SPEED_OV, R_TURNAROUND, R_MODE, R_TRIPS_BASIS, R_TRIPS_OV, R_DIST_BASIS,
                 R_PAY_OV, R_M_CODE, R_M_CAT, R_M_LEAD, R_M_CAP, R_M_UNIT]
     for r in editable:
         ws.cell(row=r, column=2).protection = Protection(locked=False)

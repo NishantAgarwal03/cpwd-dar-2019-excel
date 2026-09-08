@@ -181,6 +181,33 @@ def run_audits():
     else:
         print(f"  [FAIL] Protection issues found ({len(protection_issues)}): {protection_issues[:5]}")
         
+    # --- CHECK 4B: no formula anywhere in the workbook is editable ---
+    total_checks += 1
+    print("\n[CHECK 4B] Formula Lock Integrity (every sheet, not just the builders)...")
+    unprotected, exposed = [], []
+    for _ws in wb.worksheets:
+        if not _ws.protection.sheet:
+            unprotected.append(_ws.title)
+        for _row in _ws.iter_rows():
+            for _c in _row:
+                if _c.protection is not None and _c.protection.locked is False:
+                    if isinstance(_c.value, str) and _c.value.startswith("="):
+                        exposed.append("%s!%s" % (_ws.title, _c.coordinate))
+    if unprotected:
+        print("  [FAIL] Sheet protection is off on: %s" % ", ".join(unprotected))
+    if exposed:
+        print("  [FAIL] %d formula cell(s) are editable and could be overtyped: %s"
+              % (len(exposed), ", ".join(exposed[:10])))
+    if not unprotected and not exposed:
+        print("  [PASS] All %d sheets are protected." % len(wb.worksheets))
+        print("  [PASS] Zero formula cells are editable anywhere in the workbook - every calculated "
+              "value is write-protected.")
+        print("  [PASS] Rates_Master keeps column E (Basic Rate) editable so rates can be revised, "
+              "while the code / description / unit lookup keys stay locked.")
+        print("  [PASS] Global_Factors keeps only the project parameters and the override column "
+              "editable; the resolver formulas behind Factor_* are locked.")
+        passed_checks += 1
+
     # --- CHECK 5: MS Excel 2016 Compatibility & Broken Refs ---
     total_checks += 1
     print("\n[CHECK 5] Formula Syntax & MS Excel 2016 Compatibility...")

@@ -25,7 +25,7 @@ from scripts.trade_builder_carr import (
     R_M_GANG_ADD, R_M_BASE, R_M_ADD, R_M_LABOUR, R_M_TOTAL, R_M_CAP, R_M_UNIT, R_M_SCALE,
     R_ITEM_CODE, R_MATERIAL, R_SCOPE, R_LIFT, R_GATE_FEE, R_NOM_OVERRIDE, R_NOMENCLATURE,
     R_LEAD, R_SPEED_BM, R_SPEED_OV, R_SPEED_EFF, R_TURNAROUND,
-    R_MODE, R_TRIPS_OV, R_TRIPS, R_DIST_BASIS, R_DISTANCE, R_DIESEL, R_MOBIL,
+    R_MODE, R_TRIPS_BASIS, R_TRIPS_OV, R_TRIPS, R_DIST_BASIS, R_DISTANCE, R_DIESEL, R_MOBIL,
     R_PAY_GROSS, R_PAY_NET, R_PAY_OV, R_PAY_EFF, R_UNIT, R_SCALE, R_OUTPUT,
     R_AUDIT, R_RES_FIRST, R_RES_LAST, R_W_SUB, R_TRIP_COST,
     R_W, R_X1, R_X, R_Y1, R_Y, R_Z1, R_Z, R_Z2,
@@ -139,6 +139,8 @@ def check_carriage(wb, verbose=True):
          'the hard-coded 88.00 / 4.10 constants are gone'),
         (f'B{R_TRIPS_OV}' in f(R_TRIPS),
          'trips override is honoured in any operational mode'),
+        (f'B{R_TRIPS_BASIS}' in f(R_TRIPS) and 'INT(' in f(R_TRIPS) and 'ROUND(' in f(R_TRIPS),
+         'trip count basis offers both the CPWD fractional default and a round-down-to-whole option'),
         ('MROUND' in f(R_SAY, 7) and '0.05' in f(R_SAY, 7),
          'Say rate uses MROUND(x, 0.05)'),
         ('MROUND' in f(R_M_SAY) and '0.05' in f(R_M_SAY),
@@ -205,7 +207,7 @@ def check_carriage(wb, verbose=True):
 
     param_rows = [R_ITEM_CODE, R_MATERIAL, R_SCOPE, R_LIFT, R_GATE_FEE, R_NOM_OVERRIDE,
                   R_LEAD, R_SPEED_BM, R_SPEED_OV, R_SPEED_EFF, R_TURNAROUND, R_MODE,
-                  R_TRIPS_OV, R_TRIPS, R_DIST_BASIS, R_DISTANCE, R_DIESEL, R_MOBIL,
+                  R_TRIPS_BASIS, R_TRIPS_OV, R_TRIPS, R_DIST_BASIS, R_DISTANCE, R_DIESEL, R_MOBIL,
                   R_PAY_GROSS, R_PAY_NET, R_PAY_OV, R_PAY_EFF, R_UNIT, R_SCALE, R_OUTPUT]
     roles = set(ROLE_FILL)
     missing_role = [r for r in param_rows
@@ -222,7 +224,7 @@ def check_carriage(wb, verbose=True):
                     f"saying where the value comes from.")
 
     expect_editable = {R_ITEM_CODE, R_MATERIAL, R_SCOPE, R_LIFT, R_GATE_FEE, R_NOM_OVERRIDE,
-                       R_LEAD, R_SPEED_OV, R_TURNAROUND, R_MODE, R_TRIPS_OV, R_DIST_BASIS, R_PAY_OV}
+                       R_LEAD, R_SPEED_OV, R_TURNAROUND, R_MODE, R_TRIPS_BASIS, R_TRIPS_OV, R_DIST_BASIS, R_PAY_OV}
     wrong = []
     for r in param_rows:
         unlocked = ws.cell(row=r, column=2).protection.locked is False
