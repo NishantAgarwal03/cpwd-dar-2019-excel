@@ -14,10 +14,13 @@ def build_carriage_trade(wb, config, styles):
     dv_yesno = DataValidation(type='list', formula1='"YES,NO"', allow_blank=False)
     ws.add_data_validation(dv_yesno)
     
-    dv_mode = DataValidation(type='list', formula1='"FORMULA,FIXED TRIPS"', allow_blank=False)
-    ws.add_data_validation(dv_mode)
+    dv_env_mode = DataValidation(type='list', formula1='"STANDARD (DAYTIME),URBAN RESTRICTED HOURS"', allow_blank=False)
+    ws.add_data_validation(dv_env_mode)
     
-    dv_unit = DataValidation(type='list', formula1='"metre,100 m,cum,tonne,1000 Nos"', allow_blank=False)
+    dv_dist_basis = DataValidation(type='list', formula1='"CPWD PRO-RATA (Item 1.1.18),DIRECT ROUTE (2NL + 6)"', allow_blank=False)
+    ws.add_data_validation(dv_dist_basis)
+    
+    dv_unit = DataValidation(type='list', formula1='"cum,metre,100 m,tonne,1000 Nos"', allow_blank=False)
     ws.add_data_validation(dv_unit)
     
     dv_manual_cat = DataValidation(type='list', formula1='"Category A (Bulk / Earth / Bricks),Category B (Heavy / Pipes / Steel)"', allow_blank=False)
@@ -32,14 +35,14 @@ def build_carriage_trade(wb, config, styles):
 
     dv_scope = DataValidation(
         type='list',
-        formula1='"including loading, transporting, unloading and stacking,including loading, transporting, unloading to approved municipal dumping ground,including loading, transporting and unloading,including unloading and stacking at railway siding"',
+        formula1='"including loading, transporting, unloading and stacking,including loading, transporting, unloading to approved municipal dumping ground,including loading, transporting and unloading (excluding stacking),transporting and unloading only (machine loaded / excluding loading),transporting only (excluding loading, unloading and stacking),including unloading and stacking at railway siding"',
         allow_blank=False
     )
     ws.add_data_validation(dv_scope)
 
     dv_lift = DataValidation(
         type='list',
-        formula1='"for all lifts,for all lifts and leads,for lift upto 1.5 m"',
+        formula1='"for all lifts,for lift upto 1.5 m,with mechanical lift,for all lifts and leads"',
         allow_blank=False
     )
     ws.add_data_validation(dv_lift)
@@ -48,17 +51,17 @@ def build_carriage_trade(wb, config, styles):
     ws.row_dimensions[4].height = 10
 
     # =========================================================================
-    # PANEL 1: SMART MATERIAL SELECTOR & AUTOMATED NOMENCLATURE BUILDER (Rows 5-8)
+    # PANEL 1: SCOPE & SPECIFICATION INPUTS (Rows 5-8)
     # =========================================================================
     ws.merge_cells('A5:H5')
     p1_head = ws['A5']
-    p1_head.value = 'PANEL 1: SMART MATERIAL SELECTOR & AUTOMATED NOMENCLATURE BUILDER (Select Commodity & Scope Keywords)'
+    p1_head.value = 'PANEL 1: SCOPE & SPECIFICATION INPUTS (What is being moved & contractual handling scope)'
     p1_head.font = styles['font_white_bold']
     p1_head.fill = styles['fill_header']
     p1_head.alignment = styles['align_left']
     ws.row_dimensions[5].height = 24
 
-    # Row 6: Primary Selector Dropdowns
+    # Row 6: Primary Scope Dropdowns
     ws['A6'] = 'Custom Item Code:'
     ws['A6'].font = styles['font_bold']
     ws['A6'].alignment = styles['align_right']
@@ -98,19 +101,28 @@ def build_carriage_trade(wb, config, styles):
         ws[f'{col}6'].border = styles['border_thin']
     ws.row_dimensions[6].height = 24
 
-    # Row 7: Manual Override (Optional)
-    ws['A7'] = 'Manual Override (Optional):'
+    # Row 7: Tipping Fee Surcharge & Manual Override
+    ws['A7'] = 'Municipal Gate Fee:'
     ws['A7'].font = styles['font_bold']
     ws['A7'].alignment = styles['align_right']
-    ws['A7'].border = styles['border_thin']
-
-    ws.merge_cells('B7:H7')
-    ws['B7'] = None
-    ws['B7'].font = styles['font_regular']
+    ws['B7'] = 0.00
     ws['B7'].fill = styles['fill_input']
-    ws['B7'].alignment = styles['align_wrap']
-    ws['B7'].border = styles['border_thin']
-    ws.row_dimensions[7].height = 26
+    ws['B7'].font = styles['font_bold']
+    ws['B7'].alignment = styles['align_center']
+    ws['B7'].number_format = styles['fmt_currency']
+
+    ws['C7'] = 'Manual Override (Opt):'
+    ws['C7'].font = styles['font_bold']
+    ws['C7'].alignment = styles['align_right']
+    ws['C7'].border = styles['border_thin']
+
+    ws.merge_cells('D7:H7')
+    ws['D7'] = None
+    ws['D7'].font = styles['font_regular']
+    ws['D7'].fill = styles['fill_input']
+    ws['D7'].alignment = styles['align_wrap']
+    ws['D7'].border = styles['border_thin']
+    ws.row_dimensions[7].height = 24
 
     # Row 8: Assembled Item Nomenclature
     ws['A8'] = 'Assembled Nomenclature:'
@@ -120,7 +132,7 @@ def build_carriage_trade(wb, config, styles):
     ws['A8'].border = styles['border_thin']
 
     ws.merge_cells('B8:H8')
-    ws['B8'] = '=IF(B7<>"","" & B7,"Carriage of " & D6 & " by mechanical transport " & F6 & " for lead upto " & TEXT(B11, "0.00") & " km " & H6 & ", complete as per directions of Engineer-in-charge.")'
+    ws['B8'] = '=IF(D7<>"","" & D7,"Carriage of " & D6 & " by mechanical transport " & F6 & " for lead upto " & TEXT(B11, "0.00") & " km " & H6 & IF(B7>0, ", including municipal tipping royalty/gate fee of Rs " & TEXT(B7, "0.00") & " per " & B13, "") & ", complete as per directions of Engineer-in-charge.")'
     ws['B8'].font = styles['font_bold']
     ws['B8'].fill = styles['fill_note']
     ws['B8'].alignment = styles['align_wrap']
@@ -131,11 +143,11 @@ def build_carriage_trade(wb, config, styles):
     ws.row_dimensions[9].height = 10
 
     # =========================================================================
-    # PANEL 2: MECHANICAL HAULAGE SIMULATION CONTROLS & TRIP DYNAMICS (Rows 10-14)
+    # PANEL 2: OPERATIONAL & TRIP DYNAMICS (Rows 10-14)
     # =========================================================================
     ws.merge_cells('A10:H10')
     p2_head = ws['A10']
-    p2_head.value = 'PANEL 2: MECHANICAL HAULAGE SIMULATION CONTROLS & TRIP DYNAMICS (Heading 1.1: Leads >= 1.0 km)'
+    p2_head.value = 'PANEL 2: OPERATIONAL & TRIP DYNAMICS (Site logistics, environmental mode & equipment cycles)'
     p2_head.font = styles['font_white_bold']
     p2_head.fill = styles['fill_header']
     p2_head.alignment = styles['align_left']
@@ -182,33 +194,33 @@ def build_carriage_trade(wb, config, styles):
         ws[f'{col}11'].border = styles['border_thin']
     ws.row_dimensions[11].height = 22
 
-    # Row 12: Operational Controls & Capacity Override
-    ws['A12'] = 'Billing Unit:'
+    # Row 12: Operational Environment & Distance Basis
+    ws['A12'] = 'Operational Mode:'
     ws['A12'].font = styles['font_bold']
     ws['A12'].alignment = styles['align_right']
-    ws['B12'] = config.get('default_basis_unit', 'metre')
+    ws['B12'] = 'STANDARD (DAYTIME)'
     ws['B12'].fill = styles['fill_input']
     ws['B12'].font = styles['font_bold']
     ws['B12'].alignment = styles['align_center']
-    dv_unit.add(ws['B12'])
+    dv_env_mode.add(ws['B12'])
 
-    ws['C12'] = 'Trip Mode Toggle:'
+    ws['C12'] = 'Fixed Trips Override:'
     ws['C12'].font = styles['font_bold']
     ws['C12'].alignment = styles['align_right']
-    ws['D12'] = 'FORMULA'
+    ws['D12'] = 3.00
     ws['D12'].fill = styles['fill_input']
     ws['D12'].font = styles['font_bold']
     ws['D12'].alignment = styles['align_center']
-    dv_mode.add(ws['D12'])
+    ws['D12'].number_format = '0.00'
 
-    ws['E12'] = 'Fixed Trips Override:'
+    ws['E12'] = 'Distance / Fuel Basis:'
     ws['E12'].font = styles['font_bold']
     ws['E12'].alignment = styles['align_right']
-    ws['F12'] = 3.00
+    ws['F12'] = 'DIRECT ROUTE (2NL + 6)'
     ws['F12'].fill = styles['fill_input']
     ws['F12'].font = styles['font_bold']
     ws['F12'].alignment = styles['align_center']
-    ws['F12'].number_format = '0.00'
+    dv_dist_basis.add(ws['F12'])
 
     ws['G12'] = 'Payload Override (C):'
     ws['G12'].font = styles['font_bold']
@@ -224,19 +236,18 @@ def build_carriage_trade(wb, config, styles):
     ws.row_dimensions[12].height = 22
 
     # Row 13: Vehicle Dynamics & Daily Outputs
-    ws['A13'] = 'Effective Payload (C):'
+    ws['A13'] = 'Billing / Basis Unit:'
     ws['A13'].font = styles['font_bold']
     ws['A13'].alignment = styles['align_right']
-    ws['B13'] = '=IF(H12>0, H12, H11)'
+    ws['B13'] = '=IFERROR(INDEX($E$88:$E$114, MATCH(D6, $B$88:$B$114, 0)), "cum")'
     ws['B13'].fill = styles['fill_calc']
     ws['B13'].font = styles['font_bold']
     ws['B13'].alignment = styles['align_center']
-    ws['B13'].number_format = '0.00'
 
-    ws['C13'] = 'Daily Calculated Trips (N):'
+    ws['C13'] = 'Daily Operational Trips (N):'
     ws['C13'].font = styles['font_bold']
     ws['C13'].alignment = styles['align_right']
-    ws['D13'] = '=IF(D12="FIXED TRIPS", F12, ROUND(8 / ((2 * B11 / D11) + F11), 2))'
+    ws['D13'] = '=IF(B12="URBAN RESTRICTED HOURS", D12, ROUND(8 / ((2 * B11 / D11) + F11), 2))'
     ws['D13'].fill = styles['fill_subtotal']
     ws['D13'].font = styles['font_bold']
     ws['D13'].alignment = styles['align_center']
@@ -245,7 +256,7 @@ def build_carriage_trade(wb, config, styles):
     ws['E13'] = 'Daily Distance Travelled:'
     ws['E13'].font = styles['font_bold']
     ws['E13'].alignment = styles['align_right']
-    ws['F13'] = '=ROUND((2 * D13 * B11) + 6.0, 2)'
+    ws['F13'] = '=IF(F12="CPWD PRO-RATA (Item 1.1.18)", ROUND(88.00 * (D13 / 4.10), 2), ROUND((2 * D13 * B11) + 6.0, 2))'
     ws['F13'].fill = styles['fill_subtotal']
     ws['F13'].font = styles['font_bold']
     ws['F13'].alignment = styles['align_center']
@@ -254,7 +265,7 @@ def build_carriage_trade(wb, config, styles):
     ws['G13'] = 'Total Daily Hauled Output:'
     ws['G13'].font = styles['font_bold']
     ws['G13'].alignment = styles['align_right']
-    ws['H13'] = '=ROUND(D13 * B13, 2)'
+    ws['H13'] = '=ROUND(D13 * IF(H12>0, H12, H11), 2)'
     ws['H13'].fill = styles['fill_result']
     ws['H13'].font = styles['font_bold']
     ws['H13'].alignment = styles['align_center']
@@ -327,9 +338,12 @@ def build_carriage_trade(wb, config, styles):
         cell.border = styles['border_header']
     ws.row_dimensions[17].height = 24
 
+    # Dynamic Beldar Formula driving labour gang based on Handling Scope in F6
+    beldar_scope_formula = '=IF(ISNUMBER(SEARCH("transporting only", F6)), 0, IF(ISNUMBER(SEARCH("machine loaded", F6)), 3, IF(ISNUMBER(SEARCH("excluding loading", F6)), 3, IF(ISNUMBER(SEARCH("railway siding", F6)), 3.75, IF(ISNUMBER(SEARCH("excluding stacking", F6)), 5, 6)))))'
+
     mech_resources = [
         {'code': '0084', 'qty_formula': 1.0, 'note': 'CPWD Note 5: Hire charges of Diesel Truck (9-tonne) excluding diesel & mobil oil (Code 0084)'},
-        {'code': '0114', 'qty_formula': 6.0, 'note': 'CPWD Note 5: Loading & unloading labour based on 1 gang of 6 Beldars per truck (Code 0114)'},
+        {'code': '0114', 'qty_formula': beldar_scope_formula, 'note': 'CPWD Note 5: Labour gang scaled by Panel 1 Scope: 6 (Turnkey), 5 (No Stack), 3 (Machine Loaded), 0 (Haulage Only)'},
         {'code': '1235', 'qty_formula': '=F14', 'note': 'CPWD Note 3: Diesel consumed = Distance travelled / 5.0 km/L (linked to cell F14)'},
         {'code': '5001', 'qty_formula': '=H14', 'note': 'CPWD Note 4: Mobil oil consumed = Distance travelled / 140.0 km/L (linked to cell H14)'}
     ]
@@ -360,8 +374,9 @@ def build_carriage_trade(wb, config, styles):
             c_qty.value = None
         c_qty.alignment = styles['align_right']
         c_qty.number_format = styles['fmt_qty']
-        if r in [20, 21]:
+        if r in [19, 20, 21]:
             c_qty.fill = styles['fill_calc']
+            c_qty.font = styles['font_bold']
         else:
             c_qty.fill = styles['fill_input']
 
@@ -539,20 +554,20 @@ def build_carriage_trade(wb, config, styles):
     ws['A40'] = '-'
     ws['B40'] = 'Analyzed Unit Rate per Billing Unit'
     ws['C40'] = '-'
-    ws['D40'] = 'Z / Total Output'
+    ws['D40'] = 'Z / Total Output + Fee'
     ws['E40'] = '=G38'
     ws['F40'] = '=H13'
-    ws['G40'] = '=ROUND(G38 / H13, 2)'
-    ws['H40'] = 'Derived cost per individual billing unit (e.g. per metre, per cum, per tonne)'
+    ws['G40'] = '=ROUND((G38 / H13) + B7, 2)'
+    ws['H40'] = 'Derived cost per individual billing unit including optional municipal tipping/gate fee'
 
     # Row 41: Rate per Schedule Output Unit (100 m / 1000 Nos)
     ws['A41'] = '-'
     ws['B41'] = 'Rate per Schedule Output Unit (100 m / 1000 Nos)'
     ws['C41'] = '-'
     ws['D41'] = 'Basis Unit'
-    ws['E41'] = '=B12'
+    ws['E41'] = '=B13'
     ws['F41'] = '-'
-    ws['G41'] = '=IF(OR(B12="100 m", B12="1000 Nos"), ROUND(G40 * 100, 2), G40)'
+    ws['G41'] = '=IF(OR(B13="100 m", B13="1000 Nos"), ROUND(G40 * 100, 2), G40)'
     ws['H41'] = 'Schedule rate formatted to CPWD DAR basis (e.g. per 100m for pipes, per 1000 for bricks)'
 
     # Row 42: OFFICIAL CPWD SAY RATE CALLOUT
@@ -562,7 +577,7 @@ def build_carriage_trade(wb, config, styles):
     ws['D42'] = 'Rounded per CPWD'
     ws['E42'] = '-'
     ws['F42'] = '-'
-    ws['G42'] = '=IF(OR(B12="100 m", B12="1000 Nos"), ROUND(G41, 0), ROUND(G40, 2))'
+    ws['G42'] = '=IF(OR(B13="100 m", B13="1000 Nos"), ROUND(G41, 0), ROUND(G40, 2))'
     ws['H42'] = 'Final analytical rate ready for integration into BOQ and project cost estimates'
 
     for r in range(31, 43):
@@ -956,27 +971,23 @@ def build_carriage_trade(wb, config, styles):
                 cell.font = styles['font_regular']
         ws.row_dimensions[r].height = 20
 
-    # Register Defined Name for Material Dropdown (Rows 88 to 114)
-    table_start = 88
-    table_end = 88 + len(capacities_table) - 1
-    if 'CPWD_Carriage_Materials' in wb.defined_names:
-        del wb.defined_names['CPWD_Carriage_Materials']
-    wb.defined_names.add(DefinedName('CPWD_Carriage_Materials', attr_text=f"'{config['sheet_name']}'!$B${table_start}:$B${table_end}"))
+    # Named Range for Materials
+    wb.defined_names.add(DefinedName('CPWD_Carriage_Materials', attr_text=f"'{config['sheet_name']}'!$B$88:$B$114"))
 
     # Spacer Row 115
     ws.row_dimensions[115].height = 10
 
-    # --- 4C: CPWD TABLE 1.2 MANUAL LABOUR GROUND-TRUTH MATRIX (Rows 116-143) ---
+    # --- 4C: CPWD TABLE 1.2 MANUAL LABOUR REFERENCE (Rows 116-125) ---
     ws.merge_cells('A116:H116')
     c_sec4c = ws['A116']
-    c_sec4c.value = '4C. CPWD DAR TABLE 1.2 MANUAL LABOUR GROUND-TRUTH MATRIX (< 0.50 km Standards)'
+    c_sec4c.value = '4C. CPWD DAR TABLE 1.2 MANUAL LABOUR REFERENCE (Labour Norms & Rates for Lead < 0.50 km)'
     c_sec4c.font = styles['font_white_bold']
     c_sec4c.fill = styles['fill_header']
     c_sec4c.alignment = styles['align_left']
     ws.row_dimensions[116].height = 22
 
-    man_headers = ['DAR Code', 'Material Specification', '8-Hour Capacity', 'Net Payable Qty', 'Unit of Rate', 'Cost for 1st 50 m (Rs)', 'Cost for Addl 50 m (Rs)', 'CPWD DAR Labour Composition']
-    for c_idx, h in enumerate(man_headers, 1):
+    manual_headers = ['Item No.', 'Material / Specification', 'Capacity / Day', 'Unit', 'Base Cost 1st 50m (Rs)', 'Cost / 1st 50m (Rs)', 'Addl Cost / 50m (Rs)', 'CPWD Labour Norms']
+    for c_idx, h in enumerate(manual_headers, 1):
         cell = ws.cell(row=117, column=c_idx, value=h)
         cell.font = styles['font_header']
         cell.fill = styles['fill_header']
@@ -984,59 +995,37 @@ def build_carriage_trade(wb, config, styles):
         cell.border = styles['border_header']
     ws.row_dimensions[117].height = 24
 
-    manual_table_data = [
-        ('1.2.1', 'Lime, moorum, building rubbish, malba', 35.00, 35.00, 'cum', 140.62, 30.62, '7.67 Beldars @ Rs 558 + 15% CPOH (Addl: 1.67 Coolies)'),
-        ('1.2.2', 'Earth (excavated soil / good earth)', 35.00, 28.00, 'cum', 175.78, 38.27, '20% looseness deduction (Net = 28 cum)'),
-        ('1.2.3', 'Manure or sludge', 35.00, 32.20, 'cum', 152.85, 33.28, '8% looseness deduction (Net = 32.2 cum)'),
-        ('1.2.4', 'Excavated rock', 35.00, 17.50, 'cum', 281.25, 61.24, '50% voids deduction (Net = 17.5 cum)'),
-        ('1.2.5', 'Sand, stone aggregate below 40 mm', 28.00, 28.00, 'cum', 175.78, 38.27, '28 cum density norm (Nil looseness)'),
-        ('1.2.6', 'Stone aggregate 40 mm & above', 28.00, 25.90, 'cum', 190.03, 41.38, '8% voids deduction (Net = 25.9 cum)'),
-        ('1.2.7', 'Soling stone & masonry stone', 28.00, 23.80, 'cum', 206.80, 45.03, '15% voids deduction (Net = 23.8 cum)'),
-        ('1.2.8', 'Bricks (conventional / modular)', 15000.0, 15000.0, '1000 Nos', 328.12, 71.44, '15,000 Bricks per 8 hours manual gang'),
-        ('1.2.9', 'Brick tiles / roofing tiles', 24000.0, 24000.0, '1000 Nos', 205.08, 44.65, '24,000 Tiles per 8 hours manual gang'),
-        ('1.2.10', 'Steam coal', 30.00, 30.00, 'tonne', 164.06, 35.72, '30 tonnes per 8 hours manual gang'),
-        ('1.2.11', 'Stone blocks, pipes <100mm, heavy items', 46.00, 46.00, 'tonne', 128.34, 18.83, 'Category B: 9.20 Beldars 1st 50m (+1.35 Beldars addl)'),
-        ('1.2.12', 'Cement in bags', 57.99, 57.99, 'tonne', 101.80, 14.94, '57.99 tonnes (approx 1,160 bags) per shift'),
-        ('1.2.13', 'Steel bars & structural steel', 27.00, 27.00, 'tonne', 218.65, 32.09, '27 tonnes steel shifting per 8 hours shift'),
-        ('1.2.14', 'Timber scantlings & logs', 42.00, 42.00, 'cum', 140.56, 20.63, '42 cum timber manual haulage per shift'),
-        ('1.2.15', 'Tar, bitumen in drums', 46.00, 46.00, 'tonne', 128.34, 18.83, '46 tonnes drum handling per shift'),
-        ('1.2.16.1', 'S.W. pipes 100 mm dia', 2298.0, 2298.0, '100 m', 256.90, 37.70, '2,298 metres manual carrying per shift'),
-        ('1.2.16.2', 'S.W. pipes 150 mm dia', 1398.0, 1398.0, '100 m', 422.29, 61.97, '1,398 metres manual carrying per shift'),
-        ('1.2.16.3', 'S.W. pipes 200 mm dia', 999.0, 999.0, '100 m', 590.95, 86.72, '999 metres manual carrying per shift'),
-        ('1.2.16.5', 'S.W. pipes 250 mm dia', 600.0, 600.0, '100 m', 983.94, 144.38, '600 metres manual carrying per shift'),
-        ('1.2.17.1', 'R.C.C. pipes 100 mm dia', 1702.0, 1702.0, '100 m', 346.86, 50.90, '1,702 metres manual carrying per shift'),
-        ('1.2.17.2', 'R.C.C. pipes 125 mm dia', 1391.0, 1391.0, '100 m', 424.42, 62.28, '1,391 metres manual carrying per shift'),
-        ('1.2.17.3', 'R.C.C. pipes 150 mm dia', 1208.0, 1208.0, '100 m', 488.71, 71.71, '1,208 metres manual carrying per shift'),
-        ('1.2.17.4', 'R.C.C. pipes 200 mm dia', 805.0, 805.0, '100 m', 733.37, 107.61, '805 metres manual carrying per shift'),
-        ('1.2.17.5', 'R.C.C. pipes 250 mm dia', 458.0, 458.0, '100 m', 1289.00, 189.15, '458 metres manual carrying per shift'),
-        ('1.2.17.6', 'R.C.C. pipes 300 mm dia', 366.0, 366.0, '100 m', 1613.02, 236.69, '366 metres manual carrying per shift'),
-        ('1.2.17.10', 'R.C.C. pipes 600, 700, 750 & 800 mm dia', 150.0, 150.0, '100 m', 3935.76, 577.53, '150 metres manual carrying per shift')
+    manual_records = [
+        ('1.2.1', 'Lime, moorum, building rubbish', 35.0, 'cum', 4921.84, 140.62, 30.62, '7.67 Beldars 1st 50m, 1.67 addl coolie/50m'),
+        ('1.2.2', 'Earth (20% looseness deduction)', 28.0, 'cum', 4921.84, 175.78, 38.27, '7.67 Beldars 1st 50m, 1.67 addl coolie/50m'),
+        ('1.2.8', 'Bricks (standard modular)', 15000.0, '1000 Nos', 4921.84, 328.12, 71.44, '7.67 Beldars 1st 50m, 1.67 addl coolie/50m'),
+        ('1.2.11', 'Stone blocks, G.I., C.I., pipes <100mm', 46.0, 'tonne', 5903.64, 128.34, 18.83, '9.20 Beldars 1st 50m, 1.35 addl coolie/50m'),
+        ('1.2.12', 'Cement in bags', 57.99, 'tonne', 5903.64, 101.80, 14.94, '9.20 Beldars 1st 50m, 1.35 addl coolie/50m'),
+        ('1.2.17.1', 'R.C.C./C.I. pipes 100mm dia', 1702.0, '100 m', 5903.64, 346.86, 50.90, '9.20 Beldars 1st 50m, 1.35 addl coolie/50m')
     ]
 
-    for idx, mrow in enumerate(manual_table_data):
+    for idx, m_rec in enumerate(manual_records):
         r = 118 + idx
-        ws.cell(row=r, column=1, value=mrow[0]).alignment = styles['align_center']
+        ws.cell(row=r, column=1, value=m_rec[0]).alignment = styles['align_center']
         ws.cell(row=r, column=1).font = styles['font_bold']
 
-        ws.cell(row=r, column=2, value=mrow[1]).alignment = styles['align_left']
+        ws.cell(row=r, column=2, value=m_rec[1]).alignment = styles['align_left']
 
-        ws.cell(row=r, column=3, value=mrow[2]).alignment = styles['align_right']
+        ws.cell(row=r, column=3, value=m_rec[2]).alignment = styles['align_right']
         ws.cell(row=r, column=3).number_format = '0.00'
 
-        ws.cell(row=r, column=4, value=mrow[3]).alignment = styles['align_right']
-        ws.cell(row=r, column=4).number_format = '0.00'
+        ws.cell(row=r, column=4, value=m_rec[3]).alignment = styles['align_center']
 
-        ws.cell(row=r, column=5, value=mrow[4]).alignment = styles['align_center']
+        ws.cell(row=r, column=5, value=m_rec[4]).alignment = styles['align_right']
+        ws.cell(row=r, column=5).number_format = styles['fmt_currency']
 
-        c_mcost1 = ws.cell(row=r, column=6, value=mrow[5])
-        c_mcost1.alignment = styles['align_right']
-        c_mcost1.number_format = styles['fmt_currency']
+        ws.cell(row=r, column=6, value=m_rec[5]).alignment = styles['align_right']
+        ws.cell(row=r, column=6).number_format = styles['fmt_currency']
 
-        c_mcost2 = ws.cell(row=r, column=7, value=mrow[6])
-        c_mcost2.alignment = styles['align_right']
-        c_mcost2.number_format = styles['fmt_currency']
+        ws.cell(row=r, column=7, value=m_rec[6]).alignment = styles['align_right']
+        ws.cell(row=r, column=7).number_format = styles['fmt_currency']
 
-        ws.cell(row=r, column=8, value=mrow[7]).alignment = styles['align_left']
+        ws.cell(row=r, column=8, value=m_rec[7]).alignment = styles['align_left']
         ws.cell(row=r, column=8).font = styles['font_note']
 
         row_fill = styles['fill_subtotal'] if r % 2 == 0 else styles['fill_calc']
@@ -1044,130 +1033,117 @@ def build_carriage_trade(wb, config, styles):
             cell = ws.cell(row=r, column=c)
             cell.fill = row_fill
             cell.border = styles['border_thin']
-            if c not in [1, 6, 7]:
-                cell.font = styles['font_regular']
         ws.row_dimensions[r].height = 20
 
-    # Spacer Row 144
-    ws.row_dimensions[144].height = 12
+    # Spacer Row 124
+    ws.row_dimensions[124].height = 10
 
-    # =========================================================================
-    # SECTION 5: RUNNING CUSTOM NON-DSR CARRIAGE LIBRARY (Rows 145-159)
-    # =========================================================================
-    ws.merge_cells('A145:H145')
-    c_sec5 = ws['A145']
-    c_sec5.value = '5. RUNNING CUSTOM NON-DSR ITEMS LIBRARY FOR CARRIAGE (Mechanical & Manual)'
-    c_sec5.font = styles['font_white_bold']
-    c_sec5.fill = styles['fill_header']
-    c_sec5.alignment = styles['align_left']
-    ws.row_dimensions[145].height = 24
+    # --- 4D: HANDLING SCOPE LABOUR GANG ALLOCATION MATRIX (Rows 125-134) ---
+    ws.merge_cells('A125:H125')
+    c_sec4d = ws['A125']
+    c_sec4d.value = '4D. CPWD HANDLING SCOPE LABOUR GANG ALLOCATION MATRIX (Engineering Rationale for Cell E19)'
+    c_sec4d.font = styles['font_white_bold']
+    c_sec4d.fill = styles['fill_header']
+    c_sec4d.alignment = styles['align_left']
+    ws.row_dimensions[125].height = 22
 
-    ws.merge_cells('A146:H146')
-    c_linst = ws['A146']
-    c_linst.value = 'Log and save completed custom haulage rate analyses (Mechanical or Manual) below for immediate reference across project estimates.'
-    c_linst.font = styles['font_note']
-    c_linst.fill = styles['fill_note']
-    c_linst.alignment = styles['align_left']
-    ws.row_dimensions[146].height = 20
-
-    lib_headers = ['Item Code', 'Item Nomenclature / Specification', 'Unit', 'Output Basis', 'Direct Cost W (Rs)', 'Markups Applied', 'Unit Rate (Rs)', 'Say Rate (Rs)']
-    for c_idx, h in enumerate(lib_headers, 1):
-        cell = ws.cell(row=147, column=c_idx, value=h)
+    scope_headers = ['Scope Option (Panel 1 Cell F6)', 'Beldar Gang', 'Loading Labour', 'Unloading Labour', 'Stacking Labour', 'Daily Labour Cost (Rs)', 'Direct Shift Cost (Rs)', 'Engineering Operational Rationale']
+    for c_idx, h in enumerate(scope_headers, 1):
+        cell = ws.cell(row=126, column=c_idx, value=h)
         cell.font = styles['font_header']
         cell.fill = styles['fill_header']
         cell.alignment = styles['align_center']
         cell.border = styles['border_header']
-    ws.row_dimensions[147].height = 24
+    ws.row_dimensions[126].height = 24
 
-    combined_lib = [
-        {'code': '1.1.18', 'desc': 'Disposal of building malba by mechanical transport - lead 10 km (Restricted urban 3 trips, 8 cum/trip)', 'unit': 'cum', 'basis': 24.0, 'w': 5939.58, 'markups': '15% CPOH only', 'rate': 284.60, 'say': 284.60},
-        {'code': '1.1.17.12-VAR', 'desc': 'Transport of 1000, 1100 & 1200 mm dia pipes - lead 26 km (N=2.86 trips, Speed 29 km/h, Payload 10.98 m/trip)', 'unit': 'metre', 'basis': 31.40, 'w': 7470.17, 'markups': '15% CPOH only', 'rate': 273.56, 'say': 273.60},
-        {'code': '1.1.1', 'desc': 'Carriage of Lime, moorum, building rubbish by mechanical transport - lead 5 km (N=5.19 trips, 8 cum/trip)', 'unit': 'cum', 'basis': 41.52, 'w': 5829.54, 'markups': '15% CPOH only', 'rate': 161.46, 'say': 161.50},
-        {'code': '1.2.1', 'desc': 'Manual carriage of lime, moorum, rubbish for lead upto 50 metres (Category A)', 'unit': 'cum', 'basis': 35.0, 'w': 4279.86, 'markups': '15% CPOH only', 'rate': 140.62, 'say': 140.60},
-        {'code': '1.2.13', 'desc': 'Manual carriage of steel bars & structural steel for lead upto 50 metres (Category B)', 'unit': 'tonne', 'basis': 27.0, 'w': 5133.60, 'markups': '15% CPOH only', 'rate': 218.65, 'say': 218.65},
-        {'code': '1.2.17.1', 'desc': 'Manual carriage of R.C.C. pipes 100 mm dia for lead upto 100 metres (Category B)', 'unit': '100 m', 'basis': 17.02, 'w': 5886.90, 'markups': '15% CPOH only', 'rate': 397.76, 'say': 397.75}
+    scope_records = [
+        ('including loading, transporting, unloading and stacking', 6.00, '3.00 Beldars', '2.00 Beldars', '1.00 Beldar', 3348.00, 5939.58, 'CPWD Item 1.1.1 baseline turnkey manual handling.'),
+        ('including loading, transporting, unloading to approved municipal dumping ground', 6.00, '3.00 Beldars', '2.00 Beldars', '1.00 Beldar', 3348.00, 5939.58, 'CPWD Item 1.1.18 benchmark for urban malba/rubbish disposal.'),
+        ('including loading, transporting and unloading (excluding stacking)', 5.00, '3.00 Beldars', '2.00 Beldars', '0.00 Beldars', 2790.00, 5381.58, 'Bulk delivery / dumping; manual stacking omitted.'),
+        ('transporting and unloading only (machine loaded / excluding loading)', 3.00, '0.00 Beldars', '2.00 Beldars', '1.00 Beldar', 1674.00, 4265.58, 'Loaded by excavator/JCB (Sub-Head 02); manual loading excluded.'),
+        ('transporting only (excluding loading, unloading and stacking)', 0.00, '0.00 Beldars', '0.00 Beldars', '0.00 Beldars', 0.00, 2591.58, 'Pure haulage; machine loaded at source and tipper unloaded at site.'),
+        ('including unloading and stacking at railway siding', 3.75, '0.00 Beldars', '2.50 Beldars', '1.25 Beldars', 2092.50, 4684.08, 'CPWD Item 1.3 / 1.4 standard for railway wagon godown siding.')
     ]
 
-    for idx in range(12):
-        r = 148 + idx
-        item = combined_lib[idx] if idx < len(combined_lib) else None
+    for idx, s_rec in enumerate(scope_records):
+        r = 127 + idx
+        ws.cell(row=r, column=1, value=s_rec[0]).alignment = styles['align_left']
+        ws.cell(row=r, column=2, value=s_rec[1]).alignment = styles['align_center']
+        ws.cell(row=r, column=2).number_format = '0.00'
+        ws.cell(row=r, column=2).font = styles['font_bold']
 
-        ws.cell(row=r, column=1, value=item['code'] if item else f"C-01.{idx+1:02d}").alignment = styles['align_center']
-        ws.cell(row=r, column=2, value=item['desc'] if item else '(Available for new custom carriage analysis)').alignment = styles['align_left']
-        ws.cell(row=r, column=3, value=item['unit'] if item else 'cum').alignment = styles['align_center']
-        ws.cell(row=r, column=4, value=item['basis'] if item else 1.0).alignment = styles['align_center']
+        ws.cell(row=r, column=3, value=s_rec[2]).alignment = styles['align_center']
+        ws.cell(row=r, column=4, value=s_rec[3]).alignment = styles['align_center']
+        ws.cell(row=r, column=5, value=s_rec[4]).alignment = styles['align_center']
 
-        c_w = ws.cell(row=r, column=5, value=item['w'] if item else None)
-        c_w.alignment = styles['align_right']
-        c_w.number_format = styles['fmt_currency']
+        c_scost = ws.cell(row=r, column=6, value=s_rec[5])
+        c_scost.alignment = styles['align_right']
+        c_scost.number_format = styles['fmt_currency']
 
-        ws.cell(row=r, column=6, value=item['markups'] if item else '15% CPOH only').alignment = styles['align_center']
+        c_dcost = ws.cell(row=r, column=7, value=s_rec[6])
+        c_dcost.alignment = styles['align_right']
+        c_dcost.number_format = styles['fmt_currency']
+        c_dcost.font = styles['font_bold']
 
-        c_rate = ws.cell(row=r, column=7, value=item['rate'] if item else None)
-        c_rate.alignment = styles['align_right']
-        c_rate.number_format = styles['fmt_currency']
-
-        c_say = ws.cell(row=r, column=8, value=item['say'] if item else None)
-        c_say.alignment = styles['align_right']
-        c_say.number_format = styles['fmt_currency']
-        c_say.font = styles['font_bold']
+        c_srat = ws.cell(row=r, column=8, value=s_rec[7])
+        c_srat.alignment = styles['align_left']
+        c_srat.font = styles['font_note']
 
         row_fill = styles['fill_subtotal'] if r % 2 == 0 else styles['fill_calc']
         for c in range(1, 9):
             cell = ws.cell(row=r, column=c)
             cell.fill = row_fill
             cell.border = styles['border_thin']
-            if c not in [1, 8]:
-                cell.font = styles['font_regular']
         ws.row_dimensions[r].height = 20
 
-    # Column Widths optimized for readability
-    ws.column_dimensions['A'].width = 16
-    ws.column_dimensions['B'].width = 28
-    ws.column_dimensions['C'].width = 36
-    ws.column_dimensions['D'].width = 18
-    ws.column_dimensions['E'].width = 22
-    ws.column_dimensions['F'].width = 18
-    ws.column_dimensions['G'].width = 22
-    ws.column_dimensions['H'].width = 48
+    # Column Widths
+    col_widths = {
+        'A': 24,
+        'B': 24,
+        'C': 26,
+        'D': 24,
+        'E': 26,
+        'F': 24,
+        'G': 24,
+        'H': 46
+    }
+    for col, width in col_widths.items():
+        ws.column_dimensions[col].width = width
 
-    # =========================================================================
-    # CELL PROTECTION CONFIGURATION (MS Excel 2016 Compliant)
-    # =========================================================================
+    # Lock all cells by default, then unlock user editable cells
     for r in range(1, ws.max_row + 1):
         for c in range(1, ws.max_column + 1):
             ws.cell(row=r, column=c).protection = Protection(locked=True)
 
-    # Panel 1 Unlocked User Inputs
-    ws['B6'].protection = Protection(locked=False) # Custom Item Code
-    ws['D6'].protection = Protection(locked=False) # Material Dropdown
-    ws['F6'].protection = Protection(locked=False) # Handling Scope Dropdown
-    ws['H6'].protection = Protection(locked=False) # Lift Condition Dropdown
-    ws['B7'].protection = Protection(locked=False) # Manual Override (Optional)
+    # Unlock Panel 1 inputs
+    ws['B6'].protection = Protection(locked=False) # Item Code
+    ws['D6'].protection = Protection(locked=False) # Material Commodity
+    ws['F6'].protection = Protection(locked=False) # Handling Scope
+    ws['H6'].protection = Protection(locked=False) # Lift Condition
+    ws['B7'].protection = Protection(locked=False) # Municipal Gate Fee
+    ws['D7'].protection = Protection(locked=False) # Manual Override
 
-    # Panel 2 Unlocked User Inputs
+    # Unlock Panel 2 inputs
     ws['B11'].protection = Protection(locked=False) # Lead Distance (L)
-    ws['D11'].protection = Protection(locked=False) # Speed (S)
-    ws['F11'].protection = Protection(locked=False) # Turnaround (T)
-    ws['B12'].protection = Protection(locked=False) # Billing Unit
-    ws['D12'].protection = Protection(locked=False) # Trip Mode Toggle
-    ws['F12'].protection = Protection(locked=False) # Fixed Trips Override
-    ws['H12'].protection = Protection(locked=False) # Payload Override (C)
+    ws['D11'].protection = Protection(locked=False) # Average Speed (S)
+    ws['F11'].protection = Protection(locked=False) # Turnaround Time (T)
+    ws['B12'].protection = Protection(locked=False) # Operational Mode
+    ws['D12'].protection = Protection(locked=False) # Fixed Trips Override
+    ws['F12'].protection = Protection(locked=False) # Distance Basis
+    ws['H12'].protection = Protection(locked=False) # Payload Override
 
-    # Section 1 Unlocked Inputs
-    for r in range(18, 26):
+    # Unlock Section 1 custom resource lines (rows 22-25)
+    for r in range(22, 26):
         ws.cell(row=r, column=2).protection = Protection(locked=False) # Code
-        if r not in [20, 21]: # Rows 20 (Diesel) and 21 (Mobil Oil) are formula-driven locked
-            ws.cell(row=r, column=5).protection = Protection(locked=False) # Qty
-        ws.cell(row=r, column=8).protection = Protection(locked=False) # Remarks
+        ws.cell(row=r, column=5).protection = Protection(locked=False) # Qty
 
-    # Section 2 Toggles
+    # Unlock Section 2 statutory toggles
     ws['C32'].protection = Protection(locked=False)
     ws['C34'].protection = Protection(locked=False)
     ws['C36'].protection = Protection(locked=False)
     ws['C37'].protection = Protection(locked=False)
 
-    # Section 3 Manual Calculator Inputs
+    # Unlock Section 3 Manual Labour inputs
     ws['B46'].protection = Protection(locked=False)
     ws['D46'].protection = Protection(locked=False)
     ws['F46'].protection = Protection(locked=False)
@@ -1175,11 +1151,5 @@ def build_carriage_trade(wb, config, styles):
     ws['B48'].protection = Protection(locked=False)
     ws['D48'].protection = Protection(locked=False)
 
-    # Section 5 Saved Library Rows
-    for r in range(148, 160):
-        for c in range(1, 9):
-            ws.cell(row=r, column=c).protection = Protection(locked=False)
-
     ws.protection.sheet = True
-    ws.freeze_panes = 'A5'
-    print('Built Smart Carriage Trade Sheet with Material Selector & Clean Layout Reorganization.')
+    ws.freeze_panes = 'A4'

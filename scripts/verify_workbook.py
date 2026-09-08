@@ -200,18 +200,19 @@ def run_audits():
     # Check key simulation formulas
     carr_expected_formulas = {
         "H11": '=IFERROR(INDEX($C$88:$C$114, MATCH(D6, $B$88:$B$114, 0)), 10.98)',
-        "B13": '=IF(H12>0, H12, H11)',
-        "D13": '=IF(D12="FIXED TRIPS", F12, ROUND(8 / ((2 * B11 / D11) + F11), 2))',
-        "F13": '=ROUND((2 * D13 * B11) + 6.0, 2)',
-        "H13": '=ROUND(D13 * B13, 2)',
+        "B13": '=IFERROR(INDEX($E$88:$E$114, MATCH(D6, $B$88:$B$114, 0)), "cum")',
+        "D13": '=IF(B12="URBAN RESTRICTED HOURS", D12, ROUND(8 / ((2 * B11 / D11) + F11), 2))',
+        "F13": '=IF(F12="CPWD PRO-RATA (Item 1.1.18)", ROUND(88.00 * (D13 / 4.10), 2), ROUND((2 * D13 * B11) + 6.0, 2))',
+        "H13": '=ROUND(D13 * IF(H12>0, H12, H11), 2)',
         "F14": '=ROUND(F13 / 5.0, 2)',
         "H14": '=ROUND(F13 / 140.0, 3)',
+        "E19": '=IF(ISNUMBER(SEARCH("transporting only", F6)), 0, IF(ISNUMBER(SEARCH("machine loaded", F6)), 3, IF(ISNUMBER(SEARCH("excluding loading", F6)), 3, IF(ISNUMBER(SEARCH("railway siding", F6)), 3.75, IF(ISNUMBER(SEARCH("excluding stacking", F6)), 5, 6)))))',
         "E20": '=F14',
         "E21": '=H14',
         "G26": '=SUM(G18:G25)',
         "G27": '=ROUND(G26 / D13, 2)',
-        "G40": '=ROUND(G38 / H13, 2)',
-        "B8": '=IF(B7<>"","" & B7,"Carriage of " & D6 & " by mechanical transport " & F6 & " for lead upto " & TEXT(B11, "0.00") & " km " & H6 & ", complete as per directions of Engineer-in-charge.")'
+        "G40": '=ROUND((G38 / H13) + B7, 2)',
+        "B8": '=IF(D7<>"","" & D7,"Carriage of " & D6 & " by mechanical transport " & F6 & " for lead upto " & TEXT(B11, "0.00") & " km " & H6 & IF(B7>0, ", including municipal tipping royalty/gate fee of Rs " & TEXT(B7, "0.00") & " per " & B13, "") & ", complete as per directions of Engineer-in-charge.")'
     }
     
     for cell_ref, exp_f in carr_expected_formulas.items():
@@ -231,17 +232,17 @@ def run_audits():
     if carr_ws["D11"].value != 29.0:
         carr_checks.append(f"Speed D11 expected 29.0, got {carr_ws['D11'].value}")
         
-    # Check presence of Section 4A (Data Sheet 1 benchmark 1-30 km) and Section 4B (Capacities)
+    # Check presence of Section 4A, 4B, 4C, 4D
     if "DATA SHEET NO. 1" not in str(carr_ws["A52"].value or ""):
         carr_checks.append(f"Section 4A header missing Data Sheet No. 1 benchmark, got: '{carr_ws['A52'].value}'")
     if "MATERIAL PAYLOAD CAPACITIES MATRIX" not in str(carr_ws["A86"].value or ""):
         carr_checks.append(f"Section 4B header missing Material Payload Capacities Matrix, got: '{carr_ws['A86'].value}'")
-        
-    # Check Heading 1.2 Manual Labour Carriage (Section 3 & 4C)
     if "HEADING 1.2: MANUAL LABOUR CARRIAGE CALCULATOR" not in str(carr_ws["A44"].value or ""):
         carr_checks.append(f"Section 3 header missing Manual Labour Carriage Calculator, got: '{carr_ws['A44'].value}'")
     if "CPWD DAR TABLE 1.2 MANUAL LABOUR" not in str(carr_ws["A116"].value or ""):
         carr_checks.append(f"Section 4C header missing Table 1.2 Manual Labour Matrix, got: '{carr_ws['A116'].value}'")
+    if "CPWD HANDLING SCOPE LABOUR GANG ALLOCATION MATRIX" not in str(carr_ws["A125"].value or ""):
+        carr_checks.append(f"Section 4D header missing Handling Scope Matrix, got: '{carr_ws['A125'].value}'")
     if carr_ws["D46"].value != "Category B (Heavy / Pipes / Steel)":
         carr_checks.append(f"Manual category D46 expected Category B, got {carr_ws['D46'].value}")
     if carr_ws["F46"].value != 100:
@@ -249,10 +250,12 @@ def run_audits():
         
     if not carr_checks:
         print("  [PASS] Carriage Simulator formulas strictly match CPWD DAR Notes 1-5.")
-        print("  [PASS] Smart Material Selector & Automated Nomenclature formula verified.")
+        print("  [PASS] Two-Panel Bifurcated Input Architecture & Automated Nomenclature verified.")
+        print("  [PASS] Dynamic Handling Scope Labour Gang Allocation (Cell E19) verified.")
         print("  [PASS] Default simulation parameters verified: Lead 26.0 km, Speed 29.0 km/h, Payload 10.98 m.")
         print("  [PASS] 1-30 km Data Sheet 1 benchmark and Table 1.1 material capacities verified.")
         print("  [PASS] Heading 1.2 Manual Labour Calculator (<0.50 km) and Table 1.2 Matrix verified.")
+        print("  [PASS] Section 4D Handling Scope Labour Gang Allocation Matrix verified.")
         passed_checks += 1
     else:
         print(f"  [FAIL] Carriage Simulator verification issues ({len(carr_checks)}): {carr_checks}")
