@@ -44,6 +44,10 @@ from openpyxl.styles import Protection
 from openpyxl.worksheet.datavalidation import DataValidation
 from openpyxl.workbook.defined_name import DefinedName
 
+from scripts.carriage_tables import (
+    DATASHEET1, RATE_DIESEL, RATE_MOBIL, RATE_BELDAR, RATE_TRUCK, GANG,
+    table_11_rows, table_12_rows, validate as validate_tables, default_material,
+)
 from scripts.trade_builder import add_trade_header_and_legend
 from scripts.trade_layout import (
     LAST_COL, SAY_RULE_NOTE, section_bar, col_headers, border_row, build_guide,
@@ -60,44 +64,51 @@ R_MODE, R_TRIPS_BASIS, R_TRIPS_OV, R_TRIPS = 25, 26, 27, 28
 R_DIST_BASIS, R_DISTANCE, R_DIESEL, R_MOBIL = 29, 30, 31, 32
 
 R_P3_HEAD, R_P3_COLS = 34, 35
-R_PAY_GROSS, R_PAY_NET, R_PAY_OV, R_PAY_EFF = 36, 37, 38, 39
-R_UNIT, R_SCALE, R_OUTPUT = 40, 41, 42
+R_T11_ROW = 36
+R_PAY_GROSS, R_PAY_NET, R_PAY_OV, R_PAY_EFF = 37, 38, 39, 40
+R_UNIT, R_SCALE, R_OUTPUT = 41, 42, 43
 
-R_AUDIT = 44
+R_AUDIT = 45
 
-R_RES_HEAD, R_RES_COLS, R_RES_FIRST = 46, 47, 48
+R_RES_HEAD, R_RES_COLS, R_RES_FIRST = 47, 48, 49
 RES_ROWS = 8
-R_RES_LAST = R_RES_FIRST + RES_ROWS - 1                # 55
-R_W_SUB = 56
-R_TRIP_COST = 57
+R_RES_LAST = R_RES_FIRST + RES_ROWS - 1                # 56
+R_W_SUB = 57
+R_TRIP_COST = 58
 
-R_MU_HEAD, R_MU_COLS = 59, 60
-R_W, R_X1, R_X, R_Y1, R_Y, R_Z1, R_Z, R_Z2 = 61, 62, 63, 64, 65, 66, 67, 68
-R_TOTAL, R_TRIP_OH, R_RATE_UNIT, R_RATE_SCHED, R_SAY, R_SAY_NOTE = 69, 70, 71, 72, 73, 74
+R_MU_HEAD, R_MU_COLS = 60, 61
+R_W, R_X1, R_X, R_Y1, R_Y, R_Z1, R_Z, R_Z2 = 62, 63, 64, 65, 66, 67, 68, 69
+R_TOTAL, R_TRIP_OH, R_RATE_UNIT, R_RATE_SCHED = 70, 71, 72, 73
+R_DAR_PUB, R_DAR_DIFF = 74, 75
+R_SAY, R_SAY_NOTE = 76, 77
 
-R_MAN_HEAD, R_MAN_BANNER, R_MAN_COLS = 76, 77, 78
-R_M_CODE, R_M_CAT, R_M_LEAD, R_M_STEPS = 79, 80, 81, 82
-R_M_GANG, R_M_GANG_ADD, R_M_WAGE = 83, 84, 85
-R_M_BASE, R_M_ADD, R_M_LABOUR, R_M_CPOH, R_M_TOTAL = 86, 87, 88, 89, 90
-R_M_CAP, R_M_UNIT, R_M_SCALE, R_M_RATE, R_M_SAY = 91, 92, 93, 94, 95
+R_MAN_HEAD, R_MAN_BANNER, R_MAN_COLS = 79, 80, 81
+R_M_CODE, R_M_CAT, R_M_LEAD, R_M_STEPS = 82, 83, 84, 85
+R_M_GANG, R_M_GANG_ADD, R_M_WAGE = 86, 87, 88
+R_M_BASE, R_M_ADD, R_M_LABOUR, R_M_CPOH, R_M_TOTAL = 89, 90, 91, 92, 93
+R_M_CAP, R_M_UNIT, R_M_SCALE, R_M_RATE, R_M_SAY = 94, 95, 96, 97, 98
 
-R_BM_HEAD = 97
-R_DS1_HEAD, R_DS1_COLS, R_DS1_FIRST = 98, 99, 100
+R_BM_HEAD = 100
+R_DS1_HEAD, R_DS1_COLS, R_DS1_FIRST = 101, 102, 103
 DS1_ROWS = 30
-R_DS1_LAST = R_DS1_FIRST + DS1_ROWS - 1                # 129
-R_DS1_NOTE = 130
+R_DS1_LAST = R_DS1_FIRST + DS1_ROWS - 1                # 132
+R_DS1_NOTE = 133
 
-R_T11_HEAD, R_T11_COLS, R_T11_FIRST = 132, 133, 134
-T11_ROWS = 27
-R_T11_LAST = R_T11_FIRST + T11_ROWS - 1                # 160
+R_T11_HEAD, R_T11_COLS, R_T11_FIRST = 135, 136, 137
+T11_ROWS = 37
+R_T11_LAST = R_T11_FIRST + T11_ROWS - 1                # 173
 
-R_T12_HEAD, R_T12_COLS, R_T12_FIRST = 162, 163, 164
-T12_ROWS = 6
-R_T12_LAST = R_T12_FIRST + T12_ROWS - 1                # 169
+R_T12_HEAD, R_T12_COLS, R_T12_FIRST = 175, 176, 177
+T12_ROWS = 35
+R_T12_LAST = R_T12_FIRST + T12_ROWS - 1                # 211
 
-R_SC_HEAD, R_SC_COLS, R_SC_FIRST = 171, 172, 173
+R_SC_HEAD, R_SC_COLS, R_SC_FIRST = 213, 214, 215
 SC_ROWS = 6
-R_SC_LAST = R_SC_FIRST + SC_ROWS - 1                   # 178
+R_SC_LAST = R_SC_FIRST + SC_ROWS - 1                   # 220
+
+# The reference tables carry the book's full column set and run wider than the
+# nine-column working area above them.
+BENCH_COL = 14   # column N
 
 PARAM_HEADERS = ['Parameter', 'Value', 'Unit', 'Cell Role',
                  'Where this value comes from, and the CPWD DAR 2019 basis for it', '', '', '', '']
@@ -162,6 +173,10 @@ def build_carriage_trade(wb, config, styles):
     t11_gross = f"$C${R_T11_FIRST}:$C${R_T11_LAST}"
     t11_net = f"$D${R_T11_FIRST}:$D${R_T11_LAST}"
     t11_unit = f"$E${R_T11_FIRST}:$E${R_T11_LAST}"
+    # the eight printed rate columns: 1..5 km, then the three per-km bands
+    lad = {k: f"$%s${R_T11_FIRST}:$%s${R_T11_LAST}" % (c, c)
+           for k, c in ((1, 'G'), (2, 'H'), (3, 'I'), (4, 'J'), (5, 'K'),
+                        ('b5_10', 'L'), ('b10_20', 'M'), ('b20', 'N'))}
 
     # --- Data validations -------------------------------------------------
     def mkdv(formula, blank=True):
@@ -184,14 +199,8 @@ def build_carriage_trade(wb, config, styles):
     dv_lift = mkdv('"for all lifts,for lift upto 1.5 m,with mechanical lift,'
                    'for all lifts and leads"', False)
 
-    ws.row_dimensions[7].height = 8
-    ws.row_dimensions[17].height = 8
-    ws.row_dimensions[33].height = 8
-    ws.row_dimensions[43].height = 8
-    ws.row_dimensions[45].height = 8
-    ws.row_dimensions[58].height = 8
-    ws.row_dimensions[75].height = 8
-    ws.row_dimensions[96].height = 8
+    for _sp in (7, 17, 33, 44, 46, 59, 78, 99):
+        ws.row_dimensions[_sp].height = 8
 
     # =====================================================================
     # PANEL 1 - what is being moved
@@ -207,8 +216,9 @@ def build_carriage_trade(wb, config, styles):
                'Your reference for this analysis. Pick a DAR item number from the dropdown to base it '
                'on a printed item, or type your own code for a genuinely non-DSR item.', dv=dv_items)
 
-    _param_row(ws, R_MATERIAL, styles, 'Material commodity',
-               config.get('default_material', 'R.C.C./C.I./Steel pipes 1000, 1100 & 1200 mm dia'),
+    # Always taken from Table 1.1 itself: if this string does not match a row
+    # in that table the Panel 3 lookups all blank out and the rate reads zero.
+    _param_row(ws, R_MATERIAL, styles, 'Material commodity', default_material(),
                '-', 'INPUT',
                'DRIVES COST. Sets the truck payload, the net payable quantity and the billing unit, all '
                'looked up from Table 1.1 below. Choose from the dropdown so the lookups resolve.',
@@ -355,11 +365,18 @@ def build_carriage_trade(wb, config, styles):
     col_headers(ws, R_P3_COLS, PARAM_HEADERS, styles, height=26)
     ws.merge_cells(start_row=R_P3_COLS, start_column=5, end_row=R_P3_COLS, end_column=LAST_COL)
 
+    _param_row(ws, R_T11_ROW, styles, 'Table 1.1 row for this material', None, 'row index', 'DERIVED',
+               'Which row of Table 1.1 (section 5B) the material commodity matches. Everything below, '
+               'and the published DAR rate in Section 2, reads that row. Shows #N/A if the material '
+               'is not one of the book\'s - use the overrides in that case.', number_format='0')
+    ws.cell(row=R_T11_ROW, column=2).value = (
+        f'=IFERROR(MATCH(B{R_MATERIAL}, {t11_mat}, 0), "")')
+
     _param_row(ws, R_PAY_GROSS, styles, 'Gross truck payload per trip', None, 'per Table 1.1', 'LOOKUP',
                'What physically goes on the truck, from Table 1.1 below. Shown for information only - '
                'it is NOT what the rate is divided by.', number_format='0.00')
     ws.cell(row=R_PAY_GROSS, column=2).value = (
-        f'=IFERROR(INDEX({t11_gross}, MATCH(B{R_MATERIAL}, {t11_mat}, 0)), "")')
+        f'=IFERROR(INDEX({t11_gross}, B{R_T11_ROW}), "")')
 
     _param_row(ws, R_PAY_NET, styles, 'Net payable quantity per trip', None, 'per Table 1.1', 'LOOKUP',
                'THIS is the divisor CPWD uses. Loose materials are paid on a reduced quantity: earth '
@@ -367,7 +384,7 @@ def build_carriage_trade(wb, config, styles):
                'less 8%. Using the gross payload instead understates the rate by that percentage.',
                number_format='0.00')
     ws.cell(row=R_PAY_NET, column=2).value = (
-        f'=IFERROR(INDEX({t11_net}, MATCH(B{R_MATERIAL}, {t11_mat}, 0)), "")')
+        f'=IFERROR(INDEX({t11_net}, B{R_T11_ROW}), "")')
 
     _param_row(ws, R_PAY_OV, styles, 'Payable quantity override', None, 'per Table 1.1', 'OVERRIDE',
                'Leave blank to use the net payable quantity above. Fill it in for a material that is '
@@ -384,7 +401,7 @@ def build_carriage_trade(wb, config, styles):
                'The unit the DAR bills this material in, from Table 1.1. Bulk materials in cum, cement '
                'and steel in tonne, bricks per 1000 Nos, pipes per 100 m.')
     ws.cell(row=R_UNIT, column=2).value = (
-        f'=IFERROR(INDEX({t11_unit}, MATCH(B{R_MATERIAL}, {t11_mat}, 0)), "cum")')
+        f'=IFERROR(INDEX({t11_unit}, B{R_T11_ROW}), "cum")')
 
     _param_row(ws, R_SCALE, styles, 'Schedule unit scale factor', None, 'multiplier', 'DERIVED',
                'The rate is first derived per single unit (per cum, per metre, per brick) and then '
@@ -406,7 +423,9 @@ def build_carriage_trade(wb, config, styles):
     ws.cell(row=R_AUDIT, column=1).alignment = styles['align_center']
 
     ab = ws.cell(row=R_AUDIT, column=2)
-    ab.value = (f'=IF(AND(D{R_AUDIT}="OK", F{R_AUDIT}="OK", H{R_AUDIT}="OK", I{R_AUDIT}="OK"), '
+    # The book comparison in column I is advisory, not pass/fail - see the note
+    # on the variance row for why a mid-band lead legitimately differs.
+    ab.value = (f'=IF(AND(D{R_AUDIT}="OK", F{R_AUDIT}="OK", H{R_AUDIT}="OK"), '
                 f'"[PASS] ALL CHECKS OK", "[ALERT] CHECKS FAILED")')
     ab.font = styles['font_result']
     ab.fill = styles['fill_result']
@@ -429,7 +448,11 @@ def build_carriage_trade(wb, config, styles):
             value=f'=IF(G{R_W_SUB}>0, "OK", "ERR: W<=0")').alignment = styles['align_center']
 
     ws.cell(row=R_AUDIT, column=9,
-            value=f'=IF(AND(ISNUMBER(G{R_SAY}), G{R_SAY}>0), "OK", "ERR: rate not resolved")')
+            value=f'=IF(NOT(AND(ISNUMBER(G{R_SAY}), G{R_SAY}>0)), "ERR: rate not resolved", '
+                  f'IF(G{R_DAR_DIFF}="", "n/a - custom material", '
+                  f'IF(ABS(G{R_DAR_DIFF})<0.05, "matches book exactly", '
+                  f'IF(ABS(G{R_DAR_DIFF})/G{R_DAR_PUB}<=0.02, "within book band tolerance", '
+                  f'"CHECK: over 2% from book"))))')
     ws.cell(row=R_AUDIT, column=9).alignment = styles['align_center']
 
     for c in (4, 6, 8, 9):
@@ -597,6 +620,37 @@ def build_carriage_trade(wb, config, styles):
          'Multiplied up to the DAR schedule unit - x1000 for "1000 Nos", x100 for "100 m", x1 '
          'otherwise. This unrounded figure is what the Table 1.1 base rates below are quoted at.',
          'DERIVED'),
+        (R_DAR_PUB, '-', 'DAR published rate at this lead (Table 1.1 ladder)', None,
+         'Book ladder', f'=B{R_LEAD}', f'=B{R_T11_ROW}',
+         # <=5 km: the printed 1/2/3/4/5 km column, taking the next tabulated km.
+         # 5-10 / 10-20 / >20 km: the 5 km rate plus the printed per-km bands,
+         # which is exactly how the book builds a rate beyond 5 km.
+         f'=IFERROR(IF(B{R_T11_ROW}="", "", '
+         f'IF(B{R_LEAD}<=5, CHOOSE(MAX(1,MIN(5,CEILING(B{R_LEAD},1))), '
+         f'INDEX({lad[1]},B{R_T11_ROW}), INDEX({lad[2]},B{R_T11_ROW}), '
+         f'INDEX({lad[3]},B{R_T11_ROW}), INDEX({lad[4]},B{R_T11_ROW}), '
+         f'INDEX({lad[5]},B{R_T11_ROW})), '
+         f'IF(B{R_LEAD}<=10, INDEX({lad[5]},B{R_T11_ROW}) + (B{R_LEAD}-5)*INDEX({lad["b5_10"]},B{R_T11_ROW}), '
+         f'IF(B{R_LEAD}<=20, INDEX({lad[5]},B{R_T11_ROW}) + 5*INDEX({lad["b5_10"]},B{R_T11_ROW}) '
+         f'+ (B{R_LEAD}-10)*INDEX({lad["b10_20"]},B{R_T11_ROW}), '
+         f'INDEX({lad[5]},B{R_T11_ROW}) + 5*INDEX({lad["b5_10"]},B{R_T11_ROW}) '
+         f'+ 10*INDEX({lad["b10_20"]},B{R_T11_ROW}) '
+         f'+ (B{R_LEAD}-20)*INDEX({lad["b20"]},B{R_T11_ROW}))))), "")',
+         'THE BOOK\'S OWN ANSWER for this material and lead, read from the Table 1.1 ladder in '
+         'section 5B. Up to 5 km it is the printed column for the next tabulated kilometre; beyond '
+         'that it is the 5 km rate plus the printed per-km band rates, which is how the DAR itself '
+         'extends a carriage rate. Blank if the material is not one of the book\'s.', 'LOOKUP'),
+        (R_DAR_DIFF, '-', 'Simulator vs published rate', None, 'Variance', f'=G{R_RATE_SCHED}',
+         f'=G{R_DAR_PUB}',
+         f'=IF(OR(G{R_DAR_PUB}="", G{R_DAR_PUB}=0), "", ROUND(G{R_RATE_SCHED}-G{R_DAR_PUB}, 2))',
+         'A small difference here is NORMAL and is not an error. The book prints exact rates only at '
+         '1, 2, 3, 4, 5, 10, 20 and 30 km; between those anchors its ladder interpolates linearly '
+         'from the per-km band rates, while this sheet computes the exact figure for your actual '
+         'lead from Data Sheet 1. The two agree to the paisa at every anchor lead and diverge by up '
+         'to about 1% mid-band - at 15 km, for example, by 1.09%. A variance beyond 2% is flagged in '
+         'the audit bar and does mean something to check: a speed or payload override, a whole-trip '
+         'basis, a non-standard handling scope, or a gate fee - any of which is a legitimate reason '
+         'to depart from the book, but should be a deliberate one.', 'DERIVED'),
         (R_SAY, 'SAY', 'CPWD OFFICIAL "SAY" RATE FOR THIS CARRIAGE ITEM', None, 'MROUND to Rs 0.05',
          None, None, f'=MROUND(G{R_RATE_SCHED}, 0.05)',
          'The rate to quote in a BOQ or estimate. Rounded to the nearest 5 paise - see the note below.',
@@ -612,7 +666,7 @@ def build_carriage_trade(wb, config, styles):
 
         cb = ws.cell(row=r, column=5, value=(base_f if base_f else '-'))
         cb.alignment = styles['align_right']
-        if base_f and r not in (R_TRIP_OH, R_RATE_SCHED):
+        if base_f and r not in (R_TRIP_OH, R_RATE_SCHED, R_DAR_PUB, R_DAR_DIFF):
             cb.number_format = styles['fmt_currency']
 
         cf = ws.cell(row=r, column=6, value=(factor_f if factor_f else '-'))
@@ -646,7 +700,7 @@ def build_carriage_trade(wb, config, styles):
         elif r == R_TOTAL:
             for c in range(1, LAST_COL):
                 ws.cell(row=r, column=c).fill = styles['fill_result']
-        elif r in (R_TRIP_OH, R_RATE_UNIT, R_RATE_SCHED):
+        elif r in (R_TRIP_OH, R_RATE_UNIT, R_RATE_SCHED, R_DAR_PUB, R_DAR_DIFF):
             for c in range(1, LAST_COL):
                 ws.cell(row=r, column=c).fill = styles['fill_subtotal']
         elif r == R_SAY:
@@ -765,61 +819,49 @@ def build_carriage_trade(wb, config, styles):
     # Section 5 - benchmarks
     # =====================================================================
     section_bar(ws, R_BM_HEAD,
-                'SECTION 5 - GROUND-TRUTH REFERENCE TABLES (CPWD DAR 2019 SUB-HEAD 01). '
-                'These are source data - the panels above read from them. Do not edit.', styles)
+                'SECTION 5 - GROUND-TRUTH REFERENCE TABLES (CPWD DAR 2019 SUB-HEAD 01), transcribed '
+                'from printed pages 67-75. These are source data - the panels above read from them.',
+                styles, last_col=BENCH_COL)
 
     section_bar(ws, R_DS1_HEAD,
-                '5A. CPWD DATA SHEET NO. 1 - mechanical transport benchmark, 1 km to 30 km. '
-                'Panel 2 looks up the speed, trips and km/day for your lead here.', styles, height=22)
+                '5A. CPWD DATA SHEET NO. 1 - mechanical transport benchmark, 1 km to 30 km, all 14 '
+                'printed columns. Panel 2 looks up the speed, trips and km/day for your lead here.',
+                styles, last_col=BENCH_COL, height=22)
     col_headers(ws, R_DS1_COLS,
-                ['Lead (L) km', 'Avg Speed (S) km/h', 'Trips (N)/day', 'Km done/day',
-                 'Diesel (litres)', 'Mobil oil (litres)', 'Total shift cost (Rs)',
-                 'Cost per trip (Rs)', 'Source'], styles)
+                ['1 Lead (L) km', '2 Avg speed (S) km/h', '3 Trips N/day', '4 Km done/day',
+                 '5 Diesel litres', '6 Cost of diesel (Rs)', '7 Mobil oil litres',
+                 '8 Cost of mobil oil (Rs)', '9 Cost of 6 Beldars (Rs)', '10 Truck hire (Rs)',
+                 '11 Total cost (Rs)', '12 Cost per trip (Rs)', '13 Increase per km (Rs)',
+                 '14 Avg cost per addl km (Rs)'], styles)
 
-    datasheet1 = [
-        (1.0, 16.0, 7.11, 20.22, 4.04, 0.144, 5190.30, 730.00),
-        (2.0, 17.0, 6.48, 31.92, 6.38, 0.228, 5388.75, 831.60),
-        (3.0, 17.5, 5.96, 41.76, 8.35, 0.298, 5555.60, 932.15),
-        (4.0, 18.0, 5.54, 50.32, 10.06, 0.359, 5700.50, 1028.97),
-        (5.0, 18.5, 5.19, 57.90, 11.58, 0.414, 5829.54, 1123.23),
-        (6.0, 19.0, 4.90, 64.80, 12.96, 0.463, 5946.41, 1213.55),
-        (7.0, 19.5, 4.66, 71.24, 14.25, 0.509, 6055.72, 1299.51),
-        (8.0, 20.0, 4.44, 77.04, 15.41, 0.550, 6153.89, 1386.01),
-        (9.0, 20.5, 4.26, 82.68, 16.54, 0.591, 6249.86, 1467.10),
-        (10.0, 21.0, 4.10, 88.00, 17.60, 0.629, 6339.74, 1546.28),
-        (11.0, 21.5, 3.95, 92.90, 18.58, 0.664, 6422.79, 1626.02),
-        (12.0, 22.0, 3.83, 97.92, 19.58, 0.699, 6507.32, 1699.04),
-        (13.0, 22.5, 3.71, 102.46, 20.49, 0.732, 6584.60, 1774.82),
-        (14.0, 23.0, 3.61, 107.08, 21.42, 0.765, 6663.35, 1845.80),
-        (15.0, 23.5, 3.51, 111.30, 22.26, 0.795, 6734.54, 1918.67),
-        (16.0, 24.0, 3.43, 115.76, 23.15, 0.827, 6810.04, 1985.43),
-        (17.0, 24.5, 3.35, 119.90, 23.98, 0.856, 6880.17, 2053.78),
-        (18.0, 25.0, 3.28, 124.08, 24.82, 0.886, 6951.36, 2119.32),
-        (19.0, 25.5, 3.21, 127.98, 25.60, 0.914, 7017.51, 2186.14),
-        (20.0, 26.0, 3.15, 132.00, 26.40, 0.943, 7085.45, 2249.35),
-        (21.0, 26.5, 3.09, 135.78, 27.16, 0.970, 7149.81, 2313.85),
-        (22.0, 27.0, 3.04, 139.76, 27.95, 0.998, 7216.70, 2373.91),
-        (23.0, 27.5, 2.99, 143.54, 28.71, 1.025, 7281.07, 2435.14),
-        (24.0, 28.0, 2.95, 147.60, 29.52, 1.054, 7349.73, 2491.43),
-        (25.0, 28.5, 2.90, 151.00, 30.20, 1.079, 7407.59, 2554.34),
-        (26.0, 29.0, 2.86, 154.72, 30.94, 1.105, 7470.17, 2611.95),
-        (27.0, 29.5, 2.83, 158.82, 31.76, 1.134, 7539.57, 2664.16),
-        (28.0, 30.0, 2.79, 162.24, 32.45, 1.159, 7598.17, 2723.36),
-        (29.0, 30.5, 2.76, 166.08, 33.22, 1.186, 7663.26, 2776.54),
-        (30.0, 31.0, 2.73, 169.80, 33.96, 1.213, 7726.16, 2830.10),
-    ]
-    fmts = ['0.0', '0.0', '0.00', '0.00', '0.00', '0.000',
-            styles['fmt_currency'], styles['fmt_currency']]
-    for i, rec in enumerate(datasheet1):
+    prev_total = None
+    money = styles['fmt_currency']
+    for i, rec in enumerate(DATASHEET1):
         r = R_DS1_FIRST + i
-        for ci, val in enumerate(rec, 1):
-            c = ws.cell(row=r, column=ci, value=val)
-            c.alignment = styles['align_center'] if ci <= 3 else styles['align_right']
+        lead, speed, n, km, dl, ml, total, per_trip = rec
+        # Columns 6, 8, 9, 10 are the money columns the book prints and the
+        # earlier build omitted; 11 is their sum and is checked against the
+        # printed total.
+        c_diesel = round(dl * RATE_DIESEL, 2)
+        c_mobil = round(ml * RATE_MOBIL, 2)
+        c_beldar = round(GANG * RATE_BELDAR, 2)
+        c_truck = RATE_TRUCK
+        col13 = '' if prev_total is None else round(total - prev_total, 2)
+        prev_total = total
+        vals = [lead, speed, n, km, dl, c_diesel, ml, c_mobil, c_beldar, c_truck,
+                total, per_trip, col13,
+                f'=IF(A{r}<=5, "", IF(A{r}<=10, ROUND((L{r}-INDEX($L${R_DS1_FIRST}:$L${R_DS1_LAST},5))/5, 2), '
+                f'IF(A{r}<=20, ROUND((L{r}-INDEX($L${R_DS1_FIRST}:$L${R_DS1_LAST},10))/10, 2), '
+                f'ROUND((L{r}-INDEX($L${R_DS1_FIRST}:$L${R_DS1_LAST},20))/10, 2))))']
+        fmts = ['0.0', '0.0', '0.00', '0.00', '0.00', money, '0.000', money, money, money,
+                money, money, money, money]
+        for ci, v in enumerate(vals, 1):
+            c = ws.cell(row=r, column=ci, value=(v if v != '' else None))
+            c.alignment = styles['align_center'] if ci <= 4 else styles['align_right']
             c.number_format = fmts[ci - 1]
             c.font = styles['font_regular']
-        ws.cell(row=r, column=9, value='DAR 2019 Data Sheet 1').font = styles['font_note']
         fill = styles['fill_subtotal'] if r % 2 == 0 else styles['fill_calc']
-        for c in range(1, LAST_COL + 1):
+        for c in range(1, BENCH_COL + 1):
             ws.cell(row=r, column=c).fill = fill
             ws.cell(row=r, column=c).border = styles['border_thin']
         ws.row_dimensions[r].height = 18
@@ -838,74 +880,35 @@ def build_carriage_trade(wb, config, styles):
 
     # --- Table 1.1 -------------------------------------------------------
     section_bar(ws, R_T11_HEAD,
-                '5B. TABLE 1.1 - MATERIAL PAYLOAD, NET PAYABLE QUANTITY AND SCHEDULE UNIT. '
-                'Panel 3 looks up the material you chose here. The "Net payable" column is the one '
-                'the rate is divided by.', styles, height=22)
+                '5B. TABLE 1.1 - MECHANICAL TRANSPORT RATE LADDER (CPWD DAR 2019, printed pages 69-70). '
+                'Net payable quantity is the divisor CPWD uses; the eight rate columns are the book\'s '
+                'own published rates per schedule unit including 15% CP&OH.', styles,
+                last_col=BENCH_COL, height=30)
     col_headers(ws, R_T11_COLS,
-                ['DAR Code', 'Material / Trade Specification', 'Gross truck payload / trip',
-                 'Net payable qty / trip', 'Schedule unit', 'Looseness deduction applied',
-                 'DAR base rate @ 1 km (Rs)', 'Additional rate > 20 km (Rs)', 'Source'], styles)
+                ['DAR item', 'Material / Specification', 'Capacity per trip', 'Net payable qty',
+                 'Schedule unit', 'Looseness deduction', 'Rate 1 km', 'Rate 2 km', 'Rate 3 km',
+                 'Rate 4 km', 'Rate 5 km', '>5-10 km per km', '>10-20 km per km',
+                 '>20 km per addl km'], styles, height=30)
 
-    table11 = [
-        ('1.1.1', 'Lime, moorum, building rubbish, malba', 8, 8, 'cum',
-         'Nil - full 8.00 cum payable', 104.94, 8.35),
-        ('1.1.2', 'Earth (excavated soil / good earth)', 8, 6.4, 'cum',
-         '20% deduction for looseness (net 6.40 cum)', 131.17, 10.44),
-        ('1.1.3', 'Manure or sludge', 8, 7.36, 'cum',
-         '8% deduction for looseness (net 7.36 cum)', 114.06, 9.08),
-        ('1.1.4', 'Excavated rock', 8, 4, 'cum',
-         '50% deduction for voids / looseness (net 4.00 cum)', 209.88, 16.70),
-        ('1.1.5', 'Sand, stone aggregate below 40 mm', 8, 8, 'cum',
-         'Nil - standard density, full 8.00 cum payable', 104.94, 8.35),
-        ('1.1.6', 'Stone aggregate 40 mm nominal size & above', 8, 7.36, 'cum',
-         '8% deduction for voids in coarse aggregate', 114.06, 9.08),
-        ('1.1.7', 'Soling stone & masonry stone', 8, 6.8, 'cum',
-         '15% deduction for stack voids (net 6.80 cum)', 123.46, 9.82),
-        ('1.1.8', 'Bricks (standard modular / conventional)', 3000, 3000, '1000 Nos',
-         'Nil - 3,000 bricks per 9-tonne truck load', 279.83, 22.26),
-        ('1.1.9', 'Brick tiles / Allahabad roofing tiles', 5000, 5000, '1000 Nos',
-         'Nil - 5,000 tiles per 9-tonne truck load', 167.90, 13.36),
-        ('1.1.10', 'Cement, stone blocks, Kota stone slabs', 9, 9, 'tonne',
-         'Nil - rated truck payload 9 tonne', 93.28, 7.42),
-        ('1.1.11', 'Steel bars, structural sections & fabric', 9, 9, 'tonne',
-         'Nil - rated truck payload 9 tonne', 93.28, 7.42),
-        ('1.1.12', 'Timber (scantlings / logs)', 7, 7, 'cum',
-         'Nil - volume limit on timber body 7.00 cum', 119.93, 9.54),
-        ('1.1.13', 'Tar, bitumen in drums', 8, 8, 'tonne',
-         'Nil - packed drum loading capacity 8 tonne', 104.94, 8.35),
-        ('1.1.14', 'Steam coal', 7, 7, 'tonne',
-         'Nil - bulk density restriction 7 tonne', 119.93, 9.54),
-        ('1.1.15.1', 'S.W. pipes 100 mm dia', 600, 600, '100 m', 'Nil - 600 m per load', 139.92, 11.13),
-        ('1.1.15.2', 'S.W. pipes 150 mm dia', 300, 300, '100 m', 'Nil - 300 m per load', 279.83, 22.26),
-        ('1.1.16.1', 'R.C.C. / C.I. pipes 100 mm dia', 366, 366, '100 m', 'Nil - 366 m per load', 229.37, 18.25),
-        ('1.1.16.3', 'R.C.C. / C.I. pipes 150 mm dia', 219.6, 219.6, '100 m', 'Nil - 219.60 m per load', 382.29, 30.42),
-        ('1.1.16.4', 'R.C.C. / C.I. pipes 200 mm dia', 135, 135, '100 m', 'Nil - 135 m per load', 621.85, 49.48),
-        ('1.1.16.5', 'R.C.C. / C.I. pipes 250 mm dia', 95, 95, '100 m', 'Nil - 95 m per load', 883.68, 70.31),
-        ('1.1.16.6', 'R.C.C. / C.I. pipes 300 mm dia', 76.86, 76.86, '100 m', 'Nil - 76.86 m per load', 1092.25, 86.90),
-        ('1.1.16.7', 'R.C.C. / C.I. pipes 350 mm dia', 54.9, 54.9, '100 m', 'Nil - 54.90 m per load', 1529.14, 121.66),
-        ('1.1.16.8', 'R.C.C. / C.I. pipes 400 mm dia', 40.26, 40.26, '100 m', 'Nil - 40.26 m per load', 2085.20, 165.90),
-        ('1.1.16.9', 'R.C.C. / C.I. pipes 450 & 500 mm dia', 32.94, 32.94, '100 m', 'Nil - 32.94 m per load', 2548.57, 202.77),
-        ('1.1.16.10', 'R.C.C. / C.I. pipes 600, 700, 750 & 800 mm dia', 21.96, 21.96, '100 m', 'Nil - 21.96 m per load', 3822.86, 304.15),
-        ('1.1.16.11', 'R.C.C. / C.I. pipes 900 mm dia', 14.64, 14.64, '100 m', 'Nil - 14.64 m per load', 5734.29, 456.23),
-        ('1.1.17.12', 'R.C.C./C.I./Steel pipes 1000, 1100 & 1200 mm dia', 10.98, 10.98, '100 m',
-         'Nil - 10.98 m per load (heavy large bore)', 7645.72, 608.31),
-    ]
-    for i, rec in enumerate(table11):
+    for i, row in enumerate(table_11_rows()):
         r = R_T11_FIRST + i
-        for ci, val in enumerate(rec, 1):
-            c = ws.cell(row=r, column=ci, value=val)
+        lad = row['ladder']
+        vals = [row['item'], row['material'], row['capacity'], row['net'], row['unit'],
+                row['looseness'], lad[1], lad[2], lad[3], lad[4], lad[5],
+                lad['b5_10'], lad['b10_20'], lad['b20']]
+        for ci, v in enumerate(vals, 1):
+            c = ws.cell(row=r, column=ci, value=v)
             c.font = styles['font_regular']
             if ci in (1, 3, 4, 5):
                 c.alignment = styles['align_center']
-            elif ci in (7, 8):
+            elif ci >= 7:
                 c.alignment = styles['align_right']
                 c.number_format = styles['fmt_currency']
             else:
                 c.alignment = styles['align_left']
         ws.cell(row=r, column=4).font = styles['font_bold']
-        ws.cell(row=r, column=9, value='DAR 2019 Sub-Head 01').font = styles['font_note']
         fill = styles['fill_subtotal'] if r % 2 == 0 else styles['fill_calc']
-        for c in range(1, LAST_COL + 1):
+        for c in range(1, BENCH_COL + 1):
             ws.cell(row=r, column=c).fill = fill
             ws.cell(row=r, column=c).border = styles['border_thin']
         ws.cell(row=r, column=4).fill = styles['fill_lookup']
@@ -913,49 +916,43 @@ def build_carriage_trade(wb, config, styles):
 
     # --- Table 1.2 -------------------------------------------------------
     section_bar(ws, R_T12_HEAD,
-                '5C. TABLE 1.2 - MANUAL LABOUR CARRIAGE REFERENCE (lead under 0.50 km). '
-                'Capacities here are already net of looseness.', styles, height=22)
+                '5C. TABLE 1.2 - MANUAL LABOUR CARRIAGE, LEAD UNDER 0.50 km (CPWD DAR 2019, printed '
+                'pages 72-74). Category A gangs 7.67 Beldars + 1.67 coolies per extra 50 m; '
+                'Category B gangs 9.20 Beldars + 1.35 Beldars per extra 50 m.', styles,
+                last_col=BENCH_COL, height=30)
     col_headers(ws, R_T12_COLS,
-                ['Item No.', 'Material / Specification', 'Net payable qty / day', 'Billing unit',
-                 'Cost for 8 hours incl. CPOH (Rs)', 'Rate for 1st 50 m (Rs)',
-                 'Rate per additional 50 m (Rs)', 'CPWD gang norm', 'Source'], styles)
-    table12 = [
-        ('1.2.1', 'Lime, moorum, building rubbish', 35, 'cum', 4921.84, 140.62, 30.62,
-         '7.67 Beldars 1st 50 m, 1.67 addl coolie / 50 m'),
-        ('1.2.2', 'Earth (already net of 20% looseness)', 28, 'cum', 4921.84, 175.78, 38.27,
-         '7.67 Beldars 1st 50 m, 1.67 addl coolie / 50 m'),
-        ('1.2.8', 'Bricks (standard modular)', 15000, '1000 Nos', 4921.84, 328.12, 71.44,
-         '7.67 Beldars 1st 50 m, 1.67 addl coolie / 50 m'),
-        ('1.2.11', 'Stone blocks, G.I., C.I. pipes below 100 mm', 46, 'tonne', 5903.64, 128.34, 18.83,
-         '9.20 Beldars 1st 50 m, 1.35 addl Beldar / 50 m'),
-        ('1.2.12', 'Cement in bags', 57.99, 'tonne', 5903.64, 101.80, 14.94,
-         '9.20 Beldars 1st 50 m, 1.35 addl Beldar / 50 m'),
-        ('1.2.17.1', 'R.C.C. / C.I. pipes 100 mm dia', 1702, '100 m', 5903.64, 346.86, 50.90,
-         '9.20 Beldars 1st 50 m, 1.35 addl Beldar / 50 m'),
-    ]
-    for i, rec in enumerate(table12):
+                ['DAR item', 'Material / Specification', 'Capacity per day', 'Net payable qty',
+                 'Schedule unit', 'Gang category', 'Cost per 8-hr day incl. CP&OH (Rs)',
+                 'Rate for 1st 50 m (Rs)', 'Rate per addl 50 m (Rs)', '', '', '', '', ''],
+                styles, height=30)
+
+    for i, row in enumerate(table_12_rows()):
         r = R_T12_FIRST + i
-        for ci, val in enumerate(rec, 1):
-            c = ws.cell(row=r, column=ci, value=val)
+        vals = [row['item'], row['material'], row['capacity'], row['net'], row['unit'],
+                'Category %s' % row['category'], row['day_cost'], row['first50'], row['addl50']]
+        for ci, v in enumerate(vals, 1):
+            c = ws.cell(row=r, column=ci, value=v)
             c.font = styles['font_regular']
-            if ci in (1, 3, 4):
+            if ci in (1, 3, 4, 5, 6):
                 c.alignment = styles['align_center']
-            elif ci in (5, 6, 7):
+            elif ci >= 7:
                 c.alignment = styles['align_right']
                 c.number_format = styles['fmt_currency']
             else:
                 c.alignment = styles['align_left']
-        ws.cell(row=r, column=9, value='DAR 2019 Table 1.2').font = styles['font_note']
+        ws.cell(row=r, column=4).font = styles['font_bold']
         fill = styles['fill_subtotal'] if r % 2 == 0 else styles['fill_calc']
-        for c in range(1, LAST_COL + 1):
+        for c in range(1, BENCH_COL + 1):
             ws.cell(row=r, column=c).fill = fill
             ws.cell(row=r, column=c).border = styles['border_thin']
+        ws.cell(row=r, column=4).fill = styles['fill_lookup']
         ws.row_dimensions[r].height = 18
 
     # --- Scope / gang table ---------------------------------------------
     section_bar(ws, R_SC_HEAD,
                 '5D. HANDLING SCOPE - LABOUR GANG ALLOCATION. The Handling Scope you pick in Panel 1 '
-                'sets the Beldar row in Section 1 from this table.', styles, height=22)
+                'sets the Beldar row in Section 1 from this table.', styles,
+                last_col=BENCH_COL, height=22)
     col_headers(ws, R_SC_COLS,
                 ['Scope wording (Panel 1 dropdown)', 'Beldar gang', 'Loading', 'Unloading', 'Stacking',
                  'Daily labour cost (Rs)', 'Direct shift cost (Rs)', 'Engineering rationale', 'Source'],

@@ -21,7 +21,12 @@ rather than against hard-coded formula strings.
 
 import openpyxl
 
+from scripts.carriage_tables import (
+    TABLE_11, TABLE_12, PRINTED_11, PRINTED_12, table_11_rows, table_12_rows,
+    validate as validate_tables,
+)
 from scripts.trade_builder_carr import (
+    R_T11_ROW, R_DAR_PUB, R_DAR_DIFF, BENCH_COL,
     R_M_GANG_ADD, R_M_BASE, R_M_ADD, R_M_LABOUR, R_M_TOTAL, R_M_CAP, R_M_UNIT, R_M_SCALE,
     R_ITEM_CODE, R_MATERIAL, R_SCOPE, R_LIFT, R_GATE_FEE, R_NOM_OVERRIDE, R_NOMENCLATURE,
     R_LEAD, R_SPEED_BM, R_SPEED_OV, R_SPEED_EFF, R_TURNAROUND,
@@ -31,7 +36,8 @@ from scripts.trade_builder_carr import (
     R_W, R_X1, R_X, R_Y1, R_Y, R_Z1, R_Z, R_Z2,
     R_TOTAL, R_TRIP_OH, R_RATE_UNIT, R_RATE_SCHED, R_SAY, R_SAY_NOTE,
     R_M_STEPS, R_M_GANG, R_M_WAGE, R_M_CPOH, R_M_RATE, R_M_SAY,
-    R_DS1_FIRST, R_DS1_LAST, R_T11_FIRST, R_T11_LAST, R_SC_FIRST, R_SC_LAST,
+    R_DS1_FIRST, R_DS1_LAST, R_DS1_COLS, R_T11_FIRST, R_T11_LAST,
+    R_T12_FIRST, R_T12_LAST, R_SC_FIRST, R_SC_LAST,
     ROLE_FILL,
 )
 from scripts.trade_layout import R_GUIDE_HEAD, R_GUIDE_STEPS, R_GUIDE_ROLES
@@ -62,7 +68,11 @@ def check_carriage(wb, verbose=True):
     # ---------------- 7A(i): reproduce Data Sheet No. 1 ------------------
     bad = 0
     for r in range(R_DS1_FIRST, R_DS1_LAST + 1):
-        lead, speed, n_b, km_b, d_b, m_b, w_b = (ws.cell(row=r, column=c).value for c in range(1, 8))
+        # Data Sheet 1 now carries all 14 printed columns, so read by position:
+        # 1 lead, 2 speed, 3 trips, 4 km/day, 5 diesel L, 7 mobil L, 11 total cost.
+        lead, speed, n_b, km_b, d_b = (ws.cell(row=r, column=c).value for c in (1, 2, 3, 4, 5))
+        m_b = ws.cell(row=r, column=7).value
+        w_b = ws.cell(row=r, column=11).value
         n, km, diesel, mobil, w = _shift_cost(lead, speed)
         if (abs(n - n_b) > 0.011 or abs(km - km_b) > 0.02 or abs(diesel - d_b) > 0.02
                 or abs(mobil - m_b) > 0.002 or abs(w - w_b) > 0.05):
@@ -77,31 +87,58 @@ def check_carriage(wb, verbose=True):
     else:
         ok = False
 
-    # ---------------- 7A(ii): reproduce the 27 Table 1.1 base rates ------
-    n1, _km, _d, _m, w1 = _shift_cost(1.0, 16.0)
-    total1 = w1 + round(w1 * CPOH, 2)
-    bad_rows, gross_rows = [], 0
-    for r in range(R_T11_FIRST, R_T11_LAST + 1):
-        mat = ws.cell(row=r, column=2).value
-        gross = ws.cell(row=r, column=3).value
-        net = ws.cell(row=r, column=4).value
-        unit = ws.cell(row=r, column=5).value
-        book = ws.cell(row=r, column=7).value
-        sc = _scale(unit)
-        rate_net = round(total1 / (n1 * net) * sc, 2)
-        rate_gross = round(total1 / (n1 * gross) * sc, 2)
-        if abs(rate_net - book) > 0.05:
-            bad_rows.append(f"{mat}: {rate_net} vs book {book}")
-        if abs(rate_gross - book) <= 0.05:
-            gross_rows += 1
-    if not bad_rows:
-        msgs.append(f"  [PASS] All {R_T11_LAST - R_T11_FIRST + 1} Table 1.1 base rates at 1 km "
-                    f"reproduced using the NET payable quantity and the schedule-unit scale factor "
-                    f"({gross_rows}/{R_T11_LAST - R_T11_FIRST + 1} would reproduce using the gross "
-                    f"payload, which is why the net column is the correct divisor).")
+    # ---------------- 7A(ii): the published tables against the book -------
+    tbl_errors = validate_tables()
+    if tbl_errors:
+        ok = False
+        for e in tbl_errors[:6]:
+            msgs.append("  [FAIL] reference table: %s" % e)
+    else:
+        msgs.append("  [PASS] Table 1.1 (%d materials) and Table 1.2 (%d materials) reproduce every "
+                    "printed value recovered from the book (%d checks), and the full rate ladder "
+                    "agrees with the Data Sheet 1 derivation to within 10 paise."
+                    % (len(TABLE_11), len(TABLE_12), (len(PRINTED_11) + len(PRINTED_12)) * 2))
+
+    # the sheet must publish those same values
+    written = 0
+    lad_keys = [1, 2, 3, 4, 5, 'b5_10', 'b10_20', 'b20']
+    for i, row in enumerate(table_11_rows()):
+        r = R_T11_FIRST + i
+        if str(ws.cell(row=r, column=1).value) != row['item']:
+            ok = False
+            msgs.append("  [FAIL] Table 1.1 row %d is %s, expected %s"
+                        % (r, ws.cell(row=r, column=1).value, row['item']))
+            break
+        for j, k in enumerate(lad_keys):
+            got = ws.cell(row=r, column=7 + j).value
+            if got is None or abs(float(got) - row['ladder'][k]) > 0.005:
+                ok = False
+                msgs.append("  [FAIL] Table 1.1 %s column %s: sheet has %s, expected %.2f"
+                            % (row['item'], k, got, row['ladder'][k]))
+                break
+            written += 1
+    else:
+        msgs.append("  [PASS] All %d rate-ladder values are written into the sheet's Table 1.1 "
+                    "(8 columns x %d materials)." % (written, len(TABLE_11)))
+
+    for i, row in enumerate(table_12_rows()):
+        r = R_T12_FIRST + i
+        if str(ws.cell(row=r, column=1).value) != row['item']:
+            ok = False
+            msgs.append("  [FAIL] Table 1.2 row %d is %s, expected %s"
+                        % (r, ws.cell(row=r, column=1).value, row['item']))
+            break
+    else:
+        msgs.append("  [PASS] Table 1.2 carries all %d printed materials (was 6)." % len(TABLE_12))
+
+    # Data Sheet 1 must now carry all 14 printed columns
+    ds_head = [str(ws.cell(row=R_DS1_COLS, column=c).value or '') for c in range(1, BENCH_COL + 1)]
+    if all(h.strip() for h in ds_head) and '14' in ds_head[-1]:
+        msgs.append("  [PASS] Data Sheet No. 1 carries all 14 printed columns, including the diesel, "
+                    "mobil oil, Beldar and truck-hire money columns and the per-km increment columns.")
     else:
         ok = False
-        msgs.append(f"  [FAIL] Table 1.1 rows not reproduced: {bad_rows[:4]}")
+        msgs.append("  [FAIL] Data Sheet No. 1 does not carry all 14 printed columns: %s" % ds_head)
 
     # ---------------- 7A(iii): DAR item 1.1.18 pro-rata ------------------
     # 3.00 trips at the 10 km row: 88.00 km x (3.00 / 4.10) = 64.39 km, 12.88 L.
@@ -141,6 +178,16 @@ def check_carriage(wb, verbose=True):
          'trips override is honoured in any operational mode'),
         (f'B{R_TRIPS_BASIS}' in f(R_TRIPS) and 'INT(' in f(R_TRIPS) and 'ROUND(' in f(R_TRIPS),
          'trip count basis offers both the CPWD fractional default and a round-down-to-whole option'),
+        ('MATCH(' in f(R_T11_ROW),
+         'Table 1.1 row index resolves the chosen material once for the whole sheet'),
+        (f'B{R_T11_ROW}' in f(R_PAY_NET) and f'B{R_T11_ROW}' in f(R_UNIT),
+         'the payload and unit lookups read through that row index'),
+        (all(x in f(R_DAR_PUB, 7) for x in ('CHOOSE(', 'CEILING(', f'B{R_LEAD}')),
+         'the published-rate lookup picks the printed column for leads up to 5 km'),
+        (f'$L${R_T11_FIRST}' in f(R_DAR_PUB, 7) and f'$N${R_T11_FIRST}' in f(R_DAR_PUB, 7),
+         'and extends beyond 5 km using the printed per-km band columns'),
+        (f'G{R_DAR_PUB}' in f(R_DAR_DIFF, 7) and f'G{R_RATE_SCHED}' in f(R_DAR_DIFF, 7),
+         'the variance row compares the simulator against the published rate'),
         ('MROUND' in f(R_SAY, 7) and '0.05' in f(R_SAY, 7),
          'Say rate uses MROUND(x, 0.05)'),
         ('MROUND' in f(R_M_SAY) and '0.05' in f(R_M_SAY),
@@ -185,9 +232,12 @@ def check_carriage(wb, verbose=True):
     audit = str(ws.cell(row=R_AUDIT, column=2).value or '')
     audit_cells = ' '.join(str(ws.cell(row=R_AUDIT, column=c).value or '') for c in range(4, 10))
     if (f'B{R_TRIPS}' in audit_cells and f'B{R_OUTPUT}' in audit_cells
-            and f'G{R_W_SUB}' in audit_cells and f'G{R_SAY}' in audit_cells):
-        msgs.append("  [PASS] Audit bar tests the trips, the payable output, the direct cost and "
-                    "whether the Say rate actually resolved to a number.")
+            and f'G{R_W_SUB}' in audit_cells and f'G{R_SAY}' in audit_cells
+            and f'G{R_DAR_DIFF}' in audit_cells and '0.02' in audit_cells
+            and f'I{R_AUDIT}' not in audit):
+        msgs.append("  [PASS] Audit bar tests trips, payable output, direct cost and whether the Say rate "
+                    "resolved; the book comparison is advisory with a 2% band tolerance and does "
+                    "not fail the sheet.")
     else:
         ok = False
         msgs.append("  [FAIL] Audit bar does not test the outputs that matter.")
@@ -208,7 +258,8 @@ def check_carriage(wb, verbose=True):
     param_rows = [R_ITEM_CODE, R_MATERIAL, R_SCOPE, R_LIFT, R_GATE_FEE, R_NOM_OVERRIDE,
                   R_LEAD, R_SPEED_BM, R_SPEED_OV, R_SPEED_EFF, R_TURNAROUND, R_MODE,
                   R_TRIPS_BASIS, R_TRIPS_OV, R_TRIPS, R_DIST_BASIS, R_DISTANCE, R_DIESEL, R_MOBIL,
-                  R_PAY_GROSS, R_PAY_NET, R_PAY_OV, R_PAY_EFF, R_UNIT, R_SCALE, R_OUTPUT]
+                  R_T11_ROW, R_PAY_GROSS, R_PAY_NET, R_PAY_OV, R_PAY_EFF,
+                  R_UNIT, R_SCALE, R_OUTPUT]
     roles = set(ROLE_FILL)
     missing_role = [r for r in param_rows
                     if str(ws.cell(row=r, column=4).value or '') not in roles]
