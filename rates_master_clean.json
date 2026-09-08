@@ -876,7 +876,7 @@
   },
   {
     "code": "0165",
-    "desc": "Security guard with *Note:These rates are  average of 1st class and 2nd class catogories. These are for use in the analysis of rates only. BASIC RATES : 0.2 LABOUR  8 BASIC RATES 0.3 MATERIALS Note :- These rates are exclusive of GST, contractor\u2019s profit and over heads and carriage etc. No.",
+    "desc": "Security guard with *Note:These rates are  average of 1st class and 2nd class catogories. These are for use in the analysis of rates only. BASIC RATES : 0.2 LABOUR  8 BASIC RATES 0.3 MATERIALS Note :- These rates are exclusive of GST, contractor’s profit and over heads and carriage etc. No.",
     "unit": "gun (8 hours shift duty per day)",
     "rate": 679.0,
     "category": "Labour Wages"
@@ -1317,7 +1317,7 @@
   },
   {
     "code": "0346",
-    "desc": "Extra for veneered particle board with Teak veneering on one side and",
+    "desc": "Extra for veneered particle board with Teak veneering on one side and commercial veneered on other side",
     "unit": "sqm",
     "rate": 230.0,
     "category": "Building Materials"
@@ -1989,7 +1989,7 @@
   },
   {
     "code": "0558",
-    "desc": "Chromium plated Brass mortice latch and lock 100x65 mm with",
+    "desc": "Chromium plated Brass mortice latch and lock 100x65 mm with 6 levers and a pair of brass lever handles",
     "unit": "each",
     "rate": 470.0,
     "category": "Building Materials"
@@ -4005,7 +4005,7 @@
   },
   {
     "code": "1313",
-    "desc": "8 mm dia C.P. Brass/ S.S. Jet with flexible tube upto 1 metre long with",
+    "desc": "8 mm dia C.P. Brass/ S.S. Jet with flexible tube upto 1 metre long with S.S. tringular plate for Eureopean type W.C.(Hindware/Kingston/Prima/Parko/ Marc)",
     "unit": "each",
     "rate": 200.0,
     "category": "Building Materials"
@@ -4355,28 +4355,28 @@
   },
   {
     "code": "1532",
-    "desc": "Flush pipe with union spreaders and clamps all in C.P. brass for",
+    "desc": "Flush pipe with union spreaders and clamps all in C.P. brass for single stall",
     "unit": "each",
     "rate": 270.0,
     "category": "Building Materials"
   },
   {
     "code": "1533",
-    "desc": "Flush pipe with union spreaders and clamps all in C.P. brass for",
+    "desc": "Flush pipe with union spreaders and clamps all in C.P. brass for double stall",
     "unit": "each",
     "rate": 400.0,
     "category": "Building Materials"
   },
   {
     "code": "1534",
-    "desc": "Flush pipe with union spreaders and clamps all in C.P. brass for",
+    "desc": "Flush pipe with union spreaders and clamps all in C.P. brass for range of three stall",
     "unit": "each",
     "rate": 520.0,
     "category": "Building Materials"
   },
   {
     "code": "1535",
-    "desc": "Flush pipe with union spreaders and clamps all in C.P. brass for",
+    "desc": "Flush pipe with union spreaders and clamps all in C.P. brass for range of four stall",
     "unit": "each",
     "rate": 600.0,
     "category": "Building Materials"
@@ -4698,7 +4698,7 @@
   },
   {
     "code": "1656",
-    "desc": "Sand cast iron S&S single unequal junctions: 100x100x75 mm dia with",
+    "desc": "Sand cast iron S&S single unequal junctions: 100x100x75 mm dia with collar",
     "unit": "each",
     "rate": 550.0,
     "category": "Building Materials"
@@ -5587,14 +5587,14 @@
   },
   {
     "code": "1965",
-    "desc": "White vitreous china dual purpose closet (Anglo Indian W.C.) suitable for use as squatting pan or European type water closet as per",
+    "desc": "White vitreous china dual purpose closet (Anglo Indian W.C.) suitable for use as squatting pan or European type water closet as per manufacturer's specifications",
     "unit": "each",
     "rate": 2500.0,
     "category": "Building Materials"
   },
   {
     "code": "1966",
-    "desc": "Floor mounted white vitrous china double trap syphonic WC with",
+    "desc": "Floor mounted, white vitreous china single piece, double traps syphonic water closet of approved brand/make, shape, size and pattern including integrated white vitreous china cistern of capacity 10 litres with dual flushing system including all fittings and fixtures with seat cover, cistern fittings, nuts, bolts and gasket etc.",
     "unit": "each",
     "rate": 9500.0,
     "category": "Building Materials"
@@ -6882,7 +6882,7 @@
   },
   {
     "code": "2710",
-    "desc": "White marble makrana second quality plain veined stone pieces for",
+    "desc": "White marble makrana second quality plain veined stone pieces for crazy flooring",
     "unit": "quintal",
     "rate": 150.0,
     "category": "Building Materials"
@@ -7456,14 +7456,14 @@
   },
   {
     "code": "3991",
-    "desc": "Galvanized iron (1.6 \u00b1 0.2 mm) thick reinforcement for small series casement window/door frame, sash, mullion & small series sliding",
+    "desc": "Galvanized iron (1.6 ± 0.2 mm) thick reinforcement for small series casement window/door frame, sash, mullion & small series sliding",
     "unit": "metre",
     "rate": 66.0,
     "category": "Building Materials"
   },
   {
     "code": "3992",
-    "desc": "Galvanized iron (1.6 \u00b1 0.2 mm) thick reinforcement for big series casement window/door frame, sash, mullion, big & small series",
+    "desc": "Galvanized iron (1.6 ± 0.2 mm) thick reinforcement for big series casement window/door frame, sash, mullion, big & small series",
     "unit": "metre",
     "rate": 71.0,
     "category": "Building Materials"
@@ -8219,14 +8219,14 @@
   },
   {
     "code": "7117",
-    "desc": "Semi Rigid PVC waste pipe for sink and wash basin 32 mm dia with",
+    "desc": "Semi Rigid PVC waste pipe for sink and wash basin 32 mm dia with length not less than 700 mm i/c PVC waste fittings",
     "unit": "each",
     "rate": 25.0,
     "category": "Building Materials"
   },
   {
     "code": "7118",
-    "desc": "Semi Rigid PVC waste pipe for sink and wash basin 40 mm dia with",
+    "desc": "Semi Rigid PVC waste pipe for sink and wash basin 40 mm dia with length not less than 700 mm i/c PVC waste fittings",
     "unit": "each",
     "rate": 33.0,
     "category": "Building Materials"
@@ -8296,7 +8296,7 @@
   },
   {
     "code": "7130",
-    "desc": "Rectangular shape 600x450 mm precast R.C.C. manhole cover with",
+    "desc": "Rectangular shape 600x450 mm precast R.C.C. manhole cover with frame - L.D. - 2.5 T",
     "unit": "each",
     "rate": 675.0,
     "category": "Building Materials"
@@ -8317,7 +8317,7 @@
   },
   {
     "code": "7133",
-    "desc": "Rectangular shape 500x500 mm precast R.C.C. manhole cover with",
+    "desc": "Rectangular shape 500x500 mm precast R.C.C. manhole cover with frame - M.D. - 10 T",
     "unit": "each",
     "rate": 670.0,
     "category": "Building Materials"
@@ -8373,14 +8373,14 @@
   },
   {
     "code": "7154",
-    "desc": "Factory made 35 mm thick shutters with laminated veneer lumber styles & rails as per TADS 15:1995 and panels of galvanised wire gauge with average width of aperture 1.4 mm in both directions with",
+    "desc": "Factory made 35 mm thick shutters with laminated veneer lumber styles & rails as per TADS 15:1995 and panels of galvanised wire gauge with average width of aperture 1.4 mm in both directions with wire of dia 0.63 mm",
     "unit": "sqm",
     "rate": 1620.0,
     "category": "Building Materials"
   },
   {
     "code": "7155",
-    "desc": "Factory made 30 mm thick shutters with laminated veneer lumber styles & rails as per TADS 15:1995 and panels of galvanised wire gauge with average width of aperture 1.4 mm in both directions with",
+    "desc": "Factory made 30 mm thick shutters with laminated veneer lumber styles & rails as per TADS 15:1995 and panels of galvanised wire gauge with average width of aperture 1.4 mm in both directions with wire of dia 0.63 mm",
     "unit": "sqm",
     "rate": 1430.0,
     "category": "Building Materials"
@@ -8436,28 +8436,28 @@
   },
   {
     "code": "7188",
-    "desc": "U-PVC pipes (working pressure 4 kg / cm\u00b2) Single socketed pipe",
+    "desc": "U-PVC pipes (working pressure 4 kg / cm²) Single socketed pipe",
     "unit": "metre",
     "rate": 70.0,
     "category": "Building Materials"
   },
   {
     "code": "7189",
-    "desc": "U-PVC pipes (working pressure 4 kg / cm\u00b2) Single socketed pipe",
+    "desc": "U-PVC pipes (working pressure 4 kg / cm²) Single socketed pipe",
     "unit": "metre",
     "rate": 130.0,
     "category": "Building Materials"
   },
   {
     "code": "7190",
-    "desc": "U-PVC pipes (working pressure 4 kg / cm\u00b2) Rubber (Seal) Ring",
+    "desc": "U-PVC pipes (working pressure 4 kg / cm²) Rubber (Seal) Ring",
     "unit": "each",
     "rate": 8.0,
     "category": "Building Materials"
   },
   {
     "code": "7191",
-    "desc": "U-PVC pipes (working pressure 4 kg / cm\u00b2) Rubber (Seal) Ring",
+    "desc": "U-PVC pipes (working pressure 4 kg / cm²) Rubber (Seal) Ring",
     "unit": "each",
     "rate": 11.0,
     "category": "Building Materials"
@@ -8520,14 +8520,14 @@
   },
   {
     "code": "7208",
-    "desc": "UPVC bend 87.5\u00b0 75 mm bend",
+    "desc": "UPVC bend 87.5° 75 mm bend",
     "unit": "each",
     "rate": 35.0,
     "category": "Building Materials"
   },
   {
     "code": "7209",
-    "desc": "UPVC bend 87.5\u00b0 110 mm bend",
+    "desc": "UPVC bend 87.5° 110 mm bend",
     "unit": "each",
     "rate": 59.0,
     "category": "Building Materials"
@@ -8562,14 +8562,14 @@
   },
   {
     "code": "7231",
-    "desc": "Resin Bonded Glass wool 16 kg/m\u00b3 : 50 mm thick",
+    "desc": "Resin Bonded Glass wool 16 kg/m³ : 50 mm thick",
     "unit": "sqm",
     "rate": 100.0,
     "category": "Building Materials"
   },
   {
     "code": "7232",
-    "desc": "Resin Bonded Glass wool 24 kg/m\u00b3 : 50 mm thick",
+    "desc": "Resin Bonded Glass wool 24 kg/m³ : 50 mm thick",
     "unit": "sqm",
     "rate": 143.0,
     "category": "Building Materials"
@@ -9885,28 +9885,28 @@
   },
   {
     "code": "7625",
-    "desc": "Hubless centrifugally cast (spun) iron double equal plain junction as per",
+    "desc": "Hubless centrifugally cast (spun) iron double equal plain junction as per IS 15905 - 100x100x100x100 mm dia",
     "unit": "each",
     "rate": 510.0,
     "category": "Building Materials"
   },
   {
     "code": "7626",
-    "desc": "Hubless centrifugally cast (spun) iron double equal plain junction as per",
+    "desc": "Hubless centrifugally cast (spun) iron double equal plain junction as per IS 15905 - 75x75x75x75 mm dia",
     "unit": "each",
     "rate": 275.0,
     "category": "Building Materials"
   },
   {
     "code": "7627",
-    "desc": "Hubless centrifugally cast (spun) iron single equal plain junction as per",
+    "desc": "Hubless centrifugally cast (spun) iron single equal plain junction as per IS 15905 - 100x100x100 mm dia",
     "unit": "each",
     "rate": 400.0,
     "category": "Building Materials"
   },
   {
     "code": "7628",
-    "desc": "Hubless centrifugally cast (spun) iron single equal plain junction as per",
+    "desc": "Hubless centrifugally cast (spun) iron single equal plain junction as per IS 15905 - 75x75x75 mm dia",
     "unit": "each",
     "rate": 215.0,
     "category": "Building Materials"
@@ -10844,7 +10844,7 @@
   },
   {
     "code": "7801",
-    "desc": "Ceramic Glazed Tiles 1st quality 300 x 300 mm in all shades and",
+    "desc": "Ceramic Glazed Tiles 1st quality 300 x 300 mm in all shades and designs of White, Ivory, grey, Fuem Red brown etc.",
     "unit": "sqm",
     "rate": 209.1,
     "category": "Building Materials"
@@ -10942,14 +10942,14 @@
   },
   {
     "code": "7862",
-    "desc": "15 mm nominal bore and 30 cm length PVC connection pipe with",
+    "desc": "15 mm nominal bore and 30 cm length PVC connection pipe with P.T.M.T. Nuts",
     "unit": "each",
     "rate": 46.5,
     "category": "Building Materials"
   },
   {
     "code": "7863",
-    "desc": "15 mm nominal bore and 45 cm length PVC connection pipe with",
+    "desc": "15 mm nominal bore and 45 cm length PVC connection pipe with P.T.M.T. Nuts",
     "unit": "each",
     "rate": 57.0,
     "category": "Building Materials"
@@ -11530,7 +11530,7 @@
   },
   {
     "code": "8049",
-    "desc": "Anchor Wing Nut \u00d8100 mm",
+    "desc": "Anchor Wing Nut Ø100 mm",
     "unit": "each",
     "rate": 64.0,
     "category": "Building Materials"
@@ -11544,7 +11544,7 @@
   },
   {
     "code": "8051",
-    "desc": "PVC Pipe \u00d820mm - 150mm long",
+    "desc": "PVC Pipe Ø20mm - 150mm long",
     "unit": "each",
     "rate": 5.0,
     "category": "Building Materials"
@@ -11565,7 +11565,7 @@
   },
   {
     "code": "8054",
-    "desc": "Flat Washer \u00d816, 3mm thik",
+    "desc": "Flat Washer Ø16, 3mm thik",
     "unit": "each",
     "rate": 5.0,
     "category": "Building Materials"
@@ -11621,14 +11621,14 @@
   },
   {
     "code": "8118",
-    "desc": "Zinc alloy (white powder coated) handles along with zinc plated mild steel multi point locking having transmission gear with keeps for",
+    "desc": "Zinc alloy (white powder coated) handles along with zinc plated mild steel multi point locking having transmission gear with keeps for uPVC sliding window",
     "unit": "set",
     "rate": 1394.0,
     "category": "Building Materials"
   },
   {
     "code": "8119",
-    "desc": "Zinc alloy (white powder coated) handles with key along with zinc plated mild steel multi point locking having transmission gear with",
+    "desc": "Zinc alloy (white powder coated) handles with key along with zinc plated mild steel multi point locking having transmission gear with keeps for uPVC sliding door",
     "unit": "set",
     "rate": 1150.0,
     "category": "Building Materials"
@@ -12244,7 +12244,7 @@
   },
   {
     "code": "8562",
-    "desc": "Expanded Polystyrene insulation board 120 mm thick confirming to IS 4671-1984, Fire retardant property self-extinguishing type as per",
+    "desc": "Expanded Polystyrene insulation board 120 mm thick confirming to IS 4671-1984, Fire retardant property self-extinguishing type as per EN 13501-1",
     "unit": "sqm",
     "rate": 800.0,
     "category": "Building Materials"
@@ -13371,7 +13371,7 @@
   },
   {
     "code": "8742",
-    "desc": "G.I. U beading of 16 SWG G.I. sheet (zinc coating >120gm/ m\u00b2) with",
+    "desc": "G.I. U beading of 16 SWG G.I. sheet (zinc coating >120gm/m²) with M4x38mm SS screws",
     "unit": "metre",
     "rate": 295.0,
     "category": "Building Materials"
@@ -13413,7 +13413,7 @@
   },
   {
     "code": "8748",
-    "desc": "37 mm thick Factory made fusion welded shutter with style, rails and",
+    "desc": "37 mm thick Factory made fusion welded shutter with style, rails and panels of PVC extruded section in wooden finish.",
     "unit": "sqm",
     "rate": 2600.0,
     "category": "Building Materials"
@@ -13462,21 +13462,21 @@
   },
   {
     "code": "8757",
-    "desc": "Stainless steel friction hinges (SS-304 grade) size 300 x 19 x 1.9 mm for",
+    "desc": "Stainless steel friction hinges (SS-304 grade) size 300 x 19 x 1.9 mm for uPVC window",
     "unit": "each",
     "rate": 245.0,
     "category": "Building Materials"
   },
   {
     "code": "8758",
-    "desc": "Stainless steel friction hinges (SS-304 grade) size 350 x 19 x 1.9 mm for",
+    "desc": "Stainless steel friction hinges (SS-304 grade) size 350 x 19 x 1.9 mm for uPVC window",
     "unit": "each",
     "rate": 345.0,
     "category": "Building Materials"
   },
   {
     "code": "8759",
-    "desc": "Stainless steel friction hinges (SS-304 grade) size 400 x 19 x 1.9 mm for",
+    "desc": "Stainless steel friction hinges (SS-304 grade) size 400 x 19 x 1.9 mm for uPVC window",
     "unit": "each",
     "rate": 365.0,
     "category": "Building Materials"
@@ -13777,84 +13777,84 @@
   },
   {
     "code": "8812",
-    "desc": "Elbow 90\u00b0 for 15.88 mm outer dia SS pipe",
+    "desc": "Elbow 90° for 15.88 mm outer dia SS pipe",
     "unit": "each",
     "rate": 58.0,
     "category": "Building Materials"
   },
   {
     "code": "8813",
-    "desc": "Elbow 90\u00b0 for 22.22 mm outer dia SS pipe",
+    "desc": "Elbow 90° for 22.22 mm outer dia SS pipe",
     "unit": "each",
     "rate": 63.0,
     "category": "Building Materials"
   },
   {
     "code": "8814",
-    "desc": "Elbow 90\u00b0 for 28.58 mm outer dia SS pipe",
+    "desc": "Elbow 90° for 28.58 mm outer dia SS pipe",
     "unit": "each",
     "rate": 96.0,
     "category": "Building Materials"
   },
   {
     "code": "8815",
-    "desc": "Elbow 90\u00b0 for 34.00 mm outer dia SS pipe",
+    "desc": "Elbow 90° for 34.00 mm outer dia SS pipe",
     "unit": "each",
     "rate": 109.0,
     "category": "Building Materials"
   },
   {
     "code": "8816",
-    "desc": "Elbow 90\u00b0 for 42.70 mm outer dia SS pipe",
+    "desc": "Elbow 90° for 42.70 mm outer dia SS pipe",
     "unit": "each",
     "rate": 116.0,
     "category": "Building Materials"
   },
   {
     "code": "8817",
-    "desc": "Elbow 90\u00b0 for 48.60 mm outer dia SS pipe",
+    "desc": "Elbow 90° for 48.60 mm outer dia SS pipe",
     "unit": "each",
     "rate": 150.0,
     "category": "Building Materials"
   },
   {
     "code": "8818",
-    "desc": "Reducing Elbow 90\u00b0 for 22.22 mm X 15.88 mm outer dia SS pipe",
+    "desc": "Reducing Elbow 90° for 22.22 mm X 15.88 mm outer dia SS pipe",
     "unit": "each",
     "rate": 148.0,
     "category": "Building Materials"
   },
   {
     "code": "8819",
-    "desc": "Reducing Elbow 90\u00b0 for 28.58 mm X 15.88 mm outer dia SS pipe",
+    "desc": "Reducing Elbow 90° for 28.58 mm X 15.88 mm outer dia SS pipe",
     "unit": "each",
     "rate": 191.0,
     "category": "Building Materials"
   },
   {
     "code": "8820",
-    "desc": "Reducing Elbow 90\u00b0 for 28.58 mm X 22.22 mm outer dia SS pipe No.",
+    "desc": "Reducing Elbow 90° for 28.58 mm X 22.22 mm outer dia SS pipe No.",
     "unit": "each",
     "rate": 221.0,
     "category": "Building Materials"
   },
   {
     "code": "8821",
-    "desc": "Reducing Elbow 90\u00b0 for 34.00 mm X 22.22 mm outer dia SS pipe",
+    "desc": "Reducing Elbow 90° for 34.00 mm X 22.22 mm outer dia SS pipe",
     "unit": "each",
     "rate": 287.0,
     "category": "Building Materials"
   },
   {
     "code": "8822",
-    "desc": "Reducing Elbow 90\u00b0 for 34.00 mm X 28.58 mm outer dia SS pipe",
+    "desc": "Reducing Elbow 90° for 34.00 mm X 28.58 mm outer dia SS pipe",
     "unit": "each",
     "rate": 345.0,
     "category": "Building Materials"
   },
   {
     "code": "8823",
-    "desc": "Reducing Elbow 90\u00b0 for 42.70 mm X 34.00 mm outer dia SS pipe",
+    "desc": "Reducing Elbow 90° for 42.70 mm X 34.00 mm outer dia SS pipe",
     "unit": "each",
     "rate": 179.0,
     "category": "Building Materials"
@@ -14708,7 +14708,7 @@
   },
   {
     "code": "8960",
-    "desc": "Geosynthetic Drainage with a \u201cW\u201d configuration as longitudinal parallel channels. Minimum thickness to be 7.2mm, with two filtering UV stabilized polypropylene nonwoven geotextile of minimum thickness of 0.75mm having pores of 150 micron and tensile strength of 8.0 kN/m and having  plane flow capacity of 2.1 L / (m.s) at hydraulic gradient of 1.0 & 20 kPa  pressure,",
+    "desc": "Geosynthetic Drainage with a “W” configuration as longitudinal parallel channels. Minimum thickness to be 7.2mm, with two filtering UV stabilized polypropylene nonwoven geotextile of minimum thickness of 0.75mm having pores of 150 micron and tensile strength of 8.0 kN/m and having  plane flow capacity of 2.1 L / (m.s) at hydraulic gradient of 1.0 & 20 kPa  pressure,",
     "unit": "two filtering nonwoven geotextiles",
     "rate": 530.0,
     "category": "Building Materials"
