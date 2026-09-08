@@ -4,15 +4,20 @@ def get_all_trade_configs():
     return {
         '01_Carriage_of_Materials': {
             'sheet_name': '01_Carriage_of_Materials',
-            'trade_title': 'CPWD DAR 2019 — SUB-HEAD 01: CARRIAGE OF MATERIALS (CUSTOM BUILDER & MATRIX)',
-            'trade_guidance': 'CPWD DAR Sub-head 01: Mechanical & manual transport costing. Mechanical transport items apply only 15% CPOH (Water, GST, and Cess are OFF per CPWD DAR convention unless contractually required). Manual carriage is governed by lead-distance labour matrices.',
-            'default_item_code': 'C-01.01',
-            'default_basis_qty': 24.0,
-            'default_basis_unit': 'cum',
-            'default_item_desc': 'Disposal of moorum / building rubbish / malba / waste material by mechanical transport including loading, transporting, unloading for lead upto 10 km (3 trips of 8 cum capacity)',
+            'trade_title': 'CPWD DAR 2019 — SUB-HEAD 01: CARRIAGE OF MATERIALS (ANALYTICAL SIMULATOR & BENCHMARKS)',
+            'trade_guidance': 'CPWD DAR Sub-head 01: Dynamic Mechanical Carriage Simulator based on Data Sheet No. 1 (Notes 1 to 5). Supports custom lead (L), truck speed (S), turnaround time (T), and payload capacities (C). Evaluates trips N, km done, dynamic fuel consumption, and net unit rates with 15% CPOH.',
+            'default_item_code': '1.1.CUSTOM',
+            'default_basis_qty': 10.98,
+            'default_basis_unit': 'metre',
+            'default_item_desc': 'Transport of 1000, 1100 & 1200 mm dia R.C.C./C.I./Steel cylinder pipes by mechanical transport including loading, transporting, unloading to approved municipal dumping ground/site for lead upto 26 km for all lifts complete as per directions of Engineer-in-charge.',
+            'default_lead': 26.0,
+            'default_speed': 29.0,
+            'default_turnaround': 1.0,
+            'default_capacity': 10.98,
             'sample_library': [
-                {'code': '1.1.1', 'desc': 'Carriage of Lime, moorum, building rubbish by mechanical transport - lead 5 km', 'unit': 'cum', 'basis': 1.0, 'w': 185.20, 'markups': '15% CPOH only', 'rate': 212.98, 'say': 213.00},
-                {'code': '1.1.18', 'desc': 'Disposal of building malba by mechanical transport - lead 10 km', 'unit': 'cum', 'basis': 1.0, 'w': 247.48, 'markups': '15% CPOH only', 'rate': 284.60, 'say': 284.60}
+                {'code': '1.1.18', 'desc': 'Disposal of building malba by mechanical transport - lead 10 km (Restricted urban 3 trips, 8 cum/trip)', 'unit': 'cum', 'basis': 24.0, 'w': 5939.58, 'markups': '15% CPOH only', 'rate': 284.60, 'say': 284.60},
+                {'code': '1.1.17.12-VAR', 'desc': 'Transport of 1000, 1100 & 1200 mm dia pipes - lead 26 km (N=2.86 trips, Speed 29 km/h, Payload 10.98 m/trip)', 'unit': 'metre', 'basis': 31.40, 'w': 7470.17, 'markups': '15% CPOH only', 'rate': 273.56, 'say': 273.60},
+                {'code': '1.1.1', 'desc': 'Carriage of Lime, moorum, building rubbish by mechanical transport - lead 5 km (N=5.19 trips, 8 cum/trip)', 'unit': 'cum', 'basis': 41.52, 'w': 5829.54, 'markups': '15% CPOH only', 'rate': 161.46, 'say': 161.50}
             ]
         },
         '02_Earth_Work': {

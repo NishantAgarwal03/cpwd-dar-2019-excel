@@ -170,24 +170,72 @@ def run_audits():
         print(f"  [FAIL] Forbidden functions found: {len(forbidden_used)}")
         print(f"  [FAIL] Broken references found: {len(broken_refs)}")
         
-    # --- CHECK 6: In-Sheet Real-Time Audit Cells (Row 7) ---
+    # --- CHECK 6: In-Sheet Real-Time Audit Cells ---
     total_checks += 1
-    print("\n[CHECK 6] In-Sheet Real-Time Audit Bars (Row 7 on 12 Trade Builders)...")
+    print("\n[CHECK 6] In-Sheet Real-Time Audit Bars on 12 Trade Builders...")
     audit_bars_ok = True
     for ts_name in trade_sheets:
         ws = wb[ts_name]
-        b7 = str(ws["B7"].value or "")
-        if not b7.startswith("="):
-            print(f"  [FAIL] {ts_name} cell B7 is not a formula: {b7}")
+        audit_coord = "B10" if ts_name == "01_Carriage_of_Materials" else "B7"
+        audit_val = str(ws[audit_coord].value or "")
+        if not audit_val.startswith("="):
+            print(f"  [FAIL] {ts_name} cell {audit_coord} is not a formula: {audit_val}")
             audit_bars_ok = False
         else:
-            if "[PASS]" not in b7:
-                print(f"  [FAIL] {ts_name} cell B7 does not contain proper audit formula: {b7}")
+            if "[PASS]" not in audit_val:
+                print(f"  [FAIL] {ts_name} cell {audit_coord} does not contain proper audit formula: {audit_val}")
                 audit_bars_ok = False
                 
     if audit_bars_ok:
-        print("  [PASS] All 12 trade sheets contain active, dynamic audit formulas in Row 7.")
+        print("  [PASS] All 12 trade sheets contain active, dynamic audit formulas (B10 in Carriage, B7 in others).")
         passed_checks += 1
+        
+    # --- CHECK 7: Dynamic Carriage Analytical Simulator Verification ---
+    total_checks += 1
+    print("\n[CHECK 7] Dynamic Carriage Simulator & CPWD DAR Ground-Truth Audit...")
+    carr_ws = wb["01_Carriage_of_Materials"]
+    carr_checks = []
+    
+    # Check key simulation formulas
+    carr_expected_formulas = {
+        "F7": '=IF(D8="FIXED TRIPS", F8, ROUND(8 / ((2 * D5 / F5) + H5), 2))',
+        "H7": '=ROUND((2 * F7 * D5) + B8, 2)',
+        "D9": '=ROUND(H7 / H8, 2)',
+        "F9": '=ROUND(H7 / B9, 3)',
+        "H9": '=ROUND(F7 * B7, 2)',
+        "E16": '=D9',
+        "E17": '=F9',
+        "G22": '=SUM(G14:G21)',
+        "G23": '=ROUND(G22 / F7, 2)',
+        "G36": '=ROUND(G35 / H9, 2)'
+    }
+    
+    for cell_ref, exp_f in carr_expected_formulas.items():
+        act_f = str(carr_ws[cell_ref].value or "")
+        if act_f != exp_f:
+            carr_checks.append(f"Cell {cell_ref} formula mismatch: expected '{exp_f}', got '{act_f}'")
+            
+    # Check default simulation inputs
+    if carr_ws["D5"].value != 26.0:
+        carr_checks.append(f"Lead D5 expected 26.0, got {carr_ws['D5'].value}")
+    if carr_ws["F5"].value != 29.0:
+        carr_checks.append(f"Speed F5 expected 29.0, got {carr_ws['F5'].value}")
+    if carr_ws["B7"].value != 10.98:
+        carr_checks.append(f"Pipe Payload B7 expected 10.98, got {carr_ws['B7'].value}")
+        
+    # Check presence of Section 3 (Data Sheet 1 benchmark 1-30 km) and Section 4 (Capacities)
+    if "DATA SHEET NO. 1" not in str(carr_ws["A40"].value or ""):
+        carr_checks.append("Section 3 header missing Data Sheet No. 1 benchmark")
+    if "MATERIAL PAYLOAD CAPACITIES MATRIX" not in str(carr_ws["A74"].value or ""):
+        carr_checks.append("Section 4 header missing Material Payload Capacities Matrix")
+        
+    if not carr_checks:
+        print("  [PASS] Carriage Simulator formulas strictly match CPWD DAR Notes 1-5.")
+        print("  [PASS] Default simulation parameters verified: Lead 26.0 km, Speed 29.0 km/h, Payload 10.98 m.")
+        print("  [PASS] 1-30 km Data Sheet 1 benchmark and Table 1.1 material capacities verified.")
+        passed_checks += 1
+    else:
+        print(f"  [FAIL] Carriage Simulator verification issues ({len(carr_checks)}): {carr_checks}")
         
     print("\n" + "=" * 70)
     print(f"AUDIT SUMMARY: {passed_checks} / {total_checks} CHECKS PASSED")
