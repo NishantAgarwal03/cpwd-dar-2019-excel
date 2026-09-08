@@ -637,11 +637,11 @@ def build_carriage_trade(wb, config, styles):
         ws.row_dimensions[r].height = 30 if r == R_SAY else 26
 
     ws.merge_cells(start_row=R_SAY_NOTE, start_column=1, end_row=R_SAY_NOTE, end_column=LAST_COL)
-    sn = ws.cell(row=R_SAY_NOTE, column=1)
-    sn.value = SAY_RULE_NOTE
-    sn.font = styles['font_note']
-    sn.fill = styles['fill_note']
-    sn.alignment = styles['align_wrap']
+    say_note = ws.cell(row=R_SAY_NOTE, column=1)
+    say_note.value = SAY_RULE_NOTE
+    say_note.font = styles['font_note']
+    say_note.fill = styles['fill_note']
+    say_note.alignment = styles['align_wrap']
     border_row(ws, R_SAY_NOTE, styles)
     ws.row_dimensions[R_SAY_NOTE].height = 44
 

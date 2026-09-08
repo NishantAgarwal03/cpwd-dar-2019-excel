@@ -115,6 +115,40 @@ def run_audits():
         if missing_formulas:
             print(f"  [FAIL] Missing named formulas: {missing_formulas}")
         
+    # --- CHECK 3B: every defined name must resolve to a real sheet ---
+    total_checks += 1
+    print("\n[CHECK 3B] Defined Name Reference Integrity (guards against Excel stripping them)...")
+    import re as _re
+    dn_errors = []
+    valid_sheets = set(wb.sheetnames)
+    for _name, _dn in wb.defined_names.items():
+        _ref = str(_dn.value or "")
+        if not _ref:
+            dn_errors.append("%s has an empty reference" % _name)
+            continue
+        # A repr() that leaked into a reference, or any other stray object.
+        # Strip the legitimate <> comparison operator before looking for angle
+        # brackets, otherwise the Resolved_*_Factor named formulas trip this.
+        _bare = _ref.replace("<>", "")
+        if "<" in _bare or ">" in _bare:
+            dn_errors.append("%s contains a stray object repr: %s" % (_name, _ref[:70]))
+            continue
+        # Every quoted or bare sheet qualifier must name a sheet that exists.
+        for _q in _re.findall(r"'([^']+)'!", _ref):
+            if _q not in valid_sheets:
+                dn_errors.append("%s points at unknown sheet '%s'" % (_name, _q))
+        for _b in _re.findall(r"(?<!['\w])([A-Za-z_][A-Za-z0-9_.]*)!", _ref):
+            if _b not in valid_sheets:
+                dn_errors.append("%s points at unknown sheet %s" % (_name, _b))
+    if dn_errors:
+        print("  [FAIL] %d defined name(s) would be stripped by Excel on open:" % len(dn_errors))
+        for _e in dn_errors:
+            print("         - %s" % _e)
+    else:
+        print("  [PASS] All %d defined names resolve to sheets that exist in this workbook."
+              % len(wb.defined_names))
+        passed_checks += 1
+
     # --- CHECK 4: Sheet Protection & Cell Locking ---
     total_checks += 1
     print("\n[CHECK 4] Defensive Sheet Protection & Cell Locking (12 Builders)...")
