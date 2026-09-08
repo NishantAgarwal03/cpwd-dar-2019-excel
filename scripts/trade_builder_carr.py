@@ -54,57 +54,67 @@ from scripts.trade_layout import (
 )
 
 # --- Row map ---------------------------------------------------------------
-R_P1_HEAD, R_P1_COLS = 8, 9
-R_ITEM_CODE, R_MATERIAL, R_SCOPE, R_LIFT, R_GATE_FEE = 10, 11, 12, 13, 14
-R_NOM_OVERRIDE, R_NOMENCLATURE = 15, 16
+# --- Quick rate lookup: read a ready-made rate straight off Table 1.1 -------
+R_QL_HEAD, R_QL_COLS = 8, 9
+R_QL_MAT, R_QL_LEAD = 10, 11
+R_QL_ROW, R_QL_UNIT = 12, 13
+R_QL_BAND, R_QL_BASE, R_QL_XKM, R_QL_PERKM, R_QL_EXTRA = 14, 15, 16, 17, 18
+R_QL_RATE = 19
+R_QL_EXPLAIN = 20
 
-R_P2_HEAD, R_P2_COLS = 18, 19
-R_LEAD, R_SPEED_BM, R_SPEED_OV, R_SPEED_EFF, R_TURNAROUND = 20, 21, 22, 23, 24
-R_MODE, R_TRIPS_BASIS, R_TRIPS_OV, R_TRIPS = 25, 26, 27, 28
-R_DIST_BASIS, R_DISTANCE, R_DIESEL, R_MOBIL = 29, 30, 31, 32
+R_P1_HEAD, R_P1_COLS = 22, 23
+R_ITEM_CODE, R_MATERIAL, R_SCOPE, R_LIFT, R_GATE_FEE = 24, 25, 26, 27, 28
+R_NOM_OVERRIDE, R_NOMENCLATURE = 29, 30
 
-R_P3_HEAD, R_P3_COLS = 34, 35
-R_T11_ROW = 36
-R_PAY_GROSS, R_PAY_NET, R_PAY_OV, R_PAY_EFF = 37, 38, 39, 40
-R_UNIT, R_SCALE, R_OUTPUT = 41, 42, 43
+R_P2_HEAD, R_P2_COLS = 32, 33
+R_LEAD, R_SPEED_BM, R_SPEED_OV, R_SPEED_EFF, R_TURNAROUND = 34, 35, 36, 37, 38
+R_MODE, R_TRIPS_BASIS, R_TRIPS_OV, R_TRIPS = 39, 40, 41, 42
+R_DIST_BASIS, R_DISTANCE, R_DIESEL, R_MOBIL = 43, 44, 45, 46
 
-R_AUDIT = 45
+R_P3_HEAD, R_P3_COLS = 48, 49
+R_T11_ROW = 50
+R_PAY_GROSS, R_PAY_NET, R_PAY_OV, R_PAY_EFF = 51, 52, 53, 54
+R_UNIT, R_SCALE, R_OUTPUT = 55, 56, 57
 
-R_RES_HEAD, R_RES_COLS, R_RES_FIRST = 47, 48, 49
+R_AUDIT = 59
+
+R_RES_HEAD, R_RES_COLS, R_RES_FIRST = 61, 62, 63
 RES_ROWS = 8
-R_RES_LAST = R_RES_FIRST + RES_ROWS - 1                # 56
-R_W_SUB = 57
-R_TRIP_COST = 58
+R_RES_LAST = R_RES_FIRST + RES_ROWS - 1                # 70
+R_W_SUB = 71
+R_TRIP_COST = 72
 
-R_MU_HEAD, R_MU_COLS = 60, 61
-R_W, R_X1, R_X, R_Y1, R_Y, R_Z1, R_Z, R_Z2 = 62, 63, 64, 65, 66, 67, 68, 69
-R_TOTAL, R_TRIP_OH, R_RATE_UNIT, R_RATE_SCHED = 70, 71, 72, 73
-R_DAR_PUB, R_DAR_DIFF = 74, 75
-R_SAY, R_SAY_NOTE = 76, 77
+R_MU_HEAD, R_MU_COLS = 74, 75
+R_W, R_X1, R_X, R_Y1, R_Y, R_Z1, R_Z, R_Z2 = 76, 77, 78, 79, 80, 81, 82, 83
+R_TOTAL, R_TRIP_OH, R_RATE_UNIT, R_RATE_SCHED = 84, 85, 86, 87
+R_DAR_PUB, R_DAR_DIFF = 88, 89
+R_SAY, R_SAY_NOTE = 90, 91
 
-R_MAN_HEAD, R_MAN_BANNER, R_MAN_COLS = 79, 80, 81
-R_M_CODE, R_M_CAT, R_M_LEAD, R_M_STEPS = 82, 83, 84, 85
-R_M_GANG, R_M_GANG_ADD, R_M_WAGE = 86, 87, 88
-R_M_BASE, R_M_ADD, R_M_LABOUR, R_M_CPOH, R_M_TOTAL = 89, 90, 91, 92, 93
-R_M_CAP, R_M_UNIT, R_M_SCALE, R_M_RATE, R_M_SAY = 94, 95, 96, 97, 98
+R_MAN_HEAD, R_MAN_BANNER, R_MAN_COLS = 93, 94, 95
+R_M_CODE, R_M_CAT, R_M_LEAD, R_M_STEPS = 96, 97, 98, 99
+R_M_GANG, R_M_GANG_ADD, R_M_WAGE = 100, 101, 102
+R_M_BASE, R_M_ADD, R_M_LABOUR, R_M_CPOH, R_M_TOTAL = 103, 104, 105, 106, 107
+R_M_CAP, R_M_UNIT, R_M_SCALE, R_M_RATE, R_M_SAY = 108, 109, 110, 111, 112
 
-R_BM_HEAD = 100
-R_DS1_HEAD, R_DS1_COLS, R_DS1_FIRST = 101, 102, 103
+R_BM_HEAD = 114
+R_DS1_HEAD, R_DS1_COLS, R_DS1_FIRST = 115, 116, 117
 DS1_ROWS = 30
-R_DS1_LAST = R_DS1_FIRST + DS1_ROWS - 1                # 132
-R_DS1_NOTE = 133
+R_DS1_LAST = R_DS1_FIRST + DS1_ROWS - 1                # 146
+R_DS1_NOTE = 147
 
-R_T11_HEAD, R_T11_COLS, R_T11_FIRST = 135, 136, 137
+R_T11_HEAD, R_T11_COLS, R_T11_FIRST = 149, 150, 151
 T11_ROWS = 37
-R_T11_LAST = R_T11_FIRST + T11_ROWS - 1                # 173
+R_T11_LAST = R_T11_FIRST + T11_ROWS - 1                # 187
+R_T11_NOTE = 188
 
-R_T12_HEAD, R_T12_COLS, R_T12_FIRST = 175, 176, 177
+R_T12_HEAD, R_T12_COLS, R_T12_FIRST = 190, 191, 192
 T12_ROWS = 35
-R_T12_LAST = R_T12_FIRST + T12_ROWS - 1                # 211
+R_T12_LAST = R_T12_FIRST + T12_ROWS - 1                # 226
+R_T12_NOTE = 227
 
-R_SC_HEAD, R_SC_COLS, R_SC_FIRST = 213, 214, 215
+R_SC_HEAD, R_SC_COLS, R_SC_FIRST = 229, 230, 231
 SC_ROWS = 6
-R_SC_LAST = R_SC_FIRST + SC_ROWS - 1                   # 220
+R_SC_LAST = R_SC_FIRST + SC_ROWS - 1                   # 236
 
 # The reference tables carry the book's full column set and run wider than the
 # nine-column working area above them.
@@ -199,8 +209,113 @@ def build_carriage_trade(wb, config, styles):
     dv_lift = mkdv('"for all lifts,for lift upto 1.5 m,with mechanical lift,'
                    'for all lifts and leads"', False)
 
-    for _sp in (7, 17, 33, 44, 46, 59, 78, 99):
+    for _sp in (7, 21, 31, 47, 58, 60, 73, 92, 113, 148, 189, 228):
         ws.row_dimensions[_sp].height = 8
+
+    # =====================================================================
+    # QUICK RATE LOOKUP - the book's ready-made rate, no simulation needed
+    # =====================================================================
+    section_bar(ws, R_QL_HEAD,
+                'QUICK RATE LOOKUP  -  READ A READY-MADE CPWD RATE OFF TABLE 1.1. '
+                'Pick a material and type a lead: the rate below is the one the DAR 2019 already '
+                'publishes. For anything the book covers you can stop here - the rest of this sheet '
+                'is only needed when you are pricing something the book does NOT cover.', styles,
+                height=30)
+    col_headers(ws, R_QL_COLS, PARAM_HEADERS, styles, height=26)
+    ws.merge_cells(start_row=R_QL_COLS, start_column=5, end_row=R_QL_COLS, end_column=LAST_COL)
+
+    _param_row(ws, R_QL_MAT, styles, 'Material to be carried', default_material(), '-', 'INPUT',
+               'Pick any of the 37 materials the DAR tabulates in Table 1.1 (section 5B below).',
+               dv=dv_mats, wrap_value=True)
+
+    _param_row(ws, R_QL_LEAD, styles, 'Lead distance', 10.0, 'km', 'INPUT',
+               'One-way haul distance. Any value from 1 km upwards - the book covers up to 30 km '
+               'directly and beyond that by its per-km band rate.', number_format='0.00')
+
+    _param_row(ws, R_QL_ROW, styles, 'Table 1.1 row matched', None, 'row', 'DERIVED',
+               'Which row of Table 1.1 your material is on.', number_format='0')
+    ws.cell(row=R_QL_ROW, column=2).value = f'=IFERROR(MATCH(B{R_QL_MAT}, {t11_mat}, 0), "")'
+
+    _param_row(ws, R_QL_UNIT, styles, 'Rate is per', None, '-', 'LOOKUP',
+               'The DAR schedule unit for this material - the rate below is per ONE of these.')
+    ws.cell(row=R_QL_UNIT, column=2).value = (
+        f'=IFERROR(INDEX({t11_unit}, B{R_QL_ROW}), "")')
+
+    _param_row(ws, R_QL_BAND, styles, 'Which part of the table applies', None, '-', 'DERIVED',
+               'The DAR prints exact rates for 1, 2, 3, 4 and 5 km (Table 1.1 columns G to K). '
+               'Past 5 km it stops printing whole rates and instead gives a PER-KILOMETRE adder for '
+               'three bands: column L for >5-10 km, column M for >10-20 km, column N for >20 km. '
+               'This row says which of those four cases your lead falls into.')
+    ws.cell(row=R_QL_BAND, column=2).value = (
+        f'=IF(B{R_QL_ROW}="", "", '
+        f'IF(B{R_QL_LEAD}<=5, "Printed column for " & TEXT(MAX(1,CEILING(B{R_QL_LEAD},1)),"0") & " km", '
+        f'IF(B{R_QL_LEAD}<=10, "5 km rate + column L per km", '
+        f'IF(B{R_QL_LEAD}<=20, "10 km rate + column M per km", '
+        f'"20 km rate + column N per km"))))')
+
+    _param_row(ws, R_QL_BASE, styles, 'Base rate taken from the table', None, 'Rs', 'LOOKUP',
+               'The printed rate the calculation starts from: the 1-5 km column itself, or the 5 km '
+               '/ 10 km / 20 km rate that the relevant band builds on.',
+               number_format=styles['fmt_currency'])
+    ws.cell(row=R_QL_BASE, column=2).value = (
+        f'=IF(B{R_QL_ROW}="", "", '
+        f'IF(B{R_QL_LEAD}<=5, CHOOSE(MAX(1,MIN(5,CEILING(B{R_QL_LEAD},1))), '
+        f'INDEX({lad[1]},B{R_QL_ROW}), INDEX({lad[2]},B{R_QL_ROW}), INDEX({lad[3]},B{R_QL_ROW}), '
+        f'INDEX({lad[4]},B{R_QL_ROW}), INDEX({lad[5]},B{R_QL_ROW})), '
+        f'IF(B{R_QL_LEAD}<=10, INDEX({lad[5]},B{R_QL_ROW}), '
+        f'IF(B{R_QL_LEAD}<=20, INDEX({lad[5]},B{R_QL_ROW}) + 5*INDEX({lad["b5_10"]},B{R_QL_ROW}), '
+        f'INDEX({lad[5]},B{R_QL_ROW}) + 5*INDEX({lad["b5_10"]},B{R_QL_ROW}) '
+        f'+ 10*INDEX({lad["b10_20"]},B{R_QL_ROW})))))')
+
+    _param_row(ws, R_QL_XKM, styles, 'Kilometres beyond the base', None, 'km', 'DERIVED',
+               'How far past the base rate\'s lead you are travelling. Zero for leads up to 5 km, '
+               'because those rates are printed outright.', number_format='0.00')
+    ws.cell(row=R_QL_XKM, column=2).value = (
+        f'=IF(B{R_QL_ROW}="", "", IF(B{R_QL_LEAD}<=5, 0, '
+        f'IF(B{R_QL_LEAD}<=10, B{R_QL_LEAD}-5, IF(B{R_QL_LEAD}<=20, B{R_QL_LEAD}-10, B{R_QL_LEAD}-20))))')
+
+    _param_row(ws, R_QL_PERKM, styles, 'Per-km rate for that band', None, 'Rs per km', 'LOOKUP',
+               'Straight out of Table 1.1 column L, M or N depending on the band. This is exactly '
+               'what those three columns are FOR - they are adders, not rates in their own right.',
+               number_format=styles['fmt_currency'])
+    ws.cell(row=R_QL_PERKM, column=2).value = (
+        f'=IF(B{R_QL_ROW}="", "", IF(B{R_QL_LEAD}<=5, 0, '
+        f'IF(B{R_QL_LEAD}<=10, INDEX({lad["b5_10"]},B{R_QL_ROW}), '
+        f'IF(B{R_QL_LEAD}<=20, INDEX({lad["b10_20"]},B{R_QL_ROW}), '
+        f'INDEX({lad["b20"]},B{R_QL_ROW})))))')
+
+    _param_row(ws, R_QL_EXTRA, styles, 'Add for the extra distance', None, 'Rs', 'DERIVED',
+               'Kilometres beyond the base x the per-km rate for the band.',
+               number_format=styles['fmt_currency'])
+    ws.cell(row=R_QL_EXTRA, column=2).value = (
+        f'=IF(B{R_QL_ROW}="", "", ROUND(B{R_QL_XKM} * B{R_QL_PERKM}, 2))')
+
+    _param_row(ws, R_QL_RATE, styles, 'CPWD PUBLISHED CARRIAGE RATE', None, 'Rs', 'SAY',
+               'Base rate + the extra for distance. This is the DAR 2019 rate for this material at '
+               'this lead, including 15% CP&OH, per the unit shown three rows up. You can put this '
+               'straight into an estimate.', number_format=styles['fmt_currency'])
+    ws.cell(row=R_QL_RATE, column=2).value = (
+        f'=IF(B{R_QL_ROW}="", "", ROUND(B{R_QL_BASE} + B{R_QL_EXTRA}, 2))')
+
+    ws.cell(row=R_QL_EXPLAIN, column=1, value='How that number was reached').font = styles['font_bold']
+    ws.merge_cells(start_row=R_QL_EXPLAIN, start_column=2, end_row=R_QL_EXPLAIN, end_column=LAST_COL)
+    ex = ws.cell(row=R_QL_EXPLAIN, column=2)
+    ex.value = (
+        f'=IF(B{R_QL_ROW}="", "Pick a material from the dropdown above to see the book rate.", '
+        f'"Carriage of " & B{R_QL_MAT} & " for a lead of " & TEXT(B{R_QL_LEAD},"0.00") & " km = " & '
+        f'IF(B{R_QL_LEAD}<=5, '
+        f'"Rs " & TEXT(B{R_QL_BASE},"#,##0.00") & " read directly from the " & '
+        f'TEXT(MAX(1,CEILING(B{R_QL_LEAD},1)),"0") & " km column of Table 1.1", '
+        f'"Rs " & TEXT(B{R_QL_BASE},"#,##0.00") & " (the " & '
+        f'IF(B{R_QL_LEAD}<=10,"5",IF(B{R_QL_LEAD}<=20,"10","20")) & '
+        f'" km rate) plus " & TEXT(B{R_QL_XKM},"0.00") & " km x Rs " & '
+        f'TEXT(B{R_QL_PERKM},"#,##0.00") & " per km = Rs " & TEXT(B{R_QL_EXTRA},"#,##0.00")) & '
+        f'", giving Rs " & TEXT(B{R_QL_RATE},"#,##0.00") & " per " & B{R_QL_UNIT} & ".")')
+    ex.font = styles['font_note']
+    ex.fill = styles['fill_note']
+    ex.alignment = styles['align_wrap']
+    border_row(ws, R_QL_EXPLAIN, styles)
+    ws.row_dimensions[R_QL_EXPLAIN].height = 32
 
     # =====================================================================
     # PANEL 1 - what is being moved
@@ -868,10 +983,23 @@ def build_carriage_trade(wb, config, styles):
 
     ws.merge_cells(start_row=R_DS1_NOTE, start_column=1, end_row=R_DS1_NOTE, end_column=LAST_COL)
     dn = ws.cell(row=R_DS1_NOTE, column=1)
-    dn.value = ('HOW THIS TABLE IS BUILT: N = 8 / ((2L/S) + 1). Km done per day = 2NL + 6, the 6 km '
-                'being the depot run. Diesel = km / 5.0. Mobil oil = km / 140.0. Total shift cost = '
-                'truck hire 0084 + 6 Beldars 0114 + diesel 1235 + mobil oil 5001. Section 1 above '
-                'reproduces this line for line, which is why its W should equal the shift cost here.')
+    dn.value = (
+        'WHAT THIS TABLE IS AND HOW TO READ IT.  It costs out ONE 8-hour truck shift at each lead '
+        'from 1 to 30 km. It is not a rate table - it has no material in it - it is the cost of '
+        'running the truck for a day, which the rate tables then divide by how much that truck can '
+        'carry.  '
+        'HOW IT IS BUILT: N (col 3) = 8 / ((2L/S) + 1). Km per day (col 4) = 2NL + 6, the 6 km being '
+        'the depot run. Diesel (col 5) = km / 5.0 litres, Mobil oil (col 7) = km / 140.0 litres. '
+        'Cols 6, 8, 9 and 10 price those against Rates_Master codes 1235, 5001, 0114 and 0084. '
+        'Col 11 is their sum - the shift cost - and col 12 divides it by the trips.  '
+        'THE TWO COLUMNS PEOPLE ASK ABOUT:  Column M (13) "Increase per km" is simply how much '
+        'col 11 rose over the previous kilometre - a diagnostic showing the cost curve flattening as '
+        'lead grows, nothing reads from it.  Column N (14) "Avg cost per addl km" is the working '
+        'one: it averages that increase over each band (beyond 5, beyond 10, beyond 20 km) and is '
+        'where Table 1.1 columns L, M and N come from. Blank for the first 5 km because those leads '
+        'are priced outright rather than by increment.  '
+        'Section 1 of this sheet reproduces this table line for line, which is why its W should equal '
+        'the shift cost in col 11 for the same lead.')
     dn.font = styles['font_note']
     dn.fill = styles['fill_note']
     dn.alignment = styles['align_wrap']
@@ -914,6 +1042,33 @@ def build_carriage_trade(wb, config, styles):
         ws.cell(row=r, column=4).fill = styles['fill_lookup']
         ws.row_dimensions[r].height = 18
 
+    ws.merge_cells(start_row=R_T11_NOTE, start_column=1, end_row=R_T11_NOTE, end_column=BENCH_COL)
+    n11 = ws.cell(row=R_T11_NOTE, column=1)
+    n11.value = (
+        'WHAT THIS TABLE IS AND HOW TO READ IT.  THIS IS THE READY-MADE RATE TABLE - for anything '
+        'listed here you do not need to calculate at all, you read the rate off. The Quick Rate '
+        'Lookup at the top of the sheet does exactly that, and shows its working.  '
+        'COLUMNS C AND D: capacity is what physically goes on the truck; NET PAYABLE is what CPWD '
+        'actually pays for, after deducting for looseness - earth is carried 8 cum at a time but paid '
+        'as 6.40. Every rate in this table is the shift cost divided by the NET figure, which is why '
+        'earth costs more per cum than sand.  '
+        'COLUMNS G TO K are finished rates per schedule unit including 15% CP&OH, for leads of '
+        'exactly 1, 2, 3, 4 and 5 km. Read one and use it.  '
+        'COLUMNS L, M AND N ARE NOT RATES - they are per-kilometre ADDERS for longer leads. Past '
+        '5 km the book stops printing whole rates and gives you an increment instead: for a lead '
+        'between 5 and 10 km take the 5 km rate (col K) and add column L for each km past 5; between '
+        '10 and 20 km build up to the 10 km rate and add column M per km past 10; beyond 20 km add '
+        'column N per km past 20.  '
+        'WORKED EXAMPLE, bricks at 12 km: 5 km rate 430.57 (col K) + 5 x 32.43 (col L) = 592.72 at '
+        '10 km, then + 2 x 26.95 (col M) = Rs 646.62 per 1000 bricks.  '
+        'The Quick Rate Lookup does this for you - change the lead there and watch the band, the '
+        'base and the adder change.')
+    n11.font = styles['font_note']
+    n11.fill = styles['fill_note']
+    n11.alignment = styles['align_wrap']
+    border_row(ws, R_T11_NOTE, styles, BENCH_COL)
+    ws.row_dimensions[R_T11_NOTE].height = 76
+
     # --- Table 1.2 -------------------------------------------------------
     section_bar(ws, R_T12_HEAD,
                 '5C. TABLE 1.2 - MANUAL LABOUR CARRIAGE, LEAD UNDER 0.50 km (CPWD DAR 2019, printed '
@@ -947,6 +1102,26 @@ def build_carriage_trade(wb, config, styles):
             ws.cell(row=r, column=c).border = styles['border_thin']
         ws.cell(row=r, column=4).fill = styles['fill_lookup']
         ws.row_dimensions[r].height = 18
+
+    ws.merge_cells(start_row=R_T12_NOTE, start_column=1, end_row=R_T12_NOTE, end_column=BENCH_COL)
+    n12 = ws.cell(row=R_T12_NOTE, column=1)
+    n12.value = (
+        'WHAT THIS TABLE IS AND HOW TO READ IT.  The same idea as Table 1.1 but for head-load '
+        'carriage under half a kilometre, where there is no truck - a gang of Beldars or coolies '
+        'moves the material.  '
+        'COLUMN H is the finished rate for the first 50 metres, per schedule unit, including 15% '
+        'CP&OH. COLUMN I is what to add for each further 50 metres, or part of 50 metres - CPWD '
+        'counts a part step as a full step.  '
+        'WORKED EXAMPLE, bricks at 150 m: 328.12 for the first 50 m + 2 further steps x 71.44 = '
+        'Rs 471.00 per 1000 bricks.  '
+        'Section 3 of this sheet builds the same number from the gang sizes and the live day wage, '
+        'so it stays correct if wages are revised - use Section 3 when your material is not in this '
+        'table, and this table when it is.')
+    n12.font = styles['font_note']
+    n12.fill = styles['fill_note']
+    n12.alignment = styles['align_wrap']
+    border_row(ws, R_T12_NOTE, styles, BENCH_COL)
+    ws.row_dimensions[R_T12_NOTE].height = 62
 
     # --- Scope / gang table ---------------------------------------------
     section_bar(ws, R_SC_HEAD,
@@ -1013,7 +1188,7 @@ def build_carriage_trade(wb, config, styles):
         for c in range(1, LAST_COL + 1):
             ws.cell(row=r, column=c).protection = Protection(locked=True)
 
-    editable = [R_ITEM_CODE, R_MATERIAL, R_SCOPE, R_LIFT, R_GATE_FEE, R_NOM_OVERRIDE,
+    editable = [R_QL_MAT, R_QL_LEAD, R_ITEM_CODE, R_MATERIAL, R_SCOPE, R_LIFT, R_GATE_FEE, R_NOM_OVERRIDE,
                 R_LEAD, R_SPEED_OV, R_TURNAROUND, R_MODE, R_TRIPS_BASIS, R_TRIPS_OV, R_DIST_BASIS,
                 R_PAY_OV, R_M_CODE, R_M_CAT, R_M_LEAD, R_M_CAP, R_M_UNIT]
     for r in editable:

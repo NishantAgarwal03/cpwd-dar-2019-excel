@@ -27,6 +27,8 @@ from scripts.carriage_tables import (
 )
 from scripts.trade_builder_carr import (
     R_T11_ROW, R_DAR_PUB, R_DAR_DIFF, BENCH_COL,
+    R_QL_HEAD, R_QL_MAT, R_QL_LEAD, R_QL_ROW, R_QL_UNIT, R_QL_BAND, R_QL_BASE,
+    R_QL_XKM, R_QL_PERKM, R_QL_EXTRA, R_QL_RATE, R_QL_EXPLAIN, R_T11_NOTE, R_T12_NOTE,
     R_M_GANG_ADD, R_M_BASE, R_M_ADD, R_M_LABOUR, R_M_TOTAL, R_M_CAP, R_M_UNIT, R_M_SCALE,
     R_ITEM_CODE, R_MATERIAL, R_SCOPE, R_LIFT, R_GATE_FEE, R_NOM_OVERRIDE, R_NOMENCLATURE,
     R_LEAD, R_SPEED_BM, R_SPEED_OV, R_SPEED_EFF, R_TURNAROUND,
@@ -36,7 +38,7 @@ from scripts.trade_builder_carr import (
     R_W, R_X1, R_X, R_Y1, R_Y, R_Z1, R_Z, R_Z2,
     R_TOTAL, R_TRIP_OH, R_RATE_UNIT, R_RATE_SCHED, R_SAY, R_SAY_NOTE,
     R_M_STEPS, R_M_GANG, R_M_WAGE, R_M_CPOH, R_M_RATE, R_M_SAY,
-    R_DS1_FIRST, R_DS1_LAST, R_DS1_COLS, R_T11_FIRST, R_T11_LAST,
+    R_DS1_FIRST, R_DS1_LAST, R_DS1_COLS, R_DS1_NOTE, R_T11_FIRST, R_T11_LAST,
     R_T12_FIRST, R_T12_LAST, R_SC_FIRST, R_SC_LAST,
     ROLE_FILL,
 )
@@ -255,7 +257,9 @@ def check_carriage(wb, verbose=True):
     else:
         msgs.append("  [PASS] Guide block present: working steps plus the cell-role colour key.")
 
-    param_rows = [R_ITEM_CODE, R_MATERIAL, R_SCOPE, R_LIFT, R_GATE_FEE, R_NOM_OVERRIDE,
+    param_rows = [R_QL_MAT, R_QL_LEAD, R_QL_ROW, R_QL_UNIT, R_QL_BAND, R_QL_BASE,
+                  R_QL_XKM, R_QL_PERKM, R_QL_EXTRA, R_QL_RATE,
+                  R_ITEM_CODE, R_MATERIAL, R_SCOPE, R_LIFT, R_GATE_FEE, R_NOM_OVERRIDE,
                   R_LEAD, R_SPEED_BM, R_SPEED_OV, R_SPEED_EFF, R_TURNAROUND, R_MODE,
                   R_TRIPS_BASIS, R_TRIPS_OV, R_TRIPS, R_DIST_BASIS, R_DISTANCE, R_DIESEL, R_MOBIL,
                   R_T11_ROW, R_PAY_GROSS, R_PAY_NET, R_PAY_OV, R_PAY_EFF,
@@ -275,7 +279,8 @@ def check_carriage(wb, verbose=True):
                     f"saying where the value comes from.")
 
     expect_editable = {R_ITEM_CODE, R_MATERIAL, R_SCOPE, R_LIFT, R_GATE_FEE, R_NOM_OVERRIDE,
-                       R_LEAD, R_SPEED_OV, R_TURNAROUND, R_MODE, R_TRIPS_BASIS, R_TRIPS_OV, R_DIST_BASIS, R_PAY_OV}
+                       R_LEAD, R_SPEED_OV, R_TURNAROUND, R_MODE, R_TRIPS_BASIS, R_TRIPS_OV, R_DIST_BASIS,
+                       R_PAY_OV, R_QL_MAT, R_QL_LEAD}
     wrong = []
     for r in param_rows:
         unlocked = ws.cell(row=r, column=2).protection.locked is False
@@ -291,6 +296,45 @@ def check_carriage(wb, verbose=True):
     else:
         msgs.append("  [PASS] Only the cells declared INPUT or OVERRIDE are unlocked; every LOOKUP, "
                     "DERIVED, RESULT and SAY cell is protected against typing.")
+
+    ql_ok = True
+    if 'QUICK RATE LOOKUP' not in str(ws.cell(row=R_QL_HEAD, column=1).value or ''):
+        ql_ok = False
+        msgs.append('  [FAIL] The Quick Rate Lookup panel is missing.')
+    for rw, what in ((R_QL_BAND, 'band selector'), (R_QL_BASE, 'base rate'),
+                     (R_QL_PERKM, 'per-km adder'), (R_QL_RATE, 'published rate'),
+                     (R_QL_EXPLAIN, 'plain-English working')):
+        cell = str(ws.cell(row=rw, column=2).value or '')
+        if not cell.startswith('='):
+            ql_ok = False
+            msgs.append('  [FAIL] Quick Rate Lookup %s (row %d) is not a formula.' % (what, rw))
+    if 'CHOOSE(' not in str(ws.cell(row=R_QL_BASE, column=2).value or ''):
+        ql_ok = False
+        msgs.append('  [FAIL] Quick Rate Lookup does not read the printed 1-5 km columns.')
+    if not all(x in str(ws.cell(row=R_QL_PERKM, column=2).value or '')
+               for x in ('$', '$', '$')):
+        ql_ok = False
+        msgs.append('  [FAIL] Quick Rate Lookup does not read the three per-km band columns.')
+    if ql_ok:
+        msgs.append('  [PASS] Quick Rate Lookup panel present: material and lead in, band / base / '
+                    'per-km adder / published rate out, with the arithmetic written in words.')
+    else:
+        ok = False
+
+    notes_ok = True
+    for rw, tag in ((R_T11_NOTE, 'Table 1.1'), (R_T12_NOTE, 'Table 1.2')):
+        txt = str(ws.cell(row=rw, column=1).value or '')
+        if 'WHAT THIS TABLE IS' not in txt or 'WORKED EXAMPLE' not in txt:
+            notes_ok = False
+            msgs.append('  [FAIL] %s has no usage note with a worked example.' % tag)
+    if 'Column M' not in str(ws.cell(row=R_DS1_NOTE, column=1).value or ''):
+        notes_ok = False
+        msgs.append('  [FAIL] Data Sheet 1 note does not explain columns 13 and 14.')
+    if notes_ok:
+        msgs.append('  [PASS] All three reference tables carry a plain-English note saying what the '
+                    'table is for, what each column means and a worked example.')
+    else:
+        ok = False
 
     if SAY_NOTE_OK := ('MROUND' in str(ws.cell(row=R_SAY_NOTE, column=1).value or '')):
         msgs.append("  [PASS] The sheet states in writing why the Say rate is rounded to 5 paise, "
