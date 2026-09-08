@@ -91,10 +91,11 @@ R_DAR_PUB, R_DAR_DIFF = 88, 89
 R_SAY, R_SAY_NOTE = 90, 91
 
 R_MAN_HEAD, R_MAN_BANNER, R_MAN_COLS = 93, 94, 95
-R_M_CODE, R_M_CAT, R_M_LEAD, R_M_STEPS = 96, 97, 98, 99
-R_M_GANG, R_M_GANG_ADD, R_M_WAGE = 100, 101, 102
-R_M_BASE, R_M_ADD, R_M_LABOUR, R_M_CPOH, R_M_TOTAL = 103, 104, 105, 106, 107
-R_M_CAP, R_M_UNIT, R_M_SCALE, R_M_RATE, R_M_SAY = 108, 109, 110, 111, 112
+R_M_MAT = 96                                            # NEW: Table 1.2 material picker
+R_M_CODE, R_M_CAT, R_M_LEAD, R_M_STEPS = 97, 98, 99, 100
+R_M_GANG, R_M_GANG_ADD, R_M_WAGE = 101, 102, 103
+R_M_BASE, R_M_ADD, R_M_LABOUR, R_M_CPOH, R_M_TOTAL = 104, 105, 106, 107, 108
+R_M_CAP, R_M_UNIT, R_M_SCALE, R_M_RATE, R_M_SAY = 109, 110, 111, 112, 113
 
 R_BM_HEAD = 114
 R_DS1_HEAD, R_DS1_COLS, R_DS1_FIRST = 115, 116, 117
@@ -205,11 +206,12 @@ def build_carriage_trade(wb, config, styles):
     dv_mlead = mkdv('"50,100,150,200,250,300,350,400,450,500"', False)
     dv_items = mkdv('=CPWD_Carriage_Item_Codes', False)
     dv_mats = mkdv('=CPWD_Carriage_Materials', False)
+    dv_t12mats = mkdv('=CPWD_Carriage12_Materials', False)
     dv_scope = mkdv('=CPWD_Carriage_Scope', False)
     dv_lift = mkdv('"for all lifts,for lift upto 1.5 m,with mechanical lift,'
                    'for all lifts and leads"', False)
 
-    for _sp in (7, 21, 31, 47, 58, 60, 73, 92, 113, 148, 189, 228):
+    for _sp in (7, 21, 31, 47, 58, 60, 73, 92, 148, 189, 228):  # 113 consumed by R_M_SAY
         ws.row_dimensions[_sp].height = 8
 
     # =====================================================================
@@ -857,6 +859,16 @@ def build_carriage_trade(wb, config, styles):
     col_headers(ws, R_MAN_COLS, PARAM_HEADERS, styles, height=26)
     ws.merge_cells(start_row=R_MAN_COLS, start_column=5, end_row=R_MAN_COLS, end_column=LAST_COL)
 
+    _param_row(ws, R_M_MAT, styles,
+               'Material commodity (Table 1.2)',
+               'R.C.C. / steel cylinder / R.C. / C.I. / unreinforced cement pipes 100 mm dia',
+               '-', 'INPUT',
+               'DRIVES COST. Pick from the dropdown - the payable quantity and billing unit in the '
+               'two rows below are looked up from Table 1.2 (section 5C) for whichever material you '
+               'choose here. If your material is not in Table 1.2 leave this blank and type the '
+               'quantity and unit directly in rows B{} and B{}.'.format(R_M_CAP, R_M_UNIT),
+               dv=dv_t12mats, wrap_value=True)
+
     _param_row(ws, R_M_CODE, styles, 'Manual item code', '1.2.CUSTOM', '-', 'INPUT',
                'Your reference for the manual-carriage analysis.')
     _param_row(ws, R_M_CAT, styles, 'Material category', 'Category B (Heavy / Pipes / Steel)', '-',
@@ -907,12 +919,23 @@ def build_carriage_trade(wb, config, styles):
                number_format=styles['fmt_currency'])
     ws.cell(row=R_M_TOTAL, column=2).value = f'=B{R_M_LABOUR} + B{R_M_CPOH}'
 
-    _param_row(ws, R_M_CAP, styles, 'Net payable quantity per 8-hour day', 1702.00, 'per billing unit',
-               'INPUT',
-               'From Table 1.2 below. Note these are already NET of the looseness deduction - earth is '
-               'listed at 28 cum, not the 35 cum a gang physically shifts.', number_format='0.00')
-    _param_row(ws, R_M_UNIT, styles, 'Billing unit', '100 m', '-', 'INPUT',
-               'The DAR schedule unit for this material.', dv=dv_unit)
+    _param_row(ws, R_M_CAP, styles, 'Net payable quantity per 8-hour day', None, 'per billing unit',
+               'LOOKUP',
+               'Looked up from Table 1.2 (section 5C) column D for the material chosen two rows above. '
+               'Already NET of looseness (earth is 28 cum, not the 35 cum physically shifted). '
+               'If the material picker is blank, type the quantity here directly.', number_format='0.00')
+    ws.cell(row=R_M_CAP, column=2).value = (
+        f'=IFERROR(IF(B{R_M_MAT}="", "", '
+        f'INDEX($D${R_T12_FIRST}:$D${R_T12_LAST}, '
+        f'MATCH(B{R_M_MAT}, $B${R_T12_FIRST}:$B${R_T12_LAST}, 0))), "")')
+
+    _param_row(ws, R_M_UNIT, styles, 'Billing unit', None, '-', 'LOOKUP',
+               'Looked up from Table 1.2 (section 5C) column E for the material chosen above. '
+               'Override by typing here if your material is not in Table 1.2.', dv=dv_unit)
+    ws.cell(row=R_M_UNIT, column=2).value = (
+        f'=IFERROR(IF(B{R_M_MAT}="", "cum", '
+        f'INDEX($E${R_T12_FIRST}:$E${R_T12_LAST}, '
+        f'MATCH(B{R_M_MAT}, $B${R_T12_FIRST}:$B${R_T12_LAST}, 0))), "cum")')
     _param_row(ws, R_M_SCALE, styles, 'Schedule unit scale factor', None, 'multiplier', 'DERIVED',
                'x1000 for "1000 Nos", x100 for "100 m", otherwise x1 - the same rule as Panel 3.',
                number_format='0')
@@ -1170,6 +1193,7 @@ def build_carriage_trade(wb, config, styles):
     for name, ref in [
         ('CPWD_Carriage_Item_Codes', f"'{sn}'!$A${R_T11_FIRST}:$A${R_T11_LAST}"),
         ('CPWD_Carriage_Materials', f"'{sn}'!$B${R_T11_FIRST}:$B${R_T11_LAST}"),
+        ('CPWD_Carriage12_Materials', f"'{sn}'!$B${R_T12_FIRST}:$B${R_T12_LAST}"),
         ('CPWD_Carriage_Scope', f"'{sn}'!$A${R_SC_FIRST}:$A${R_SC_LAST}"),
         ('CPWD_Carriage_Net_Payable', f"'{sn}'!$D${R_T11_FIRST}:$D${R_T11_LAST}"),
         ('CPWD_DataSheet1', f"'{sn}'!$A${R_DS1_FIRST}:$H${R_DS1_LAST}"),
@@ -1190,7 +1214,10 @@ def build_carriage_trade(wb, config, styles):
 
     editable = [R_QL_MAT, R_QL_LEAD, R_ITEM_CODE, R_MATERIAL, R_SCOPE, R_LIFT, R_GATE_FEE, R_NOM_OVERRIDE,
                 R_LEAD, R_SPEED_OV, R_TURNAROUND, R_MODE, R_TRIPS_BASIS, R_TRIPS_OV, R_DIST_BASIS,
-                R_PAY_OV, R_M_CODE, R_M_CAT, R_M_LEAD, R_M_CAP, R_M_UNIT]
+                R_PAY_OV, R_M_MAT, R_M_CODE, R_M_CAT, R_M_LEAD]
+    # R_M_CAP and R_M_UNIT are now LOOKUP rows; they carry formulas but remain unlocked so a user
+    # can type over them when pricing a material not listed in Table 1.2.
+    editable += [R_M_CAP, R_M_UNIT]
     for r in editable:
         ws.cell(row=r, column=2).protection = Protection(locked=False)
     for r in (R_X1, R_Y1, R_Z1, R_Z2):
