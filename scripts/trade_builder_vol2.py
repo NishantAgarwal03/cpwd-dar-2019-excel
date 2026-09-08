@@ -498,7 +498,7 @@ def build_vol2_trade(wb, config, styles):
     cs.alignment    = styles['align_right']
     cs.number_format = '0.00'
     cs.fill         = styles['fill_input']
-    cf = ws.cell(row=r_sun, column=6, value='=Factor_Sundries')
+    cf = ws.cell(row=r_sun, column=6, value='=IFERROR(Factor_Sundries, 2.00)')
     cf.alignment    = styles['align_right']
     cf.number_format = '0.00'
     cf.fill         = styles['fill_lookup']
@@ -572,7 +572,7 @@ def build_vol2_trade(wb, config, styles):
          'Total direct cost of production (W); A-tagged imports included, exactly as the book totals it.',
          'includes A'),
         (r_x1_, 'X1',   'Add Water Charges', toggles['water'], 'On (W - A)',
-         f'=G{r_w_} - G{R_A_TOTAL}', '=Factor_Water',
+         f'=G{r_w_} - G{R_A_TOTAL}', '=IFERROR(Factor_Water, 0.01)',
          f'=IF(C{r_x1_}="YES", ROUND(E{r_x1_} * F{r_x1_}, 2), 0)',
          notes.get('water', 'CPWD Standard: 1% for curing & site water. Toggle NO if dry item.'),
          'net of A'),
@@ -580,7 +580,7 @@ def build_vol2_trade(wb, config, styles):
          None, 'W + Water', None, None, f'=G{r_w_} + G{r_x1_}',
          'Compounded base for GST calculation.', 'includes A'),
         (r_y1_, 'Y1',   'Add GST on Works Contract', toggles['gst'], 'On (X - A)',
-         f'=G{r_x_} - G{R_A_TOTAL}', '=Factor_GST',
+         f'=G{r_x_} - G{R_A_TOTAL}', '=IFERROR(Factor_GST, 0.1405)',
          f'=IF(C{r_y1_}="YES", ROUND(E{r_y1_} * F{r_y1_}, 2), 0)',
          notes.get('gst', 'CPWD DAR 2019 factor 0.1405 (works contract). Toggle NO if tax exempt.'),
          'net of A'),
@@ -588,7 +588,7 @@ def build_vol2_trade(wb, config, styles):
          None, 'X + GST', None, None, f'=G{r_x_} + G{r_y1_}',
          'Compounded base for Contractor Profit & Overheads.', 'includes A'),
         (r_z1_, 'Z1',   'Add Contractor Profit & Overheads (15% CPOH)', toggles['cpoh'], 'On (Y - A)',
-         f'=G{r_y_} - G{R_A_TOTAL}', '=Factor_CPOH',
+         f'=G{r_y_} - G{R_A_TOTAL}', '=IFERROR(Factor_CPOH, 0.15)',
          f'=IF(C{r_z1_}="YES", ROUND(E{r_z1_} * F{r_z1_}, 2), 0)',
          notes.get('cpoh', 'Standard CPWD 15% allowance for site overheads, head-office costs & margin.'),
          'net of A'),
@@ -596,7 +596,7 @@ def build_vol2_trade(wb, config, styles):
          None, 'Y + CPOH', None, None, f'=G{r_y_} + G{r_z1_}',
          'Compounded base for Labour Welfare Cess.', 'includes A'),
         (r_z2_, 'Z2',   'Add Labour Welfare Cess (1% BOCW Cess)', toggles['cess'], 'On (Z - A)',
-         f'=G{r_z_} - G{R_A_TOTAL}', '=Factor_Cess',
+         f'=G{r_z_} - G{R_A_TOTAL}', '=IFERROR(Factor_Cess, 0.01)',
          f'=IF(C{r_z2_}="YES", ROUND(E{r_z2_} * F{r_z2_}, 2), 0)',
          notes.get('cess', 'Statutory 1% Building and Other Construction Workers Welfare Cess.'),
          'net of A'),
