@@ -18,9 +18,15 @@ def build_carriage_trade(wb, config, styles):
     
     dv_unit = DataValidation(type='list', formula1='"metre,100 m,cum,tonne,1000 Nos"', allow_blank=False)
     ws.add_data_validation(dv_unit)
+    
+    dv_manual_cat = DataValidation(type='list', formula1='"Category A (Bulk / Earth / Bricks),Category B (Heavy / Pipes / Steel)"', allow_blank=False)
+    ws.add_data_validation(dv_manual_cat)
+    
+    dv_manual_lead = DataValidation(type='list', formula1='"50,100,150,200,250,300,350,400,450,500"', allow_blank=False)
+    ws.add_data_validation(dv_manual_lead)
 
     # =========================================================================
-    # PARAMETERS & HAULAGE ANALYTICAL SIMULATION PANEL (Rows 5 to 9)
+    # PART A: HEADING 1.1 — MECHANICAL TRANSPORT SIMULATOR (>= 1.0 KM)
     # =========================================================================
     # Row 5: Primary Parameters
     ws['A5'] = 'Custom Item Code:'
@@ -723,44 +729,290 @@ def build_carriage_trade(wb, config, styles):
         ws.row_dimensions[r].height = 20
 
     # Spacer
-    r_spacer = 76 + len(capacities_table)
-    ws.row_dimensions[r_spacer].height = 10
+    r_spacer1 = 76 + len(capacities_table)
+    ws.row_dimensions[r_spacer1].height = 12
 
     # =========================================================================
-    # SECTION 5: RUNNING CUSTOM NON-DSR CARRIAGE LIBRARY (Rows 105+)
+    # PART B: HEADING 1.2 — MANUAL LABOUR CARRIAGE BUILDER & DISTANCE MATRIX (< 0.50 KM)
     # =========================================================================
-    r_sec5 = r_spacer + 1
+    r_sec5 = r_spacer1 + 1
     ws.merge_cells(f'A{r_sec5}:H{r_sec5}')
     c_sec5 = ws[f'A{r_sec5}']
-    c_sec5.value = '5. RUNNING CUSTOM NON-DSR ITEMS LIBRARY FOR CARRIAGE'
+    c_sec5.value = '5. HEADING 1.2: MANUAL LABOUR CARRIAGE CALCULATOR (For Lead Less Than 0.50 km / 50 m to 500 m)'
     c_sec5.font = styles['font_white_bold']
     c_sec5.fill = styles['fill_header']
     c_sec5.alignment = styles['align_left']
     ws.row_dimensions[r_sec5].height = 24
     
-    r_inst = r_sec5 + 1
-    ws.merge_cells(f'A{r_inst}:H{r_inst}')
-    c_inst = ws[f'A{r_inst}']
-    c_inst.value = 'Log and save completed custom haulage rate analyses below for immediate reference across project estimates.'
-    c_inst.font = styles['font_note']
-    c_inst.fill = styles['fill_note']
-    c_inst.alignment = styles['align_left']
-    ws.row_dimensions[r_inst].height = 20
+    r_mbanner = r_sec5 + 1
+    ws.merge_cells(f'A{r_mbanner}:H{r_mbanner}')
+    c_mbanner = ws[f'A{r_mbanner}']
+    c_mbanner.value = 'CPWD DAR 2019 Item 1.2 Standards: Category A (Bulk Materials) = 7.67 Beldars 1st 50m (+1.67 Coolies/addl 50m). Category B (Heavy/Pipes/Steel) = 9.20 Beldars 1st 50m (+1.35 Beldars/addl 50m). All rates include 15% CPOH.'
+    c_mbanner.font = styles['font_note']
+    c_mbanner.fill = styles['fill_note']
+    c_mbanner.alignment = styles['align_left']
+    ws.row_dimensions[r_mbanner].height = 22
     
-    r_libhead = r_inst + 1
-    lib_headers = ['Item Code', 'Item Nomenclature / Specification', 'Unit', 'Output Basis', 'Direct Cost W (Rs)', 'Markups Applied', 'Unit Rate (Rs)', 'Say Rate (Rs)']
-    for c_idx, h in enumerate(lib_headers, 1):
-        cell = ws.cell(row=r_libhead, column=c_idx, value=h)
+    # Manual Calculator Input Rows
+    r_minp1 = r_mbanner + 1
+    ws[f'A{r_minp1}'] = 'Manual Item Code:'
+    ws[f'A{r_minp1}'].font = styles['font_bold']
+    ws[f'B{r_minp1}'] = '1.2.CUSTOM'
+    ws[f'B{r_minp1}'].fill = styles['fill_input']
+    ws[f'B{r_minp1}'].font = styles['font_bold']
+    ws[f'B{r_minp1}'].alignment = styles['align_center']
+    
+    ws[f'C{r_minp1}'] = 'Material Category:'
+    ws[f'C{r_minp1}'].font = styles['font_bold']
+    ws[f'D{r_minp1}'] = 'Category B (Heavy / Pipes / Steel)'
+    ws[f'D{r_minp1}'].fill = styles['fill_input']
+    ws[f'D{r_minp1}'].font = styles['font_bold']
+    ws[f'D{r_minp1}'].alignment = styles['align_center']
+    dv_manual_cat.add(ws[f'D{r_minp1}'])
+    
+    ws[f'E{r_minp1}'] = 'Lead Distance (Metres):'
+    ws[f'E{r_minp1}'].font = styles['font_bold']
+    ws[f'F{r_minp1}'] = 100
+    ws[f'F{r_minp1}'].fill = styles['fill_input']
+    ws[f'F{r_minp1}'].font = styles['font_bold']
+    ws[f'F{r_minp1}'].alignment = styles['align_center']
+    dv_manual_lead.add(ws[f'F{r_minp1}'])
+    
+    ws[f'G{r_minp1}'] = 'Addl 50m Steps (M):'
+    ws[f'G{r_minp1}'].font = styles['font_bold']
+    ws[f'H{r_minp1}'] = f'=MAX(0, (F{r_minp1} - 50) / 50)'
+    ws[f'H{r_minp1}'].fill = styles['fill_subtotal']
+    ws[f'H{r_minp1}'].font = styles['font_bold']
+    ws[f'H{r_minp1}'].alignment = styles['align_center']
+    ws[f'H{r_minp1}'].number_format = '0'
+    
+    for col in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']:
+        ws[f'{col}{r_minp1}'].border = styles['border_thin']
+    ws.row_dimensions[r_minp1].height = 22
+    
+    r_minp2 = r_minp1 + 1
+    ws[f'A{r_minp2}'] = 'Manual Item Specification:'
+    ws[f'A{r_minp2}'].font = styles['font_bold']
+    ws[f'A{r_minp2}'].border = styles['border_thin']
+    ws.merge_cells(f'B{r_minp2}:H{r_minp2}')
+    ws[f'B{r_minp2}'] = 'Carriage by manual labour including loading, unloading and stacking for lead upto 100 metres complete as per directions of Engineer-in-charge.'
+    ws[f'B{r_minp2}'].font = styles['font_regular']
+    ws[f'B{r_minp2}'].fill = styles['fill_input']
+    ws[f'B{r_minp2}'].alignment = styles['align_wrap']
+    ws[f'B{r_minp2}'].border = styles['border_thin']
+    ws.row_dimensions[r_minp2].height = 28
+    
+    r_minp3 = r_minp2 + 1
+    ws[f'A{r_minp3}'] = '8-Hour Output Capacity:'
+    ws[f'A{r_minp3}'].font = styles['font_bold']
+    ws[f'B{r_minp3}'] = 1702.00 # e.g. 100mm RCC pipe capacity per 8 hrs
+    ws[f'B{r_minp3}'].fill = styles['fill_input']
+    ws[f'B{r_minp3}'].font = styles['font_bold']
+    ws[f'B{r_minp3}'].alignment = styles['align_center']
+    ws[f'B{r_minp3}'].number_format = '0.00'
+    
+    ws[f'C{r_minp3}'] = 'Output / Billing Unit:'
+    ws[f'C{r_minp3}'].font = styles['font_bold']
+    ws[f'D{r_minp3}'] = '100 m'
+    ws[f'D{r_minp3}'].fill = styles['fill_input']
+    ws[f'D{r_minp3}'].font = styles['font_bold']
+    ws[f'D{r_minp3}'].alignment = styles['align_center']
+    dv_unit.add(ws[f'D{r_minp3}'])
+    
+    ws[f'E{r_minp3}'] = 'Base Labour 1st 50m (Rs):'
+    ws[f'E{r_minp3}'].font = styles['font_bold']
+    ws[f'F{r_minp3}'] = f'=IF(ISNUMBER(SEARCH("Category A", D{r_minp1})), 4279.86, 5133.60)'
+    ws[f'F{r_minp3}'].fill = styles['fill_subtotal']
+    ws[f'F{r_minp3}'].font = styles['font_bold']
+    ws[f'F{r_minp3}'].alignment = styles['align_right']
+    ws[f'F{r_minp3}'].number_format = styles['fmt_currency']
+    
+    ws[f'G{r_minp3}'] = 'Addl Labour / 50m (Rs):'
+    ws[f'G{r_minp3}'].font = styles['font_bold']
+    ws[f'H{r_minp3}'] = f'=IF(ISNUMBER(SEARCH("Category A", D{r_minp1})), 931.86, 753.30)'
+    ws[f'H{r_minp3}'].fill = styles['fill_subtotal']
+    ws[f'H{r_minp3}'].font = styles['font_bold']
+    ws[f'H{r_minp3}'].alignment = styles['align_right']
+    ws[f'H{r_minp3}'].number_format = styles['fmt_currency']
+    
+    for col in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']:
+        ws[f'{col}{r_minp3}'].border = styles['border_thin']
+    ws.row_dimensions[r_minp3].height = 22
+    
+    r_minp4 = r_minp3 + 1
+    ws[f'A{r_minp4}'] = 'Total Labour Cost (Rs):'
+    ws[f'A{r_minp4}'].font = styles['font_bold']
+    ws[f'B{r_minp4}'] = f'=F{r_minp3} + (H{r_minp1} * H{r_minp3})'
+    ws[f'B{r_minp4}'].fill = styles['fill_subtotal']
+    ws[f'B{r_minp4}'].font = styles['font_bold']
+    ws[f'B{r_minp4}'].alignment = styles['align_right']
+    ws[f'B{r_minp4}'].number_format = styles['fmt_currency']
+    
+    ws[f'C{r_minp4}'] = 'Add 15% CPOH (Rs):'
+    ws[f'C{r_minp4}'].font = styles['font_bold']
+    ws[f'D{r_minp4}'] = f'=ROUND(B{r_minp4} * 0.15, 2)'
+    ws[f'D{r_minp4}'].fill = styles['fill_subtotal']
+    ws[f'D{r_minp4}'].font = styles['font_bold']
+    ws[f'D{r_minp4}'].alignment = styles['align_right']
+    ws[f'D{r_minp4}'].number_format = styles['fmt_currency']
+    
+    ws[f'E{r_minp4}'] = 'Total 8-Hr Cost with CPOH:'
+    ws[f'E{r_minp4}'].font = styles['font_bold']
+    ws[f'F{r_minp4}'] = f'=B{r_minp4} + D{r_minp4}'
+    ws[f'F{r_minp4}'].fill = styles['fill_result']
+    ws[f'F{r_minp4}'].font = styles['font_bold']
+    ws[f'F{r_minp4}'].alignment = styles['align_right']
+    ws[f'F{r_minp4}'].number_format = styles['fmt_currency']
+    
+    ws[f'G{r_minp4}'] = 'Analyzed Unit Rate (Rs):'
+    ws[f'G{r_minp4}'].font = styles['font_bold']
+    ws[f'H{r_minp4}'] = f'=IF(OR(D{r_minp3}="100 m", D{r_minp3}="1000 Nos"), ROUND((F{r_minp4} / B{r_minp3}) * 100, 2), ROUND(F{r_minp4} / B{r_minp3}, 2))'
+    ws[f'H{r_minp4}'].fill = styles['fill_say']
+    ws[f'H{r_minp4}'].font = styles['font_say']
+    ws[f'H{r_minp4}'].alignment = styles['align_right']
+    ws[f'H{r_minp4}'].number_format = styles['fmt_currency']
+    
+    for col in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']:
+        ws[f'{col}{r_minp4}'].border = styles['border_thin']
+    ws.row_dimensions[r_minp4].height = 26
+
+    # Spacer
+    r_spacer2 = r_minp4 + 1
+    ws.row_dimensions[r_spacer2].height = 10
+
+    # =========================================================================
+    # SECTION 6: CPWD TABLE 1.2 MANUAL LABOUR GROUND-TRUTH MATRIX (Rows 117+)
+    # =========================================================================
+    r_sec6 = r_spacer2 + 1
+    ws.merge_cells(f'A{r_sec6}:H{r_sec6}')
+    c_sec6 = ws[f'A{r_sec6}']
+    c_sec6.value = '6. CPWD DAR TABLE 1.2 MANUAL LABOUR GROUND-TRUTH MATRIX (< 0.50 km Standards)'
+    c_sec6.font = styles['font_white_bold']
+    c_sec6.fill = styles['fill_header']
+    c_sec6.alignment = styles['align_left']
+    ws.row_dimensions[r_sec6].height = 24
+    
+    man_headers = ['DAR Code', 'Material Specification', '8-Hour Capacity', 'Net Payable Qty', 'Unit of Rate', 'Cost for 1st 50 m (Rs)', 'Cost for Addl 50 m (Rs)', 'CPWD DAR Labour Composition']
+    r_manhead = r_sec6 + 1
+    for c_idx, h in enumerate(man_headers, 1):
+        cell = ws.cell(row=r_manhead, column=c_idx, value=h)
         cell.font = styles['font_header']
         cell.fill = styles['fill_header']
         cell.alignment = styles['align_center']
         cell.border = styles['border_header']
-    ws.row_dimensions[r_libhead].height = 24
+    ws.row_dimensions[r_manhead].height = 24
     
-    sample_lib = config.get('sample_library', [])
-    for idx in range(10):
-        r = r_libhead + 1 + idx
-        item = sample_lib[idx] if idx < len(sample_lib) else None
+    manual_table_data = [
+        ('1.2.1', 'Lime, moorum, building rubbish, malba', 35.00, 35.00, 'cum', 140.62, 30.62, '7.67 Beldars @ Rs 558 + 15% CPOH (Addl: 1.67 Coolies)'),
+        ('1.2.2', 'Earth (excavated soil / good earth)', 35.00, 28.00, 'cum', 175.78, 38.27, '20% looseness deduction (Net = 28 cum)'),
+        ('1.2.3', 'Manure or sludge', 35.00, 32.20, 'cum', 152.85, 33.28, '8% looseness deduction (Net = 32.2 cum)'),
+        ('1.2.4', 'Excavated rock', 35.00, 17.50, 'cum', 281.25, 61.24, '50% voids deduction (Net = 17.5 cum)'),
+        ('1.2.5', 'Sand, stone aggregate below 40 mm', 28.00, 28.00, 'cum', 175.78, 38.27, '28 cum density norm (Nil looseness)'),
+        ('1.2.6', 'Stone aggregate 40 mm & above', 28.00, 25.90, 'cum', 190.03, 41.38, '8% voids deduction (Net = 25.9 cum)'),
+        ('1.2.7', 'Soling stone & masonry stone', 28.00, 23.80, 'cum', 206.80, 45.03, '15% voids deduction (Net = 23.8 cum)'),
+        ('1.2.8', 'Bricks (conventional / modular)', 15000.0, 15000.0, '1000 Nos', 328.12, 71.44, '15,000 Bricks per 8 hours manual gang'),
+        ('1.2.9', 'Brick tiles / roofing tiles', 24000.0, 24000.0, '1000 Nos', 205.08, 44.65, '24,000 Tiles per 8 hours manual gang'),
+        ('1.2.10', 'Steam coal', 30.00, 30.00, 'tonne', 164.06, 35.72, '30 tonnes per 8 hours manual gang'),
+        ('1.2.11', 'Stone blocks, pipes <100mm, heavy items', 46.00, 46.00, 'tonne', 128.34, 18.83, 'Category B: 9.20 Beldars 1st 50m (+1.35 Beldars addl)'),
+        ('1.2.12', 'Cement in bags', 57.99, 57.99, 'tonne', 101.80, 14.94, '57.99 tonnes (approx 1,160 bags) per shift'),
+        ('1.2.13', 'Steel bars & structural steel', 27.00, 27.00, 'tonne', 218.65, 32.09, '27 tonnes steel shifting per 8 hours shift'),
+        ('1.2.14', 'Timber scantlings & logs', 42.00, 42.00, 'cum', 140.56, 20.63, '42 cum timber manual haulage per shift'),
+        ('1.2.15', 'Tar, bitumen in drums', 46.00, 46.00, 'tonne', 128.34, 18.83, '46 tonnes drum handling per shift'),
+        ('1.2.16.1', 'S.W. pipes 100 mm dia', 2298.0, 2298.0, '100 m', 256.90, 37.70, '2,298 metres manual carrying per shift'),
+        ('1.2.16.2', 'S.W. pipes 150 mm dia', 1398.0, 1398.0, '100 m', 422.29, 61.97, '1,398 metres manual carrying per shift'),
+        ('1.2.16.3', 'S.W. pipes 200 mm dia', 999.0, 999.0, '100 m', 590.95, 86.72, '999 metres manual carrying per shift'),
+        ('1.2.16.5', 'S.W. pipes 250 mm dia', 600.0, 600.0, '100 m', 983.94, 144.38, '600 metres manual carrying per shift'),
+        ('1.2.17.1', 'R.C.C. pipes 100 mm dia', 1702.0, 1702.0, '100 m', 346.86, 50.90, '1,702 metres manual carrying per shift'),
+        ('1.2.17.2', 'R.C.C. pipes 125 mm dia', 1391.0, 1391.0, '100 m', 424.42, 62.28, '1,391 metres manual carrying per shift'),
+        ('1.2.17.3', 'R.C.C. pipes 150 mm dia', 1208.0, 1208.0, '100 m', 488.71, 71.71, '1,208 metres manual carrying per shift'),
+        ('1.2.17.4', 'R.C.C. pipes 200 mm dia', 805.0, 805.0, '100 m', 733.37, 107.61, '805 metres manual carrying per shift'),
+        ('1.2.17.5', 'R.C.C. pipes 250 mm dia', 458.0, 458.0, '100 m', 1289.00, 189.15, '458 metres manual carrying per shift'),
+        ('1.2.17.6', 'R.C.C. pipes 300 mm dia', 366.0, 366.0, '100 m', 1613.02, 236.69, '366 metres manual carrying per shift'),
+        ('1.2.17.10', 'R.C.C. pipes 600, 700, 750 & 800 mm dia', 150.0, 150.0, '100 m', 3935.76, 577.53, '150 metres manual carrying per shift')
+    ]
+    
+    for idx, mrow in enumerate(manual_table_data):
+        r = r_manhead + 1 + idx
+        ws.cell(row=r, column=1, value=mrow[0]).alignment = styles['align_center']
+        ws.cell(row=r, column=1).font = styles['font_bold']
+        
+        ws.cell(row=r, column=2, value=mrow[1]).alignment = styles['align_left']
+        
+        ws.cell(row=r, column=3, value=mrow[2]).alignment = styles['align_right']
+        ws.cell(row=r, column=3).number_format = '0.00'
+        
+        ws.cell(row=r, column=4, value=mrow[3]).alignment = styles['align_right']
+        ws.cell(row=r, column=4).number_format = '0.00'
+        
+        ws.cell(row=r, column=5, value=mrow[4]).alignment = styles['align_center']
+        
+        c_mcost1 = ws.cell(row=r, column=6, value=mrow[5])
+        c_mcost1.alignment = styles['align_right']
+        c_mcost1.number_format = styles['fmt_currency']
+        
+        c_mcost2 = ws.cell(row=r, column=7, value=mrow[6])
+        c_mcost2.alignment = styles['align_right']
+        c_mcost2.number_format = styles['fmt_currency']
+        
+        ws.cell(row=r, column=8, value=mrow[7]).alignment = styles['align_left']
+        ws.cell(row=r, column=8).font = styles['font_note']
+        
+        row_fill = styles['fill_subtotal'] if r % 2 == 0 else styles['fill_calc']
+        for c in range(1, 9):
+            cell = ws.cell(row=r, column=c)
+            cell.fill = row_fill
+            cell.border = styles['border_thin']
+            if c not in [1, 6, 7]:
+                cell.font = styles['font_regular']
+        ws.row_dimensions[r].height = 20
+
+    # Spacer
+    r_spacer3 = r_manhead + 1 + len(manual_table_data)
+    ws.row_dimensions[r_spacer3].height = 12
+
+    # =========================================================================
+    # SECTION 7: RUNNING CUSTOM NON-DSR CARRIAGE LIBRARY (Rows 146+)
+    # =========================================================================
+    r_sec7 = r_spacer3 + 1
+    ws.merge_cells(f'A{r_sec7}:H{r_sec7}')
+    c_sec7 = ws[f'A{r_sec7}']
+    c_sec7.value = '7. RUNNING CUSTOM NON-DSR ITEMS LIBRARY FOR CARRIAGE (Mechanical & Manual)'
+    c_sec7.font = styles['font_white_bold']
+    c_sec7.fill = styles['fill_header']
+    c_sec7.alignment = styles['align_left']
+    ws.row_dimensions[r_sec7].height = 24
+    
+    r_linst = r_sec7 + 1
+    ws.merge_cells(f'A{r_linst}:H{r_linst}')
+    c_linst = ws[f'A{r_linst}']
+    c_linst.value = 'Log and save completed custom haulage rate analyses (Mechanical or Manual) below for immediate reference across project estimates.'
+    c_linst.font = styles['font_note']
+    c_linst.fill = styles['fill_note']
+    c_linst.alignment = styles['align_left']
+    ws.row_dimensions[r_linst].height = 20
+    
+    r_llibhead = r_linst + 1
+    lib_headers = ['Item Code', 'Item Nomenclature / Specification', 'Unit', 'Output Basis', 'Direct Cost W (Rs)', 'Markups Applied', 'Unit Rate (Rs)', 'Say Rate (Rs)']
+    for c_idx, h in enumerate(lib_headers, 1):
+        cell = ws.cell(row=r_llibhead, column=c_idx, value=h)
+        cell.font = styles['font_header']
+        cell.fill = styles['fill_header']
+        cell.alignment = styles['align_center']
+        cell.border = styles['border_header']
+    ws.row_dimensions[r_llibhead].height = 24
+    
+    combined_lib = [
+        {'code': '1.1.18', 'desc': 'Disposal of building malba by mechanical transport - lead 10 km (Restricted urban 3 trips, 8 cum/trip)', 'unit': 'cum', 'basis': 24.0, 'w': 5939.58, 'markups': '15% CPOH only', 'rate': 284.60, 'say': 284.60},
+        {'code': '1.1.17.12-VAR', 'desc': 'Transport of 1000, 1100 & 1200 mm dia pipes - lead 26 km (N=2.86 trips, Speed 29 km/h, Payload 10.98 m/trip)', 'unit': 'metre', 'basis': 31.40, 'w': 7470.17, 'markups': '15% CPOH only', 'rate': 273.56, 'say': 273.60},
+        {'code': '1.1.1', 'desc': 'Carriage of Lime, moorum, building rubbish by mechanical transport - lead 5 km (N=5.19 trips, 8 cum/trip)', 'unit': 'cum', 'basis': 41.52, 'w': 5829.54, 'markups': '15% CPOH only', 'rate': 161.46, 'say': 161.50},
+        {'code': '1.2.1', 'desc': 'Manual carriage of lime, moorum, rubbish for lead upto 50 metres (Category A)', 'unit': 'cum', 'basis': 35.0, 'w': 4279.86, 'markups': '15% CPOH only', 'rate': 140.62, 'say': 140.60},
+        {'code': '1.2.13', 'desc': 'Manual carriage of steel bars & structural steel for lead upto 50 metres (Category B)', 'unit': 'tonne', 'basis': 27.0, 'w': 5133.60, 'markups': '15% CPOH only', 'rate': 218.65, 'say': 218.65},
+        {'code': '1.2.17.1', 'desc': 'Manual carriage of R.C.C. pipes 100 mm dia for lead upto 100 metres (Category B)', 'unit': '100 m', 'basis': 17.02, 'w': 5886.90, 'markups': '15% CPOH only', 'rate': 397.76, 'say': 397.75}
+    ]
+    
+    for idx in range(12):
+        r = r_llibhead + 1 + idx
+        item = combined_lib[idx] if idx < len(combined_lib) else None
         
         ws.cell(row=r, column=1, value=item['code'] if item else f"C-01.{idx+1:02d}").alignment = styles['align_center']
         ws.cell(row=r, column=2, value=item['desc'] if item else '(Available for new custom carriage analysis)').alignment = styles['align_left']
@@ -808,7 +1060,7 @@ def build_carriage_trade(wb, config, styles):
         for c in range(1, ws.max_column + 1):
             ws.cell(row=r, column=c).protection = Protection(locked=True)
             
-    # Unlocked Input Cells in Parameter Panel
+    # Part A Unlocked Input Cells
     ws['B5'].protection = Protection(locked=False)
     ws['D5'].protection = Protection(locked=False)
     ws['F5'].protection = Protection(locked=False)
@@ -839,11 +1091,19 @@ def build_carriage_trade(wb, config, styles):
     ws['C32'].protection = Protection(locked=False)
     ws['C34'].protection = Protection(locked=False)
     
-    # Section 5 Library rows
-    for r in range(r_libhead + 1, r_libhead + 11):
+    # Part B Unlocked Input Cells
+    ws[f'B{r_minp1}'].protection = Protection(locked=False)
+    ws[f'D{r_minp1}'].protection = Protection(locked=False)
+    ws[f'F{r_minp1}'].protection = Protection(locked=False)
+    ws[f'B{r_minp2}'].protection = Protection(locked=False)
+    ws[f'B{r_minp3}'].protection = Protection(locked=False)
+    ws[f'D{r_minp3}'].protection = Protection(locked=False)
+    
+    # Section 7 Library rows
+    for r in range(r_llibhead + 1, r_llibhead + 13):
         for c in range(1, 9):
             ws.cell(row=r, column=c).protection = Protection(locked=False)
             
     ws.protection.sheet = True
     ws.freeze_panes = 'A4'
-    print('Built Dynamic Carriage Analytical Simulator sheet.')
+    print('Built Dual-Engine Carriage Sheet (1.1 Mechanical & 1.2 Manual Labour).')

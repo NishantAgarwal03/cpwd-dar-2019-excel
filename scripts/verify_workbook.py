@@ -229,10 +229,21 @@ def run_audits():
     if "MATERIAL PAYLOAD CAPACITIES MATRIX" not in str(carr_ws["A74"].value or ""):
         carr_checks.append("Section 4 header missing Material Payload Capacities Matrix")
         
+    # Check Heading 1.2 Manual Labour Carriage (Section 5 & 6)
+    if "HEADING 1.2: MANUAL LABOUR CARRIAGE CALCULATOR" not in str(carr_ws["A104"].value or ""):
+        carr_checks.append(f"Section 5 header missing Manual Labour Carriage Calculator, got: '{carr_ws['A104'].value}'")
+    if "CPWD DAR TABLE 1.2 MANUAL LABOUR" not in str(carr_ws["A111"].value or ""):
+        carr_checks.append(f"Section 6 header missing Table 1.2 Manual Labour Matrix, got: '{carr_ws['A111'].value}'")
+    if carr_ws["D106"].value != "Category B (Heavy / Pipes / Steel)":
+        carr_checks.append(f"Manual category D106 expected Category B, got {carr_ws['D106'].value}")
+    if carr_ws["F106"].value != 100:
+        carr_checks.append(f"Manual lead distance F106 expected 100, got {carr_ws['F106'].value}")
+        
     if not carr_checks:
         print("  [PASS] Carriage Simulator formulas strictly match CPWD DAR Notes 1-5.")
         print("  [PASS] Default simulation parameters verified: Lead 26.0 km, Speed 29.0 km/h, Payload 10.98 m.")
         print("  [PASS] 1-30 km Data Sheet 1 benchmark and Table 1.1 material capacities verified.")
+        print("  [PASS] Heading 1.2 Manual Labour Calculator (<0.50 km) and Table 1.2 Matrix verified.")
         passed_checks += 1
     else:
         print(f"  [FAIL] Carriage Simulator verification issues ({len(carr_checks)}): {carr_checks}")
