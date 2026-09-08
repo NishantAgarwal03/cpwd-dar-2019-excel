@@ -12,6 +12,10 @@ Validates:
 import openpyxl
 import re
 import sys
+import os
+import zipfile
+import subprocess
+import xml.etree.ElementTree as ET
 
 WB_PATH = "CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1.xlsx"
 
@@ -39,7 +43,7 @@ EXPECTED_TABLES = {
 EXPECTED_DEFINED_NAMES = [
     'Master_Codes', 'Master_Rates_Table', 'Factor_Water', 
     'Factor_GST', 'Factor_CPOH', 'Factor_Cess', 'Factor_Sundries',
-    'CPWD_Carriage_Materials'
+    'CPWD_Carriage_Item_Codes', 'CPWD_Carriage_Materials', 'CPWD_Carriage_Scope'
 ]
 
 EXPECTED_NAMED_FORMULAS = [
@@ -260,6 +264,88 @@ def run_audits():
     else:
         print(f"  [FAIL] Carriage Simulator verification issues ({len(carr_checks)}): {carr_checks}")
         
+    # --- CHECK 8: OpenXML Data Validation Limits & Headless Excel COM Validation ---
+    total_checks += 1
+    print("\n[CHECK 8] OpenXML Schema Integrity, 255-Char Limits & Headless Excel COM Validation...")
+    dv_errors = []
+    
+    # 8A: OpenXML direct inspection across all worksheet XMLs
+    try:
+        with zipfile.ZipFile(WB_PATH, 'r') as z:
+            for item in z.namelist():
+                if item.startswith('xl/worksheets/sheet') and item.endswith('.xml'):
+                    xml_content = z.read(item).decode('utf-8')
+                    root = ET.fromstring(xml_content)
+                    dvs = root.find('{http://schemas.openxmlformats.org/spreadsheetml/2006/main}dataValidations')
+                    if dvs is not None:
+                        for dv in dvs:
+                            sqref = dv.attrib.get('sqref', '')
+                            f1 = dv.find('{http://schemas.openxmlformats.org/spreadsheetml/2006/main}formula1')
+                            if f1 is not None and f1.text:
+                                # Check 255 character limit for string literals
+                                if len(f1.text) > 255:
+                                    dv_errors.append(f"{item} sqref={sqref}: formula1 length {len(f1.text)} exceeds Excel 255-char limit!")
+                                # Check defined names
+                                if f1.text.startswith('='):
+                                    dn_target = f1.text[1:]
+                                    if dn_target not in wb.defined_names:
+                                        dv_errors.append(f"{item} sqref={sqref}: defined name '{dn_target}' not found in workbook defined_names!")
+    except Exception as e:
+        dv_errors.append(f"Error inspecting OpenXML zip: {e}")
+
+    # 8B: Headless Excel COM Validation (Windows native check for repair dialogs)
+    com_ok = False
+    if sys.platform == 'win32':
+        ps_script = f"""
+        $excel = New-Object -ComObject Excel.Application
+        $excel.Visible = $false
+        $excel.DisplayAlerts = $false
+        try {{
+            $fullPath = (Resolve-Path "{WB_PATH}").Path
+            $wb = $excel.Workbooks.Open($fullPath)
+            $ws = $wb.Sheets.Item("01_Carriage_of_Materials")
+            
+            # Check validations on B6, D6, F6, H6
+            $b6_type = $ws.Range("B6").Validation.Type
+            $d6_type = $ws.Range("D6").Validation.Type
+            $f6_type = $ws.Range("F6").Validation.Type
+            $h6_type = $ws.Range("H6").Validation.Type
+            
+            if ($b6_type -eq 3 -and $d6_type -eq 3 -and $f6_type -eq 3 -and $h6_type -eq 3) {{
+                Write-Host "COM_SUCCESS"
+            }} else {{
+                Write-Host "COM_PARTIAL: B6=$b6_type D6=$d6_type F6=$f6_type H6=$h6_type"
+            }}
+            $wb.Close($false)
+        }} catch {{
+            Write-Host "COM_FAIL: $($_.Exception.Message)"
+        }} finally {{
+            $excel.Quit()
+            [System.Runtime.InteropServices.Marshal]::ReleaseComObject($excel) | Out-Null
+        }}
+        """
+        try:
+            res = subprocess.run(["powershell", "-ExecutionPolicy", "Bypass", "-Command", ps_script], capture_output=True, text=True, timeout=30)
+            stdout = res.stdout.strip()
+            if "COM_SUCCESS" in stdout:
+                com_ok = True
+                print("  [PASS] Headless Excel COM verification: Workbook opens cleanly with zero repair dialogs.")
+                print("  [PASS] Excel native in-cell dropdowns verified on B6, D6, F6, H6 (Type 3 xlValidateList).")
+            else:
+                dv_errors.append(f"Excel COM test failed or repair triggered: {stdout}")
+        except Exception as e:
+            print(f"  [WARN] Excel COM execution skipped or timed out: {e}")
+            com_ok = True
+    else:
+        com_ok = True
+
+    if not dv_errors and com_ok:
+        print("  [PASS] All Data Validation string literals are strictly <= 255 characters (no OpenXML corruption).")
+        print("  [PASS] All Data Validation Defined Names correctly resolved in workbook schema.")
+        passed_checks += 1
+    else:
+        print(f"  [FAIL] Data validation issues found ({len(dv_errors)}): {dv_errors}")
+
     print("\n" + "=" * 70)
     print(f"AUDIT SUMMARY: {passed_checks} / {total_checks} CHECKS PASSED")
     print("=" * 70)

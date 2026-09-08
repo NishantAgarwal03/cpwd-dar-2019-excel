@@ -30,14 +30,13 @@ def build_carriage_trade(wb, config, styles):
     ws.add_data_validation(dv_manual_lead)
 
     # Keyword Data Validations for Smart Selector
+    dv_item_codes = DataValidation(type='list', formula1='=CPWD_Carriage_Item_Codes', allow_blank=False)
+    ws.add_data_validation(dv_item_codes)
+
     dv_materials = DataValidation(type='list', formula1='=CPWD_Carriage_Materials', allow_blank=False)
     ws.add_data_validation(dv_materials)
 
-    dv_scope = DataValidation(
-        type='list',
-        formula1='"including loading, transporting, unloading and stacking,including loading, transporting, unloading to approved municipal dumping ground,including loading, transporting and unloading (excluding stacking),transporting and unloading only (machine loaded / excluding loading),transporting only (excluding loading, unloading and stacking),including unloading and stacking at railway siding"',
-        allow_blank=False
-    )
+    dv_scope = DataValidation(type='list', formula1='=CPWD_Carriage_Scope', allow_blank=False)
     ws.add_data_validation(dv_scope)
 
     dv_lift = DataValidation(
@@ -69,6 +68,7 @@ def build_carriage_trade(wb, config, styles):
     ws['B6'].fill = styles['fill_input']
     ws['B6'].font = styles['font_bold']
     ws['B6'].alignment = styles['align_center']
+    dv_item_codes.add(ws['B6'])
 
     ws['C6'] = 'Material Commodity:'
     ws['C6'].font = styles['font_bold']
@@ -971,7 +971,8 @@ def build_carriage_trade(wb, config, styles):
                 cell.font = styles['font_regular']
         ws.row_dimensions[r].height = 20
 
-    # Named Range for Materials
+    # Named Ranges for Materials and Item Codes
+    wb.defined_names.add(DefinedName('CPWD_Carriage_Item_Codes', attr_text=f"'{config['sheet_name']}'!$A$88:$A$114"))
     wb.defined_names.add(DefinedName('CPWD_Carriage_Materials', attr_text=f"'{config['sheet_name']}'!$B$88:$B$114"))
 
     # Spacer Row 115
@@ -1095,6 +1096,9 @@ def build_carriage_trade(wb, config, styles):
             cell.fill = row_fill
             cell.border = styles['border_thin']
         ws.row_dimensions[r].height = 20
+ 
+    # Named Range for Handling Scopes (Cell F6 dropdown source)
+    wb.defined_names.add(DefinedName('CPWD_Carriage_Scope', attr_text=f"'{config['sheet_name']}'!$A$127:$A$132"))
 
     # Column Widths
     col_widths = {
