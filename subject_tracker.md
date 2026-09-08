@@ -21,3 +21,4 @@
 | 2026-09-08 10:07 | Execute implementation plan: build Python 3.11 ETL script, generate the 16-sheet Excel 2016 rate analysis workbook, and verify. | Completed |
 | 2026-09-08 10:53 | Detail system of checks, internal audits, and architectural protections (Excel Tables, Named Ranges/Formulas, Separate Assumptions, Git setup, automated audits, cell protections) to ensure workbook never breaks upon update. | Completed |
 | 2026-09-08 11:37 | Clarify presence/distinction of Named Formulas vs Named Ranges; explain engineering implications under excel-estimator-design standards. | Completed |
+| 2026-09-08 11:42 | Implement selected Named Formulas (items 2, 3, 4: catalog size counters Total_Active_Rates, Total_Labour_Norms, Total_Sundries_Norms, and statutory resolvers Resolved_Water_Factor, Resolved_GST_Factor, Resolved_CPOH_Factor, Resolved_Cess_Factor), verify in CI/CD suite, and commit to Git. | Completed |
