@@ -20,3 +20,4 @@
 | 2026-09-08 10:03 | Add contextual CPWD explanation notes/guidance beside markup toggles across trade builder sheets; proceed to implementation plan and Python 3.11 generation pipeline. | Completed |
 | 2026-09-08 10:07 | Execute implementation plan: build Python 3.11 ETL script, generate the 16-sheet Excel 2016 rate analysis workbook, and verify. | Completed |
 | 2026-09-08 10:53 | Detail system of checks, internal audits, and architectural protections (Excel Tables, Named Ranges/Formulas, Separate Assumptions, Git setup, automated audits, cell protections) to ensure workbook never breaks upon update. | Completed |
+| 2026-09-08 11:37 | Clarify presence/distinction of Named Formulas vs Named Ranges; explain engineering implications under excel-estimator-design standards. | Completed |
