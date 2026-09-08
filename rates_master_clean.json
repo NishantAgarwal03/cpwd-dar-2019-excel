@@ -540,14 +540,14 @@
   },
   {
     "code": "0083",
-    "desc": "Hire charges of TATA 407 or equivalent for local shifting. Note :- 1. Above hire - charges (from item code 0001 to 0083) include cost of services of operating staff, Cost of lubricating oil, diesel / Petrol/ Kerosene oil , other consumables for running the plant and machinery and excluding GST.  2. The hire charges of plant machinery on per day basis are for single shift of eight working hours.",
+    "desc": "Hire charges of TATA 407 or equivalent for local shifting",
     "unit": "day",
     "rate": 1200.0,
     "category": "Hire Charges of Plants & Machinery"
   },
   {
     "code": "0084",
-    "desc": "Hire charges of diesel truck - 9 tonne (witout POL)",
+    "desc": "Hire charges of diesel truck - 9 tonne (without POL)",
     "unit": "day",
     "rate": 1500.0,
     "category": "Hire Charges of Plants & Machinery"

@@ -234,7 +234,7 @@ def build_standard_trade(wb, config, styles):
     # SECTION 2: LABOUR & MACHINERY (Rows 22 to 34)
     ws.merge_cells('A22:H22')
     c_sec2 = ws['A22']
-    c_sec2.value = '2. LABOUR & MACHINERY COMPONENT BUILD-UP'
+    c_sec2.value = '2. LABOUR & MACHINERY COMPONENT BUILD-UP (Note: Plant codes 0001-0083 include operator, fuel & lubricants per 8-hr shift)'
     c_sec2.font = styles['font_white_bold']
     c_sec2.fill = styles['fill_header']
     c_sec2.alignment = styles['align_left']

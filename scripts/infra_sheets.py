@@ -112,6 +112,14 @@ def build_global_factors(wb, styles):
         ws[f'B{idx}'].border = styles['border_thin']
         ws.row_dimensions[idx].height = 20
         
+    ws.merge_cells('D5:G8')
+    c_pm_note = ws['D5']
+    c_pm_note.value = "CPWD PLANT & MACHINERY HIRE CONVENTION (Item Codes 0001 to 0083):\n1. Hire charges include services of operating staff, lubricating oil, diesel/petrol/kerosene, and all consumables for running the machinery, and exclude GST.\n2. Hire charges are on per-day basis for a single shift of eight working hours.\n3. Do not add duplicate fuel or operator lines unless using un-fueled codes (e.g. 0084 onwards)."
+    c_pm_note.font = styles['font_note']
+    c_pm_note.fill = styles['fill_note']
+    c_pm_note.alignment = styles['align_wrap']
+    c_pm_note.border = styles['border_thin']
+        
     # Section 2: Statutory Factors Table
     ws['A10'] = '2. STATUTORY MARKUPS & OVERHEAD COEFFICIENTS'
     ws['A10'].font = styles['font_section']

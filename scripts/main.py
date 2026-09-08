@@ -67,8 +67,14 @@ def generate_full_workbook():
         
     out_path = 'CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1.xlsx'
     print(f"Saving complete workbook to {out_path}...")
-    wb.save(out_path)
-    
+    try:
+        wb.save(out_path)
+    except PermissionError:
+        alt_path = 'CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1_Latest.xlsx'
+        print(f"WARNING: '{out_path}' is currently open in Excel. Saving to '{alt_path}' instead.")
+        wb.save(alt_path)
+        out_path = alt_path
+        
     elapsed = time.time() - t0
     file_size_mb = os.path.getsize(out_path) / (1024 * 1024)
     print(f"SUCCESS! Generated {len(wb.sheetnames)} sheets in {elapsed:.2f}s ({file_size_mb:.2f} MB)")

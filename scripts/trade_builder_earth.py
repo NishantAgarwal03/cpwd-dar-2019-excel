@@ -101,7 +101,7 @@ def build_earthwork_trade(wb, config, styles):
     # SECTION 1: LABOUR & MACHINERY (Rows 8 to 20)
     ws.merge_cells('A8:H8')
     c_sec1 = ws['A8']
-    c_sec1.value = '1. LABOUR & MACHINERY COMPONENT BUILD-UP (Earth Work operates without direct raw materials)'
+    c_sec1.value = '1. LABOUR & MACHINERY COMPONENT BUILD-UP (Note: Equipment codes 0001-0083 include driver, fuel & lubricants per 8-hr shift)'
     c_sec1.font = styles['font_white_bold']
     c_sec1.fill = styles['fill_header']
     c_sec1.alignment = styles['align_left']
