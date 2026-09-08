@@ -72,9 +72,18 @@ def generate_full_workbook():
         wb.save(out_path)
     except PermissionError:
         alt_path = 'CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1_Latest.xlsx'
-        print(f"WARNING: '{out_path}' is currently open in Excel. Saving to '{alt_path}' instead.")
         wb.save(alt_path)
-        out_path = alt_path
+        print("=" * 64)
+        print("BUILD DID NOT UPDATE THE MAIN WORKBOOK")
+        print(f"  '{out_path}' is open in Excel and could not be overwritten.")
+        print(f"  The new build was written to '{alt_path}' instead.")
+        print("  The file you have open is now STALE. Close Excel, delete the ~$ lock")
+        print("  file, re-run this script, and re-run scripts/verify_workbook.py.")
+        print("=" * 64)
+        elapsed = time.time() - t0
+        size = os.path.getsize(alt_path) / (1024 * 1024)
+        print(f"Wrote {len(wb.sheetnames)} sheets to the fallback in {elapsed:.2f}s ({size:.2f} MB)")
+        raise SystemExit(1)
         
     elapsed = time.time() - t0
     file_size_mb = os.path.getsize(out_path) / (1024 * 1024)

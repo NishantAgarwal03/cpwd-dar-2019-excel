@@ -18,6 +18,18 @@ and 10 import from `Resolved_Cross_Volume_Items`, each tagged "A" so it is
 excluded from the markup base per the CPWD (W-A) convention.
 """
 
+import re
+
+from scripts.trade_layout import R_SAY, R_LIB_FIRST
+
+# The 03_Mortars builder computes ONE mix at a time. Consuming trades read its
+# live Say rate; a second mortar (e.g. Cladding's white-cement pointing mix) is
+# built there too and logged in the item library, and is read from that row.
+# Both are derived from the layout constants so a row shift cannot silently
+# repoint them at a blank or, worse, at a zeroed markup cell.
+MORTAR_LIVE_SAY = "='03_Mortars'!G%d" % R_SAY
+MORTAR_LIBRARY_2 = "='03_Mortars'!H%d" % (R_LIB_FIRST + 1)
+
 DRIVES = 'DRIVES COST'
 NOMEN = 'NOMENCLATURE ONLY'
 USER = 'USER-SUPPLIED COST'
@@ -574,11 +586,11 @@ RESOLVED_LINES = {
          'custom_desc': 'White cement mortar 1:2 (1 white cement : 2 marble dust) - pointing mortar, '
                         'rate from 03_Mortars or DAR item 3.15',
          'custom_unit': 'cum',
-         'custom_rate_formula': "='03_Mortars'!H73",
+         'custom_rate_formula': MORTAR_LIBRARY_2,
          'note': 'Second mortar line. DAR 8.1.1.1 imports BOTH item 3.8 (bedding) and item 3.15 (white cement '
                  'pointing) in the same cladding item. The 03_Mortars builder computes one mix at a time, so '
-                 'the bedding mortar reads its live output (G66) while this pointing mortar reads row 2 of the '
-                 '03_Mortars item library (H73) - build the pointing mix there and log it. Not A-tagged: '
+                 'the bedding mortar reads its live Say rate while this pointing mortar reads row 2 of '
+                 'the 03_Mortars item library - build the pointing mix there and log it. Not A-tagged: '
                  'Mortars carry no markups, so this line takes the full chain.'},
         {'code': '18.78', 'coeff': 0.0,
          'custom_desc': 'Making chases upto 7.5 x 7.5 cm in walls including making good (DAR 18.78, Water Supply)',
@@ -607,6 +619,24 @@ RESOLVED_LINES = {
     ],
     '10_Steel_Work': [],  # handled by replacing the existing literal line below
 }
+
+
+def _retarget_mortar_refs(configs):
+    """Point every '03_Mortars'!G<n> reference at the sheet's actual Say row.
+
+    trade_configs.py carries these as literal strings; rather than trusting the
+    row number written there, rewrite it from the live layout constants.
+    """
+    for cfg in configs.values():
+        for m in cfg.get('default_materials', []) or []:
+            f = m.get('custom_rate_formula')
+            if isinstance(f, str) and "'03_Mortars'!G" in f:
+                m['custom_rate_formula'] = re.sub(r"'03_Mortars'!G\d+",
+                                                  "'03_Mortars'!G%d" % R_SAY, f)
+            elif isinstance(f, str) and "'03_Mortars'!H" in f:
+                m['custom_rate_formula'] = re.sub(r"'03_Mortars'!H\d+",
+                                                  "'03_Mortars'!H%d" % (R_LIB_FIRST + 1), f)
+    return configs
 
 
 def merge_scope_metadata(configs):
@@ -646,6 +676,7 @@ def merge_scope_metadata(configs):
             if str(line['code']) not in existing:
                 mats.append(line)
 
+    _retarget_mortar_refs(configs)
     return configs
 
 

@@ -19,7 +19,9 @@ import zipfile
 import subprocess
 import xml.etree.ElementTree as ET
 
-WB_PATH = "CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1.xlsx"
+# Target workbook. Pass a path as argv[1] to audit a different build, e.g. the
+# _Latest fallback written when the main file is locked by an open Excel.
+WB_PATH = sys.argv[1] if len(sys.argv) > 1 else "CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1.xlsx"
 
 # Forbidden Office 365 / modern functions not in Excel 2016
 FORBIDDEN_365_FUNCS = [
@@ -206,6 +208,39 @@ def run_audits():
               "while the code / description / unit lookup keys stay locked.")
         print("  [PASS] Global_Factors keeps only the project parameters and the override column "
               "editable; the resolver formulas behind Factor_* are locked.")
+        passed_checks += 1
+
+    # --- CHECK 4C: cross-sheet references must land on a Say or library cell ---
+    total_checks += 1
+    print("\n[CHECK 4C] Cross-Sheet Reference Targets (guards against a layout shift repointing them)...")
+    import re as _re2
+    from scripts.trade_layout import R_SAY as _R_SAY, R_LIB_FIRST as _R_LIB, R_LIB_LAST as _R_LIBL
+    xs_errors, xs_found = [], 0
+    for _ws in wb.worksheets:
+        for _row in _ws.iter_rows():
+            for _c in _row:
+                if not (isinstance(_c.value, str) and _c.value.startswith("=")):
+                    continue
+                for _sheet, _col, _row_no in _re2.findall(r"'([^']+)'!\$?([A-Z]+)\$?(\d+)", _c.value):
+                    if not _sheet[:2].isdigit():
+                        continue          # only builder-to-builder links matter here
+                    xs_found += 1
+                    _n = int(_row_no)
+                    ok_say = (_col == "G" and _n == _R_SAY)
+                    ok_lib = (_col in ("G", "H") and _R_LIB <= _n <= _R_LIBL)
+                    if not (ok_say or ok_lib):
+                        _target = wb[_sheet].cell(row=_n, column=1).value if _sheet in wb.sheetnames else "?"
+                        xs_errors.append("%s!%s -> '%s'!%s%d (row is '%s', not the Say row %d "
+                                         "or an item-library row %d-%d)"
+                                         % (_ws.title, _c.coordinate, _sheet, _col, _n,
+                                            str(_target)[:28], _R_SAY, _R_LIB, _R_LIBL))
+    if xs_errors:
+        print("  [FAIL] %d cross-sheet reference(s) point at the wrong row:" % len(xs_errors))
+        for _e in xs_errors[:8]:
+            print("         - %s" % _e)
+    else:
+        print("  [PASS] All %d builder-to-builder references land on the target sheet's Say cell "
+              "(G%d) or an item-library row (%d-%d)." % (xs_found, _R_SAY, _R_LIB, _R_LIBL))
         passed_checks += 1
 
     # --- CHECK 5: MS Excel 2016 Compatibility & Broken Refs ---
