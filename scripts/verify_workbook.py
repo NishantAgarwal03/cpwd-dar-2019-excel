@@ -339,6 +339,11 @@ def run_audits():
     # 8B: Headless Excel COM Validation (Windows native check for repair dialogs)
     com_ok = False
     if sys.platform == 'win32':
+        # Probe the Panel 1 dropdown cells, located from the layout constants so
+        # this cannot go stale when rows move.
+        from scripts.trade_builder_carr import (R_ITEM_CODE as _RIC, R_MATERIAL as _RMT,
+                                                R_SCOPE as _RSC, R_LIFT as _RLF)
+        _c1, _c2, _c3, _c4 = ('B%d' % _RIC, 'B%d' % _RMT, 'B%d' % _RSC, 'B%d' % _RLF)
         ps_script = f"""
         $excel = New-Object -ComObject Excel.Application
         $excel.Visible = $false
@@ -349,15 +354,15 @@ def run_audits():
             $ws = $wb.Sheets.Item("01_Carriage_of_Materials")
             
             # Panel 1 dropdowns: item code, material, handling scope, lift condition
-            $b6_type = $ws.Range("B10").Validation.Type
-            $d6_type = $ws.Range("B11").Validation.Type
-            $f6_type = $ws.Range("B12").Validation.Type
-            $h6_type = $ws.Range("B13").Validation.Type
+            $b6_type = $ws.Range("{_c1}").Validation.Type
+            $d6_type = $ws.Range("{_c2}").Validation.Type
+            $f6_type = $ws.Range("{_c3}").Validation.Type
+            $h6_type = $ws.Range("{_c4}").Validation.Type
             
             if ($b6_type -eq 3 -and $d6_type -eq 3 -and $f6_type -eq 3 -and $h6_type -eq 3) {{
                 Write-Host "COM_SUCCESS"
             }} else {{
-                Write-Host "COM_PARTIAL: B10=$b6_type B11=$d6_type B12=$f6_type B13=$h6_type"
+                Write-Host "COM_PARTIAL: {_c1}=$b6_type {_c2}=$d6_type {_c3}=$f6_type {_c4}=$h6_type"
             }}
             $wb.Close($false)
         }} catch {{
@@ -373,7 +378,7 @@ def run_audits():
             if "COM_SUCCESS" in stdout:
                 com_ok = True
                 print("  [PASS] Headless Excel COM verification: Workbook opens cleanly with zero repair dialogs.")
-                print("  [PASS] Excel native in-cell dropdowns verified on Panel 1 cells B10:B13 (Type 3 xlValidateList).")
+                print("  [PASS] Excel native in-cell dropdowns verified on the Panel 1 selector cells (Type 3 xlValidateList).")
             else:
                 dv_errors.append(f"Excel COM test failed or repair triggered: {stdout}")
         except Exception as e:
