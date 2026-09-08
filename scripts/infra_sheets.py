@@ -8,7 +8,7 @@ def build_rates_master(wb, styles):
     ws = wb.create_sheet(title='Rates_Master')
     ws.views.sheetView[0].showGridLines = True
     
-    headers = ['Code', 'Category', 'Description / Specification', 'Unit', 'Basic Rate (₹)']
+    headers = ['Code', 'Category', 'Description / Specification', 'Unit', 'Basic Rate (Rs)']
     for col_idx, h in enumerate(headers, 1):
         c = ws.cell(row=1, column=col_idx, value=h)
         c.font = styles['font_header']
@@ -52,7 +52,6 @@ def build_rates_master(wb, styles):
     ws.column_dimensions['E'].width = 18
     
     ws.freeze_panes = 'A2'
-    ws.auto_filter.ref = f'A1:E{len(rates)+1}'
     
     wb.defined_names.add(DefinedName('Master_Codes', attr_text="'Rates_Master'!$A$2:$A$" + str(len(rates)+1)))
     wb.defined_names.add(DefinedName('Master_Rates_Table', attr_text="'Rates_Master'!$A$2:$E$" + str(len(rates)+1)))
@@ -239,7 +238,7 @@ def build_labour_productivity(wb, styles):
     ws = wb.create_sheet(title='Labour_Machinery_Productivity')
     ws.views.sheetView[0].showGridLines = True
     
-    headers = ['Sub-Head', 'DAR Item No', 'Item Nomenclature', 'Output Basis', 'Resource Type', 'Code', 'Resource Description', 'Unit', 'Day Coeff / Qty', 'Basic Rate (₹)']
+    headers = ['Sub-Head', 'DAR Item No', 'Item Nomenclature', 'Output Basis', 'Resource Type', 'Code', 'Resource Description', 'Unit', 'Day Coeff / Qty', 'Basic Rate (Rs)']
     for col_idx, h in enumerate(headers, 1):
         c = ws.cell(row=1, column=col_idx, value=h)
         c.font = styles['font_header']
@@ -292,7 +291,6 @@ def build_labour_productivity(wb, styles):
     ws.column_dimensions['J'].width = 16
     
     ws.freeze_panes = 'A2'
-    ws.auto_filter.ref = f'A1:J{len(records)+1}'
     
     tab = Table(displayName="tbl_Productivity", ref=f"A1:J{len(records)+1}")
     tab.tableStyleInfo = TableStyleInfo(name="TableStyleLight1", showRowStripes=True)
@@ -304,7 +302,7 @@ def build_sundries_reference(wb, styles):
     ws = wb.create_sheet(title='Sundries_Reference')
     ws.views.sheetView[0].showGridLines = True
     
-    headers = ['Sub-Head', 'DAR Item No', 'Item Nomenclature', 'Output Basis', 'Sundries Description', 'Base L.S. Quantity', 'Index Multiplier', 'Total Amount (₹)']
+    headers = ['Sub-Head', 'DAR Item No', 'Item Nomenclature', 'Output Basis', 'Sundries Description', 'Base L.S. Quantity', 'Index Multiplier', 'Total Amount (Rs)']
     for col_idx, h in enumerate(headers, 1):
         c = ws.cell(row=1, column=col_idx, value=h)
         c.font = styles['font_header']
@@ -355,7 +353,6 @@ def build_sundries_reference(wb, styles):
     ws.column_dimensions['H'].width = 18
     
     ws.freeze_panes = 'A2'
-    ws.auto_filter.ref = f'A1:H{len(records)+1}'
     
     tab = Table(displayName="tbl_SundriesRef", ref=f"A1:H{len(records)+1}")
     tab.tableStyleInfo = TableStyleInfo(name="TableStyleLight1", showRowStripes=True)
