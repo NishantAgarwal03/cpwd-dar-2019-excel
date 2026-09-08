@@ -21,6 +21,7 @@ def get_workbook_styles():
         'fill_section': PatternFill(start_color='E2E8F0', end_color='E2E8F0', fill_type='solid'), # Cool Gray
         'fill_input': PatternFill(start_color='FEF9C3', end_color='FEF9C3', fill_type='solid'),     # Soft Yellow (User Input)
         'fill_lookup': PatternFill(start_color='E0F2FE', end_color='E0F2FE', fill_type='solid'),   # Pale Blue (Reference / Lookup)
+        'fill_override': PatternFill(start_color='FED7AA', end_color='FED7AA', fill_type='solid'), # Warm Orange (Optional user override)
         'fill_calc': PatternFill(start_color='FFFFFF', end_color='FFFFFF', fill_type='solid'),     # Clean White (Formula Calc)
         'fill_subtotal': PatternFill(start_color='F1F5F9', end_color='F1F5F9', fill_type='solid'), # Very Light Slate (Subtotal)
         'fill_result': PatternFill(start_color='DCFCE7', end_color='DCFCE7', fill_type='solid'),   # Soft Mint Green (Result)

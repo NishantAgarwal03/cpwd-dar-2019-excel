@@ -75,7 +75,8 @@ def recompute_resolved():
         z = y + cpoh
         cess = round((z - a_total) * CESS, 2) if tg['cess'] == 'YES' else 0.0
         cost = round(z + cess, 2)
-        say = round(cost / item['basis_qty'], 2)
+        # CPWD quotes Say rates to the nearest 5 paise - MROUND(x, 0.05).
+        say = round(round((cost / item['basis_qty']) / 0.05) * 0.05, 2)
 
         prior[item['item_no']] = say
         results.append({
@@ -95,9 +96,9 @@ def check_cross_volume(wb, verbose=True):
     for r in recompute_resolved():
         dw = abs(r['w'] - r['book_w'])
         ds = abs(r['say'] - r['book_say'])
-        # 1 paisa per line of rounding drift is acceptable; the book itself
-        # rounds its Say to the nearest 5 paise on some items.
-        if dw <= 0.05 and ds <= 0.05:
+        # With MROUND(x, 0.05) applied the Say rate must land exactly on the
+        # book's printed figure; W still tolerates a paisa of line rounding.
+        if dw <= 0.05 and ds < 0.001:
             msgs.append(f"  [PASS] Item {r['item_no']:<9} W = Rs {r['w']:>9,.2f} (book {r['book_w']:>9,.2f}), "
                         f"Say = Rs {r['say']:>8,.2f} / {r['unit']} (book {r['book_say']:>8,.2f})"
                         + (f", of which A = Rs {r['a']:,.2f}" if r['a'] else ""))

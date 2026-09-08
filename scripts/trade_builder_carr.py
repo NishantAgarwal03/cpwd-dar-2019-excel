@@ -1,814 +1,762 @@
 # -*- coding: utf-8 -*-
-import openpyxl
-from openpyxl.styles import Font, PatternFill, Alignment, Border, Side, Protection
+"""
+01_Carriage_of_Materials - CPWD DAR Sub-Head 01 analytical simulator.
+
+Rewritten so that every value on the sheet sits on its own row with an explicit
+CELL ROLE (INPUT / OVERRIDE / LOOKUP / DERIVED / RESULT / SAY) and a plain
+English explanation of where it comes from. Nothing is a bare number in an
+unlabelled cell any more.
+
+Defects corrected in this revision (all verified against the DAR source):
+
+  1. Payload now reads the NET PAYABLE quantity (Table 1.1 column D), not the
+     gross truck payload (column C). CPWD pays on the net figure after the
+     looseness deduction - reproducing all 27 Table 1.1 base rates requires the
+     net column (27/27 with net, 22/27 with gross).
+  2. The schedule-unit scale factor is derived from the unit itself: 1000 for
+     "1000 Nos", 100 for "100 m", otherwise 1. The old formula multiplied both
+     by 100, understating every brick and tile rate tenfold.
+  3. The SAY rate uses MROUND(x, 0.05) - CPWD quotes Say rates to the nearest
+     5 paise. The two-decimal "analysed rate" is kept on the row above it so the
+     unrounded figure is still visible.
+  4. The CPWD pro-rata basis now looks up the Data Sheet 1 row for the ACTUAL
+     lead and scales that row's km/day by (N / that row's trips). It used to be
+     hard-wired to the 10 km row's constants (88.00 and 4.10).
+  5. Average speed is looked up from Data Sheet 1 by lead, with an explicit
+     override row. Previously it was typed by hand and could silently
+     contradict the benchmark table sitting on the same sheet.
+  6. Every division is wrapped in IFERROR, and the audit bar now tests the
+     outputs that matter (N, payable output, W, and that the SAY cell is a
+     number) instead of the fuel litres.
+  7. Heading 1.2 derives its labour cost from the gang sizes and the live
+     Rates_Master day wage, and takes CPOH from Factor_CPOH. The rupee
+     constants 4279.86 / 5133.60 / 931.86 / 753.30 and the hard-coded 0.15 are
+     gone.
+  8. The trips override is honoured whenever it is filled, in any mode, so the
+     sheet no longer ships showing a number that is being ignored.
+  9. The municipal gate fee has its own row stating that it is added after the
+     markup chain and is not subject to CPOH.
+ 10. The markup block now names Z the same way the other eleven builders do:
+     Z = Y + CPOH, and the cess-inclusive figure is "Total Cost".
+"""
+
+from openpyxl.styles import Protection
 from openpyxl.worksheet.datavalidation import DataValidation
 from openpyxl.workbook.defined_name import DefinedName
+
 from scripts.trade_builder import add_trade_header_and_legend
+from scripts.trade_layout import (
+    LAST_COL, SAY_RULE_NOTE, section_bar, col_headers, border_row, build_guide,
+)
+
+# --- Row map ---------------------------------------------------------------
+R_P1_HEAD, R_P1_COLS = 8, 9
+R_ITEM_CODE, R_MATERIAL, R_SCOPE, R_LIFT, R_GATE_FEE = 10, 11, 12, 13, 14
+R_NOM_OVERRIDE, R_NOMENCLATURE = 15, 16
+
+R_P2_HEAD, R_P2_COLS = 18, 19
+R_LEAD, R_SPEED_BM, R_SPEED_OV, R_SPEED_EFF, R_TURNAROUND = 20, 21, 22, 23, 24
+R_MODE, R_TRIPS_OV, R_TRIPS, R_DIST_BASIS, R_DISTANCE = 25, 26, 27, 28, 29
+R_DIESEL, R_MOBIL = 30, 31
+
+R_P3_HEAD, R_P3_COLS = 33, 34
+R_PAY_GROSS, R_PAY_NET, R_PAY_OV, R_PAY_EFF = 35, 36, 37, 38
+R_UNIT, R_SCALE, R_OUTPUT = 39, 40, 41
+
+R_AUDIT = 43
+
+R_RES_HEAD, R_RES_COLS, R_RES_FIRST = 45, 46, 47
+RES_ROWS = 8
+R_RES_LAST = R_RES_FIRST + RES_ROWS - 1                # 54
+R_W_SUB = 55
+R_TRIP_COST = 56
+
+R_MU_HEAD, R_MU_COLS = 58, 59
+R_W, R_X1, R_X, R_Y1, R_Y, R_Z1, R_Z, R_Z2 = 60, 61, 62, 63, 64, 65, 66, 67
+R_TOTAL, R_TRIP_OH, R_RATE_UNIT, R_RATE_SCHED, R_SAY, R_SAY_NOTE = 68, 69, 70, 71, 72, 73
+
+R_MAN_HEAD, R_MAN_BANNER, R_MAN_COLS = 75, 76, 77
+R_M_CODE, R_M_CAT, R_M_LEAD, R_M_STEPS = 78, 79, 80, 81
+R_M_GANG, R_M_GANG_ADD, R_M_WAGE = 82, 83, 84
+R_M_BASE, R_M_ADD, R_M_LABOUR, R_M_CPOH, R_M_TOTAL = 85, 86, 87, 88, 89
+R_M_CAP, R_M_UNIT, R_M_SCALE, R_M_RATE, R_M_SAY = 90, 91, 92, 93, 94
+
+R_BM_HEAD = 96
+R_DS1_HEAD, R_DS1_COLS, R_DS1_FIRST = 97, 98, 99
+DS1_ROWS = 30
+R_DS1_LAST = R_DS1_FIRST + DS1_ROWS - 1                # 128
+R_DS1_NOTE = 129
+
+R_T11_HEAD, R_T11_COLS, R_T11_FIRST = 131, 132, 133
+T11_ROWS = 27
+R_T11_LAST = R_T11_FIRST + T11_ROWS - 1                # 159
+
+R_T12_HEAD, R_T12_COLS, R_T12_FIRST = 161, 162, 163
+T12_ROWS = 6
+R_T12_LAST = R_T12_FIRST + T12_ROWS - 1                # 168
+
+R_SC_HEAD, R_SC_COLS, R_SC_FIRST = 170, 171, 172
+SC_ROWS = 6
+R_SC_LAST = R_SC_FIRST + SC_ROWS - 1                   # 177
+
+PARAM_HEADERS = ['Parameter', 'Value', 'Unit', 'Cell Role',
+                 'Where this value comes from, and the CPWD DAR 2019 basis for it', '', '', '', '']
+
+ROLE_FILL = {
+    'INPUT': 'fill_input',
+    'OVERRIDE': 'fill_override',
+    'LOOKUP': 'fill_lookup',
+    'DERIVED': 'fill_calc',
+    'RESULT': 'fill_result',
+    'SAY': 'fill_say',
+}
+
+
+def _param_row(ws, r, styles, label, value, unit, role, note,
+               number_format=None, dv=None, wrap_value=False):
+    """One parameter per row: label | value | unit | role | explanation."""
+    lc = ws.cell(row=r, column=1, value=label)
+    lc.font = styles['font_bold']
+    lc.alignment = styles['align_wrap']
+
+    vc = ws.cell(row=r, column=2, value=value)
+    vc.fill = styles[ROLE_FILL[role]]
+    vc.font = styles['font_say'] if role == 'SAY' else styles['font_bold']
+    vc.alignment = styles['align_wrap'] if wrap_value else styles['align_center']
+    if number_format:
+        vc.number_format = number_format
+    if dv is not None:
+        dv.add(vc)
+
+    uc = ws.cell(row=r, column=3, value=unit)
+    uc.alignment = styles['align_center']
+    uc.font = styles['font_regular']
+
+    rc = ws.cell(row=r, column=4, value=role)
+    rc.alignment = styles['align_center']
+    rc.font = styles['font_bold']
+    rc.fill = styles[ROLE_FILL[role]]
+
+    ws.merge_cells(start_row=r, start_column=5, end_row=r, end_column=LAST_COL)
+    nc = ws.cell(row=r, column=5, value=note)
+    nc.font = styles['font_note']
+    nc.alignment = styles['align_wrap']
+
+    border_row(ws, r, styles)
+    ws.row_dimensions[r].height = 30
+    return vc
+
 
 def build_carriage_trade(wb, config, styles):
     ws = wb.create_sheet(title=config['sheet_name'])
     ws.views.sheetView[0].showGridLines = True
     add_trade_header_and_legend(ws, config, styles)
-    
-    # Data Validations
-    dv_yesno = DataValidation(type='list', formula1='"YES,NO"', allow_blank=False)
-    ws.add_data_validation(dv_yesno)
-    
-    dv_env_mode = DataValidation(type='list', formula1='"STANDARD (DAYTIME),URBAN RESTRICTED HOURS"', allow_blank=False)
-    ws.add_data_validation(dv_env_mode)
-    
-    dv_dist_basis = DataValidation(type='list', formula1='"CPWD PRO-RATA (Item 1.1.18),DIRECT ROUTE (2NL + 6)"', allow_blank=False)
-    ws.add_data_validation(dv_dist_basis)
-    
-    dv_unit = DataValidation(type='list', formula1='"cum,metre,100 m,tonne,1000 Nos"', allow_blank=False)
-    ws.add_data_validation(dv_unit)
-    
-    dv_manual_cat = DataValidation(type='list', formula1='"Category A (Bulk / Earth / Bricks),Category B (Heavy / Pipes / Steel)"', allow_blank=False)
-    ws.add_data_validation(dv_manual_cat)
-    
-    dv_manual_lead = DataValidation(type='list', formula1='"50,100,150,200,250,300,350,400,450,500"', allow_blank=False)
-    ws.add_data_validation(dv_manual_lead)
+    build_guide(ws, styles)
 
-    # Keyword Data Validations for Smart Selector
-    dv_item_codes = DataValidation(type='list', formula1='=CPWD_Carriage_Item_Codes', allow_blank=False)
-    ws.add_data_validation(dv_item_codes)
+    sn = config['sheet_name']
+    ds1 = f"$A${R_DS1_FIRST}:$A${R_DS1_LAST}"        # lead
+    ds1_s = f"$B${R_DS1_FIRST}:$B${R_DS1_LAST}"      # speed
+    ds1_n = f"$C${R_DS1_FIRST}:$C${R_DS1_LAST}"      # trips
+    ds1_km = f"$D${R_DS1_FIRST}:$D${R_DS1_LAST}"     # km/day
+    t11_mat = f"$B${R_T11_FIRST}:$B${R_T11_LAST}"
+    t11_gross = f"$C${R_T11_FIRST}:$C${R_T11_LAST}"
+    t11_net = f"$D${R_T11_FIRST}:$D${R_T11_LAST}"
+    t11_unit = f"$E${R_T11_FIRST}:$E${R_T11_LAST}"
 
-    dv_materials = DataValidation(type='list', formula1='=CPWD_Carriage_Materials', allow_blank=False)
-    ws.add_data_validation(dv_materials)
+    # --- Data validations -------------------------------------------------
+    def mkdv(formula, blank=True):
+        d = DataValidation(type='list', formula1=formula, allow_blank=blank,
+                           showErrorMessage=False)
+        ws.add_data_validation(d)
+        return d
 
-    dv_scope = DataValidation(type='list', formula1='=CPWD_Carriage_Scope', allow_blank=False)
-    ws.add_data_validation(dv_scope)
+    dv_yesno = mkdv('"YES,NO"', False)
+    dv_mode = mkdv('"STANDARD (DAYTIME),URBAN RESTRICTED HOURS"', False)
+    dv_basis = mkdv('"DIRECT ROUTE (2NL + 6),CPWD PRO-RATA (Data Sheet 1)"', False)
+    dv_unit = mkdv('"cum,tonne,metre,100 m,1000 Nos"', False)
+    dv_cat = mkdv('"Category A (Bulk / Earth / Bricks),Category B (Heavy / Pipes / Steel)"', False)
+    dv_mlead = mkdv('"50,100,150,200,250,300,350,400,450,500"', False)
+    dv_items = mkdv('=CPWD_Carriage_Item_Codes', False)
+    dv_mats = mkdv('=CPWD_Carriage_Materials', False)
+    dv_scope = mkdv('=CPWD_Carriage_Scope', False)
+    dv_lift = mkdv('"for all lifts,for lift upto 1.5 m,with mechanical lift,'
+                   'for all lifts and leads"', False)
 
-    dv_lift = DataValidation(
-        type='list',
-        formula1='"for all lifts,for lift upto 1.5 m,with mechanical lift,for all lifts and leads"',
-        allow_blank=False
-    )
-    ws.add_data_validation(dv_lift)
+    ws.row_dimensions[7].height = 8
+    ws.row_dimensions[17].height = 8
+    ws.row_dimensions[32].height = 8
+    ws.row_dimensions[42].height = 8
+    ws.row_dimensions[44].height = 8
+    ws.row_dimensions[57].height = 8
+    ws.row_dimensions[74].height = 8
+    ws.row_dimensions[95].height = 8
 
-    # Spacer Row 4
-    ws.row_dimensions[4].height = 10
+    # =====================================================================
+    # PANEL 1 - what is being moved
+    # =====================================================================
+    section_bar(ws, R_P1_HEAD,
+                'PANEL 1 - SCOPE & SPECIFICATION  (what is being moved, and under what contract scope)',
+                styles)
+    col_headers(ws, R_P1_COLS, PARAM_HEADERS, styles, height=26)
+    ws.merge_cells(start_row=R_P1_COLS, start_column=5, end_row=R_P1_COLS, end_column=LAST_COL)
 
-    # =========================================================================
-    # PANEL 1: SCOPE & SPECIFICATION INPUTS (Rows 5-8)
-    # =========================================================================
-    ws.merge_cells('A5:H5')
-    p1_head = ws['A5']
-    p1_head.value = 'PANEL 1: SCOPE & SPECIFICATION INPUTS (What is being moved & contractual handling scope)'
-    p1_head.font = styles['font_white_bold']
-    p1_head.fill = styles['fill_header']
-    p1_head.alignment = styles['align_left']
-    ws.row_dimensions[5].height = 24
+    _param_row(ws, R_ITEM_CODE, styles, 'Custom item code',
+               config.get('default_item_code', '1.1.CUSTOM'), '-', 'INPUT',
+               'Your reference for this analysis. Pick a DAR item number from the dropdown to base it '
+               'on a printed item, or type your own code for a genuinely non-DSR item.', dv=dv_items)
 
-    # Row 6: Primary Scope Dropdowns
-    ws['A6'] = 'Custom Item Code:'
-    ws['A6'].font = styles['font_bold']
-    ws['A6'].alignment = styles['align_right']
-    ws['B6'] = config.get('default_item_code', '1.1.CUSTOM')
-    ws['B6'].fill = styles['fill_input']
-    ws['B6'].font = styles['font_bold']
-    ws['B6'].alignment = styles['align_center']
-    dv_item_codes.add(ws['B6'])
+    _param_row(ws, R_MATERIAL, styles, 'Material commodity',
+               config.get('default_material', 'R.C.C./C.I./Steel pipes 1000, 1100 & 1200 mm dia'),
+               '-', 'INPUT',
+               'DRIVES COST. Sets the truck payload, the net payable quantity and the billing unit, all '
+               'looked up from Table 1.1 below. Choose from the dropdown so the lookups resolve.',
+               dv=dv_mats, wrap_value=True)
 
-    ws['C6'] = 'Material Commodity:'
-    ws['C6'].font = styles['font_bold']
-    ws['C6'].alignment = styles['align_right']
-    ws['D6'] = config.get('default_material', 'R.C.C./C.I./Steel pipes 1000, 1100 & 1200 mm dia')
-    ws['D6'].fill = styles['fill_input']
-    ws['D6'].font = styles['font_bold']
-    ws['D6'].alignment = styles['align_left']
-    dv_materials.add(ws['D6'])
+    _param_row(ws, R_SCOPE, styles, 'Handling scope',
+               config.get('default_scope', 'including loading, transporting, unloading and stacking'),
+               '-', 'INPUT',
+               'DRIVES COST. Sets the Beldar gang on the resource schedule below: 6 for full turnkey '
+               'handling, 5 without stacking, 3 when machine-loaded, 3.75 at a railway siding, 0 for '
+               'pure haulage. See the scope table at the bottom of this sheet.',
+               dv=dv_scope, wrap_value=True)
 
-    ws['E6'] = 'Handling Scope:'
-    ws['E6'].font = styles['font_bold']
-    ws['E6'].alignment = styles['align_right']
-    ws['F6'] = config.get('default_scope', 'including loading, transporting, unloading and stacking')
-    ws['F6'].fill = styles['fill_input']
-    ws['F6'].font = styles['font_bold']
-    ws['F6'].alignment = styles['align_left']
-    dv_scope.add(ws['F6'])
+    _param_row(ws, R_LIFT, styles, 'Lift condition',
+               config.get('default_lift', 'for all lifts'), '-', 'INPUT',
+               'NOMENCLATURE ONLY. The DAR quotes one carriage rate whatever the lift, so this changes '
+               'the wording of the item and nothing in the cost.', dv=dv_lift)
 
-    ws['G6'] = 'Lift Condition:'
-    ws['G6'].font = styles['font_bold']
-    ws['G6'].alignment = styles['align_right']
-    ws['H6'] = config.get('default_lift', 'for all lifts')
-    ws['H6'].fill = styles['fill_input']
-    ws['H6'].font = styles['font_bold']
-    ws['H6'].alignment = styles['align_center']
-    dv_lift.add(ws['H6'])
+    _param_row(ws, R_GATE_FEE, styles, 'Municipal gate / tipping fee', 0.00, 'Rs per billing unit',
+               'INPUT',
+               'USER-SUPPLIED COST. The DAR carries no tipping or gate fee anywhere in Sub-Head 01, so '
+               'there is no figure to look up. It is added AFTER the markup chain and is therefore NOT '
+               'subject to the 15% CPOH - it is a reimbursable disbursement, not contractor cost.',
+               number_format=styles['fmt_currency'])
 
-    for col in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']:
-        ws[f'{col}6'].border = styles['border_thin']
-    ws.row_dimensions[6].height = 24
+    _param_row(ws, R_NOM_OVERRIDE, styles, 'Nomenclature override', None, '-', 'OVERRIDE',
+               'Leave blank and the item description below writes itself from your Panel 1 choices. '
+               'Type here only when you want to word the item yourself.', wrap_value=True)
 
-    # Row 7: Tipping Fee Surcharge & Manual Override
-    ws['A7'] = 'Municipal Gate Fee:'
-    ws['A7'].font = styles['font_bold']
-    ws['A7'].alignment = styles['align_right']
-    ws['B7'] = 0.00
-    ws['B7'].fill = styles['fill_input']
-    ws['B7'].font = styles['font_bold']
-    ws['B7'].alignment = styles['align_center']
-    ws['B7'].number_format = styles['fmt_currency']
+    ws.cell(row=R_NOMENCLATURE, column=1, value='Assembled item nomenclature').font = styles['font_bold']
+    ws.merge_cells(start_row=R_NOMENCLATURE, start_column=2, end_row=R_NOMENCLATURE, end_column=LAST_COL)
+    nc = ws.cell(row=R_NOMENCLATURE, column=2)
+    nc.value = (
+        f'=IF(B{R_NOM_OVERRIDE}<>"", B{R_NOM_OVERRIDE}, '
+        f'"Carriage of " & B{R_MATERIAL} & " by mechanical transport " & B{R_SCOPE} & '
+        f'" for lead upto " & TEXT(B{R_LEAD}, "0.00") & " km " & B{R_LIFT} & '
+        f'IF(B{R_GATE_FEE}>0, ", including municipal tipping / gate fee of Rs " & '
+        f'TEXT(B{R_GATE_FEE}, "0.00") & " per " & B{R_UNIT}, "") & '
+        f'", complete as per directions of Engineer-in-charge.")')
+    nc.font = styles['font_bold']
+    nc.fill = styles['fill_calc']
+    nc.alignment = styles['align_wrap']
+    border_row(ws, R_NOMENCLATURE, styles)
+    ws.row_dimensions[R_NOMENCLATURE].height = 40
 
-    ws['C7'] = 'Manual Override (Opt):'
-    ws['C7'].font = styles['font_bold']
-    ws['C7'].alignment = styles['align_right']
-    ws['C7'].border = styles['border_thin']
+    # =====================================================================
+    # PANEL 2 - trip dynamics
+    # =====================================================================
+    section_bar(ws, R_P2_HEAD,
+                'PANEL 2 - ROUTE & TRIP DYNAMICS  (how far, how fast, how many trips a shift)', styles)
+    col_headers(ws, R_P2_COLS, PARAM_HEADERS, styles, height=26)
+    ws.merge_cells(start_row=R_P2_COLS, start_column=5, end_row=R_P2_COLS, end_column=LAST_COL)
 
-    ws.merge_cells('D7:H7')
-    ws['D7'] = None
-    ws['D7'].font = styles['font_regular']
-    ws['D7'].fill = styles['fill_input']
-    ws['D7'].alignment = styles['align_wrap']
-    ws['D7'].border = styles['border_thin']
-    ws.row_dimensions[7].height = 24
+    _param_row(ws, R_LEAD, styles, 'Lead distance (L)', config.get('default_lead', 26.0), 'km', 'INPUT',
+               'DRIVES COST. One-way haul distance. Everything below - speed, trips, fuel - follows '
+               'from it.', number_format='0.00')
 
-    # Row 8: Assembled Item Nomenclature
-    ws['A8'] = 'Assembled Nomenclature:'
-    ws['A8'].font = styles['font_bold']
-    ws['A8'].alignment = styles['align_right']
-    ws['A8'].fill = styles['fill_note']
-    ws['A8'].border = styles['border_thin']
+    _param_row(ws, R_SPEED_BM, styles, 'Benchmark average speed at this lead', None, 'km/h', 'LOOKUP',
+               'Read off CPWD Data Sheet No. 1 (section 5A below) for the lead above: 16 km/h at 1 km '
+               'rising to 31 km/h at 30 km. Beyond 30 km the last tabulated row is used.',
+               number_format='0.0')
+    ws.cell(row=R_SPEED_BM, column=2).value = (
+        f'=IFERROR(INDEX({ds1_s}, MATCH(B{R_LEAD}, {ds1}, 1)), 16)')
 
-    ws.merge_cells('B8:H8')
-    ws['B8'] = '=IF(D7<>"","" & D7,"Carriage of " & D6 & " by mechanical transport " & F6 & " for lead upto " & TEXT(B11, "0.00") & " km " & H6 & IF(B7>0, ", including municipal tipping royalty/gate fee of Rs " & TEXT(B7, "0.00") & " per " & B13, "") & ", complete as per directions of Engineer-in-charge.")'
-    ws['B8'].font = styles['font_bold']
-    ws['B8'].fill = styles['fill_note']
-    ws['B8'].alignment = styles['align_wrap']
-    ws['B8'].border = styles['border_thin']
-    ws.row_dimensions[8].height = 38
+    _param_row(ws, R_SPEED_OV, styles, 'Speed override', None, 'km/h', 'OVERRIDE',
+               'Leave blank to use the Data Sheet 1 benchmark above. Fill it in only when site '
+               'conditions genuinely differ, and record why - departing from the benchmark is what '
+               'makes a rate non-DSR.', number_format='0.0')
 
-    # Spacer Row 9
-    ws.row_dimensions[9].height = 10
+    _param_row(ws, R_SPEED_EFF, styles, 'Effective average speed (S)', None, 'km/h', 'DERIVED',
+               'The override if you gave one, otherwise the benchmark. This is the S used in the trips '
+               'formula.', number_format='0.0')
+    ws.cell(row=R_SPEED_EFF, column=2).value = (
+        f'=IF(B{R_SPEED_OV}<>"", B{R_SPEED_OV}, B{R_SPEED_BM})')
 
-    # =========================================================================
-    # PANEL 2: OPERATIONAL & TRIP DYNAMICS (Rows 10-14)
-    # =========================================================================
-    ws.merge_cells('A10:H10')
-    p2_head = ws['A10']
-    p2_head.value = 'PANEL 2: OPERATIONAL & TRIP DYNAMICS (Site logistics, environmental mode & equipment cycles)'
-    p2_head.font = styles['font_white_bold']
-    p2_head.fill = styles['fill_header']
-    p2_head.alignment = styles['align_left']
-    ws.row_dimensions[10].height = 24
+    _param_row(ws, R_TURNAROUND, styles, 'Turnaround time (T)',
+               config.get('default_turnaround', 1.0), 'hours per trip', 'INPUT',
+               'Loading plus unloading plus waiting per round trip. CPWD Data Sheet 1 uses 1.00 hour.',
+               number_format='0.00')
 
-    # Row 11: Route Parameters & Standard Payload
-    ws['A11'] = 'Lead Distance (L):'
-    ws['A11'].font = styles['font_bold']
-    ws['A11'].alignment = styles['align_right']
-    ws['B11'] = config.get('default_lead', 26.0)
-    ws['B11'].fill = styles['fill_input']
-    ws['B11'].font = styles['font_bold']
-    ws['B11'].alignment = styles['align_center']
-    ws['B11'].number_format = '0.00 "km"'
+    _param_row(ws, R_MODE, styles, 'Operational mode', 'STANDARD (DAYTIME)', '-', 'INPUT',
+               'Urban restricted hours means heavy vehicles may only run off-peak, which caps the trips '
+               'achievable in a shift. Selecting it does not change the cost by itself - enter the '
+               'capped trip count in the override on the next row. DAR item 1.1.18 is the worked '
+               'example: 3.00 trips instead of the 4.10 the formula gives at 10 km.', dv=dv_mode)
 
-    ws['C11'] = 'Average Speed (S):'
-    ws['C11'].font = styles['font_bold']
-    ws['C11'].alignment = styles['align_right']
-    ws['D11'] = config.get('default_speed', 29.0)
-    ws['D11'].fill = styles['fill_input']
-    ws['D11'].font = styles['font_bold']
-    ws['D11'].alignment = styles['align_center']
-    ws['D11'].number_format = '0.00 "km/h"'
+    _param_row(ws, R_TRIPS_OV, styles, 'Trips override', None, 'trips per shift', 'OVERRIDE',
+               'Leave blank to use the calculated trips below. Fill it in to force a trip count - this '
+               'is how a restricted-hours item is priced. It is honoured in any mode.',
+               number_format='0.00')
 
-    ws['E11'] = 'Turnaround Time (T):'
-    ws['E11'].font = styles['font_bold']
-    ws['E11'].alignment = styles['align_right']
-    ws['F11'] = config.get('default_turnaround', 1.0)
-    ws['F11'].fill = styles['fill_input']
-    ws['F11'].font = styles['font_bold']
-    ws['F11'].alignment = styles['align_center']
-    ws['F11'].number_format = '0.00 "hrs"'
+    _param_row(ws, R_TRIPS, styles, 'Daily trips achieved (N)', None, 'trips per shift', 'DERIVED',
+               'N = 8 / ((2L / S) + T) - an 8-hour shift divided by one round trip. Overridden by the '
+               'row above when that is filled.', number_format='0.00')
+    ws.cell(row=R_TRIPS, column=2).value = (
+        f'=IF(B{R_TRIPS_OV}<>"", B{R_TRIPS_OV}, '
+        f'IFERROR(ROUND(8 / ((2 * B{R_LEAD} / B{R_SPEED_EFF}) + B{R_TURNAROUND}), 2), 0))')
 
-    ws['G11'] = 'Standard Payload (C):'
-    ws['G11'].font = styles['font_bold']
-    ws['G11'].alignment = styles['align_right']
-    ws['H11'] = '=IFERROR(INDEX($C$88:$C$114, MATCH(D6, $B$88:$B$114, 0)), 10.98)'
-    ws['H11'].fill = styles['fill_calc']
-    ws['H11'].font = styles['font_bold']
-    ws['H11'].alignment = styles['align_center']
-    ws['H11'].number_format = '0.00'
+    _param_row(ws, R_DIST_BASIS, styles, 'Distance / fuel basis', 'DIRECT ROUTE (2NL + 6)', '-', 'INPUT',
+               'DIRECT ROUTE computes km/day = 2NL + 6, the 6 km being the depot run - this reproduces '
+               'every row of Data Sheet 1. CPWD PRO-RATA instead takes the Data Sheet 1 km/day for your '
+               'lead and scales it by (your trips / the benchmark trips at that lead); that is how DAR '
+               'item 1.1.18 derives 64.40 km from the 10 km row.', dv=dv_basis)
 
-    for col in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']:
-        ws[f'{col}11'].border = styles['border_thin']
-    ws.row_dimensions[11].height = 22
+    _param_row(ws, R_DISTANCE, styles, 'Distance travelled per shift', None, 'km', 'DERIVED',
+               'Follows the basis selected above.', number_format='0.00')
+    ws.cell(row=R_DISTANCE, column=2).value = (
+        f'=IF(B{R_DIST_BASIS}="CPWD PRO-RATA (Data Sheet 1)", '
+        f'IFERROR(ROUND(INDEX({ds1_km}, MATCH(B{R_LEAD}, {ds1}, 1)) * '
+        f'(B{R_TRIPS} / INDEX({ds1_n}, MATCH(B{R_LEAD}, {ds1}, 1))), 2), 0), '
+        f'IFERROR(ROUND((2 * B{R_TRIPS} * B{R_LEAD}) + 6, 2), 0))')
 
-    # Row 12: Operational Environment & Distance Basis
-    ws['A12'] = 'Operational Mode:'
-    ws['A12'].font = styles['font_bold']
-    ws['A12'].alignment = styles['align_right']
-    ws['B12'] = 'STANDARD (DAYTIME)'
-    ws['B12'].fill = styles['fill_input']
-    ws['B12'].font = styles['font_bold']
-    ws['B12'].alignment = styles['align_center']
-    dv_env_mode.add(ws['B12'])
+    _param_row(ws, R_DIESEL, styles, 'Diesel consumed per shift', None, 'litres', 'DERIVED',
+               'CPWD Note 3: distance travelled / 5.0 km per litre.', number_format='0.00')
+    ws.cell(row=R_DIESEL, column=2).value = f'=ROUND(B{R_DISTANCE} / 5, 2)'
 
-    ws['C12'] = 'Fixed Trips Override:'
-    ws['C12'].font = styles['font_bold']
-    ws['C12'].alignment = styles['align_right']
-    ws['D12'] = 3.00
-    ws['D12'].fill = styles['fill_input']
-    ws['D12'].font = styles['font_bold']
-    ws['D12'].alignment = styles['align_center']
-    ws['D12'].number_format = '0.00'
+    _param_row(ws, R_MOBIL, styles, 'Mobil oil consumed per shift', None, 'litres', 'DERIVED',
+               'CPWD Note 4: distance travelled / 140.0 km per litre.', number_format='0.000')
+    ws.cell(row=R_MOBIL, column=2).value = f'=ROUND(B{R_DISTANCE} / 140, 3)'
 
-    ws['E12'] = 'Distance / Fuel Basis:'
-    ws['E12'].font = styles['font_bold']
-    ws['E12'].alignment = styles['align_right']
-    ws['F12'] = 'DIRECT ROUTE (2NL + 6)'
-    ws['F12'].fill = styles['fill_input']
-    ws['F12'].font = styles['font_bold']
-    ws['F12'].alignment = styles['align_center']
-    dv_dist_basis.add(ws['F12'])
+    # =====================================================================
+    # PANEL 3 - payload and billing
+    # =====================================================================
+    section_bar(ws, R_P3_HEAD,
+                'PANEL 3 - PAYLOAD & BILLING BASIS  (how much is actually paid for per trip)', styles)
+    col_headers(ws, R_P3_COLS, PARAM_HEADERS, styles, height=26)
+    ws.merge_cells(start_row=R_P3_COLS, start_column=5, end_row=R_P3_COLS, end_column=LAST_COL)
 
-    ws['G12'] = 'Payload Override (C):'
-    ws['G12'].font = styles['font_bold']
-    ws['G12'].alignment = styles['align_right']
-    ws['H12'] = None
-    ws['H12'].fill = styles['fill_input']
-    ws['H12'].font = styles['font_bold']
-    ws['H12'].alignment = styles['align_center']
-    ws['H12'].number_format = '0.00'
+    _param_row(ws, R_PAY_GROSS, styles, 'Gross truck payload per trip', None, 'per Table 1.1', 'LOOKUP',
+               'What physically goes on the truck, from Table 1.1 below. Shown for information only - '
+               'it is NOT what the rate is divided by.', number_format='0.00')
+    ws.cell(row=R_PAY_GROSS, column=2).value = (
+        f'=IFERROR(INDEX({t11_gross}, MATCH(B{R_MATERIAL}, {t11_mat}, 0)), "")')
 
-    for col in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']:
-        ws[f'{col}12'].border = styles['border_thin']
-    ws.row_dimensions[12].height = 22
+    _param_row(ws, R_PAY_NET, styles, 'Net payable quantity per trip', None, 'per Table 1.1', 'LOOKUP',
+               'THIS is the divisor CPWD uses. Loose materials are paid on a reduced quantity: earth '
+               'less 20%, excavated rock less 50%, soling stone less 15%, 40 mm aggregate and manure '
+               'less 8%. Using the gross payload instead understates the rate by that percentage.',
+               number_format='0.00')
+    ws.cell(row=R_PAY_NET, column=2).value = (
+        f'=IFERROR(INDEX({t11_net}, MATCH(B{R_MATERIAL}, {t11_mat}, 0)), "")')
 
-    # Row 13: Vehicle Dynamics & Daily Outputs
-    ws['A13'] = 'Billing / Basis Unit:'
-    ws['A13'].font = styles['font_bold']
-    ws['A13'].alignment = styles['align_right']
-    ws['B13'] = '=IFERROR(INDEX($E$88:$E$114, MATCH(D6, $B$88:$B$114, 0)), "cum")'
-    ws['B13'].fill = styles['fill_calc']
-    ws['B13'].font = styles['font_bold']
-    ws['B13'].alignment = styles['align_center']
+    _param_row(ws, R_PAY_OV, styles, 'Payable quantity override', None, 'per Table 1.1', 'OVERRIDE',
+               'Leave blank to use the net payable quantity above. Fill it in for a material that is '
+               'not in Table 1.1, or when a site measurement justifies a different figure.',
+               number_format='0.00')
 
-    ws['C13'] = 'Daily Operational Trips (N):'
-    ws['C13'].font = styles['font_bold']
-    ws['C13'].alignment = styles['align_right']
-    ws['D13'] = '=IF(B12="URBAN RESTRICTED HOURS", D12, ROUND(8 / ((2 * B11 / D11) + F11), 2))'
-    ws['D13'].fill = styles['fill_subtotal']
-    ws['D13'].font = styles['font_bold']
-    ws['D13'].alignment = styles['align_center']
-    ws['D13'].number_format = '0.00 "trips"'
+    _param_row(ws, R_PAY_EFF, styles, 'Effective payable quantity per trip', None, 'per Table 1.1',
+               'DERIVED', 'The override if given, otherwise the net payable quantity.',
+               number_format='0.00')
+    ws.cell(row=R_PAY_EFF, column=2).value = (
+        f'=IF(B{R_PAY_OV}<>"", B{R_PAY_OV}, IF(B{R_PAY_NET}="", 0, B{R_PAY_NET}))')
 
-    ws['E13'] = 'Daily Distance Travelled:'
-    ws['E13'].font = styles['font_bold']
-    ws['E13'].alignment = styles['align_right']
-    ws['F13'] = '=IF(F12="CPWD PRO-RATA (Item 1.1.18)", ROUND(88.00 * (D13 / 4.10), 2), ROUND((2 * D13 * B11) + 6.0, 2))'
-    ws['F13'].fill = styles['fill_subtotal']
-    ws['F13'].font = styles['font_bold']
-    ws['F13'].alignment = styles['align_center']
-    ws['F13'].number_format = '0.00 "km"'
+    _param_row(ws, R_UNIT, styles, 'Schedule billing unit', None, '-', 'LOOKUP',
+               'The unit the DAR bills this material in, from Table 1.1. Bulk materials in cum, cement '
+               'and steel in tonne, bricks per 1000 Nos, pipes per 100 m.')
+    ws.cell(row=R_UNIT, column=2).value = (
+        f'=IFERROR(INDEX({t11_unit}, MATCH(B{R_MATERIAL}, {t11_mat}, 0)), "cum")')
 
-    ws['G13'] = 'Total Daily Hauled Output:'
-    ws['G13'].font = styles['font_bold']
-    ws['G13'].alignment = styles['align_right']
-    ws['H13'] = '=ROUND(D13 * IF(H12>0, H12, H11), 2)'
-    ws['H13'].fill = styles['fill_result']
-    ws['H13'].font = styles['font_bold']
-    ws['H13'].alignment = styles['align_center']
-    ws['H13'].number_format = '0.00'
+    _param_row(ws, R_SCALE, styles, 'Schedule unit scale factor', None, 'multiplier', 'DERIVED',
+               'The rate is first derived per single unit (per cum, per metre, per brick) and then '
+               'multiplied by this factor to reach the schedule unit: 1000 for "1000 Nos", 100 for '
+               '"100 m", otherwise 1.', number_format='0')
+    ws.cell(row=R_SCALE, column=2).value = (
+        f'=IF(B{R_UNIT}="1000 Nos", 1000, IF(B{R_UNIT}="100 m", 100, 1))')
 
-    for col in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']:
-        ws[f'{col}13'].border = styles['border_thin']
-    ws.row_dimensions[13].height = 22
+    _param_row(ws, R_OUTPUT, styles, 'Total payable output per shift', None, 'per Table 1.1', 'RESULT',
+               'Trips x effective payable quantity. This is what the shift cost is divided by.',
+               number_format='0.0000')
+    ws.cell(row=R_OUTPUT, column=2).value = f'=ROUND(B{R_TRIPS} * B{R_PAY_EFF}, 4)'
 
-    # Row 14: Fuel Consumption & Real-Time In-Sheet Audit Bar
-    ws['A14'] = 'AUDIT STATUS:'
-    ws['A14'].font = styles['font_white_bold']
-    ws['A14'].fill = styles['fill_header']
-    ws['A14'].alignment = styles['align_center']
+    # =====================================================================
+    # Audit bar
+    # =====================================================================
+    ws.cell(row=R_AUDIT, column=1, value='AUDIT STATUS:').font = styles['font_white_bold']
+    ws.cell(row=R_AUDIT, column=1).fill = styles['fill_header']
+    ws.cell(row=R_AUDIT, column=1).alignment = styles['align_center']
 
-    ws['B14'] = '=IF(AND(D14="OK", F14>0, H14>0), "[PASS] ALL CHECKS OK", "[ALERT] CHECKS FAILED")'
-    ws['B14'].font = styles['font_result']
-    ws['B14'].fill = styles['fill_result']
-    ws['B14'].alignment = styles['align_center']
+    ab = ws.cell(row=R_AUDIT, column=2)
+    ab.value = (f'=IF(AND(D{R_AUDIT}="OK", F{R_AUDIT}="OK", H{R_AUDIT}="OK", I{R_AUDIT}="OK"), '
+                f'"[PASS] ALL CHECKS OK", "[ALERT] CHECKS FAILED")')
+    ab.font = styles['font_result']
+    ab.fill = styles['fill_result']
+    ab.alignment = styles['align_center']
 
-    ws['C14'] = 'Daily Trips Check:'
-    ws['C14'].font = styles['font_note']
-    ws['C14'].alignment = styles['align_right']
-    ws['D14'] = '=IF(D13>0, "OK", "ERR: N<=0")'
-    ws['D14'].font = styles['font_bold']
-    ws['D14'].alignment = styles['align_center']
+    ws.cell(row=R_AUDIT, column=3, value='Trips:').font = styles['font_note']
+    ws.cell(row=R_AUDIT, column=3).alignment = styles['align_right']
+    ws.cell(row=R_AUDIT, column=4,
+            value=f'=IF(B{R_TRIPS}>0, "OK", "ERR: N<=0")').alignment = styles['align_center']
 
-    ws['E14'] = 'Evaluated Diesel (Litres):'
-    ws['E14'].font = styles['font_bold']
-    ws['E14'].alignment = styles['align_right']
-    ws['F14'] = '=ROUND(F13 / 5.0, 2)'
-    ws['F14'].fill = styles['fill_subtotal']
-    ws['F14'].font = styles['font_bold']
-    ws['F14'].alignment = styles['align_center']
-    ws['F14'].number_format = '0.00 "L"'
+    ws.cell(row=R_AUDIT, column=5, value='Payable output:').font = styles['font_note']
+    ws.cell(row=R_AUDIT, column=5).alignment = styles['align_right']
+    ws.cell(row=R_AUDIT, column=6,
+            value=f'=IF(B{R_OUTPUT}>0, "OK", "ERR: no payable qty - pick a Table 1.1 material '
+                  f'or set the override")').alignment = styles['align_center']
 
-    ws['G14'] = 'Evaluated Mobil Oil (Litres):'
-    ws['G14'].font = styles['font_bold']
-    ws['G14'].alignment = styles['align_right']
-    ws['H14'] = '=ROUND(F13 / 140.0, 3)'
-    ws['H14'].fill = styles['fill_subtotal']
-    ws['H14'].font = styles['font_bold']
-    ws['H14'].alignment = styles['align_center']
-    ws['H14'].number_format = '0.000 "L"'
+    ws.cell(row=R_AUDIT, column=7, value='Direct cost:').font = styles['font_note']
+    ws.cell(row=R_AUDIT, column=7).alignment = styles['align_right']
+    ws.cell(row=R_AUDIT, column=8,
+            value=f'=IF(G{R_W_SUB}>0, "OK", "ERR: W<=0")').alignment = styles['align_center']
 
-    for col in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']:
-        ws[f'{col}14'].border = styles['border_thin']
-    ws.row_dimensions[14].height = 22
+    ws.cell(row=R_AUDIT, column=9,
+            value=f'=IF(AND(ISNUMBER(G{R_SAY}), G{R_SAY}>0), "OK", "ERR: rate not resolved")')
+    ws.cell(row=R_AUDIT, column=9).alignment = styles['align_center']
 
-    # Spacer Row 15
-    ws.row_dimensions[15].height = 10
+    for c in (4, 6, 8, 9):
+        ws.cell(row=R_AUDIT, column=c).font = styles['font_bold']
+    border_row(ws, R_AUDIT, styles)
+    ws.row_dimensions[R_AUDIT].height = 22
 
-    # =========================================================================
-    # SECTION 1: MECHANICAL TRANSPORT RESOURCE SCHEDULE (Rows 16-27)
-    # =========================================================================
-    ws.merge_cells('A16:H16')
-    c_sec1 = ws['A16']
-    c_sec1.value = '1. MECHANICAL TRANSPORT TRIP BUILDER (Truck Hire + Labour + Fuel Linked to CPWD Mileage Formulas)'
-    c_sec1.font = styles['font_white_bold']
-    c_sec1.fill = styles['fill_header']
-    c_sec1.alignment = styles['align_left']
-    ws.row_dimensions[16].height = 24
+    # =====================================================================
+    # Resource schedule
+    # =====================================================================
+    section_bar(ws, R_RES_HEAD,
+                'SECTION 1 - MECHANICAL TRANSPORT RESOURCE SCHEDULE FOR ONE 8-HOUR SHIFT  '
+                '(truck hire + labour gang + fuel)', styles)
+    col_headers(ws, R_RES_COLS,
+                ['Line', 'Code / Source', 'Resource / Fuel Description', 'Unit', 'Quantity / Coeff',
+                 'Basic Rate (Rs)', 'Amount (Rs)', 'Source Reference / CPWD Note', 'Cell Role'],
+                styles)
 
-    tbl_headers = ['Line', 'Code / Source', 'Resource / Fuel Description', 'Unit', 'Quantity / Coeff', 'Basic Rate (Rs)', 'Amount (Rs)', 'Source Reference / CPWD Notes']
-    for c_idx, h in enumerate(tbl_headers, 1):
-        cell = ws.cell(row=17, column=c_idx, value=h)
-        cell.font = styles['font_header']
-        cell.fill = styles['fill_header']
-        cell.alignment = styles['align_center']
-        cell.border = styles['border_header']
-    ws.row_dimensions[17].height = 24
+    beldar = (f'=IF(ISNUMBER(SEARCH("transporting only", B{R_SCOPE})), 0, '
+              f'IF(ISNUMBER(SEARCH("machine loaded", B{R_SCOPE})), 3, '
+              f'IF(ISNUMBER(SEARCH("excluding loading", B{R_SCOPE})), 3, '
+              f'IF(ISNUMBER(SEARCH("railway siding", B{R_SCOPE})), 3.75, '
+              f'IF(ISNUMBER(SEARCH("excluding stacking", B{R_SCOPE})), 5, 6)))))')
 
-    # Dynamic Beldar Formula driving labour gang based on Handling Scope in F6
-    beldar_scope_formula = '=IF(ISNUMBER(SEARCH("transporting only", F6)), 0, IF(ISNUMBER(SEARCH("machine loaded", F6)), 3, IF(ISNUMBER(SEARCH("excluding loading", F6)), 3, IF(ISNUMBER(SEARCH("railway siding", F6)), 3.75, IF(ISNUMBER(SEARCH("excluding stacking", F6)), 5, 6)))))'
-
-    mech_resources = [
-        {'code': '0084', 'qty_formula': 1.0, 'note': 'CPWD Note 5: Hire charges of Diesel Truck (9-tonne) excluding diesel & mobil oil (Code 0084)'},
-        {'code': '0114', 'qty_formula': beldar_scope_formula, 'note': 'CPWD Note 5: Labour gang scaled by Panel 1 Scope: 6 (Turnkey), 5 (No Stack), 3 (Machine Loaded), 0 (Haulage Only)'},
-        {'code': '1235', 'qty_formula': '=F14', 'note': 'CPWD Note 3: Diesel consumed = Distance travelled / 5.0 km/L (linked to cell F14)'},
-        {'code': '5001', 'qty_formula': '=H14', 'note': 'CPWD Note 4: Mobil oil consumed = Distance travelled / 140.0 km/L (linked to cell H14)'}
+    resources = [
+        {'code': '0084', 'qty': 1.0, 'role': 'INPUT',
+         'note': 'CPWD Note 5: hire of a 9-tonne diesel truck for one 8-hour shift, excluding diesel '
+                 'and mobil oil (those are the two rows below).'},
+        {'code': '0114', 'qty': beldar, 'role': 'DERIVED',
+         'note': 'Gang size follows the Handling Scope you chose in Panel 1: 6 turnkey / 5 no stacking / '
+                 '3 machine-loaded / 3.75 railway siding / 0 haulage only. See section 5D below.'},
+        {'code': '1235', 'qty': f'=B{R_DIESEL}', 'role': 'DERIVED',
+         'note': 'CPWD Note 3: litres from Panel 2 (distance / 5.0 km per litre).'},
+        {'code': '5001', 'qty': f'=B{R_MOBIL}', 'role': 'DERIVED',
+         'note': 'CPWD Note 4: litres from Panel 2 (distance / 140.0 km per litre).'},
     ]
 
-    for idx in range(8):
-        r = 18 + idx
-        res = mech_resources[idx] if idx < len(mech_resources) else None
+    for i in range(RES_ROWS):
+        r = R_RES_FIRST + i
+        res = resources[i] if i < len(resources) else None
+        ws.cell(row=r, column=1, value=i + 1).alignment = styles['align_center']
 
-        ws.cell(row=r, column=1, value=idx+1).alignment = styles['align_center']
+        cc = ws.cell(row=r, column=2, value=(res['code'] if res else ''))
+        cc.alignment = styles['align_center']
+        cc.font = styles['font_bold']
+        cc.fill = styles['fill_input']
 
-        c_code = ws.cell(row=r, column=2, value=res['code'] if res else '')
-        c_code.alignment = styles['align_center']
-        c_code.font = styles['font_bold']
-        c_code.fill = styles['fill_input']
+        ws.cell(row=r, column=3,
+                value=f'=IF(B{r}="","", IFERROR(INDEX(Rates_Master!$C:$C, '
+                      f'MATCH(B{r}, Rates_Master!$A:$A, 0)), "Code not in Rates_Master"))'
+                ).fill = styles['fill_lookup']
+        cu = ws.cell(row=r, column=4,
+                     value=f'=IF(B{r}="","", IFERROR(INDEX(Rates_Master!$D:$D, '
+                           f'MATCH(B{r}, Rates_Master!$A:$A, 0)), ""))')
+        cu.alignment = styles['align_center']
+        cu.fill = styles['fill_lookup']
 
-        c_desc = ws.cell(row=r, column=3, value=f'=IF(B{r}="","", IFERROR(INDEX(Rates_Master!$C:$C, MATCH(B{r}, Rates_Master!$A:$A, 0)), "Custom Resource Line"))')
-        c_desc.alignment = styles['align_left']
-        c_desc.fill = styles['fill_lookup']
+        role = res['role'] if res else 'INPUT'
+        cq = ws.cell(row=r, column=5, value=(res['qty'] if res else None))
+        cq.alignment = styles['align_right']
+        cq.number_format = styles['fmt_qty']
+        cq.fill = styles[ROLE_FILL[role]]
+        cq.font = styles['font_bold']
 
-        c_unit = ws.cell(row=r, column=4, value=f'=IF(B{r}="","", IFERROR(INDEX(Rates_Master!$D:$D, MATCH(B{r}, Rates_Master!$A:$A, 0)), ""))')
-        c_unit.alignment = styles['align_center']
-        c_unit.fill = styles['fill_lookup']
+        cr = ws.cell(row=r, column=6,
+                     value=f'=IF(B{r}="","", IFERROR(INDEX(Rates_Master!$E:$E, '
+                           f'MATCH(B{r}, Rates_Master!$A:$A, 0)), 0))')
+        cr.alignment = styles['align_right']
+        cr.number_format = styles['fmt_currency']
+        cr.fill = styles['fill_lookup']
 
-        c_qty = ws.cell(row=r, column=5)
-        if res:
-            c_qty.value = res['qty_formula']
-        else:
-            c_qty.value = None
-        c_qty.alignment = styles['align_right']
-        c_qty.number_format = styles['fmt_qty']
-        if r in [19, 20, 21]:
-            c_qty.fill = styles['fill_calc']
-            c_qty.font = styles['font_bold']
-        else:
-            c_qty.fill = styles['fill_input']
+        ca = ws.cell(row=r, column=7, value=f'=IF(OR(B{r}="", E{r}=""), 0, ROUND(E{r} * F{r}, 2))')
+        ca.alignment = styles['align_right']
+        ca.number_format = styles['fmt_currency']
 
-        c_rate = ws.cell(row=r, column=6, value=f'=IF(B{r}="","", IFERROR(INDEX(Rates_Master!$E:$E, MATCH(B{r}, Rates_Master!$A:$A, 0)), 0))')
-        c_rate.alignment = styles['align_right']
-        c_rate.number_format = styles['fmt_currency']
-        c_rate.fill = styles['fill_lookup']
+        cn = ws.cell(row=r, column=8, value=(res['note'] if res else ''))
+        cn.font = styles['font_note']
+        cn.alignment = styles['align_wrap']
 
-        c_amt = ws.cell(row=r, column=7, value=f'=IF(OR(B{r}="", E{r}=""), 0, ROUND(E{r} * F{r}, 2))')
-        c_amt.alignment = styles['align_right']
-        c_amt.number_format = styles['fmt_currency']
-        c_amt.fill = styles['fill_calc']
+        crole = ws.cell(row=r, column=9, value=(role if res else 'INPUT'))
+        crole.alignment = styles['align_center']
+        crole.font = styles['font_note']
+        crole.fill = styles[ROLE_FILL[role]]
 
-        c_rem = ws.cell(row=r, column=8, value=res['note'] if res else '')
-        c_rem.alignment = styles['align_left']
-        c_rem.font = styles['font_note']
+        border_row(ws, r, styles)
+        ws.row_dimensions[r].height = 26
 
-        for col in range(1, 9):
-            ws.cell(row=r, column=col).border = styles['border_thin']
-        ws.row_dimensions[r].height = 20
+    ws.merge_cells(start_row=R_W_SUB, start_column=1, end_row=R_W_SUB, end_column=6)
+    ws.cell(row=R_W_SUB, column=1,
+            value='Direct operating cost of one 8-hour shift, W (Rs):').font = styles['font_bold']
+    ws.cell(row=R_W_SUB, column=1).alignment = styles['align_right']
+    cw = ws.cell(row=R_W_SUB, column=7, value=f'=SUM(G{R_RES_FIRST}:G{R_RES_LAST})')
+    cw.font = styles['font_bold']
+    cw.alignment = styles['align_right']
+    cw.number_format = styles['fmt_currency']
+    ws.cell(row=R_W_SUB, column=8,
+            value='Compare against the "Total Shift Cost" column of Data Sheet 1 below for the same '
+                  'lead - they should agree.').font = styles['font_note']
+    for c in range(1, LAST_COL + 1):
+        ws.cell(row=R_W_SUB, column=c).fill = styles['fill_subtotal']
+        ws.cell(row=R_W_SUB, column=c).border = styles['border_double_bottom']
+    ws.row_dimensions[R_W_SUB].height = 24
 
-    # Row 26: Direct Daily Operating Cost (W)
-    ws.merge_cells('A26:E26')
-    ws['A26'] = 'Direct Daily Operating Cost (W) (Rs):'
-    ws['A26'].font = styles['font_bold']
-    ws['A26'].alignment = styles['align_right']
-    ws['A26'].fill = styles['fill_subtotal']
+    ws.merge_cells(start_row=R_TRIP_COST, start_column=1, end_row=R_TRIP_COST, end_column=6)
+    ws.cell(row=R_TRIP_COST, column=1,
+            value='Direct operating cost per round trip (Rs):').font = styles['font_bold']
+    ws.cell(row=R_TRIP_COST, column=1).alignment = styles['align_right']
+    ct = ws.cell(row=R_TRIP_COST, column=7,
+                 value=f'=IFERROR(ROUND(G{R_W_SUB} / B{R_TRIPS}, 2), 0)')
+    ct.font = styles['font_bold']
+    ct.alignment = styles['align_right']
+    ct.number_format = styles['fmt_currency']
+    ws.cell(row=R_TRIP_COST, column=8, value='W divided by the trips in Panel 2.').font = styles['font_note']
+    border_row(ws, R_TRIP_COST, styles)
+    ws.row_dimensions[R_TRIP_COST].height = 22
 
-    c_dirsum = ws['G26']
-    c_dirsum.value = '=SUM(G18:G25)'
-    c_dirsum.font = styles['font_bold']
-    c_dirsum.alignment = styles['align_right']
-    c_dirsum.number_format = styles['fmt_currency']
-    c_dirsum.fill = styles['fill_subtotal']
-    for c in ['A26', 'B26', 'C26', 'D26', 'E26', 'F26', 'G26', 'H26']:
-        ws[c].border = styles['border_double_bottom']
-    ws.row_dimensions[26].height = 22
+    # =====================================================================
+    # Markups and rate derivation
+    # =====================================================================
+    section_bar(ws, R_MU_HEAD,
+                'SECTION 2 - STATUTORY MARKUPS & RATE DERIVATION  '
+                '(CPWD carriage convention: 15% CPOH only)', styles)
+    col_headers(ws, R_MU_COLS,
+                ['Step', 'Description / Stage', 'Apply? (YES/NO)', 'Basis Applied', 'Base Amount (Rs)',
+                 'Factor / %', 'Amount (Rs)', 'CPWD Statutory Rule & Guidance Note', 'Cell Role'],
+                styles)
 
-    # Row 27: Operating Cost per Single Round Trip
-    ws.merge_cells('A27:E27')
-    ws['A27'] = 'Operating Cost per Single Round Trip (Rs):'
-    ws['A27'].font = styles['font_bold']
-    ws['A27'].alignment = styles['align_right']
-    ws['A27'].fill = styles['fill_subtotal']
+    mu_rows = [
+        (R_W, 'W', 'Direct operating cost of the shift (truck + labour + fuel)', None, 'Direct sum',
+         None, None, f'=G{R_W_SUB}',
+         'Carried straight down from Section 1.', 'DERIVED'),
+        (R_X1, 'X1', 'Add Water Charges', 'NO', 'On W', f'=G{R_W}', '=Factor_Water',
+         f'=IF(C{R_X1}="YES", ROUND(E{R_X1} * F{R_X1}, 2), 0)',
+         'CPWD RULE: switched off for carriage - no water is consumed in haulage. DAR item 1.1.18 goes '
+         'straight from TOTAL to "Add 15% CPOH".', 'INPUT'),
+        (R_X, 'X', 'Subtotal X (W + Water)', None, 'W + Water', None, None, f'=G{R_W} + G{R_X1}',
+         'Running subtotal.', 'DERIVED'),
+        (R_Y1, 'Y1', 'Add GST on works contract', 'NO', 'On X', f'=G{R_X}', '=Factor_GST',
+         f'=IF(C{R_Y1}="YES", ROUND(E{R_Y1} * F{R_Y1}, 2), 0)',
+         'CPWD RULE: the printed DAR carriage rates exclude GST. Leave NO to stay comparable with the '
+         'book; switch to YES only for a tender that requires it.', 'INPUT'),
+        (R_Y, 'Y', 'Subtotal Y (X + GST)', None, 'X + GST', None, None, f'=G{R_X} + G{R_Y1}',
+         'Base for contractor profit and overheads.', 'DERIVED'),
+        (R_Z1, 'Z1', 'Add Contractor Profit & Overheads (15% CPOH)', 'YES', 'On Y', f'=G{R_Y}',
+         '=Factor_CPOH', f'=IF(C{R_Z1}="YES", ROUND(E{R_Z1} * F{R_Z1}, 2), 0)',
+         'CPWD RULE: 15% CPOH is applied to every carriage item without exception.', 'INPUT'),
+        (R_Z, 'Z', 'Subtotal Z (Y + CPOH)', None, 'Y + CPOH', None, None, f'=G{R_Y} + G{R_Z1}',
+         'Named the same way as on the other eleven builder sheets.', 'DERIVED'),
+        (R_Z2, 'Z2', 'Add BOCW Welfare Cess', 'NO', 'On Z', f'=G{R_Z}', '=Factor_Cess',
+         f'=IF(C{R_Z2}="YES", ROUND(E{R_Z2} * F{R_Z2}, 2), 0)',
+         'CPWD RULE: excluded from the printed base rates. Switch to YES only if your circle requires '
+         'it on carriage.', 'INPUT'),
+        (R_TOTAL, 'Total', 'Total cost of one 8-hour shift with overheads', None, 'Z + Cess', None, None,
+         f'=G{R_Z} + G{R_Z2}', 'The full shift cost that the payable output is divided into.', 'RESULT'),
+        (R_TRIP_OH, '-', 'Cost per round trip with overheads', None, 'Total / N', f'=G{R_TOTAL}',
+         f'=B{R_TRIPS}', f'=IFERROR(ROUND(G{R_TOTAL} / B{R_TRIPS}, 2), 0)',
+         'For comparison with the "Cost per Trip" column of Data Sheet 1.', 'DERIVED'),
+        (R_RATE_UNIT, '-', 'Rate per single payable unit, plus gate fee', None, 'Total / payable output',
+         f'=G{R_TOTAL}', f'=B{R_OUTPUT}',
+         f'=IFERROR(ROUND(G{R_TOTAL} / B{R_OUTPUT}, 2), 0) + B{R_GATE_FEE}',
+         'Per cum / per tonne / per metre / per brick. Divided by the NET payable output from Panel 3, '
+         'not by the gross truck payload. The gate fee is added here, after CPOH.', 'DERIVED'),
+        (R_RATE_SCHED, '-', 'Analysed rate per schedule unit', None, 'x scale factor', f'=B{R_SCALE}',
+         None, f'=ROUND(G{R_RATE_UNIT} * B{R_SCALE}, 2)',
+         'Multiplied up to the DAR schedule unit - x1000 for "1000 Nos", x100 for "100 m", x1 '
+         'otherwise. This unrounded figure is what the Table 1.1 base rates below are quoted at.',
+         'DERIVED'),
+        (R_SAY, 'SAY', 'CPWD OFFICIAL "SAY" RATE FOR THIS CARRIAGE ITEM', None, 'MROUND to Rs 0.05',
+         None, None, f'=MROUND(G{R_RATE_SCHED}, 0.05)',
+         'The rate to quote in a BOQ or estimate. Rounded to the nearest 5 paise - see the note below.',
+         'SAY'),
+    ]
 
-    c_tripsum = ws['G27']
-    c_tripsum.value = '=ROUND(G26 / D13, 2)'
-    c_tripsum.font = styles['font_bold']
-    c_tripsum.alignment = styles['align_right']
-    c_tripsum.number_format = styles['fmt_currency']
-    c_tripsum.fill = styles['fill_result']
-
-    ws['H27'] = 'Evaluated operating cost per single round trip (= W / N)'
-    ws['H27'].font = styles['font_note']
-    ws['H27'].alignment = styles['align_left']
-
-    for c in ['A27', 'B27', 'C27', 'D27', 'E27', 'F27', 'G27', 'H27']:
-        ws[c].border = styles['border_thin']
-    ws.row_dimensions[27].height = 22
-
-    # Spacer Row 28
-    ws.row_dimensions[28].height = 10
-
-    # =========================================================================
-    # SECTION 2: STATUTORY MARKUPS & UNIT RATE DERIVATION (Rows 29-42)
-    # =========================================================================
-    ws.merge_cells('A29:H29')
-    c_sec2 = ws['A29']
-    c_sec2.value = '2. STATUTORY MARKUPS & UNIT RATE DERIVATION (CPWD CARRIAGE CONVENTION: 15% CPOH ONLY)'
-    c_sec2.font = styles['font_white_bold']
-    c_sec2.fill = styles['fill_header']
-    c_sec2.alignment = styles['align_left']
-    ws.row_dimensions[29].height = 24
-
-    stat_headers = ['Item', 'Description / Stage', 'Apply? (YES/NO)', 'Basis Applied', 'Base Amount (Rs)', 'Factor / %', 'Amount (Rs)', 'CPWD Statutory Rule & Guidance Note']
-    for c_idx, h in enumerate(stat_headers, 1):
-        cell = ws.cell(row=30, column=c_idx, value=h)
-        cell.font = styles['font_header']
-        cell.fill = styles['fill_header']
-        cell.alignment = styles['align_center']
-        cell.border = styles['border_header']
-    ws.row_dimensions[30].height = 24
-
-    # Row 31: Base Direct Cost (W)
-    ws['A31'] = 'W'
-    ws['B31'] = 'Direct Daily Operating Cost (Truck + Labour + Fuel)'
-    ws['C31'] = '-'
-    ws['D31'] = 'Direct Sum'
-    ws['E31'] = '-'
-    ws['F31'] = '-'
-    ws['G31'] = '=G26'
-    ws['H31'] = 'Total direct operating shift cost before statutory overheads'
-
-    # Row 32: Water Charges (NO by default per CPWD)
-    ws['A32'] = 'X1'
-    ws['B32'] = 'Add Water Charges (1% on W)'
-    ws['C32'] = 'NO'
-    ws['D32'] = 'On "W"'
-    ws['E32'] = '=G31'
-    ws['F32'] = '=Factor_Water'
-    ws['G32'] = '=IF(C32="YES", ROUND(E32 * F32, 2), 0)'
-    ws['H32'] = 'CPWD RULE: Omitted (NO) in Carriage items because no water is consumed in haulage.'
-
-    # Row 33: Subtotal (X)
-    ws['A33'] = 'X'
-    ws['B33'] = 'Subtotal "X" (W + Water Charges)'
-    ws['C33'] = '-'
-    ws['D33'] = 'W + Water'
-    ws['E33'] = '-'
-    ws['F33'] = '-'
-    ws['G33'] = '=G31 + G32'
-    ws['H33'] = 'Base for GST (if applicable)'
-
-    # Row 34: GST (NO by default in DAR base analysis)
-    ws['A34'] = 'Y1'
-    ws['B34'] = 'Add GST (14.05% Works Contract Tax on X)'
-    ws['C34'] = 'NO'
-    ws['D34'] = 'On "X"'
-    ws['E34'] = '=G33'
-    ws['F34'] = '=Factor_GST'
-    ws['G34'] = '=IF(C34="YES", ROUND(E34 * F34, 2), 0)'
-    ws['H34'] = 'CPWD RULE: Base DAR 2019 carriage rates exclude GST. Keep NO for official DSR comparison.'
-
-    # Row 35: Subtotal (Y)
-    ws['A35'] = 'Y'
-    ws['B35'] = 'Subtotal "Y" (X + GST)'
-    ws['C35'] = '-'
-    ws['D35'] = 'X + GST'
-    ws['E35'] = '-'
-    ws['F35'] = '-'
-    ws['G35'] = '=G33 + G34'
-    ws['H35'] = 'Base for Contractor Profit & Overheads (CPOH)'
-
-    # Row 36: Contractor Profit & Overheads (15% on Y)
-    ws['A36'] = 'Z1'
-    ws['B36'] = 'Add Contractor Profit & Overheads (15% on Y)'
-    ws['C36'] = 'YES'
-    ws['D36'] = 'On "Y"'
-    ws['E36'] = '=G35'
-    ws['F36'] = '=Factor_CPOH'
-    ws['G36'] = '=IF(C36="YES", ROUND(E36 * F36, 2), 0)'
-    ws['H36'] = 'CPWD RULE: Standard 15% CPOH is universally applied to all carriage items.'
-
-    # Row 37: BOCW Cess (NO by default in base DAR)
-    ws['A37'] = 'Z2'
-    ws['B37'] = 'Add BOCW Welfare Cess (1% on Y + CPOH)'
-    ws['C37'] = 'NO'
-    ws['D37'] = 'On "Y + CPOH"'
-    ws['E37'] = '=G35 + G36'
-    ws['F37'] = '=Factor_Cess'
-    ws['G37'] = '=IF(C37="YES", ROUND(E37 * F37, 2), 0)'
-    ws['H37'] = 'CPWD RULE: Cess is excluded in base rates; toggle YES only if project requires local cess.'
-
-    # Row 38: Grand Total Daily Operating Cost with Overheads (Z)
-    ws['A38'] = 'Z'
-    ws['B38'] = 'Grand Total Daily Operating Cost with Overheads'
-    ws['C38'] = '-'
-    ws['D38'] = 'Y + CPOH + Cess'
-    ws['E38'] = '-'
-    ws['F38'] = '-'
-    ws['G38'] = '=G35 + G36 + G37'
-    ws['H38'] = 'Total operating cost for 1 shift of 8 hours including 15% contractor profit & overheads'
-
-    # Row 39: Cost per Single Round Trip with Overheads
-    ws['A39'] = '-'
-    ws['B39'] = 'Cost per Single Round Trip with Overheads'
-    ws['C39'] = '-'
-    ws['D39'] = 'Z / N Trips'
-    ws['E39'] = '=G38'
-    ws['F39'] = '=D13'
-    ws['G39'] = '=ROUND(G38 / D13, 2)'
-    ws['H39'] = 'Evaluated rate per single trip with overheads (= Total Cost Z / N)'
-
-    # Row 40: Analyzed Unit Rate per Billing Unit
-    ws['A40'] = '-'
-    ws['B40'] = 'Analyzed Unit Rate per Billing Unit'
-    ws['C40'] = '-'
-    ws['D40'] = 'Z / Total Output + Fee'
-    ws['E40'] = '=G38'
-    ws['F40'] = '=H13'
-    ws['G40'] = '=ROUND((G38 / H13) + B7, 2)'
-    ws['H40'] = 'Derived cost per individual billing unit including optional municipal tipping/gate fee'
-
-    # Row 41: Rate per Schedule Output Unit (100 m / 1000 Nos)
-    ws['A41'] = '-'
-    ws['B41'] = 'Rate per Schedule Output Unit (100 m / 1000 Nos)'
-    ws['C41'] = '-'
-    ws['D41'] = 'Basis Unit'
-    ws['E41'] = '=B13'
-    ws['F41'] = '-'
-    ws['G41'] = '=IF(OR(B13="100 m", B13="1000 Nos"), ROUND(G40 * 100, 2), G40)'
-    ws['H41'] = 'Schedule rate formatted to CPWD DAR basis (e.g. per 100m for pipes, per 1000 for bricks)'
-
-    # Row 42: OFFICIAL CPWD SAY RATE CALLOUT
-    ws['A42'] = 'SAY'
-    ws['B42'] = 'CPWD OFFICIAL "SAY" RATE FOR CARRIAGE (Linked to Contract Estimate):'
-    ws['C42'] = '-'
-    ws['D42'] = 'Rounded per CPWD'
-    ws['E42'] = '-'
-    ws['F42'] = '-'
-    ws['G42'] = '=IF(OR(B13="100 m", B13="1000 Nos"), ROUND(G41, 0), ROUND(G40, 2))'
-    ws['H42'] = 'Final analytical rate ready for integration into BOQ and project cost estimates'
-
-    for r in range(31, 43):
+    for r, step, desc, toggle, basis, base_f, factor_f, amount_f, note, role in mu_rows:
+        ws.cell(row=r, column=1, value=step).font = styles['font_bold']
         ws.cell(row=r, column=1).alignment = styles['align_center']
-        ws.cell(row=r, column=1).font = styles['font_bold']
+        ws.cell(row=r, column=2, value=desc).alignment = styles['align_left']
+        ws.cell(row=r, column=3, value=(toggle if toggle else '-')).alignment = styles['align_center']
+        ws.cell(row=r, column=4, value=basis).alignment = styles['align_center']
 
-        ws.cell(row=r, column=2).alignment = styles['align_left']
-        ws.cell(row=r, column=3).alignment = styles['align_center']
-        ws.cell(row=r, column=4).alignment = styles['align_center']
+        cb = ws.cell(row=r, column=5, value=(base_f if base_f else '-'))
+        cb.alignment = styles['align_right']
+        if base_f and r not in (R_TRIP_OH, R_RATE_SCHED):
+            cb.number_format = styles['fmt_currency']
 
-        c_base = ws.cell(row=r, column=5)
-        c_base.alignment = styles['align_right']
-        if r in [32, 34, 36, 37]:
-            c_base.number_format = styles['fmt_currency']
+        cf = ws.cell(row=r, column=6, value=(factor_f if factor_f else '-'))
+        cf.alignment = styles['align_right']
+        if factor_f and factor_f.startswith('=Factor'):
+            cf.number_format = styles['fmt_percent']
 
-        c_fac = ws.cell(row=r, column=6)
-        c_fac.alignment = styles['align_right']
-        if r in [32, 34, 36, 37]:
-            c_fac.number_format = styles['fmt_percent']
+        cv = ws.cell(row=r, column=7, value=amount_f)
+        cv.alignment = styles['align_right']
+        cv.number_format = styles['fmt_currency']
+        cv.font = styles['font_say'] if r == R_SAY else styles['font_bold']
 
-        c_val = ws.cell(row=r, column=7)
-        c_val.alignment = styles['align_right']
-        c_val.number_format = styles['fmt_currency']
-        c_val.font = styles['font_bold']
+        cn = ws.cell(row=r, column=8, value=note)
+        cn.alignment = styles['align_wrap']
+        cn.font = styles['font_note']
 
-        c_note = ws.cell(row=r, column=8)
-        c_note.alignment = styles['align_wrap']
-        c_note.font = styles['font_note']
+        cr2 = ws.cell(row=r, column=9, value=role)
+        cr2.alignment = styles['align_center']
+        cr2.font = styles['font_note']
+        cr2.fill = styles[ROLE_FILL[role]]
 
-        for c in range(1, 9):
-            ws.cell(row=r, column=c).border = styles['border_thin']
+        border_row(ws, r, styles)
 
-        if r in [31, 33, 35, 37]:
-            for c in range(1, 8):
+        if r in (R_W, R_X, R_Y, R_Z):
+            for c in range(1, LAST_COL):
                 ws.cell(row=r, column=c).fill = styles['fill_subtotal']
-        elif r in [32, 34, 36, 37]:
+        elif r in (R_X1, R_Y1, R_Z1, R_Z2):
             ws.cell(row=r, column=3).fill = styles['fill_input']
             ws.cell(row=r, column=3).font = styles['font_bold']
             dv_yesno.add(ws.cell(row=r, column=3))
-        elif r == 38:
-            for c in range(1, 8):
+        elif r == R_TOTAL:
+            for c in range(1, LAST_COL):
                 ws.cell(row=r, column=c).fill = styles['fill_result']
-        elif r in [39, 40, 41]:
-            for c in range(1, 8):
+        elif r in (R_TRIP_OH, R_RATE_UNIT, R_RATE_SCHED):
+            for c in range(1, LAST_COL):
                 ws.cell(row=r, column=c).fill = styles['fill_subtotal']
-        elif r == 42:
-            ws.row_dimensions[42].height = 30
-            for c in range(1, 8):
+        elif r == R_SAY:
+            for c in range(1, LAST_COL):
                 ws.cell(row=r, column=c).fill = styles['fill_say']
-            ws['B42'].font = styles['font_say']
-            ws['G42'].font = styles['font_say']
+            ws.cell(row=r, column=2).font = styles['font_say']
 
-        ws.row_dimensions[r].height = 24 if r != 42 else 30
+        ws.row_dimensions[r].height = 30 if r == R_SAY else 26
 
-    # Spacer Row 43
-    ws.row_dimensions[43].height = 10
+    ws.merge_cells(start_row=R_SAY_NOTE, start_column=1, end_row=R_SAY_NOTE, end_column=LAST_COL)
+    sn = ws.cell(row=R_SAY_NOTE, column=1)
+    sn.value = SAY_RULE_NOTE
+    sn.font = styles['font_note']
+    sn.fill = styles['fill_note']
+    sn.alignment = styles['align_wrap']
+    border_row(ws, R_SAY_NOTE, styles)
+    ws.row_dimensions[R_SAY_NOTE].height = 44
 
-    # =========================================================================
-    # SECTION 3: HEADING 1.2 MANUAL LABOUR CARRIAGE CALCULATOR (< 0.50 KM) (Rows 44-49)
-    # =========================================================================
-    ws.merge_cells('A44:H44')
-    c_sec3 = ws['A44']
-    c_sec3.value = '3. HEADING 1.2: MANUAL LABOUR CARRIAGE CALCULATOR (For Lead Less Than 0.50 km / 50 m to 500 m)'
-    c_sec3.font = styles['font_white_bold']
-    c_sec3.fill = styles['fill_header']
-    c_sec3.alignment = styles['align_left']
-    ws.row_dimensions[44].height = 24
+    # =====================================================================
+    # Heading 1.2 - manual labour carriage
+    # =====================================================================
+    section_bar(ws, R_MAN_HEAD,
+                'SECTION 3 - HEADING 1.2: MANUAL LABOUR CARRIAGE  (lead under 0.50 km, 50 m to 500 m)',
+                styles)
+    ws.merge_cells(start_row=R_MAN_BANNER, start_column=1, end_row=R_MAN_BANNER, end_column=LAST_COL)
+    mb = ws.cell(row=R_MAN_BANNER, column=1)
+    mb.value = ('CPWD DAR 2019 Heading 1.2 gang norms: Category A (lime, moorum, rubbish, earth, sand, '
+                'aggregate, bricks) = 7.67 Beldars for the first 50 m plus 1.67 extra coolies for every '
+                'additional 50 m. Category B (stone blocks, pipes, cement, steel, timber, bitumen) = '
+                '9.20 Beldars for the first 50 m plus 1.35 extra Beldars per additional 50 m. Every '
+                'rupee figure below is derived from these gang sizes and the live day wage in '
+                'Rates_Master, so a wage revision flows through automatically.')
+    mb.font = styles['font_note']
+    mb.fill = styles['fill_note']
+    mb.alignment = styles['align_wrap']
+    border_row(ws, R_MAN_BANNER, styles)
+    ws.row_dimensions[R_MAN_BANNER].height = 44
 
-    ws.merge_cells('A45:H45')
-    c_mbanner = ws['A45']
-    c_mbanner.value = 'CPWD DAR 2019 Item 1.2 Standards: Category A (Bulk Materials) = 7.67 Beldars 1st 50m (+1.67 Coolies/addl 50m). Category B (Heavy/Pipes/Steel) = 9.20 Beldars 1st 50m (+1.35 Beldars/addl 50m). All rates include 15% CPOH.'
-    c_mbanner.font = styles['font_note']
-    c_mbanner.fill = styles['fill_note']
-    c_mbanner.alignment = styles['align_left']
-    ws.row_dimensions[45].height = 22
+    col_headers(ws, R_MAN_COLS, PARAM_HEADERS, styles, height=26)
+    ws.merge_cells(start_row=R_MAN_COLS, start_column=5, end_row=R_MAN_COLS, end_column=LAST_COL)
 
-    # Row 46: Inputs
-    ws['A46'] = 'Manual Item Code:'
-    ws['A46'].font = styles['font_bold']
-    ws['B46'] = '1.2.CUSTOM'
-    ws['B46'].fill = styles['fill_input']
-    ws['B46'].font = styles['font_bold']
-    ws['B46'].alignment = styles['align_center']
+    _param_row(ws, R_M_CODE, styles, 'Manual item code', '1.2.CUSTOM', '-', 'INPUT',
+               'Your reference for the manual-carriage analysis.')
+    _param_row(ws, R_M_CAT, styles, 'Material category', 'Category B (Heavy / Pipes / Steel)', '-',
+               'INPUT', 'DRIVES COST. Selects the gang norms quoted in the banner above.', dv=dv_cat)
+    _param_row(ws, R_M_LEAD, styles, 'Lead distance', 100, 'metres', 'INPUT',
+               'DRIVES COST. The first 50 m is the base gang; every further 50 m adds labour.',
+               dv=dv_mlead)
+    _param_row(ws, R_M_STEPS, styles, 'Additional 50 m steps (M)', None, 'steps', 'DERIVED',
+               'MAX(0, (lead - 50) / 50). A part step counts as a full step in CPWD practice.',
+               number_format='0.00')
+    ws.cell(row=R_M_STEPS, column=2).value = f'=MAX(0, ROUNDUP((B{R_M_LEAD} - 50) / 50, 0))'
 
-    ws['C46'] = 'Material Category:'
-    ws['C46'].font = styles['font_bold']
-    ws['D46'] = 'Category B (Heavy / Pipes / Steel)'
-    ws['D46'].fill = styles['fill_input']
-    ws['D46'].font = styles['font_bold']
-    ws['D46'].alignment = styles['align_center']
-    dv_manual_cat.add(ws['D46'])
+    _param_row(ws, R_M_GANG, styles, 'Gang for the first 50 m', None, 'labour days', 'LOOKUP',
+               'CPWD Heading 1.2 norm for the selected category.', number_format='0.00')
+    ws.cell(row=R_M_GANG, column=2).value = (
+        f'=IF(ISNUMBER(SEARCH("Category A", B{R_M_CAT})), 7.67, 9.2)')
 
-    ws['E46'] = 'Lead Distance (Metres):'
-    ws['E46'].font = styles['font_bold']
-    ws['F46'] = 100
-    ws['F46'].fill = styles['fill_input']
-    ws['F46'].font = styles['font_bold']
-    ws['F46'].alignment = styles['align_center']
-    dv_manual_lead.add(ws['F46'])
+    _param_row(ws, R_M_GANG_ADD, styles, 'Extra gang per additional 50 m', None, 'labour days',
+               'LOOKUP', 'CPWD Heading 1.2 norm for the selected category.', number_format='0.00')
+    ws.cell(row=R_M_GANG_ADD, column=2).value = (
+        f'=IF(ISNUMBER(SEARCH("Category A", B{R_M_CAT})), 1.67, 1.35)')
 
-    ws['G46'] = 'Addl 50m Steps (M):'
-    ws['G46'].font = styles['font_bold']
-    ws['H46'] = '=MAX(0, (F46 - 50) / 50)'
-    ws['H46'].fill = styles['fill_subtotal']
-    ws['H46'].font = styles['font_bold']
-    ws['H46'].alignment = styles['align_center']
-    ws['H46'].number_format = '0'
+    _param_row(ws, R_M_WAGE, styles, 'Labour day wage', None, 'Rs per day', 'LOOKUP',
+               'Live rate for Beldar / Coolie (code 0114) from Rates_Master. Both grades are on the '
+               'same day rate in DAR 2019.', number_format=styles['fmt_currency'])
+    ws.cell(row=R_M_WAGE, column=2).value = (
+        '=IFERROR(INDEX(Rates_Master!$E:$E, MATCH("0114", Rates_Master!$A:$A, 0)), 0)')
 
-    for col in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']:
-        ws[f'{col}46'].border = styles['border_thin']
-    ws.row_dimensions[46].height = 22
+    _param_row(ws, R_M_BASE, styles, 'Labour cost, first 50 m', None, 'Rs', 'DERIVED',
+               'Base gang x day wage.', number_format=styles['fmt_currency'])
+    ws.cell(row=R_M_BASE, column=2).value = f'=ROUND(B{R_M_GANG} * B{R_M_WAGE}, 2)'
 
-    # Row 47: Manual Specification
-    ws['A47'] = 'Manual Specification:'
-    ws['A47'].font = styles['font_bold']
-    ws['A47'].border = styles['border_thin']
-    ws.merge_cells('B47:H47')
-    ws['B47'] = 'Carriage by manual labour including loading, unloading and stacking for lead upto 100 metres complete as per directions of Engineer-in-charge.'
-    ws['B47'].font = styles['font_regular']
-    ws['B47'].fill = styles['fill_input']
-    ws['B47'].alignment = styles['align_wrap']
-    ws['B47'].border = styles['border_thin']
-    ws.row_dimensions[47].height = 26
+    _param_row(ws, R_M_ADD, styles, 'Labour cost, additional lead', None, 'Rs', 'DERIVED',
+               'Steps x extra gang x day wage.', number_format=styles['fmt_currency'])
+    ws.cell(row=R_M_ADD, column=2).value = f'=ROUND(B{R_M_STEPS} * B{R_M_GANG_ADD} * B{R_M_WAGE}, 2)'
 
-    # Row 48: Capacity & Norms
-    ws['A48'] = '8-Hour Output Capacity:'
-    ws['A48'].font = styles['font_bold']
-    ws['B48'] = 1702.00
-    ws['B48'].fill = styles['fill_input']
-    ws['B48'].font = styles['font_bold']
-    ws['B48'].alignment = styles['align_center']
-    ws['B48'].number_format = '0.00'
+    _param_row(ws, R_M_LABOUR, styles, 'Total labour cost for the shift', None, 'Rs', 'DERIVED',
+               'First 50 m plus additional lead.', number_format=styles['fmt_currency'])
+    ws.cell(row=R_M_LABOUR, column=2).value = f'=B{R_M_BASE} + B{R_M_ADD}'
 
-    ws['C48'] = 'Output / Billing Unit:'
-    ws['C48'].font = styles['font_bold']
-    ws['D48'] = '100 m'
-    ws['D48'].fill = styles['fill_input']
-    ws['D48'].font = styles['font_bold']
-    ws['D48'].alignment = styles['align_center']
-    dv_unit.add(ws['D48'])
+    _param_row(ws, R_M_CPOH, styles, 'Add Contractor Profit & Overheads', None, 'Rs', 'DERIVED',
+               'Taken from Factor_CPOH on Global_Factors, so a project override reaches this engine too.',
+               number_format=styles['fmt_currency'])
+    ws.cell(row=R_M_CPOH, column=2).value = f'=ROUND(B{R_M_LABOUR} * Factor_CPOH, 2)'
 
-    ws['E48'] = 'Base Labour 1st 50m (Rs):'
-    ws['E48'].font = styles['font_bold']
-    ws['F48'] = '=IF(ISNUMBER(SEARCH("Category A", D46)), 4279.86, 5133.60)'
-    ws['F48'].fill = styles['fill_subtotal']
-    ws['F48'].font = styles['font_bold']
-    ws['F48'].alignment = styles['align_right']
-    ws['F48'].number_format = styles['fmt_currency']
+    _param_row(ws, R_M_TOTAL, styles, 'Total 8-hour cost with CPOH', None, 'Rs', 'RESULT',
+               'Compare with the "Base Cost 1st 50m" column of Table 1.2 below.',
+               number_format=styles['fmt_currency'])
+    ws.cell(row=R_M_TOTAL, column=2).value = f'=B{R_M_LABOUR} + B{R_M_CPOH}'
 
-    ws['G48'] = 'Addl Labour / 50m (Rs):'
-    ws['G48'].font = styles['font_bold']
-    ws['H48'] = '=IF(ISNUMBER(SEARCH("Category A", D46)), 931.86, 753.30)'
-    ws['H48'].fill = styles['fill_subtotal']
-    ws['H48'].font = styles['font_bold']
-    ws['H48'].alignment = styles['align_right']
-    ws['H48'].number_format = styles['fmt_currency']
+    _param_row(ws, R_M_CAP, styles, 'Net payable quantity per 8-hour day', 1702.00, 'per billing unit',
+               'INPUT',
+               'From Table 1.2 below. Note these are already NET of the looseness deduction - earth is '
+               'listed at 28 cum, not the 35 cum a gang physically shifts.', number_format='0.00')
+    _param_row(ws, R_M_UNIT, styles, 'Billing unit', '100 m', '-', 'INPUT',
+               'The DAR schedule unit for this material.', dv=dv_unit)
+    _param_row(ws, R_M_SCALE, styles, 'Schedule unit scale factor', None, 'multiplier', 'DERIVED',
+               'x1000 for "1000 Nos", x100 for "100 m", otherwise x1 - the same rule as Panel 3.',
+               number_format='0')
+    ws.cell(row=R_M_SCALE, column=2).value = (
+        f'=IF(B{R_M_UNIT}="1000 Nos", 1000, IF(B{R_M_UNIT}="100 m", 100, 1))')
 
-    for col in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']:
-        ws[f'{col}48'].border = styles['border_thin']
-    ws.row_dimensions[48].height = 22
+    _param_row(ws, R_M_RATE, styles, 'Analysed rate per schedule unit', None, 'Rs', 'DERIVED',
+               'Total cost / payable quantity x scale factor. This unrounded figure is what Table 1.2 '
+               'below is quoted at.', number_format=styles['fmt_currency'])
+    ws.cell(row=R_M_RATE, column=2).value = (
+        f'=IFERROR(ROUND(B{R_M_TOTAL} / B{R_M_CAP} * B{R_M_SCALE}, 2), 0)')
 
-    # Row 49: Cost Derivation
-    ws['A49'] = 'Total Labour Cost (Rs):'
-    ws['A49'].font = styles['font_bold']
-    ws['B49'] = '=F48 + (H46 * H48)'
-    ws['B49'].fill = styles['fill_subtotal']
-    ws['B49'].font = styles['font_bold']
-    ws['B49'].alignment = styles['align_right']
-    ws['B49'].number_format = styles['fmt_currency']
+    _param_row(ws, R_M_SAY, styles, 'CPWD OFFICIAL "SAY" RATE (manual carriage)', None, 'Rs', 'SAY',
+               'Rounded to the nearest 5 paise per CPWD practice - see the note in Section 2.',
+               number_format=styles['fmt_currency'])
+    ws.cell(row=R_M_SAY, column=2).value = f'=IFERROR(MROUND(B{R_M_RATE}, 0.05), 0)'
 
-    ws['C49'] = 'Add 15% CPOH (Rs):'
-    ws['C49'].font = styles['font_bold']
-    ws['D49'] = '=ROUND(B49 * 0.15, 2)'
-    ws['D49'].fill = styles['fill_subtotal']
-    ws['D49'].font = styles['font_bold']
-    ws['D49'].alignment = styles['align_right']
-    ws['D49'].number_format = styles['fmt_currency']
+    # =====================================================================
+    # Section 5 - benchmarks
+    # =====================================================================
+    section_bar(ws, R_BM_HEAD,
+                'SECTION 5 - GROUND-TRUTH REFERENCE TABLES (CPWD DAR 2019 SUB-HEAD 01). '
+                'These are source data - the panels above read from them. Do not edit.', styles)
 
-    ws['E49'] = 'Total 8-Hr Cost with CPOH:'
-    ws['E49'].font = styles['font_bold']
-    ws['F49'] = '=B49 + D49'
-    ws['F49'].fill = styles['fill_result']
-    ws['F49'].font = styles['font_bold']
-    ws['F49'].alignment = styles['align_right']
-    ws['F49'].number_format = styles['fmt_currency']
+    section_bar(ws, R_DS1_HEAD,
+                '5A. CPWD DATA SHEET NO. 1 - mechanical transport benchmark, 1 km to 30 km. '
+                'Panel 2 looks up the speed, trips and km/day for your lead here.', styles, height=22)
+    col_headers(ws, R_DS1_COLS,
+                ['Lead (L) km', 'Avg Speed (S) km/h', 'Trips (N)/day', 'Km done/day',
+                 'Diesel (litres)', 'Mobil oil (litres)', 'Total shift cost (Rs)',
+                 'Cost per trip (Rs)', 'Source'], styles)
 
-    ws['G49'] = 'Analyzed Unit Rate (Rs):'
-    ws['G49'].font = styles['font_bold']
-    ws['H49'] = '=IF(OR(D48="100 m", D48="1000 Nos"), ROUND((F49 / B48) * 100, 2), ROUND(F49 / B48, 2))'
-    ws['H49'].fill = styles['fill_say']
-    ws['H49'].font = styles['font_say']
-    ws['H49'].alignment = styles['align_right']
-    ws['H49'].number_format = styles['fmt_currency']
-
-    for col in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']:
-        ws[f'{col}49'].border = styles['border_thin']
-    ws.row_dimensions[49].height = 26
-
-    # Spacer Row 50
-    ws.row_dimensions[50].height = 12
-
-    # =========================================================================
-    # SECTION 4: GROUND-TRUTH ENGINEERING REFERENCE BENCHMARKS (Rows 51+)
-    # =========================================================================
-    ws.merge_cells('A51:H51')
-    c_sec4_main = ws['A51']
-    c_sec4_main.value = '4. GROUND-TRUTH ENGINEERING REFERENCE BENCHMARKS (CPWD DAR 2019 SUB-HEAD 01)'
-    c_sec4_main.font = styles['font_white_bold']
-    c_sec4_main.fill = styles['fill_header']
-    c_sec4_main.alignment = styles['align_left']
-    ws.row_dimensions[51].height = 24
-
-    # --- 4A: CPWD DATA SHEET NO. 1 (Rows 52-84) ---
-    ws.merge_cells('A52:H52')
-    c_sec4a = ws['A52']
-    c_sec4a.value = '4A. CPWD DAR 2019 DATA SHEET NO. 1 GROUND-TRUTH BENCHMARK (1 km to 30 km Mechanical Transport Reference)'
-    c_sec4a.font = styles['font_white_bold']
-    c_sec4a.fill = styles['fill_header']
-    c_sec4a.alignment = styles['align_left']
-    ws.row_dimensions[52].height = 22
-
-    bench_headers = ['Lead (L) (km)', 'Avg Speed (S) (km/h)', 'Trips (N) / Day', 'Km Done / Day', 'Diesel Qty (Litres)', 'Mobil Oil (Litres)', 'Total Shift Cost (Rs)', 'Cost per Trip (Rs)']
-    for c_idx, h in enumerate(bench_headers, 1):
-        cell = ws.cell(row=53, column=c_idx, value=h)
-        cell.font = styles['font_header']
-        cell.fill = styles['fill_header']
-        cell.alignment = styles['align_center']
-        cell.border = styles['border_header']
-    ws.row_dimensions[53].height = 24
-
-    datasheet1_records = [
+    datasheet1 = [
         (1.0, 16.0, 7.11, 20.22, 4.04, 0.144, 5190.30, 730.00),
         (2.0, 17.0, 6.48, 31.92, 6.38, 0.228, 5388.75, 831.60),
         (3.0, 17.5, 5.96, 41.76, 8.35, 0.298, 5555.60, 932.15),
@@ -838,322 +786,230 @@ def build_carriage_trade(wb, config, styles):
         (27.0, 29.5, 2.83, 158.82, 31.76, 1.134, 7539.57, 2664.16),
         (28.0, 30.0, 2.79, 162.24, 32.45, 1.159, 7598.17, 2723.36),
         (29.0, 30.5, 2.76, 166.08, 33.22, 1.186, 7663.26, 2776.54),
-        (30.0, 31.0, 2.73, 169.80, 33.96, 1.213, 7726.16, 2830.10)
+        (30.0, 31.0, 2.73, 169.80, 33.96, 1.213, 7726.16, 2830.10),
     ]
+    fmts = ['0.0', '0.0', '0.00', '0.00', '0.00', '0.000',
+            styles['fmt_currency'], styles['fmt_currency']]
+    for i, rec in enumerate(datasheet1):
+        r = R_DS1_FIRST + i
+        for ci, val in enumerate(rec, 1):
+            c = ws.cell(row=r, column=ci, value=val)
+            c.alignment = styles['align_center'] if ci <= 3 else styles['align_right']
+            c.number_format = fmts[ci - 1]
+            c.font = styles['font_regular']
+        ws.cell(row=r, column=9, value='DAR 2019 Data Sheet 1').font = styles['font_note']
+        fill = styles['fill_subtotal'] if r % 2 == 0 else styles['fill_calc']
+        for c in range(1, LAST_COL + 1):
+            ws.cell(row=r, column=c).fill = fill
+            ws.cell(row=r, column=c).border = styles['border_thin']
+        ws.row_dimensions[r].height = 18
 
-    for idx, rec in enumerate(datasheet1_records):
-        r = 54 + idx
-        ws.cell(row=r, column=1, value=rec[0]).alignment = styles['align_center']
-        ws.cell(row=r, column=1).number_format = '0.0 "km"'
+    ws.merge_cells(start_row=R_DS1_NOTE, start_column=1, end_row=R_DS1_NOTE, end_column=LAST_COL)
+    dn = ws.cell(row=R_DS1_NOTE, column=1)
+    dn.value = ('HOW THIS TABLE IS BUILT: N = 8 / ((2L/S) + 1). Km done per day = 2NL + 6, the 6 km '
+                'being the depot run. Diesel = km / 5.0. Mobil oil = km / 140.0. Total shift cost = '
+                'truck hire 0084 + 6 Beldars 0114 + diesel 1235 + mobil oil 5001. Section 1 above '
+                'reproduces this line for line, which is why its W should equal the shift cost here.')
+    dn.font = styles['font_note']
+    dn.fill = styles['fill_note']
+    dn.alignment = styles['align_wrap']
+    border_row(ws, R_DS1_NOTE, styles)
+    ws.row_dimensions[R_DS1_NOTE].height = 40
 
-        ws.cell(row=r, column=2, value=rec[1]).alignment = styles['align_center']
-        ws.cell(row=r, column=2).number_format = '0.0'
+    # --- Table 1.1 -------------------------------------------------------
+    section_bar(ws, R_T11_HEAD,
+                '5B. TABLE 1.1 - MATERIAL PAYLOAD, NET PAYABLE QUANTITY AND SCHEDULE UNIT. '
+                'Panel 3 looks up the material you chose here. The "Net payable" column is the one '
+                'the rate is divided by.', styles, height=22)
+    col_headers(ws, R_T11_COLS,
+                ['DAR Code', 'Material / Trade Specification', 'Gross truck payload / trip',
+                 'Net payable qty / trip', 'Schedule unit', 'Looseness deduction applied',
+                 'DAR base rate @ 1 km (Rs)', 'Additional rate > 20 km (Rs)', 'Source'], styles)
 
-        ws.cell(row=r, column=3, value=rec[2]).alignment = styles['align_center']
-        ws.cell(row=r, column=3).number_format = '0.00'
-
-        ws.cell(row=r, column=4, value=rec[3]).alignment = styles['align_right']
-        ws.cell(row=r, column=4).number_format = '0.00'
-
-        ws.cell(row=r, column=5, value=rec[4]).alignment = styles['align_right']
-        ws.cell(row=r, column=5).number_format = '0.00'
-
-        ws.cell(row=r, column=6, value=rec[5]).alignment = styles['align_right']
-        ws.cell(row=r, column=6).number_format = '0.000'
-
-        ws.cell(row=r, column=7, value=rec[6]).alignment = styles['align_right']
-        ws.cell(row=r, column=7).number_format = styles['fmt_currency']
-
-        c_bcost = ws.cell(row=r, column=8, value=rec[7])
-        c_bcost.alignment = styles['align_right']
-        c_bcost.number_format = styles['fmt_currency']
-        c_bcost.font = styles['font_bold']
-
-        row_fill = styles['fill_subtotal'] if r % 2 == 0 else styles['fill_calc']
-        for c in range(1, 9):
-            cell = ws.cell(row=r, column=c)
-            cell.fill = row_fill
-            cell.border = styles['border_thin']
-            if c != 8:
-                cell.font = styles['font_regular']
-        ws.row_dimensions[r].height = 20
-
-    ws.merge_cells('A84:H84')
-    c_bnote = ws['A84']
-    c_bnote.value = 'NOTES: N=8/((2L/S)+1); Km Done=(2NL)+6.0; Diesel=Km/5.0; Mobil Oil=Km/140.0; Cost=Diesel+Oil+Rs 3348 (6 Beldars)+Rs 1500 (Truck); Cost/Trip=Total Cost/N.'
-    c_bnote.font = styles['font_note']
-    c_bnote.fill = styles['fill_note']
-    c_bnote.alignment = styles['align_left']
-    c_bnote.border = styles['border_thin']
-    ws.row_dimensions[84].height = 20
-
-    # Spacer Row 85
-    ws.row_dimensions[85].height = 10
-
-    # --- 4B: CPWD TABLE 1.1 MATERIAL PAYLOAD CAPACITIES MATRIX (Rows 86-114) ---
-    ws.merge_cells('A86:H86')
-    c_sec4b = ws['A86']
-    c_sec4b.value = '4B. CPWD DAR STANDARD MATERIAL PAYLOAD CAPACITIES MATRIX (Table 1.1 Technical Reference & Dropdown Source)'
-    c_sec4b.font = styles['font_white_bold']
-    c_sec4b.fill = styles['fill_header']
-    c_sec4b.alignment = styles['align_left']
-    ws.row_dimensions[86].height = 22
-
-    cap_headers = ['DAR Code', 'Material / Trade Specification', 'Truck Payload / Trip', 'Net Payable Qty', 'Schedule Unit', 'Looseness Allowance / Technical Norms', 'Base Rate 1 km (Rs)', 'Addl Rate >20 km (Rs)']
-    for c_idx, h in enumerate(cap_headers, 1):
-        cell = ws.cell(row=87, column=c_idx, value=h)
-        cell.font = styles['font_header']
-        cell.fill = styles['fill_header']
-        cell.alignment = styles['align_center']
-        cell.border = styles['border_header']
-    ws.row_dimensions[87].height = 24
-
-    capacities_table = [
-        ('1.1.1', 'Lime, moorum, building rubbish, malba', 8.00, 8.00, 'cum', 'Nil looseness deduction; full 8.0 cum payable', 104.94, 8.35),
-        ('1.1.2', 'Earth (excavated soil / good earth)', 8.00, 6.40, 'cum', '20% deduction for looseness (Net = 6.40 cum)', 131.17, 10.44),
-        ('1.1.3', 'Manure or sludge', 8.00, 7.36, 'cum', '8% deduction for looseness (Net = 7.36 cum)', 114.06, 9.08),
-        ('1.1.4', 'Excavated rock', 8.00, 4.00, 'cum', '50% deduction for voids/looseness (Net = 4.00 cum)', 209.88, 16.70),
-        ('1.1.5', 'Sand, stone aggregate below 40 mm', 8.00, 8.00, 'cum', 'Nil looseness deduction; standard density 8.0 cum', 104.94, 8.35),
-        ('1.1.6', 'Stone aggregate 40 mm nominal size & above', 8.00, 7.36, 'cum', '8% deduction for voids in coarse aggregate', 114.06, 9.08),
-        ('1.1.7', 'Soling stone & masonry stone', 8.00, 6.80, 'cum', '15% deduction for stack voids (Net = 6.80 cum)', 123.46, 9.82),
-        ('1.1.8', 'Bricks (standard modular / conventional)', 3000.00, 3000.00, '1000 Nos', '3,000 Bricks per 9-tonne truck load', 279.83, 22.26),
-        ('1.1.9', 'Brick tiles / Allahabad roofing tiles', 5000.00, 5000.00, '1000 Nos', '5,000 Tiles per 9-tonne truck load', 167.90, 13.36),
-        ('1.1.10', 'Cement, stone blocks, Kota stone slabs', 9.00, 9.00, 'tonne', 'Rated maximum truck payload capacity = 9 tonnes', 93.28, 7.42),
-        ('1.1.11', 'Steel bars, structural sections & fabric', 9.00, 9.00, 'tonne', 'Rated maximum truck payload capacity = 9 tonnes', 93.28, 7.42),
-        ('1.1.12', 'Timber (scantlings / logs)', 7.00, 7.00, 'cum', 'Volume limit on timber body = 7.0 cum', 119.93, 9.54),
-        ('1.1.13', 'Tar, bitumen in drums', 8.00, 8.00, 'tonne', 'Packed drum loading capacity = 8 tonnes', 104.94, 8.35),
-        ('1.1.14', 'Steam coal', 7.00, 7.00, 'tonne', 'Bulk density volume restriction = 7 tonnes', 119.93, 9.54),
-        ('1.1.15.1', 'S.W. pipes 100 mm dia', 600.00, 600.00, '100 m', 'Payload capacity = 600 metres (6 x 100 m)', 139.92, 11.13),
-        ('1.1.15.2', 'S.W. pipes 150 mm dia', 300.00, 300.00, '100 m', 'Payload capacity = 300 metres (3 x 100 m)', 279.83, 22.26),
-        ('1.1.16.1', 'R.C.C. / C.I. pipes 100 mm dia', 366.00, 366.00, '100 m', 'Payload capacity = 366 metres', 229.37, 18.25),
-        ('1.1.16.3', 'R.C.C. / C.I. pipes 150 mm dia', 219.60, 219.60, '100 m', 'Payload capacity = 219.60 metres', 382.29, 30.42),
-        ('1.1.16.4', 'R.C.C. / C.I. pipes 200 mm dia', 135.00, 135.00, '100 m', 'Payload capacity = 135 metres', 621.85, 49.48),
-        ('1.1.16.5', 'R.C.C. / C.I. pipes 250 mm dia', 95.00, 95.00, '100 m', 'Payload capacity = 95 metres', 883.68, 70.31),
-        ('1.1.16.6', 'R.C.C. / C.I. pipes 300 mm dia', 76.86, 76.86, '100 m', 'Payload capacity = 76.86 metres', 1092.25, 86.90),
-        ('1.1.16.7', 'R.C.C. / C.I. pipes 350 mm dia', 54.90, 54.90, '100 m', 'Payload capacity = 54.90 metres', 1529.14, 121.66),
-        ('1.1.16.8', 'R.C.C. / C.I. pipes 400 mm dia', 40.26, 40.26, '100 m', 'Payload capacity = 40.26 metres', 2085.20, 165.90),
-        ('1.1.16.9', 'R.C.C. / C.I. pipes 450 & 500 mm dia', 32.94, 32.94, '100 m', 'Payload capacity = 32.94 metres', 2548.57, 202.77),
-        ('1.1.16.10', 'R.C.C. / C.I. pipes 600, 700, 750 & 800 mm dia', 21.96, 21.96, '100 m', 'Payload capacity = 21.96 metres', 3822.86, 304.15),
-        ('1.1.16.11', 'R.C.C. / C.I. pipes 900 mm dia', 14.64, 14.64, '100 m', 'Payload capacity = 14.64 metres', 5734.29, 456.23),
-        ('1.1.17.12', 'R.C.C./C.I./Steel pipes 1000, 1100 & 1200 mm dia', 10.98, 10.98, '100 m', 'Payload capacity = 10.98 metres (heavy large bore)', 7645.72, 608.31)
+    table11 = [
+        ('1.1.1', 'Lime, moorum, building rubbish, malba', 8, 8, 'cum',
+         'Nil - full 8.00 cum payable', 104.94, 8.35),
+        ('1.1.2', 'Earth (excavated soil / good earth)', 8, 6.4, 'cum',
+         '20% deduction for looseness (net 6.40 cum)', 131.17, 10.44),
+        ('1.1.3', 'Manure or sludge', 8, 7.36, 'cum',
+         '8% deduction for looseness (net 7.36 cum)', 114.06, 9.08),
+        ('1.1.4', 'Excavated rock', 8, 4, 'cum',
+         '50% deduction for voids / looseness (net 4.00 cum)', 209.88, 16.70),
+        ('1.1.5', 'Sand, stone aggregate below 40 mm', 8, 8, 'cum',
+         'Nil - standard density, full 8.00 cum payable', 104.94, 8.35),
+        ('1.1.6', 'Stone aggregate 40 mm nominal size & above', 8, 7.36, 'cum',
+         '8% deduction for voids in coarse aggregate', 114.06, 9.08),
+        ('1.1.7', 'Soling stone & masonry stone', 8, 6.8, 'cum',
+         '15% deduction for stack voids (net 6.80 cum)', 123.46, 9.82),
+        ('1.1.8', 'Bricks (standard modular / conventional)', 3000, 3000, '1000 Nos',
+         'Nil - 3,000 bricks per 9-tonne truck load', 279.83, 22.26),
+        ('1.1.9', 'Brick tiles / Allahabad roofing tiles', 5000, 5000, '1000 Nos',
+         'Nil - 5,000 tiles per 9-tonne truck load', 167.90, 13.36),
+        ('1.1.10', 'Cement, stone blocks, Kota stone slabs', 9, 9, 'tonne',
+         'Nil - rated truck payload 9 tonne', 93.28, 7.42),
+        ('1.1.11', 'Steel bars, structural sections & fabric', 9, 9, 'tonne',
+         'Nil - rated truck payload 9 tonne', 93.28, 7.42),
+        ('1.1.12', 'Timber (scantlings / logs)', 7, 7, 'cum',
+         'Nil - volume limit on timber body 7.00 cum', 119.93, 9.54),
+        ('1.1.13', 'Tar, bitumen in drums', 8, 8, 'tonne',
+         'Nil - packed drum loading capacity 8 tonne', 104.94, 8.35),
+        ('1.1.14', 'Steam coal', 7, 7, 'tonne',
+         'Nil - bulk density restriction 7 tonne', 119.93, 9.54),
+        ('1.1.15.1', 'S.W. pipes 100 mm dia', 600, 600, '100 m', 'Nil - 600 m per load', 139.92, 11.13),
+        ('1.1.15.2', 'S.W. pipes 150 mm dia', 300, 300, '100 m', 'Nil - 300 m per load', 279.83, 22.26),
+        ('1.1.16.1', 'R.C.C. / C.I. pipes 100 mm dia', 366, 366, '100 m', 'Nil - 366 m per load', 229.37, 18.25),
+        ('1.1.16.3', 'R.C.C. / C.I. pipes 150 mm dia', 219.6, 219.6, '100 m', 'Nil - 219.60 m per load', 382.29, 30.42),
+        ('1.1.16.4', 'R.C.C. / C.I. pipes 200 mm dia', 135, 135, '100 m', 'Nil - 135 m per load', 621.85, 49.48),
+        ('1.1.16.5', 'R.C.C. / C.I. pipes 250 mm dia', 95, 95, '100 m', 'Nil - 95 m per load', 883.68, 70.31),
+        ('1.1.16.6', 'R.C.C. / C.I. pipes 300 mm dia', 76.86, 76.86, '100 m', 'Nil - 76.86 m per load', 1092.25, 86.90),
+        ('1.1.16.7', 'R.C.C. / C.I. pipes 350 mm dia', 54.9, 54.9, '100 m', 'Nil - 54.90 m per load', 1529.14, 121.66),
+        ('1.1.16.8', 'R.C.C. / C.I. pipes 400 mm dia', 40.26, 40.26, '100 m', 'Nil - 40.26 m per load', 2085.20, 165.90),
+        ('1.1.16.9', 'R.C.C. / C.I. pipes 450 & 500 mm dia', 32.94, 32.94, '100 m', 'Nil - 32.94 m per load', 2548.57, 202.77),
+        ('1.1.16.10', 'R.C.C. / C.I. pipes 600, 700, 750 & 800 mm dia', 21.96, 21.96, '100 m', 'Nil - 21.96 m per load', 3822.86, 304.15),
+        ('1.1.16.11', 'R.C.C. / C.I. pipes 900 mm dia', 14.64, 14.64, '100 m', 'Nil - 14.64 m per load', 5734.29, 456.23),
+        ('1.1.17.12', 'R.C.C./C.I./Steel pipes 1000, 1100 & 1200 mm dia', 10.98, 10.98, '100 m',
+         'Nil - 10.98 m per load (heavy large bore)', 7645.72, 608.31),
     ]
+    for i, rec in enumerate(table11):
+        r = R_T11_FIRST + i
+        for ci, val in enumerate(rec, 1):
+            c = ws.cell(row=r, column=ci, value=val)
+            c.font = styles['font_regular']
+            if ci in (1, 3, 4, 5):
+                c.alignment = styles['align_center']
+            elif ci in (7, 8):
+                c.alignment = styles['align_right']
+                c.number_format = styles['fmt_currency']
+            else:
+                c.alignment = styles['align_left']
+        ws.cell(row=r, column=4).font = styles['font_bold']
+        ws.cell(row=r, column=9, value='DAR 2019 Sub-Head 01').font = styles['font_note']
+        fill = styles['fill_subtotal'] if r % 2 == 0 else styles['fill_calc']
+        for c in range(1, LAST_COL + 1):
+            ws.cell(row=r, column=c).fill = fill
+            ws.cell(row=r, column=c).border = styles['border_thin']
+        ws.cell(row=r, column=4).fill = styles['fill_lookup']
+        ws.row_dimensions[r].height = 18
 
-    for idx, mat in enumerate(capacities_table):
-        r = 88 + idx
-        ws.cell(row=r, column=1, value=mat[0]).alignment = styles['align_center']
-        ws.cell(row=r, column=1).font = styles['font_bold']
-
-        ws.cell(row=r, column=2, value=mat[1]).alignment = styles['align_left']
-
-        ws.cell(row=r, column=3, value=mat[2]).alignment = styles['align_right']
-        ws.cell(row=r, column=3).number_format = '0.00'
-
-        ws.cell(row=r, column=4, value=mat[3]).alignment = styles['align_right']
-        ws.cell(row=r, column=4).number_format = '0.00'
-
-        ws.cell(row=r, column=5, value=mat[4]).alignment = styles['align_center']
-
-        ws.cell(row=r, column=6, value=mat[5]).alignment = styles['align_left']
-        ws.cell(row=r, column=6).font = styles['font_note']
-
-        ws.cell(row=r, column=7, value=mat[6]).alignment = styles['align_right']
-        ws.cell(row=r, column=7).number_format = styles['fmt_currency']
-
-        ws.cell(row=r, column=8, value=mat[7]).alignment = styles['align_right']
-        ws.cell(row=r, column=8).number_format = styles['fmt_currency']
-
-        row_fill = styles['fill_subtotal'] if r % 2 == 0 else styles['fill_calc']
-        for c in range(1, 9):
-            cell = ws.cell(row=r, column=c)
-            cell.fill = row_fill
-            cell.border = styles['border_thin']
-            if c not in [1, 7, 8]:
-                cell.font = styles['font_regular']
-        ws.row_dimensions[r].height = 20
-
-    # Named Ranges for Materials and Item Codes
-    wb.defined_names.add(DefinedName('CPWD_Carriage_Item_Codes', attr_text=f"'{config['sheet_name']}'!$A$88:$A$114"))
-    wb.defined_names.add(DefinedName('CPWD_Carriage_Materials', attr_text=f"'{config['sheet_name']}'!$B$88:$B$114"))
-
-    # Spacer Row 115
-    ws.row_dimensions[115].height = 10
-
-    # --- 4C: CPWD TABLE 1.2 MANUAL LABOUR REFERENCE (Rows 116-125) ---
-    ws.merge_cells('A116:H116')
-    c_sec4c = ws['A116']
-    c_sec4c.value = '4C. CPWD DAR TABLE 1.2 MANUAL LABOUR REFERENCE (Labour Norms & Rates for Lead < 0.50 km)'
-    c_sec4c.font = styles['font_white_bold']
-    c_sec4c.fill = styles['fill_header']
-    c_sec4c.alignment = styles['align_left']
-    ws.row_dimensions[116].height = 22
-
-    manual_headers = ['Item No.', 'Material / Specification', 'Capacity / Day', 'Unit', 'Base Cost 1st 50m (Rs)', 'Cost / 1st 50m (Rs)', 'Addl Cost / 50m (Rs)', 'CPWD Labour Norms']
-    for c_idx, h in enumerate(manual_headers, 1):
-        cell = ws.cell(row=117, column=c_idx, value=h)
-        cell.font = styles['font_header']
-        cell.fill = styles['fill_header']
-        cell.alignment = styles['align_center']
-        cell.border = styles['border_header']
-    ws.row_dimensions[117].height = 24
-
-    manual_records = [
-        ('1.2.1', 'Lime, moorum, building rubbish', 35.0, 'cum', 4921.84, 140.62, 30.62, '7.67 Beldars 1st 50m, 1.67 addl coolie/50m'),
-        ('1.2.2', 'Earth (20% looseness deduction)', 28.0, 'cum', 4921.84, 175.78, 38.27, '7.67 Beldars 1st 50m, 1.67 addl coolie/50m'),
-        ('1.2.8', 'Bricks (standard modular)', 15000.0, '1000 Nos', 4921.84, 328.12, 71.44, '7.67 Beldars 1st 50m, 1.67 addl coolie/50m'),
-        ('1.2.11', 'Stone blocks, G.I., C.I., pipes <100mm', 46.0, 'tonne', 5903.64, 128.34, 18.83, '9.20 Beldars 1st 50m, 1.35 addl coolie/50m'),
-        ('1.2.12', 'Cement in bags', 57.99, 'tonne', 5903.64, 101.80, 14.94, '9.20 Beldars 1st 50m, 1.35 addl coolie/50m'),
-        ('1.2.17.1', 'R.C.C./C.I. pipes 100mm dia', 1702.0, '100 m', 5903.64, 346.86, 50.90, '9.20 Beldars 1st 50m, 1.35 addl coolie/50m')
+    # --- Table 1.2 -------------------------------------------------------
+    section_bar(ws, R_T12_HEAD,
+                '5C. TABLE 1.2 - MANUAL LABOUR CARRIAGE REFERENCE (lead under 0.50 km). '
+                'Capacities here are already net of looseness.', styles, height=22)
+    col_headers(ws, R_T12_COLS,
+                ['Item No.', 'Material / Specification', 'Net payable qty / day', 'Billing unit',
+                 'Cost for 8 hours incl. CPOH (Rs)', 'Rate for 1st 50 m (Rs)',
+                 'Rate per additional 50 m (Rs)', 'CPWD gang norm', 'Source'], styles)
+    table12 = [
+        ('1.2.1', 'Lime, moorum, building rubbish', 35, 'cum', 4921.84, 140.62, 30.62,
+         '7.67 Beldars 1st 50 m, 1.67 addl coolie / 50 m'),
+        ('1.2.2', 'Earth (already net of 20% looseness)', 28, 'cum', 4921.84, 175.78, 38.27,
+         '7.67 Beldars 1st 50 m, 1.67 addl coolie / 50 m'),
+        ('1.2.8', 'Bricks (standard modular)', 15000, '1000 Nos', 4921.84, 328.12, 71.44,
+         '7.67 Beldars 1st 50 m, 1.67 addl coolie / 50 m'),
+        ('1.2.11', 'Stone blocks, G.I., C.I. pipes below 100 mm', 46, 'tonne', 5903.64, 128.34, 18.83,
+         '9.20 Beldars 1st 50 m, 1.35 addl Beldar / 50 m'),
+        ('1.2.12', 'Cement in bags', 57.99, 'tonne', 5903.64, 101.80, 14.94,
+         '9.20 Beldars 1st 50 m, 1.35 addl Beldar / 50 m'),
+        ('1.2.17.1', 'R.C.C. / C.I. pipes 100 mm dia', 1702, '100 m', 5903.64, 346.86, 50.90,
+         '9.20 Beldars 1st 50 m, 1.35 addl Beldar / 50 m'),
     ]
+    for i, rec in enumerate(table12):
+        r = R_T12_FIRST + i
+        for ci, val in enumerate(rec, 1):
+            c = ws.cell(row=r, column=ci, value=val)
+            c.font = styles['font_regular']
+            if ci in (1, 3, 4):
+                c.alignment = styles['align_center']
+            elif ci in (5, 6, 7):
+                c.alignment = styles['align_right']
+                c.number_format = styles['fmt_currency']
+            else:
+                c.alignment = styles['align_left']
+        ws.cell(row=r, column=9, value='DAR 2019 Table 1.2').font = styles['font_note']
+        fill = styles['fill_subtotal'] if r % 2 == 0 else styles['fill_calc']
+        for c in range(1, LAST_COL + 1):
+            ws.cell(row=r, column=c).fill = fill
+            ws.cell(row=r, column=c).border = styles['border_thin']
+        ws.row_dimensions[r].height = 18
 
-    for idx, m_rec in enumerate(manual_records):
-        r = 118 + idx
-        ws.cell(row=r, column=1, value=m_rec[0]).alignment = styles['align_center']
-        ws.cell(row=r, column=1).font = styles['font_bold']
-
-        ws.cell(row=r, column=2, value=m_rec[1]).alignment = styles['align_left']
-
-        ws.cell(row=r, column=3, value=m_rec[2]).alignment = styles['align_right']
-        ws.cell(row=r, column=3).number_format = '0.00'
-
-        ws.cell(row=r, column=4, value=m_rec[3]).alignment = styles['align_center']
-
-        ws.cell(row=r, column=5, value=m_rec[4]).alignment = styles['align_right']
-        ws.cell(row=r, column=5).number_format = styles['fmt_currency']
-
-        ws.cell(row=r, column=6, value=m_rec[5]).alignment = styles['align_right']
-        ws.cell(row=r, column=6).number_format = styles['fmt_currency']
-
-        ws.cell(row=r, column=7, value=m_rec[6]).alignment = styles['align_right']
-        ws.cell(row=r, column=7).number_format = styles['fmt_currency']
-
-        ws.cell(row=r, column=8, value=m_rec[7]).alignment = styles['align_left']
-        ws.cell(row=r, column=8).font = styles['font_note']
-
-        row_fill = styles['fill_subtotal'] if r % 2 == 0 else styles['fill_calc']
-        for c in range(1, 9):
-            cell = ws.cell(row=r, column=c)
-            cell.fill = row_fill
-            cell.border = styles['border_thin']
-        ws.row_dimensions[r].height = 20
-
-    # Spacer Row 124
-    ws.row_dimensions[124].height = 10
-
-    # --- 4D: HANDLING SCOPE LABOUR GANG ALLOCATION MATRIX (Rows 125-134) ---
-    ws.merge_cells('A125:H125')
-    c_sec4d = ws['A125']
-    c_sec4d.value = '4D. CPWD HANDLING SCOPE LABOUR GANG ALLOCATION MATRIX (Engineering Rationale for Cell E19)'
-    c_sec4d.font = styles['font_white_bold']
-    c_sec4d.fill = styles['fill_header']
-    c_sec4d.alignment = styles['align_left']
-    ws.row_dimensions[125].height = 22
-
-    scope_headers = ['Scope Option (Panel 1 Cell F6)', 'Beldar Gang', 'Loading Labour', 'Unloading Labour', 'Stacking Labour', 'Daily Labour Cost (Rs)', 'Direct Shift Cost (Rs)', 'Engineering Operational Rationale']
-    for c_idx, h in enumerate(scope_headers, 1):
-        cell = ws.cell(row=126, column=c_idx, value=h)
-        cell.font = styles['font_header']
-        cell.fill = styles['fill_header']
-        cell.alignment = styles['align_center']
-        cell.border = styles['border_header']
-    ws.row_dimensions[126].height = 24
-
-    scope_records = [
-        ('including loading, transporting, unloading and stacking', 6.00, '3.00 Beldars', '2.00 Beldars', '1.00 Beldar', 3348.00, 5939.58, 'CPWD Item 1.1.1 baseline turnkey manual handling.'),
-        ('including loading, transporting, unloading to approved municipal dumping ground', 6.00, '3.00 Beldars', '2.00 Beldars', '1.00 Beldar', 3348.00, 5939.58, 'CPWD Item 1.1.18 benchmark for urban malba/rubbish disposal.'),
-        ('including loading, transporting and unloading (excluding stacking)', 5.00, '3.00 Beldars', '2.00 Beldars', '0.00 Beldars', 2790.00, 5381.58, 'Bulk delivery / dumping; manual stacking omitted.'),
-        ('transporting and unloading only (machine loaded / excluding loading)', 3.00, '0.00 Beldars', '2.00 Beldars', '1.00 Beldar', 1674.00, 4265.58, 'Loaded by excavator/JCB (Sub-Head 02); manual loading excluded.'),
-        ('transporting only (excluding loading, unloading and stacking)', 0.00, '0.00 Beldars', '0.00 Beldars', '0.00 Beldars', 0.00, 2591.58, 'Pure haulage; machine loaded at source and tipper unloaded at site.'),
-        ('including unloading and stacking at railway siding', 3.75, '0.00 Beldars', '2.50 Beldars', '1.25 Beldars', 2092.50, 4684.08, 'CPWD Item 1.3 / 1.4 standard for railway wagon godown siding.')
+    # --- Scope / gang table ---------------------------------------------
+    section_bar(ws, R_SC_HEAD,
+                '5D. HANDLING SCOPE - LABOUR GANG ALLOCATION. The Handling Scope you pick in Panel 1 '
+                'sets the Beldar row in Section 1 from this table.', styles, height=22)
+    col_headers(ws, R_SC_COLS,
+                ['Scope wording (Panel 1 dropdown)', 'Beldar gang', 'Loading', 'Unloading', 'Stacking',
+                 'Daily labour cost (Rs)', 'Direct shift cost (Rs)', 'Engineering rationale', 'Source'],
+                styles)
+    scopes = [
+        ('including loading, transporting, unloading and stacking', 6, '3.00', '2.00', '1.00',
+         3348.00, 5939.58, 'DAR item 1.1.1 baseline - full turnkey manual handling at both ends.'),
+        ('including loading, transporting, unloading to approved municipal dumping ground',
+         6, '3.00', '2.00', '1.00', 3348.00, 5939.58,
+         'DAR item 1.1.18 benchmark for urban malba / rubbish disposal.'),
+        ('including loading, transporting and unloading (excluding stacking)', 5, '3.00', '2.00', '0.00',
+         2790.00, 5381.58, 'Bulk delivery or tipping; manual stacking omitted.'),
+        ('transporting and unloading only (machine loaded at source)', 3, '0.00', '2.00', '1.00',
+         1674.00, 4265.58, 'Loaded by excavator or JCB under Sub-Head 02; manual unloading only.'),
+        ('transporting only (excluding loading, unloading and stacking)', 0, '0.00', '0.00', '0.00',
+         0.00, 2591.58, 'Pure haulage; machine loaded at source and tipped at destination.'),
+        ('including unloading and stacking at railway siding', 3.75, '0.00', '2.50', '1.25',
+         2092.50, 4684.08, 'DAR items 1.3 and 1.4 standard for railway wagon handling.'),
     ]
+    for i, rec in enumerate(scopes):
+        r = R_SC_FIRST + i
+        for ci, val in enumerate(rec, 1):
+            c = ws.cell(row=r, column=ci, value=val)
+            c.font = styles['font_regular']
+            if ci == 1 or ci == 8:
+                c.alignment = styles['align_wrap']
+            elif ci in (6, 7):
+                c.alignment = styles['align_right']
+                c.number_format = styles['fmt_currency']
+            else:
+                c.alignment = styles['align_center']
+        ws.cell(row=r, column=9, value='DAR 2019 Sub-Head 01').font = styles['font_note']
+        fill = styles['fill_subtotal'] if r % 2 == 0 else styles['fill_calc']
+        for c in range(1, LAST_COL + 1):
+            ws.cell(row=r, column=c).fill = fill
+            ws.cell(row=r, column=c).border = styles['border_thin']
+        ws.row_dimensions[r].height = 30
 
-    for idx, s_rec in enumerate(scope_records):
-        r = 127 + idx
-        ws.cell(row=r, column=1, value=s_rec[0]).alignment = styles['align_left']
-        ws.cell(row=r, column=2, value=s_rec[1]).alignment = styles['align_center']
-        ws.cell(row=r, column=2).number_format = '0.00'
-        ws.cell(row=r, column=2).font = styles['font_bold']
+    # --- Defined names (computed, so the tables can move) ----------------
+    for name, ref in [
+        ('CPWD_Carriage_Item_Codes', f"'{sn}'!$A${R_T11_FIRST}:$A${R_T11_LAST}"),
+        ('CPWD_Carriage_Materials', f"'{sn}'!$B${R_T11_FIRST}:$B${R_T11_LAST}"),
+        ('CPWD_Carriage_Scope', f"'{sn}'!$A${R_SC_FIRST}:$A${R_SC_LAST}"),
+        ('CPWD_Carriage_Net_Payable', f"'{sn}'!$D${R_T11_FIRST}:$D${R_T11_LAST}"),
+        ('CPWD_DataSheet1', f"'{sn}'!$A${R_DS1_FIRST}:$H${R_DS1_LAST}"),
+    ]:
+        if name in wb.defined_names:
+            del wb.defined_names[name]
+        wb.defined_names.add(DefinedName(name, attr_text=ref))
 
-        ws.cell(row=r, column=3, value=s_rec[2]).alignment = styles['align_center']
-        ws.cell(row=r, column=4, value=s_rec[3]).alignment = styles['align_center']
-        ws.cell(row=r, column=5, value=s_rec[4]).alignment = styles['align_center']
+    # --- Column widths ---------------------------------------------------
+    for col, w in {'A': 34, 'B': 30, 'C': 20, 'D': 16, 'E': 20,
+                   'F': 20, 'G': 20, 'H': 44, 'I': 16}.items():
+        ws.column_dimensions[col].width = w
 
-        c_scost = ws.cell(row=r, column=6, value=s_rec[5])
-        c_scost.alignment = styles['align_right']
-        c_scost.number_format = styles['fmt_currency']
-
-        c_dcost = ws.cell(row=r, column=7, value=s_rec[6])
-        c_dcost.alignment = styles['align_right']
-        c_dcost.number_format = styles['fmt_currency']
-        c_dcost.font = styles['font_bold']
-
-        c_srat = ws.cell(row=r, column=8, value=s_rec[7])
-        c_srat.alignment = styles['align_left']
-        c_srat.font = styles['font_note']
-
-        row_fill = styles['fill_subtotal'] if r % 2 == 0 else styles['fill_calc']
-        for c in range(1, 9):
-            cell = ws.cell(row=r, column=c)
-            cell.fill = row_fill
-            cell.border = styles['border_thin']
-        ws.row_dimensions[r].height = 20
- 
-    # Named Range for Handling Scopes (Cell F6 dropdown source)
-    wb.defined_names.add(DefinedName('CPWD_Carriage_Scope', attr_text=f"'{config['sheet_name']}'!$A$127:$A$132"))
-
-    # Column Widths
-    col_widths = {
-        'A': 24,
-        'B': 24,
-        'C': 26,
-        'D': 24,
-        'E': 26,
-        'F': 24,
-        'G': 24,
-        'H': 46
-    }
-    for col, width in col_widths.items():
-        ws.column_dimensions[col].width = width
-
-    # Lock all cells by default, then unlock user editable cells
+    # --- Protection: only INPUT and OVERRIDE cells stay editable ---------
     for r in range(1, ws.max_row + 1):
-        for c in range(1, ws.max_column + 1):
+        for c in range(1, LAST_COL + 1):
             ws.cell(row=r, column=c).protection = Protection(locked=True)
 
-    # Unlock Panel 1 inputs
-    ws['B6'].protection = Protection(locked=False) # Item Code
-    ws['D6'].protection = Protection(locked=False) # Material Commodity
-    ws['F6'].protection = Protection(locked=False) # Handling Scope
-    ws['H6'].protection = Protection(locked=False) # Lift Condition
-    ws['B7'].protection = Protection(locked=False) # Municipal Gate Fee
-    ws['D7'].protection = Protection(locked=False) # Manual Override
-
-    # Unlock Panel 2 inputs
-    ws['B11'].protection = Protection(locked=False) # Lead Distance (L)
-    ws['D11'].protection = Protection(locked=False) # Average Speed (S)
-    ws['F11'].protection = Protection(locked=False) # Turnaround Time (T)
-    ws['B12'].protection = Protection(locked=False) # Operational Mode
-    ws['D12'].protection = Protection(locked=False) # Fixed Trips Override
-    ws['F12'].protection = Protection(locked=False) # Distance Basis
-    ws['H12'].protection = Protection(locked=False) # Payload Override
-
-    # Unlock Section 1 custom resource lines (rows 22-25)
-    for r in range(22, 26):
-        ws.cell(row=r, column=2).protection = Protection(locked=False) # Code
-        ws.cell(row=r, column=5).protection = Protection(locked=False) # Qty
-
-    # Unlock Section 2 statutory toggles
-    ws['C32'].protection = Protection(locked=False)
-    ws['C34'].protection = Protection(locked=False)
-    ws['C36'].protection = Protection(locked=False)
-    ws['C37'].protection = Protection(locked=False)
-
-    # Unlock Section 3 Manual Labour inputs
-    ws['B46'].protection = Protection(locked=False)
-    ws['D46'].protection = Protection(locked=False)
-    ws['F46'].protection = Protection(locked=False)
-    ws['B47'].protection = Protection(locked=False)
-    ws['B48'].protection = Protection(locked=False)
-    ws['D48'].protection = Protection(locked=False)
+    editable = [R_ITEM_CODE, R_MATERIAL, R_SCOPE, R_LIFT, R_GATE_FEE, R_NOM_OVERRIDE,
+                R_LEAD, R_SPEED_OV, R_TURNAROUND, R_MODE, R_TRIPS_OV, R_DIST_BASIS,
+                R_PAY_OV, R_M_CODE, R_M_CAT, R_M_LEAD, R_M_CAP, R_M_UNIT]
+    for r in editable:
+        ws.cell(row=r, column=2).protection = Protection(locked=False)
+    for r in (R_X1, R_Y1, R_Z1, R_Z2):
+        ws.cell(row=r, column=3).protection = Protection(locked=False)
+    for r in range(R_RES_FIRST, R_RES_LAST + 1):
+        ws.cell(row=r, column=2).protection = Protection(locked=False)
+        if r > R_RES_FIRST + 3:
+            ws.cell(row=r, column=5).protection = Protection(locked=False)
+    ws.cell(row=R_RES_FIRST, column=5).protection = Protection(locked=False)   # truck days
 
     ws.protection.sheet = True
-    ws.freeze_panes = 'A4'
+    ws.freeze_panes = 'A7'
+    print(f"Built carriage simulator: {sn} (role-labelled layout, net payable qty, "
+          f"unit scale factor, MROUND say rate)")

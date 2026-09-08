@@ -33,62 +33,66 @@ R_TITLE = 1
 R_LEGEND = 2
 R_GUIDE = 3
 
-R_P1_HEAD = 5
-R_P1_COLS = 6
-R_P1_FIRST = 7
+R_GUIDE_HEAD = 4                               # 'HOW TO USE THIS SHEET' bar
+R_GUIDE_STEPS = 5                              # the four working steps
+R_GUIDE_ROLES = 6                              # what each cell colour means
+R_P1_HEAD = 8
+R_P1_COLS = 9
+R_P1_FIRST = 10
 P1_ROWS = 6
-R_P1_LAST = R_P1_FIRST + P1_ROWS - 1          # 12
+R_P1_LAST = R_P1_FIRST + P1_ROWS - 1          # 15
 
-R_META = 13                                    # item code / basis / unit / sub-head
-R_NOMEN = 14                                   # assembled nomenclature
+R_META = 16                                    # item code / basis / unit / sub-head
+R_NOMEN = 17                                   # assembled nomenclature
 
-R_P2_HEAD = 15
-R_P2_COLS = 16
-R_P2_FIRST = 17
+R_P2_HEAD = 18
+R_P2_COLS = 19
+R_P2_FIRST = 20
 P2_ROWS = 4
-R_P2_LAST = R_P2_FIRST + P2_ROWS - 1          # 20
-R_KEY = R_P2_LAST + 1                          # 21 - cost-impact key strip
+R_P2_LAST = R_P2_FIRST + P2_ROWS - 1          # 23
+R_KEY = R_P2_LAST + 1                          # 24 - cost-impact key strip
 
-R_AUDIT = 22
+R_AUDIT = 25
 
-R_MAT_HEAD = 23
-R_MAT_COLS = 24
-R_MAT_FIRST = 25
+R_MAT_HEAD = 26
+R_MAT_COLS = 27
+R_MAT_FIRST = 28
 MAT_ROWS = 10
-R_MAT_LAST = R_MAT_FIRST + MAT_ROWS - 1       # 34
-R_MAT_SUB = 35
-R_A_TOTAL = 36
+R_MAT_LAST = R_MAT_FIRST + MAT_ROWS - 1       # 37
+R_MAT_SUB = 38
+R_A_TOTAL = 39
 
-R_LAB_HEAD = 37
-R_LAB_COLS = 38
-R_LAB_FIRST = 39
+R_LAB_HEAD = 40
+R_LAB_COLS = 41
+R_LAB_FIRST = 42
 LAB_ROWS = 10
-R_LAB_LAST = R_LAB_FIRST + LAB_ROWS - 1       # 48
-R_LAB_SUB = 49
+R_LAB_LAST = R_LAB_FIRST + LAB_ROWS - 1       # 51
+R_LAB_SUB = 52
 
-R_SUN_HEAD = 51
-R_SUN = 52
+R_SUN_HEAD = 54
+R_SUN = 55
 
-R_MU_HEAD = 54
-R_MU_COLS = 55
-R_W = 56
-R_X1 = 57
-R_X = 58
-R_Y1 = 59
-R_Y = 60
-R_Z1 = 61
-R_Z = 62
-R_Z2 = 63
-R_COST = 64
-R_RATE = 65
-R_SAY = 66
+R_MU_HEAD = 57
+R_MU_COLS = 58
+R_W = 59
+R_X1 = 60
+R_X = 61
+R_Y1 = 62
+R_Y = 63
+R_Z1 = 64
+R_Z = 65
+R_Z2 = 66
+R_COST = 67
+R_RATE = 68
+R_SAY = 69
+R_SAY_NOTE = 70                                # why MROUND(x, 0.05)
 
-R_LIB_HEAD = 69
-R_LIB_NOTE = 70
-R_LIB_COLS = 71
-R_LIB_FIRST = 72
+R_LIB_HEAD = 72
+R_LIB_NOTE = 73
+R_LIB_COLS = 74
+R_LIB_FIRST = 75
 LIB_ROWS = 8
-R_LIB_LAST = R_LIB_FIRST + LIB_ROWS - 1       # 79
+R_LIB_LAST = R_LIB_FIRST + LIB_ROWS - 1       # 82
 
 LAST_COL = 9  # column I
 
@@ -222,7 +226,7 @@ def build_meta_and_nomenclature(ws, config, styles):
     ws[f'H{R_NOMEN}'].font = styles['font_note']
     ov = ws[f'I{R_NOMEN}']
     ov.value = None
-    ov.fill = styles['fill_input']
+    ov.fill = styles['fill_override']
     ov.alignment = styles['align_wrap']
     border_row(ws, R_NOMEN, styles)
     ws.row_dimensions[R_NOMEN].height = 40
@@ -283,3 +287,91 @@ def build_driver_panel(ws, config, styles, dv_registry):
     k.alignment = styles['align_wrap']
     border_row(ws, R_KEY, styles)
     ws.row_dimensions[R_KEY].height = 44
+
+
+# ---------------------------------------------------------------------------
+# Cell-role vocabulary. Every value on a builder sheet is exactly one of these,
+# and the fill colour is the only thing you need to read to know which.
+# ---------------------------------------------------------------------------
+ROLE_LEGEND = [
+    ('INPUT',    'fill_input',    'You type it. Yellow.'),
+    ('OVERRIDE', 'fill_override', 'Optional. Blank = use the value above it. Orange.'),
+    ('LOOKUP',   'fill_lookup',   'Fetched from a reference sheet. Blue. Do not type here.'),
+    ('DERIVED',  'fill_calc',     'Calculated from the cells above. White. Do not type here.'),
+    ('RESULT',   'fill_result',   'A subtotal you are meant to read. Green.'),
+    ('SAY',      'fill_say',      'The final rate you quote. Gold.'),
+]
+
+GUIDE_STEPS = (
+    'HOW TO USE THIS SHEET  -  '
+    'STEP 1: fill in PANEL 1 to say WHAT is being built; each row tells you whether that choice '
+    'actually changes the cost.   '
+    'STEP 2: set the quantities in PANEL 2.   '
+    'STEP 3: enter the MATERIAL and LABOUR lines - type a code in the yellow "Code / Source" cell '
+    'and the description, unit and rate fill themselves in.   '
+    'STEP 4: read the gold SAY rate at the bottom. Everything between Step 3 and the SAY rate is '
+    'calculated for you - if a cell is not yellow or orange, do not type in it.'
+)
+
+GUIDE_ROLES = (
+    'WHAT THE COLOURS MEAN  -  '
+    'YELLOW = INPUT, you type it.   '
+    'ORANGE = OVERRIDE, optional; leave it blank to use the looked-up value, or type here to force '
+    'your own.   '
+    'BLUE = LOOKUP, fetched from Rates_Master or another reference sheet.   '
+    'WHITE = DERIVED, calculated from the cells above it.   '
+    'GREEN = a subtotal to read.   '
+    'GOLD = the final SAY rate.   '
+    'The sheet is protected, so only the yellow and orange cells will let you type at all.'
+)
+
+SAY_RULE_NOTE = (
+    'WHY THE SAY RATE IS ROUNDED TO 5 PAISE:  CPWD DAR 2019 quotes every "Say" rate to the nearest '
+    'Rs 0.05, not to two decimals - e.g. item 1.3 computes 104.89 and is printed as 104.90; item '
+    '1.4.1 computes 155.47 and is printed as 155.45; item 10.1 computes 86.04 and is printed as '
+    '86.05. This sheet therefore uses MROUND(rate, 0.05) so the analysed rate matches the book '
+    'exactly instead of sitting a paisa away from it. Change the 0.05 only if your circle office '
+    'issues a different rounding rule.'
+)
+
+
+def build_guide(ws, styles, last_col=LAST_COL):
+    """Render the 'how to use' bar and the cell-role colour key."""
+    section_bar(ws, R_GUIDE_HEAD, 'HOW TO USE THIS SHEET  (read this before typing anything)',
+                styles, last_col=last_col, height=22)
+
+    ws.merge_cells(start_row=R_GUIDE_STEPS, start_column=1,
+                   end_row=R_GUIDE_STEPS, end_column=last_col)
+    c = ws.cell(row=R_GUIDE_STEPS, column=1)
+    c.value = GUIDE_STEPS
+    c.font = styles['font_note']
+    c.fill = styles['fill_note']
+    c.alignment = styles['align_wrap']
+    border_row(ws, R_GUIDE_STEPS, styles, last_col)
+    ws.row_dimensions[R_GUIDE_STEPS].height = 46
+
+    ws.merge_cells(start_row=R_GUIDE_ROLES, start_column=1,
+                   end_row=R_GUIDE_ROLES, end_column=last_col)
+    c2 = ws.cell(row=R_GUIDE_ROLES, column=1)
+    c2.value = GUIDE_ROLES
+    c2.font = styles['font_note']
+    c2.fill = styles['fill_note']
+    c2.alignment = styles['align_wrap']
+    border_row(ws, R_GUIDE_ROLES, styles, last_col)
+    ws.row_dimensions[R_GUIDE_ROLES].height = 46
+
+
+def role_cell(ws, row, col, role, styles, value=None, number_format=None,
+              align='align_center'):
+    """Write a cell and paint it with its role colour in one call."""
+    fill_key = dict((r[0], r[1]) for r in ROLE_LEGEND)[role]
+    c = ws.cell(row=row, column=col)
+    if value is not None:
+        c.value = value
+    c.fill = styles[fill_key]
+    c.font = styles['font_say'] if role == 'SAY' else styles['font_bold']
+    c.alignment = styles[align]
+    if number_format:
+        c.number_format = number_format
+    c.border = styles['border_thin']
+    return c

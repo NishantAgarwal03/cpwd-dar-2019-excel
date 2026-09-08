@@ -453,14 +453,15 @@ def _build_block(ws, item, start_row, styles, dv_yesno, prior_rate_cells):
     ws.cell(row=r, column=1,
             value=f"RESOLVED RATE per 1.00 {item['basis_unit']}  (SAY):").font = styles['font_say']
     ws.cell(row=r, column=1).alignment = styles['align_right']
-    cs = ws.cell(row=r, column=7, value=f"=ROUND(G{cost_row} / {item['basis_qty']}, 2)")
+    cs = ws.cell(row=r, column=7, value=f"=MROUND(G{cost_row} / {item['basis_qty']}, 0.05)")
     cs.number_format = styles['fmt_currency']
     cs.alignment = styles['align_right']
     cs.font = styles['font_say']
     ws.cell(row=r, column=8,
             value=f"CPWD DAR 2019 printed Say rate for this item = Rs {item['book_say']:,.2f} "
-                  f"per {item['basis_unit']}. Any difference means a Rates_Master rate has been "
-                  f"edited away from the 2019 base.").font = styles['font_note']
+                  f"per {item['basis_unit']}. Rounded with MROUND(x, 0.05) because CPWD quotes every "
+                  f"Say rate to the nearest 5 paise. Any difference means a Rates_Master rate has "
+                  f"been edited away from the 2019 base.").font = styles['font_note']
     ws.cell(row=r, column=8).alignment = styles['align_wrap']
     for c in range(1, 10):
         ws.cell(row=r, column=c).fill = styles['fill_say']

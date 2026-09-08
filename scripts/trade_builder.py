@@ -14,9 +14,10 @@ from scripts.trade_layout import (
     R_SUN_HEAD, R_SUN,
     R_MU_HEAD, R_MU_COLS, R_W, R_X1, R_X, R_Y1, R_Y, R_Z1, R_Z, R_Z2,
     R_COST, R_RATE, R_SAY,
+    R_SAY_NOTE,
     R_LIB_HEAD, R_LIB_NOTE, R_LIB_COLS, R_LIB_FIRST, R_LIB_LAST,
-    LAST_COL,
-    section_bar, col_headers, border_row,
+    LAST_COL, SAY_RULE_NOTE,
+    section_bar, col_headers, border_row, build_guide,
     build_scope_panel, build_meta_and_nomenclature, build_driver_panel,
 )
 
@@ -43,13 +44,14 @@ def add_trade_header_and_legend(ws, config, styles):
     ws.cell(row=R_LEGEND, column=1, value='LEGEND:').font = styles['font_legend']
     ws.cell(row=R_LEGEND, column=1).alignment = styles['align_center']
     legend_items = [
-        (2, 'User Input (Editable)', styles['fill_input'], styles['font_bold']),
-        (3, 'Auto Lookup / Reference', styles['fill_lookup'], styles['font_regular']),
-        (4, 'Calculated Formula', styles['fill_calc'], styles['font_regular']),
-        (5, 'Final Rate / Say', styles['fill_say'], styles['font_bold']),
-        (6, 'CPWD Rule / Note', styles['fill_note'], styles['font_note']),
-        (7, 'Drives Cost', styles['fill_result'], styles['font_bold']),
-        (8, 'Nomenclature Only', styles['fill_subtotal'], styles['font_regular']),
+        (2, 'INPUT - you type it', styles['fill_input'], styles['font_bold']),
+        (3, 'OVERRIDE - optional', styles['fill_override'], styles['font_bold']),
+        (4, 'LOOKUP - fetched', styles['fill_lookup'], styles['font_regular']),
+        (5, 'DERIVED - calculated', styles['fill_calc'], styles['font_regular']),
+        (6, 'RESULT - subtotal', styles['fill_result'], styles['font_bold']),
+        (7, 'SAY - final rate', styles['fill_say'], styles['font_bold']),
+        (8, 'CPWD rule / note', styles['fill_note'], styles['font_note']),
+        (9, 'Not editable', styles['fill_subtotal'], styles['font_regular']),
     ]
     for col, text, fill, font in legend_items:
         c = ws.cell(row=R_LEGEND, column=col, value=text)
@@ -140,6 +142,7 @@ def build_standard_trade(wb, config, styles):
     ws.views.sheetView[0].showGridLines = True
 
     add_trade_header_and_legend(ws, config, styles)
+    build_guide(ws, styles)
 
     dv_yesno = DataValidation(type='list', formula1='"YES,NO"', allow_blank=False)
     ws.add_data_validation(dv_yesno)
@@ -350,8 +353,9 @@ def build_standard_trade(wb, config, styles):
          None, 'Cost / Batch Qty', None, None, f'=ROUND(G{R_COST} / D{R_META}, 2)',
          'Calculated cost per standard unit of measurement', '-'),
         (R_SAY, 'SAY', f'="OFFICIAL SAY RATE (Rs per " & F{R_META} & "):"',
-         None, 'Final Say', None, None, f'=ROUND(G{R_RATE}, 2)',
-         'OFFICIAL CPWD ROUNDED RATE FOR TENDER SCHEDULES & ESTIMATES', '-'),
+         None, 'MROUND to Rs 0.05', None, None, f'=MROUND(G{R_RATE}, 0.05)',
+         'OFFICIAL CPWD ROUNDED RATE FOR TENDER SCHEDULES & ESTIMATES. CPWD quotes Say rates to '
+         'the nearest 5 paise - see the note directly below this row.', '-'),
     ]
 
     for r, step, desc, toggle, basis, base_f, factor_f, amount_f, note, arule in rows:
@@ -406,6 +410,16 @@ def build_standard_trade(wb, config, styles):
             ws.cell(row=r, column=7).font = styles['font_say']
 
         ws.row_dimensions[r].height = 30 if r == R_SAY else 24
+
+    # Why the Say rate is rounded to 5 paise - stated on the sheet itself.
+    ws.merge_cells(start_row=R_SAY_NOTE, start_column=1, end_row=R_SAY_NOTE, end_column=LAST_COL)
+    sn = ws.cell(row=R_SAY_NOTE, column=1)
+    sn.value = SAY_RULE_NOTE
+    sn.font = styles['font_note']
+    sn.fill = styles['fill_note']
+    sn.alignment = styles['align_wrap']
+    border_row(ws, R_SAY_NOTE, styles)
+    ws.row_dimensions[R_SAY_NOTE].height = 44
 
     # --- Section 7: running library --------------------------------------
     section_bar(ws, R_LIB_HEAD, '7. RUNNING CUSTOM NON-DSR ITEMS LIBRARY FOR THIS TRADE', styles)
