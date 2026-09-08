@@ -56,6 +56,7 @@ def build_rates_master(wb, styles):
     
     wb.defined_names.add(DefinedName('Master_Codes', attr_text="'Rates_Master'!$A$2:$A$" + str(len(rates)+1)))
     wb.defined_names.add(DefinedName('Master_Rates_Table', attr_text="'Rates_Master'!$A$2:$E$" + str(len(rates)+1)))
+    wb.defined_names.add(DefinedName('Total_Active_Rates', attr_text="COUNTA('Rates_Master'!$A:$A)-1"))
     
     tab = Table(displayName="tbl_RatesMaster", ref=f"A1:E{len(rates)+1}")
     tab.tableStyleInfo = TableStyleInfo(name="TableStyleLight1", showRowStripes=True)
@@ -227,7 +228,12 @@ def build_global_factors(wb, styles):
     wb.defined_names.add(DefinedName('Factor_CPOH', attr_text="'Global_Factors'!$F$14"))
     wb.defined_names.add(DefinedName('Factor_Cess', attr_text="'Global_Factors'!$F$15"))
     wb.defined_names.add(DefinedName('Factor_Sundries', attr_text="'Global_Factors'!$F$16"))
-    print('Global_Factors built with Statutory Factor Named Ranges.')
+    # Named Formulas for direct statutory resolution
+    wb.defined_names.add(DefinedName('Resolved_Water_Factor', attr_text="IF('Global_Factors'!$E$12<>\"\",'Global_Factors'!$E$12,'Global_Factors'!$C$12)"))
+    wb.defined_names.add(DefinedName('Resolved_GST_Factor', attr_text="IF('Global_Factors'!$E$13<>\"\",'Global_Factors'!$E$13,'Global_Factors'!$C$13)"))
+    wb.defined_names.add(DefinedName('Resolved_CPOH_Factor', attr_text="IF('Global_Factors'!$E$14<>\"\",'Global_Factors'!$E$14,'Global_Factors'!$C$14)"))
+    wb.defined_names.add(DefinedName('Resolved_Cess_Factor', attr_text="IF('Global_Factors'!$E$15<>\"\",'Global_Factors'!$E$15,'Global_Factors'!$C$15)"))
+    print('Global_Factors built with Statutory Factor Named Ranges and Named Formulas.')
 
 def build_labour_productivity(wb, styles):
     ws = wb.create_sheet(title='Labour_Machinery_Productivity')
@@ -291,7 +297,8 @@ def build_labour_productivity(wb, styles):
     tab = Table(displayName="tbl_Productivity", ref=f"A1:J{len(records)+1}")
     tab.tableStyleInfo = TableStyleInfo(name="TableStyleLight1", showRowStripes=True)
     ws.add_table(tab)
-    print(f'Labour_Machinery_Productivity built: {len(records)} records with Table.')
+    wb.defined_names.add(DefinedName('Total_Labour_Norms', attr_text="COUNTA('Labour_Machinery_Productivity'!$A:$A)-1"))
+    print(f'Labour_Machinery_Productivity built: {len(records)} records with Table and Named Formula.')
 
 def build_sundries_reference(wb, styles):
     ws = wb.create_sheet(title='Sundries_Reference')
@@ -353,4 +360,5 @@ def build_sundries_reference(wb, styles):
     tab = Table(displayName="tbl_SundriesRef", ref=f"A1:H{len(records)+1}")
     tab.tableStyleInfo = TableStyleInfo(name="TableStyleLight1", showRowStripes=True)
     ws.add_table(tab)
-    print(f'Sundries_Reference built: {len(records)} records with Table.')
+    wb.defined_names.add(DefinedName('Total_Sundries_Norms', attr_text="COUNTA('Sundries_Reference'!$A:$A)-1"))
+    print(f'Sundries_Reference built: {len(records)} records with Table and Named Formula.')

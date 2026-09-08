@@ -41,6 +41,11 @@ EXPECTED_DEFINED_NAMES = [
     'Factor_GST', 'Factor_CPOH', 'Factor_Cess', 'Factor_Sundries'
 ]
 
+EXPECTED_NAMED_FORMULAS = [
+    'Total_Active_Rates', 'Total_Labour_Norms', 'Total_Sundries_Norms',
+    'Resolved_Water_Factor', 'Resolved_GST_Factor', 'Resolved_CPOH_Factor', 'Resolved_Cess_Factor'
+]
+
 def run_audits():
     print("=" * 70)
     print("STARTING WORKBOOK INTEGRITY AUDIT TEST SUITE")
@@ -79,19 +84,28 @@ def run_audits():
     if len(tables_found) == len(EXPECTED_TABLES):
         passed_checks += 1
         
-    # --- CHECK 3: Workbook Defined Names ---
+    # --- CHECK 3: Workbook Defined Names & Named Formulas ---
     total_checks += 1
-    print("\n[CHECK 3] Workbook-Level Defined Names (Named Ranges)...")
+    print("\n[CHECK 3] Workbook-Level Defined Names & Named Formulas...")
     defined_names = list(wb.defined_names.keys())
-    missing_dns = set(EXPECTED_DEFINED_NAMES) - set(defined_names)
-    if not missing_dns:
-        print(f"  [PASS] All {len(EXPECTED_DEFINED_NAMES)} defined names present:")
+    missing_ranges = set(EXPECTED_DEFINED_NAMES) - set(defined_names)
+    missing_formulas = set(EXPECTED_NAMED_FORMULAS) - set(defined_names)
+    
+    if not missing_ranges and not missing_formulas:
+        print(f"  [PASS] All {len(EXPECTED_DEFINED_NAMES)} Named Ranges present:")
         for dn_name in EXPECTED_DEFINED_NAMES:
             dn = wb.defined_names[dn_name]
             print(f"         - {dn_name} -> {dn.value}")
+        print(f"  [PASS] All {len(EXPECTED_NAMED_FORMULAS)} Named Formulas present:")
+        for fn_name in EXPECTED_NAMED_FORMULAS:
+            dn = wb.defined_names[fn_name]
+            print(f"         - {fn_name} = {dn.value}")
         passed_checks += 1
     else:
-        print(f"  [FAIL] Missing defined names: {missing_dns}")
+        if missing_ranges:
+            print(f"  [FAIL] Missing named ranges: {missing_ranges}")
+        if missing_formulas:
+            print(f"  [FAIL] Missing named formulas: {missing_formulas}")
         
     # --- CHECK 4: Sheet Protection & Cell Locking ---
     total_checks += 1
