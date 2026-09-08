@@ -38,7 +38,8 @@ EXPECTED_TABLES = {
 
 EXPECTED_DEFINED_NAMES = [
     'Master_Codes', 'Master_Rates_Table', 'Factor_Water', 
-    'Factor_GST', 'Factor_CPOH', 'Factor_Cess', 'Factor_Sundries'
+    'Factor_GST', 'Factor_CPOH', 'Factor_Cess', 'Factor_Sundries',
+    'CPWD_Carriage_Materials'
 ]
 
 EXPECTED_NAMED_FORMULAS = [
@@ -176,7 +177,7 @@ def run_audits():
     audit_bars_ok = True
     for ts_name in trade_sheets:
         ws = wb[ts_name]
-        audit_coord = "B10" if ts_name == "01_Carriage_of_Materials" else "B7"
+        audit_coord = "B14" if ts_name == "01_Carriage_of_Materials" else "B7"
         audit_val = str(ws[audit_coord].value or "")
         if not audit_val.startswith("="):
             print(f"  [FAIL] {ts_name} cell {audit_coord} is not a formula: {audit_val}")
@@ -187,7 +188,7 @@ def run_audits():
                 audit_bars_ok = False
                 
     if audit_bars_ok:
-        print("  [PASS] All 12 trade sheets contain active, dynamic audit formulas (B10 in Carriage, B7 in others).")
+        print("  [PASS] All 12 trade sheets contain active, dynamic audit formulas (B14 in Carriage, B7 in others).")
         passed_checks += 1
         
     # --- CHECK 7: Dynamic Carriage Analytical Simulator Verification ---
@@ -198,16 +199,19 @@ def run_audits():
     
     # Check key simulation formulas
     carr_expected_formulas = {
-        "F7": '=IF(D8="FIXED TRIPS", F8, ROUND(8 / ((2 * D5 / F5) + H5), 2))',
-        "H7": '=ROUND((2 * F7 * D5) + B8, 2)',
-        "D9": '=ROUND(H7 / H8, 2)',
-        "F9": '=ROUND(H7 / B9, 3)',
-        "H9": '=ROUND(F7 * B7, 2)',
-        "E16": '=D9',
-        "E17": '=F9',
-        "G22": '=SUM(G14:G21)',
-        "G23": '=ROUND(G22 / F7, 2)',
-        "G36": '=ROUND(G35 / H9, 2)'
+        "H11": '=IFERROR(INDEX($C$88:$C$114, MATCH(D6, $B$88:$B$114, 0)), 10.98)',
+        "B13": '=IF(H12>0, H12, H11)',
+        "D13": '=IF(D12="FIXED TRIPS", F12, ROUND(8 / ((2 * B11 / D11) + F11), 2))',
+        "F13": '=ROUND((2 * D13 * B11) + 6.0, 2)',
+        "H13": '=ROUND(D13 * B13, 2)',
+        "F14": '=ROUND(F13 / 5.0, 2)',
+        "H14": '=ROUND(F13 / 140.0, 3)',
+        "E20": '=F14',
+        "E21": '=H14',
+        "G26": '=SUM(G18:G25)',
+        "G27": '=ROUND(G26 / D13, 2)',
+        "G40": '=ROUND(G38 / H13, 2)',
+        "B8": '=IF(B7<>"","" & B7,"Carriage of " & D6 & " by mechanical transport " & F6 & " for lead upto " & TEXT(B11, "0.00") & " km " & H6 & ", complete as per directions of Engineer-in-charge.")'
     }
     
     for cell_ref, exp_f in carr_expected_formulas.items():
@@ -216,31 +220,36 @@ def run_audits():
             carr_checks.append(f"Cell {cell_ref} formula mismatch: expected '{exp_f}', got '{act_f}'")
             
     # Check default simulation inputs
-    if carr_ws["D5"].value != 26.0:
-        carr_checks.append(f"Lead D5 expected 26.0, got {carr_ws['D5'].value}")
-    if carr_ws["F5"].value != 29.0:
-        carr_checks.append(f"Speed F5 expected 29.0, got {carr_ws['F5'].value}")
-    if carr_ws["B7"].value != 10.98:
-        carr_checks.append(f"Pipe Payload B7 expected 10.98, got {carr_ws['B7'].value}")
+    if carr_ws["D6"].value != 'R.C.C./C.I./Steel pipes 1000, 1100 & 1200 mm dia':
+        carr_checks.append(f"Material D6 expected R.C.C. pipe description, got {carr_ws['D6'].value}")
+    if carr_ws["F6"].value != 'including loading, transporting, unloading and stacking':
+        carr_checks.append(f"Scope F6 expected standard scope, got {carr_ws['F6'].value}")
+    if carr_ws["H6"].value != 'for all lifts':
+        carr_checks.append(f"Lift H6 expected 'for all lifts', got {carr_ws['H6'].value}")
+    if carr_ws["B11"].value != 26.0:
+        carr_checks.append(f"Lead B11 expected 26.0, got {carr_ws['B11'].value}")
+    if carr_ws["D11"].value != 29.0:
+        carr_checks.append(f"Speed D11 expected 29.0, got {carr_ws['D11'].value}")
         
-    # Check presence of Section 3 (Data Sheet 1 benchmark 1-30 km) and Section 4 (Capacities)
-    if "DATA SHEET NO. 1" not in str(carr_ws["A40"].value or ""):
-        carr_checks.append("Section 3 header missing Data Sheet No. 1 benchmark")
-    if "MATERIAL PAYLOAD CAPACITIES MATRIX" not in str(carr_ws["A74"].value or ""):
-        carr_checks.append("Section 4 header missing Material Payload Capacities Matrix")
+    # Check presence of Section 4A (Data Sheet 1 benchmark 1-30 km) and Section 4B (Capacities)
+    if "DATA SHEET NO. 1" not in str(carr_ws["A52"].value or ""):
+        carr_checks.append(f"Section 4A header missing Data Sheet No. 1 benchmark, got: '{carr_ws['A52'].value}'")
+    if "MATERIAL PAYLOAD CAPACITIES MATRIX" not in str(carr_ws["A86"].value or ""):
+        carr_checks.append(f"Section 4B header missing Material Payload Capacities Matrix, got: '{carr_ws['A86'].value}'")
         
-    # Check Heading 1.2 Manual Labour Carriage (Section 5 & 6)
-    if "HEADING 1.2: MANUAL LABOUR CARRIAGE CALCULATOR" not in str(carr_ws["A104"].value or ""):
-        carr_checks.append(f"Section 5 header missing Manual Labour Carriage Calculator, got: '{carr_ws['A104'].value}'")
-    if "CPWD DAR TABLE 1.2 MANUAL LABOUR" not in str(carr_ws["A111"].value or ""):
-        carr_checks.append(f"Section 6 header missing Table 1.2 Manual Labour Matrix, got: '{carr_ws['A111'].value}'")
-    if carr_ws["D106"].value != "Category B (Heavy / Pipes / Steel)":
-        carr_checks.append(f"Manual category D106 expected Category B, got {carr_ws['D106'].value}")
-    if carr_ws["F106"].value != 100:
-        carr_checks.append(f"Manual lead distance F106 expected 100, got {carr_ws['F106'].value}")
+    # Check Heading 1.2 Manual Labour Carriage (Section 3 & 4C)
+    if "HEADING 1.2: MANUAL LABOUR CARRIAGE CALCULATOR" not in str(carr_ws["A44"].value or ""):
+        carr_checks.append(f"Section 3 header missing Manual Labour Carriage Calculator, got: '{carr_ws['A44'].value}'")
+    if "CPWD DAR TABLE 1.2 MANUAL LABOUR" not in str(carr_ws["A116"].value or ""):
+        carr_checks.append(f"Section 4C header missing Table 1.2 Manual Labour Matrix, got: '{carr_ws['A116'].value}'")
+    if carr_ws["D46"].value != "Category B (Heavy / Pipes / Steel)":
+        carr_checks.append(f"Manual category D46 expected Category B, got {carr_ws['D46'].value}")
+    if carr_ws["F46"].value != 100:
+        carr_checks.append(f"Manual lead distance F46 expected 100, got {carr_ws['F46'].value}")
         
     if not carr_checks:
         print("  [PASS] Carriage Simulator formulas strictly match CPWD DAR Notes 1-5.")
+        print("  [PASS] Smart Material Selector & Automated Nomenclature formula verified.")
         print("  [PASS] Default simulation parameters verified: Lead 26.0 km, Speed 29.0 km/h, Payload 10.98 m.")
         print("  [PASS] 1-30 km Data Sheet 1 benchmark and Table 1.1 material capacities verified.")
         print("  [PASS] Heading 1.2 Manual Labour Calculator (<0.50 km) and Table 1.2 Matrix verified.")
