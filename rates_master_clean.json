@@ -826,6 +826,20 @@
     "category": "Labour Wages"
   },
   {
+    "code": "0155",
+    "desc": "Mason (average)",
+    "unit": "day",
+    "rate": 709.0,
+    "category": "Labour Wages"
+  },
+  {
+    "code": "0156",
+    "desc": "Carpenter (average)",
+    "unit": "day",
+    "rate": 709.0,
+    "category": "Labour Wages"
+  },
+  {
     "code": "0157",
     "desc": "Operator (Pile/ Special machine)",
     "unit": "day",
@@ -5635,8 +5649,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2200",
+    "desc": "Steam coal",
+    "unit": "tonne",
+    "rate": 120.0,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2201",
     "desc": "Carriage of Bricks",
+    "unit": "1000 Nos",
+    "rate": 276.72,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2201",
+    "desc": "Bricks",
     "unit": "1000 Nos",
     "rate": 276.72,
     "category": "Carriage of Materials"
@@ -5649,8 +5677,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2202",
+    "desc": "Stone aggregate below 40 mm nominal size",
+    "unit": "cum",
+    "rate": 103.77,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2203",
     "desc": "Carriage of Coarse sand",
+    "unit": "cum",
+    "rate": 103.77,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2203",
+    "desc": "Coarse sand",
     "unit": "cum",
     "rate": 103.77,
     "category": "Carriage of Materials"
@@ -5663,8 +5705,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2204",
+    "desc": "Timber",
+    "unit": "cum",
+    "rate": 118.59,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2205",
     "desc": "Carriage of Steel",
+    "unit": "tonne",
+    "rate": 92.24,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2205",
+    "desc": "Steel",
     "unit": "tonne",
     "rate": 92.24,
     "category": "Carriage of Materials"
@@ -5677,8 +5733,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2206",
+    "desc": "Stone aggregate 40 mm nominal size and above",
+    "unit": "cum",
+    "rate": 112.79,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2207",
     "desc": "Carriage of Brick tiles",
+    "unit": "1000 Nos",
+    "rate": 166.03,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2207",
+    "desc": "Brick tiles",
     "unit": "1000 Nos",
     "rate": 166.03,
     "category": "Carriage of Materials"
@@ -5691,8 +5761,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2208",
+    "desc": "Lime",
+    "unit": "cum",
+    "rate": 103.77,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2209",
     "desc": "Carriage of Cement",
+    "unit": "tonne",
+    "rate": 92.24,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2209",
+    "desc": "Cement",
     "unit": "tonne",
     "rate": 92.24,
     "category": "Carriage of Materials"
@@ -5705,8 +5789,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2211",
+    "desc": "Tar bitumen",
+    "unit": "tonne",
+    "rate": 103.77,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2215",
     "desc": "Carriage of Soling stone & masonry stone",
+    "unit": "cum",
+    "rate": 122.08,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2215",
+    "desc": "Soling stone & masonry stone",
     "unit": "cum",
     "rate": 122.08,
     "category": "Carriage of Materials"
@@ -5719,8 +5817,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2216",
+    "desc": "Stone blocks white & red sand stone & kota stone slab",
+    "unit": "tonne",
+    "rate": 92.24,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2224",
     "desc": "Carriage of S.W. pipes 100 mm dia No.",
+    "unit": "100 metre",
+    "rate": 138.36,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2224",
+    "desc": "S.W. pipes100 mm dia",
     "unit": "100 metre",
     "rate": 138.36,
     "category": "Carriage of Materials"
@@ -5733,8 +5845,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2225",
+    "desc": "S.W. pipes150 mm dia",
+    "unit": "100 metre",
+    "rate": 276.72,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2226",
     "desc": "Carriage of S.W. pipes 200 mm dia",
+    "unit": "100 metre",
+    "rate": 461.19,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2226",
+    "desc": "S.W. pipes200 mm dia",
     "unit": "100 metre",
     "rate": 461.19,
     "category": "Carriage of Materials"
@@ -5747,8 +5873,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2228",
+    "desc": "S.W. pipes250 mm dia",
+    "unit": "100 metre",
+    "rate": 790.62,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2229",
     "desc": "Carriage of S.W. pipes 300 mm dia",
+    "unit": "100 metre",
+    "rate": 988.27,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2229",
+    "desc": "S.W. pipes300 mm dia",
     "unit": "100 metre",
     "rate": 988.27,
     "category": "Carriage of Materials"
@@ -5761,8 +5901,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2241",
+    "desc": "Good earth",
+    "unit": "cum",
+    "rate": 129.71,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2242",
     "desc": "Carriage of Dump manure by mechanical transport upto 5 km lead",
+    "unit": "cum",
+    "rate": 112.79,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2242",
+    "desc": "Dump manure",
     "unit": "cum",
     "rate": 112.79,
     "category": "Carriage of Materials"
@@ -5775,8 +5929,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2260",
+    "desc": "Brick aggregate",
+    "unit": "cum",
+    "rate": 112.79,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2261",
     "desc": "Carriage of Fine sand (1 Part badarpur sand : 2 parts jamuna sand)",
+    "unit": "cum",
+    "rate": 103.77,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2261",
+    "desc": "Sand",
     "unit": "cum",
     "rate": 103.77,
     "category": "Carriage of Materials"
@@ -5789,8 +5957,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2262",
+    "desc": "Fly ash",
+    "unit": "cum",
+    "rate": 103.77,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2264",
     "desc": "Carriage of Rubbish",
+    "unit": "cum",
+    "rate": 103.77,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2264",
+    "desc": "Rubbish",
     "unit": "cum",
     "rate": 103.77,
     "category": "Carriage of Materials"
@@ -5803,8 +5985,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2265",
+    "desc": "Moorum",
+    "unit": "cum",
+    "rate": 103.77,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2266",
     "desc": "Carriage of Surkhi",
+    "unit": "cum",
+    "rate": 103.77,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2266",
+    "desc": "Surkhi",
     "unit": "cum",
     "rate": 103.77,
     "category": "Carriage of Materials"
@@ -5817,8 +6013,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2267",
+    "desc": "Stone dust",
+    "unit": "cum",
+    "rate": 103.77,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2268",
     "desc": "Carriage of Marble dust and/or marble chips",
+    "unit": "cum",
+    "rate": 103.77,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2268",
+    "desc": "Marble dust and marble chips",
     "unit": "cum",
     "rate": 103.77,
     "category": "Carriage of Materials"
@@ -5831,8 +6041,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2271",
+    "desc": "G.I. pipes below 100 mm dia",
+    "unit": "tonne",
+    "rate": 92.24,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2272",
     "desc": "Carriage of Stainless Steel pipes below 100 mm dia",
+    "unit": "tonne",
+    "rate": 92.24,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2272",
+    "desc": "Stainless Steel pipe below 100 mm dia",
     "unit": "tonne",
     "rate": 92.24,
     "category": "Carriage of Materials"
@@ -5845,8 +6069,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2273",
+    "desc": "A.C.sheet and accessories",
+    "unit": "tonne",
+    "rate": 92.24,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2275",
     "desc": "Carriage of R.C.C. pipes 100 mm dia",
+    "unit": "100 metre",
+    "rate": 226.82,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2275",
+    "desc": "R.C.C. pipes 100 mm dia BASIC RATES : 0.4 CARRIAGE CODES  62 No.",
     "unit": "100 metre",
     "rate": 226.82,
     "category": "Carriage of Materials"
@@ -5859,8 +6097,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2281",
+    "desc": "R.C.C. pipes 150 mm dia",
+    "unit": "100 metre",
+    "rate": 378.03,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2287",
     "desc": "Carriage of R.C.C. pipes 250 mm dia",
+    "unit": "100 metre",
+    "rate": 873.84,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2287",
+    "desc": "R.C.C. pipes 250 mm dia",
     "unit": "100 metre",
     "rate": 873.84,
     "category": "Carriage of Materials"
@@ -5873,8 +6125,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2290",
+    "desc": "R.C.C. pipes 300 mm dia",
+    "unit": "100 metre",
+    "rate": 1080.08,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2299",
     "desc": "Carriage of R.C.C. pipes 450 & 500 mm dia",
+    "unit": "100 metre",
+    "rate": 2520.19,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2299",
+    "desc": "R.C.C. pipes 450 & 500 mm dia",
     "unit": "100 metre",
     "rate": 2520.19,
     "category": "Carriage of Materials"
@@ -5887,8 +6153,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2302",
+    "desc": "G.I.sheet and accessories",
+    "unit": "tonne",
+    "rate": 92.24,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2303",
     "desc": "Carriage of R.C.C. pipes 600,700,750 & 800 mm dia",
+    "unit": "100 metre",
+    "rate": 3780.28,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2303",
+    "desc": "R.C.C. pipes 600, 700, 750 & 800 mm dia",
     "unit": "100 metre",
     "rate": 3780.28,
     "category": "Carriage of Materials"
@@ -5901,8 +6181,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2308",
+    "desc": "Plaster of paris",
+    "unit": "tonne",
+    "rate": 92.24,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2309",
     "desc": "Carriage of Cast Iron fittings",
+    "unit": "tonne",
+    "rate": 92.24,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2309",
+    "desc": "Cast iron fittings",
     "unit": "tonne",
     "rate": 92.24,
     "category": "Carriage of Materials"
@@ -5915,8 +6209,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2311",
+    "desc": "Red bajri",
+    "unit": "cum",
+    "rate": 103.77,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2314",
     "desc": "Carriage of Barbed wire",
+    "unit": "tonne",
+    "rate": 92.24,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2314",
+    "desc": "Barbed wire",
     "unit": "tonne",
     "rate": 92.24,
     "category": "Carriage of Materials"
@@ -5929,8 +6237,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2317",
+    "desc": "Sludge",
+    "unit": "cum",
+    "rate": 112.79,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2319",
     "desc": "Carriage of Spun iron S & S pipes 100 mm dia",
+    "unit": "100 metre",
+    "rate": 226.82,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2319",
+    "desc": "Spun iron S & S pipes 100 mm dia",
     "unit": "100 metre",
     "rate": 226.82,
     "category": "Carriage of Materials"
@@ -5943,8 +6265,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2320",
+    "desc": "Spun iron S & S pipes 125 mm dia",
+    "unit": "100 metre",
+    "rate": 302.97,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2321",
     "desc": "Carriage of Spun iron S & S pipes 150 mm dia",
+    "unit": "100 metre",
+    "rate": 378.03,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2321",
+    "desc": "Spun iron S & S pipes 150 mm dia",
     "unit": "100 metre",
     "rate": 378.03,
     "category": "Carriage of Materials"
@@ -5957,8 +6293,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2322",
+    "desc": "Spun iron S & S pipes 200 mm dia",
+    "unit": "100 metre",
+    "rate": 614.93,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2323",
     "desc": "Carriage of Spun iron S & S pipes 250 mm dia",
+    "unit": "100 metre",
+    "rate": 873.84,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2323",
+    "desc": "Spun iron S & S pipes 250 mm dia",
     "unit": "100 metre",
     "rate": 873.84,
     "category": "Carriage of Materials"
@@ -5971,8 +6321,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2324",
+    "desc": "Spun iron S & S pipes 300 mm dia",
+    "unit": "100 metre",
+    "rate": 1080.08,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2325",
     "desc": "Carriage of Spun iron S & S pipes 350 mm dia",
+    "unit": "100 metre",
+    "rate": 1512.11,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2325",
+    "desc": "Spun iron S & S pipes 350 mm dia",
     "unit": "100 metre",
     "rate": 1512.11,
     "category": "Carriage of Materials"
@@ -5985,8 +6349,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2326",
+    "desc": "Spun iron S & S pipes 400 mm dia",
+    "unit": "100 metre",
+    "rate": 2061.97,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2327",
     "desc": "Carriage of Spun iron S & S pipes 450 mm dia",
+    "unit": "100 metre",
+    "rate": 2520.19,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2327",
+    "desc": "Spun iron S & S pipes 450 mm dia",
     "unit": "100 metre",
     "rate": 2520.19,
     "category": "Carriage of Materials"
@@ -5999,8 +6377,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2328",
+    "desc": "Spun iron S & S pipes 500 mm dia",
+    "unit": "100 metre",
+    "rate": 2520.19,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2329",
     "desc": "Carriage of Spun iron S & S pipes 600mm dia",
+    "unit": "100 metre",
+    "rate": 3780.28,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2329",
+    "desc": "Spun iron S & S pipes 600mm dia",
     "unit": "100 metre",
     "rate": 3780.28,
     "category": "Carriage of Materials"
@@ -6013,8 +6405,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2330",
+    "desc": "C.I. pipes 500 mm dia",
+    "unit": "100 metre",
+    "rate": 2520.19,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2331",
     "desc": "Carriage of R.C.C. pipes 900 mm dia",
+    "unit": "100 metre",
+    "rate": 5670.42,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2331",
+    "desc": "R.C.C. pipes 900 mm dia",
     "unit": "100 metre",
     "rate": 5670.42,
     "category": "Carriage of Materials"
@@ -6027,8 +6433,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2332",
+    "desc": "R.C.C. pipes 1000 mm dia",
+    "unit": "100 metre",
+    "rate": 7560.57,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2333",
     "desc": "Carriage of R.C.C. pipes 1100 mm dia",
+    "unit": "100 metre",
+    "rate": 7560.57,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2333",
+    "desc": "R.C.C. pipes 1100 mm dia",
     "unit": "100 metre",
     "rate": 7560.57,
     "category": "Carriage of Materials"
@@ -6041,8 +6461,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2334",
+    "desc": "R.C.C. pipes 1200 mm dia",
+    "unit": "100 metre",
+    "rate": 7560.57,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2335",
     "desc": "Carriage of sand",
+    "unit": "cum",
+    "rate": 103.77,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2335",
+    "desc": "Jamuna sand",
     "unit": "cum",
     "rate": 103.77,
     "category": "Carriage of Materials"
@@ -6055,8 +6489,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2336",
+    "desc": "RCC pipe above 1200 mm dia & up to 1800 mm dia",
+    "unit": "100 metre",
+    "rate": 7560.57,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2341",
     "desc": "Carriage of Pig lead No.",
+    "unit": "tonne",
+    "rate": 92.24,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2341",
+    "desc": "Pig lead",
     "unit": "tonne",
     "rate": 92.24,
     "category": "Carriage of Materials"
@@ -6069,8 +6517,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2342",
+    "desc": "Solvent/ Diesel",
+    "unit": "quintal",
+    "rate": 10.38,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2343",
     "desc": "Carriage of Ductile Iron pipes (k7) 100 mm dia",
+    "unit": "100 metre",
+    "rate": 226.82,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2343",
+    "desc": "Ductile iron pipes (k7) 100 mm dia",
     "unit": "100 metre",
     "rate": 226.82,
     "category": "Carriage of Materials"
@@ -6083,8 +6545,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2344",
+    "desc": "Cast iron pipes 150 mm dia",
+    "unit": "100 metre",
+    "rate": 378.03,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2345",
     "desc": "Carriage of Cast iron pipes 200 mm dia",
+    "unit": "100 metre",
+    "rate": 614.93,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2345",
+    "desc": "Cast iron pipes 200 mm dia",
     "unit": "100 metre",
     "rate": 614.93,
     "category": "Carriage of Materials"
@@ -6097,8 +6573,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2346",
+    "desc": "Cast iron pipes 250 mm dia BASIC RATES : 0.4 CARRIAGE CODES  63 No.",
+    "unit": "100 metre",
+    "rate": 873.84,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2347",
     "desc": "Carriage of Cast iron pipes 300 mm dia",
+    "unit": "100 metre",
+    "rate": 1080.08,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2347",
+    "desc": "Cast iron pipes 300 mm dia",
     "unit": "100 metre",
     "rate": 1080.08,
     "category": "Carriage of Materials"
@@ -6111,8 +6601,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2348",
+    "desc": "Cast iron pipes 350 mm dia",
+    "unit": "100 metre",
+    "rate": 1512.11,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2349",
     "desc": "Carriage of Cast iron pipes 400 mm dia",
+    "unit": "100 metre",
+    "rate": 2061.97,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2349",
+    "desc": "Cast iron pipes 400 mm dia",
     "unit": "100 metre",
     "rate": 2061.97,
     "category": "Carriage of Materials"
@@ -6125,8 +6629,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2350",
+    "desc": "Cast iron pipes 450 mm dia",
+    "unit": "100 metre",
+    "rate": 2520.19,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2351",
     "desc": "Carriage of Cast iron pipes 500 mm dia",
+    "unit": "100 metre",
+    "rate": 2520.19,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2351",
+    "desc": "Cast iron pipes 500 mm dia",
     "unit": "100 metre",
     "rate": 2520.19,
     "category": "Carriage of Materials"
@@ -6139,8 +6657,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2352",
+    "desc": "Cast iron pipes 600 mm dia",
+    "unit": "100 metre",
+    "rate": 3780.28,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2353",
     "desc": "Carriage of Cast iron pipes 700 mm dia",
+    "unit": "100 metre",
+    "rate": 3780.28,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2353",
+    "desc": "Cast iron pipes 700 mm dia",
     "unit": "100 metre",
     "rate": 3780.28,
     "category": "Carriage of Materials"
@@ -6153,8 +6685,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2355",
+    "desc": "Cast iron pipes 800 mm dia",
+    "unit": "100 metre",
+    "rate": 3780.28,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2356",
     "desc": "Carriage of Cast iron pipes 900 mm dia",
+    "unit": "100 metre",
+    "rate": 5670.42,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2356",
+    "desc": "Cast iron pipes 900 mm dia",
     "unit": "100 metre",
     "rate": 5670.42,
     "category": "Carriage of Materials"
@@ -6167,8 +6713,22 @@
     "category": "Carriage of Materials"
   },
   {
+    "code": "2357",
+    "desc": "Cast iron pipes 1000 mm dia",
+    "unit": "100 metre",
+    "rate": 7560.57,
+    "category": "Carriage of Materials"
+  },
+  {
     "code": "2358",
     "desc": "Carriage of Bamboo Mat corrugated sheets and accessories",
+    "unit": "tonne",
+    "rate": 11500.0,
+    "category": "Carriage of Materials"
+  },
+  {
+    "code": "2358",
+    "desc": "Carriage of Bamboo Mat corrugated sheets and accessories BASIC RATES : 0.4 CARRIAGE CODES  64",
     "unit": "tonne",
     "rate": 11500.0,
     "category": "Carriage of Materials"
@@ -6692,6 +7252,13 @@
     "category": "Building Materials"
   },
   {
+    "code": "2613",
+    "desc": "SS Bolt with washer of sizes for structural glazing / ACP Cladding",
+    "unit": "each",
+    "rate": 35.0,
+    "category": "Building Materials"
+  },
+  {
     "code": "2614",
     "desc": "SS Screws of sizes for structural glazing / ACP Cladding",
     "unit": "each",
@@ -6830,6 +7397,20 @@
     "unit": "kg",
     "rate": 55.0,
     "category": "Building Materials"
+  },
+  {
+    "code": "2635",
+    "desc": "GI Screws of gauge 10, length 25 mm for fixing cement fibre board to C section",
+    "unit": "each",
+    "rate": 3.0,
+    "category": "New Technologies"
+  },
+  {
+    "code": "2636",
+    "desc": "GI Screws of gauge 10, length 45 mm for fixing cement fibre board to C section",
+    "unit": "each",
+    "rate": 3.0,
+    "category": "New Technologies"
   },
   {
     "code": "2637",
@@ -11900,6 +12481,20 @@
     "category": "Building Materials"
   },
   {
+    "code": "8219",
+    "desc": "Stainless steel butt hinges (heavy weight) 125x64x2.5 mm IS : 12817 marked",
+    "unit": "10 Nos",
+    "rate": 350.0,
+    "category": "Building Materials"
+  },
+  {
+    "code": "8220",
+    "desc": "Stainless steel butt hinges (heavy weight) 100x60x2.5 mm IS : 12817 marked",
+    "unit": "10 Nos",
+    "rate": 255.0,
+    "category": "Building Materials"
+  },
+  {
     "code": "8221",
     "desc": "Stainless steel butt hinges (heavy weight) 75x50x2.5 mm IS :12817 marked",
     "unit": "10 Nos",
@@ -12257,6 +12852,13 @@
     "category": "Building Materials"
   },
   {
+    "code": "8564",
+    "desc": "15 mm thick, light weight, fully perforated square/butt edge integral densified, false ceiling tiles of size 595x595 mm",
+    "unit": "sqm",
+    "rate": 900.0,
+    "category": "New Technologies"
+  },
+  {
     "code": "8565",
     "desc": "Galavanised MS hanger rod 6 mm dia MS fully threaded up to 1000mm",
     "unit": "each",
@@ -12360,6 +12962,20 @@
     "unit": "of Size 595x595 mm",
     "rate": 750.0,
     "category": "Building Materials"
+  },
+  {
+    "code": "8587",
+    "desc": "Galvanized iron intermediate cross-T section 15x32x0.33 mm (600 mm long)",
+    "unit": "each",
+    "rate": 35.0,
+    "category": "New Technologies"
+  },
+  {
+    "code": "8588",
+    "desc": "Galvanised MS hanger rod 6 mm dia MS fully threaded up to 1000 mm length",
+    "unit": "each",
+    "rate": 26.0,
+    "category": "New Technologies"
   },
   {
     "code": "8589",
@@ -13461,6 +14077,20 @@
     "category": "Building Materials"
   },
   {
+    "code": "8755",
+    "desc": "Stainless steel friction hinge of size 200 mm x 19 x 1.9 mm for uPVC windows",
+    "unit": "each",
+    "rate": 205.0,
+    "category": "Building Materials"
+  },
+  {
+    "code": "8756",
+    "desc": "Stainless steel friction hinge of size 250 mm x 19 x 1.9 mm for uPVC windows",
+    "unit": "each",
+    "rate": 230.0,
+    "category": "Building Materials"
+  },
+  {
     "code": "8757",
     "desc": "Stainless steel friction hinges (SS-304 grade) size 300 x 19 x 1.9 mm for uPVC window",
     "unit": "each",
@@ -14026,6 +14656,13 @@
     "unit": "each",
     "rate": 205.0,
     "category": "Building Materials"
+  },
+  {
+    "code": "8848",
+    "desc": "Stainless steel Male thread Tee for 28.58 mm outer dia X 15 mm nominal dia threaded",
+    "unit": "each",
+    "rate": 273.0,
+    "category": "Sanitary & Water Supply"
   },
   {
     "code": "8849",
@@ -14707,6 +15344,34 @@
     "category": "Building Materials"
   },
   {
+    "code": "8956",
+    "desc": "Bi-Axial Extruded GeoGrids of Minimum Tensile Strength 15 kN/m in the longitudinal and transverse direction",
+    "unit": "sqm",
+    "rate": 100.0,
+    "category": "New Technologies"
+  },
+  {
+    "code": "8957",
+    "desc": "Bi-Axial Extruded GeoGrids of Minimum Tensile Strength 20kN/m in the longitudinal and transverse direction",
+    "unit": "sqm",
+    "rate": 115.0,
+    "category": "New Technologies"
+  },
+  {
+    "code": "8958",
+    "desc": "Bi-Axial Extruded GeoGrids of Minimum Tensile Strength 30kN/m in the longitudinal and transverse direction",
+    "unit": "sqm",
+    "rate": 185.0,
+    "category": "New Technologies"
+  },
+  {
+    "code": "8959",
+    "desc": "Bi-Axial Extruded GeoGrids of Minimum Tensile Strength 40kN/m in the longitudinal and transverse direction",
+    "unit": "sqm",
+    "rate": 275.0,
+    "category": "New Technologies"
+  },
+  {
     "code": "8960",
     "desc": "Geosynthetic Drainage with a “W” configuration as longitudinal parallel channels. Minimum thickness to be 7.2mm, with two filtering UV stabilized polypropylene nonwoven geotextile of minimum thickness of 0.75mm having pores of 150 micron and tensile strength of 8.0 kN/m and having  plane flow capacity of 2.1 L / (m.s) at hydraulic gradient of 1.0 & 20 kPa  pressure,",
     "unit": "two filtering nonwoven geotextiles",
@@ -14826,6 +15491,20 @@
     "category": "Building Materials"
   },
   {
+    "code": "8977",
+    "desc": "Aluminium profile sheet 0.71 mm",
+    "unit": "sqm",
+    "rate": 600.0,
+    "category": "New Technologies"
+  },
+  {
+    "code": "8978",
+    "desc": "Aluminium profile sheet 0.91 mm",
+    "unit": "sqm",
+    "rate": 785.0,
+    "category": "New Technologies"
+  },
+  {
     "code": "9001",
     "desc": "C.P. Brass Centre Hole Basin Mixer With Cast Spout",
     "unit": "each",
@@ -14852,551 +15531,5 @@
     "unit": "L.S.",
     "rate": 2.0,
     "category": "Building Materials"
-  },
-  {
-    "code": "2200",
-    "desc": "Steam coal",
-    "unit": "tonne",
-    "rate": 120.0,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2201",
-    "desc": "Bricks",
-    "unit": "1000 Nos",
-    "rate": 276.72,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2202",
-    "desc": "Stone aggregate below 40 mm nominal size",
-    "unit": "cum",
-    "rate": 103.77,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2203",
-    "desc": "Coarse sand",
-    "unit": "cum",
-    "rate": 103.77,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2204",
-    "desc": "Timber",
-    "unit": "cum",
-    "rate": 118.59,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2205",
-    "desc": "Steel",
-    "unit": "tonne",
-    "rate": 92.24,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2206",
-    "desc": "Stone aggregate 40 mm nominal size and above",
-    "unit": "cum",
-    "rate": 112.79,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2207",
-    "desc": "Brick tiles",
-    "unit": "1000 Nos",
-    "rate": 166.03,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2208",
-    "desc": "Lime",
-    "unit": "cum",
-    "rate": 103.77,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2209",
-    "desc": "Cement",
-    "unit": "tonne",
-    "rate": 92.24,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2211",
-    "desc": "Tar bitumen",
-    "unit": "tonne",
-    "rate": 103.77,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2215",
-    "desc": "Soling stone & masonry stone",
-    "unit": "cum",
-    "rate": 122.08,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2216",
-    "desc": "Stone blocks white & red sand stone & kota stone slab",
-    "unit": "tonne",
-    "rate": 92.24,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2224",
-    "desc": "S.W. pipes100 mm dia",
-    "unit": "100 metre",
-    "rate": 138.36,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2225",
-    "desc": "S.W. pipes150 mm dia",
-    "unit": "100 metre",
-    "rate": 276.72,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2226",
-    "desc": "S.W. pipes200 mm dia",
-    "unit": "100 metre",
-    "rate": 461.19,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2228",
-    "desc": "S.W. pipes250 mm dia",
-    "unit": "100 metre",
-    "rate": 790.62,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2229",
-    "desc": "S.W. pipes300 mm dia",
-    "unit": "100 metre",
-    "rate": 988.27,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2241",
-    "desc": "Good earth",
-    "unit": "cum",
-    "rate": 129.71,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2242",
-    "desc": "Dump manure",
-    "unit": "cum",
-    "rate": 112.79,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2260",
-    "desc": "Brick aggregate",
-    "unit": "cum",
-    "rate": 112.79,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2261",
-    "desc": "Sand",
-    "unit": "cum",
-    "rate": 103.77,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2262",
-    "desc": "Fly ash",
-    "unit": "cum",
-    "rate": 103.77,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2264",
-    "desc": "Rubbish",
-    "unit": "cum",
-    "rate": 103.77,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2265",
-    "desc": "Moorum",
-    "unit": "cum",
-    "rate": 103.77,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2266",
-    "desc": "Surkhi",
-    "unit": "cum",
-    "rate": 103.77,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2267",
-    "desc": "Stone dust",
-    "unit": "cum",
-    "rate": 103.77,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2268",
-    "desc": "Marble dust and marble chips",
-    "unit": "cum",
-    "rate": 103.77,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2271",
-    "desc": "G.I. pipes below 100 mm dia",
-    "unit": "tonne",
-    "rate": 92.24,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2272",
-    "desc": "Stainless Steel pipe below 100 mm dia",
-    "unit": "tonne",
-    "rate": 92.24,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2273",
-    "desc": "A.C.sheet and accessories",
-    "unit": "tonne",
-    "rate": 92.24,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2275",
-    "desc": "R.C.C. pipes 100 mm dia BASIC RATES : 0.4 CARRIAGE CODES  62 No.",
-    "unit": "100 metre",
-    "rate": 226.82,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2281",
-    "desc": "R.C.C. pipes 150 mm dia",
-    "unit": "100 metre",
-    "rate": 378.03,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2287",
-    "desc": "R.C.C. pipes 250 mm dia",
-    "unit": "100 metre",
-    "rate": 873.84,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2290",
-    "desc": "R.C.C. pipes 300 mm dia",
-    "unit": "100 metre",
-    "rate": 1080.08,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2299",
-    "desc": "R.C.C. pipes 450 & 500 mm dia",
-    "unit": "100 metre",
-    "rate": 2520.19,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2302",
-    "desc": "G.I.sheet and accessories",
-    "unit": "tonne",
-    "rate": 92.24,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2303",
-    "desc": "R.C.C. pipes 600, 700, 750 & 800 mm dia",
-    "unit": "100 metre",
-    "rate": 3780.28,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2308",
-    "desc": "Plaster of paris",
-    "unit": "tonne",
-    "rate": 92.24,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2309",
-    "desc": "Cast iron fittings",
-    "unit": "tonne",
-    "rate": 92.24,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2311",
-    "desc": "Red bajri",
-    "unit": "cum",
-    "rate": 103.77,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2314",
-    "desc": "Barbed wire",
-    "unit": "tonne",
-    "rate": 92.24,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2317",
-    "desc": "Sludge",
-    "unit": "cum",
-    "rate": 112.79,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2319",
-    "desc": "Spun iron S & S pipes 100 mm dia",
-    "unit": "100 metre",
-    "rate": 226.82,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2320",
-    "desc": "Spun iron S & S pipes 125 mm dia",
-    "unit": "100 metre",
-    "rate": 302.97,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2321",
-    "desc": "Spun iron S & S pipes 150 mm dia",
-    "unit": "100 metre",
-    "rate": 378.03,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2322",
-    "desc": "Spun iron S & S pipes 200 mm dia",
-    "unit": "100 metre",
-    "rate": 614.93,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2323",
-    "desc": "Spun iron S & S pipes 250 mm dia",
-    "unit": "100 metre",
-    "rate": 873.84,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2324",
-    "desc": "Spun iron S & S pipes 300 mm dia",
-    "unit": "100 metre",
-    "rate": 1080.08,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2325",
-    "desc": "Spun iron S & S pipes 350 mm dia",
-    "unit": "100 metre",
-    "rate": 1512.11,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2326",
-    "desc": "Spun iron S & S pipes 400 mm dia",
-    "unit": "100 metre",
-    "rate": 2061.97,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2327",
-    "desc": "Spun iron S & S pipes 450 mm dia",
-    "unit": "100 metre",
-    "rate": 2520.19,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2328",
-    "desc": "Spun iron S & S pipes 500 mm dia",
-    "unit": "100 metre",
-    "rate": 2520.19,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2329",
-    "desc": "Spun iron S & S pipes 600mm dia",
-    "unit": "100 metre",
-    "rate": 3780.28,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2330",
-    "desc": "C.I. pipes 500 mm dia",
-    "unit": "100 metre",
-    "rate": 2520.19,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2331",
-    "desc": "R.C.C. pipes 900 mm dia",
-    "unit": "100 metre",
-    "rate": 5670.42,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2332",
-    "desc": "R.C.C. pipes 1000 mm dia",
-    "unit": "100 metre",
-    "rate": 7560.57,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2333",
-    "desc": "R.C.C. pipes 1100 mm dia",
-    "unit": "100 metre",
-    "rate": 7560.57,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2334",
-    "desc": "R.C.C. pipes 1200 mm dia",
-    "unit": "100 metre",
-    "rate": 7560.57,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2335",
-    "desc": "Jamuna sand",
-    "unit": "cum",
-    "rate": 103.77,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2336",
-    "desc": "RCC pipe above 1200 mm dia & up to 1800 mm dia",
-    "unit": "100 metre",
-    "rate": 7560.57,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2341",
-    "desc": "Pig lead",
-    "unit": "tonne",
-    "rate": 92.24,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2342",
-    "desc": "Solvent/ Diesel",
-    "unit": "quintal",
-    "rate": 10.38,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2343",
-    "desc": "Ductile iron pipes (k7) 100 mm dia",
-    "unit": "100 metre",
-    "rate": 226.82,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2344",
-    "desc": "Cast iron pipes 150 mm dia",
-    "unit": "100 metre",
-    "rate": 378.03,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2345",
-    "desc": "Cast iron pipes 200 mm dia",
-    "unit": "100 metre",
-    "rate": 614.93,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2346",
-    "desc": "Cast iron pipes 250 mm dia BASIC RATES : 0.4 CARRIAGE CODES  63 No.",
-    "unit": "100 metre",
-    "rate": 873.84,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2347",
-    "desc": "Cast iron pipes 300 mm dia",
-    "unit": "100 metre",
-    "rate": 1080.08,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2348",
-    "desc": "Cast iron pipes 350 mm dia",
-    "unit": "100 metre",
-    "rate": 1512.11,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2349",
-    "desc": "Cast iron pipes 400 mm dia",
-    "unit": "100 metre",
-    "rate": 2061.97,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2350",
-    "desc": "Cast iron pipes 450 mm dia",
-    "unit": "100 metre",
-    "rate": 2520.19,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2351",
-    "desc": "Cast iron pipes 500 mm dia",
-    "unit": "100 metre",
-    "rate": 2520.19,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2352",
-    "desc": "Cast iron pipes 600 mm dia",
-    "unit": "100 metre",
-    "rate": 3780.28,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2353",
-    "desc": "Cast iron pipes 700 mm dia",
-    "unit": "100 metre",
-    "rate": 3780.28,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2355",
-    "desc": "Cast iron pipes 800 mm dia",
-    "unit": "100 metre",
-    "rate": 3780.28,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2356",
-    "desc": "Cast iron pipes 900 mm dia",
-    "unit": "100 metre",
-    "rate": 5670.42,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2357",
-    "desc": "Cast iron pipes 1000 mm dia",
-    "unit": "100 metre",
-    "rate": 7560.57,
-    "category": "Carriage of Materials"
-  },
-  {
-    "code": "2358",
-    "desc": "Carriage of Bamboo Mat corrugated sheets and accessories BASIC RATES : 0.4 CARRIAGE CODES  64",
-    "unit": "tonne",
-    "rate": 11500.0,
-    "category": "Carriage of Materials"
   }
 ]
