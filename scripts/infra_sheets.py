@@ -25,6 +25,77 @@ def lock_sheet(ws, editable_cells=(), editable_cols=(), first_data_row=2):
             ws[f'{col}{r}'].protection = Protection(locked=False)
     ws.protection.sheet = True
 
+def build_vol1_cover(wb, styles):
+    """
+    Cover / Instructions sheet for Vol. 1.
+    Explains template usage, sheet layout, and how Vol. 2 links back.
+    """
+    ws = wb.create_sheet(title='Vol_1_Cover')
+    ws.views.sheetView[0].showGridLines = False
+
+    # Title banner
+    ws.merge_cells('A1:I1')
+    c = ws.cell(row=1, column=1)
+    c.value = (
+        'CPWD DAR 2019  |  CUSTOM RATE ANALYSIS WORKBOOK — VOLUME 1 (Sub-Heads 01–12)\n'
+        'Template File  |  Open → Work → Save As <Project Name>.xlsx  |  Do NOT rename this file'
+    )
+    c.font      = styles['font_title']
+    c.fill      = styles['fill_title']
+    c.alignment = styles['align_center']
+    ws.row_dimensions[1].height = 40
+
+    # Template usage note
+    ws.merge_cells('A3:I5')
+    t = ws.cell(row=3, column=1)
+    t.value = (
+        '★  TEMPLATE — THIS FILE OPENS FRESH EACH TIME  ★\n'
+        'Nothing you type here is saved to the template. To keep your work:\n'
+        '   File → Save As → give it a project/item name (e.g. "ItemAnalysis_CC_Flooring.xlsx").'
+    )
+    t.font      = styles['font_header']
+    t.fill      = styles['fill_note']
+    t.alignment = styles['align_wrap']
+    t.border    = styles['border_thin']
+    ws.row_dimensions[3].height = 55
+
+    # How-to note
+    ws.merge_cells('A7:I16')
+    n = ws.cell(row=7, column=1)
+    n.value = (
+        'HOW TO USE THIS WORKBOOK\n\n'
+        '1. SHEET LAYOUT (each trade sheet 01–12 has the same structure):\n'
+        '   Panel 1  — Scope & Item Identification (yellow INPUT cells)\n'
+        '   Section 2 — Material Block  (enter code → rate auto-fills from Rates_Master)\n'
+        '   Section 3 — Labour Block    (same lookup pattern)\n'
+        '   Section 4 — Sundries, Markup Chain, Say Rate\n\n'
+        '2. YELLOW CELLS are user inputs. All other cells are calculated — do not overtype them.\n\n'
+        '3. RATES_MASTER: 2,200 CPWD DAR 2019 codes with basic rates. Type the code in Column B\n'
+        '   of the material/labour block; description, unit and rate fill automatically.\n'
+        '   To override a rate, type it directly in Column F of that row.\n\n'
+        '4. GLOBAL FACTORS (Water Tax, GST, CPOH, Cess, Sundries%) are in the Global_Factors\n'
+        '   sheet. Change them there once; all trade sheets update automatically.\n\n'
+        '5. IF YOU USE VOL. 2 (Sub-Heads 13–26):\n'
+        '   Before opening Vol. 2, save THIS file as:\n'
+        '       CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1.xlsx\n'
+        '   in the SAME FOLDER as Vol. 2. Vol. 2 external links depend on that exact filename.\n\n'
+        '6. REFERENCE SHEETS (read-only):\n'
+        '   Rates_Master, Global_Factors, Labour_Machinery_Productivity, Sundries_Reference,\n'
+        '   Resolved_Cross_Volume_Items — do not edit these; regenerate from source if needed.'
+    )
+    n.font      = styles['font_note']
+    n.fill      = styles['fill_note']
+    n.alignment = styles['align_wrap']
+    n.border    = styles['border_thin']
+    ws.row_dimensions[7].height = 320
+
+    for col, w in {'A': 18, 'B': 16, 'C': 46, 'D': 14, 'E': 16,
+                   'F': 16, 'G': 18, 'H': 42, 'I': 14}.items():
+        ws.column_dimensions[col].width = w
+
+    print('  Built Vol_1_Cover sheet')
+
+
 def build_rates_master(wb, styles):
     ws = wb.create_sheet(title='Rates_Master')
     ws.views.sheetView[0].showGridLines = True

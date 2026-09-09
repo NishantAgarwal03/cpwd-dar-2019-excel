@@ -40,7 +40,7 @@ from scripts.trade_builder_vol2 import build_vol2_trade
 # WB1 external link constants
 # ---------------------------------------------------------------------------
 WB1_FILE = 'CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1.xlsx'
-WB2_FILE = 'CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_2.xlsx'
+WB2_FILE = 'CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_2.xltx'
 
 # External reference string template — Excel uses [filename]Sheet!range
 def _wb1_ext(sheet, cell):
@@ -62,7 +62,7 @@ def _define_wb2_factor_names(wb):
     for name, refers_to in factors:
         dn = DefinedName(name=name, attr_text=refers_to)
         wb.defined_names.add(dn)
-    print('  Registered 5 WB1→WB2 factor name mirrors '
+    print('  Registered 5 WB1->WB2 factor name mirrors '
           '(Factor_Water / GST / CPOH / Cess / Sundries)')
 
 
@@ -254,7 +254,7 @@ def build_vol2_cover(wb, styles):
     c = ws.cell(row=1, column=1)
     c.value = (
         'CPWD DAR 2019  |  CUSTOM RATE ANALYSIS WORKBOOK — VOLUME 2 (Sub-Heads 13–26)\n'
-        'Companion to Vol. 1  |  Do NOT rename or move either workbook file'
+        'Template File  |  Open → Work → Save As <Project Name>.xlsx  |  Do NOT rename this file'
     )
     c.font      = styles['font_title']
     c.fill      = styles['fill_title']
@@ -266,8 +266,12 @@ def build_vol2_cover(wb, styles):
     arch = ws.cell(row=3, column=1)
     arch.value = (
         'HOW TO USE THIS WORKBOOK\n\n'
+        '★  TEMPLATE — THIS FILE OPENS FRESH EACH TIME  ★\n'
+        '   Nothing you type here is saved to the template. To keep your work:\n'
+        '   File → Save As → give it a project/item name.\n\n'
         '1. BOTH WORKBOOKS MUST BE OPEN IN THE SAME FOLDER.\n'
-        f'   Vol. 1: {WB1_FILE}\n'
+        f'   Vol. 1 must be saved as: {WB1_FILE}\n'
+        '   (Open the Vol. 1 template, then File → Save As with that exact filename.)\n'
         f'   Vol. 2: {WB2_FILE} (this file)\n\n'
         '2. EXTERNAL LINKS: All rate lookups in this workbook (description, unit, basic rate)\n'
         '   fetch live data from Vol. 1 Rates_Master sheet. The formula in each Code cell reads:\n'
@@ -367,7 +371,7 @@ def generate_vol2_workbook():
     try:
         wb.save(out_path)
     except PermissionError:
-        alt_path = WB2_FILE.replace('.xlsx', '_Latest.xlsx')
+        alt_path = WB2_FILE.replace('.xltx', '_Latest.xltx')
         wb.save(alt_path)
         print('=' * 70)
         print('BUILD DID NOT UPDATE THE MAIN WORKBOOK')

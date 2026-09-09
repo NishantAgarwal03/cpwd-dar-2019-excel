@@ -5,6 +5,7 @@ import openpyxl
 import os, time
 from scripts.styles import get_workbook_styles
 from scripts.infra_sheets import (
+    build_vol1_cover,
     build_rates_master,
     build_global_factors,
     build_labour_productivity,
@@ -28,7 +29,11 @@ def generate_full_workbook():
     
     styles = get_workbook_styles()
     
-    # 1. Infrastructure Sheets
+    # 1. Cover sheet (first tab)
+    print("--- Generating Cover Sheet ---")
+    build_vol1_cover(wb, styles)
+
+    # 2. Infrastructure Sheets
     print("--- Generating 5 Shared Infrastructure Sheets ---")
     build_rates_master(wb, styles)
     build_global_factors(wb, styles)
@@ -40,7 +45,7 @@ def generate_full_workbook():
     if default_sheet in wb.worksheets:
         wb.remove(default_sheet)
         
-    # 2. Trade Builder Sheets (01 to 12)
+    # 3. Trade Builder Sheets (01 to 12)
     print("--- Generating 12 Dedicated Trade Builder Sheets ---")
     configs = merge_scope_metadata(get_all_trade_configs())
     
@@ -66,13 +71,13 @@ def generate_full_workbook():
     for key in trade_keys:
         build_standard_trade(wb, configs[key], styles)
         
-    out_path = 'CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1.xlsx'
+    out_path = 'CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1.xltx'
     print(f"Saving complete workbook to {out_path}...")
     try:
         wb.save(out_path)
     except PermissionError:
-        alt_path = 'CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1_Latest.xlsx'
-        wb.save(alt_path)
+        alt_path = 'CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1_Latest.xltx'
+        wb.save(alt_path)  # noqa: E501
         print("=" * 64)
         print("BUILD DID NOT UPDATE THE MAIN WORKBOOK")
         print(f"  '{out_path}' is open in Excel and could not be overwritten.")
