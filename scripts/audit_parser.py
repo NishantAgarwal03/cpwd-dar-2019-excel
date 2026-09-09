@@ -20,13 +20,24 @@ _ITEM_CODE_RE = re.compile(r'^\d+\.\d+')          # e.g. "2.2.1", "3.1", "4.1.2a
 _RESOURCE_CODE_RE = re.compile(r'^\d{4}$')        # exactly 4 digits
 
 # Matches "Details of cost for/of/per X unit" and bare "for X unit"
+# Units are ordered longest→shortest so "sqm"/"cum" match before bare "m";
+# \b ensures "mm" does not match as "m", "sets" matches via set[s]? etc.
+# "metres?" aliases for "m" (PDF spells out the word in several places).
 _BASIS_RE = re.compile(
-    r'(?:for|per|of)\s+([\d,.]+)\s*(sqm|cum|nos|kg|tonne|m|rmt|quintal|litre|day|trip|set|pair)',
+    r'(?:for|per|of)\s+([\d,.]+)\s*'
+    r'(sqm|cum|cudm|nos|kg|tonne|rmt|quintal|litre|day|trip|sets?|pairs?|metres?|meters?|m)\b',
     re.IGNORECASE
 )
 # "Cost of 23 tonne" rows that carry the aggregate-to-unit conversion
 _COST_OF_RE = re.compile(
-    r'cost\s+of\s+([\d,.]+)\s*(sqm|cum|nos|kg|tonne|m|rmt|quintal|litre|day|trip|set|pair)',
+    r'cost\s+of\s+([\d,.]+)\s*'
+    r'(sqm|cum|cudm|nos|kg|tonne|rmt|quintal|litre|day|trip|sets?|pairs?|metres?|meters?|m)\b',
+    re.IGNORECASE
+)
+# "Cost for N sqm/sets/metre" in plain-text rows (col_b blank) — tie-bolt / area-analysis style
+_COST_FOR_RE = re.compile(
+    r'cost\s+for\s+([\d,.]+)\s*'
+    r'(sqm|cum|cudm|nos?|kg|tonne|rmt|quintal|litre|day|trip|sets?|pairs?|each|metres?|meters?|m)\b',
     re.IGNORECASE
 )
 
@@ -58,11 +69,37 @@ def _is_resource(col_b, col_e, col_f, col_g):
 
 
 def _extract_basis(text):
-    """Return (basis_qty, basis_unit) from a 'Details of cost for X cum' string."""
+    """Return (basis_qty, basis_unit) from a 'Details of cost for X cum' string.
+
+    Unit normalisation:
+      - cudm  → converted to cum  (÷1000); Say rate in PDF is per cum
+      - quintal → converted to kg (×100);  Say rate in PDF is per kg
+      - sets / pairs → normalised to singular
+    """
     m = _BASIS_RE.search(text)
     if m:
-        qty = _to_float(m.group(1))
+        qty  = _to_float(m.group(1))
         unit = m.group(2).lower()
+
+        # Plural / alias normalisation
+        if unit in ('sets',):
+            unit = 'set'
+        if unit in ('pairs',):
+            unit = 'pair'
+        if unit in ('nos',):
+            unit = 'no'
+        if unit in ('metre', 'metres', 'meter', 'meters'):
+            unit = 'm'
+
+        # cudm (cubic decimetre) → express basis in cum for per-cum Say rates
+        # 1 cum = 1000 cudm  →  basis_qty_cum = basis_qty_cudm / 1000
+        if unit == 'cudm':
+            return (qty or 1.0) / 1000.0, 'cum'
+
+        # quintal analysis but Say is published per kg (1 quintal = 100 kg)
+        if unit == 'quintal':
+            return (qty or 1.0) * 100.0, 'kg'
+
         return qty, unit
     return 1.0, 'unit'
 
@@ -183,7 +220,10 @@ def parse_sheet(ws, sheet_name):
         if _is_item_header(col_b):
             # Cross-reference lines look like item codes but description says
             # "Rate as per item no. X of SH: …" — not a new item.
-            if re.match(r'rate\s+as\s+per', col_c, re.IGNORECASE):
+            # Use re.search (not match) because some rows phrase it as
+            # "Cement mortar 1:3 ... (Rate as per item No 3.8)" — the
+            # phrase appears mid-string, not at the start.
+            if re.search(r'rate\s+as\s+per', col_c, re.IGNORECASE):
                 if current is not None:
                     current['has_cross_ref'] = True
                 continue
@@ -230,12 +270,23 @@ def parse_sheet(ws, sheet_name):
         # ---- "Cost of X tonne" rows → update basis qty ---------------
         m_cost = _COST_OF_RE.search(rtext)
         if m_cost and col_b.lower().startswith('cost of'):
-            qty_v = _to_float(m_cost.group(1))
-            unit_v = m_cost.group(2).lower()
-            if qty_v and qty_v > 1:
-                current['basis_qty']  = qty_v
-                current['basis_unit'] = unit_v
+            # Apply same unit normalisation as _extract_basis
+            bq, bu = _extract_basis(rtext)   # reuse normalisation (cudm→cum, quintal→kg)
+            if bq and bq != 1.0:
+                current['basis_qty']  = bq
+                current['basis_unit'] = bu
             continue
+
+        # ---- "Cost for N sets" in col_c (col_b blank) ----------------
+        # e.g. "Cost for 24 sets  3379.63" — tie-bolt style aggregate row
+        if not col_b and col_c:
+            m_cf = _COST_FOR_RE.search(col_c)
+            if m_cf:
+                qty_v = _to_float(m_cf.group(1))
+                if qty_v and qty_v > 1:
+                    current['basis_qty']  = qty_v
+                    current['basis_unit'] = m_cf.group(2).lower().rstrip('s')  # singular
+            # Don't continue — might still be a markup row
 
         # ---- Resource row --------------------------------------------
         if _is_resource(col_b, col_e, col_f, col_g):

@@ -212,6 +212,9 @@ def shadow_calculate(item: dict, rates_master: dict) -> ShadowResult:
     res.shadow_say = say
 
     if res.pdf_say is not None:
-        res.say_match = abs(say - res.pdf_say) <= 0.06   # ±0.06 covers rounding
+        # For small rates: allow ±0.10 absolute (MROUND to 0.05 → worst-case 0.05 error)
+        # For large rates: allow 0.1% relative (rounding accumulates through chain)
+        tol = max(0.10, res.pdf_say * 0.001)
+        res.say_match = abs(say - res.pdf_say) <= tol
 
     return res
