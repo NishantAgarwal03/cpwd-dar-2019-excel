@@ -189,13 +189,19 @@ def shadow_calculate(item: dict, rates_master: dict) -> ShadowResult:
     if res.pdf_W is not None:
         res.W_match = abs(W - res.pdf_W) < 0.10
 
-    if res.has_markup:
+    markup_type = item.get('markup_type', 'full' if res.has_markup else 'none')
+
+    if markup_type == 'full':
+        # Standard CPWD chain: W → +1% Water → +14.05% GST → +15% CPOH → +1% Cess
         X     = _r2(W + _r2(W * FACTOR_WATER))
         Y     = _r2(X + _r2(X * FACTOR_GST))
         Z     = _r2(Y + _r2(Y * FACTOR_CPOH))
         final = _r2(Z + _r2(Z * FACTOR_CESS))
+    elif markup_type == 'cpoh_only':
+        # Carriage / labour-only items: W → +15% CPOH only (no Water, GST, Cess)
+        final = _r2(W + _r2(W * FACTOR_CPOH))
     else:
-        # Component item — no chain
+        # Component item (mortars, etc.) — raw sum only
         final = W
 
     # Divide by basis quantity

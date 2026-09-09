@@ -18,8 +18,15 @@ import openpyxl
 
 _ITEM_CODE_RE = re.compile(r'^\d+\.\d+')          # e.g. "2.2.1", "3.1", "4.1.2a"
 _RESOURCE_CODE_RE = re.compile(r'^\d{4}$')        # exactly 4 digits
+
+# Matches "Details of cost for/of/per X unit" and bare "for X unit"
 _BASIS_RE = re.compile(
-    r'(?:for|per)\s+([\d,.]+)\s*(sqm|cum|nos|kg|tonne|m|rmt|quintal|litre|day|trip|set|pair)',
+    r'(?:for|per|of)\s+([\d,.]+)\s*(sqm|cum|nos|kg|tonne|m|rmt|quintal|litre|day|trip|set|pair)',
+    re.IGNORECASE
+)
+# "Cost of 23 tonne" rows that carry the aggregate-to-unit conversion
+_COST_OF_RE = re.compile(
+    r'cost\s+of\s+([\d,.]+)\s*(sqm|cum|nos|kg|tonne|m|rmt|quintal|litre|day|trip|set|pair)',
     re.IGNORECASE
 )
 
@@ -105,15 +112,50 @@ def parse_sheet(ws, sheet_name):
     Each dict:
       sheet, item_code, description, basis_qty, basis_unit,
       resources: [{code, desc, qty, pdf_rate, pdf_amount}],
-      has_markup, W, say_rate
+      markup_type: 'full' | 'cpoh_only' | 'none'
+      has_markup (bool, backward-compat = markup_type != 'none'),
+      W, say_rate
     """
     items = []
-    current = None
-    header_text_buf = []   # multi-row description accumulation
+    current      = None
+    parent_desc  = ''    # description of the nearest parent item code (e.g. "1.4")
+    header_text_buf = []
 
     def _finalise(item):
         if item and item.get('say_rate') is not None:
+            # Resolve markup_type from what we saw
+            if item.get('_saw_water') and item.get('_saw_gst'):
+                item['markup_type'] = 'full'
+            elif item.get('_saw_cpoh') and not item.get('_saw_water'):
+                item['markup_type'] = 'cpoh_only'
+            else:
+                item['markup_type'] = 'none'
+            item['has_markup'] = item['markup_type'] != 'none'
+            # Clean internal flags
+            for k in ('_saw_water', '_saw_gst', '_saw_cpoh', '_saw_cess'):
+                item.pop(k, None)
             items.append(item)
+
+    def _new_item(code, desc, parent):
+        """Create a fresh item dict, prepending parent description if present."""
+        full_desc = f'{parent}: {desc}' if parent and desc and parent not in desc else desc
+        return {
+            'sheet':          sheet_name,
+            'item_code':      code,
+            'description':    full_desc.strip(),
+            'basis_qty':      1.0,
+            'basis_unit':     'unit',
+            'resources':      [],
+            'has_cross_ref':  False,
+            'markup_type':    'none',
+            'has_markup':     False,
+            '_saw_water':     False,
+            '_saw_gst':       False,
+            '_saw_cpoh':      False,
+            '_saw_cess':      False,
+            'W':              None,
+            'say_rate':       None,
+        }
 
     rows = list(ws.iter_rows(values_only=True))
 
@@ -126,6 +168,7 @@ def parse_sheet(ws, sheet_name):
         col_e = row[4]
         col_f = row[5]
         col_g = row[6]
+        rtext = _row_text(row)
 
         # ---- Say row → closes an item --------------------------------
         say = _extract_say(col_b, row)
@@ -138,45 +181,60 @@ def parse_sheet(ws, sheet_name):
 
         # ---- Item header row -----------------------------------------
         if _is_item_header(col_b):
-            # Cross-reference lines look like item codes but their description
-            # says "Rate as per item no. X of SH: …" — they are NOT new items;
-            # they are resource references inside the current item.
+            # Cross-reference lines look like item codes but description says
+            # "Rate as per item no. X of SH: …" — not a new item.
             if re.match(r'rate\s+as\s+per', col_c, re.IGNORECASE):
-                # Treat as a cross-reference resource (mark with prefix 'XREF')
                 if current is not None:
                     current['has_cross_ref'] = True
                 continue
 
-            _finalise(current)
-            current = {
-                'sheet': sheet_name,
-                'item_code': col_b,
-                'description': col_c,
-                'basis_qty': 1.0,
-                'basis_unit': 'unit',
-                'resources': [],
-                'has_markup': False,
-                'has_cross_ref': False,
-                'W': None,
-                'say_rate': None,
-            }
-            header_text_buf = [col_c]
-            # Try to extract basis from this row's text
-            basis_q, basis_u = _extract_basis(_row_text(row))
-            current['basis_qty'] = basis_q
-            current['basis_unit'] = basis_u
+            # Determine depth: parent item has fewer dot-segments
+            # e.g. "1.4" is parent of "1.4.1"
+            depth = col_b.count('.')
+            if depth == 1:
+                # This is a parent-level item (e.g. "1.4", "2.10")
+                # Save its description for child items; only open a new current
+                # if it has resources of its own (usually it doesn't).
+                _finalise(current)
+                current = None
+                parent_desc = col_c
+                # Start a new current anyway; if it gets no resources it won't finalise
+                current = _new_item(col_b, col_c, '')
+                basis_q, basis_u = _extract_basis(rtext)
+                current['basis_qty'] = basis_q
+                current['basis_unit'] = basis_u
+            else:
+                # Child item (e.g. "1.4.1", "2.10.1.1")
+                _finalise(current)
+                current = _new_item(col_b, col_c, parent_desc)
+                basis_q, basis_u = _extract_basis(rtext)
+                current['basis_qty'] = basis_q
+                current['basis_unit'] = basis_u
             continue
 
         if current is None:
             continue
 
-        # ---- Accumulate basis qty from continuation rows -------------
-        rtext = _row_text(row)
-        if 'details of cost' in rtext.lower() or 'details of rate' in rtext.lower():
+        # ---- Accumulate basis qty from "Details of cost for/of X unit" rows ---
+        rlow = rtext.lower()
+        if 'details of cost' in rlow or 'details of rate' in rlow:
             bq, bu = _extract_basis(rtext)
             if bq != 1.0:
                 current['basis_qty'] = bq
                 current['basis_unit'] = bu
+            # Also accumulate into description if it adds context
+            if col_c and col_c not in current['description']:
+                current['description'] = (current['description'] + ' — ' + col_c).strip(' — ')
+            continue
+
+        # ---- "Cost of X tonne" rows → update basis qty ---------------
+        m_cost = _COST_OF_RE.search(rtext)
+        if m_cost and col_b.lower().startswith('cost of'):
+            qty_v = _to_float(m_cost.group(1))
+            unit_v = m_cost.group(2).lower()
+            if qty_v and qty_v > 1:
+                current['basis_qty']  = qty_v
+                current['basis_unit'] = unit_v
             continue
 
         # ---- Resource row --------------------------------------------
@@ -184,7 +242,6 @@ def parse_sheet(ws, sheet_name):
             qty    = _to_float(col_e)
             rate   = _to_float(col_f)
             amount = _to_float(col_g)
-            # If amount missing but qty+rate present, compute it
             if amount is None and qty is not None and rate is not None:
                 amount = round(qty * rate, 2)
             current['resources'].append({
@@ -202,9 +259,15 @@ def parse_sheet(ws, sheet_name):
             current['W'] = w_val
             continue
 
-        # ---- Markup presence ----------------------------------------
-        if re.search(r'water charges|GST|CPOH|Cess', rtext, re.IGNORECASE):
-            current['has_markup'] = True
+        # ---- Markup type detection ----------------------------------
+        if re.search(r'water\s+charges', rtext, re.IGNORECASE):
+            current['_saw_water'] = True
+        if re.search(r'\bGST\b', rtext, re.IGNORECASE):
+            current['_saw_gst'] = True
+        if re.search(r'\bCPOH\b', rtext, re.IGNORECASE):
+            current['_saw_cpoh'] = True
+        if re.search(r'\bCess\b', rtext, re.IGNORECASE):
+            current['_saw_cess'] = True
 
     _finalise(current)
     return items
