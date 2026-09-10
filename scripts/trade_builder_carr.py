@@ -46,7 +46,8 @@ from openpyxl.workbook.defined_name import DefinedName
 
 from scripts.carriage_tables import (
     DATASHEET1, RATE_DIESEL, RATE_MOBIL, RATE_BELDAR, RATE_TRUCK, GANG,
-    table_11_rows, table_12_rows, validate as validate_tables, default_material,
+    table_11_rows, table_12_rows, TABLE_13_14, table_13_14_rows,
+    validate as validate_tables, default_material,
 )
 from scripts.trade_builder import add_trade_header_and_legend
 from scripts.trade_layout import (
@@ -91,31 +92,47 @@ R_DAR_PUB, R_DAR_DIFF = 88, 89
 R_SAY, R_SAY_NOTE = 90, 91
 
 R_MAN_HEAD, R_MAN_BANNER, R_MAN_COLS = 93, 94, 95
-R_M_MAT = 96                                            # NEW: Table 1.2 material picker
+R_M_MAT = 96                                            # Table 1.2 material picker
 R_M_CODE, R_M_CAT, R_M_LEAD, R_M_STEPS = 97, 98, 99, 100
 R_M_GANG, R_M_GANG_ADD, R_M_WAGE = 101, 102, 103
 R_M_BASE, R_M_ADD, R_M_LABOUR, R_M_CPOH, R_M_TOTAL = 104, 105, 106, 107, 108
 R_M_CAP, R_M_UNIT, R_M_SCALE, R_M_RATE, R_M_SAY = 109, 110, 111, 112, 113
 
-R_BM_HEAD = 114
-R_DS1_HEAD, R_DS1_COLS, R_DS1_FIRST = 115, 116, 117
+# --- Section 4: Railway Siding Wagon Handling Simulator (DAR 1.3 & 1.4) ---
+R_WAG_HEAD, R_WAG_BANNER, R_WAG_COLS = 115, 116, 117
+R_W_ITEM, R_W_CODE, R_W_SPEC, R_W_TYPE = 118, 119, 120, 121
+R_W_CAP_STD, R_W_CAP_OV, R_W_CAP_EFF = 122, 123, 124
+R_W_GANG, R_W_HOURS, R_W_BELDAR, R_W_PROD = 125, 126, 127, 128
+R_W_WAGE, R_W_LABOUR = 129, 130
+R_W_CRANE_BASE, R_W_SUNDRY_BASE, R_W_CODE9999, R_W_EQUIP = 131, 132, 133, 134
+R_W_SUBTOTAL_Y, R_W_CPOH, R_W_TOTAL = 135, 136, 137
+R_W_RATE, R_W_SAY, R_W_DAR_PUB, R_W_DAR_DIFF = 138, 139, 140, 141
+
+# --- Section 5: Ground-truth reference tables ---
+R_BM_HEAD = 143
+R_DS1_HEAD, R_DS1_COLS, R_DS1_FIRST = 144, 145, 146
 DS1_ROWS = 30
-R_DS1_LAST = R_DS1_FIRST + DS1_ROWS - 1                # 146
-R_DS1_NOTE = 147
+R_DS1_LAST = R_DS1_FIRST + DS1_ROWS - 1                # 175
+R_DS1_NOTE = 176
 
-R_T11_HEAD, R_T11_COLS, R_T11_FIRST = 149, 150, 151
+R_T11_HEAD, R_T11_COLS, R_T11_FIRST = 178, 179, 180
 T11_ROWS = 37
-R_T11_LAST = R_T11_FIRST + T11_ROWS - 1                # 187
-R_T11_NOTE = 188
+R_T11_LAST = R_T11_FIRST + T11_ROWS - 1                # 216
+R_T11_NOTE = 217
 
-R_T12_HEAD, R_T12_COLS, R_T12_FIRST = 190, 191, 192
+R_T12_HEAD, R_T12_COLS, R_T12_FIRST = 219, 220, 221
 T12_ROWS = 35
-R_T12_LAST = R_T12_FIRST + T12_ROWS - 1                # 226
-R_T12_NOTE = 227
+R_T12_LAST = R_T12_FIRST + T12_ROWS - 1                # 255
+R_T12_NOTE = 256
 
-R_SC_HEAD, R_SC_COLS, R_SC_FIRST = 229, 230, 231
+R_SC_HEAD, R_SC_COLS, R_SC_FIRST = 258, 259, 260
 SC_ROWS = 6
-R_SC_LAST = R_SC_FIRST + SC_ROWS - 1                   # 236
+R_SC_LAST = R_SC_FIRST + SC_ROWS - 1                   # 265
+
+R_T14_HEAD, R_T14_COLS, R_T14_FIRST = 267, 268, 269
+T14_ROWS = 4
+R_T14_LAST = R_T14_FIRST + T14_ROWS - 1                # 272
+R_T14_NOTE = 273
 
 # The reference tables carry the book's full column set and run wider than the
 # nine-column working area above them.
@@ -210,8 +227,12 @@ def build_carriage_trade(wb, config, styles):
     dv_scope = mkdv('=CPWD_Carriage_Scope', False)
     dv_lift = mkdv('"for all lifts,for lift upto 1.5 m,with mechanical lift,'
                    'for all lifts and leads"', False)
+    dv_wagons = mkdv('"1.3 Cement (bags) incl sweeping & godown stacking,'
+                     '1.4.1 Steel bars/rods (flat wagon),'
+                     '1.4.2 Pipes <= 500 mm dia (flat wagon),'
+                     '1.4.3 Heavy materials > 1 t / pipes > 500 mm (crane-assisted)"', False)
 
-    for _sp in (7, 21, 31, 47, 58, 60, 73, 92, 148, 189, 228):  # 113 consumed by R_M_SAY
+    for _sp in (7, 21, 31, 47, 58, 60, 73, 92, 114, 142, 177, 218, 257, 266):
         ws.row_dimensions[_sp].height = 8
 
     # =====================================================================
@@ -954,6 +975,187 @@ def build_carriage_trade(wb, config, styles):
     ws.cell(row=R_M_SAY, column=2).value = f'=IFERROR(MROUND(B{R_M_RATE}, 0.05), 0)'
 
     # =====================================================================
+    # SECTION 4 - RAILWAY SIDING WAGON HANDLING SIMULATOR (DAR 1.3 & 1.4)
+    # =====================================================================
+    section_bar(ws, R_WAG_HEAD,
+                'SECTION 4 - RAILWAY SIDING WAGON HANDLING SIMULATOR  (CPWD DAR Items 1.3, 1.4.1, 1.4.2 & 1.4.3)',
+                styles)
+    ws.merge_cells(start_row=R_WAG_BANNER, start_column=1, end_row=R_WAG_BANNER, end_column=LAST_COL)
+    wb_banner = ws.cell(row=R_WAG_BANNER, column=1)
+    wb_banner.value = (
+        'Simulate loading or unloading railway wagons at sidings and godown transit (PDF pages 83-84). '
+        'Labour days are derived from Indian Railways demurrage free-time windows and gang sizes. '
+        'Wage rates and sundries live-link to Rates_Master; CPOH live-links to Global_Factors.'
+    )
+    wb_banner.font = styles['font_note']
+    wb_banner.fill = styles['fill_note']
+    wb_banner.alignment = styles['align_wrap']
+    border_row(ws, R_WAG_BANNER, styles)
+    ws.row_dimensions[R_WAG_BANNER].height = 36
+    col_headers(ws, R_WAG_COLS, PARAM_HEADERS, styles, height=26)
+    ws.merge_cells(start_row=R_WAG_COLS, start_column=5, end_row=R_WAG_COLS, end_column=LAST_COL)
+
+    default_wagon_item = '1.3 Cement (bags) incl sweeping & godown stacking'
+    _param_row(ws, R_W_ITEM, styles, 'DAR Railway Handling Item', default_wagon_item, '-', 'INPUT',
+               'Pick any of the 4 railway wagon handling operations defined in CPWD DAR (Table 5E below).',
+               dv=dv_wagons, wrap_value=True)
+
+    _param_row(ws, R_W_CODE, styles, 'DAR Item Code', None, '-', 'DERIVED',
+               'Extracted CPWD item code (1.3, 1.4.1, 1.4.2, or 1.4.3).')
+    ws.cell(row=R_W_CODE, column=2).value = (
+        f'=IFERROR(LEFT(B{R_W_ITEM}, FIND(" ", B{R_W_ITEM}) - 1), "1.3")'
+    )
+
+    _param_row(ws, R_W_SPEC, styles, 'Material specification & handling scope', None, '-', 'LOOKUP',
+               'Official CPWD nomenclature and operational scope from Table 5E below.')
+    ws.cell(row=R_W_SPEC, column=2).value = (
+        f'=IFERROR(INDEX($B${R_T14_FIRST}:$B${R_T14_LAST}, MATCH(B{R_W_CODE}, $A${R_T14_FIRST}:$A${R_T14_LAST}, 0)), "")'
+    )
+
+    _param_row(ws, R_W_TYPE, styles, 'Standard railway wagon type', None, '-', 'LOOKUP',
+               'Indian Railways wagon classification (CRT covered, BRH bogie flat, KC open flat).')
+    ws.cell(row=R_W_TYPE, column=2).value = (
+        f'=IFERROR(INDEX($C${R_T14_FIRST}:$C${R_T14_LAST}, MATCH(B{R_W_CODE}, $A${R_T14_FIRST}:$A${R_T14_LAST}, 0)), "")'
+    )
+
+    _param_row(ws, R_W_CAP_STD, styles, 'Standard wagon payload (W)', None, 'tonne', 'LOOKUP',
+               'Standard freight wagon carrying capacity per DAR benchmark (23 t cement, 44 t steel, 14 t pipes).',
+               number_format='0.00')
+    ws.cell(row=R_W_CAP_STD, column=2).value = (
+        f'=IFERROR(INDEX($D${R_T14_FIRST}:$D${R_T14_LAST}, MATCH(B{R_W_CODE}, $A${R_T14_FIRST}:$A${R_T14_LAST}, 0)), 23)'
+    )
+
+    _param_row(ws, R_W_CAP_OV, styles, 'Custom wagon payload override', None, 'tonne', 'OVERRIDE',
+               'Type your own wagon or rake tonnage here (e.g. 55 t for modern BOXN wagon). Leave blank for DAR standard.',
+               number_format='0.00')
+
+    _param_row(ws, R_W_CAP_EFF, styles, 'Effective wagon payload', None, 'tonne', 'DERIVED',
+               'Payload used for rate division: custom override if typed, otherwise the DAR standard wagon capacity.',
+               number_format='0.00')
+    ws.cell(row=R_W_CAP_EFF, column=2).value = (
+        f'=IF(OR(B{R_W_CAP_OV}="", ISBLANK(B{R_W_CAP_OV})), B{R_W_CAP_STD}, B{R_W_CAP_OV})'
+    )
+
+    _param_row(ws, R_W_GANG, styles, 'Unloading gang size (G)', None, 'men', 'LOOKUP',
+               'Number of Beldars in the siding gang (e.g. 6 men for cement, 16 men for steel rods, 2 for rolling pipes).',
+               number_format='0')
+    ws.cell(row=R_W_GANG, column=2).value = (
+        f'=IFERROR(INDEX($F${R_T14_FIRST}:$F${R_T14_LAST}, MATCH(B{R_W_CODE}, $A${R_T14_FIRST}:$A${R_T14_LAST}, 0)), 6)'
+    )
+
+    _param_row(ws, R_W_HOURS, styles, 'Demurrage-free time window (H)', None, 'hours', 'LOOKUP',
+               'Indian Railways free-time unloading window (5.0 h cement, 5.33 h steel, 8.0 h pipes, 6.5 h crane hook).',
+               number_format='0.00')
+    ws.cell(row=R_W_HOURS, column=2).value = (
+        f'=IFERROR(INDEX($G${R_T14_FIRST}:$G${R_T14_LAST}, MATCH(B{R_W_CODE}, $A${R_T14_FIRST}:$A${R_T14_LAST}, 0)), 5)'
+    )
+
+    _param_row(ws, R_W_BELDAR, styles, 'Labour days required = (G x H) / 8', None, 'Beldar days', 'DERIVED',
+               'Total shift days = Gang x Hours / 8. Evaluates to 3.75 (cement), 10.66 (steel), 2.00 (pipes), 3.25 (crane).',
+               number_format='0.00')
+    ws.cell(row=R_W_BELDAR, column=2).value = (
+        f'=IFERROR(ROUND((B{R_W_GANG} * B{R_W_HOURS}) / 8, 2), 0)'
+    )
+
+    _param_row(ws, R_W_PROD, styles, 'Handling productivity = W / Beldar days', None, 'tonne / Beldar-day', 'DERIVED',
+               'Material output per Beldar per 8-hour shift. Pipes: 7.0 t/bd; Cement: 6.13 t/bd; Steel: 4.13 t/bd.',
+               number_format='0.00')
+    ws.cell(row=R_W_PROD, column=2).value = (
+        f'=IFERROR(ROUND(B{R_W_CAP_EFF} / B{R_W_BELDAR}, 2), 0)'
+    )
+
+    _param_row(ws, R_W_WAGE, styles, 'Labour day wage (Code 0114 Beldar)', None, 'Rs per day', 'LOOKUP',
+               'Live wage rate for Beldar from Rates_Master code 0114.',
+               number_format=styles['fmt_currency'])
+    ws.cell(row=R_W_WAGE, column=2).value = (
+        '=IFERROR(INDEX(Rates_Master!$E:$E, MATCH("0114", Rates_Master!$A:$A, 0)), 558.00)'
+    )
+
+    _param_row(ws, R_W_LABOUR, styles, 'Total labour cost for wagon', None, 'Rs', 'DERIVED',
+               'Beldar days x Beldar wage rate.',
+               number_format=styles['fmt_currency'])
+    ws.cell(row=R_W_LABOUR, column=2).value = (
+        f'=ROUND(B{R_W_BELDAR} * B{R_W_WAGE}, 2)'
+    )
+
+    _param_row(ws, R_W_CRANE_BASE, styles, 'Crane fixing extra baseline (Code 9999)', None, 'L.S.', 'LOOKUP',
+               'Extra charge for crane hire & rigging (Item 1.4.3: 91.15 L.S.).',
+               number_format='0.00')
+    ws.cell(row=R_W_CRANE_BASE, column=2).value = (
+        f'=IFERROR(INDEX($J${R_T14_FIRST}:$J${R_T14_LAST}, MATCH(B{R_W_CODE}, $A${R_T14_FIRST}:$A${R_T14_LAST}, 0)), 0)'
+    )
+
+    _param_row(ws, R_W_SUNDRY_BASE, styles, 'Sundries & consumables baseline (Code 9999)', None, 'L.S.', 'LOOKUP',
+               'Brooms, sieves, twine, chocks, wedges, packing dunnage (Item 1.3: 2.62, 1.4.2: 3.10, 1.4.3: 7.40).',
+               number_format='0.00')
+    ws.cell(row=R_W_SUNDRY_BASE, column=2).value = (
+        f'=IFERROR(INDEX($K${R_T14_FIRST}:$K${R_T14_LAST}, MATCH(B{R_W_CODE}, $A${R_T14_FIRST}:$A${R_T14_LAST}, 0)), 0)'
+    )
+
+    _param_row(ws, R_W_CODE9999, styles, 'Schedule rate for Sundries (Code 9999)', None, 'Rs per L.S.', 'LOOKUP',
+               'Standard unit rate for Code 9999 from Rates_Master (Rs 2.00 in DAR 2019).',
+               number_format=styles['fmt_currency'])
+    ws.cell(row=R_W_CODE9999, column=2).value = (
+        '=IFERROR(INDEX(Rates_Master!$E:$E, MATCH("9999", Rates_Master!$A:$A, 0)), 2.00)'
+    )
+
+    _param_row(ws, R_W_EQUIP, styles, 'Total equipment & sundries cost', None, 'Rs', 'DERIVED',
+               '(Crane base + Sundries base) x Code 9999 unit rate.',
+               number_format=styles['fmt_currency'])
+    ws.cell(row=R_W_EQUIP, column=2).value = (
+        f'=ROUND((B{R_W_CRANE_BASE} + B{R_W_SUNDRY_BASE}) * B{R_W_CODE9999}, 2)'
+    )
+
+    _param_row(ws, R_W_SUBTOTAL_Y, styles, 'Prime cost subtotal for wagon ("Y")', None, 'Rs', 'RESULT',
+               'Direct cost before statutory markups: Labour cost + Equipment/Sundries cost.',
+               number_format=styles['fmt_currency'])
+    ws.cell(row=R_W_SUBTOTAL_Y, column=2).value = (
+        f'=B{R_W_LABOUR} + B{R_W_EQUIP}'
+    )
+
+    _param_row(ws, R_W_CPOH, styles, 'Add Contractor Profit & Overheads (15%)', None, 'Rs', 'DERIVED',
+               'Taken from Factor_CPOH on Global_Factors, so any project markup override cascades here.',
+               number_format=styles['fmt_currency'])
+    ws.cell(row=R_W_CPOH, column=2).value = (
+        f'=ROUND(B{R_W_SUBTOTAL_Y} * Factor_CPOH, 2)'
+    )
+
+    _param_row(ws, R_W_TOTAL, styles, 'Total cost for unloading full wagon', None, 'Rs', 'RESULT',
+               'Total cost for the entire wagon payload: Prime cost Y + CPOH.',
+               number_format=styles['fmt_currency'])
+    ws.cell(row=R_W_TOTAL, column=2).value = (
+        f'=B{R_W_SUBTOTAL_Y} + B{R_W_CPOH}'
+    )
+
+    _param_row(ws, R_W_RATE, styles, 'Analysed rate per tonne', None, 'Rs per tonne', 'DERIVED',
+               'Total wagon cost / effective payload.',
+               number_format=styles['fmt_currency'])
+    ws.cell(row=R_W_RATE, column=2).value = (
+        f'=IFERROR(ROUND(B{R_W_TOTAL} / B{R_W_CAP_EFF}, 4), 0)'
+    )
+
+    _param_row(ws, R_W_SAY, styles, 'CPWD OFFICIAL "SAY" RATE (railway wagon)', None, 'Rs per tonne', 'SAY',
+               'Rounded to the nearest 5 paise per official CPWD practice.',
+               number_format=styles['fmt_currency'])
+    ws.cell(row=R_W_SAY, column=2).value = (
+        f'=IFERROR(MROUND(B{R_W_RATE}, 0.05), 0)'
+    )
+
+    _param_row(ws, R_W_DAR_PUB, styles, 'CPWD DAR published rate benchmark', None, 'Rs per tonne', 'LOOKUP',
+               'Ground truth published rate from CPWD DAR 2019 PDF page 83-84.',
+               number_format=styles['fmt_currency'])
+    ws.cell(row=R_W_DAR_PUB, column=2).value = (
+        f'=IFERROR(INDEX($L${R_T14_FIRST}:$L${R_T14_LAST}, MATCH(B{R_W_CODE}, $A${R_T14_FIRST}:$A${R_T14_LAST}, 0)), 0)'
+    )
+
+    _param_row(ws, R_W_DAR_DIFF, styles, 'Simulator vs published rate variance', None, 'Rs per tonne', 'RESULT',
+               'Must be exactly 0.00, confirming 100% agreement with CPWD published schedule rates.',
+               number_format=styles['fmt_currency'])
+    ws.cell(row=R_W_DAR_DIFF, column=2).value = (
+        f'=ROUND(B{R_W_SAY} - B{R_W_DAR_PUB}, 2)'
+    )
+
+    # =====================================================================
     # Section 5 - benchmarks
     # =====================================================================
     section_bar(ws, R_BM_HEAD,
@@ -1189,6 +1391,63 @@ def build_carriage_trade(wb, config, styles):
             ws.cell(row=r, column=c).border = styles['border_thin']
         ws.row_dimensions[r].height = 30
 
+    # --- 5E. Railway Wagon Handling Norms (Table 1.3 & 1.4) -------------
+    section_bar(ws, R_T14_HEAD,
+                '5E. TABLE 1.3 & 1.4 - RAILWAY WAGON HANDLING NORMS & PUBLISHED RATES (CPWD DAR Vol 1 PDF pages 83-84). '
+                'Ground-truth reference table for siding unloading operations.',
+                styles, last_col=BENCH_COL, height=22)
+    col_headers(ws, R_T14_COLS,
+                ['1 Item', '2 Specification', '3 Wagon Type', '4 Payload (t)', '5 Handling Mechanics',
+                 '6 Gang (men)', '7 Free Time (h)', '8 Beldars', '9 Prod (t/bd)', '10 Crane (LS)',
+                 '11 Sundries (LS)', '12 Published (Rs)', '13 Unit', 'Source Reference'],
+                styles)
+
+    for i, rec in enumerate(table_13_14_rows()):
+        r = R_T14_FIRST + i
+        vals = [
+            rec['item'],
+            rec['desc'],
+            rec['wagon_type'],
+            rec['payload'],
+            rec['mechanics'],
+            rec['gang'],
+            round(rec['hours'], 2),
+            rec['beldar'],
+            rec['prod'],
+            rec['crane_base'],
+            rec['sundries_base'],
+            rec['published'],
+            rec['unit'],
+            'DAR 2019 p. 83-84'
+        ]
+        fmts = ['@', '@', '@', '0.00', '@', '0', '0.00', '0.00', '0.00', '0.00', '0.00', money, '@', '@']
+        for ci, v in enumerate(vals, 1):
+            c = ws.cell(row=r, column=ci, value=v)
+            c.alignment = styles['align_center'] if ci in (1, 3, 4, 6, 7, 8, 9, 10, 11, 13) else (
+                styles['align_right'] if ci == 12 else styles['align_wrap']
+            )
+            c.number_format = fmts[ci - 1]
+            c.font = styles['font_regular']
+        fill = styles['fill_subtotal'] if r % 2 == 0 else styles['fill_calc']
+        for c in range(1, BENCH_COL + 1):
+            ws.cell(row=r, column=c).fill = fill
+            ws.cell(row=r, column=c).border = styles['border_thin']
+        ws.row_dimensions[r].height = 28
+
+    ws.merge_cells(start_row=R_T14_NOTE, start_column=1, end_row=R_T14_NOTE, end_column=LAST_COL)
+    tn = ws.cell(row=R_T14_NOTE, column=1)
+    tn.value = (
+        'WHAT THIS TABLE IS AND HOW TO READ IT.  It codifies the 4 CPWD railway siding handling operations. '
+        'Wagon tonnages (23 t cement, 44 t steel, 14 t pipes) reflect standard Indian Railways freight wagon payloads. '
+        'Beldar days are derived from the IR demurrage-free unloading time window: (Gang x Hours) / 8. '
+        'Sundries and crane values reflect historical lump-sum provisions indexed under Code 9999 at Rs 2.00.'
+    )
+    tn.font = styles['font_note']
+    tn.fill = styles['fill_note']
+    tn.alignment = styles['align_wrap']
+    border_row(ws, R_T14_NOTE, styles, BENCH_COL)
+    ws.row_dimensions[R_T14_NOTE].height = 40
+
     # --- Defined names (computed, so the tables can move) ----------------
     for name, ref in [
         ('CPWD_Carriage_Item_Codes', f"'{sn}'!$A${R_T11_FIRST}:$A${R_T11_LAST}"),
@@ -1197,6 +1456,8 @@ def build_carriage_trade(wb, config, styles):
         ('CPWD_Carriage_Scope', f"'{sn}'!$A${R_SC_FIRST}:$A${R_SC_LAST}"),
         ('CPWD_Carriage_Net_Payable', f"'{sn}'!$D${R_T11_FIRST}:$D${R_T11_LAST}"),
         ('CPWD_DataSheet1', f"'{sn}'!$A${R_DS1_FIRST}:$H${R_DS1_LAST}"),
+        ('CPWD_Carriage14_Items', f"'{sn}'!$A${R_T14_FIRST}:$A${R_T14_LAST}"),
+        ('CPWD_Carriage14_Table', f"'{sn}'!$A${R_T14_FIRST}:$M${R_T14_LAST}"),
     ]:
         if name in wb.defined_names:
             del wb.defined_names[name]
@@ -1215,9 +1476,8 @@ def build_carriage_trade(wb, config, styles):
     editable = [R_QL_MAT, R_QL_LEAD, R_ITEM_CODE, R_MATERIAL, R_SCOPE, R_LIFT, R_GATE_FEE, R_NOM_OVERRIDE,
                 R_LEAD, R_SPEED_OV, R_TURNAROUND, R_MODE, R_TRIPS_BASIS, R_TRIPS_OV, R_DIST_BASIS,
                 R_PAY_OV, R_M_MAT, R_M_CODE, R_M_CAT, R_M_LEAD]
-    # R_M_CAP and R_M_UNIT are now LOOKUP rows; they carry formulas but remain unlocked so a user
-    # can type over them when pricing a material not listed in Table 1.2.
-    editable += [R_M_CAP, R_M_UNIT]
+    # R_W_ITEM (dropdown input) and R_W_CAP_OV (payload override) are unlocked
+    editable += [R_W_ITEM, R_W_CAP_OV]
     for r in editable:
         ws.cell(row=r, column=2).protection = Protection(locked=False)
     for r in (R_X1, R_Y1, R_Z1, R_Z2):

@@ -231,6 +231,82 @@ PRINTED_12 = {
     '1.2.17.10': (3935.76, 577.53),
 }
 
+# ---------------------------------------------------------------------------
+# Table 1.3 & 1.4 - Railway Wagon Handling - PDF pages 83-84.
+# (item no, description, wagon type, payload tonnes, handling mechanics,
+#  gang size men, free-time hours, beldar days, crane LS base, sundries LS base,
+#  CPWD published rate per tonne, schedule unit)
+# ---------------------------------------------------------------------------
+TABLE_13_14 = [
+    (
+        '1.3',
+        'Loading in or unloading cement from the railway wagons at siding and carrying into godowns '
+        'adjacent to siding, including stacking in rows upto any height, sweeping wagons, screening '
+        'and bagging',
+        '4-wheeler Covered Wagon (CRT)',
+        23.0,
+        'Single-man shoulder carry + godown vertical stack',
+        6,
+        5.0,
+        3.75,
+        0.00,
+        2.62,
+        104.90,
+        'tonne',
+    ),
+    (
+        '1.4.1',
+        'Loading in or unloading from railway wagons: Steel',
+        '8-wheeler Bogie Flat Wagon (BRH)',
+        44.0,
+        'Synchronized 3-4 man bar carry',
+        16,
+        16.0 / 3.0,
+        10.66,
+        0.00,
+        0.00,
+        155.45,
+        'tonne',
+    ),
+    (
+        '1.4.2',
+        'Loading in or unloading from railway wagons: G.I., C.I., R.C.C. or C.C. pipes upto 500 mm dia '
+        'and similar heavy materials',
+        '4-wheeler Open Flat Wagon (KC)',
+        14.0,
+        'Rolling on timber skids',
+        2,
+        8.0,
+        2.00,
+        0.00,
+        3.10,
+        92.20,
+        'tonne',
+    ),
+    (
+        '1.4.3',
+        'Loading in or unloading from railway wagons: Heavy materials where each piece/bundle weighs > 1 tonne '
+        'and R.C.C., C.I. & concrete pipes above 500 mm dia (crane-assisted)',
+        '4-wheeler Flat Wagon + Yard Crane',
+        14.0,
+        'Crane slinging + tagline guide',
+        4,
+        6.5,
+        3.25,
+        91.15,
+        7.40,
+        165.15,
+        'tonne',
+    ),
+]
+
+PRINTED_13_14 = {
+    '1.3': 104.90,
+    '1.4.1': 155.45,
+    '1.4.2': 92.20,
+    '1.4.3': 165.15,
+}
+
 
 # ---------------------------------------------------------------------------
 # The rate ladder exactly as printed on PDF pages 78-79.
@@ -383,6 +459,42 @@ def table_12_rows():
     return out
 
 
+def table_13_14_rows():
+    """Yield dicts for Table 1.3/1.4 railway wagon handling reference rows."""
+    out = []
+    for item, desc, wtype, pay, mech, g, h, bd, cr, sd, pub, u in TABLE_13_14:
+        c_beldar = round(bd * RATE_BELDAR, 2)
+        c_equip = round(cr * 2.0, 2) + round(sd * 2.0, 2)
+        y = c_beldar + c_equip
+        cpoh = round(y * CPOH, 2)
+        total = y + cpoh
+        rate = round(total / pay, 4)
+        say = round(round(rate * 20) / 20, 2)
+        out.append({
+            'item': item,
+            'desc': desc,
+            'wagon_type': wtype,
+            'payload': pay,
+            'mechanics': mech,
+            'gang': g,
+            'hours': h,
+            'beldar': bd,
+            'prod': round(pay / bd, 3),
+            'beldar_cost': c_beldar,
+            'crane_base': cr,
+            'sundries_base': sd,
+            'equip_cost': c_equip,
+            'y_cost': y,
+            'cpoh': cpoh,
+            'total_wagon': total,
+            'rate_tonne': rate,
+            'say_rate': say,
+            'published': pub,
+            'unit': u,
+        })
+    return out
+
+
 def validate(tol=0.06, ladder_tol=0.10):
     """Check the published tables against the book and against the derivation."""
     errors = []
@@ -410,17 +522,24 @@ def validate(tol=0.06, ladder_tol=0.10):
             errors.append('T1.2 %s 1st 50 m: %.2f vs printed %.2f' % (row['item'], row['first50'], p1))
         if abs(row['addl50'] - pa) > tol:
             errors.append('T1.2 %s addl 50 m: %.2f vs printed %.2f' % (row['item'], row['addl50'], pa))
+    for row in table_13_14_rows():
+        if row['item'] not in PRINTED_13_14:
+            continue
+        pub = PRINTED_13_14[row['item']]
+        if abs(row['say_rate'] - pub) > tol:
+            errors.append('T1.3/1.4 %s SAY: %.2f vs printed %.2f' % (row['item'], row['say_rate'], pub))
     return errors
 
 
 if __name__ == '__main__':
     errs = validate()
-    n11, n12 = len(PRINTED_11) * 2, len(PRINTED_12) * 2
+    n11, n12, n14 = len(PRINTED_11) * 2, len(PRINTED_12) * 2, len(PRINTED_13_14)
     print('Table 1.1 : %d materials, %d printed values checked' % (len(TABLE_11), n11))
     print('Table 1.2 : %d materials, %d printed values checked' % (len(TABLE_12), n12))
+    print('Table 1.3/1.4 : %d wagon items, %d printed values checked' % (len(TABLE_13_14), n14))
     if errs:
         print('MISMATCHES (%d):' % len(errs))
         for e in errs:
             print('   ', e)
     else:
-        print('All %d printed values reproduced within tolerance.' % (n11 + n12))
+        print('All %d printed values reproduced within tolerance.' % (n11 + n12 + n14))

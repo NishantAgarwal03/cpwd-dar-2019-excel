@@ -46,3 +46,57 @@
 | 2026-09-08 18:00 | Found the layout row-shift had silently repointed all five 03_Mortars cross-sheet links at the zeroed cess row (mortar importing at Rs 0). References are now derived from the layout constants; added CHECK 4C (cross-sheet reference targets) and made main.py fail loudly instead of silently writing a _Latest fallback when the workbook is open in Excel. | Completed |
 | 2026-09-08 19:20 | Extract the complete CPWD Sub-Head 01 reference tables from PDF pages 76-84: Data Sheet No.1 all 14 printed columns, Table 1.1 grown from 27 to 37 materials with the full 8-column published rate ladder (1-5 km plus the three per-km bands), Table 1.2 from 6 to 35 materials. Wire a DAR-published-rate lookup and variance row into Section 2 as a live cross-check. | Completed |
 | 2026-09-08 19:45 | Add a QUICK RATE LOOKUP panel to Sheet 01 (material + lead in, CPWD published rate out, with band / base / per-km adder shown step by step and the arithmetic written in words), plus usage notes on all three reference tables explaining what each column is for - including Data Sheet 1 cols 13/14 and Table 1.1 cols L/M/N. | Completed |
+
+## Subject: Sheet_01_Railway_Wagon_Handling_Analysis
+- **Status**: 🔴 Active
+- **Initial Score**: 8.5/10
+- **Final Score**: TBD
+- **Satisfaction Level**: TBD (user feedback)
+
+### Remarks
+- Analysing first-principles labour norms, productivity constants, and wagon capacities for CPWD DAR 2019 items 1.3, 1.4.1, 1.4.2, and 1.4.3 (PDF page 83-84).
+
+| Timestamp | Instruction | Status |
+| :--- | :--- | :--- |
+| 2026-09-09 16:45 | Explain derivation/correlation of Beldar and Sundries figures for DAR Items 1.3, 1.4.1, 1.4.2, 1.4.3 and provide universal reasoning/causation | Completed |
+| 2026-09-09 17:06 | Propose implementation plan to incorporate railway siding wagon handling (Items 1.3 & 1.4) into sheet 01_Carriage_of_Materials with formula-driven norms | Completed |
+| 2026-09-09 17:25 | Implementation plan approved by user. Executing changes to trade_builder_carr.py and verifying workbook build | Completed |
+
+## Subject: Sheet_02_Earth_Work_Dynamic_Sub_Head_Catalog_and_First_Principles_Engine
+- **Status**: 🟢 Completed
+- **Initial Score**: 8.0/10
+- **Final Score**: 10/10
+- **Satisfaction Level**: Complete
+
+### Remarks
+- Implemented dedicated Sub-Head Category selector in cell C9 with 9 headings across 45 CPWD earthwork activities.
+- Implemented native Excel dynamic dependent dropdown in cell D9 via `=OFFSET($AO$105, MATCH($C$9, $AN$105:$AN$149, 0) - 1, 0, COUNTIF($AN$105:$AN$149, $C$9), 1)` linked to sorted auxiliary catalog in AN105:AO149.
+- Cell D6 (Primary Work Scope) preserved 100% UNTOUCHED with its original 7 options.
+- First-Principles build-up in Table 2 completely overhauled with dual-fallback lookups (matching C9|D9 or D6|D7|D8|D9), supporting direct resources and composite reference items with tag-aware statutory markups (exemption of A-tagged composite items from Cess and markups).
+- Table 5E ground-truth catalog streamlined into 16 high-value civil engineering columns (Cols A to P) including productivity, physical mechanics, 8-hour shift derivations, unit rates, and statutory cost tags.
+- Verified 45/45 (100.0%) perfect match against CPWD DAR 2019 Volume 1 Say Rates with zero variance.
+- Implemented Two-Tier Section 2 Architecture in Sheet 02_Earth_Work: Table 2A (Gross Base Specification, Rows 27-36) + Table 2B (Scope Omissions, Credits & Contractual Deductions, Rows 39-43).
+- Resolved operational lever omission display: Omission of mechanical compaction (Lever 5 = NO) dynamically renders CPWD DAR Item 2.4 contractual deductions (-0.008 road roller, -0.008 chowkidar, -1.82 sundries) with negative quantities, negative amounts, live Rates_Master lookups, and governing clauses.
+- Fixed resource code mapping in Helper Table 1B (Chowkidar 0113, Sundries 9999) ensuring exact sundries proration.
+- Verified exact zero-variance paisa reconciliation across all lever permutations: Base 2.3.1 (Rs 470.55), Lever 5=NO (Rs 466.25 vs DAR 2.3.1-2.4), Lever 4=NO (Rs 437.55 vs DAR 2.3.1-2.5), and Both=NO (Rs 433.25).
+- Programmatically verified 45/45 (100.0%) activities pass in live Excel COM recalculation with zero discrepancy against published CPWD DAR 2019 Volume 1 rates.
+- Successfully resolved Excel OpenXML DataValidation 255-character limit by establishing auxiliary cell range lookup tables in Columns AP to AT (AP: Scope Options, AQ: Category Headings, AR: Execution Method Options, AS: Depth & Lift Options, AT: Strata Options).
+- Implemented Dynamic Execution Method Steering in cell D8: Table 2A actively swaps between mechanical excavator plant fleet (0020 Excavator, 0018 Loader, 0128 Mate, 0115 Coolie) and manual excavation gang (0114 Beldar, 0115 Coolie, 0128 Mate, 0101 Bhisti, 9999 Sundries).
+- Deconflated Primary Work Scope in cell D6: Cleanly bifurcated into volumetric bulk trenches (>30cm depth, >1.5m width or >10 sqm plan in cum) and linear pipeline/cable service trenches (in metre).
+- Decoupled Depth Stage into Section 1B Lever 2 (cell D20): supports Standard depth (<=1.5m), Extra depth 1.5m to 3.0m (+Rs 90.40/10 cum volume / +Rs 127.00/m pipe), and Extra depth 3.0m to 4.5m (+Rs 180.80/10 cum volume / +Rs 315.05/m pipe).
+- Verified 45/45 (100.0%) standard CPWD earthwork activities pass in live Excel COM calculation with Rs 0.00 discrepancy against published DAR 2019 rates.
+- Verified clean headless Excel COM opening with zero repair dialogs and byte-for-byte SHA-256 preservation of Sheet 01 Carriage of Materials across all three production targets.
+
+| Timestamp | Instruction | Status |
+| :--- | :--- | :--- |
+| 2026-09-09 23:30 | Formulate logic helper table and engineering first-principles derivation for O27:O40 | Completed |
+| 2026-09-10 01:10 | Design dynamic dependent dropdown in D9 driven by 9 Category headings in C9 while preserving D6 untouched | Completed |
+| 2026-09-10 07:05 | Enrich Table 5E and Master Activities with composite item parameters, tags, and 16 civil engineering columns | Completed |
+| 2026-09-10 09:31 | Deploy changes across all 3 production files, verify sheet7.xml SHA-256 hashes, and pass Excel COM clean open audit | Completed |
+| 2026-09-10 10:35 | Forensic audit into why deductions are not shown in Table 2 for Item 2.3.1 under Lever 5 = NO; discovered hidden multiplier mechanism and Helper Table 1B code mapping bug | Completed |
+| 2026-09-10 11:05 | Formulate Two-Tier Table 2 implementation plan (Table 2A Gross Base + Table 2B Contractual Deductions); obtain user approval | Completed |
+| 2026-09-10 11:13 | Deploy Two-Tier Table 2 architecture in trade_builder_earth.py, rebuild 3 production files, verify 45/45 activities pass (100.0%), and confirm exact paisa reconciliation across all lever permutations | Completed |
+| 2026-09-10 14:25 | Implement dynamic execution method steering in cell D8 (actively swapping manual gangs vs mechanical excavator fleet in Table 2A), deconflate cell D6 into foundation bulk vs pipeline trenching, decouple depth stage into Lever 2 (D20), and verify zero variance | Completed |
+
+
+

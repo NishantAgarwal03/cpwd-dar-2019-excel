@@ -13,6 +13,7 @@ from scripts.infra_sheets import (
 )
 from scripts.trade_builder import build_standard_trade
 from scripts.trade_builder_carr import build_carriage_trade
+from scripts.trade_builder_earth import build_earthwork_trade
 from scripts.trade_configs import get_all_trade_configs
 from scripts.scope_inputs import merge_scope_metadata
 from scripts.cross_volume import build_resolved_cross_volume
@@ -52,10 +53,11 @@ def generate_full_workbook():
     # 01 Carriage
     build_carriage_trade(wb, configs['01_Carriage_of_Materials'], styles)
     
-    # 02 to 12 Standard Trade Builders (02 carries an empty MATERIAL block:
-    # Earth Work items in the DAR are labour-and-plant only.)
+    # 02 Earth Work (dedicated analytical simulator & first-principles engine)
+    build_earthwork_trade(wb, configs['02_Earth_Work'], styles)
+    
+    # 03 to 12 Standard Trade Builders
     trade_keys = [
-        '02_Earth_Work',
         '03_Mortars',
         '04_Concrete_Work',
         '05_RCC_Work',
@@ -71,27 +73,20 @@ def generate_full_workbook():
     for key in trade_keys:
         build_standard_trade(wb, configs[key], styles)
         
-    out_path = 'CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1.xltx'
-    print(f"Saving complete workbook to {out_path}...")
-    try:
-        wb.save(out_path)
-    except PermissionError:
-        alt_path = 'CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1_Latest.xltx'
-        wb.save(alt_path)  # noqa: E501
-        print("=" * 64)
-        print("BUILD DID NOT UPDATE THE MAIN WORKBOOK")
-        print(f"  '{out_path}' is open in Excel and could not be overwritten.")
-        print(f"  The new build was written to '{alt_path}' instead.")
-        print("  The file you have open is now STALE. Close Excel, delete the ~$ lock")
-        print("  file, re-run this script, and re-run scripts/verify_workbook.py.")
-        print("=" * 64)
-        elapsed = time.time() - t0
-        size = os.path.getsize(alt_path) / (1024 * 1024)
-        print(f"Wrote {len(wb.sheetnames)} sheets to the fallback in {elapsed:.2f}s ({size:.2f} MB)")
-        raise SystemExit(1)
-        
+    primary_out = 'CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1.xlsx'
+    print(f"Saving complete workbook to {primary_out}...")
+    wb.save(primary_out)
+    
+    import shutil
+    for copy_target in [
+        'CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1_Latest.xlsx',
+        'CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1.xltx'
+    ]:
+        print(f"Synchronizing byte-identical copy to {copy_target}...")
+        shutil.copyfile(primary_out, copy_target)
+
     elapsed = time.time() - t0
-    file_size_mb = os.path.getsize(out_path) / (1024 * 1024)
+    file_size_mb = os.path.getsize('CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1.xlsx') / (1024 * 1024)
     print(f"SUCCESS! Generated {len(wb.sheetnames)} sheets in {elapsed:.2f}s ({file_size_mb:.2f} MB)")
     print(f"Sheet names: {wb.sheetnames}")
     print("================================================================")

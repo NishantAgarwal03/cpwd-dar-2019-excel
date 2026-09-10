@@ -22,7 +22,8 @@ rather than against hard-coded formula strings.
 import openpyxl
 
 from scripts.carriage_tables import (
-    TABLE_11, TABLE_12, PRINTED_11, PRINTED_12, table_11_rows, table_12_rows,
+    TABLE_11, TABLE_12, TABLE_13_14, PRINTED_11, PRINTED_12, PRINTED_13_14,
+    table_11_rows, table_12_rows, table_13_14_rows,
     validate as validate_tables,
 )
 from scripts.trade_builder_carr import (
@@ -38,8 +39,13 @@ from scripts.trade_builder_carr import (
     R_W, R_X1, R_X, R_Y1, R_Y, R_Z1, R_Z, R_Z2,
     R_TOTAL, R_TRIP_OH, R_RATE_UNIT, R_RATE_SCHED, R_SAY, R_SAY_NOTE,
     R_M_STEPS, R_M_GANG, R_M_WAGE, R_M_CPOH, R_M_RATE, R_M_SAY,
+    R_WAG_HEAD, R_W_ITEM, R_W_CODE, R_W_SPEC, R_W_TYPE, R_W_CAP_STD, R_W_CAP_OV, R_W_CAP_EFF,
+    R_W_GANG, R_W_HOURS, R_W_BELDAR, R_W_PROD, R_W_WAGE, R_W_LABOUR,
+    R_W_CRANE_BASE, R_W_SUNDRY_BASE, R_W_CODE9999, R_W_EQUIP,
+    R_W_SUBTOTAL_Y, R_W_CPOH, R_W_TOTAL, R_W_RATE, R_W_SAY, R_W_DAR_PUB, R_W_DAR_DIFF,
     R_DS1_FIRST, R_DS1_LAST, R_DS1_COLS, R_DS1_NOTE, R_T11_FIRST, R_T11_LAST,
     R_T12_FIRST, R_T12_LAST, R_SC_FIRST, R_SC_LAST,
+    R_T14_FIRST, R_T14_LAST, R_T14_COLS, R_T14_NOTE,
     ROLE_FILL,
 )
 from scripts.trade_layout import R_GUIDE_HEAD, R_GUIDE_STEPS, R_GUIDE_ROLES
@@ -133,6 +139,16 @@ def check_carriage(wb, verbose=True):
     else:
         msgs.append("  [PASS] Table 1.2 carries all %d printed materials (was 6)." % len(TABLE_12))
 
+    for i, row in enumerate(table_13_14_rows()):
+        r = R_T14_FIRST + i
+        if str(ws.cell(row=r, column=1).value) != row['item']:
+            ok = False
+            msgs.append("  [FAIL] Table 1.3/1.4 row %d is %s, expected %s"
+                        % (r, ws.cell(row=r, column=1).value, row['item']))
+            break
+    else:
+        msgs.append("  [PASS] Table 1.3/1.4 carries all %d printed railway wagon operations." % len(TABLE_13_14))
+
     # Data Sheet 1 must now carry all 14 printed columns
     ds_head = [str(ws.cell(row=R_DS1_COLS, column=c).value or '') for c in range(1, BENCH_COL + 1)]
     if all(h.strip() for h in ds_head) and '14' in ds_head[-1]:
@@ -206,6 +222,14 @@ def check_carriage(wb, verbose=True):
          'the hard-coded manual rupee constants are gone'),
         (f'=G{R_Y} + G{R_Z1}' == f(R_Z, 7),
          'Z = Y + CPOH, named consistently with the other eleven builders'),
+        (f'B{R_W_GANG}' in f(R_W_BELDAR) and f'B{R_W_HOURS}' in f(R_W_BELDAR),
+         'wagon simulator derives Beldar days from gang size and demurrage free-time hours'),
+        ('MROUND' in f(R_W_SAY) and '0.05' in f(R_W_SAY),
+         'wagon simulator Say rate uses MROUND(x, 0.05)'),
+        ('Factor_CPOH' in f(R_W_CPOH),
+         'wagon simulator takes CPOH from Global_Factors'),
+        ('Rates_Master' in f(R_W_WAGE),
+         'wagon simulator reads live Beldar wage from Rates_Master'),
     ]
     for good, what in wiring:
         if not good:
@@ -216,7 +240,8 @@ def check_carriage(wb, verbose=True):
                     f"scale factor, Data Sheet 1 speed and pro-rata lookups, MROUND Say, live wage "
                     f"and CPOH, consistent Z naming).")
 
-    guarded = [R_TRIPS, R_DISTANCE, R_RATE_UNIT, R_TRIP_OH, R_M_RATE, R_M_SAY]
+    guarded = [R_TRIPS, R_DISTANCE, R_RATE_UNIT, R_TRIP_OH, R_M_RATE, R_M_SAY,
+               R_W_BELDAR, R_W_PROD, R_W_RATE, R_W_SAY]
     unguarded = []
     for r in guarded:
         cell = f(r) or f(r, 7)
@@ -264,6 +289,13 @@ def check_carriage(wb, verbose=True):
                   R_TRIPS_BASIS, R_TRIPS_OV, R_TRIPS, R_DIST_BASIS, R_DISTANCE, R_DIESEL, R_MOBIL,
                   R_T11_ROW, R_PAY_GROSS, R_PAY_NET, R_PAY_OV, R_PAY_EFF,
                   R_UNIT, R_SCALE, R_OUTPUT]
+    wagon_rows = [
+        R_W_ITEM, R_W_CODE, R_W_SPEC, R_W_TYPE, R_W_CAP_STD, R_W_CAP_OV, R_W_CAP_EFF,
+        R_W_GANG, R_W_HOURS, R_W_BELDAR, R_W_PROD, R_W_WAGE, R_W_LABOUR,
+        R_W_CRANE_BASE, R_W_SUNDRY_BASE, R_W_CODE9999, R_W_EQUIP,
+        R_W_SUBTOTAL_Y, R_W_CPOH, R_W_TOTAL, R_W_RATE, R_W_SAY, R_W_DAR_PUB, R_W_DAR_DIFF
+    ]
+    param_rows += wagon_rows
     roles = set(ROLE_FILL)
     missing_role = [r for r in param_rows
                     if str(ws.cell(row=r, column=4).value or '') not in roles]
@@ -280,7 +312,7 @@ def check_carriage(wb, verbose=True):
 
     expect_editable = {R_ITEM_CODE, R_MATERIAL, R_SCOPE, R_LIFT, R_GATE_FEE, R_NOM_OVERRIDE,
                        R_LEAD, R_SPEED_OV, R_TURNAROUND, R_MODE, R_TRIPS_BASIS, R_TRIPS_OV, R_DIST_BASIS,
-                       R_PAY_OV, R_QL_MAT, R_QL_LEAD}
+                       R_PAY_OV, R_QL_MAT, R_QL_LEAD, R_W_ITEM, R_W_CAP_OV}
     wrong = []
     for r in param_rows:
         unlocked = ws.cell(row=r, column=2).protection.locked is False
