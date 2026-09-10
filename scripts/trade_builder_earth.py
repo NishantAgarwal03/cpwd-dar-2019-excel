@@ -724,7 +724,7 @@ def build_earthwork_trade(wb, config, styles):
         ws.cell(row=r, column=1, value=line_idx).alignment = styles['align_center']
         ws.cell(row=r, column=1).font = styles['font_bold']
         
-        method_expr = 'IF(ISNUMBER(SEARCH("Mechanical",$D$8)),"Mechanical (Hydraulic Excavator 0.9 cum)","Manual labor (depth ≤1.5m)")'
+        method_expr = 'IF(ISNUMBER(SEARCH("Mechanical",$D$8)),"Mechanical (Hydraulic Excavator 0.9 cum)","Manual labor (depth <=1.5m)")'
         line_key_method = f'$C$9&"|"&$D$9&"|"&{method_expr}&"|"&{line_idx}'
         method_exists_key = f'$C$9&"|"&$D$9&"|"&{method_expr}&"|1"'
         line_key_cat = f'$C$9&"|"&$D$9&"|"&{line_idx}'
@@ -1284,7 +1284,7 @@ def build_earthwork_trade(wb, config, styles):
          f'=H{R_RATE}', '—', '=0', f'=MROUND(H{R_RATE}, 0.05)', 'SAY',
          'Final published billing rate rounded to the nearest 5 paise in accordance with CPWD DAR Section 0 conventions.'),
         (R_DAR_REF, 'REF', f'="Published Benchmark Say Rate (Rs per " & D{R_BATCH_UNIT} & "):"', '—', 'Benchmark',
-         f'=IF(ISNUMBER(D{R_DAR_PUB}), D{R_DAR_PUB}, "—")', '—', '=0', f'=IF(ISNUMBER(D{R_DAR_PUB}), D{R_DAR_PUB}, "—")', 'LOOKUP',
+         f'=IF(ISNUMBER(D{R_DAR_PUB}), D{R_DAR_PUB}, "-")', '—', '=0', f'=IF(ISNUMBER(D{R_DAR_PUB}), D{R_DAR_PUB}, "-")', 'LOOKUP',
          'Official CPWD DAR 2019 Volume 1 published rate for verification.'),
         (R_DAR_DIFF, 'DIFF', 'Audit Variance (Analysed Say - Published Say):', '—', 'Say - Ref',
          f'=IF(ISNUMBER(D{R_DAR_PUB}), H{R_SAY} - H{R_DAR_REF}, 0)', '—', '=0', f'=IF(ISNUMBER(D{R_DAR_PUB}), ROUND(H{R_SAY} - H{R_DAR_REF}, 2), 0)', 'RESULT',
