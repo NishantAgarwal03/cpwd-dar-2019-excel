@@ -531,7 +531,14 @@ def build_earthwork_trade(wb, config, styles):
     d20_cell.protection = Protection(locked=False)
     dv_depth.add(d20_cell)
     ws.merge_cells(f'E{R_OP_HANDLING}:O{R_OP_HANDLING}')
-    ws.cell(row=R_OP_HANDLING, column=5, value='Excavation depth boundary: Depth ≤ 1.5 m (Standard lift); Depth > 1.5 m to 3.0 m (Extra 1.5 m lift stage); Depth > 3.0 m to 4.5 m (Extra 3.0 m lift stage per CPWD DAR Item 2.26 / 2.11 / 2.12).').font = styles['font_note']
+    ws.cell(row=R_OP_HANDLING, column=5,
+            value='ADDITIVE EXTRA-DEPTH LEVER: Select the stage that covers your deepest excavation point. '
+                  'The base D9 task is always included; this lever ADDS the extra-depth cost on top. '
+                  'Stage 1 - Standard (<=1.5 m): no add-on; DAR base rate only. '
+                  'Stage 2 - Depth >1.5 m to 3.0 m: adds Extra lift (DAR 2.26.1) for soil or Extra pipe trench allowance (DAR 2.11) for pipe trenches. '
+                  'Stage 3 - Depth >3.0 m to 4.5 m: adds both Extra lift stages (DAR 2.26.1 x2) or Extra pipe trench allowance (DAR 2.12). '
+                  'These items (2.11, 2.12, 2.26.1) are ADDITIVE — they appear in Table 2B Section L, not in D9.'
+           ).font = styles['font_note']
     ws.cell(row=R_OP_HANDLING, column=5).alignment = styles['align_wrap']
     ws.row_dimensions[R_OP_HANDLING].height = 24
 

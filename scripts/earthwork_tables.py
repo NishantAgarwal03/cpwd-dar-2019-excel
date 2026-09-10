@@ -52,9 +52,8 @@ HEADING_TASK_CATALOG = [
     ("3. Excavation – Soil / Earth", "Pipe / Cable trenches (dia ≤80 mm)", "2.10.1.1"),
     ("3. Excavation – Soil / Earth", "Pipe / Cable trenches (dia 80–300 mm)", "2.10.1.2"),
     ("3. Excavation – Soil / Earth", "Pipe / Cable trenches (dia >300 mm)", "2.10.1.3"),
-    ("3. Excavation – Soil / Earth", "Extra lift for every additional 1.5 m", "2.26.1"),
-    ("3. Excavation – Soil / Earth", "Extra for pipe trench depth 1.5 m to 3.0 m", "2.11"),
-    ("3. Excavation – Soil / Earth", "Extra for pipe trench depth 3.0 m to 4.5 m", "2.12"),
+    # NOTE: Extra-depth add-ons (2.26.1, 2.11, 2.12) are ADDITIVE items controlled by Lever 2 (D20)
+    # — NOT task alternatives. They are NOT listed here as D9 options.
     ("3. Excavation – Soil / Earth", "Extra for foul position (+25%)", "2.24.2"),
     ("3. Excavation – Soil / Earth", "Extra for wet/water position (+20%)", "2.24.1"),
     
@@ -129,10 +128,12 @@ TASK_OPTIONS = [
     "Excavating post holes 0.1-0.5 cum in ord rock",
     "Excavating post holes 0.1-0.5 cum in soil",
     "Extra for foul position (+25%)",
-    "Extra for pipe trench depth 1.5m to 3.0m",
-    "Extra for pipe trench depth 3.0m to 4.5m",
+    # NOTE: Extra-depth items removed from D9 dropdown — they are additive, not alternatives.
+    # "Extra for pipe trench depth 1.5m to 3.0m" (2.11) and
+    # "Extra for pipe trench depth 3.0m to 4.5m" (2.12) and
+    # "Extra lift for every additional 1.5m" (2.26.1)
+    # are controlled by Lever 2 (D20 depth stage selector).
     "Extra for wet/water position (+20%)",
-    "Extra lift for every additional 1.5m",
     "Filling available excavated earth in plinth/trenches",
     "Filling with fly ash and earth mix in plinth",
     "Foundation trenches & drain trenches",
