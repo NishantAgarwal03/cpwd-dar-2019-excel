@@ -326,9 +326,12 @@ def build_earthwork_trade(wb, config, styles):
     _apply_param_row(ws, R_STRATA, styles, 'Ground Strata / Material', 'All kinds of soil', '—', 'INPUT',
                      'Strata classification: All kinds of soil, Ordinary rock, Hard rock (blasting permitted), or Hard rock (blasting prohibited).', dv=dv_strata)
     _apply_param_row(ws, R_METHOD, styles, 'Execution Method / Plant & Labour Fleet',
-                     '=IF(OR($D$9="Open areas & wide foundation trenches", $D$9="Foundation trenches & drain trenches", ISNUMBER(SEARCH("blasting + Excavator", $D$9)), ISNUMBER(SEARCH("Rock breaker", $D$9))), "Mechanical (Hydraulic Excavator 0.9 cum)", "Manual labor (depth ≤1.5m)")',
+                     'Manual labor (depth ≤1.5m)',
                      '—', 'INPUT',
-                     'Execution technique: Mechanical (Hydraulic Excavator 0.9 cum) or Manual labor (depth ≤1.5m). Guides resource fleet in Table 2A.', dv=dv_method)
+                     '=IF(OR($D$9="Open areas & wide foundation trenches",$D$9="Foundation trenches & drain trenches",ISNUMBER(SEARCH("blasting + Excavator",$D$9)),ISNUMBER(SEARCH("Rock breaker",$D$9))),'
+                     '"AUTO-SUGGEST -> Mechanical (Hydraulic Excavator 0.9 cum) recommended for this task. Confirm in D8 - your selection drives Table 2A resource fleet. Mechanical: 0.9 cum bucket, output ~120 cum/shift.",'
+                     '"AUTO-SUGGEST -> Manual labor (depth <=1.5m) recommended. For mechanised work select Mechanical in D8. Manual: standard gang of Beldar + Mate. D8 is a free selection - override any time.")',
+                     dv=dv_method)
 
     # Row 9: Sub-Head Category in C9 & Specific Task in D9 (Dynamic Dependent Dropdown)
     ws.merge_cells(f'A{R_TASK}:B{R_TASK}')
@@ -363,9 +366,17 @@ def build_earthwork_trade(wb, config, styles):
     f9_cell.font = styles['font_bold']
     f9_cell.fill = styles['fill_input']
 
-    # G9:O9: Guidance Note
+    # G9:O9: Guidance Note with stale-value detection
     ws.merge_cells(f'G{R_TASK}:O{R_TASK}')
-    g9_cell = ws.cell(row=R_TASK, column=7, value='Select Category in C9 to filter specific Activity / Task in D9 (45 verified CPWD earthwork variants across 9 sub-heads).')
+    g9_cell = ws.cell(row=R_TASK, column=7,
+                      value=(
+                          f'=IF(COUNTIF(OFFSET($AO${R_CAT_FIRST},MATCH($C${R_TASK},$AN${R_CAT_FIRST}:$AN${R_CAT_LAST},0)-1,0,'
+                          f'COUNTIF($AN${R_CAT_FIRST}:$AN${R_CAT_LAST},$C${R_TASK}),1),$D${R_TASK})=0,'
+                          f'"[STALE TASK] Current D9 value ["&$D${R_TASK}&"] is not in Category ["&$C${R_TASK}&"]. '
+                          f'Please reselect D9 from the dropdown to restore a valid task and trigger correct lookups.",'
+                          f'"Select C9 category first, then D9 task (45 verified CPWD earthwork variants across 9 sub-heads). '
+                          f'Active: ["&$C${R_TASK}&"] -> ["&$D${R_TASK}&"]. D9 controls Table 2A resource lookup and D8 auto-suggest.")'
+                      ))
     g9_cell.font = styles['font_note']
     g9_cell.alignment = styles['align_left']
     for c in range(1, LAST_COL + 1):
@@ -424,6 +435,58 @@ def build_earthwork_trade(wb, config, styles):
     for c in range(1, LAST_COL + 1):
         ws.cell(row=R_AUDIT, column=c).border = styles['border_thin']
     ws.row_dimensions[R_AUDIT].height = 24
+
+    # -------------------------------------------------------------
+    # ROW 16: ANALYSIS MODE FLAG & ITEM LINKAGE STATUS BAR
+    # (Sits between Section 1 and Section 1B — no row constants shift)
+    # -------------------------------------------------------------
+    dv_mode = DataValidation(type='list', formula1='"DSR,CUSTOM"', allow_blank=False)
+    ws.add_data_validation(dv_mode)
+
+    ws.merge_cells('A16:C16')
+    r16_lbl = ws.cell(row=16, column=1, value='Analysis Mode / Item Linkage Status:')
+    r16_lbl.font = styles['font_bold']
+    r16_lbl.alignment = styles['align_left']
+
+    d16 = ws.cell(row=16, column=4, value='DSR')
+    d16.font = styles['font_bold']
+    d16.fill = styles['fill_input']
+    d16.alignment = styles['align_center']
+    d16.protection = Protection(locked=False)
+    dv_mode.add(d16)
+
+    ws.cell(row=16, column=5, value='mode').alignment = styles['align_center']
+    ws.cell(row=16, column=5).font = styles['font_regular']
+
+    f16 = ws.cell(row=16, column=6, value='INPUT')
+    f16.font = styles['font_bold']
+    f16.fill = styles['fill_input']
+    f16.alignment = styles['align_center']
+
+    ws.merge_cells('G16:O16')
+    lnk_status = ws.cell(row=16, column=7,
+        value=(
+            f'=IF($D$16="CUSTOM",'
+            f'"[CUSTOM MODE] Table 2A rows unlocked: press Delete on any B/F/G cell to clear its formula, '
+            f'then type Resource Code (Col B), Qty (Col F), Rate (Col G) directly. '
+            f'Col H amounts and all Section 3 markups calculate automatically. Tag this run in D12.",'
+            f'"[DSR MODE] Lever Linkage: "'
+            f'&IF(OR(ISNUMBER(SEARCH("Embankment",$D${R_SCOPE})),ISNUMBER(SEARCH("banking",$D${R_TASK})),ISNUMBER(SEARCH("rolling",$D${R_TASK}))),'
+            f'"Watering (D22)="&$D${R_OP_WATERING}&" | Rolling (D23)="&$D${R_OP_COMPACTION}&" - LEVERS ACTIVE: deduction fires in Table 2B when set to NO.",'
+            f'"Watering (D22): [NA] | Rolling (D23): [NA] - toggles have no rate effect for Excavation / Clearance scope.")'
+            f'&" | Depth-Lift (D20): "'
+            f'&IF(ISNUMBER(SEARCH("1.5 m to 3.0 m",$D${R_OP_HANDLING})),"ACTIVE - 1 extra lift stage (DAR 2.26.1 / 2.11)",'
+            f'IF(ISNUMBER(SEARCH("3.0 m to 4.5 m",$D${R_OP_HANDLING})),"ACTIVE - 2 extra lift stages (DAR 2.26.1 / 2.12)","STANDARD <=1.5 m - no extra lift"))'
+            f'&" | Strata: "&$D${R_STRATA})'
+        )
+    )
+    lnk_status.font = styles['font_note']
+    lnk_status.alignment = styles['align_wrap']
+    lnk_status.fill = styles['fill_note']
+
+    for c in range(1, LAST_COL + 1):
+        ws.cell(row=16, column=c).border = styles['border_thin']
+    ws.row_dimensions[16].height = 30
 
     # -------------------------------------------------------------
     # SECTION 1B: PARAMETRIC OPERATIONAL DECOMPOSITION (ARCHITECTURE 3)
@@ -494,7 +557,17 @@ def build_earthwork_trade(wb, config, styles):
     dv_yesno.add(c_water)
     ws.merge_cells(f'E{R_OP_WATERING}:O{R_OP_WATERING}')
     c_w_note = ws.cell(row=R_OP_WATERING, column=5,
-                       value=f'=IF(OR(ISNUMBER(SEARCH("Embankment", $D${R_SCOPE})), ISNUMBER(SEARCH("banking", $D${R_TASK})), ISNUMBER(SEARCH("rolling", $D${R_TASK}))), IF($D${R_OP_WATERING}="YES", "Watering included in item specification (0.40 Bhishti-day / 10 cum to achieve OMC). Full rate applies.", "DEDUCTION APPLIED (DAR Item 2.5): 0.40 Bhishti-day @ Rs 617 = Rs 246.80 direct. With GST 14.05% (Rs 34.68) + CPOH 15% (Rs 42.22) + Cess 1% (Rs 3.24) = Total Rs 326.94/10 cum -> Rate reduced by Rs 33.00/cum (-Rs 32.70 exact)."), "Surface Excavation, Foundation Trenches, Jungle Clearance, Timbering Item specification does not include watering/compaction. (No deduction applicable).")')
+                       value=f'=IF(OR(ISNUMBER(SEARCH("Embankment",$D${R_SCOPE})),ISNUMBER(SEARCH("banking",$D${R_TASK})),ISNUMBER(SEARCH("rolling",$D${R_TASK}))),'
+                             f'IF($D${R_OP_WATERING}="YES",'
+                             f'"[LEVER ACTIVE - INCLUDED] Watering to OMC is in this item rate (0.40 Bhishti-day / 10 cum). Full rate applies; no deduction in Table 2B. '
+                             f'Purpose: moisten loose embankment layers to Optimum Moisture Content before rolling.",'
+                             f'"[LEVER ACTIVE - DEDUCTION] Watering omitted by contractor (DAR Item 2.5). '
+                             f'Deduction = -0.40 Bhishti-day / 10 cum @ Rs 617 = Rs 246.80 direct cost. '
+                             f'Compounded: +GST 14.05% (Rs 34.68) + CPOH 15% (Rs 42.22) + Cess 1% (Rs 3.24) = Rs 326.94 / 10 cum. '
+                             f'Rate reduction ~Rs 33.00/cum. See Table 2B Row D4 for live deduction amount."),'
+                             f'"[LEVER INACTIVE] This toggle has NO rate effect for the selected scope (Surface Excavation / Foundation Trench / Jungle Clearance / Timbering). '
+                             f'Watering to OMC is not a specified item for excavation tasks - no Bhishti norm applies and no deduction exists. '
+                             f'Switch to Embankment or Banking scope to activate this lever.")')
     c_w_note.font = styles['font_note']
     c_w_note.alignment = styles['align_wrap']
     ws.row_dimensions[R_OP_WATERING].height = 26
@@ -510,7 +583,17 @@ def build_earthwork_trade(wb, config, styles):
     dv_yesno.add(c_roll)
     ws.merge_cells(f'E{R_OP_COMPACTION}:O{R_OP_COMPACTION}')
     c_r_note = ws.cell(row=R_OP_COMPACTION, column=5,
-                       value=f'=IF(OR(ISNUMBER(SEARCH("Embankment", $D${R_SCOPE})), ISNUMBER(SEARCH("banking", $D${R_TASK})), ISNUMBER(SEARCH("rolling", $D${R_TASK}))), IF($D${R_OP_COMPACTION}="YES", "Power rolling included in item specification (0.008 roller-day / 10 cum). Full rate applies.", "DEDUCTION APPLIED (DAR Item 2.4): 0.008 Roller @ Rs 3000 (Rs 24.00) + 0.008 Chowkidar (Rs 4.46) + Sundries (Rs 3.64) = Rs 32.10 direct. Compounded total = Rs 42.95/10 cum -> Rate reduced by Rs 4.30/cum (-Rs 4.30 exact)."), "Surface Excavation, Foundation Trenches, Jungle Clearance, Timbering Item specification does not include watering/compaction. (No deduction applicable).")')
+                       value=f'=IF(OR(ISNUMBER(SEARCH("Embankment",$D${R_SCOPE})),ISNUMBER(SEARCH("banking",$D${R_TASK})),ISNUMBER(SEARCH("rolling",$D${R_TASK}))),'
+                             f'IF($D${R_OP_COMPACTION}="YES",'
+                             f'"[LEVER ACTIVE - INCLUDED] Power Roller Compaction is in this item rate (0.008 roller-day / 10 cum). Full rate applies; no deduction in Table 2B. '
+                             f'Standard: 8-10 tonne diesel road roller consolidating compacted embankment layers at 1250 cum/8-hr shift.",'
+                             f'"[LEVER ACTIVE - DEDUCTION] Power rolling omitted by contractor (DAR Item 2.4). '
+                             f'Deduction = -0.008 Roller-day/10 cum @ Rs 3000 (Rs 24.00) + 0.008 Chowkidar-day (Rs 4.46) + 1.82 Sundries (Rs 3.64) = Rs 32.10 direct. '
+                             f'Compounded (GST 14.05% + CPOH 15% + Cess 1%) = Rs 42.95/10 cum. Rate reduction ~Rs 4.30/cum. '
+                             f'See Table 2B Rows D1-D3 for live deduction amounts."),'
+                             f'"[LEVER INACTIVE] This toggle has NO rate effect for the selected scope (Surface Excavation / Foundation Trench / Jungle Clearance / Timbering). '
+                             f'Power roller compaction is not a specified operation for excavation tasks - the 0.008 roller-day norm and DAR Item 2.4 do not apply here. '
+                             f'Switch to Embankment or Banking scope to activate this lever.")')
     c_r_note.font = styles['font_note']
     c_r_note.alignment = styles['align_wrap']
     ws.row_dimensions[R_OP_COMPACTION].height = 26
@@ -649,19 +732,24 @@ def build_earthwork_trade(wb, config, styles):
 
         def _t5e_line_lookup(col_letter, default_val='""'):
             rng = f"${col_letter}${R_T5E_FIRST}:${col_letter}${R_T5E_LAST}"
+            # Tier 1: Full scope key D6|D7|D8|D9|line — picks up strata-specific records first
+            # Tier 2: Method key C9|D9|method|line — primary match for existing data
+            # Tier 3: Category key C9|D9|line — broadest fallback
+            # This order means D7 (Ground Strata) drives the lookup whenever strata-specific
+            # records exist in Table 5E (Col Q); falls back gracefully to Tier 2 & 3.
             return (
-                f'IF(ISNUMBER(MATCH({method_exists_key}, {t5e_method_rng}, 0)), '
-                f'IFERROR(INDEX({rng}, MATCH({line_key_method}, {t5e_method_rng}, 0)), {default_val}), '
-                f'IFERROR(INDEX({rng}, MATCH({line_key_cat}, {t5e_cat_rng}, 0)), '
-                f'IFERROR(INDEX({rng}, MATCH({line_key_full}, {t5e_full_rng}, 0)), {default_val})))'
+                f'IFERROR(INDEX({rng}, MATCH({line_key_full}, {t5e_full_rng}, 0)), '
+                f'IFERROR(INDEX({rng}, MATCH({line_key_method}, {t5e_method_rng}, 0)), '
+                f'IFERROR(INDEX({rng}, MATCH({line_key_cat}, {t5e_cat_rng}, 0)), {default_val})))'
             )
 
         
-        # Resource Code in Col B
-        c_code = ws.cell(row=r, column=2, value='=' + _t5e_line_lookup('F'))
+        # Resource Code in Col B — DSR: auto-lookup; CUSTOM: blank so user can type directly
+        c_code = ws.cell(row=r, column=2, value=f'=IF($D$16="DSR",{_t5e_line_lookup("F")},"")')
         c_code.alignment = styles['align_center']
         c_code.font = styles['font_bold']
         c_code.fill = styles['fill_lookup']
+        c_code.protection = Protection(locked=False)  # Unlocked for CUSTOM mode entry
         
         # Resource Name in Col C
         name_fallback = _t5e_line_lookup('M', '"Custom Resource"')
@@ -711,14 +799,15 @@ def build_earthwork_trade(wb, config, styles):
         c_net_q.fill = styles['fill_result']
         c_net_q.number_format = '0.000'
 
-        # Norm Input Qty in Col F
+        # Norm Input Qty in Col F — unlocked so user can override in CUSTOM mode
         c_qty = ws.cell(row=r, column=6, value=f'=IF(B{r}="","", R{r})')
         c_qty.alignment = styles['align_right']
         c_qty.font = styles['font_bold']
         c_qty.fill = styles['fill_input']
         c_qty.number_format = '0.000'
-        
-        # Rate in Col G
+        c_qty.protection = Protection(locked=False)  # Unlocked for CUSTOM mode direct entry
+
+        # Rate in Col G — unlocked so user can override in CUSTOM mode
         rate_fallback = _t5e_line_lookup('O', '0')
         c_rate = ws.cell(row=r, column=7,
                          value=f'=IF(B{r}="","", IFERROR(INDEX(Rates_Master!$E:$E, MATCH(B{r}, Rates_Master!$A:$A, 0)), {rate_fallback}))')
@@ -726,6 +815,7 @@ def build_earthwork_trade(wb, config, styles):
         c_rate.font = styles['font_regular']
         c_rate.fill = styles['fill_lookup']
         c_rate.number_format = styles['fmt_currency']
+        c_rate.protection = Protection(locked=False)  # Unlocked for CUSTOM mode direct entry
         
         # Line Amount in Col H (=ROUND(F*G, 2))
         c_amt = ws.cell(row=r, column=8,
