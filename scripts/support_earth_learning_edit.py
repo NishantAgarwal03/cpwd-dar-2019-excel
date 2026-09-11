@@ -14,6 +14,9 @@ from typing import Any
 import xml.etree.ElementTree as ET
 import zipfile
 
+from openpyxl.comments import Comment
+from openpyxl.styles import Alignment, PatternFill
+
 
 SHIFT_HOURS = 8.0
 INTERPRETATION = "Teaching interpretation, not a published CPWD rule"
@@ -166,12 +169,173 @@ def export_ascii_formula_workbook(source_path, output_path, sheet_xml_path="xl/w
     with zipfile.ZipFile(source_path, "r") as source:
         if sheet_xml_path not in source.namelist():
             raise ValueError(f"Workbook does not contain {sheet_xml_path}")
+        # An in-place final export avoids leaving a second workbook artefact.
+        # Read every entry before reopening the same path for writing.
+        entries = [(entry, source.read(entry.filename)) for entry in source.infolist()]
+        if source_path == output_path:
+            source.close()
         with zipfile.ZipFile(output_path, "w") as output:
-            for entry in source.infolist():
-                payload = source.read(entry.filename)
+            for entry, payload in entries:
                 if entry.filename == sheet_xml_path:
                     root = ET.fromstring(payload)
                     for formula in root.findall(".//{*}f"):
                         formula.text = (formula.text or "").translate(FORMULA_LITERAL_REPLACEMENTS)
                     payload = ET.tostring(root, encoding="utf-8", xml_declaration=True)
                 output.writestr(entry, payload)
+
+
+_ITEM_NUMBER = re.compile(r"^Item\s+(?P<number>[0-9.]+)")
+_BATCH = re.compile(r"for\s+(?P<quantity>[0-9.]+)\s+(?P<unit>[A-Za-z]+)", re.IGNORECASE)
+_PALE_BLUE = PatternFill("solid", fgColor="DDEBF7")
+DEFAULT_SOURCE_MATCH = {
+    "2.1.1": "General surface cut (≤30 cm deep)",
+    "2.2.1": "Full cycle: rough excavation + banking + roll",
+    "2.3.1": "Banking & rolling only (excavation excluded)",
+}
+
+
+def _display_number(value: float | int) -> str:
+    return f"{value:g}"
+
+
+def _support_items(sheet):
+    """Yield each fixed support-sheet item and its resource rows.
+
+    The support sheet intentionally has a repeated, print-friendly layout.
+    Detection relies only on its existing item headings and numeric resource
+    quantities, so calculation rows and final rates cannot be mistaken for
+    resources.
+    """
+    starts = []
+    for row in range(1, sheet.max_row + 1):
+        value = sheet.cell(row, 1).value
+        if isinstance(value, str) and _ITEM_NUMBER.match(value):
+            starts.append(row)
+    for index, start in enumerate(starts):
+        end = starts[index + 1] - 1 if index + 1 < len(starts) else sheet.max_row
+        header = str(sheet.cell(start, 1).value)
+        number = _ITEM_NUMBER.match(header).group("number")
+        batch_row = start + 1
+        batch_text = str(sheet.cell(batch_row, 1).value or "")
+        batch = _BATCH.search(batch_text)
+        batch_quantity = float(batch.group("quantity")) if batch else 1.0
+        batch_unit = batch.group("unit") if batch else "unit"
+        resources = []
+        for row in range(start + 1, end + 1):
+            code, role, unit, coefficient = (sheet.cell(row, column).value for column in range(1, 5))
+            if code not in (None, "") and isinstance(role, str) and _as_number(coefficient) is not None:
+                resources.append((row, {"code": code, "description": role, "unit": unit, "coefficient": coefficient}))
+        yield {
+            "number": number, "start": start, "batch_row": batch_row, "header": header,
+            "batch_quantity": batch_quantity, "batch_unit": batch_unit, "resources": resources,
+        }
+
+
+def _record_for_resource(resource, item_number, catalog, source_key_by_item):
+    """Select only a source row that independently agrees with the fixed norm."""
+    source_key = source_key_by_item.get(item_number)
+    if source_key:
+        source_keys = [key for key in catalog if key == source_key or source_key in key]
+        for candidate_key in source_keys:
+            result = derive_resource_norm(resource, {
+                "source_key": candidate_key,
+                "batch_quantity": None,
+                "batch_unit": None,
+            }, catalog)
+            if result is not None:
+                return result
+
+    code = _canonical_code(resource["code"])
+    coefficient = _as_number(resource["coefficient"])
+    matches = [
+        record for records in catalog.values() for record in records
+        if record.code == code and record.coefficient is not None
+        and coefficient is not None and abs(record.coefficient - coefficient) <= 0.001
+    ]
+    # Repeated source records are valid only when their evidence agrees; choose
+    # no record when the associated method differs, rather than inventing one.
+    evidence = {(record.role, record.source_norm) for record in matches}
+    if len(evidence) != 1 or not matches:
+        return None
+    record = matches[0]
+    return derive_resource_norm(resource, {
+        "source_key": record.key, "batch_quantity": None, "batch_unit": None,
+    }, catalog)
+
+
+def _visible_derivation(resource, derivation, batch_quantity, batch_unit):
+    coefficient = _display_number(resource["coefficient"])
+    batch = f"{_display_number(batch_quantity)} {batch_unit}"
+    role = str(resource["description"])
+    unit = str(resource["unit"])
+    if derivation and derivation["task_hours"] is not None:
+        actor = _display_number(derivation["gang_or_machine"])
+        hours = _display_number(derivation["task_hours"])
+        return (
+            f"CPWD fixed norm: {role}. Calculation: {actor} × {hours} ÷ 8-hour shift = "
+            f"{coefficient} {unit} per {batch}. Equivalent productivity: {batch} ÷ {coefficient} {unit}."
+        )
+    return (
+        f"CPWD fixed norm: {role}. Fixed coefficient: {coefficient} {unit} per {batch}. "
+        f"{INTERPRETATION}: source evidence supports the coefficient but does not publish enough gang or "
+        "task-hour detail to reconstruct an 8-hour-shift calculation."
+    )
+
+
+def _learning_note(resource, derivation, batch_quantity, batch_unit):
+    coefficient = _display_number(resource["coefficient"])
+    batch = f"{_display_number(batch_quantity)} {batch_unit}"
+    source = derivation["source_norm"] if derivation else "No unique source-row match was available for this support-sheet coefficient."
+    if derivation and derivation["task_hours"] is not None:
+        actor = _display_number(derivation["gang_or_machine"])
+        hours = _display_number(derivation["task_hours"])
+        calculation = f"{actor} × {hours} task-hours ÷ 8-hour shift = {coefficient} {resource['unit']} per {batch}."
+        interpretation = (
+            f"The resource allocation represents its assigned activity within the work method. "
+            f"The inverse gives {_display_number(batch_quantity / float(resource['coefficient']))} {batch_unit} per {resource['unit']}."
+        )
+    else:
+        calculation = f"Fixed coefficient = {coefficient} {resource['unit']} per {batch}; no hours are reconstructed."
+        interpretation = INTERPRETATION + "."
+    return (
+        f"CPWD fixed norm / source evidence\n{source}\n\n"
+        f"Calculation\n{calculation}\n\n"
+        f"Engineering interpretation for learning\n{interpretation}\n\n"
+        f"Boundary conditions\nUse only for the stated operation, output batch, lead/lift, material and method. The teaching shift is fixed at 8 hours.\n\n"
+        f"When the norm changes\nRevise the resource norm only when the CPWD item scope, site condition, lead/lift, material, method or specified output batch changes."
+    )
+
+
+def apply_first_principles_learning(workbook, source_key_by_item: dict[str, str] | None = None):
+    """Add the approved three-layer explanation without touching A:H values/styles.
+
+    ``source_key_by_item`` is an explicit mapping for cases such as item 2.1.1;
+    all other rows fall back only to unambiguous matching fixed source evidence.
+    """
+    source_key_by_item = {**DEFAULT_SOURCE_MATCH, **(source_key_by_item or {})}
+    support = workbook["02_support_earth_work"]
+    catalog = build_derivation_catalog(workbook["02_Earth_Work"])
+    support.column_dimensions["I"].width = 96
+    for item in _support_items(support):
+        records = []
+        for row, resource in item["resources"]:
+            derivation = _record_for_resource(resource, item["number"], catalog, source_key_by_item)
+            support.cell(row, 9).value = _visible_derivation(resource, derivation, item["batch_quantity"], item["batch_unit"])
+            support.cell(row, 9).fill = _PALE_BLUE
+            support.cell(row, 9).alignment = Alignment(wrap_text=True, vertical="top")
+            support.cell(row, 4).comment = Comment(
+                _learning_note(resource, derivation, item["batch_quantity"], item["batch_unit"]), "CPWD learning guide"
+            )
+            records.append(str(resource["description"]))
+        if records:
+            method = (
+                f"Work method: {item['header'].split('|', 1)[-1].strip()}. Standard batch: "
+                f"{_display_number(item['batch_quantity'])} {item['batch_unit']}; teaching basis: fixed 8-hour shift. "
+                "Method constraints remain those stated in the CPWD item. "
+            )
+            if len(records) > 1:
+                method += "Gang system: " + ", ".join(records) + " work as coordinated resources; each line records its own share of the same output."
+            support.cell(item["start"], 9).value = method
+            support.cell(item["start"], 9).fill = _PALE_BLUE
+            support.cell(item["start"], 9).alignment = Alignment(wrap_text=True, vertical="top")
+    return workbook

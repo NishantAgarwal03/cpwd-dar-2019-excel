@@ -16,6 +16,7 @@ BASELINE_WORKBOOK = ROOT / "CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1_La
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from support_earth_learning_edit import (  # noqa: E402
+    apply_first_principles_learning,
     build_derivation_catalog,
     derive_resource_norm,
     export_ascii_formula_workbook,
@@ -162,6 +163,57 @@ class FormulaCompatibilityTests(unittest.TestCase):
             output_formulas,
             [formula.replace("—", "-").replace("→", "->").replace("›", ">") for formula in source_formulas],
         )
+
+
+class FirstPrinciplesRenderingTests(unittest.TestCase):
+    def _workbook(self):
+        workbook = Workbook()
+        support = workbook.active
+        support.title = "02_support_earth_work"
+        earth = workbook.create_sheet("02_Earth_Work")
+        support["A3"] = "Item 2.1.1 | Surface dressing of ground"
+        support["A4"] = "Details of cost for 100 sqm"
+        support["A7"], support["B7"], support["C7"], support["D7"] = "0114", "Beldar", "day", 6.8
+        support["A8"], support["B8"], support["C8"], support["D8"] = "0115", "Coolie", "day", 5.6
+        support["A9"], support["B9"], support["C9"], support["D9"] = "0003", "Diesel Road Roller", "day", 0.008
+        support["A10"], support["B10"], support["C10"], support["D10"] = "0999", "Published final-only resource", "day", 1.25
+        support["F7"] = "=D7*1"
+        earth.append([None] * 17)
+        earth.append([
+            "Surface Excavation", "All kinds of soil", "Manual", "General surface cut", 1, "0114", 0,
+            "Loosen and trim soil.", "Gang: 4 Beldars × 13.60 h = 54.40 man-hrs ÷ 8.00 h = 6.800 Beldar-days per 100 sqm.",
+            "source", 6.8, "support-2.1.1", "Beldar", "day", 0, "W", "key",
+        ])
+        earth.append([
+            "Embankment", "Soil", "Rolling", "Roll", 3, "0003", 0,
+            "Compact with roller.", "Plant: 1 Roller × 0.064 h ÷ 8.00 h = 0.008 roller-day per 100 sqm.",
+            "source", 0.008, "support-2.1.1", "Diesel Road Roller", "day", 0, "W", "key",
+        ])
+        earth.append([
+            "Surface Excavation", "All kinds of soil", "Manual", "General surface cut", 2, "0115", 0,
+            "Carry spoil.", "Gang: 4 Coolies × 11.20 h = 44.80 man-hrs ÷ 8.00 h = 5.600 Coolie-days per 100 sqm.",
+            "source", 5.6, "support-2.1.1", "Coolie", "day", 0, "W", "key",
+        ])
+        return workbook
+
+    def test_renders_visible_shift_derivation_and_learning_note(self):
+        workbook = self._workbook()
+        apply_first_principles_learning(workbook, {"2.1.1": "support-2.1.1"})
+        support = workbook["02_support_earth_work"]
+
+        self.assertIn("CPWD fixed norm: Beldar.", support["I7"].value)
+        self.assertIn("4 × 13.6 ÷ 8-hour shift = 6.8 day per 100 sqm", support["I7"].value)
+        self.assertIn("Equivalent productivity: 100 sqm ÷ 6.8", support["I7"].value)
+        self.assertIn("8-hour shift", support["I8"].value)
+        self.assertIn("1 × 0.064 ÷ 8-hour shift = 0.008 day per 100 sqm", support["I9"].value)
+        self.assertIn("Teaching interpretation, not a published CPWD rule", support["I10"].value)
+        self.assertIn("CPWD fixed norm / source evidence", support["D7"].comment.text)
+        self.assertIn("Calculation", support["D7"].comment.text)
+        self.assertIn("Engineering interpretation for learning", support["D7"].comment.text)
+        self.assertIn("Boundary conditions", support["D7"].comment.text)
+        self.assertIn("When the norm changes", support["D7"].comment.text)
+        self.assertEqual(support["D7"].value, 6.8)
+        self.assertEqual(support["F7"].value, "=D7*1")
 
 
 if __name__ == "__main__":
