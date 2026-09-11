@@ -9,7 +9,7 @@ import xml.etree.ElementTree as ET
 import zipfile
 from pathlib import Path
 
-from openpyxl import Workbook
+from openpyxl import Workbook, load_workbook
 
 ROOT = Path(__file__).resolve().parents[1]
 BASELINE_WORKBOOK = ROOT / "CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1_Latest.xlsx"
@@ -206,7 +206,7 @@ class FirstPrinciplesRenderingTests(unittest.TestCase):
         self.assertIn("Equivalent productivity: 100 sqm ÷ 6.8", support["I7"].value)
         self.assertIn("8-hour shift", support["I8"].value)
         self.assertIn("1 × 0.064 ÷ 8-hour shift = 0.008 day per 100 sqm", support["I9"].value)
-        self.assertIn("Teaching interpretation, not a published CPWD rule", support["I10"].value)
+        self.assertIn("Engineering teaching reconstruction, not a published CPWD rule", support["I10"].value)
         self.assertIn("CPWD fixed norm / source evidence", support["D7"].comment.text)
         self.assertIn("Calculation", support["D7"].comment.text)
         self.assertIn("Engineering interpretation for learning", support["D7"].comment.text)
@@ -214,6 +214,25 @@ class FirstPrinciplesRenderingTests(unittest.TestCase):
         self.assertIn("When the norm changes", support["D7"].comment.text)
         self.assertEqual(support["D7"].value, 6.8)
         self.assertEqual(support["F7"].value, "=D7*1")
+
+    def test_all_338_resource_rows_have_labelled_shift_reconstructions(self):
+        workbook = load_workbook(BASELINE_WORKBOOK)
+        apply_first_principles_learning(workbook)
+        support = workbook["02_support_earth_work"]
+        resource_rows = [
+            row for row in range(1, support.max_row + 1)
+            if support.cell(row, 1).value not in (None, "")
+            and isinstance(support.cell(row, 2).value, str)
+            and isinstance(support.cell(row, 4).value, (int, float))
+        ]
+        self.assertEqual(len(resource_rows), 338)
+        visible = [support.cell(row, 9).value for row in resource_rows]
+        self.assertTrue(all("÷ 8-hour shift =" in text for text in visible))
+        reconstructed = [text for text in visible if "Engineering teaching reconstruction" in text]
+        self.assertEqual(len(reconstructed), 320)
+        self.assertTrue(all("Engineering teaching reconstruction, not a published CPWD rule" in text for text in reconstructed))
+        self.assertTrue(all("Engineering teaching reconstruction, not a published CPWD rule" in support.cell(row, 4).comment.text
+                            for row in resource_rows if "Engineering teaching reconstruction" in support.cell(row, 9).value))
 
 
 if __name__ == "__main__":

@@ -20,6 +20,7 @@ from openpyxl.styles import Alignment, PatternFill
 
 SHIFT_HOURS = 8.0
 INTERPRETATION = "Teaching interpretation, not a published CPWD rule"
+RECONSTRUCTION = "Engineering teaching reconstruction, not a published CPWD rule"
 SOURCE_EVIDENCE = "CPWD fixed norm / source evidence"
 FORMULA_LITERAL_REPLACEMENTS = str.maketrans({"—": "-", "→": "->", "›": ">"})
 
@@ -195,7 +196,7 @@ DEFAULT_SOURCE_MATCH = {
 
 
 def _display_number(value: float | int) -> str:
-    return f"{value:g}"
+    return f"{value:.12f}".rstrip("0").rstrip(".")
 
 
 def _support_items(sheet):
@@ -275,11 +276,26 @@ def _visible_derivation(resource, derivation, batch_quantity, batch_unit):
             f"CPWD fixed norm: {role}. Calculation: {actor} × {hours} ÷ 8-hour shift = "
             f"{coefficient} {unit} per {batch}. Equivalent productivity: {batch} ÷ {coefficient} {unit}."
         )
+    gang, actor = _reconstruction_gang(resource)
+    hours = float(resource["coefficient"]) * SHIFT_HOURS / gang
     return (
-        f"CPWD fixed norm: {role}. Fixed coefficient: {coefficient} {unit} per {batch}. "
-        f"{INTERPRETATION}: source evidence supports the coefficient but does not publish enough gang or "
-        "task-hour detail to reconstruct an 8-hour-shift calculation."
+        f"CPWD fixed norm: {role}. {RECONSTRUCTION}. Calculation: {actor} × {_display_number(hours)} "
+        f"task-hours ÷ 8-hour shift = {coefficient} {unit} per {batch}. "
+        f"Equivalent productivity: {batch} ÷ {coefficient} {unit}."
     )
+
+
+def _reconstruction_gang(resource):
+    """Choose a transparent pedagogic allocation, never evidence, for each norm."""
+    role = str(resource["description"]).lower()
+    machine_words = ("roller", "excavator", "loader", "tipper", "breaker", "driller", "machine")
+    if any(word in role for word in machine_words):
+        return 1, "1 machine"
+    if any(word in role for word in ("beldar", "coolie")):
+        return 4, "4-person labour gang"
+    if str(resource.get("unit", "")).lower() == "day":
+        return 1, "1-person specialist gang"
+    return 1, "1 resource-handling allocation"
 
 
 def _learning_note(resource, derivation, batch_quantity, batch_unit):
@@ -295,8 +311,16 @@ def _learning_note(resource, derivation, batch_quantity, batch_unit):
             f"The inverse gives {_display_number(batch_quantity / float(resource['coefficient']))} {batch_unit} per {resource['unit']}."
         )
     else:
-        calculation = f"Fixed coefficient = {coefficient} {resource['unit']} per {batch}; no hours are reconstructed."
-        interpretation = INTERPRETATION + "."
+        gang, actor = _reconstruction_gang(resource)
+        hours = float(resource["coefficient"]) * SHIFT_HOURS / gang
+        calculation = (
+            f"{actor} × {_display_number(hours)} task-hours ÷ 8-hour shift = "
+            f"{coefficient} {resource['unit']} per {batch}."
+        )
+        interpretation = (
+            f"{RECONSTRUCTION}. This allocation is chosen only to make the published coefficient auditable; "
+            "it is not source evidence of an actual CPWD gang or task-hour norm."
+        )
     return (
         f"CPWD fixed norm / source evidence\n{source}\n\n"
         f"Calculation\n{calculation}\n\n"
