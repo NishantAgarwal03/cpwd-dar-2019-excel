@@ -43,7 +43,7 @@ Every D-column quantity cell receives a detailed Excel comment/Note. Its section
 4. **Boundary conditions** — soil, lead, lift, method, machine, depth, or compaction conditions that make the norm applicable.
 5. **When the norm changes** — clearly states which site changes require a new analysis.
 
-If a detailed activity-hour reconstruction is not directly supported by the CPWD source, it is explicitly labelled **Teaching interpretation, not a published CPWD rule**.
+If a detailed activity-hour reconstruction is not directly supported by the CPWD source, construct a complete, internally consistent learning reconstruction from the fixed coefficient. It is explicitly labelled **Engineering teaching reconstruction, not a published CPWD rule**. This label appears in both the visible derivation and the D-cell learning card.
 
 ## Gang-system explanation
 
@@ -56,6 +56,7 @@ Each multi-resource item includes a short explanation of how the gang works as o
 - Keep final unit rates visible when repeated markup rows are collapsed.
 - Never overwrite the numeric D quantity with explanatory text.
 - Never present a teaching reconstruction as an official CPWD published rule.
+- Every eligible resource row has a complete eight-hour gang or machine derivation; no resource is left as a coefficient-only learning note.
 
 ## Validation
 
