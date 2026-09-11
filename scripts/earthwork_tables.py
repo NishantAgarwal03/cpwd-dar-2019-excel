@@ -37,7 +37,7 @@ HEADING_TASK_CATALOG = [
     ("1. Site Clearance & Vegetation", "Tree felling girth 60–120 cm (cutting & grubbing roots)", "2.33.2"),
     ("1. Site Clearance & Vegetation", "Tree felling girth 120–240 cm (cutting & grubbing roots)", "2.33.3"),
     ("1. Site Clearance & Vegetation", "Tree felling girth above 240 cm (cutting & grubbing roots)", "2.33.4"),
-    
+
     # 2. Surface Preparation & Earthwork
     ("2. Surface Preparation & Earthwork", "General surface cut (≤30 cm deep)", "2.1.1"),
     ("2. Surface Preparation & Earthwork", "Surface dressing (≤15 cm depth)", "2.28.1"),
@@ -45,52 +45,89 @@ HEADING_TASK_CATALOG = [
     ("2. Surface Preparation & Earthwork", "Levelling & neatly dressing disposed soil", "2.36"),
     ("2. Surface Preparation & Earthwork", "Banking & rolling only (excavation excluded)", "2.3.1"),
     ("2. Surface Preparation & Earthwork", "Full cycle: rough excavation + banking + roll", "2.2.1"),
-    
+
     # 3. Excavation – Soil / Earth
     ("3. Excavation – Soil / Earth", "Open areas & wide foundation trenches", "2.6.1"),
     ("3. Excavation – Soil / Earth", "Foundation trenches & drain trenches", "2.8.1"),
     ("3. Excavation – Soil / Earth", "Pipe / Cable trenches (dia ≤80 mm)", "2.10.1.1"),
     ("3. Excavation – Soil / Earth", "Pipe / Cable trenches (dia 80–300 mm)", "2.10.1.2"),
     ("3. Excavation – Soil / Earth", "Pipe / Cable trenches (dia >300 mm)", "2.10.1.3"),
-    # NOTE: Extra-depth add-ons (2.26.1, 2.11, 2.12) are ADDITIVE items controlled by Lever 2 (D20)
-    # — NOT task alternatives. They are NOT listed here as D9 options.
     ("3. Excavation – Soil / Earth", "Extra for foul position (+25%)", "2.24.2"),
     ("3. Excavation – Soil / Earth", "Extra for wet/water position (+20%)", "2.24.1"),
-    
-    # 4. Excavation – Rock
+    # Extra depth / lift add-ons (additive; driven by Lever 2 D20 AND by Extra/Add-on tree path)
+    ("3. Excavation – Soil / Earth", "Extra lift for soil — each additional 1.5 m stage", "2.26.1"),
+    ("3. Excavation – Soil / Earth", "Local earth supply, excavation & filling (mechanical)", "2.25a"),
+
+    # 4. Excavation – Rock  (open area, trench, pipe trench variants)
+    ("4. Excavation – Rock", "Open area — ordinary rock", "2.7.1"),
     ("4. Excavation – Rock", "Rock blasting + Excavator loading", "2.7.2"),
-    ("4. Excavation – Rock", "Rock blasting + manual trench excavation", "2.9.2"),
     ("4. Excavation – Rock", "Rock breaker / Chiselling (no blasting)", "2.7.3"),
+    ("4. Excavation – Rock", "Foundation trench — ordinary rock", "2.9.1"),
+    ("4. Excavation – Rock", "Rock blasting + manual trench excavation", "2.9.2"),
     ("4. Excavation – Rock", "Manual rock chiselling (no blasting)", "2.9.3"),
+    # Pipe trenches in rock — ordinary rock
+    ("4. Excavation – Rock", "Pipe trench — ord rock, dia ≤80 mm", "2.13.1.1"),
+    ("4. Excavation – Rock", "Pipe trench — ord rock, dia 80–300 mm", "2.13.1.2"),
+    ("4. Excavation – Rock", "Pipe trench — ord rock, dia >300 mm", "2.13.1.3"),
+    # Pipe trenches in rock — hard rock blasting
+    ("4. Excavation – Rock", "Pipe trench — hard rock blast, dia ≤80 mm", "2.13.2.1"),
+    ("4. Excavation – Rock", "Pipe trench — hard rock blast, dia 80–300 mm", "2.13.2.2"),
+    ("4. Excavation – Rock", "Pipe trench — hard rock blast, dia >300 mm", "2.13.2.3"),
+    # Pipe trenches in rock — hard rock no blast
+    ("4. Excavation – Rock", "Pipe trench — hard rock no blast, dia ≤80 mm", "2.13.3.1"),
+    ("4. Excavation – Rock", "Pipe trench — hard rock no blast, dia 80–300 mm", "2.13.3.2"),
+    ("4. Excavation – Rock", "Pipe trench — hard rock no blast, dia >300 mm", "2.13.3.3"),
+    # Extra lift for rock
+    ("4. Excavation – Rock", "Extra lift for rock — each additional 1.5 m stage", "2.26.2"),
+    # Isolated holes
     ("4. Excavation – Rock", "Excavating post holes 0.1–0.5 cum in soil", "2.30.1"),
     ("4. Excavation – Rock", "Excavating post holes 0.1–0.5 cum in ordinary rock", "2.30.2"),
     ("4. Excavation – Rock", "Excavating post holes 0.1–0.5 cum in hard rock chiseled", "2.30.4"),
     ("4. Excavation – Rock", "Excavating post holes 0.1–0.5 cum in hard rock blast", "2.30.3"),
-    
-    # 5. Timbering / Shoring
+
+    # 5. Timbering / Shoring — close timbering
     ("5. Timbering / Shoring", "Close timbering depth ≤1.5 m (90 sqm face)", "2.16.1"),
     ("5. Timbering / Shoring", "Close timbering depth 1.5–3.0 m (90 sqm face)", "2.16.2"),
     ("5. Timbering / Shoring", "Close timbering depth 3.0–4.5 m (90 sqm face)", "2.16.3"),
-    
+    ("5. Timbering / Shoring", "Close timbering shafts — depth ≤1.5 m", "2.17.1"),
+    ("5. Timbering / Shoring", "Close timbering shafts — depth 1.5–3.0 m", "2.17.2"),
+    ("5. Timbering / Shoring", "Close timbering shafts — depth 3.0–4.5 m", "2.17.3"),
+    ("5. Timbering / Shoring", "Close timbering over areas — depth ≤1.5 m", "2.18.1"),
+    ("5. Timbering / Shoring", "Close timbering over areas — depth 1.5–3.0 m", "2.18.2"),
+    ("5. Timbering / Shoring", "Close timbering over areas — depth 3.0–4.5 m", "2.18.3"),
+    ("5. Timbering / Shoring", "Extra for permanent timbering — close (face area)", "2.19"),
+    # 5. Timbering / Shoring — open timbering
+    ("5. Timbering / Shoring", "Open timbering trenches — depth ≤1.5 m", "2.20.1"),
+    ("5. Timbering / Shoring", "Open timbering trenches — depth 1.5–3.0 m", "2.20.2"),
+    ("5. Timbering / Shoring", "Open timbering trenches — depth 3.0–4.5 m", "2.20.3"),
+    ("5. Timbering / Shoring", "Open timbering shafts — depth ≤1.5 m", "2.21.1"),
+    ("5. Timbering / Shoring", "Open timbering shafts — depth 1.5–3.0 m", "2.21.2"),
+    ("5. Timbering / Shoring", "Open timbering shafts — depth 3.0–4.5 m", "2.21.3"),
+    ("5. Timbering / Shoring", "Open timbering over areas — depth ≤1.5 m", "2.22.1"),
+    ("5. Timbering / Shoring", "Open timbering over areas — depth 1.5–3.0 m", "2.22.2"),
+    ("5. Timbering / Shoring", "Open timbering over areas — depth 3.0–4.5 m", "2.22.3"),
+    ("5. Timbering / Shoring", "Extra for permanent timbering — open (face area)", "2.23"),
+
     # 6. Filling & Backfilling
     ("6. Filling & Backfilling", "Filling available excavated earth in plinth/trenches", "2.25"),
+    ("6. Filling & Backfilling", "Local earth supply, excavation & filling (mechanical)", "2.25a"),
     ("6. Filling & Backfilling", "Filling with fly ash and earth mix in plinth", "2.38"),
     ("6. Filling & Backfilling", "Supplying and filling quarry moorum", "2.27"),
     ("6. Filling & Backfilling", "Supply and stacking fly ash (IRC-58)", "2.37"),
-    
+
     # 7. Compaction / Rolling Deductions
     ("7. Compaction / Rolling Deductions", "DEDUCT: Omission of 8–10 t power rolling", "2.4"),
     ("7. Compaction / Rolling Deductions", "DEDUCT: Omission of OMC compaction watering", "2.5"),
-    
+
     # 8. Termite Treatment
     ("8. Termite Treatment", "Supply chemical emulsion (Chlorpyrifos 20% EC)", "2.34.1"),
     ("8. Termite Treatment", "Treatment to bottom & sides of foundation trenches", "2.35.1.1"),
     ("8. Termite Treatment", "Treatment to backfill earth in contact with walls", "2.35.2.1"),
     ("8. Termite Treatment", "Treatment to subgrade under floors", "2.35.3.1"),
     ("8. Termite Treatment", "Treatment at junction of wall & floor", "2.35.4.1"),
-    
+
     # 9. Post-Construction Treatment
-    ("9. Post-Construction Treatment", "POST-CONSTRUCTION: drilling 12 mm holes & injecting", "2.35.5")
+    ("9. Post-Construction Treatment", "POST-CONSTRUCTION: drilling 12 mm holes & injecting", "2.35.5"),
 ]
 
 
@@ -7319,5 +7356,334 @@ for r in TABLE_5E_RECORDS:
     r['cat_task_method_line_key'] = f"{r['category']}|{r['task_spec']}|{r['method']}|{r['line_no']}"
     r['cat_task_line_key'] = f"{r['category']}|{r['task_spec']}|{r['line_no']}"
     r['internal_key'] = f"{r['scope']}|{r['strata']}|{r['method']}|{r['task_spec']}|{r['line_no']}"
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# DECISION-TREE CASCADING DROPDOWN DATA
+# L1 → L2 → L3 → L4 (terminal task name = HEADING_TASK_CATALOG entry)
+# Written to aux columns AU-AZ starting at R_CAT_FIRST (row 109).
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Level 1: Primary work nature (replaces old SCOPE_OPTIONS for D6 dropdown)
+L1_OPTIONS = [
+    "Excavation",
+    "Banking / Embankment",
+    "Filling",
+    "Timbering (Shoring / Planking)",
+    "Site Clearance / Surface Preparation",
+    "Chemical Anti-Termite Treatment",
+    "Extra / Add-on / Deduction",
+]
+
+# Level 2: Sub-scope / geometry — flat list of (L1_key, L2_label) pairs
+# Written to columns AU (key, col 47) and AV (value, col 48).
+# Excel DV formula for D7: OFFSET/MATCH/COUNTIF on AU/AV block.
+L2_DATA = [
+    # Excavation
+    ("Excavation", "Surface (≤30 cm depth, width >1.5 m, area >10 sqm)"),
+    ("Excavation", "Open Area (>30 cm depth, width >1.5 m, area >10 sqm)"),
+    ("Excavation", "Foundation Trench or Drain (width ≤1.5 m or area ≤10 sqm)"),
+    ("Excavation", "Pipe or Cable Trench (depth ≤1.5 m basic)"),
+    ("Excavation", "Isolated Hole (0.10–0.50 cum per hole)"),
+    # Banking / Embankment
+    ("Banking / Embankment", "Excavation + Banking combined (cut and fill)"),
+    ("Banking / Embankment", "Banking of already-available / stacked earth"),
+    # Filling
+    ("Filling", "Available excavated earth (lead ≤50 m)"),
+    ("Filling", "Local earth — excavate, supply and fill (lead ≤5 km)"),
+    ("Filling", "Sand filling in plinth"),
+    ("Filling", "Fly Ash — supply and stack (IRC-58)"),
+    ("Filling", "Fly Ash — fill and compact with earth"),
+    # Timbering (Shoring / Planking)
+    ("Timbering (Shoring / Planking)", "Close timbering (no gaps)"),
+    ("Timbering (Shoring / Planking)", "Open timbering (with gaps)"),
+    # Site Clearance / Surface Preparation
+    ("Site Clearance / Surface Preparation", "Surface dressing of ground (≤15 cm)"),
+    ("Site Clearance / Surface Preparation", "Ploughing existing ground (15–25 cm)"),
+    ("Site Clearance / Surface Preparation", "Clearing jungle / rank vegetation"),
+    ("Site Clearance / Surface Preparation", "Clearing grass only"),
+    ("Site Clearance / Surface Preparation", "Felling trees"),
+    # Chemical Anti-Termite Treatment
+    ("Chemical Anti-Termite Treatment", "Supply of chemical emulsion (Chlorpyriphos EC 20%)"),
+    ("Chemical Anti-Termite Treatment", "Application — external wall (no apron)"),
+    ("Chemical Anti-Termite Treatment", "Application — external wall (below apron)"),
+    ("Chemical Anti-Termite Treatment", "Application — soil under existing floors"),
+    ("Chemical Anti-Termite Treatment", "Application — existing masonry"),
+    ("Chemical Anti-Termite Treatment", "Application — points of contact of woodwork"),
+    # Extra / Add-on / Deduction
+    ("Extra / Add-on / Deduction", "Extra for additional lift (each 1.5 m beyond first)"),
+    ("Extra / Add-on / Deduction", "Extra for difficult conditions — water / liquid mud"),
+    ("Extra / Add-on / Deduction", "Extra for difficult conditions — foul position"),
+    ("Extra / Add-on / Deduction", "Deduct — omit power rolling (from banking rate)"),
+    ("Extra / Add-on / Deduction", "Deduct — omit watering (from banking rate)"),
+    ("Extra / Add-on / Deduction", "Extra for levelling and dressing disposed soil"),
+    ("Extra / Add-on / Deduction", "Extra — permanent timbering left in position (close)"),
+    ("Extra / Add-on / Deduction", "Extra — permanent timbering left in position (open)"),
+]
+
+# Level 3: Ground material / location / girth
+# Key = L1 + "|" + L2  (concatenated).
+# Written to columns AW (key, col 49) and AX (value, col 50).
+# Excel DV formula for D8: OFFSET/MATCH/COUNTIF on AW/AX block.
+L3_DATA = [
+    # ── Excavation ──────────────────────────────────────────────────────────
+    # Surface: only soil, single option
+    ("Excavation|Surface (≤30 cm depth, width >1.5 m, area >10 sqm)", "All kinds of soil"),
+    # Open Area: 4 material options
+    ("Excavation|Open Area (>30 cm depth, width >1.5 m, area >10 sqm)", "All kinds of soil"),
+    ("Excavation|Open Area (>30 cm depth, width >1.5 m, area >10 sqm)", "Ordinary rock"),
+    ("Excavation|Open Area (>30 cm depth, width >1.5 m, area >10 sqm)", "Hard rock (blasting permitted)"),
+    ("Excavation|Open Area (>30 cm depth, width >1.5 m, area >10 sqm)", "Hard rock (blasting prohibited)"),
+    # Foundation Trench: 4 material options
+    ("Excavation|Foundation Trench or Drain (width ≤1.5 m or area ≤10 sqm)", "All kinds of soil"),
+    ("Excavation|Foundation Trench or Drain (width ≤1.5 m or area ≤10 sqm)", "Ordinary rock"),
+    ("Excavation|Foundation Trench or Drain (width ≤1.5 m or area ≤10 sqm)", "Hard rock (blasting permitted)"),
+    ("Excavation|Foundation Trench or Drain (width ≤1.5 m or area ≤10 sqm)", "Hard rock (blasting prohibited)"),
+    # Pipe or Cable Trench: 4 material options
+    ("Excavation|Pipe or Cable Trench (depth ≤1.5 m basic)", "All kinds of soil"),
+    ("Excavation|Pipe or Cable Trench (depth ≤1.5 m basic)", "Ordinary rock"),
+    ("Excavation|Pipe or Cable Trench (depth ≤1.5 m basic)", "Hard rock (blasting permitted)"),
+    ("Excavation|Pipe or Cable Trench (depth ≤1.5 m basic)", "Hard rock (blasting prohibited)"),
+    # Isolated Hole: 4 material options
+    ("Excavation|Isolated Hole (0.10–0.50 cum per hole)", "All kinds of soil"),
+    ("Excavation|Isolated Hole (0.10–0.50 cum per hole)", "Ordinary rock"),
+    ("Excavation|Isolated Hole (0.10–0.50 cum per hole)", "Hard rock (blasting permitted)"),
+    ("Excavation|Isolated Hole (0.10–0.50 cum per hole)", "Hard rock (blasting prohibited)"),
+    # ── Banking / Embankment ─────────────────────────────────────────────────
+    ("Banking / Embankment|Excavation + Banking combined (cut and fill)", "N/A"),
+    ("Banking / Embankment|Banking of already-available / stacked earth", "N/A"),
+    # ── Filling ──────────────────────────────────────────────────────────────
+    ("Filling|Available excavated earth (lead ≤50 m)", "N/A"),
+    ("Filling|Local earth — excavate, supply and fill (lead ≤5 km)", "N/A"),
+    ("Filling|Sand filling in plinth", "N/A"),
+    ("Filling|Fly Ash — supply and stack (IRC-58)", "N/A"),
+    ("Filling|Fly Ash — fill and compact with earth", "N/A"),
+    # ── Timbering: location (L3) ─────────────────────────────────────────────
+    ("Timbering (Shoring / Planking)|Close timbering (no gaps)", "In trenches"),
+    ("Timbering (Shoring / Planking)|Close timbering (no gaps)", "In shafts / wells / cesspits / manholes"),
+    ("Timbering (Shoring / Planking)|Close timbering (no gaps)", "Over areas (general)"),
+    ("Timbering (Shoring / Planking)|Open timbering (with gaps)", "In trenches"),
+    ("Timbering (Shoring / Planking)|Open timbering (with gaps)", "In shafts / wells / cesspits / manholes"),
+    ("Timbering (Shoring / Planking)|Open timbering (with gaps)", "Over areas (general)"),
+    # ── Site Clearance ───────────────────────────────────────────────────────
+    ("Site Clearance / Surface Preparation|Surface dressing of ground (≤15 cm)", "N/A"),
+    ("Site Clearance / Surface Preparation|Ploughing existing ground (15–25 cm)", "N/A"),
+    ("Site Clearance / Surface Preparation|Clearing jungle / rank vegetation", "N/A"),
+    ("Site Clearance / Surface Preparation|Clearing grass only", "N/A"),
+    # Felling trees: girth is L3
+    ("Site Clearance / Surface Preparation|Felling trees", "Girth >30 cm to 60 cm"),
+    ("Site Clearance / Surface Preparation|Felling trees", "Girth >60 cm to 120 cm"),
+    ("Site Clearance / Surface Preparation|Felling trees", "Girth >120 cm to 240 cm"),
+    ("Site Clearance / Surface Preparation|Felling trees", "Girth above 240 cm"),
+    # ── Chemical Anti-Termite Treatment: all single-item, N/A at L3 ─────────
+    ("Chemical Anti-Termite Treatment|Supply of chemical emulsion (Chlorpyriphos EC 20%)", "N/A"),
+    ("Chemical Anti-Termite Treatment|Application — external wall (no apron)", "N/A"),
+    ("Chemical Anti-Termite Treatment|Application — external wall (below apron)", "N/A"),
+    ("Chemical Anti-Termite Treatment|Application — soil under existing floors", "N/A"),
+    ("Chemical Anti-Termite Treatment|Application — existing masonry", "N/A"),
+    ("Chemical Anti-Termite Treatment|Application — points of contact of woodwork", "N/A"),
+    # ── Extra / Add-on / Deduction ───────────────────────────────────────────
+    ("Extra / Add-on / Deduction|Extra for additional lift (each 1.5 m beyond first)", "All kinds of soil"),
+    ("Extra / Add-on / Deduction|Extra for additional lift (each 1.5 m beyond first)", "Ordinary or hard rock"),
+    ("Extra / Add-on / Deduction|Extra for difficult conditions — water / liquid mud", "N/A"),
+    ("Extra / Add-on / Deduction|Extra for difficult conditions — foul position", "N/A"),
+    ("Extra / Add-on / Deduction|Deduct — omit power rolling (from banking rate)", "N/A"),
+    ("Extra / Add-on / Deduction|Deduct — omit watering (from banking rate)", "N/A"),
+    ("Extra / Add-on / Deduction|Extra for levelling and dressing disposed soil", "N/A"),
+    ("Extra / Add-on / Deduction|Extra — permanent timbering left in position (close)", "N/A"),
+    ("Extra / Add-on / Deduction|Extra — permanent timbering left in position (open)", "N/A"),
+]
+
+# Level 4: Terminal item selection (task name = exact HEADING_TASK_CATALOG entry)
+# Key = L1 + "|" + L2 + "|" + L3  (concatenated).
+# Written to columns AY (key, col 51) and AZ (value, col 52).
+# Excel DV formula for D9: OFFSET/MATCH/COUNTIF on AY/AZ block.
+# Multiple rows with the same key = multiple D9 choices for that path.
+L4_DATA = [
+    # ── Excavation — Surface ─────────────────────────────────────────────────
+    ("Excavation|Surface (≤30 cm depth, width >1.5 m, area >10 sqm)|All kinds of soil",
+     "General surface cut (≤30 cm deep)"),
+
+    # ── Excavation — Open Area ───────────────────────────────────────────────
+    ("Excavation|Open Area (>30 cm depth, width >1.5 m, area >10 sqm)|All kinds of soil",
+     "Open areas & wide foundation trenches"),
+    ("Excavation|Open Area (>30 cm depth, width >1.5 m, area >10 sqm)|Ordinary rock",
+     "Open area — ordinary rock"),
+    ("Excavation|Open Area (>30 cm depth, width >1.5 m, area >10 sqm)|Hard rock (blasting permitted)",
+     "Rock blasting + Excavator loading"),
+    ("Excavation|Open Area (>30 cm depth, width >1.5 m, area >10 sqm)|Hard rock (blasting prohibited)",
+     "Rock breaker / Chiselling (no blasting)"),
+
+    # ── Excavation — Foundation Trench ──────────────────────────────────────
+    ("Excavation|Foundation Trench or Drain (width ≤1.5 m or area ≤10 sqm)|All kinds of soil",
+     "Foundation trenches & drain trenches"),
+    ("Excavation|Foundation Trench or Drain (width ≤1.5 m or area ≤10 sqm)|Ordinary rock",
+     "Foundation trench — ordinary rock"),
+    ("Excavation|Foundation Trench or Drain (width ≤1.5 m or area ≤10 sqm)|Hard rock (blasting permitted)",
+     "Rock blasting + manual trench excavation"),
+    ("Excavation|Foundation Trench or Drain (width ≤1.5 m or area ≤10 sqm)|Hard rock (blasting prohibited)",
+     "Manual rock chiselling (no blasting)"),
+
+    # ── Excavation — Pipe or Cable Trench — All kinds of soil ───────────────
+    ("Excavation|Pipe or Cable Trench (depth ≤1.5 m basic)|All kinds of soil",
+     "Pipe / Cable trenches (dia ≤80 mm)"),
+    ("Excavation|Pipe or Cable Trench (depth ≤1.5 m basic)|All kinds of soil",
+     "Pipe / Cable trenches (dia 80–300 mm)"),
+    ("Excavation|Pipe or Cable Trench (depth ≤1.5 m basic)|All kinds of soil",
+     "Pipe / Cable trenches (dia >300 mm)"),
+
+    # ── Excavation — Pipe or Cable Trench — Ordinary rock ───────────────────
+    ("Excavation|Pipe or Cable Trench (depth ≤1.5 m basic)|Ordinary rock",
+     "Pipe trench — ord rock, dia ≤80 mm"),
+    ("Excavation|Pipe or Cable Trench (depth ≤1.5 m basic)|Ordinary rock",
+     "Pipe trench — ord rock, dia 80–300 mm"),
+    ("Excavation|Pipe or Cable Trench (depth ≤1.5 m basic)|Ordinary rock",
+     "Pipe trench — ord rock, dia >300 mm"),
+
+    # ── Excavation — Pipe or Cable Trench — Hard rock blasting ──────────────
+    ("Excavation|Pipe or Cable Trench (depth ≤1.5 m basic)|Hard rock (blasting permitted)",
+     "Pipe trench — hard rock blast, dia ≤80 mm"),
+    ("Excavation|Pipe or Cable Trench (depth ≤1.5 m basic)|Hard rock (blasting permitted)",
+     "Pipe trench — hard rock blast, dia 80–300 mm"),
+    ("Excavation|Pipe or Cable Trench (depth ≤1.5 m basic)|Hard rock (blasting permitted)",
+     "Pipe trench — hard rock blast, dia >300 mm"),
+
+    # ── Excavation — Pipe or Cable Trench — Hard rock no blast ──────────────
+    ("Excavation|Pipe or Cable Trench (depth ≤1.5 m basic)|Hard rock (blasting prohibited)",
+     "Pipe trench — hard rock no blast, dia ≤80 mm"),
+    ("Excavation|Pipe or Cable Trench (depth ≤1.5 m basic)|Hard rock (blasting prohibited)",
+     "Pipe trench — hard rock no blast, dia 80–300 mm"),
+    ("Excavation|Pipe or Cable Trench (depth ≤1.5 m basic)|Hard rock (blasting prohibited)",
+     "Pipe trench — hard rock no blast, dia >300 mm"),
+
+    # ── Excavation — Isolated Hole ───────────────────────────────────────────
+    ("Excavation|Isolated Hole (0.10–0.50 cum per hole)|All kinds of soil",
+     "Excavating post holes 0.1–0.5 cum in soil"),
+    ("Excavation|Isolated Hole (0.10–0.50 cum per hole)|Ordinary rock",
+     "Excavating post holes 0.1–0.5 cum in ordinary rock"),
+    ("Excavation|Isolated Hole (0.10–0.50 cum per hole)|Hard rock (blasting permitted)",
+     "Excavating post holes 0.1–0.5 cum in hard rock blast"),
+    ("Excavation|Isolated Hole (0.10–0.50 cum per hole)|Hard rock (blasting prohibited)",
+     "Excavating post holes 0.1–0.5 cum in hard rock chiseled"),
+
+    # ── Banking / Embankment ─────────────────────────────────────────────────
+    ("Banking / Embankment|Excavation + Banking combined (cut and fill)|N/A",
+     "Full cycle: rough excavation + banking + roll"),
+    ("Banking / Embankment|Banking of already-available / stacked earth|N/A",
+     "Banking & rolling only (excavation excluded)"),
+
+    # ── Filling ──────────────────────────────────────────────────────────────
+    ("Filling|Available excavated earth (lead ≤50 m)|N/A",
+     "Filling available excavated earth in plinth/trenches"),
+    ("Filling|Local earth — excavate, supply and fill (lead ≤5 km)|N/A",
+     "Local earth supply, excavation & filling (mechanical)"),
+    ("Filling|Sand filling in plinth|N/A",
+     "Supplying and filling quarry moorum"),
+    ("Filling|Fly Ash — supply and stack (IRC-58)|N/A",
+     "Supply and stacking fly ash (IRC-58)"),
+    ("Filling|Fly Ash — fill and compact with earth|N/A",
+     "Filling with fly ash and earth mix in plinth"),
+
+    # ── Timbering — Close — In trenches ─────────────────────────────────────
+    ("Timbering (Shoring / Planking)|Close timbering (no gaps)|In trenches",
+     "Close timbering depth ≤1.5 m (90 sqm face)"),
+    ("Timbering (Shoring / Planking)|Close timbering (no gaps)|In trenches",
+     "Close timbering depth 1.5–3.0 m (90 sqm face)"),
+    ("Timbering (Shoring / Planking)|Close timbering (no gaps)|In trenches",
+     "Close timbering depth 3.0–4.5 m (90 sqm face)"),
+
+    # ── Timbering — Close — In shafts / wells / cesspits / manholes ─────────
+    ("Timbering (Shoring / Planking)|Close timbering (no gaps)|In shafts / wells / cesspits / manholes",
+     "Close timbering shafts — depth ≤1.5 m"),
+    ("Timbering (Shoring / Planking)|Close timbering (no gaps)|In shafts / wells / cesspits / manholes",
+     "Close timbering shafts — depth 1.5–3.0 m"),
+    ("Timbering (Shoring / Planking)|Close timbering (no gaps)|In shafts / wells / cesspits / manholes",
+     "Close timbering shafts — depth 3.0–4.5 m"),
+
+    # ── Timbering — Close — Over areas ──────────────────────────────────────
+    ("Timbering (Shoring / Planking)|Close timbering (no gaps)|Over areas (general)",
+     "Close timbering over areas — depth ≤1.5 m"),
+    ("Timbering (Shoring / Planking)|Close timbering (no gaps)|Over areas (general)",
+     "Close timbering over areas — depth 1.5–3.0 m"),
+    ("Timbering (Shoring / Planking)|Close timbering (no gaps)|Over areas (general)",
+     "Close timbering over areas — depth 3.0–4.5 m"),
+
+    # ── Timbering — Open — In trenches ──────────────────────────────────────
+    ("Timbering (Shoring / Planking)|Open timbering (with gaps)|In trenches",
+     "Open timbering trenches — depth ≤1.5 m"),
+    ("Timbering (Shoring / Planking)|Open timbering (with gaps)|In trenches",
+     "Open timbering trenches — depth 1.5–3.0 m"),
+    ("Timbering (Shoring / Planking)|Open timbering (with gaps)|In trenches",
+     "Open timbering trenches — depth 3.0–4.5 m"),
+
+    # ── Timbering — Open — In shafts / wells / cesspits / manholes ──────────
+    ("Timbering (Shoring / Planking)|Open timbering (with gaps)|In shafts / wells / cesspits / manholes",
+     "Open timbering shafts — depth ≤1.5 m"),
+    ("Timbering (Shoring / Planking)|Open timbering (with gaps)|In shafts / wells / cesspits / manholes",
+     "Open timbering shafts — depth 1.5–3.0 m"),
+    ("Timbering (Shoring / Planking)|Open timbering (with gaps)|In shafts / wells / cesspits / manholes",
+     "Open timbering shafts — depth 3.0–4.5 m"),
+
+    # ── Timbering — Open — Over areas ───────────────────────────────────────
+    ("Timbering (Shoring / Planking)|Open timbering (with gaps)|Over areas (general)",
+     "Open timbering over areas — depth ≤1.5 m"),
+    ("Timbering (Shoring / Planking)|Open timbering (with gaps)|Over areas (general)",
+     "Open timbering over areas — depth 1.5–3.0 m"),
+    ("Timbering (Shoring / Planking)|Open timbering (with gaps)|Over areas (general)",
+     "Open timbering over areas — depth 3.0–4.5 m"),
+
+    # ── Site Clearance / Surface Preparation ────────────────────────────────
+    ("Site Clearance / Surface Preparation|Surface dressing of ground (≤15 cm)|N/A",
+     "Surface dressing (≤15 cm depth)"),
+    ("Site Clearance / Surface Preparation|Ploughing existing ground (15–25 cm)|N/A",
+     "Ploughing ground (15–25 cm) & watering"),
+    ("Site Clearance / Surface Preparation|Clearing jungle / rank vegetation|N/A",
+     "Clearing jungle & rank vegetation uprooting"),
+    ("Site Clearance / Surface Preparation|Clearing grass only|N/A",
+     "Clearing grass & removal of rubbish"),
+    # Tree felling — girth is L3, single item per girth band
+    ("Site Clearance / Surface Preparation|Felling trees|Girth >30 cm to 60 cm",
+     "Tree felling girth 30–60 cm (cutting & grubbing roots)"),
+    ("Site Clearance / Surface Preparation|Felling trees|Girth >60 cm to 120 cm",
+     "Tree felling girth 60–120 cm (cutting & grubbing roots)"),
+    ("Site Clearance / Surface Preparation|Felling trees|Girth >120 cm to 240 cm",
+     "Tree felling girth 120–240 cm (cutting & grubbing roots)"),
+    ("Site Clearance / Surface Preparation|Felling trees|Girth above 240 cm",
+     "Tree felling girth above 240 cm (cutting & grubbing roots)"),
+
+    # ── Chemical Anti-Termite Treatment ─────────────────────────────────────
+    ("Chemical Anti-Termite Treatment|Supply of chemical emulsion (Chlorpyriphos EC 20%)|N/A",
+     "Supply chemical emulsion (Chlorpyrifos 20% EC)"),
+    ("Chemical Anti-Termite Treatment|Application — external wall (no apron)|N/A",
+     "Treatment to bottom & sides of foundation trenches"),
+    ("Chemical Anti-Termite Treatment|Application — external wall (below apron)|N/A",
+     "Treatment to backfill earth in contact with walls"),
+    ("Chemical Anti-Termite Treatment|Application — soil under existing floors|N/A",
+     "Treatment to subgrade under floors"),
+    ("Chemical Anti-Termite Treatment|Application — existing masonry|N/A",
+     "Treatment at junction of wall & floor"),
+    ("Chemical Anti-Termite Treatment|Application — points of contact of woodwork|N/A",
+     "POST-CONSTRUCTION: drilling 12 mm holes & injecting"),
+
+    # ── Extra / Add-on / Deduction ───────────────────────────────────────────
+    ("Extra / Add-on / Deduction|Extra for additional lift (each 1.5 m beyond first)|All kinds of soil",
+     "Extra lift for soil — each additional 1.5 m stage"),
+    ("Extra / Add-on / Deduction|Extra for additional lift (each 1.5 m beyond first)|Ordinary or hard rock",
+     "Extra lift for rock — each additional 1.5 m stage"),
+    ("Extra / Add-on / Deduction|Extra for difficult conditions — water / liquid mud|N/A",
+     "Extra for wet/water position (+20%)"),
+    ("Extra / Add-on / Deduction|Extra for difficult conditions — foul position|N/A",
+     "Extra for foul position (+25%)"),
+    ("Extra / Add-on / Deduction|Deduct — omit power rolling (from banking rate)|N/A",
+     "DEDUCT: Omission of 8–10 t power rolling"),
+    ("Extra / Add-on / Deduction|Deduct — omit watering (from banking rate)|N/A",
+     "DEDUCT: Omission of OMC compaction watering"),
+    ("Extra / Add-on / Deduction|Extra for levelling and dressing disposed soil|N/A",
+     "Levelling & neatly dressing disposed soil"),
+    ("Extra / Add-on / Deduction|Extra — permanent timbering left in position (close)|N/A",
+     "Extra for permanent timbering — close (face area)"),
+    ("Extra / Add-on / Deduction|Extra — permanent timbering left in position (open)|N/A",
+     "Extra for permanent timbering — open (face area)"),
+]
 
 

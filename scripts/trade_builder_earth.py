@@ -28,7 +28,12 @@ from scripts.earthwork_tables import (
     BENCHMARK_PRODUCTIVITY_ROWS,
     TABLE_5E_RECORDS,
     MASTER_ACTIVITIES,
-    MASTER_ITEMS
+    MASTER_ITEMS,
+    # Decision-tree cascade data (L1→L2→L3→L4)
+    L1_OPTIONS,
+    L2_DATA,
+    L3_DATA,
+    L4_DATA,
 )
 
 
@@ -243,6 +248,13 @@ def build_earthwork_trade(wb, config, styles):
         'AL': 45, # Master Task Options
         'AN': 36, # Category / Sub-Head Heading (Source for C9 & D9 Dependent Range)
         'AO': 58, # Task / Operation Specification Options (D9 Dropdown Source)
+        # Decision-tree cascade lookup tables (L1→L2→L3→L4)
+        'AU': 52, # L2 key (L1 value repeated per L2 entry)
+        'AV': 62, # L2 value (sub-scope / geometry label)
+        'AW': 72, # L3 key (L1|L2 concatenated)
+        'AX': 52, # L3 value (ground material / location / girth)
+        'AY': 88, # L4 key (L1|L2|L3 concatenated)
+        'AZ': 62, # L4 value (terminal task name = HEADING_TASK_CATALOG entry)
     }
     for col_l, w in col_widths.items():
         ws.column_dimensions[col_l].width = w
@@ -252,19 +264,57 @@ def build_earthwork_trade(wb, config, styles):
     # -------------------------------------------------------------
     dv_yesno = DataValidation(type='list', formula1='"YES,NO"', allow_blank=False)
     ws.add_data_validation(dv_yesno)
-    
-    r_scope_end = R_CAT_FIRST + len(SCOPE_OPTIONS) - 1
-    dv_scope = DataValidation(type='list', formula1=f'=$AP${R_CAT_FIRST}:$AP${r_scope_end}', allow_blank=False)
-    ws.add_data_validation(dv_scope)
-    
-    r_strata_end = R_CAT_FIRST + len(STRATA_OPTIONS) - 1
-    dv_strata = DataValidation(type='list', formula1=f'=$AT${R_CAT_FIRST}:$AT${r_strata_end}', allow_blank=False)
-    ws.add_data_validation(dv_strata)
-    
-    r_method_end = R_CAT_FIRST + len(METHOD_OPTIONS) - 1
-    dv_method = DataValidation(type='list', formula1=f'=$AR${R_CAT_FIRST}:$AR${r_method_end}', allow_blank=False)
-    ws.add_data_validation(dv_method)
 
+    # ── L1: Primary Work Nature (D6) — static list in AP column ─────────────
+    r_l1_end = R_CAT_FIRST + len(L1_OPTIONS) - 1
+    dv_scope = DataValidation(type='list', formula1=f'=$AP${R_CAT_FIRST}:$AP${r_l1_end}', allow_blank=False)
+    ws.add_data_validation(dv_scope)
+
+    # ── L2: Sub-scope / Geometry (D7) — cascades from D6 ────────────────────
+    # Key col AU (47), value col AV (48).  Row range 109 to 109+len(L2_DATA)-1.
+    _l2_end = R_CAT_FIRST + len(L2_DATA) - 1
+    dv_d7 = DataValidation(
+        type='list',
+        formula1=(
+            f'=OFFSET($AV${R_CAT_FIRST},'
+            f'MATCH($D${R_SCOPE},$AU${R_CAT_FIRST}:$AU${_l2_end},0)-1,'
+            f'0,COUNTIF($AU${R_CAT_FIRST}:$AU${_l2_end},$D${R_SCOPE}),1)'
+        ),
+        allow_blank=True,
+    )
+    ws.add_data_validation(dv_d7)
+
+    # ── L3: Ground Material / Location / Girth (D8) — cascades from D6+D7 ───
+    # Key col AW (49), value col AX (50).
+    _l3_end = R_CAT_FIRST + len(L3_DATA) - 1
+    dv_d8 = DataValidation(
+        type='list',
+        formula1=(
+            f'=OFFSET($AX${R_CAT_FIRST},'
+            f'MATCH($D${R_SCOPE}&"|"&$D${R_STRATA},$AW${R_CAT_FIRST}:$AW${_l3_end},0)-1,'
+            f'0,COUNTIF($AW${R_CAT_FIRST}:$AW${_l3_end},$D${R_SCOPE}&"|"&$D${R_STRATA}),1)'
+        ),
+        allow_blank=True,
+    )
+    ws.add_data_validation(dv_d8)
+
+    # ── L4: Terminal Item Specification (D9) — cascades from D6+D7+D8 ───────
+    # Key col AY (51), value col AZ (52).
+    _l4_end = R_CAT_FIRST + len(L4_DATA) - 1
+    dv_task = DataValidation(
+        type='list',
+        formula1=(
+            f'=OFFSET($AZ${R_CAT_FIRST},'
+            f'MATCH($D${R_SCOPE}&"|"&$D${R_STRATA}&"|"&$D${R_METHOD},'
+            f'$AY${R_CAT_FIRST}:$AY${_l4_end},0)-1,'
+            f'0,COUNTIF($AY${R_CAT_FIRST}:$AY${_l4_end},'
+            f'$D${R_SCOPE}&"|"&$D${R_STRATA}&"|"&$D${R_METHOD}),1)'
+        ),
+        allow_blank=True,
+    )
+    ws.add_data_validation(dv_task)
+
+    # ── Legacy aux DVs (retained for Section 1B levers and audit references) ─
     r_depth_end = R_CAT_FIRST + len(LIFT_DEPTH_OPTIONS) - 1
     dv_depth = DataValidation(type='list', formula1=f'=$AS${R_CAT_FIRST}:$AS${r_depth_end}', allow_blank=False)
     ws.add_data_validation(dv_depth)
@@ -272,13 +322,6 @@ def build_earthwork_trade(wb, config, styles):
     r_cat_end = R_CAT_FIRST + len(CATEGORY_HEADINGS) - 1
     dv_cat = DataValidation(type='list', formula1=f'=$AQ${R_CAT_FIRST}:$AQ${r_cat_end}', allow_blank=False)
     ws.add_data_validation(dv_cat)
-    
-    dv_task = DataValidation(
-        type='list',
-        formula1=f'=OFFSET($AO${R_CAT_FIRST}, MATCH($C$9, $AN${R_CAT_FIRST}:$AN${R_CAT_LAST}, 0) - 1, 0, COUNTIF($AN${R_CAT_FIRST}:$AN${R_CAT_LAST}, $C$9), 1)',
-        allow_blank=True
-    )
-    ws.add_data_validation(dv_task)
 
 
     # Master activities ranges for lookups (Cols Z, AA, AB)
@@ -304,7 +347,7 @@ def build_earthwork_trade(wb, config, styles):
     # -------------------------------------------------------------
     ws.merge_cells(f'A{R_SEC1_HEAD}:O{R_SEC1_HEAD}')
     s1_title = ws[f'A{R_SEC1_HEAD}']
-    s1_title.value = '1. RATE ANALYSIS CONFIGURATION & OPERATIONAL PROFILE (Select parameters in D6, D7, D8, D9 to drive rate analysis)'
+    s1_title.value = '1. RATE ANALYSIS CONFIGURATION — GUIDED DECISION TREE  ▶  D6 Primary Nature → D7 Sub-scope → D8 Ground Material → D9 Item Specification'
     s1_title.font = styles['font_white_bold']
     s1_title.fill = styles['fill_header']
     s1_title.alignment = styles['align_left']
@@ -321,33 +364,50 @@ def build_earthwork_trade(wb, config, styles):
     ws.merge_cells(f'G{R_SEC1_COLS}:O{R_SEC1_COLS}')
     ws.row_dimensions[R_SEC1_COLS].height = 24
     
-    _apply_param_row(ws, R_SCOPE, styles, 'Primary Work Scope', 'Surface Excavation (≤30 cm)', '—', 'INPUT',
-                     'Core civil work category: Surface excavation, Foundation/trenching, Embankment, Backfilling, Site clearance, Timbering, or Anti-termite.', dv=dv_scope)
-    _apply_param_row(ws, R_STRATA, styles, 'Ground Strata / Material', 'All kinds of soil', '—', 'INPUT',
-                     'Strata classification: All kinds of soil, Ordinary rock, Hard rock (blasting permitted), or Hard rock (blasting prohibited).', dv=dv_strata)
-    _apply_param_row(ws, R_METHOD, styles, 'Execution Method / Plant & Labour Fleet',
-                     'Manual labor (depth ≤1.5m)',
+    _apply_param_row(ws, R_SCOPE, styles,
+                     'Primary Work Nature',
+                     'Excavation',
                      '—', 'INPUT',
-                     '=IF(OR($D$9="Open areas & wide foundation trenches",$D$9="Foundation trenches & drain trenches",ISNUMBER(SEARCH("blasting + Excavator",$D$9)),ISNUMBER(SEARCH("Rock breaker",$D$9))),'
-                     '"AUTO-SUGGEST -> Mechanical (Hydraulic Excavator 0.9 cum) recommended for this task. Confirm in D8 - your selection drives Table 2A resource fleet. Mechanical: 0.9 cum bucket, output ~120 cum/shift.",'
-                     '"AUTO-SUGGEST -> Manual labor (depth <=1.5m) recommended. For mechanised work select Mechanical in D8. Manual: standard gang of Beldar + Mate. D8 is a free selection - override any time.")',
-                     dv=dv_method)
+                     'STEP 1 of 4 — Select the primary nature of the earthwork: Excavation · Banking/Embankment · Filling · Timbering · Site Clearance · Chemical Anti-Termite · Extra/Add-on. '
+                     'Your choice here drives the Sub-scope dropdown (D7) → Ground Material (D8) → Item Specification (D9) in a guided decision tree.',
+                     dv=dv_scope)
+    _apply_param_row(ws, R_STRATA, styles,
+                     'Sub-scope / Geometry',
+                     'Surface (≤30 cm depth, width >1.5 m, area >10 sqm)',
+                     '—', 'INPUT',
+                     'STEP 2 of 4 — Sub-scope options shown depend on Step 1 (D6). '
+                     'For Excavation: Surface / Open Area / Foundation Trench / Pipe Trench / Isolated Hole. '
+                     'For Timbering: Close or Open. For Filling: material type. Reselect D7 whenever D6 changes.',
+                     dv=dv_d7)
+    _apply_param_row(ws, R_METHOD, styles,
+                     'Ground Material / Location / Girth',
+                     'All kinds of soil',
+                     '—', 'INPUT',
+                     'STEP 3 of 4 — Material, location, or girth options shown depend on Steps 1+2 (D6+D7). '
+                     'Excavation paths: All soil / Ordinary rock / Hard rock blasting / Hard rock no blast. '
+                     'Timbering paths: In trenches / In shafts & wells / Over areas. '
+                     'Tree felling: girth band. Shows N/A when Step 3 is not needed for this scope.',
+                     dv=dv_d8)
 
-    # Row 9: Sub-Head Category in C9 & Specific Task in D9 (Dynamic Dependent Dropdown)
+    # Row 9: C9 (auto-derived category) + D9 (terminal item — L4 cascade)
     ws.merge_cells(f'A{R_TASK}:B{R_TASK}')
-    lbl_9 = ws.cell(row=R_TASK, column=1, value='Sub-Head Category & Specific Task:')
+    lbl_9 = ws.cell(row=R_TASK, column=1, value='Item Specification (Terminal Selection):')
     lbl_9.font = styles['font_bold']
     lbl_9.alignment = styles['align_left']
 
-    # C9: Category Selector (INPUT)
-    c9_cell = ws.cell(row=R_TASK, column=3, value='2. Surface Preparation & Earthwork')
+    # C9: Auto-derived category heading (formula, not a dropdown).
+    # Looks up D9 task name in the AO catalog and returns the matching AN category.
+    # This feeds _master_lookup which uses C9|D9 as the primary lookup key.
+    _ao_lookup_end = R_CAT_FIRST + len(HEADING_TASK_CATALOG) - 1
+    c9_cell = ws.cell(row=R_TASK, column=3,
+                      value=f'=IFERROR(INDEX($AN${R_CAT_FIRST}:$AN${_ao_lookup_end},'
+                            f'MATCH($D${R_TASK},$AO${R_CAT_FIRST}:$AO${_ao_lookup_end},0)),"—")')
     c9_cell.alignment = styles['align_center']
-    c9_cell.font = styles['font_bold']
-    c9_cell.fill = styles['fill_input']
-    c9_cell.protection = Protection(locked=False)
-    dv_cat.add(c9_cell)
+    c9_cell.font = styles['font_note']
+    c9_cell.fill = styles['fill_lookup']
+    # C9 is locked (formula-derived); do NOT add dv_cat here
 
-    # D9: Operation / Task Specification (INPUT, dynamic dependent dropdown via OFFSET)
+    # D9: Terminal item specification — L4 cascade driven by D6 + D7 + D8.
     d9_cell = ws.cell(row=R_TASK, column=4, value='General surface cut (≤30 cm deep)')
     d9_cell.alignment = styles['align_center']
     d9_cell.font = styles['font_bold']
@@ -360,28 +420,29 @@ def build_earthwork_trade(wb, config, styles):
     e9_cell.alignment = styles['align_center']
     e9_cell.font = styles['font_regular']
 
-    # F9: Role
+    # F9: Role label
     f9_cell = ws.cell(row=R_TASK, column=6, value='INPUT')
     f9_cell.alignment = styles['align_center']
     f9_cell.font = styles['font_bold']
     f9_cell.fill = styles['fill_input']
 
-    # G9:O9: Guidance Note with stale-value detection
+    # G9:O9: Guidance note with stale-value detection
     ws.merge_cells(f'G{R_TASK}:O{R_TASK}')
     g9_cell = ws.cell(row=R_TASK, column=7,
                       value=(
-                          f'=IF(COUNTIF(OFFSET($AO${R_CAT_FIRST},MATCH($C${R_TASK},$AN${R_CAT_FIRST}:$AN${R_CAT_LAST},0)-1,0,'
-                          f'COUNTIF($AN${R_CAT_FIRST}:$AN${R_CAT_LAST},$C${R_TASK}),1),$D${R_TASK})=0,'
-                          f'"[STALE TASK] Current D9 value ["&$D${R_TASK}&"] is not in Category ["&$C${R_TASK}&"]. '
-                          f'Please reselect D9 from the dropdown to restore a valid task and trigger correct lookups.",'
-                          f'"Select C9 category first, then D9 task (45 verified CPWD earthwork variants across 9 sub-heads). '
-                          f'Active: ["&$C${R_TASK}&"] -> ["&$D${R_TASK}&"]. D9 controls Table 2A resource lookup and D8 auto-suggest.")'
+                          f'=IF(COUNTIF($AO${R_CAT_FIRST}:$AO${_ao_lookup_end},$D${R_TASK})=0,'
+                          f'"[STALE ITEM] D9 value ["&$D${R_TASK}&"] not found in catalog. '
+                          f'Reselect D9 from the dropdown after confirming D6, D7, D8.",'
+                          f'"STEP 4 of 4 — Select the terminal item specification. '
+                          f'Options shown are filtered to exactly those valid for your D6→D7→D8 path. '
+                          f'Active path: ["&$D${R_SCOPE}&"] › ["&$D${R_STRATA}&"] › ["&$D${R_METHOD}&"]. '
+                          f'Selected item: ["&$D${R_TASK}&"]. C9 category is auto-derived.")'
                       ))
     g9_cell.font = styles['font_note']
     g9_cell.alignment = styles['align_left']
     for c in range(1, LAST_COL + 1):
         ws.cell(row=R_TASK, column=c).border = styles['border_thin']
-    ws.row_dimensions[R_TASK].height = 20
+    ws.row_dimensions[R_TASK].height = 22
 
     # Batch Qty & Unit looked up from Master Activities Table
     _apply_param_row(ws, R_BATCH_QTY, styles, 'Standard Output Batch Quantity',
@@ -1740,13 +1801,13 @@ def build_earthwork_trade(wb, config, styles):
         c_ao.alignment = styles['align_left']
         c_ao.font = styles['font_regular']
 
-    # Columns AP to AT: Dropdown Options Auxiliary Lists (Prevents Excel 255-char DataValidation limit)
+    # Columns AP to AT: Legacy Dropdown Options Auxiliary Lists
     aux_configs = [
-        (42, 'Primary Work Scope Options (AP)', SCOPE_OPTIONS),
+        (42, 'L1 Primary Work Nature (AP) — D6 Decision Tree', L1_OPTIONS),   # AP replaces old SCOPE_OPTIONS
         (43, 'Category / Sub-Head Headings (AQ)', CATEGORY_HEADINGS),
-        (44, 'Execution Method Options (AR)', METHOD_OPTIONS),
-        (45, 'Excavation Depth & Lift Options (AS)', LIFT_DEPTH_OPTIONS),
-        (46, 'Ground Strata Options (AT)', STRATA_OPTIONS),
+        (44, 'Execution Method Options (AR) — legacy', METHOD_OPTIONS),
+        (45, 'Excavation Depth & Lift Options (AS) — legacy', LIFT_DEPTH_OPTIONS),
+        (46, 'Ground Strata Options (AT) — legacy', STRATA_OPTIONS),
     ]
     for col_idx, hdr_title, opt_list in aux_configs:
         c_hdr = ws.cell(row=R_SEC6_COLS, column=col_idx, value=hdr_title)
@@ -1758,6 +1819,54 @@ def build_earthwork_trade(wb, config, styles):
             c_val = ws.cell(row=r_opt, column=col_idx, value=opt_val)
             c_val.alignment = styles['align_left']
             c_val.font = styles['font_regular']
+
+    # ── Columns AU–AZ: Decision-Tree Cascade Lookup Tables ─────────────────
+    # AU (47) = L2 key (L1 value); AV (48) = L2 label
+    # AW (49) = L3 key (L1|L2);   AX (50) = L3 label
+    # AY (51) = L4 key (L1|L2|L3); AZ (52) = L4 label (terminal task name)
+    tree_col_headers = [
+        (47, 'L2 Key — L1 Value (AU)'),
+        (48, 'L2 Value — Sub-scope / Geometry (AV)'),
+        (49, 'L3 Key — L1|L2 (AW)'),
+        (50, 'L3 Value — Ground Material / Location (AX)'),
+        (51, 'L4 Key — L1|L2|L3 (AY)'),
+        (52, 'L4 Value — Terminal Item Spec / Task Name (AZ)'),
+    ]
+    for col_idx, hdr_title in tree_col_headers:
+        c_hdr = ws.cell(row=R_SEC6_COLS, column=col_idx, value=hdr_title)
+        c_hdr.font = styles['font_header']
+        c_hdr.fill = styles['fill_header']
+        c_hdr.alignment = styles['align_center']
+
+    # Write L2_DATA  — (key, value) pairs → cols AU, AV
+    for idx, (key_val, label_val) in enumerate(L2_DATA):
+        r = R_CAT_FIRST + idx
+        c_k = ws.cell(row=r, column=47, value=key_val)
+        c_k.alignment = styles['align_left']
+        c_k.font = styles['font_regular']
+        c_v = ws.cell(row=r, column=48, value=label_val)
+        c_v.alignment = styles['align_left']
+        c_v.font = styles['font_regular']
+
+    # Write L3_DATA  — (key, value) pairs → cols AW, AX
+    for idx, (key_val, label_val) in enumerate(L3_DATA):
+        r = R_CAT_FIRST + idx
+        c_k = ws.cell(row=r, column=49, value=key_val)
+        c_k.alignment = styles['align_left']
+        c_k.font = styles['font_regular']
+        c_v = ws.cell(row=r, column=50, value=label_val)
+        c_v.alignment = styles['align_left']
+        c_v.font = styles['font_regular']
+
+    # Write L4_DATA  — (key, value) pairs → cols AY, AZ
+    for idx, (key_val, label_val) in enumerate(L4_DATA):
+        r = R_CAT_FIRST + idx
+        c_k = ws.cell(row=r, column=51, value=key_val)
+        c_k.alignment = styles['align_left']
+        c_k.font = styles['font_regular']
+        c_v = ws.cell(row=r, column=52, value=label_val)
+        c_v.alignment = styles['align_left']
+        c_v.font = styles['font_regular']
 
     ws.protection.sheet = True
     ws.freeze_panes = 'A4'
