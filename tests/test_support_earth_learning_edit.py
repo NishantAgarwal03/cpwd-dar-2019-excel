@@ -17,6 +17,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from support_earth_learning_edit import (  # noqa: E402
     apply_first_principles_learning,
+    apply_markup_outline,
     build_derivation_catalog,
     derive_resource_norm,
     export_ascii_formula_workbook,
@@ -233,6 +234,21 @@ class FirstPrinciplesRenderingTests(unittest.TestCase):
         self.assertTrue(all("Engineering teaching reconstruction, not a published CPWD rule" in text for text in reconstructed))
         self.assertTrue(all("Engineering teaching reconstruction, not a published CPWD rule" in support.cell(row, 4).comment.text
                             for row in resource_rows if "Engineering teaching reconstruction" in support.cell(row, 9).value))
+
+    def test_groups_only_repeated_markup_rows_on_first_middle_and_final_items(self):
+        workbook = load_workbook(BASELINE_WORKBOOK)
+        support = workbook["02_support_earth_work"]
+        apply_markup_outline(support)
+        item_starts = [r for r in range(1, support.max_row + 1) if str(support.cell(r, 1).value or "").startswith("Item ")]
+        for start in (item_starts[0], item_starts[len(item_starts)//2], item_starts[-1]):
+            end = next(r for r in range(start, support.max_row + 1)
+                       if str(support.cell(r, 1).value or "").startswith("Total cost for"))
+            water = next(r for r in range(start, end + 1)
+                         if str(support.cell(r, 1).value or "").startswith("Add: Water charges"))
+            self.assertEqual(support.row_dimensions[water].outlineLevel, 1)
+            self.assertEqual(support.row_dimensions[end].outlineLevel, 1)
+            self.assertEqual(support.row_dimensions[end + 1].outlineLevel, 0)
+            self.assertEqual(support.row_dimensions[end + 2].outlineLevel, 0)
 
 
 if __name__ == "__main__":

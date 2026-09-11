@@ -330,6 +330,36 @@ def _learning_note(resource, derivation, batch_quantity, batch_unit):
     )
 
 
+def apply_markup_outline(sheet):
+    """Group only the repeat compounding calculation beneath every item.
+
+    The group begins with Water charges and ends at Total cost.  The actual
+    rate, rounded Say rate, and project rate stay at outline level zero, so a
+    student sees the answer while retaining one-click access to the working.
+    """
+    for item in _support_items(sheet):
+        start = end = None
+        for row in range(item["start"], sheet.max_row + 1):
+            text = str(sheet.cell(row, 1).value or "")
+            if row > item["start"] and text.startswith("Item "):
+                break
+            if text.startswith("Add: Water charges"):
+                start = row
+            if start is not None and text.startswith("Total cost for"):
+                end = row
+                break
+        if start is None or end is None:
+            continue
+        for row in range(start, end + 1):
+            dimension = sheet.row_dimensions[row]
+            dimension.outlineLevel = 1
+            dimension.hidden = False
+        # Explicitly safeguard the answer rows after the grouped calculation.
+        for row in range(end + 1, min(end + 4, sheet.max_row + 1)):
+            sheet.row_dimensions[row].outlineLevel = 0
+    sheet.sheet_properties.outlinePr.summaryBelow = True
+
+
 def apply_first_principles_learning(workbook, source_key_by_item: dict[str, str] | None = None):
     """Add the approved three-layer explanation without touching A:H values/styles.
 
@@ -362,4 +392,5 @@ def apply_first_principles_learning(workbook, source_key_by_item: dict[str, str]
             support.cell(item["start"], 9).value = method
             support.cell(item["start"], 9).fill = _PALE_BLUE
             support.cell(item["start"], 9).alignment = Alignment(wrap_text=True, vertical="top")
+    apply_markup_outline(support)
     return workbook
