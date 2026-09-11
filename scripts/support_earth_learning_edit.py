@@ -11,11 +11,14 @@ from collections import defaultdict
 from dataclasses import dataclass
 import re
 from typing import Any
+import xml.etree.ElementTree as ET
+import zipfile
 
 
 SHIFT_HOURS = 8.0
 INTERPRETATION = "Teaching interpretation, not a published CPWD rule"
 SOURCE_EVIDENCE = "CPWD fixed norm / source evidence"
+FORMULA_LITERAL_REPLACEMENTS = str.maketrans({"—": "-", "→": "->", "›": ">"})
 
 
 @dataclass(frozen=True)
@@ -149,3 +152,26 @@ def derive_resource_norm(resource: dict[str, Any], item_context: dict[str, Any],
     if _is_machine(record):
         result["machine_hours"] = task_hours
     return result
+
+
+def export_ascii_formula_workbook(source_path, output_path, sheet_xml_path="xl/worksheets/sheet8.xml"):
+    """Copy a workbook while sanitizing only non-ASCII literal text in formulas.
+
+    The workbook is copied entry-for-entry rather than saved through an XLSX
+    writer.  That preserves all non-target worksheet XML (including visible
+    labels) byte-for-byte while changing only ``<f>`` nodes on sheet8.
+    """
+    source_path = str(source_path)
+    output_path = str(output_path)
+    with zipfile.ZipFile(source_path, "r") as source:
+        if sheet_xml_path not in source.namelist():
+            raise ValueError(f"Workbook does not contain {sheet_xml_path}")
+        with zipfile.ZipFile(output_path, "w") as output:
+            for entry in source.infolist():
+                payload = source.read(entry.filename)
+                if entry.filename == sheet_xml_path:
+                    root = ET.fromstring(payload)
+                    for formula in root.findall(".//{*}f"):
+                        formula.text = (formula.text or "").translate(FORMULA_LITERAL_REPLACEMENTS)
+                    payload = ET.tostring(root, encoding="utf-8", xml_declaration=True)
+                output.writestr(entry, payload)

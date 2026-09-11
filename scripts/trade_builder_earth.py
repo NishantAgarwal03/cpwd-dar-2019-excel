@@ -401,7 +401,7 @@ def build_earthwork_trade(wb, config, styles):
     _ao_lookup_end = R_CAT_FIRST + len(HEADING_TASK_CATALOG) - 1
     c9_cell = ws.cell(row=R_TASK, column=3,
                       value=f'=IFERROR(INDEX($AN${R_CAT_FIRST}:$AN${_ao_lookup_end},'
-                            f'MATCH($D${R_TASK},$AO${R_CAT_FIRST}:$AO${_ao_lookup_end},0)),"—")')
+                             f'MATCH($D${R_TASK},$AO${R_CAT_FIRST}:$AO${_ao_lookup_end},0)),"-")')
     c9_cell.alignment = styles['align_center']
     c9_cell.font = styles['font_note']
     c9_cell.fill = styles['fill_lookup']
@@ -433,9 +433,9 @@ def build_earthwork_trade(wb, config, styles):
                           f'=IF(COUNTIF($AO${R_CAT_FIRST}:$AO${_ao_lookup_end},$D${R_TASK})=0,'
                           f'"[STALE ITEM] D9 value ["&$D${R_TASK}&"] not found in catalog. '
                           f'Reselect D9 from the dropdown after confirming D6, D7, D8.",'
-                          f'"STEP 4 of 4 — Select the terminal item specification. '
-                          f'Options shown are filtered to exactly those valid for your D6→D7→D8 path. '
-                          f'Active path: ["&$D${R_SCOPE}&"] › ["&$D${R_STRATA}&"] › ["&$D${R_METHOD}&"]. '
+                           f'"STEP 4 of 4 - Select the terminal item specification. '
+                           f'Options shown are filtered to exactly those valid for your D6->D7->D8 path. '
+                           f'Active path: ["&$D${R_SCOPE}&"] > ["&$D${R_STRATA}&"] > ["&$D${R_METHOD}&"]. '
                           f'Selected item: ["&$D${R_TASK}&"]. C9 category is auto-derived.")'
                       ))
     g9_cell.font = styles['font_note']

@@ -3,18 +3,30 @@
 from __future__ import annotations
 
 import sys
+import tempfile
 import unittest
+import xml.etree.ElementTree as ET
+import zipfile
 from pathlib import Path
 
 from openpyxl import Workbook
 
 ROOT = Path(__file__).resolve().parents[1]
+BASELINE_WORKBOOK = ROOT / "CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1_Latest.xlsx"
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from support_earth_learning_edit import (  # noqa: E402
     build_derivation_catalog,
     derive_resource_norm,
+    export_ascii_formula_workbook,
 )
+
+
+def sheet8_formulas(workbook_path: Path) -> list[str]:
+    """Read formula nodes directly so Excel's XML compatibility is tested."""
+    with zipfile.ZipFile(workbook_path) as archive:
+        root = ET.fromstring(archive.read("xl/worksheets/sheet8.xml"))
+    return [node.text or "" for node in root.findall(".//{*}f")]
 
 
 def source_sheet_with_verified_norms():
@@ -124,6 +136,32 @@ class DerivationCatalogTests(unittest.TestCase):
         )
 
         self.assertIsNotNone(result)
+
+
+class FormulaCompatibilityTests(unittest.TestCase):
+    def test_exported_sheet8_formula_nodes_are_ascii_only(self):
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            output = Path(temporary_directory) / "sanitized.xlsx"
+            export_ascii_formula_workbook(BASELINE_WORKBOOK, output)
+            formulas = sheet8_formulas(output)
+
+        self.assertEqual(len(formulas), 473)
+        invalid = [formula for formula in formulas if any(ord(char) > 127 for char in formula)]
+        self.assertEqual(invalid, [])
+
+    def test_targeted_export_rewrites_only_formula_literals_in_sheet8(self):
+        source_formulas = sheet8_formulas(BASELINE_WORKBOOK)
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            output = Path(temporary_directory) / "sanitized.xlsx"
+            export_ascii_formula_workbook(BASELINE_WORKBOOK, output)
+            output_formulas = sheet8_formulas(output)
+
+        self.assertEqual(len(output_formulas), 473)
+        self.assertTrue(all(all(ord(char) <= 127 for char in formula) for formula in output_formulas))
+        self.assertEqual(
+            output_formulas,
+            [formula.replace("—", "-").replace("→", "->").replace("›", ">") for formula in source_formulas],
+        )
 
 
 if __name__ == "__main__":
