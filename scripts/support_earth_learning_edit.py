@@ -306,6 +306,7 @@ def _learning_note(resource, derivation, batch_quantity, batch_unit):
         actor = _display_number(derivation["gang_or_machine"])
         hours = _display_number(derivation["task_hours"])
         calculation = f"{actor} × {hours} task-hours ÷ 8-hour shift = {coefficient} {resource['unit']} per {batch}."
+        basis = f"{actor} source-backed gang/machine allocation; each assigned task-hour is converted to an 8-hour shift-day."
         interpretation = (
             f"The resource allocation represents its assigned activity within the work method. "
             f"The inverse gives {_display_number(batch_quantity / float(resource['coefficient']))} {batch_unit} per {resource['unit']}."
@@ -317,12 +318,14 @@ def _learning_note(resource, derivation, batch_quantity, batch_unit):
             f"{actor} × {_display_number(hours)} task-hours ÷ 8-hour shift = "
             f"{coefficient} {resource['unit']} per {batch}."
         )
+        basis = f"{actor}; task-hours are selected solely so the teaching reconstruction reproduces the fixed coefficient exactly."
         interpretation = (
             f"{RECONSTRUCTION}. This allocation is chosen only to make the published coefficient auditable; "
             "it is not source evidence of an actual CPWD gang or task-hour norm."
         )
     return (
         f"CPWD fixed norm / source evidence\n{source}\n\n"
+        f"Role, activity and gang/machine basis\n{resource['description']}: {basis}\n\n"
         f"Calculation\n{calculation}\n\n"
         f"Engineering interpretation for learning\n{interpretation}\n\n"
         f"Boundary conditions\nUse only for the stated operation, output batch, lead/lift, material and method. The teaching shift is fixed at 8 hours.\n\n"
@@ -369,16 +372,21 @@ def apply_first_principles_learning(workbook, source_key_by_item: dict[str, str]
     source_key_by_item = {**DEFAULT_SOURCE_MATCH, **(source_key_by_item or {})}
     support = workbook["02_support_earth_work"]
     catalog = build_derivation_catalog(workbook["02_Earth_Work"])
-    support.column_dimensions["I"].width = 96
+    support.column_dimensions["I"].width = 110
     for item in _support_items(support):
         records = []
         for row, resource in item["resources"]:
             derivation = _record_for_resource(resource, item["number"], catalog, source_key_by_item)
-            support.cell(row, 9).value = _visible_derivation(resource, derivation, item["batch_quantity"], item["batch_unit"])
+            # The worksheet is the primary learning surface: retain the full
+            # source/interpretation card in I, and reserve the D Note for a
+            # quick arithmetic check beside the fixed number.
+            support.cell(row, 9).value = _learning_note(resource, derivation, item["batch_quantity"], item["batch_unit"])
             support.cell(row, 9).fill = _PALE_BLUE
             support.cell(row, 9).alignment = Alignment(wrap_text=True, vertical="top")
+            current_height = support.row_dimensions[row].height or 0
+            support.row_dimensions[row].height = max(current_height, 110)
             support.cell(row, 4).comment = Comment(
-                _learning_note(resource, derivation, item["batch_quantity"], item["batch_unit"]), "CPWD learning guide"
+                _visible_derivation(resource, derivation, item["batch_quantity"], item["batch_unit"]), "CPWD learning guide"
             )
             records.append(str(resource["description"]))
         if records:

@@ -202,17 +202,15 @@ class FirstPrinciplesRenderingTests(unittest.TestCase):
         apply_first_principles_learning(workbook, {"2.1.1": "support-2.1.1"})
         support = workbook["02_support_earth_work"]
 
-        self.assertIn("CPWD fixed norm: Beldar.", support["I7"].value)
-        self.assertIn("4 × 13.6 ÷ 8-hour shift = 6.8 day per 100 sqm", support["I7"].value)
-        self.assertIn("Equivalent productivity: 100 sqm ÷ 6.8", support["I7"].value)
+        self.assertIn("CPWD fixed norm / source evidence", support["I7"].value)
+        self.assertIn("4 × 13.6 task-hours ÷ 8-hour shift = 6.8 day per 100 sqm", support["I7"].value)
+        self.assertIn("The inverse gives 14.705882352941 sqm per day", support["I7"].value)
         self.assertIn("8-hour shift", support["I8"].value)
-        self.assertIn("1 × 0.064 ÷ 8-hour shift = 0.008 day per 100 sqm", support["I9"].value)
+        self.assertIn("1 × 0.064 task-hours ÷ 8-hour shift = 0.008 day per 100 sqm", support["I9"].value)
         self.assertIn("Engineering teaching reconstruction, not a published CPWD rule", support["I10"].value)
-        self.assertIn("CPWD fixed norm / source evidence", support["D7"].comment.text)
+        self.assertIn("CPWD fixed norm: Beldar.", support["D7"].comment.text)
         self.assertIn("Calculation", support["D7"].comment.text)
-        self.assertIn("Engineering interpretation for learning", support["D7"].comment.text)
-        self.assertIn("Boundary conditions", support["D7"].comment.text)
-        self.assertIn("When the norm changes", support["D7"].comment.text)
+        self.assertNotIn("Boundary conditions", support["D7"].comment.text)
         self.assertEqual(support["D7"].value, 6.8)
         self.assertEqual(support["F7"].value, "=D7*1")
 
@@ -249,6 +247,18 @@ class FirstPrinciplesRenderingTests(unittest.TestCase):
             self.assertEqual(support.row_dimensions[end].outlineLevel, 1)
             self.assertEqual(support.row_dimensions[end + 1].outlineLevel, 0)
             self.assertEqual(support.row_dimensions[end + 2].outlineLevel, 0)
+
+    def test_places_detailed_learning_card_in_i_and_only_concise_derivation_in_d_note(self):
+        workbook = load_workbook(BASELINE_WORKBOOK)
+        apply_first_principles_learning(workbook)
+        support = workbook["02_support_earth_work"]
+
+        self.assertIn("Engineering teaching reconstruction, not a published CPWD rule", support["I26"].value)
+        self.assertIn("4-person labour gang", support["I26"].value)
+        self.assertIn("Boundary conditions", support["I26"].value)
+        self.assertIn("When the norm changes", support["I26"].value)
+        self.assertIn("÷ 8-hour shift = 8.6 day per 100 sqm", support["D26"].comment.text)
+        self.assertNotIn("Boundary conditions", support["D26"].comment.text)
 
 
 if __name__ == "__main__":
