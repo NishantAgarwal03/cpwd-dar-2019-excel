@@ -287,7 +287,7 @@ class FirstPrinciplesRenderingTests(unittest.TestCase):
         self.assertEqual(support["D7"].value, 6.8)
         self.assertEqual(support["F7"].value, "=D7*1")
 
-    def test_all_338_resource_rows_have_labelled_shift_reconstructions(self):
+    def test_all_338_resource_rows_have_type_appropriate_derivations(self):
         workbook = load_workbook(BASELINE_WORKBOOK)
         apply_first_principles_learning(workbook)
         support = workbook["02_support_earth_work"]
@@ -299,12 +299,14 @@ class FirstPrinciplesRenderingTests(unittest.TestCase):
         ]
         self.assertEqual(len(resource_rows), 338)
         visible = [support.cell(row, 9).value for row in resource_rows]
-        self.assertTrue(all("÷ 8-hour shift =" in text for text in visible))
-        reconstructed = [text for text in visible if "Engineering teaching reconstruction" in text]
-        self.assertEqual(len(reconstructed), 320)
-        self.assertTrue(all("Engineering teaching reconstruction, not a published CPWD rule" in text for text in reconstructed))
-        self.assertTrue(all("Engineering teaching reconstruction, not a published CPWD rule" in support.cell(row, 4).comment.text
+        shift_rows = [row for row in resource_rows if "÷ 8-hour shift =" in support.cell(row, 9).value]
+        material_rows = [row for row in resource_rows if "Material-consumption basis" in support.cell(row, 9).value]
+        self.assertEqual(len(shift_rows) + len(material_rows), len(resource_rows))
+        self.assertTrue(all("Engineering teaching reconstruction, not a published CPWD rule" in support.cell(row, 9).value
                             for row in resource_rows if "Engineering teaching reconstruction" in support.cell(row, 9).value))
+        self.assertTrue(all("8-hour shift" not in support.cell(row, 9).value
+                            and "task-hours" not in support.cell(row, 4).comment.text
+                            for row in material_rows))
 
     def test_groups_only_repeated_markup_rows_on_first_middle_and_final_items(self):
         workbook = load_workbook(BASELINE_WORKBOOK)
@@ -332,6 +334,23 @@ class FirstPrinciplesRenderingTests(unittest.TestCase):
         self.assertIn("When the norm changes", support["I26"].value)
         self.assertIn("÷ 8-hour shift = 8.6 day per 100 sqm", support["D26"].comment.text)
         self.assertNotIn("Boundary conditions", support["D26"].comment.text)
+
+    def test_material_rows_use_physical_consumption_not_shift_hours(self):
+        workbook = load_workbook(BASELINE_WORKBOOK)
+        apply_first_principles_learning(workbook)
+        support = workbook["02_support_earth_work"]
+
+        for text in (support["I686"].value, support["D686"].comment.text):
+            self.assertIn("Material-consumption basis", text)
+            self.assertIn("geometry", text.lower())
+            self.assertIn("Engineering teaching reconstruction, not a published CPWD rule", text)
+            self.assertNotIn("8-hour shift", text)
+            self.assertNotIn("task-hours", text)
+            self.assertNotIn("resource-handling allocation", text)
+
+        # Labour remains a time-and-gang productivity norm.
+        self.assertIn("8-hour shift", support["I692"].value)
+        self.assertIn("task-hours", support["D692"].comment.text)
 
     def test_sizes_resource_rows_for_their_actual_wrapped_i_card_only(self):
         workbook = load_workbook(BASELINE_WORKBOOK)

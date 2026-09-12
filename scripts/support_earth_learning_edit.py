@@ -242,10 +242,21 @@ def _support_items(sheet):
         batch_quantity = float(batch.group("quantity")) if batch else 1.0
         batch_unit = batch.group("unit") if batch else "unit"
         resources = []
+        section = ""
         for row in range(start + 1, end + 1):
             code, role, unit, coefficient = (sheet.cell(row, column).value for column in range(1, 5))
+            # The support sheets use all-caps section labels (MATERIAL,
+            # CARRIAGE and LABOUR).  Retain this nearby context instead of
+            # trying to infer a material from its numeric coefficient.
+            if (isinstance(code, str) and code.strip().upper() in {"MATERIAL", "CARRIAGE", "LABOUR"}
+                    and role in (None, "") and coefficient is None):
+                section = code.strip().upper()
+                continue
             if code not in (None, "") and isinstance(role, str) and _as_number(coefficient) is not None:
-                resources.append((row, {"code": code, "description": role, "unit": unit, "coefficient": coefficient}))
+                resources.append((row, {
+                    "code": code, "description": role, "unit": unit,
+                    "coefficient": coefficient, "section": section,
+                }))
         yield {
             "number": number, "start": start, "batch_row": batch_row, "header": header,
             "batch_quantity": batch_quantity, "batch_unit": batch_unit, "resources": resources,
@@ -289,6 +300,8 @@ def _visible_derivation(resource, derivation, batch_quantity, batch_unit):
     batch = f"{_display_number(batch_quantity)} {batch_unit}"
     role = str(resource["description"])
     unit = str(resource["unit"])
+    if _is_material_resource(resource):
+        return _material_derivation(resource, batch_quantity, batch_unit, concise=True)
     if derivation and derivation["task_hours"] is not None:
         actor = _display_number(derivation["gang_or_machine"])
         hours = _display_number(derivation["task_hours"])
@@ -318,9 +331,91 @@ def _reconstruction_gang(resource):
     return 1, "1 resource-handling allocation"
 
 
+def _is_material_resource(resource):
+    """Keep physical inputs out of the labour/machine shift-day model."""
+    role = str(resource.get("description", "")).lower()
+    section = str(resource.get("section", "")).upper()
+    machine_words = ("roller", "excavator", "loader", "tipper", "breaker", "driller", "machine")
+    labour_words = ("beldar", "coolie", "carpenter", "mason", "bhishti", "bhisti", "chowkidar", "mate", "helper")
+    if any(word in role for word in machine_words):
+        return False
+    if ((section == "LABOUR" and any(word in role for word in labour_words))
+            or (str(resource.get("unit", "")).lower() == "day" and "sundries" not in role)):
+        return False
+    # MATERIAL and CARRIAGE are physical-consumption lines.  Any remaining
+    # non-worker/non-machine resource (including consumables and LS sundries)
+    # must not be explained with fictional task-hours.
+    return section in {"MATERIAL", "CARRIAGE"} or not any(word in role for word in labour_words)
+
+
+def _material_physical_basis(resource, batch_quantity, batch_unit):
+    """Explain a material coefficient through measurable consumption, not time.
+
+    A support row often preserves only the published coefficient.  This helper
+    uses dimensions actually stated in its description when available and says
+    plainly when the source does not contain enough geometry to reconstruct the
+    original CPWD take-off.
+    """
+    coefficient = float(resource["coefficient"])
+    role = str(resource["description"])
+    unit = str(resource.get("unit", ""))
+    batch = f"{_display_number(batch_quantity)} {batch_unit}"
+    thickness = re.search(r"(\d+(?:\.\d+)?)\s*mm\s*thick", role, re.IGNORECASE)
+    if unit.lower() == "cum" and thickness:
+        metres = float(thickness.group(1)) / 1000
+        coverage = coefficient / metres
+        return (
+            f"Known geometry: the stated {thickness.group(1)} mm thickness converts the fixed volume to "
+            f"{_display_number(coverage)} sqm of material face ({_display_number(coefficient)} cum ÷ "
+            f"{_display_number(metres)} m). The source does not state the timber layout, reuse cycle or wastage."
+        )
+    if unit.lower() == "each":
+        per_each = batch_quantity / coefficient if coefficient else 0
+        return (
+            f"Count/coverage basis: {_display_number(coefficient)} each is allocated to {batch}, equivalent to one "
+            f"unit for every {_display_number(per_each)} {batch_unit}. The source does not state spacing, reuse or wastage."
+        )
+    if unit.lower() == "cum":
+        return (
+            f"Volume-consumption basis: {_display_number(coefficient)} cum is the fixed material volume for {batch}. "
+            "The source does not provide section dimensions, installed length, coverage or wastage from which to rebuild that volume."
+        )
+    return (
+        f"Physical-consumption basis: the fixed allowance is {_display_number(coefficient)} {unit} for {batch}. "
+        "The source does not provide the count, geometry, coverage or wastage detail needed to rebuild the allowance."
+    )
+
+
+def _material_derivation(resource, batch_quantity, batch_unit, concise=False):
+    coefficient = _display_number(resource["coefficient"])
+    batch = f"{_display_number(batch_quantity)} {batch_unit}"
+    body = _material_physical_basis(resource, batch_quantity, batch_unit)
+    if concise:
+        return (
+            f"CPWD fixed material coefficient: {resource['description']}. Material-consumption basis: "
+            f"{coefficient} {resource['unit']} per {batch}. {body} {RECONSTRUCTION}"
+        )
+    return (
+        "CPWD fixed material coefficient / source evidence\n"
+        "The support sheet fixes the stated material coefficient; no unique source-row geometry was available.\n\n"
+        "Material-consumption basis\n"
+        f"{body}\n\n"
+        "Calculation\n"
+        f"Fixed consumption = {coefficient} {resource['unit']} per {batch}. This is a quantity take-off/allowance, not a labour productivity calculation.\n\n"
+        "Engineering interpretation for learning\n"
+        f"{RECONSTRUCTION}. The physical explanation makes the published quantity auditable but does not claim an unpublished CPWD layout, coverage or wastage rule.\n\n"
+        "Boundary conditions\n"
+        "Use only for the stated material, section, output batch and method. Check reuse, cutting loss, spacing, member size and carriage separately when the item specifies them.\n\n"
+        "When the norm changes\n"
+        "Revise the quantity only when the material specification, section, coverage, count, reuse, wastage, carriage or CPWD item scope changes."
+    )
+
+
 def _learning_note(resource, derivation, batch_quantity, batch_unit):
     coefficient = _display_number(resource["coefficient"])
     batch = f"{_display_number(batch_quantity)} {batch_unit}"
+    if _is_material_resource(resource):
+        return _material_derivation(resource, batch_quantity, batch_unit)
     source = derivation["source_norm"] if derivation else "No unique source-row match was available for this support-sheet coefficient."
     if derivation and derivation["task_hours"] is not None:
         actor = _display_number(derivation["gang_or_machine"])
