@@ -1,9 +1,12 @@
 import openpyxl, pypdf, re, json
+import sys, os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir)))
+from scripts.paths import PDF_CIVIL_DAR_VOL1, VOL1_CONVERTED_XLSX, RATES_MASTER_JSON
 
 print("Starting extraction...")
 
 # 1. Parse PDF rates for all codes 0001-2399
-reader = pypdf.PdfReader('CivilDAR_2019_Vol_1.pdf')
+reader = pypdf.PdfReader(PDF_CIVIL_DAR_VOL1)
 pdf_rates = {}
 current_code = None
 
@@ -35,7 +38,7 @@ for p in range(11, 73):
 print(f"Extracted {len(pdf_rates)} rates from PDF.")
 
 # 2. Parse Excel 00_Basic_Rates
-wb = openpyxl.load_workbook('CivilDAR_2019_Vol_1_Converted.xlsx', data_only=True)
+wb = openpyxl.load_workbook(VOL1_CONVERTED_XLSX, data_only=True)
 s_rates = wb['00_Basic_Rates']
 
 items = []
@@ -93,7 +96,7 @@ for it in items:
         it['category'] = 'Building Materials'
 
 # Save cleaned rates
-with open('rates_master_clean.json', 'w', encoding='utf-8') as f:
+with open(RATES_MASTER_JSON, 'w', encoding='utf-8') as f:
     json.dump(items, f, indent=2)
 
 print("Saved rates_master_clean.json successfully.")

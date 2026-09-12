@@ -12,7 +12,9 @@ Formula constraint: only SUM, +, -, *, / (no VLOOKUP/INDEX/MATCH)
 import openpyxl
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
-import os, shutil
+import os, sys, shutil
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir)))
+from scripts.paths import WB_VOL1_LATEST_FILE
 
 # ── Colours ──────────────────────────────────────────────────────────────────
 C_ITEM_HDR   = "1F4E79"   # dark blue  – item heading
@@ -1661,7 +1663,7 @@ def build_sheet(ws):
 
 
 def main():
-    WB_PATH = r"D:\PROJECTS_PYTHON_CODEX\CPWD DAR_2019\CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1_Latest.xlsx"
+    WB_PATH = WB_VOL1_LATEST_FILE
     TMP_PATH = WB_PATH.replace(".xlsx", "_REBUILDING.xlsx")
 
     print("Loading workbook …")

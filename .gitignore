@@ -3,10 +3,17 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Logs & Diagnostics
+logs/
+*.log
+
 # Temporary and Lock Excel Files
 ~$*.xlsx
 ~$*.xls
 *.tmp
+*.tmp.*
+*.tmp.xlsx
+*_REBUILDING.xlsx
 test_*.xlsx
 
 # Environments

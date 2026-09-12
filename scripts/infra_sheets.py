@@ -5,6 +5,7 @@ from openpyxl.worksheet.table import Table, TableStyleInfo
 import json
 from openpyxl.styles import Protection
 from scripts.work_types import classify, summarise, WORK_TYPE_GROUP, WORK_TYPE_INDEX
+from scripts.paths import RATES_MASTER_JSON, LABOUR_PRODUCTIVITY_JSON, SUNDRIES_REFERENCE_JSON
 
 
 def lock_sheet(ws, editable_cells=(), editable_cols=(), first_data_row=2):
@@ -109,7 +110,7 @@ def build_rates_master(wb, styles):
         c.border = styles['border_header']
     ws.row_dimensions[1].height = 28
     
-    with open('rates_master_clean.json', 'r', encoding='utf-8') as rf:
+    with open(RATES_MASTER_JSON, 'r', encoding='utf-8') as rf:
         rates = json.load(rf)
         
     for r_idx, it in enumerate(rates, 2):
@@ -358,7 +359,7 @@ def build_labour_productivity(wb, styles):
     ws = wb.create_sheet(title='Labour_Machinery_Productivity')
     ws.views.sheetView[0].showGridLines = True
 
-    with open('labour_productivity.json', 'r', encoding='utf-8') as pf:
+    with open(LABOUR_PRODUCTIVITY_JSON, 'r', encoding='utf-8') as pf:
         records = json.load(pf)
 
     for rec in records:
@@ -559,7 +560,7 @@ def build_sundries_reference(wb, styles):
         c.border = styles['border_header']
     ws.row_dimensions[1].height = 28
     
-    with open('sundries_reference.json', 'r', encoding='utf-8') as sf:
+    with open(SUNDRIES_REFERENCE_JSON, 'r', encoding='utf-8') as sf:
         records = json.load(sf)
         
     for r_idx, rec in enumerate(records, 2):

@@ -17,10 +17,11 @@ sys.path.insert(0, os.path.abspath('.'))
 
 from scripts.audit_parser import parse_all
 from scripts.shadow_calc  import shadow_calculate
+from scripts.paths import VOL1_CONVERTED_XLSX, VOL2_CONVERTED_XLSX, RATES_MASTER_JSON
 
-VOL1_CONVERTED = 'CivilDAR_2019_Vol_1_Converted.xlsx'
-VOL2_CONVERTED = 'CivilDAR_2019_Vol_2_Converted.xlsx'
-RATES_MASTER   = 'rates_master_clean.json'
+VOL1_CONVERTED = VOL1_CONVERTED_XLSX
+VOL2_CONVERTED = VOL2_CONVERTED_XLSX
+RATES_MASTER   = RATES_MASTER_JSON
 
 # Width constants for report columns
 W_SHEET = 32

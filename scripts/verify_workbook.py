@@ -18,10 +18,11 @@ import os
 import zipfile
 import subprocess
 import xml.etree.ElementTree as ET
+from scripts.paths import WB_VOL1_FILE
 
 # Target workbook. Pass a path as argv[1] to audit a different build, e.g. the
 # _Latest fallback written when the main file is locked by an open Excel.
-WB_PATH = sys.argv[1] if len(sys.argv) > 1 else "CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1.xlsx"
+WB_PATH = sys.argv[1] if len(sys.argv) > 1 else WB_VOL1_FILE
 
 # Forbidden Office 365 / modern functions not in Excel 2016
 FORBIDDEN_365_FUNCS = [

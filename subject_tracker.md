@@ -98,5 +98,30 @@
 | 2026-09-10 11:13 | Deploy Two-Tier Table 2 architecture in trade_builder_earth.py, rebuild 3 production files, verify 45/45 activities pass (100.0%), and confirm exact paisa reconciliation across all lever permutations | Completed |
 | 2026-09-10 14:25 | Implement dynamic execution method steering in cell D8 (actively swapping manual gangs vs mechanical excavator fleet in Table 2A), deconflate cell D6 into foundation bulk vs pipeline trenching, decouple depth stage into Lever 2 (D20), and verify zero variance | Completed |
 
+## Subject: Repo_Organization_and_Housekeeping
+- **Status**: 🔴 Active
+- **Initial Score**: 7.0/10
+- **Final Score**: TBD
+- **Satisfaction Level**: TBD (user feedback)
 
+### Remarks
+- Successfully executed Option B: organized all repository artifacts into dedicated, logical directories:
+  - `data/raw_pdf/` for CPWD reference volumes and DSR 2021 schedules (~26 MB of PDFs).
+  - `data/reference_json/` for clean JSON master databases (`rates_master_clean.json`, `labour_productivity.json`, `sundries_reference.json`).
+  - `data/converted_xlsx/` for raw converted DAR workbooks and section analysis sheets.
+  - `docs/` for project documentation and specifications (`Problem_and_Solution_Statement.md`).
+  - `backups/` for user backup workbooks.
+  - `scratch/` for temporary test workbooks and json dumps.
+- Deployed centralized path manager in `scripts/paths.py` with multi-tier fallback resolution.
+- Updated 10+ Python scripts (`main.py`, `infra_sheets.py`, `extract_rates.py`, `extract_norms.py`, `run_audit.py`, `generate_audit_workbook.py`, `verify_carriage.py`, `verify_cross_volume.py`, `verify_workbook.py`, `support_builder_earth.py`, `support_builder_earth_v2.py`) to use `scripts.paths`.
+- Verified 100% clean compilation under Python 3.11 with `py_compile`.
+- Re-ran `main.py` successfully generating all 18 sheets in 12.59s with zero errors.
+- Verified test suites (`run_audit.py`, `verify_carriage.py`, `verify_cross_volume.py`) passing with newly organized paths.
+- Enhanced `.gitignore` to block `logs/`, `*.log`, `*.tmp.*`, `*.tmp.xlsx`, `*_REBUILDING.xlsx`.
+- Cleaned dangling `.tmp.xlsx` and untracked temporary files.
+- Optimized Git repository health: packed 521 loose objects into 1 compact packfile (45.75 MiB -> 36.13 MiB), ran `git gc --prune=now`, and verified 0 corruptions/dangling objects with `git fsck --full`.
 
+| Timestamp | Instruction | Status |
+| :--- | :--- | :--- |
+| 2026-09-13 04:45 | Organize repo, perform housekeeping, and check health of git/repo | Completed |
+| 2026-09-13 04:51 | User selected Option B: full architectural data organization, centralized path manager, housekeeping, and git optimization | Completed |

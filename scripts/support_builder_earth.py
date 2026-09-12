@@ -16,9 +16,9 @@ from openpyxl.utils import get_column_letter
 # ─────────────────────────────────────────────────────────────────────────────
 # Config
 # ─────────────────────────────────────────────────────────────────────────────
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-WB_PATH = os.path.join(BASE_DIR,
-    "CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1_Latest.xlsx")
+from scripts.paths import WB_VOL1_LATEST_FILE
+
+WB_PATH = WB_VOL1_LATEST_FILE
 
 SHEET_NAME = "02_support_earth_work"
 

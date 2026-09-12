@@ -1,6 +1,9 @@
 import openpyxl, re, json
+import sys, os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir)))
+from scripts.paths import VOL1_CONVERTED_XLSX, LABOUR_PRODUCTIVITY_JSON, SUNDRIES_REFERENCE_JSON
 
-wb = openpyxl.load_workbook('CivilDAR_2019_Vol_1_Converted.xlsx', data_only=True)
+wb = openpyxl.load_workbook(VOL1_CONVERTED_XLSX, data_only=True)
 sheets = [
     '01_Carriage_of_Materials', '02_Earth_Work', '03_Mortars', '04_Concrete_Work',
     '05_RCC_Work', '06_Masonry_Work', '07_Stone_Work', '08_Cladding_Work',
@@ -90,10 +93,10 @@ for sh_name in sheets:
 print(f'Mined {len(productivity_records)} productivity records.')
 print(f'Mined {len(sundries_records)} sundries records.')
 
-with open('labour_productivity.json', 'w', encoding='utf-8') as f:
+with open(LABOUR_PRODUCTIVITY_JSON, 'w', encoding='utf-8') as f:
     json.dump(productivity_records, f, indent=2)
 
-with open('sundries_reference.json', 'w', encoding='utf-8') as f:
+with open(SUNDRIES_REFERENCE_JSON, 'w', encoding='utf-8') as f:
     json.dump(sundries_records, f, indent=2)
 
 print('Saved reference data successfully.')

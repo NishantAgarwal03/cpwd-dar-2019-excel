@@ -16,8 +16,11 @@ Two independent verifications:
                by defined name rather than by literal.
 """
 
+import sys, os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir)))
 import json
 import openpyxl
+from scripts.paths import RATES_MASTER_JSON, WB_VOL1_FILE
 
 from scripts.cross_volume import RESOLVED_ITEMS
 from scripts.trade_layout import (
@@ -35,7 +38,7 @@ CONSUMERS = {
 
 
 def _rate_index():
-    with open('rates_master_clean.json', 'r', encoding='utf-8') as f:
+    with open(RATES_MASTER_JSON, 'r', encoding='utf-8') as f:
         return {str(r['code']): float(r['rate']) for r in json.load(f)}
 
 
@@ -200,6 +203,6 @@ def check_cross_volume(wb, verbose=True):
 
 
 if __name__ == '__main__':
-    wb = openpyxl.load_workbook('CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1.xlsx')
+    wb = openpyxl.load_workbook(WB_VOL1_FILE)
     good, _ = check_cross_volume(wb)
     print('\nCROSS-VOLUME CHECK:', 'PASS' if good else 'FAIL')

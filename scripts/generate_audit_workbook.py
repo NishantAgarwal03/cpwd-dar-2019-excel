@@ -15,12 +15,13 @@ from openpyxl.utils import get_column_letter
 
 from scripts.audit_parser import parse_all
 from scripts.shadow_calc   import shadow_calculate
+from scripts.paths import VOL1_CONVERTED_XLSX, VOL2_CONVERTED_XLSX, RATES_MASTER_JSON, AUDIT_TEST_CASES_XLSX
 
 # ── Files ────────────────────────────────────────────────────────────
-VOL1_CONV   = 'CivilDAR_2019_Vol_1_Converted.xlsx'
-VOL2_CONV   = 'CivilDAR_2019_Vol_2_Converted.xlsx'
-RATES_JSON  = 'rates_master_clean.json'
-OUT_FILE    = 'CPWD_DAR_2019_Audit_Test_Cases.xlsx'
+VOL1_CONV   = VOL1_CONVERTED_XLSX
+VOL2_CONV   = VOL2_CONVERTED_XLSX
+RATES_JSON  = RATES_MASTER_JSON
+OUT_FILE    = AUDIT_TEST_CASES_XLSX
 
 # ── Sheet name mapping (parser key → display name, max 31 chars) ─────
 SHEET_MAP = {

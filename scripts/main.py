@@ -17,6 +17,7 @@ from scripts.trade_builder_earth import build_earthwork_trade
 from scripts.trade_configs import get_all_trade_configs
 from scripts.scope_inputs import merge_scope_metadata
 from scripts.cross_volume import build_resolved_cross_volume
+from scripts.paths import WB_VOL1_FILE, WB_VOL1_LATEST_FILE, WB_VOL1_TEMPLATE_FILE
 
 def generate_full_workbook():
     t0 = time.time()
@@ -73,20 +74,20 @@ def generate_full_workbook():
     for key in trade_keys:
         build_standard_trade(wb, configs[key], styles)
         
-    primary_out = 'CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1.xlsx'
+    primary_out = WB_VOL1_FILE
     print(f"Saving complete workbook to {primary_out}...")
     wb.save(primary_out)
     
     import shutil
     for copy_target in [
-        'CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1_Latest.xlsx',
-        'CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1.xltx'
+        WB_VOL1_LATEST_FILE,
+        WB_VOL1_TEMPLATE_FILE
     ]:
         print(f"Synchronizing byte-identical copy to {copy_target}...")
         shutil.copyfile(primary_out, copy_target)
 
     elapsed = time.time() - t0
-    file_size_mb = os.path.getsize('CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1.xlsx') / (1024 * 1024)
+    file_size_mb = os.path.getsize(primary_out) / (1024 * 1024)
     print(f"SUCCESS! Generated {len(wb.sheetnames)} sheets in {elapsed:.2f}s ({file_size_mb:.2f} MB)")
     print(f"Sheet names: {wb.sheetnames}")
     print("================================================================")

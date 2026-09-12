@@ -19,7 +19,10 @@ rather than against hard-coded formula strings.
              and OVERRIDE cells are unlocked.
 """
 
+import sys, os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir)))
 import openpyxl
+from scripts.paths import WB_VOL1_FILE
 
 from scripts.carriage_tables import (
     TABLE_11, TABLE_12, TABLE_13_14, PRINTED_11, PRINTED_12, PRINTED_13_14,
@@ -382,6 +385,6 @@ def check_carriage(wb, verbose=True):
 
 
 if __name__ == '__main__':
-    wb = openpyxl.load_workbook('CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1.xlsx')
+    wb = openpyxl.load_workbook(WB_VOL1_FILE)
     good, _ = check_carriage(wb)
     print('\nCARRIAGE CHECK:', 'PASS' if good else 'FAIL')
