@@ -18,6 +18,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from support_earth_learning_edit import (  # noqa: E402
     apply_first_principles_learning,
     apply_markup_outline,
+    estimated_card_lines,
     build_derivation_catalog,
     derive_resource_norm,
     export_ascii_formula_workbook,
@@ -259,6 +260,21 @@ class FirstPrinciplesRenderingTests(unittest.TestCase):
         self.assertIn("When the norm changes", support["I26"].value)
         self.assertIn("÷ 8-hour shift = 8.6 day per 100 sqm", support["D26"].comment.text)
         self.assertNotIn("Boundary conditions", support["D26"].comment.text)
+
+    def test_sizes_resource_rows_for_their_actual_wrapped_i_card_only(self):
+        workbook = load_workbook(BASELINE_WORKBOOK)
+        support = workbook["02_support_earth_work"]
+        original_non_resource_height = support.row_dimensions[10].height
+        apply_first_principles_learning(workbook)
+
+        longest_row = max(
+            (row for row in range(1, support.max_row + 1) if support.cell(row, 4).comment),
+            key=lambda row: estimated_card_lines(support.cell(row, 9).value, support.column_dimensions["I"].width),
+        )
+        for row in (26, longest_row):
+            lines = estimated_card_lines(support.cell(row, 9).value, support.column_dimensions["I"].width)
+            self.assertGreaterEqual(support.row_dimensions[row].height, lines * 15 + 8)
+        self.assertEqual(support.row_dimensions[10].height, original_non_resource_height)
 
 
 if __name__ == "__main__":

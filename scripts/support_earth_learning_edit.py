@@ -10,6 +10,7 @@ from __future__ import annotations
 from collections import defaultdict
 from dataclasses import dataclass
 import re
+import textwrap
 from typing import Any
 import xml.etree.ElementTree as ET
 import zipfile
@@ -199,6 +200,25 @@ def _display_number(value: float | int) -> str:
     return f"{value:.12f}".rstrip("0").rstrip(".")
 
 
+def estimated_card_lines(text: str, column_width: float) -> int:
+    """Conservatively estimate wrapped Excel lines for a detailed I-card.
+
+    Excel's column-width unit is font-dependent.  Using 0.85 characters per
+    width unit deliberately errs on the safe side for the workbook's standard
+    font, while preserving explicit paragraph breaks as visual lines.
+    """
+    capacity = max(12, int(float(column_width) * 0.85))
+    lines = 0
+    for paragraph in str(text or "").splitlines() or [""]:
+        lines += max(1, len(textwrap.wrap(paragraph, width=capacity, break_long_words=True,
+                                          break_on_hyphens=False)))
+    return lines
+
+
+def _card_height(text: str, column_width: float) -> float:
+    return estimated_card_lines(text, column_width) * 15 + 8
+
+
 def _support_items(sheet):
     """Yield each fixed support-sheet item and its resource rows.
 
@@ -380,11 +400,11 @@ def apply_first_principles_learning(workbook, source_key_by_item: dict[str, str]
             # The worksheet is the primary learning surface: retain the full
             # source/interpretation card in I, and reserve the D Note for a
             # quick arithmetic check beside the fixed number.
-            support.cell(row, 9).value = _learning_note(resource, derivation, item["batch_quantity"], item["batch_unit"])
+            card = _learning_note(resource, derivation, item["batch_quantity"], item["batch_unit"])
+            support.cell(row, 9).value = card
             support.cell(row, 9).fill = _PALE_BLUE
             support.cell(row, 9).alignment = Alignment(wrap_text=True, vertical="top")
-            current_height = support.row_dimensions[row].height or 0
-            support.row_dimensions[row].height = max(current_height, 110)
+            support.row_dimensions[row].height = _card_height(card, support.column_dimensions["I"].width)
             support.cell(row, 4).comment = Comment(
                 _visible_derivation(resource, derivation, item["batch_quantity"], item["batch_unit"]), "CPWD learning guide"
             )
