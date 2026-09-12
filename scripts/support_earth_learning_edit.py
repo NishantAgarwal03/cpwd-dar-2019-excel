@@ -411,6 +411,42 @@ def _material_derivation(resource, batch_quantity, batch_unit, concise=False):
     )
 
 
+def _resource_category(resource):
+    if _is_material_resource(resource):
+        return "material"
+    role = str(resource.get("description", "")).lower()
+    machine_words = ("roller", "excavator", "loader", "tipper", "breaker", "driller", "machine")
+    return "machinery" if any(word in role for word in machine_words) else "labour"
+
+
+def _compact_estimation_metric(resource, derivation, batch_quantity, batch_unit):
+    """Give estimators the rate they need first; retain the audit trail in D."""
+    coefficient = float(resource["coefficient"])
+    display_coefficient = _display_number(coefficient)
+    batch = f"{_display_number(batch_quantity)} {batch_unit}"
+    category = _resource_category(resource)
+    if category == "material":
+        basis = _material_physical_basis(resource, batch_quantity, batch_unit)
+        return (
+            f"Material consumption: {display_coefficient} {resource['unit']} per {batch}. "
+            f"{basis}"
+        )
+    if category == "machinery":
+        operating_hours = coefficient * SHIFT_HOURS
+        output_per_hour = batch_quantity / operating_hours if operating_hours else 0
+        return (
+            f"Production norm: {batch} / ({display_coefficient} machine-day × 8 h/day = "
+            f"{_display_number(operating_hours)} h) = {output_per_hour:.2f} {batch_unit} per machine-hour. "
+            f"Basis: {resource['description']}; use only for the stated method and conditions."
+        )
+    output_per_worker_day = batch_quantity / coefficient if coefficient else 0
+    return (
+        f"Productivity norm: {batch} / {display_coefficient} worker-days = "
+        f"{output_per_worker_day:.2f} {batch_unit} per worker-day. "
+        "A worker-day is one worker's share of the output in one standard shift, not a gang-day."
+    )
+
+
 def _learning_note(resource, derivation, batch_quantity, batch_unit):
     coefficient = _display_number(resource["coefficient"])
     batch = f"{_display_number(batch_quantity)} {batch_unit}"
@@ -492,16 +528,15 @@ def apply_first_principles_learning(workbook, source_key_by_item: dict[str, str]
         records = []
         for row, resource in item["resources"]:
             derivation = _record_for_resource(resource, item["number"], catalog, source_key_by_item)
-            # The worksheet is the primary learning surface: retain the full
-            # source/interpretation card in I, and reserve the D Note for a
-            # quick arithmetic check beside the fixed number.
-            card = _learning_note(resource, derivation, item["batch_quantity"], item["batch_unit"])
+            # Column I is the estimator's compact, scenario-ready metric.
+            # The complete source/assumption trail remains in the D Note.
+            card = _compact_estimation_metric(resource, derivation, item["batch_quantity"], item["batch_unit"])
             support.cell(row, 9).value = card
             support.cell(row, 9).fill = _PALE_BLUE
             support.cell(row, 9).alignment = Alignment(wrap_text=True, vertical="top")
             support.row_dimensions[row].height = _card_height(card, support.column_dimensions["I"].width)
             support.cell(row, 4).comment = Comment(
-                _visible_derivation(resource, derivation, item["batch_quantity"], item["batch_unit"]), "CPWD learning guide"
+                _learning_note(resource, derivation, item["batch_quantity"], item["batch_unit"]), "CPWD learning guide"
             )
             records.append(str(resource["description"]))
         if records:

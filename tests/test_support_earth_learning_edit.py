@@ -275,15 +275,13 @@ class FirstPrinciplesRenderingTests(unittest.TestCase):
         apply_first_principles_learning(workbook, {"2.1.1": "support-2.1.1"})
         support = workbook["02_support_earth_work"]
 
-        self.assertIn("CPWD fixed norm / source evidence", support["I7"].value)
-        self.assertIn("4 × 13.6 task-hours ÷ 8-hour shift = 6.8 day per 100 sqm", support["I7"].value)
-        self.assertIn("The inverse gives 14.705882352941 sqm per day", support["I7"].value)
-        self.assertIn("8-hour shift", support["I8"].value)
-        self.assertIn("1 × 0.064 task-hours ÷ 8-hour shift = 0.008 day per 100 sqm", support["I9"].value)
-        self.assertIn("Engineering teaching reconstruction, not a published CPWD rule", support["I10"].value)
-        self.assertIn("CPWD fixed norm: Beldar.", support["D7"].comment.text)
+        self.assertIn("Productivity norm: 100 sqm / 6.8 worker-days = 14.71 sqm per worker-day", support["I7"].value)
+        self.assertIn("worker-day", support["I8"].value)
+        self.assertIn("Production norm: 100 sqm / (0.008 machine-day", support["I9"].value)
+        self.assertIn("Productivity norm:", support["I10"].value)
+        self.assertIn("CPWD fixed norm / source evidence", support["D7"].comment.text)
         self.assertIn("Calculation", support["D7"].comment.text)
-        self.assertNotIn("Boundary conditions", support["D7"].comment.text)
+        self.assertIn("Boundary conditions", support["D7"].comment.text)
         self.assertEqual(support["D7"].value, 6.8)
         self.assertEqual(support["F7"].value, "=D7*1")
 
@@ -299,14 +297,14 @@ class FirstPrinciplesRenderingTests(unittest.TestCase):
         ]
         self.assertEqual(len(resource_rows), 338)
         visible = [support.cell(row, 9).value for row in resource_rows]
-        shift_rows = [row for row in resource_rows if "÷ 8-hour shift =" in support.cell(row, 9).value]
-        material_rows = [row for row in resource_rows if "Material-consumption basis" in support.cell(row, 9).value]
-        self.assertEqual(len(shift_rows) + len(material_rows), len(resource_rows))
-        self.assertTrue(all("Engineering teaching reconstruction, not a published CPWD rule" in support.cell(row, 9).value
-                            for row in resource_rows if "Engineering teaching reconstruction" in support.cell(row, 9).value))
-        self.assertTrue(all("8-hour shift" not in support.cell(row, 9).value
-                            and "task-hours" not in support.cell(row, 4).comment.text
-                            for row in material_rows))
+        cards = [support.cell(row, 9).value for row in resource_rows]
+        self.assertTrue(all(card.startswith(("Production norm:", "Productivity norm:", "Material consumption:"))
+                            for card in cards))
+        self.assertGreater(sum(card.startswith("Production norm:") for card in cards), 0)
+        self.assertGreater(sum(card.startswith("Productivity norm:") for card in cards), 0)
+        self.assertGreater(sum(card.startswith("Material consumption:") for card in cards), 0)
+        self.assertTrue(all("Calculation" in support.cell(row, 4).comment.text
+                            for row in resource_rows))
 
     def test_groups_only_repeated_markup_rows_on_first_middle_and_final_items(self):
         workbook = load_workbook(BASELINE_WORKBOOK)
@@ -328,29 +326,43 @@ class FirstPrinciplesRenderingTests(unittest.TestCase):
         apply_first_principles_learning(workbook)
         support = workbook["02_support_earth_work"]
 
-        self.assertIn("Engineering teaching reconstruction, not a published CPWD rule", support["I26"].value)
-        self.assertIn("4-person labour gang", support["I26"].value)
-        self.assertIn("Boundary conditions", support["I26"].value)
-        self.assertIn("When the norm changes", support["I26"].value)
-        self.assertIn("÷ 8-hour shift = 8.6 day per 100 sqm", support["D26"].comment.text)
-        self.assertNotIn("Boundary conditions", support["D26"].comment.text)
+        self.assertIn("Productivity norm: 100 sqm / 8.6 worker-days = 11.63 sqm per worker-day", support["I26"].value)
+        self.assertNotIn("Boundary conditions", support["I26"].value)
+        self.assertIn("Engineering teaching reconstruction, not a published CPWD rule", support["D26"].comment.text)
+        self.assertIn("4-person labour gang", support["D26"].comment.text)
+        self.assertIn("Boundary conditions", support["D26"].comment.text)
+        self.assertIn("When the norm changes", support["D26"].comment.text)
 
     def test_material_rows_use_physical_consumption_not_shift_hours(self):
         workbook = load_workbook(BASELINE_WORKBOOK)
         apply_first_principles_learning(workbook)
         support = workbook["02_support_earth_work"]
 
+        self.assertIn("Material consumption:", support["I686"].value)
         for text in (support["I686"].value, support["D686"].comment.text):
-            self.assertIn("Material-consumption basis", text)
             self.assertIn("geometry", text.lower())
-            self.assertIn("Engineering teaching reconstruction, not a published CPWD rule", text)
             self.assertNotIn("8-hour shift", text)
             self.assertNotIn("task-hours", text)
             self.assertNotIn("resource-handling allocation", text)
+        self.assertIn("Engineering teaching reconstruction, not a published CPWD rule", support["D686"].comment.text)
 
         # Labour remains a time-and-gang productivity norm.
-        self.assertIn("8-hour shift", support["I692"].value)
+        self.assertIn("Productivity norm:", support["I692"].value)
         self.assertIn("task-hours", support["D692"].comment.text)
+
+    def test_compact_i_cards_lead_with_category_specific_estimation_metrics(self):
+        workbook = load_workbook(BASELINE_WORKBOOK)
+        apply_first_principles_learning(workbook)
+        support = workbook["02_support_earth_work"]
+
+        self.assertIn("Production norm:", support["I187"].value)
+        self.assertIn("30.49 cum per machine-hour", support["I187"].value)
+        self.assertIn("Productivity norm:", support["I190"].value)
+        self.assertIn("worker-day", support["I190"].value)
+        self.assertIn("Material consumption:", support["I686"].value)
+        self.assertNotIn("8-hour shift", support["I686"].value)
+        self.assertIn("Calculation", support["D187"].comment.text)
+        self.assertIn("Boundary conditions", support["D686"].comment.text)
 
     def test_sizes_resource_rows_for_their_actual_wrapped_i_card_only(self):
         workbook = load_workbook(BASELINE_WORKBOOK)
