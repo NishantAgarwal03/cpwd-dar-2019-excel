@@ -32,6 +32,22 @@ def sheet8_formulas(workbook_path: Path) -> list[str]:
     return [node.text or "" for node in root.findall(".//{*}f")]
 
 
+def sheet8_formula_map(workbook_path: Path) -> dict[str, str]:
+    with zipfile.ZipFile(workbook_path) as archive:
+        root = ET.fromstring(archive.read("xl/worksheets/sheet8.xml"))
+    return {
+        cell.attrib["r"]: formula.text or ""
+        for cell in root.findall(".//{*}c")
+        for formula in cell.findall("{*}f")
+    }
+
+
+def formula_string_literals(formula: str) -> list[str]:
+    """Return Excel quoted literals, retaining escaped double quotes as one literal."""
+    import re
+    return [match.group(0)[1:-1] for match in re.finditer(r'"(?:""|[^"])*"', formula)]
+
+
 def source_sheet_with_verified_norms():
     """Build the same source-table shape used in 02_Earth_Work (rows 109+)."""
     workbook = Workbook()
@@ -142,6 +158,62 @@ class DerivationCatalogTests(unittest.TestCase):
 
 
 class FormulaCompatibilityTests(unittest.TestCase):
+    def test_baseline_sheet8_has_no_formula_literal_over_excel_limit(self):
+        formulas = sheet8_formula_map(BASELINE_WORKBOOK)
+        oversize = {
+            cell: [literal for literal in formula_string_literals(formulas[cell]) if len(literal) > 255]
+            for cell in ("E22", "E23")
+        }
+        oversize = {cell: literals for cell, literals in oversize.items() if literals}
+        self.assertEqual(oversize, {})
+
+    def test_e22_e23_split_long_messages_without_changing_their_display_text(self):
+        formulas = sheet8_formula_map(BASELINE_WORKBOOK)
+        expected_messages = {
+            "E22": (
+                "[LEVER ACTIVE - INCLUDED] Watering to OMC is in this item rate (0.40 Bhishti-day / 10 cum). Full rate applies; no deduction in Table 2B. "
+                "Purpose: moisten loose embankment layers to Optimum Moisture Content before rolling.",
+                "[LEVER ACTIVE - DEDUCTION] Watering omitted by contractor (DAR Item 2.5). "
+                "Deduction = -0.40 Bhishti-day / 10 cum @ Rs 617 = Rs 246.80 direct cost. "
+                "Compounded: +GST 14.05% (Rs 34.68) + CPOH 15% (Rs 42.22) + Cess 1% (Rs 3.24) = Rs 326.94 / 10 cum. "
+                "Rate reduction ~Rs 33.00/cum. See Table 2B Row D4 for live deduction amount.",
+                "[LEVER INACTIVE] This toggle has NO rate effect for the selected scope (Surface Excavation / Foundation Trench / Jungle Clearance / Timbering). "
+                "Watering to OMC is not a specified item for excavation tasks - no Bhishti norm applies and no deduction exists. "
+                "Switch to Embankment or Banking scope to activate this lever.",
+            ),
+            "E23": (
+                "[LEVER ACTIVE - INCLUDED] Power Roller Compaction is in this item rate (0.008 roller-day / 10 cum). Full rate applies; no deduction in Table 2B. "
+                "Standard: 8-10 tonne diesel road roller consolidating compacted embankment layers at 1250 cum/8-hr shift.",
+                "[LEVER ACTIVE - DEDUCTION] Power rolling omitted by contractor (DAR Item 2.4). "
+                "Deduction = -0.008 Roller-day/10 cum @ Rs 3000 (Rs 24.00) + 0.008 Chowkidar-day (Rs 4.46) + 1.82 Sundries (Rs 3.64) = Rs 32.10 direct. "
+                "Compounded (GST 14.05% + CPOH 15% + Cess 1%) = Rs 42.95/10 cum. Rate reduction ~Rs 4.30/cum. "
+                "See Table 2B Rows D1-D3 for live deduction amounts.",
+                "[LEVER INACTIVE] This toggle has NO rate effect for the selected scope (Surface Excavation / Foundation Trench / Jungle Clearance / Timbering). "
+                "Power roller compaction is not a specified operation for excavation tasks - the 0.008 roller-day norm and DAR Item 2.4 do not apply here. "
+                "Switch to Embankment or Banking scope to activate this lever.",
+            ),
+        }
+        for cell, messages in expected_messages.items():
+            literals = formula_string_literals(formulas[cell])
+            self.assertTrue(all(len(literal) <= 255 for literal in literals))
+            literal_text = "".join(literals)
+            for message in messages:
+                self.assertIn(message, literal_text)
+
+    def test_sanitized_sheet8_keeps_every_formula_and_changes_only_allowed_cells(self):
+        source = sheet8_formula_map(BASELINE_WORKBOOK)
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            output = Path(temporary_directory) / "sanitized.xlsx"
+            export_ascii_formula_workbook(BASELINE_WORKBOOK, output)
+            exported = sheet8_formula_map(output)
+
+        self.assertEqual(len(source), 473)
+        self.assertEqual(len(exported), 473)
+        self.assertTrue(all(all(len(text) <= 255 for text in formula_string_literals(formula))
+                            for formula in exported.values()))
+        changed = {cell for cell in source if source[cell] != exported[cell]}
+        self.assertLessEqual(changed, {"C9", "G9", "E22", "E23"})
+
     def test_exported_sheet8_formula_nodes_are_ascii_only(self):
         with tempfile.TemporaryDirectory() as temporary_directory:
             output = Path(temporary_directory) / "sanitized.xlsx"
