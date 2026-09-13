@@ -18,6 +18,8 @@ import zipfile
 from openpyxl.comments import Comment
 from openpyxl.styles import Alignment, PatternFill
 
+from earthwork_composer_catalogue import apply_difficult_condition_reference
+
 
 SHIFT_HOURS = 8.0
 INTERPRETATION = "Teaching interpretation, not a published CPWD rule"
@@ -522,6 +524,10 @@ def apply_first_principles_learning(workbook, source_key_by_item: dict[str, str]
     """
     source_key_by_item = {**DEFAULT_SOURCE_MATCH, **(source_key_by_item or {})}
     support = workbook["02_support_earth_work"]
+    # The composer catalogue is part of the same support-sheet export path.
+    # Correct its visible 2.24 references before adding learning cards, while
+    # retaining every existing row's formatting and all unrelated calculations.
+    apply_difficult_condition_reference(support)
     catalog = build_derivation_catalog(workbook["02_Earth_Work"])
     support.column_dimensions["I"].width = 110
     for item in _support_items(support):

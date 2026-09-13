@@ -3,10 +3,12 @@
 from __future__ import annotations
 
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
 from openpyxl import Workbook
+from openpyxl import load_workbook
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,6 +18,7 @@ from earthwork_composer_catalogue import (  # noqa: E402
     EARTHWORK_COMPOSER_CATALOGUE,
     apply_difficult_condition_reference,
 )
+from support_earth_learning_edit import apply_first_principles_learning  # noqa: E402
 
 
 class DifficultConditionCatalogueTests(unittest.TestCase):
@@ -54,6 +57,31 @@ class DifficultConditionCatalogueTests(unittest.TestCase):
         self.assertIn("foul position", rendered)
         self.assertIn("sub-soil water level to the centre of gravity", rendered)
         self.assertNotIn("timbering items 2.16 to 2.23", rendered.lower())
+
+    def test_production_learning_export_corrects_the_actual_224_rows_without_rebuilding_schedule(self):
+        """The export path must correct the shipped support sheet, not just a blank sheet."""
+        workbook = load_workbook(ROOT / "CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1_Latest.xlsx")
+        support = workbook["02_support_earth_work"]
+        original_2241_style = support["A1194"].style_id
+        original_2242_style = support["A1200"].style_id
+
+        apply_first_principles_learning(workbook)
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            output = Path(temporary_directory) / "composer-output.xlsx"
+            workbook.save(output)
+            exported = load_workbook(output)
+            try:
+                support = exported["02_support_earth_work"]
+                self.assertIn("20% extra over each applicable earthwork item", support["A1194"].value)
+                self.assertIn("water and/or liquid mud", support["A1194"].value)
+                self.assertIn("25% extra over each applicable earthwork item", support["A1200"].value)
+                self.assertIn("foul position", support["A1200"].value)
+                self.assertNotIn("timbering", support["A1194"].value.lower())
+                self.assertNotIn("timbering", support["A1200"].value.lower())
+                self.assertEqual(support["A1194"].style_id, original_2241_style)
+                self.assertEqual(support["A1200"].style_id, original_2242_style)
+            finally:
+                exported.close()
 
 
 if __name__ == "__main__":
