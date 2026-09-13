@@ -162,7 +162,7 @@ def derive_resource_norm(resource: dict[str, Any], item_context: dict[str, Any],
 
 
 def export_ascii_formula_workbook(source_path, output_path, sheet_xml_path="xl/worksheets/sheet8.xml"):
-    """Copy a workbook while sanitizing only non-ASCII literal text in formulas.
+    """Copy a workbook while sanitizing formula literals for Excel compatibility.
 
     The workbook is copied entry-for-entry rather than saved through an XLSX
     writer.  That preserves all non-target worksheet XML (including visible
@@ -183,9 +183,26 @@ def export_ascii_formula_workbook(source_path, output_path, sheet_xml_path="xl/w
                 if entry.filename == sheet_xml_path:
                     root = ET.fromstring(payload)
                     for formula in root.findall(".//{*}f"):
-                        formula.text = (formula.text or "").translate(FORMULA_LITERAL_REPLACEMENTS)
+                        cleaned = (formula.text or "").translate(FORMULA_LITERAL_REPLACEMENTS)
+                        formula.text = _split_excel_formula_literals(cleaned)
                     payload = ET.tostring(root, encoding="utf-8", xml_declaration=True)
                 output.writestr(entry, payload)
+
+
+_EXCEL_STRING_LITERAL = re.compile(r'"(?:""|[^"])*"')
+
+
+def _split_excel_formula_literals(formula: str, chunk_size: int = 250) -> str:
+    """Keep every quoted Excel formula literal below Excel's 255-character limit."""
+    def split_literal(match: re.Match[str]) -> str:
+        literal = match.group(0)
+        content = literal[1:-1]
+        if len(content) <= 255:
+            return literal
+        chunks = [content[index:index + chunk_size] for index in range(0, len(content), chunk_size)]
+        return "&".join(f'"{chunk}"' for chunk in chunks)
+
+    return _EXCEL_STRING_LITERAL.sub(split_literal, formula)
 
 
 _ITEM_NUMBER = re.compile(r"^Item\s+(?P<number>[0-9.]+)")

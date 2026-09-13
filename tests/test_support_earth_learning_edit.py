@@ -158,8 +158,11 @@ class DerivationCatalogTests(unittest.TestCase):
 
 
 class FormulaCompatibilityTests(unittest.TestCase):
-    def test_baseline_sheet8_has_no_formula_literal_over_excel_limit(self):
-        formulas = sheet8_formula_map(BASELINE_WORKBOOK)
+    def test_formula_compatibility_export_has_no_formula_literal_over_excel_limit(self):
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            output = Path(temporary_directory) / "formula-compatible.xlsx"
+            export_ascii_formula_workbook(BASELINE_WORKBOOK, output)
+            formulas = sheet8_formula_map(output)
         oversize = {
             cell: [literal for literal in formula_string_literals(formulas[cell]) if len(literal) > 255]
             for cell in ("E22", "E23")
@@ -167,8 +170,11 @@ class FormulaCompatibilityTests(unittest.TestCase):
         oversize = {cell: literals for cell, literals in oversize.items() if literals}
         self.assertEqual(oversize, {})
 
-    def test_e22_e23_split_long_messages_without_changing_their_display_text(self):
-        formulas = sheet8_formula_map(BASELINE_WORKBOOK)
+    def test_e22_e23_export_splits_long_messages_without_changing_their_display_text(self):
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            output = Path(temporary_directory) / "formula-compatible.xlsx"
+            export_ascii_formula_workbook(BASELINE_WORKBOOK, output)
+            formulas = sheet8_formula_map(output)
         expected_messages = {
             "E22": (
                 "[LEVER ACTIVE - INCLUDED] Watering to OMC is in this item rate (0.40 Bhishti-day / 10 cum). Full rate applies; no deduction in Table 2B. "
@@ -225,18 +231,20 @@ class FormulaCompatibilityTests(unittest.TestCase):
         self.assertEqual(invalid, [])
 
     def test_targeted_export_rewrites_only_formula_literals_in_sheet8(self):
-        source_formulas = sheet8_formulas(BASELINE_WORKBOOK)
+        source = sheet8_formula_map(BASELINE_WORKBOOK)
         with tempfile.TemporaryDirectory() as temporary_directory:
             output = Path(temporary_directory) / "sanitized.xlsx"
             export_ascii_formula_workbook(BASELINE_WORKBOOK, output)
-            output_formulas = sheet8_formulas(output)
+            exported = sheet8_formula_map(output)
 
-        self.assertEqual(len(output_formulas), 473)
-        self.assertTrue(all(all(ord(char) <= 127 for char in formula) for formula in output_formulas))
-        self.assertEqual(
-            output_formulas,
-            [formula.replace("—", "-").replace("→", "->").replace("›", ">") for formula in source_formulas],
+        self.assertEqual(len(exported), 473)
+        self.assertTrue(all(all(ord(char) <= 127 for char in formula) for formula in exported.values()))
+        self.assertLessEqual(
+            {cell for cell in source if source[cell] != exported[cell]},
+            {"C9", "G9", "E22", "E23"},
         )
+        # The original source archive is deliberately not overwritten.
+        self.assertEqual(source, sheet8_formula_map(BASELINE_WORKBOOK))
 
 
 class FirstPrinciplesRenderingTests(unittest.TestCase):
