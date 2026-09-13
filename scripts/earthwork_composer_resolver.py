@@ -76,6 +76,9 @@ _APPROVED_KEYWORD_ALIASES = {
     "clearing grass and removal of the rubbish up to a distance of 50 m outside the periphery of the area cleared": "clearing grass",
     "not rolling with power roller of minimum 8 tonnes": "no power roller",
     "not watering the excavated earth for banking": "no watering",
+    "banking excavated earth in layers not exceeding 20 cm in depth, breaking clods, watering, rolling each layer with ½ tonne roller, or wooden or steel rammers, and rolling every 3rd and top-most layer with power roller of minimum 8 tonnes and dressing up, in embankments for roads, flood banks, marginal banks, and guide banks etc., lead upto 50 m and lift upto 1.5 m": "banking excavated earth",
+    "earth work in surface excavation not exceeding 30 cm in depth but exceeding 1.5 m in width as well as 10 sqm on plan including getting out and disposal of excavated earth upto 50 m and lift upto 1.5 m, as directed by engineer-in-charge": "surface excavation",
+    "in or under foul position, including pumping out water as required": "foul position",
 }
 
 _OVERLAP_RULES = {

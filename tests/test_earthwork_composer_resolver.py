@@ -149,6 +149,24 @@ class EarthworkComposerResolverTests(unittest.TestCase):
         self.assertEqual(rough_water["conditional_extras"][0]["item_code"], "2.24.1")
         self.assertEqual(surface_grass["additions"][0]["item_code"], "2.32")
 
+    def test_full_published_base_lines_and_foul_condition_resolve(self):
+        banking = resolve_selected_keywords([
+            "Banking excavated earth in layers not exceeding 20 cm in depth, breaking clods, watering, rolling each layer with ½ tonne roller, or wooden or steel rammers, and rolling every 3rd and top-most layer with power roller of minimum 8 tonnes and dressing up, in embankments for roads, flood banks, marginal banks, and guide banks etc., lead upto 50 m and lift upto 1.5 m",
+            "all kinds of soil",
+        ])
+        surface = resolve_selected_keywords([
+            "Earth work in surface excavation not exceeding 30 cm in depth but exceeding 1.5 m in width as well as 10 sqm on plan including getting out and disposal of excavated earth upto 50 m and lift upto 1.5 m, as directed by Engineer-in-Charge",
+            "all kinds of soil",
+        ])
+        foul = resolve_selected_keywords([
+            "rough excavation",
+            "In or under foul position, including pumping out water as required",
+        ])
+
+        self.assertEqual(banking["base"]["item_code"], "2.3.1")
+        self.assertEqual(surface["base"]["item_code"], "2.1.1")
+        self.assertEqual(foul["conditional_extras"][0]["item_code"], "2.24.2")
+
 
 if __name__ == "__main__":
     unittest.main()
