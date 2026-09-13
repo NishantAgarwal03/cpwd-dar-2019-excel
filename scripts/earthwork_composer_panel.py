@@ -8,11 +8,15 @@ and calculations.
 
 from __future__ import annotations
 
+from copy import copy
+from pathlib import Path
+
+from openpyxl import load_workbook
 from openpyxl.formula.translate import Translator
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.worksheet.datavalidation import DataValidation
 
-from earthwork_composer_catalogue import BASE_WORK_FAMILIES
+from earthwork_composer_catalogue import BASE_WORK_FAMILIES, apply_difficult_condition_reference
 from earthwork_composer_resolver import resolve_selected_keywords
 
 
@@ -54,15 +58,39 @@ _RESOLVER_ALIASES = {
 }
 
 
-def insert_custom_rate_composer_panel(sheet) -> None:
-    """Insert the composer before the schedule without rebuilding its content.
+def build_custom_rate_composer_output(source_path: str | Path, output_path: str | Path) -> Path:
+    """Create the safe production export used by the Custom Rate Composer.
 
-    The existing schedule is shifted as one block.  Its values, formulas,
-    formatting, row groups and column arrangement therefore remain intact.
+    The source workbook remains untouched.  The export first corrects the two
+    official difficult-condition reference rows, then inserts the visible
+    composer panel above the existing support schedule.
+    """
+    source = Path(source_path)
+    output = Path(output_path)
+    workbook = load_workbook(source, data_only=False)
+    sheet = workbook["02_support_earth_work"]
+    apply_difficult_condition_reference(sheet)
+    insert_custom_rate_composer_panel(sheet)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    workbook.save(output)
+    return output
+
+
+def insert_custom_rate_composer_panel(sheet) -> None:
+    """Insert the composer while explicitly moving schedule-native features.
+
+    ``openpyxl.insert_rows`` moves cell values and styles but does not translate
+    formulas, merge ranges, or row dimensions.  Capture and restore those
+    structures so the existing CPWD support schedule remains one intact block.
     """
     formulas = _captured_formulas(sheet)
+    merges = _captured_merges(sheet)
+    row_dimensions = _captured_row_dimensions(sheet)
+    _unmerge_all(sheet, merges)
     sheet.insert_rows(1, COMPOSER_PANEL_ROWS)
     _translate_shifted_formulas(sheet, formulas)
+    _restore_row_dimensions(sheet, row_dimensions)
+    _restore_merges(sheet, merges, insertion_row=1)
     _write_panel(sheet, _DEFAULT_SELECTION)
 
 
@@ -82,6 +110,41 @@ def _translate_shifted_formulas(sheet, formulas: list[tuple[int, int, str]]) -> 
         origin = sheet.cell(original_row, column).coordinate
         destination = sheet.cell(original_row + COMPOSER_PANEL_ROWS, column).coordinate
         sheet[destination].value = Translator(formula, origin=origin).translate_formula(destination)
+
+
+def _captured_merges(sheet) -> tuple[tuple[int, int, int, int], ...]:
+    return tuple(
+        (merged.min_col, merged.min_row, merged.max_col, merged.max_row)
+        for merged in sheet.merged_cells.ranges
+    )
+
+
+def _unmerge_all(sheet, merges: tuple[tuple[int, int, int, int], ...]) -> None:
+    for min_col, min_row, max_col, max_row in merges:
+        sheet.unmerge_cells(start_row=min_row, start_column=min_col, end_row=max_row, end_column=max_col)
+
+
+def _restore_merges(sheet, merges: tuple[tuple[int, int, int, int], ...], insertion_row: int) -> None:
+    for min_col, min_row, max_col, max_row in merges:
+        if min_row >= insertion_row:
+            min_row += COMPOSER_PANEL_ROWS
+            max_row += COMPOSER_PANEL_ROWS
+        elif max_row >= insertion_row:
+            max_row += COMPOSER_PANEL_ROWS
+        sheet.merge_cells(start_row=min_row, start_column=min_col, end_row=max_row, end_column=max_col)
+
+
+def _captured_row_dimensions(sheet) -> tuple[tuple[int, object], ...]:
+    return tuple((row, copy(dimension)) for row, dimension in sheet.row_dimensions.items())
+
+
+def _restore_row_dimensions(sheet, dimensions: tuple[tuple[int, object], ...]) -> None:
+    for row in list(sheet.row_dimensions):
+        del sheet.row_dimensions[row]
+    for original_row, dimension in dimensions:
+        destination = original_row + COMPOSER_PANEL_ROWS
+        dimension.index = destination
+        sheet.row_dimensions[destination] = dimension
 
 
 def _write_panel(sheet, selected_keywords: tuple[str, ...]) -> None:

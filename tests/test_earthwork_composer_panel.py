@@ -7,13 +7,17 @@ import unittest
 from pathlib import Path
 
 from openpyxl import Workbook, load_workbook
+from openpyxl.cell.cell import MergedCell
+from openpyxl.formula.translate import Translator
 
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from earthwork_composer_panel import (  # noqa: E402
+    COMPOSER_PANEL_ROWS,
     COMPOSER_FIRST_SCHEDULE_ROW,
+    build_custom_rate_composer_output,
     insert_custom_rate_composer_panel,
 )
 from earthwork_composer_catalogue import BASE_WORK_FAMILIES  # noqa: E402
@@ -117,6 +121,64 @@ class EarthworkComposerPanelTests(unittest.TestCase):
         self.assertEqual(panel.cell(COMPOSER_FIRST_SCHEDULE_ROW, 1).value, original_title)
         self.assertEqual(panel["F35"].value, "=D35*E35")
         self.assertTrue(panel["B26"].alignment.wrap_text)
+
+    def test_actual_support_sheet_preserves_every_formula_merge_and_row_group(self):
+        source = ROOT / "CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1_Latest.xlsx"
+        if not source.exists():
+            self.skipTest("Source workbook is not available in this worktree")
+        workbook = load_workbook(source, data_only=False)
+        sheet = workbook["02_support_earth_work"]
+        original_formulas = {
+            cell.coordinate: cell.value
+            for row in sheet.iter_rows()
+            for cell in row
+            if isinstance(cell.value, str) and cell.value.startswith("=")
+        }
+        original_merges = tuple(str(range_) for range_ in sheet.merged_cells.ranges)
+        original_row_dimensions = {
+            row: (dimension.height, dimension.hidden, dimension.outlineLevel, dimension.collapsed)
+            for row, dimension in sheet.row_dimensions.items()
+            if dimension.height is not None or dimension.hidden or dimension.outlineLevel or dimension.collapsed
+        }
+
+        insert_custom_rate_composer_panel(sheet)
+        output = ROOT / "scratch" / "test_preserved_composer_panel.xlsx"
+        workbook.save(output)
+        panel = load_workbook(output, data_only=False)["02_support_earth_work"]
+
+        panel_merges = {str(range_) for range_ in panel.merged_cells.ranges}
+        for original_merge in original_merges:
+            start, end = original_merge.split(":")
+            expected = f"{start[0]}{int(start[1:]) + COMPOSER_PANEL_ROWS}:{end[0]}{int(end[1:]) + COMPOSER_PANEL_ROWS}"
+            self.assertIn(expected, panel_merges)
+        for coordinate, formula in original_formulas.items():
+            column = "".join(filter(str.isalpha, coordinate))
+            row = int("".join(filter(str.isdigit, coordinate)))
+            destination = f"{column}{row + COMPOSER_PANEL_ROWS}"
+            self.assertNotIsInstance(panel[destination], MergedCell)
+            self.assertEqual(
+                panel[destination].value,
+                Translator(formula, origin=coordinate).translate_formula(destination),
+            )
+        for row, expected_dimension in original_row_dimensions.items():
+            dimension = panel.row_dimensions[row + COMPOSER_PANEL_ROWS]
+            self.assertEqual(
+                (dimension.height, dimension.hidden, dimension.outlineLevel, dimension.collapsed),
+                expected_dimension,
+            )
+
+    def test_production_export_path_writes_a_composer_ready_workbook(self):
+        source = ROOT / "CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1_Latest.xlsx"
+        if not source.exists():
+            self.skipTest("Source workbook is not available in this worktree")
+        output = ROOT / "scratch" / "test_composer_production_export.xlsx"
+
+        build_custom_rate_composer_output(source, output)
+
+        self.assertTrue(output.exists())
+        panel = load_workbook(output, data_only=False)["02_support_earth_work"]
+        self.assertEqual(panel["A1"].value, "Custom Rate Composer — Earth Work")
+        self.assertIn("20%", " ".join(str(cell.value or "") for cell in panel["A"]))
 
 
 if __name__ == "__main__":
