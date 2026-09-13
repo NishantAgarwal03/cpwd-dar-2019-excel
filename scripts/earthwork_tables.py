@@ -6575,7 +6575,7 @@ MASTER_ITEMS = {
     },
     "2.24.1": {
         "code": "2.24.1",
-        "desc": "CPWD DAR Item 2.24.1 - Earth Work",
+        "desc": "Extra rates for quantities of work executed in or under water and/or liquid mud, including pumping out water as required: 20% extra over each applicable item, limited to qualifying work measured by metre depth from sub-soil water level to centre of gravity.",
         "mode": "EXTRA_PCT",
         "batch_qty": 1,
         "batch_unit": "m-depth",
@@ -6584,7 +6584,7 @@ MASTER_ITEMS = {
     },
     "2.24.2": {
         "code": "2.24.2",
-        "desc": "CPWD DAR Item 2.24.2 - Earth Work",
+        "desc": "Extra rates for quantities of work executed in or under foul position, including pumping out water as required: 25% extra over each applicable item, limited to qualifying work measured by metre depth from sub-soil water level to centre of gravity.",
         "mode": "EXTRA_PCT",
         "batch_qty": 1,
         "batch_unit": "m-depth",

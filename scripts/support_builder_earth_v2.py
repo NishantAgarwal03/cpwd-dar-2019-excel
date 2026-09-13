@@ -959,16 +959,16 @@ ITEMS = [
 
 # ─── 2.24 PERCENTAGE EXTRAS ───────────────────────────────────────────────────
 {
- "id":"2.24.1","desc":"Extra 20% over timbering items 2.16 to 2.23 for work in excavations liable to flooding",
+ "id":"2.24.1","desc":"Extra rates for quantities of work executed in or under water and/or liquid mud, including pumping out water as required - 20% over each applicable item; apply only to qualifying quantity measured by metre depth from sub-soil water level to centre of gravity",
  "unit":"%","base_qty":1,"dsr_rate":20.00,
  "pct_item":True,"sections":[],
- "notes":"Flat 20% extra over base timbering rates. No resource rows.",
+ "notes":"Conditional 20% extra over each applicable earthwork item, limited to qualifying work. Measure depth from sub-soil water level to centre of gravity. No resource rows.",
 },
 {
- "id":"2.24.2","desc":"Extra 25% over timbering items 2.16 to 2.23 for work in running sand or mud",
+ "id":"2.24.2","desc":"Extra rates for quantities of work executed in or under foul position, including pumping out water as required - 25% over each applicable item; apply only to qualifying quantity measured by metre depth from sub-soil water level to centre of gravity",
  "unit":"%","base_qty":1,"dsr_rate":25.00,
  "pct_item":True,"sections":[],
- "notes":"Flat 25% extra over base timbering rates. No resource rows.",
+ "notes":"Conditional 25% extra over each applicable earthwork item, limited to qualifying work. Measure depth from sub-soil water level to centre of gravity. No resource rows.",
 },
 
 # ─── 2.25 FILLING IN TRENCHES ────────────────────────────────────────────────
