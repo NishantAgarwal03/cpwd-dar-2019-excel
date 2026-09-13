@@ -20,6 +20,10 @@ from earthwork_composer_catalogue import (  # noqa: E402
     calculate_difficult_condition_extra,
 )
 from support_earth_learning_edit import apply_first_principles_learning  # noqa: E402
+from scripts.scope_inputs import merge_scope_metadata  # noqa: E402
+from scripts.styles import get_workbook_styles  # noqa: E402
+from scripts.trade_builder_earth import build_earthwork_trade  # noqa: E402
+from scripts.trade_configs import get_all_trade_configs  # noqa: E402
 
 
 class DifficultConditionCatalogueTests(unittest.TestCase):
@@ -53,6 +57,28 @@ class DifficultConditionCatalogueTests(unittest.TestCase):
         self.assertAlmostEqual(foul["extra_rate"], 186.70)
         self.assertNotEqual(water["extra_rate"], 20)
         self.assertNotEqual(foul["extra_rate"], 25)
+
+    def test_trade_builder_master_catalogue_keeps_224_as_conditional_percent_not_rupee_rate(self):
+        workbook = Workbook()
+        config = merge_scope_metadata(get_all_trade_configs())["02_Earth_Work"]
+        build_earthwork_trade(workbook, config, get_workbook_styles())
+        sheet = workbook["02_Earth_Work"]
+
+        entries = {
+            sheet.cell(row, 32).value.split(":", 1)[0]: {
+                "scope": sheet.cell(row, 27).value,
+                "published_rate": sheet.cell(row, 31).value,
+                "nomenclature": sheet.cell(row, 32).value,
+            }
+            for row in range(109, 109 + 100)
+            if str(sheet.cell(row, 32).value or "").startswith("2.24.")
+        }
+        self.assertEqual(entries["2.24.1"]["published_rate"], "20% of qualifying selected base rate")
+        self.assertEqual(entries["2.24.2"]["published_rate"], "25% of qualifying selected base rate")
+        self.assertTrue(entries["2.24.1"]["scope"].startswith("Applicable Earthwork Base Items|"))
+        self.assertTrue(entries["2.24.2"]["scope"].startswith("Applicable Earthwork Base Items|"))
+        self.assertNotIn("Foundation & Pipeline Trenching", entries["2.24.1"]["scope"])
+        self.assertNotIn("Foundation & Pipeline Trenching", entries["2.24.2"]["scope"])
 
     def test_reference_sheet_shows_correct_scope_percent_and_qualifying_measurement(self):
         workbook = Workbook()
