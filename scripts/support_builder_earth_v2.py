@@ -960,14 +960,18 @@ ITEMS = [
 # ─── 2.24 PERCENTAGE EXTRAS ───────────────────────────────────────────────────
 {
  "id":"2.24.1","desc":"Extra rates for quantities of work executed in or under water and/or liquid mud, including pumping out water as required - 20% over each applicable item; apply only to qualifying quantity measured by metre depth from sub-soil water level to centre of gravity",
- "unit":"%","base_qty":1,"dsr_rate":20.00,
- "pct_item":True,"sections":[],
+ "unit":"%","base_qty":1,"dsr_rate":None,
+ "pct_item":True,"conditional_extra":True,"percent":20,
+ "conditional_rule":"20% of qualifying selected base rate",
+ "sections":[],
  "notes":"Conditional 20% extra over each applicable earthwork item, limited to qualifying work. Measure depth from sub-soil water level to centre of gravity. No resource rows.",
 },
 {
  "id":"2.24.2","desc":"Extra rates for quantities of work executed in or under foul position, including pumping out water as required - 25% over each applicable item; apply only to qualifying quantity measured by metre depth from sub-soil water level to centre of gravity",
- "unit":"%","base_qty":1,"dsr_rate":25.00,
- "pct_item":True,"sections":[],
+ "unit":"%","base_qty":1,"dsr_rate":None,
+ "pct_item":True,"conditional_extra":True,"percent":25,
+ "conditional_rule":"25% of qualifying selected base rate",
+ "sections":[],
  "notes":"Conditional 25% extra over each applicable earthwork item, limited to qualifying work. Measure depth from sub-soil water level to centre of gravity. No resource rows.",
 },
 
@@ -1360,6 +1364,7 @@ def write_item(ws, item, start_row):
     base = item["base_qty"]
     unit = item["unit"]
     is_pct   = item.get("pct_item", False)
+    is_conditional_extra = item.get("conditional_extra", False)
     is_ref   = item.get("ref_pattern", False)
     notes    = item.get("notes", "")
 
@@ -1374,7 +1379,13 @@ def write_item(ws, item, start_row):
 
     # Base quantity header
     ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=6)
-    base_txt = f"Details of cost for {base} {unit}" + (f"  [DSR 2021 Rate: {item['dsr_rate']:.2f}/{unit}]")
+    if is_conditional_extra:
+        base_txt = (
+            f"Conditional percentage extra: {item['conditional_rule']} (not a flat Rs rate). "
+            "Apply only to the qualifying quantity/depth."
+        )
+    else:
+        base_txt = f"Details of cost for {base} {unit}" + (f"  [DSR 2021 Rate: {item['dsr_rate']:.2f}/{unit}]")
     c = ws.cell(row=r, column=1, value=base_txt)
     c.font  = Font(bold=True, italic=True, size=9)
     c.fill  = fill("D6E4F0")
@@ -1393,7 +1404,7 @@ def write_item(ws, item, start_row):
     # ── Percentage-only items ──
     if is_pct:
         ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=6)
-        txt = notes if notes else f"Percentage extra: {item['dsr_rate']:.2f}%"
+        txt = notes if notes else f"Percentage extra: {item.get('percent', item['dsr_rate']):.2f}%"
         c = ws.cell(row=r, column=1, value=txt)
         c.font  = FT_BODY
         c.fill  = fill(C_CHAIN_LBL)
@@ -1401,8 +1412,12 @@ def write_item(ws, item, start_row):
         r += 1
         # per-unit row
         ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=5)
-        ws.cell(row=r, column=1, value="DAR 2019 Rate (CivilDAR computed)").font = FT_BOLD
-        set_cell(ws, r, 6, item["dsr_rate"], font=FT_BOLD, fill_obj=fill(C_FINAL), num_format=NUM_FMT)
+        if is_conditional_extra:
+            ws.cell(row=r, column=1, value="Conditional composer rule (not a flat Rs rate)").font = FT_BOLD
+            set_cell(ws, r, 6, item["conditional_rule"], font=FT_BOLD, fill_obj=fill(C_FINAL), align=AL_L)
+        else:
+            ws.cell(row=r, column=1, value="DAR 2019 Rate (CivilDAR computed)").font = FT_BOLD
+            set_cell(ws, r, 6, item["dsr_rate"], font=FT_BOLD, fill_obj=fill(C_FINAL), num_format=NUM_FMT)
         ws.cell(row=r, column=6).alignment = AL_R
         r += 2
         return r

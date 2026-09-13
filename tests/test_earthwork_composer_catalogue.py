@@ -24,6 +24,7 @@ from scripts.scope_inputs import merge_scope_metadata  # noqa: E402
 from scripts.styles import get_workbook_styles  # noqa: E402
 from scripts.trade_builder_earth import build_earthwork_trade  # noqa: E402
 from scripts.trade_configs import get_all_trade_configs  # noqa: E402
+from support_builder_earth_v2 import build_sheet  # noqa: E402
 
 
 class DifficultConditionCatalogueTests(unittest.TestCase):
@@ -79,6 +80,31 @@ class DifficultConditionCatalogueTests(unittest.TestCase):
         self.assertTrue(entries["2.24.2"]["scope"].startswith("Applicable Earthwork Base Items|"))
         self.assertNotIn("Foundation & Pipeline Trenching", entries["2.24.1"]["scope"])
         self.assertNotIn("Foundation & Pipeline Trenching", entries["2.24.2"]["scope"])
+
+    def test_legacy_support_builder_renders_224_as_a_conditional_rule_not_a_rupee_rate(self):
+        workbook = Workbook()
+        support = workbook.active
+        support.title = "02_support_earth_work"
+        build_sheet(support)
+        starts = {
+            str(support.cell(row, 1).value).split("  |", 1)[0]: row
+            for row in range(1, support.max_row + 1)
+            if str(support.cell(row, 1).value or "").startswith("Item 2.24.")
+        }
+        water = "\n".join(str(support.cell(row, col).value or "")
+                          for row in range(starts["Item 2.24.1"], starts["Item 2.24.1"] + 5)
+                          for col in range(1, 7))
+        foul = "\n".join(str(support.cell(row, col).value or "")
+                         for row in range(starts["Item 2.24.2"], starts["Item 2.24.2"] + 5)
+                         for col in range(1, 7))
+        self.assertIn("20% of qualifying selected base rate", water)
+        self.assertIn("25% of qualifying selected base rate", foul)
+        self.assertIn("not a flat Rs rate", water)
+        self.assertIn("not a flat Rs rate", foul)
+        self.assertNotIn("DAR 2019 Rate (CivilDAR computed)", water)
+        self.assertNotIn("DAR 2019 Rate (CivilDAR computed)", foul)
+        self.assertNotIn("20.0", water)
+        self.assertNotIn("25.0", foul)
 
     def test_reference_sheet_shows_correct_scope_percent_and_qualifying_measurement(self):
         workbook = Workbook()
