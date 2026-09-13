@@ -64,6 +64,8 @@ _CONDITIONAL_KEYWORDS = {
     "foul position": "2.24.2",
 }
 
+_BANKING_BASES = frozenset(("2.2", "2.3.1"))
+
 _OVERLAP_RULES = {
     frozenset(("2.1.1", "2.32")): (
         "Review scope before pricing items 2.1.1 and 2.32 together: surface excavation may already "
@@ -83,6 +85,8 @@ def resolve_selected_keywords(selected_keywords: Iterable[str]) -> dict[str, Any
     items.
     """
     keywords = _normalise_keywords(selected_keywords)
+    _validate_controlled_keywords(keywords)
+    _reject_duplicate_condition_selections(keywords)
     matches = [component for component in _COMPONENTS if _matches(component, keywords)]
     base_matches = [component for component in matches if component["relationship_type"] == "base"]
     if len(base_matches) != 1:
@@ -96,12 +100,15 @@ def resolve_selected_keywords(selected_keywords: Iterable[str]) -> dict[str, Any
                       *(item["item_code"] for item in additions),
                       *(item["item_code"] for item in conditional_extras)}
     warnings = [warning for codes, warning in _OVERLAP_RULES.items() if codes.issubset(selected_codes)]
+    incompatibilities = _incompatibilities(base["item_code"], deductions, conditional_extras)
     return {
         "base": base,
         "deductions": deductions,
         "additions": additions,
         "conditional_extras": conditional_extras,
         "overlap_warnings": warnings,
+        "incompatibilities": incompatibilities,
+        "composed_scope": _composed_scope(base, deductions, additions, conditional_extras),
     }
 
 
@@ -117,6 +124,23 @@ def _normalise_keywords(selected_keywords: Iterable[str]) -> list[str]:
             raise ValueError("Selected keywords cannot be blank")
         normalised.append(value)
     return normalised
+
+
+def _validate_controlled_keywords(keywords: list[str]) -> None:
+    allowed = {
+        keyword.casefold()
+        for component in _COMPONENTS
+        for keyword in component["keywords"]
+    } | set(_CONDITIONAL_KEYWORDS)
+    unknown = [keyword for keyword in keywords if keyword not in allowed]
+    if unknown:
+        raise ValueError(f"Unknown controlled keyword label(s): {', '.join(unknown)}")
+
+
+def _reject_duplicate_condition_selections(keywords: list[str]) -> None:
+    duplicates = [keyword for keyword in _CONDITIONAL_KEYWORDS if keywords.count(keyword) > 1]
+    if duplicates:
+        raise ValueError(f"Duplicate controlled keyword selection: {', '.join(duplicates)}")
 
 
 def _matches(component: dict[str, Any], keywords: list[str]) -> bool:
@@ -151,3 +175,39 @@ def _conditional_extras(keywords: list[str], base_item_code: str) -> list[dict[s
             "qualifying_base_item": base_item_code,
         })
     return extras
+
+
+def _incompatibilities(
+    base_item_code: str, deductions: list[dict[str, Any]], conditional_extras: list[dict[str, Any]]
+) -> list[str]:
+    messages: list[str] = []
+    for deduction in deductions:
+        if base_item_code not in _BANKING_BASES:
+            messages.append(
+                f"Item {deduction['item_code']} is a banking deduction and is not compatible with base "
+                f"item {base_item_code}. Select a banking base before applying it."
+            )
+    selected_extra_codes = {item["item_code"] for item in conditional_extras}
+    if {"2.24.1", "2.24.2"}.issubset(selected_extra_codes):
+        messages.append(
+            "Items 2.24.1 and 2.24.2 require separate qualifying quantities; do not combine their "
+            "percentage extras on the same quantity without an engineer's measurement decision."
+        )
+    return messages
+
+
+def _composed_scope(
+    base: dict[str, Any],
+    deductions: list[dict[str, Any]],
+    additions: list[dict[str, Any]],
+    conditional_extras: list[dict[str, Any]],
+) -> str:
+    phrases = [f"Base {base['item_code']}: {base['description']}"]
+    phrases.extend(f"Deduct {item['item_code']}: {item['description']}" for item in deductions)
+    phrases.extend(f"Add {item['item_code']}: {item['description']}" for item in additions)
+    phrases.extend(
+        f"Conditional {item['item_code']}: {item['percent']}% extra only on the qualifying quantity "
+        f"of base {item['qualifying_base_item']}."
+        for item in conditional_extras
+    )
+    return " ".join(phrases)

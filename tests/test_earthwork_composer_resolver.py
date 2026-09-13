@@ -79,6 +79,48 @@ class EarthworkComposerResolverTests(unittest.TestCase):
             ["2.24.2", "2.24.1"],
         )
 
+    def test_unknown_controlled_keyword_is_rejected_instead_of_being_silently_ignored(self):
+        with self.assertRaisesRegex(ValueError, "Unknown controlled keyword.*borrow pit"):
+            resolve_selected_keywords(["rough excavation and banking", "borrow pit"])
+
+    def test_result_exposes_plain_language_composed_scope(self):
+        result = resolve_selected_keywords(["banking excavated earth", "all kinds of soil", "no watering"])
+
+        self.assertIn("Base 2.3.1", result["composed_scope"])
+        self.assertIn("Deduct 2.5", result["composed_scope"])
+        self.assertEqual(result["incompatibilities"], [])
+
+    def test_no_watering_is_explicitly_incompatible_with_non_banking_base(self):
+        result = resolve_selected_keywords(["surface excavation", "all kinds of soil", "no watering"])
+
+        self.assertEqual(result["base"]["item_code"], "2.1.1")
+        self.assertEqual(result["deductions"][0]["item_code"], "2.5")
+        self.assertEqual(len(result["incompatibilities"]), 1)
+        self.assertIn("2.5", result["incompatibilities"][0])
+        self.assertIn("2.1.1", result["incompatibilities"][0])
+
+    def test_duplicate_difficult_condition_selection_is_rejected(self):
+        with self.assertRaisesRegex(ValueError, "Duplicate controlled keyword.*foul position"):
+            resolve_selected_keywords([
+                "rough excavation and banking",
+                "foul position",
+                "foul position",
+            ])
+
+    def test_water_and_foul_conditions_require_separate_qualifying_quantities(self):
+        result = resolve_selected_keywords([
+            "rough excavation and banking",
+            "water or liquid mud",
+            "foul position",
+        ])
+
+        self.assertEqual(
+            [component["item_code"] for component in result["conditional_extras"]],
+            ["2.24.1", "2.24.2"],
+        )
+        self.assertEqual(len(result["incompatibilities"]), 1)
+        self.assertIn("separate qualifying quantities", result["incompatibilities"][0])
+
 
 if __name__ == "__main__":
     unittest.main()
