@@ -252,9 +252,9 @@ EW_ITEMS = [
 
     # ── 2.24  Extra – Water / Foul Position ─────────────────────────────────
     ("CAT", "2.24  Extra Rates for Works in Difficult Conditions", "", None, ""),
-    ("2.24.1", "In or under water / liquid mud (incl. pumping) – % over basic",
+    ("2.24.1", "20% extra for qualifying work in/under water or liquid mud (incl. pumping) – each applicable item; metre-depth basis",
                                                                    "metre depth", None, "EXTRA"),
-    ("2.24.2", "In or under foul position (incl. pumping) – % over basic",
+    ("2.24.2", "25% extra for qualifying work in/under foul position (incl. pumping) – each applicable item; metre-depth basis",
                                                                    "metre depth", None, "EXTRA"),
 
     # ── 2.25  Filling – available excavated earth ─────────────────────────────

@@ -525,7 +525,7 @@ MASTER_ACTIVITIES = [
     },
     {
         "item_code": "2.10.1.1",
-        "scope": "Foundation & Pipeline Trenching",
+        "scope": "Applicable Earthwork Base Items",
         "strata": "All kinds of soil",
         "method": "Manual labor (depth ≤1.5m)",
         "task_spec": "Pipe / Cable trenches (dia ≤ 80 mm)",
@@ -725,43 +725,43 @@ MASTER_ACTIVITIES = [
     },
     {
         "item_code": "2.24.1",
-        "scope": "Foundation & Pipeline Trenching",
+        "scope": "Applicable Earthwork Base Items",
         "strata": "All kinds of soil",
         "method": "Manual labor (depth ≤1.5m)",
         "task_spec": "Extra for wet/water position (+20%)",
         "batch_qty": 1,
         "batch_unit": "m-depth",
-        "published_say": 20.0,
+        "published_say": "20% of qualifying selected base rate",
         "mode": "EXTRA_PCT",
         "cpoh_base": "W",
-        "nomenclature": "CPWD DAR Item 2.24.1 - Earth Work",
+        "nomenclature": "2.24.1: 20% conditional extra for work in or under water and/or liquid mud, including pumping out water as required",
         "loosening": "Excavation under wet / foul conditions",
         "handling": "Mud / slush bailing & haulage",
         "spreading": "Disposal",
         "watering": "Submerged / wet",
         "compaction": "None",
-        "lookup_key": "Foundation & Pipeline Trenching|All kinds of soil|Manual labor (depth ≤1.5m)|Extra for wet/water position (+20%)",
-        "fallback_key": "Foundation & Pipeline Trenching|All kinds of soil|Manual labor (depth ≤1.5m)"
+        "lookup_key": "Applicable Earthwork Base Items|All kinds of soil|Manual labor (depth ≤1.5m)|Extra for wet/water position (+20%)",
+        "fallback_key": "Applicable Earthwork Base Items|All kinds of soil|Manual labor (depth ≤1.5m)"
     },
     {
         "item_code": "2.24.2",
-        "scope": "Foundation & Pipeline Trenching",
+        "scope": "Applicable Earthwork Base Items",
         "strata": "All kinds of soil",
         "method": "Manual labor (depth ≤1.5m)",
         "task_spec": "Extra for foul position (+25%)",
         "batch_qty": 1,
         "batch_unit": "m-depth",
-        "published_say": 25.0,
+        "published_say": "25% of qualifying selected base rate",
         "mode": "EXTRA_PCT",
         "cpoh_base": "W",
-        "nomenclature": "CPWD DAR Item 2.24.2 - Earth Work",
+        "nomenclature": "2.24.2: 25% conditional extra for work in or under foul position, including pumping out water as required",
         "loosening": "Excavation under wet / foul conditions",
         "handling": "Mud / slush bailing & haulage",
         "spreading": "Disposal",
         "watering": "Submerged / wet",
         "compaction": "None",
-        "lookup_key": "Foundation & Pipeline Trenching|All kinds of soil|Manual labor (depth ≤1.5m)|Extra for foul position (+25%)",
-        "fallback_key": "Foundation & Pipeline Trenching|All kinds of soil|Manual labor (depth ≤1.5m)"
+        "lookup_key": "Applicable Earthwork Base Items|All kinds of soil|Manual labor (depth ≤1.5m)|Extra for foul position (+25%)",
+        "fallback_key": "Applicable Earthwork Base Items|All kinds of soil|Manual labor (depth ≤1.5m)"
     },
     {
         "item_code": "2.25",
@@ -1991,7 +1991,7 @@ TABLE_5E_RECORDS = [
         "compaction": "None"
     },
     {
-        "scope": "Foundation & Pipeline Trenching",
+        "scope": "Applicable Earthwork Base Items",
         "strata": "All kinds of soil",
         "method": "Mechanical (Hydraulic Excavator 0.9 cum)",
         "task_spec": "Open areas & wide foundation trenches",
@@ -4035,27 +4035,27 @@ TABLE_5E_RECORDS = [
         "compaction": "None"
     },
     {
-        "scope": "Foundation & Pipeline Trenching",
+        "scope": "Applicable Earthwork Base Items",
         "strata": "All kinds of soil",
         "method": "Manual labor (depth ≤1.5m)",
         "task_spec": "Extra for wet/water position (+20%)",
         "batch_output": "1 m-depth",
         "category": "Sundries & Allowances",
         "res_code": "BASE",
-        "res_name": "Extra 20% over applicable depth item rate",
+        "res_name": "Extra 20% over qualifying selected base rate",
         "qty_coeff": 0.2,
         "res_unit": "pct",
         "rate": 0.0,
         "line_amount": 0.0,
         "cost_pct": 0.0,
         "productivity_norm": "Fixed allowance",
-        "engineering_logic": "Work executed in/under water or liquid mud",
-        "internal_key": "Foundation & Pipeline Trenching|All kinds of soil|Manual labor (depth ≤1.5m)|Extra for wet/water position (+20%)|1",
+        "engineering_logic": "Conditional percentage for qualifying work in/under water or liquid mud; use selected base rate",
+        "internal_key": "Applicable Earthwork Base Items|All kinds of soil|Manual labor (depth ≤1.5m)|Extra for wet/water position (+20%)|1",
         "line_no": 1,
         "item_code": "2.24.1",
         "batch_qty": 1,
         "batch_unit": "m-depth",
-        "published_say": 20.0,
+        "published_say": "20% of qualifying selected base rate",
         "loosening": "Excavation under wet / foul conditions",
         "handling": "Mud / slush bailing & haulage",
         "spreading": "Disposal",
@@ -4063,27 +4063,27 @@ TABLE_5E_RECORDS = [
         "compaction": "None"
     },
     {
-        "scope": "Foundation & Pipeline Trenching",
+        "scope": "Applicable Earthwork Base Items",
         "strata": "All kinds of soil",
         "method": "Manual labor (depth ≤1.5m)",
         "task_spec": "Extra for foul position (+25%)",
         "batch_output": "1 m-depth",
         "category": "Sundries & Allowances",
         "res_code": "BASE",
-        "res_name": "Extra 25% over applicable depth item rate",
+        "res_name": "Extra 25% over qualifying selected base rate",
         "qty_coeff": 0.25,
         "res_unit": "pct",
         "rate": 0.0,
         "line_amount": 0.0,
         "cost_pct": 0.0,
         "productivity_norm": "Fixed allowance",
-        "engineering_logic": "Work in foul position",
-        "internal_key": "Foundation & Pipeline Trenching|All kinds of soil|Manual labor (depth ≤1.5m)|Extra for foul position (+25%)|1",
+        "engineering_logic": "Conditional percentage for qualifying work in/under foul position; use selected base rate",
+        "internal_key": "Applicable Earthwork Base Items|All kinds of soil|Manual labor (depth ≤1.5m)|Extra for foul position (+25%)|1",
         "line_no": 1,
         "item_code": "2.24.2",
         "batch_qty": 1,
         "batch_unit": "m-depth",
-        "published_say": 25.0,
+        "published_say": "25% of qualifying selected base rate",
         "loosening": "Excavation under wet / foul conditions",
         "handling": "Mud / slush bailing & haulage",
         "spreading": "Disposal",
@@ -6575,21 +6575,25 @@ MASTER_ITEMS = {
     },
     "2.24.1": {
         "code": "2.24.1",
-        "desc": "CPWD DAR Item 2.24.1 - Earth Work",
+        "desc": "Extra rates for quantities of work executed in or under water and/or liquid mud, including pumping out water as required: 20% extra over each applicable item, limited to qualifying work measured by metre depth from sub-soil water level to centre of gravity.",
         "mode": "EXTRA_PCT",
         "batch_qty": 1,
         "batch_unit": "m-depth",
         "cpoh_base": "W",
-        "published_say": 20.0
+        "published_say": "20% of qualifying selected base rate",
+        "percent": 20,
+        "relationship_type": "conditional_extra"
     },
     "2.24.2": {
         "code": "2.24.2",
-        "desc": "CPWD DAR Item 2.24.2 - Earth Work",
+        "desc": "Extra rates for quantities of work executed in or under foul position, including pumping out water as required: 25% extra over each applicable item, limited to qualifying work measured by metre depth from sub-soil water level to centre of gravity.",
         "mode": "EXTRA_PCT",
         "batch_qty": 1,
         "batch_unit": "m-depth",
         "cpoh_base": "W",
-        "published_say": 25.0
+        "published_say": "25% of qualifying selected base rate",
+        "percent": 25,
+        "relationship_type": "conditional_extra"
     },
     "2.25": {
         "code": "2.25",
@@ -7337,13 +7341,19 @@ for r in TABLE_5E_RECORDS:
         r['rate'] = 315.05
         r['line_amount'] = 315.05
     elif code == '2.24.1':
-        r['qty_coeff'] = 1.0
-        r['rate'] = 20.0
-        r['line_amount'] = 20.0
+        # Percentage relationship only: compose this against the qualifying
+        # selected base rate; never expose it as a flat Rs 20 resource line.
+        r['qty_coeff'] = 0.20
+        r['res_unit'] = 'pct of qualifying base rate'
+        r['rate'] = 0.0
+        r['line_amount'] = 0.0
     elif code == '2.24.2':
-        r['qty_coeff'] = 1.0
-        r['rate'] = 25.0
-        r['line_amount'] = 25.0
+        # Percentage relationship only: compose this against the qualifying
+        # selected base rate; never expose it as a flat Rs 25 resource line.
+        r['qty_coeff'] = 0.25
+        r['res_unit'] = 'pct of qualifying base rate'
+        r['rate'] = 0.0
+        r['line_amount'] = 0.0
 
     if code in _CODE_TO_CAT_TASK:
         cat, task = _CODE_TO_CAT_TASK[code]

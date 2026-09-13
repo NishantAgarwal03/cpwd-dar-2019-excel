@@ -37,6 +37,13 @@ from scripts.earthwork_tables import (
 )
 
 
+def _excel_text_formula(text, chunk_size=250):
+    """Return an Excel text expression without literals over 255 characters."""
+    escaped = text.replace('"', '""')
+    chunks = [escaped[index:index + chunk_size] for index in range(0, len(escaped), chunk_size)] or [""]
+    return "&".join(f'"{chunk}"' for chunk in chunks)
+
+
 # -----------------------------------------------------------------------------
 # Row Coordinate Constants
 # -----------------------------------------------------------------------------
@@ -401,7 +408,7 @@ def build_earthwork_trade(wb, config, styles):
     _ao_lookup_end = R_CAT_FIRST + len(HEADING_TASK_CATALOG) - 1
     c9_cell = ws.cell(row=R_TASK, column=3,
                       value=f'=IFERROR(INDEX($AN${R_CAT_FIRST}:$AN${_ao_lookup_end},'
-                            f'MATCH($D${R_TASK},$AO${R_CAT_FIRST}:$AO${_ao_lookup_end},0)),"—")')
+                             f'MATCH($D${R_TASK},$AO${R_CAT_FIRST}:$AO${_ao_lookup_end},0)),"-")')
     c9_cell.alignment = styles['align_center']
     c9_cell.font = styles['font_note']
     c9_cell.fill = styles['fill_lookup']
@@ -433,9 +440,9 @@ def build_earthwork_trade(wb, config, styles):
                           f'=IF(COUNTIF($AO${R_CAT_FIRST}:$AO${_ao_lookup_end},$D${R_TASK})=0,'
                           f'"[STALE ITEM] D9 value ["&$D${R_TASK}&"] not found in catalog. '
                           f'Reselect D9 from the dropdown after confirming D6, D7, D8.",'
-                          f'"STEP 4 of 4 — Select the terminal item specification. '
-                          f'Options shown are filtered to exactly those valid for your D6→D7→D8 path. '
-                          f'Active path: ["&$D${R_SCOPE}&"] › ["&$D${R_STRATA}&"] › ["&$D${R_METHOD}&"]. '
+                           f'"STEP 4 of 4 - Select the terminal item specification. '
+                           f'Options shown are filtered to exactly those valid for your D6->D7->D8 path. '
+                           f'Active path: ["&$D${R_SCOPE}&"] > ["&$D${R_STRATA}&"] > ["&$D${R_METHOD}&"]. '
                           f'Selected item: ["&$D${R_TASK}&"]. C9 category is auto-derived.")'
                       ))
     g9_cell.font = styles['font_note']
@@ -624,18 +631,27 @@ def build_earthwork_trade(wb, config, styles):
     c_water.protection = Protection(locked=False)
     dv_yesno.add(c_water)
     ws.merge_cells(f'E{R_OP_WATERING}:O{R_OP_WATERING}')
+    water_included = (
+        "[LEVER ACTIVE - INCLUDED] Watering to OMC is in this item rate (0.40 Bhishti-day / 10 cum). Full rate applies; no deduction in Table 2B. "
+        "Purpose: moisten loose embankment layers to Optimum Moisture Content before rolling."
+    )
+    water_deduction = (
+        "[LEVER ACTIVE - DEDUCTION] Watering omitted by contractor (DAR Item 2.5). "
+        "Deduction = -0.40 Bhishti-day / 10 cum @ Rs 617 = Rs 246.80 direct cost. "
+        "Compounded: +GST 14.05% (Rs 34.68) + CPOH 15% (Rs 42.22) + Cess 1% (Rs 3.24) = Rs 326.94 / 10 cum. "
+        "Rate reduction ~Rs 33.00/cum. See Table 2B Row D4 for live deduction amount."
+    )
+    water_inactive = (
+        "[LEVER INACTIVE] This toggle has NO rate effect for the selected scope (Surface Excavation / Foundation Trench / Jungle Clearance / Timbering). "
+        "Watering to OMC is not a specified item for excavation tasks - no Bhishti norm applies and no deduction exists. "
+        "Switch to Embankment or Banking scope to activate this lever."
+    )
     c_w_note = ws.cell(row=R_OP_WATERING, column=5,
                        value=f'=IF(OR(ISNUMBER(SEARCH("Embankment",$D${R_SCOPE})),ISNUMBER(SEARCH("banking",$D${R_TASK})),ISNUMBER(SEARCH("rolling",$D${R_TASK}))),'
                              f'IF($D${R_OP_WATERING}="YES",'
-                             f'"[LEVER ACTIVE - INCLUDED] Watering to OMC is in this item rate (0.40 Bhishti-day / 10 cum). Full rate applies; no deduction in Table 2B. '
-                             f'Purpose: moisten loose embankment layers to Optimum Moisture Content before rolling.",'
-                             f'"[LEVER ACTIVE - DEDUCTION] Watering omitted by contractor (DAR Item 2.5). '
-                             f'Deduction = -0.40 Bhishti-day / 10 cum @ Rs 617 = Rs 246.80 direct cost. '
-                             f'Compounded: +GST 14.05% (Rs 34.68) + CPOH 15% (Rs 42.22) + Cess 1% (Rs 3.24) = Rs 326.94 / 10 cum. '
-                             f'Rate reduction ~Rs 33.00/cum. See Table 2B Row D4 for live deduction amount."),'
-                             f'"[LEVER INACTIVE] This toggle has NO rate effect for the selected scope (Surface Excavation / Foundation Trench / Jungle Clearance / Timbering). '
-                             f'Watering to OMC is not a specified item for excavation tasks - no Bhishti norm applies and no deduction exists. '
-                             f'Switch to Embankment or Banking scope to activate this lever.")')
+                             f'{_excel_text_formula(water_included)},'
+                             f'{_excel_text_formula(water_deduction)}),'
+                             f'{_excel_text_formula(water_inactive)})')
     c_w_note.font = styles['font_note']
     c_w_note.alignment = styles['align_wrap']
     ws.row_dimensions[R_OP_WATERING].height = 26
@@ -650,18 +666,27 @@ def build_earthwork_trade(wb, config, styles):
     c_roll.protection = Protection(locked=False)
     dv_yesno.add(c_roll)
     ws.merge_cells(f'E{R_OP_COMPACTION}:O{R_OP_COMPACTION}')
+    roller_included = (
+        "[LEVER ACTIVE - INCLUDED] Power Roller Compaction is in this item rate (0.008 roller-day / 10 cum). Full rate applies; no deduction in Table 2B. "
+        "Standard: 8-10 tonne diesel road roller consolidating compacted embankment layers at 1250 cum/8-hr shift."
+    )
+    roller_deduction = (
+        "[LEVER ACTIVE - DEDUCTION] Power rolling omitted by contractor (DAR Item 2.4). "
+        "Deduction = -0.008 Roller-day/10 cum @ Rs 3000 (Rs 24.00) + 0.008 Chowkidar-day (Rs 4.46) + 1.82 Sundries (Rs 3.64) = Rs 32.10 direct. "
+        "Compounded (GST 14.05% + CPOH 15% + Cess 1%) = Rs 42.95/10 cum. Rate reduction ~Rs 4.30/cum. "
+        "See Table 2B Rows D1-D3 for live deduction amounts."
+    )
+    roller_inactive = (
+        "[LEVER INACTIVE] This toggle has NO rate effect for the selected scope (Surface Excavation / Foundation Trench / Jungle Clearance / Timbering). "
+        "Power roller compaction is not a specified operation for excavation tasks - the 0.008 roller-day norm and DAR Item 2.4 do not apply here. "
+        "Switch to Embankment or Banking scope to activate this lever."
+    )
     c_r_note = ws.cell(row=R_OP_COMPACTION, column=5,
                        value=f'=IF(OR(ISNUMBER(SEARCH("Embankment",$D${R_SCOPE})),ISNUMBER(SEARCH("banking",$D${R_TASK})),ISNUMBER(SEARCH("rolling",$D${R_TASK}))),'
                              f'IF($D${R_OP_COMPACTION}="YES",'
-                             f'"[LEVER ACTIVE - INCLUDED] Power Roller Compaction is in this item rate (0.008 roller-day / 10 cum). Full rate applies; no deduction in Table 2B. '
-                             f'Standard: 8-10 tonne diesel road roller consolidating compacted embankment layers at 1250 cum/8-hr shift.",'
-                             f'"[LEVER ACTIVE - DEDUCTION] Power rolling omitted by contractor (DAR Item 2.4). '
-                             f'Deduction = -0.008 Roller-day/10 cum @ Rs 3000 (Rs 24.00) + 0.008 Chowkidar-day (Rs 4.46) + 1.82 Sundries (Rs 3.64) = Rs 32.10 direct. '
-                             f'Compounded (GST 14.05% + CPOH 15% + Cess 1%) = Rs 42.95/10 cum. Rate reduction ~Rs 4.30/cum. '
-                             f'See Table 2B Rows D1-D3 for live deduction amounts."),'
-                             f'"[LEVER INACTIVE] This toggle has NO rate effect for the selected scope (Surface Excavation / Foundation Trench / Jungle Clearance / Timbering). '
-                             f'Power roller compaction is not a specified operation for excavation tasks - the 0.008 roller-day norm and DAR Item 2.4 do not apply here. '
-                             f'Switch to Embankment or Banking scope to activate this lever.")')
+                             f'{_excel_text_formula(roller_included)},'
+                             f'{_excel_text_formula(roller_deduction)}),'
+                             f'{_excel_text_formula(roller_inactive)})')
     c_r_note.font = styles['font_note']
     c_r_note.alignment = styles['align_wrap']
     ws.row_dimensions[R_OP_COMPACTION].height = 26
