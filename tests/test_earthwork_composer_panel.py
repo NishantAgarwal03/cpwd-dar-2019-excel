@@ -4,6 +4,8 @@ from __future__ import annotations
 
 import sys
 import unittest
+import xml.etree.ElementTree as ET
+import zipfile
 from pathlib import Path
 
 from openpyxl import Workbook, load_workbook
@@ -179,6 +181,36 @@ class EarthworkComposerPanelTests(unittest.TestCase):
         panel = load_workbook(output, data_only=False)["02_support_earth_work"]
         self.assertEqual(panel["A1"].value, "Custom Rate Composer — Earth Work")
         self.assertIn("20%", " ".join(str(cell.value or "") for cell in panel["A"]))
+        with zipfile.ZipFile(output) as archive:
+            root = ET.fromstring(archive.read("xl/worksheets/sheet8.xml"))
+        formulas = [formula.text or "" for formula in root.findall(".//{*}f")]
+        self.assertTrue(all(all(ord(character) <= 127 for character in formula) for formula in formulas))
+        for formula in formulas:
+            for literal in _formula_literals(formula):
+                self.assertLessEqual(len(literal), 255)
+
+
+def _formula_literals(formula: str) -> list[str]:
+    literals: list[str] = []
+    index = 0
+    while index < len(formula):
+        if formula[index] != '"':
+            index += 1
+            continue
+        index += 1
+        literal = []
+        while index < len(formula):
+            if formula[index] == '"' and index + 1 < len(formula) and formula[index + 1] == '"':
+                literal.append('"')
+                index += 2
+            elif formula[index] == '"':
+                index += 1
+                break
+            else:
+                literal.append(formula[index])
+                index += 1
+        literals.append("".join(literal))
+    return literals
 
 
 if __name__ == "__main__":

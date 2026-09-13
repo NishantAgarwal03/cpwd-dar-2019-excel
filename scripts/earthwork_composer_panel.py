@@ -18,6 +18,7 @@ from openpyxl.worksheet.datavalidation import DataValidation
 
 from earthwork_composer_catalogue import BASE_WORK_FAMILIES, apply_difficult_condition_reference
 from earthwork_composer_resolver import resolve_selected_keywords
+from support_earth_learning_edit import export_ascii_formula_workbook
 
 
 COMPOSER_PANEL_ROWS = 28
@@ -73,6 +74,10 @@ def build_custom_rate_composer_output(source_path: str | Path, output_path: str 
     insert_custom_rate_composer_panel(sheet)
     output.parent.mkdir(parents=True, exist_ok=True)
     workbook.save(output)
+    # The source workbook contains legacy non-ASCII/oversized formula literals
+    # on 02_Earth_Work (sheet8).  Sanitize only its formula XML after the panel
+    # save so Excel does not recover/delete formulas when opening this export.
+    export_ascii_formula_workbook(output, output)
     return output
 
 
