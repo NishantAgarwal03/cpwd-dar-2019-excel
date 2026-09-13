@@ -17,6 +17,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from earthwork_composer_catalogue import (  # noqa: E402
     EARTHWORK_COMPOSER_CATALOGUE,
     apply_difficult_condition_reference,
+    calculate_difficult_condition_extra,
 )
 from support_earth_learning_edit import apply_first_principles_learning  # noqa: E402
 
@@ -39,6 +40,19 @@ class DifficultConditionCatalogueTests(unittest.TestCase):
         self.assertEqual(item["percent"], 25)
         self.assertEqual(item["condition"], "in or under foul position, including pumping out water as required")
         self.assertEqual(item["measurement_basis"], "metre depth from sub-soil water level to the centre of gravity of qualifying work")
+
+    def test_difficult_extra_is_a_percentage_of_the_selected_qualifying_base_rate(self):
+        # Case 2: Item 2.2 selected as the base rate for qualifying excavation.
+        water = calculate_difficult_condition_extra("2.24.1", selected_base_rate=746.80)
+        foul = calculate_difficult_condition_extra("2.24.2", selected_base_rate=746.80)
+
+        self.assertEqual(water["selected_base_rate"], 746.80)
+        self.assertEqual(water["percent"], 20)
+        self.assertAlmostEqual(water["extra_rate"], 149.36)
+        self.assertEqual(foul["percent"], 25)
+        self.assertAlmostEqual(foul["extra_rate"], 186.70)
+        self.assertNotEqual(water["extra_rate"], 20)
+        self.assertNotEqual(foul["extra_rate"], 25)
 
     def test_reference_sheet_shows_correct_scope_percent_and_qualifying_measurement(self):
         workbook = Workbook()
@@ -76,8 +90,18 @@ class DifficultConditionCatalogueTests(unittest.TestCase):
                 self.assertIn("water and/or liquid mud", support["A1194"].value)
                 self.assertIn("25% extra over each applicable earthwork item", support["A1200"].value)
                 self.assertIn("foul position", support["A1200"].value)
-                self.assertNotIn("timbering", support["A1194"].value.lower())
-                self.assertNotIn("timbering", support["A1200"].value.lower())
+                water_block = "\n".join(str(support.cell(row, col).value or "")
+                                       for row in range(1194, 1200) for col in range(1, 7))
+                foul_block = "\n".join(str(support.cell(row, col).value or "")
+                                      for row in range(1200, 1206) for col in range(1, 7))
+                self.assertNotIn("timbering", water_block.lower())
+                self.assertNotIn("timbering", foul_block.lower())
+                self.assertIn("20% of the qualifying selected base rate", water_block)
+                self.assertIn("25% of the qualifying selected base rate", foul_block)
+                self.assertIn("sub-soil water level to the centre of gravity", water_block)
+                self.assertIn("sub-soil water level to the centre of gravity", foul_block)
+                self.assertIn("not a flat Rs rate", water_block)
+                self.assertIn("not a flat Rs rate", foul_block)
                 self.assertEqual(support["A1194"].style_id, original_2241_style)
                 self.assertEqual(support["A1200"].style_id, original_2242_style)
             finally:

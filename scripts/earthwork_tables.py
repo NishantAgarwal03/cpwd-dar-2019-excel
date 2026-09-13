@@ -7337,13 +7337,19 @@ for r in TABLE_5E_RECORDS:
         r['rate'] = 315.05
         r['line_amount'] = 315.05
     elif code == '2.24.1':
-        r['qty_coeff'] = 1.0
-        r['rate'] = 20.0
-        r['line_amount'] = 20.0
+        # Percentage relationship only: compose this against the qualifying
+        # selected base rate; never expose it as a flat Rs 20 resource line.
+        r['qty_coeff'] = 0.20
+        r['res_unit'] = 'pct of qualifying base rate'
+        r['rate'] = 0.0
+        r['line_amount'] = 0.0
     elif code == '2.24.2':
-        r['qty_coeff'] = 1.0
-        r['rate'] = 25.0
-        r['line_amount'] = 25.0
+        # Percentage relationship only: compose this against the qualifying
+        # selected base rate; never expose it as a flat Rs 25 resource line.
+        r['qty_coeff'] = 0.25
+        r['res_unit'] = 'pct of qualifying base rate'
+        r['rate'] = 0.0
+        r['line_amount'] = 0.0
 
     if code in _CODE_TO_CAT_TASK:
         cat, task = _CODE_TO_CAT_TASK[code]
