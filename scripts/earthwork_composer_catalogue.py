@@ -12,6 +12,20 @@ from typing import Any
 
 _DEPTH_BASIS = "metre depth from sub-soil water level to the centre of gravity of qualifying work"
 
+# This taxonomy is intentionally broader than the initial controlled-keyword
+# resolver.  It marks the CPWD Earth Work base families already visible in the
+# support sheet and makes clear where later resource/productivity extensions
+# belong without inventing productivity norms in the composer itself.
+BASE_WORK_FAMILIES: tuple[str, ...] = (
+    "Excavation",
+    "Banking/Embankment",
+    "Filling",
+    "Timbering/Shoring/Planking",
+    "Site Clearance/Surface Preparation",
+    "Chemical Anti-Termite Treatment",
+    "Difficult-condition extras",
+)
+
 EARTHWORK_COMPOSER_CATALOGUE: dict[str, dict[str, Any]] = {
     "2.24.1": {
         "item_code": "2.24.1",
