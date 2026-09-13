@@ -69,8 +69,13 @@ _BANKING_BASES = frozenset(("2.2", "2.3.1"))
 _APPROVED_KEYWORD_ALIASES = {
     "banking": "banking excavated earth",
     "rough excavation": "rough excavation and banking",
+    "rough excavation, banking excavated earth": "rough excavation and banking",
     "under water": "water or liquid mud",
+    "in or under water and/or liquid mud, including pumping out water as required": "water or liquid mud",
     "grass clearing": "clearing grass",
+    "clearing grass and removal of the rubbish up to a distance of 50 m outside the periphery of the area cleared": "clearing grass",
+    "not rolling with power roller of minimum 8 tonnes": "no power roller",
+    "not watering the excavated earth for banking": "no watering",
 }
 
 _OVERLAP_RULES = {

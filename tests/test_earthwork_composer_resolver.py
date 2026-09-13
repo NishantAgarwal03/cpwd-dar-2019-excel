@@ -127,6 +127,28 @@ class EarthworkComposerResolverTests(unittest.TestCase):
         self.assertEqual(rough_water["conditional_extras"][0]["item_code"], "2.24.1")
         self.assertEqual(surface_grass["additions"][0]["item_code"], "2.32")
 
+    def test_published_wording_aliases_resolve_the_same_controlled_components(self):
+        banking = resolve_selected_keywords([
+            "banking",
+            "all kinds of soil",
+            "not rolling with power roller of minimum 8 tonnes",
+            "not watering the excavated earth for banking",
+        ])
+        rough_water = resolve_selected_keywords([
+            "rough excavation, banking excavated earth",
+            "in or under water and/or liquid mud, including pumping out water as required",
+        ])
+        surface_grass = resolve_selected_keywords([
+            "surface excavation",
+            "all kinds of soil",
+            "clearing grass and removal of the rubbish up to a distance of 50 m outside the periphery of the area cleared",
+        ])
+
+        self.assertEqual([item["item_code"] for item in banking["deductions"]], ["2.4", "2.5"])
+        self.assertEqual(rough_water["base"]["item_code"], "2.2")
+        self.assertEqual(rough_water["conditional_extras"][0]["item_code"], "2.24.1")
+        self.assertEqual(surface_grass["additions"][0]["item_code"], "2.32")
+
 
 if __name__ == "__main__":
     unittest.main()
