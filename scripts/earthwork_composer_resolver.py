@@ -66,6 +66,13 @@ _CONDITIONAL_KEYWORDS = {
 
 _BANKING_BASES = frozenset(("2.2", "2.3.1"))
 
+_APPROVED_KEYWORD_ALIASES = {
+    "banking": "banking excavated earth",
+    "rough excavation": "rough excavation and banking",
+    "under water": "water or liquid mud",
+    "grass clearing": "clearing grass",
+}
+
 _OVERLAP_RULES = {
     frozenset(("2.1.1", "2.32")): (
         "Review scope before pricing items 2.1.1 and 2.32 together: surface excavation may already "
@@ -95,6 +102,7 @@ def resolve_selected_keywords(selected_keywords: Iterable[str]) -> dict[str, Any
     base = _clean_component(base_matches[0])
     deductions = _components_of_type(matches, "deduction", keywords)
     additions = _components_of_type(matches, "addition", keywords)
+    _reject_incompatible_deductions(base["item_code"], deductions)
     conditional_extras = _conditional_extras(keywords, base["item_code"])
     selected_codes = {base["item_code"], *(item["item_code"] for item in deductions),
                       *(item["item_code"] for item in additions),
@@ -119,7 +127,7 @@ def _normalise_keywords(selected_keywords: Iterable[str]) -> list[str]:
     for keyword in selected_keywords:
         if not isinstance(keyword, str):
             raise TypeError("Each selected keyword must be text")
-        value = keyword.strip().casefold()
+        value = _APPROVED_KEYWORD_ALIASES.get(keyword.strip().casefold(), keyword.strip().casefold())
         if not value:
             raise ValueError("Selected keywords cannot be blank")
         normalised.append(value)
@@ -194,6 +202,15 @@ def _incompatibilities(
             "percentage extras on the same quantity without an engineer's measurement decision."
         )
     return messages
+
+
+def _reject_incompatible_deductions(base_item_code: str, deductions: list[dict[str, Any]]) -> None:
+    invalid = [item["item_code"] for item in deductions if base_item_code not in _BANKING_BASES]
+    if invalid:
+        raise ValueError(
+            f"Item(s) {', '.join(invalid)} are banking deductions and cannot be composed with base item "
+            f"{base_item_code}. Select a banking base before calculating a rate."
+        )
 
 
 def _composed_scope(
