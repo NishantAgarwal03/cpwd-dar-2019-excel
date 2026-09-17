@@ -32,7 +32,7 @@ AL_C = Alignment(horizontal="center", vertical="center")
 AL_L = Alignment(horizontal="left",   vertical="center", wrap_text=True)
 AL_R = Alignment(horizontal="right",  vertical="center")
 
-# Master Mortar Items Definition (Items 3.1 to 3.18)
+# Master Mortar Items Definition (Items 3.1 to 3.19)
 MORTAR_ITEMS = [
     {
         "id": "3.1",
@@ -334,6 +334,24 @@ MORTAR_ITEMS = [
             ("Beldar", "Excavating clay, pulverising clods, sieving, puddling earth with feet/spades, and kneading into uniform plastic mortar", "Manual earth processing, puddling, kneading, and handling; 0.63 day = 5.04 man-hrs per cum", "Labour", "5.04 man-hrs (0.20 cum/man-hr)", "1 cum"),
             ("Bhisti", "Watering clay in pit, soaking earth overnight, adding water during puddling and kneading to attain soft plastic consistency", "Thorough soaking, moistening, and water supply; 0.315 day = 2.52 man-hrs per cum", "Labour", "2.52 man-hrs (0.40 cum/man-hr)", "1 cum"),
             ("Sundries", "Wooden puddling spades, sieves, shallow mixing pits, and mortar distribution baskets", "Sundries and tools allowance (L.S. 6.45 x cost index)", "Equipment", "L.S. allowance", "1 cum"),
+        ]
+    },
+    {
+        "id": "3.19",
+        "parent_title": "3.0 MORTARS — LIME-SURKHI MORTAR",
+        "title": "3.19 Mortar in lime, surkhi (50% red and 50% light yellow) and marble dust 1:1.5:0.5",
+        "unit": "cum",
+        "base_qty": 1.0,
+        "rows": [
+            ("Surkhi", "Finely ground burnt clay/brick powder providing pozzolanic reactivity with lime; 50% red + 50% light yellow blend (0.7125 cum)", "Pozzolanic aggregate reacting with lime to form hydraulic calcium silicate bonds; used in heritage lime mortars and restoration work", "Material", "0.71 cum (0.7125 cum/cum)", "1 cum"),
+            ("Unslaked lime", "Calcined calcium oxide (quicklime) slaked on site into lime putty; 3.01 quintals yields 0.475 cum lime putty", "Primary binder; slaked with measured water to form lime putty; proportion 1 part lime putty : 1.5 parts surkhi : 0.5 parts marble dust", "Material", "3.01 quintal (3.010 q/cum)", "1 cum"),
+            ("Marble dust/ powder", "Finely pulverised marble powder providing density, reduced porosity, and smooth workability to lime-surkhi paste (0.24 cum)", "Architectural quality marble dust; reduces drying shrinkage and improves adhesion in heritage plaster and ornamental bedding", "Material", "0.24 cum (0.240 cum/cum)", "1 cum"),
+            ("Carriage of Marble dust and marble chips", "Haulage and handling of bagged marble dust from processing units to site mixing platform", "Standard carriage of marble dust", "Material", "0.24 cum (0.240 cum/cum)", "1 cum"),
+            ("Carriage of Lime", "Transport of quicklime in sealed bags from kiln/depot to site; handled carefully to prevent premature slaking", "Carriage of unslaked lime bags; 3.01 cum equivalent transport", "Material", "3.01 cum (3.010 cum/cum)", "1 cum"),
+            ("Beldar", "Slaking lime in soaking pit, grinding surkhi, measuring ingredients, feeding mortar mill, collecting and distributing mixed mortar", "Labour for slaking lime, puddling, feeding mortar mill, and mortar handling; 0.90 day = 7.20 man-hrs per cum", "Labour", "7.20 man-hrs (0.14 cum/man-hr)", "1 cum"),
+            ("Bhisti", "Supplying water for lime slaking, maintaining mill wash water, and watering mortar during mixing to achieve correct consistency", "Water supply for slaking and mill operation; 0.45 day = 3.60 man-hrs per cum", "Labour", "3.60 man-hrs (0.28 cum/man-hr)", "1 cum"),
+            ("Mortar mill (hire & running)", "Mechanical grinding and thorough blending of lime putty, surkhi, and marble dust in mortar mill to achieve homogeneous plastic paste", "Mortar mill hire and running charges; L.S. 10.35 x cost index; ensures uniform surkhi dispersion", "Machine", "L.S. allowance", "1 cum"),
+            ("Sundries", "Soaking pits, lime-slaking baskets, measuring boxes, shovels, mortar distribution equipment, and site cleanup", "Sundries and minor tools allowance (L.S. 5.20 x cost index)", "Equipment", "L.S. allowance", "1 cum"),
         ]
     },
 ]
