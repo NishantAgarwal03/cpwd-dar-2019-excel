@@ -1,0 +1,7419 @@
+[
+  {
+    "code": "16.1",
+    "desc": "Preparation and consolidation of sub grade with power road roller of 8 to 12 tonne capacity after excavating earth to an average of 22.5 cm ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 156.75,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 1.8,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 18.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.054,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.054,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.2",
+    "desc": "Extra for compaction of earth work in embankment under optimum moisture conditions to give at least 95% of the maximum dry density (proctor ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 18.2,
+    "resources": [
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 617.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.008,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.3.1",
+    "desc": "90 mm to 45 mm size stone aggregate",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1840.05,
+    "resources": []
+  },
+  {
+    "code": "16.3.2",
+    "desc": "63 mm to 45 mm size stone aggregate",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1535.65,
+    "resources": []
+  },
+  {
+    "code": "16.3.3",
+    "desc": "53 mm to 22.4 mm size stone aggregate",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1749.75,
+    "resources": []
+  },
+  {
+    "code": "16.3.4",
+    "desc": "Over burnt (Jhama) brick aggregate 120 mm to 40 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 819.85,
+    "resources": []
+  },
+  {
+    "code": "16.3.5",
+    "desc": "Over burnt (Jhama) brick aggregate 90 mm to 45 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 793.1,
+    "resources": []
+  },
+  {
+    "code": "16.3.6",
+    "desc": "Stone screening 13.2 mm nominal size (Type A)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1727.65,
+    "resources": []
+  },
+  {
+    "code": "16.3.7",
+    "desc": "Stone screening 11.2 mm nominal size (Type B)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1978.5,
+    "resources": []
+  },
+  {
+    "code": "16.3.8",
+    "desc": "Red bajri",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1476.8,
+    "resources": [
+      {
+        "code": "0304",
+        "desc": "Bajri",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 1000.0
+      }
+    ]
+  },
+  {
+    "code": "16.3.9",
+    "desc": "Good earth",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 483.9,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.177,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.167,
+        "rate": 558.0
+      },
+      {
+        "code": "0979",
+        "desc": "Royalty for good earth",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 40.0
+      }
+    ]
+  },
+  {
+    "code": "16.3.10",
+    "desc": "Moorum",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 807.8,
+    "resources": [
+      {
+        "code": "0810",
+        "desc": "Moorum",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 500.0
+      }
+    ]
+  },
+  {
+    "code": "16.4",
+    "desc": "Laying, spreading and compacting stone aggregate of specified sizes to WBM specifications in uniform thickness, hand picking, rolling with 3",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 767.25,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.26,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.26,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.26,
+        "rate": 617.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.033,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.5.1",
+    "desc": "Over burnt (Jhama) brick aggregate 120 mm to 40 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 630.35,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.35,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.26,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.004,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.5.2",
+    "desc": "Over burnt (Jhama) brick aggregate 90 mm to 45 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 630.35,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.35,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.26,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 617.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.004,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.6.1",
+    "desc": "With road roller/ hand roller",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 19.9,
+    "resources": [
+      {
+        "code": "0304",
+        "desc": "Bajri",
+        "unit": "cum",
+        "qty": 0.6,
+        "rate": 1000.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 617.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.054,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.7.1",
+    "desc": "With common burnt clay F.P.S. (non modular) bricks of class designation 7.5",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 167.8,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.35,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Removal of rubbish",
+        "unit": "L.S.",
+        "qty": 17.94,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.97,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.8.1",
+    "desc": "With common burnt clay F.P.S. (non modular) bricks of class designation 7.5",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 46.75,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.09,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Removal of rubbish",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.9",
+    "desc": "Scarifying metalled (water-bound) road surface including disposal of rubbish, lead upto 50 m and consolidation of the aggregate received fro",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 24.55,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.35,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.08,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.132,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 5.46,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.3.10",
+    "desc": "Rate as per Item Number 16.3.10 of SH: Road Work cum 1.20 807.80 969.36 A Spreading and consolidation of brick aggregate and blinding materi",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 172.45,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.95,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 2.63,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 1.35,
+        "rate": 617.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.135,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 20.15,
+        "rate": 2.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.054,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.11",
+    "desc": "Dry stone pitching 22.5 cm thick including supply of stones and preparing surface complete.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 730.2,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.08,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 1.08,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.15,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.61,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.12.1",
+    "desc": "With common burnt clay F.P.S. (non modular) bricks of class designation 7.5",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 568.7,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.08,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.3.10",
+    "desc": "Rate as per Item Number 16.3.10 of SH: Road Work cum 0.022 807.80 17.77 A 2911 Stone chippings/ screenings 10/ 11.2 mm nominal size cum 0.09",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3677.15,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.96,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.48,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.24,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.24,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.71,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.48,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.48,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.48,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Barrier, chowkidar, sprayman, mate, etc.",
+        "unit": "L.S.",
+        "qty": 40.43,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.3.10",
+    "desc": "Rate as per Item Number 16.3.10 of SH: Road Work cum 0.022 807.80 17.77 A",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2275.95,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.48,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.24,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.24,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.24,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.48,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.48,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Barrier and chowkidar etc.",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.3.10",
+    "desc": "Rate as per Item Number 16.3.10 of SH: Road cum 0.06 807.80 48.47 A",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 212.25,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.6,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.15.1",
+    "desc": "R.C.C. Standards post/ struts/rails/ pales of mix 1:1.5:3 (1 cement : 1.5 coarsesand : 3 graded stone aggregate 12.5 mm nominal size) with w",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 26754.35,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.034,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.067,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.013,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.013,
+        "rate": 679.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.013,
+        "rate": 617.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.05,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.07,
+        "rate": 900.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 617.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.64,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mixer",
+        "unit": "L.S.",
+        "qty": 1.95,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 11.57,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of RCC posts",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Wooden plugs or 6mm bar nibs",
+        "unit": "L.S.",
+        "qty": 12.22,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.15.2",
+    "desc": "Welded steel wire fabric of required width having rectangular mesh painted with two or more coats of enamel paint of approved shade over a c",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 74.35,
+    "resources": []
+  },
+  {
+    "code": "16.16",
+    "desc": "Supplying and fixing turn buckles and straining bolts for barbed wire fencing.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 238.65,
+    "resources": [
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 679.0
+      }
+    ]
+  },
+  {
+    "code": "16.17.1",
+    "desc": "With G.I. barbed wire",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 12.0,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "G.I. staples or binding wire",
+        "unit": "L.S.",
+        "qty": 49.4,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.16",
+    "desc": "Rate as per Item Number 16.16 of SH: Road Work each set 10.00 238.65 2386.50 A",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 19.05,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "G.I. staples",
+        "unit": "L.S.",
+        "qty": 49.4,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      }
+    ]
+  },
+  {
+    "code": "16.19",
+    "desc": "Supplying at site Angle iron post & strut of required size including bottom to be split and bent at right angle in opposite direction for 10",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 92.4,
+    "resources": [
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries such as drilling bit etc.",
+        "unit": "L.S.",
+        "qty": 19.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.20",
+    "desc": "Welded steel wire fabric fencing with posts of specified material and of standard design placed and embedded in cement concrete blocks 45x45",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 51.0,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "9999",
+        "desc": "G.I. staple or binding wire",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.21",
+    "desc": "Engraving letters in hard stone",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 8.2,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.22",
+    "desc": "Providing and fixing 15x15x90 cm boundary stone of hard stone with top 30 cm chisel dressed on all four sides including top (cost of excavat",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 207.75,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 558.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage to site",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.23",
+    "desc": "Providing and fixing 15 cm dia at top, 20 cm at bottom and 90 cm high precast reinforced cement concrete 1:1.5:3 (1 cement : 1.5 coarse sand",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.02,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.002,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.004,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.0008,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.0008,
+        "rate": 679.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.0008,
+        "rate": 617.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.0018,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.0385,
+        "rate": 900.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.0027,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.0002,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mixer",
+        "unit": "L.S.",
+        "qty": 0.1,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.05,
+        "rate": 2.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.026,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.038,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.046,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for removing burr",
+        "unit": "L.S.",
+        "qty": 0.68,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding, sundries etc.",
+        "unit": "L.S.",
+        "qty": 0.6,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 558.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage to site",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.24.1",
+    "desc": "35x111x25 cm size",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.1,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.004,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.004,
+        "rate": 679.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.004,
+        "rate": 617.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.054,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.011,
+        "rate": 900.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.008,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.0007,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mixer",
+        "unit": "L.S.",
+        "qty": 0.03,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.13,
+        "rate": 2.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.075,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.111,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.136,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for removing burr",
+        "unit": "L.S.",
+        "qty": 1.95,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding, sundries etc.",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage to site",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.24.2",
+    "desc": "50x152.5x25 cm size",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.19,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.019,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.038,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.008,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.008,
+        "rate": 679.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.008,
+        "rate": 617.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.09,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.2,
+        "rate": 900.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.013,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.001,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mixer",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.26,
+        "rate": 2.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.126,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.185,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.227,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for removing burr",
+        "unit": "L.S.",
+        "qty": 3.38,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding, sundries etc.",
+        "unit": "L.S.",
+        "qty": 2.86,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage to site",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.24.3",
+    "desc": "35x93.5x18 cm size",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2.88,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.012,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.0024,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.0024,
+        "rate": 679.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.0024,
+        "rate": 617.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.042,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.009,
+        "rate": 900.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.0006,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mixer",
+        "unit": "L.S.",
+        "qty": 0.26,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.13,
+        "rate": 2.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.058,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.086,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.105,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for removing burr",
+        "unit": "L.S.",
+        "qty": 1.56,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding, sundries etc.",
+        "unit": "L.S.",
+        "qty": 1.3,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage to site",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.25",
+    "desc": "Surface dressing on new surface with paving bitumen of grade VG - 10 of approved quality using 2.25 kg of bitumen per sqm with 1.65 cum of s",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 167.25,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 738.0
+      },
+      {
+        "code": "0138",
+        "desc": "Sprayer (for bitumen, tar etc.)",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.93,
+        "rate": 558.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.93,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.55,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 617.0
+      },
+      {
+        "code": "0007",
+        "desc": "Hire charges of Coaltar Sprayer",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 300.0
+      },
+      {
+        "code": "0364",
+        "desc": "Wire brush",
+        "unit": "each",
+        "qty": 0.11,
+        "rate": 20.0
+      },
+      {
+        "code": "0365",
+        "desc": "Soft brush",
+        "unit": "each",
+        "qty": 0.32,
+        "rate": 20.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brooms and gunny bags",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.26",
+    "desc": "Surface dressing on new surface in two coats with bitumen of grade VG -10 of approved quality using 1.8 kg of bitumen per sqm with 1.5 cum o",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 232.05,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 738.0
+      },
+      {
+        "code": "0138",
+        "desc": "Sprayer (for bitumen, tar etc.)",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.38,
+        "rate": 558.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.85,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.85,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 617.0
+      },
+      {
+        "code": "0007",
+        "desc": "Hire charges of Coaltar Sprayer",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 300.0
+      },
+      {
+        "code": "0364",
+        "desc": "Wire brush",
+        "unit": "each",
+        "qty": 0.11,
+        "rate": 20.0
+      },
+      {
+        "code": "0365",
+        "desc": "Soft brush",
+        "unit": "each",
+        "qty": 0.32,
+        "rate": 20.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brooms and gunny bags",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 16.38,
+        "rate": 2.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.97,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 738.0
+      },
+      {
+        "code": "0138",
+        "desc": "Sprayer (for bitumen, tar etc.)",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.62,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.62,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 617.0
+      },
+      {
+        "code": "0007",
+        "desc": "Hire charges of Coaltar Sprayer",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 300.0
+      },
+      {
+        "code": "0364",
+        "desc": "Wire brush",
+        "unit": "each",
+        "qty": 0.03,
+        "rate": 20.0
+      },
+      {
+        "code": "0365",
+        "desc": "Soft brush",
+        "unit": "each",
+        "qty": 0.09,
+        "rate": 20.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 9.49,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.27",
+    "desc": "Surface dressing on old surface with hot bitumen of grade VG - 10 of approved quality using 1.95 kg of bitumen per sqm with 1.50 cum of ston",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 130.4,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.49,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.97,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 738.0
+      },
+      {
+        "code": "0138",
+        "desc": "Sprayer (for bitumen, tar etc.)",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.69,
+        "rate": 558.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.66,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.51,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.51,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 617.0
+      },
+      {
+        "code": "0007",
+        "desc": "Hire charges of Coaltar Sprayer",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 300.0
+      },
+      {
+        "code": "0364",
+        "desc": "Wire brush",
+        "unit": "each",
+        "qty": 0.05,
+        "rate": 20.0
+      },
+      {
+        "code": "0365",
+        "desc": "Soft brush",
+        "unit": "each",
+        "qty": 0.12,
+        "rate": 20.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brooms and gunny bags",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.28.1",
+    "desc": "Using bitumen emulsion (minimum 50% bitumen content- RS grade conforming to IS : 8887)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 157.95,
+    "resources": [
+      {
+        "code": "0310",
+        "desc": "Bitumen emulsion",
+        "unit": "tonne",
+        "qty": 0.195,
+        "rate": 30099.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 738.0
+      },
+      {
+        "code": "0138",
+        "desc": "Sprayer (for bitumen, tar etc.)",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.85,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.85,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 617.0
+      },
+      {
+        "code": "0007",
+        "desc": "Hire charges of Coaltar Sprayer",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 300.0
+      },
+      {
+        "code": "0364",
+        "desc": "Wire brush",
+        "unit": "each",
+        "qty": 0.11,
+        "rate": 20.0
+      },
+      {
+        "code": "0365",
+        "desc": "Soft brush",
+        "unit": "each",
+        "qty": 0.32,
+        "rate": 20.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brooms and gunny bags",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 9.49,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.29.1",
+    "desc": "Using bitumen emulsion (minimum 50% bitumen content- RS grade conforming to IS : 8887)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 100.0,
+    "resources": [
+      {
+        "code": "0310",
+        "desc": "Bitumen emulsion",
+        "unit": "tonne",
+        "qty": 0.122,
+        "rate": 30099.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.49,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.97,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 738.0
+      },
+      {
+        "code": "0138",
+        "desc": "Sprayer (for bitumen, tar etc.)",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.63,
+        "rate": 558.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.62,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.62,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 617.0
+      },
+      {
+        "code": "0007",
+        "desc": "Hire charges of Coaltar Sprayer",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 300.0
+      },
+      {
+        "code": "0364",
+        "desc": "Wire brush",
+        "unit": "each",
+        "qty": 0.11,
+        "rate": 20.0
+      },
+      {
+        "code": "0365",
+        "desc": "Soft brush",
+        "unit": "each",
+        "qty": 0.32,
+        "rate": 20.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brooms and gunny bags",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.30.1",
+    "desc": "On W.B.M. @ 0.75 Kg / sqm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 42.05,
+    "resources": [
+      {
+        "code": "0364",
+        "desc": "Wire brush",
+        "unit": "each",
+        "qty": 0.05,
+        "rate": 20.0
+      },
+      {
+        "code": "0365",
+        "desc": "Soft brush",
+        "unit": "each",
+        "qty": 0.12,
+        "rate": 20.0
+      },
+      {
+        "code": "9999",
+        "desc": "Gunny bags",
+        "unit": "L.S.",
+        "qty": 7.8,
+        "rate": 2.0
+      },
+      {
+        "code": "0007",
+        "desc": "Hire charges of Coaltar Sprayer",
+        "unit": "day",
+        "qty": 0.03,
+        "rate": 300.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 9.1,
+        "rate": 2.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.46,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.19,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.30.2",
+    "desc": "On bituminous surface @ 0.50 Kg / sqm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 33.65,
+    "resources": [
+      {
+        "code": "0364",
+        "desc": "Wire brush",
+        "unit": "each",
+        "qty": 0.05,
+        "rate": 20.0
+      },
+      {
+        "code": "0365",
+        "desc": "Soft brush",
+        "unit": "each",
+        "qty": 0.12,
+        "rate": 20.0
+      },
+      {
+        "code": "9999",
+        "desc": "Gunny bags",
+        "unit": "L.S.",
+        "qty": 7.8,
+        "rate": 2.0
+      },
+      {
+        "code": "0007",
+        "desc": "Hire charges of Coaltar Sprayer",
+        "unit": "day",
+        "qty": 0.03,
+        "rate": 300.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 7.8,
+        "rate": 2.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.46,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.19,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.31.1",
+    "desc": "With rapid setting bitumen emulsion 16.31.1.1 On W.B.M / W.M.M. @ 0.4kg/sqm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 11.85,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.31.2",
+    "desc": "With medium setting bitumen emulsion 16.31.2.1 On W.B.M / W.M.M. @ 0.4kg/sqm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 16.65,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.32.1",
+    "desc": "With paving Asphalt grade VG - 10 heated and then mixed with solvent at the rate of 70 grams per kg of asphalt",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 173.05,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.57,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.19,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 617.0
+      },
+      {
+        "code": "0364",
+        "desc": "Wire brush",
+        "unit": "each",
+        "qty": 0.11,
+        "rate": 20.0
+      },
+      {
+        "code": "0365",
+        "desc": "Soft brush",
+        "unit": "each",
+        "qty": 0.32,
+        "rate": 20.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brooms and gunny bags",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 9.49,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.32.2",
+    "desc": "With paving Asphalt grade VG - 30 with no solvent",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 199.65,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.57,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.19,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 617.0
+      },
+      {
+        "code": "0364",
+        "desc": "Wire brush",
+        "unit": "each",
+        "qty": 0.11,
+        "rate": 20.0
+      },
+      {
+        "code": "0365",
+        "desc": "Soft brush",
+        "unit": "each",
+        "qty": 0.32,
+        "rate": 20.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brooms and gunny bags",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 9.49,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.32.3",
+    "desc": "With Refinery Modified Bitumen CRMB 55 conforming to IRC: SP: 53",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 184.6,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.57,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.19,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 617.0
+      },
+      {
+        "code": "0364",
+        "desc": "Wire brush",
+        "unit": "each",
+        "qty": 0.11,
+        "rate": 20.0
+      },
+      {
+        "code": "0365",
+        "desc": "Soft brush",
+        "unit": "each",
+        "qty": 0.32,
+        "rate": 20.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brooms and gunny bags",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 9.49,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.33.1",
+    "desc": "With paving Asphalt grade VG - 10 heated and then mixed with solvent at the rate of 70 grams per kg of asphalt",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 207.75,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.71,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.19,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 617.0
+      },
+      {
+        "code": "0364",
+        "desc": "Wire brush",
+        "unit": "each",
+        "qty": 0.11,
+        "rate": 20.0
+      },
+      {
+        "code": "0365",
+        "desc": "Soft brush",
+        "unit": "each",
+        "qty": 0.32,
+        "rate": 20.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brooms and gunny bags",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 9.49,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.33.2",
+    "desc": "With paving Asphalt grade VG - 30 with no solvent",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 241.0,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.71,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.19,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 617.0
+      },
+      {
+        "code": "0023",
+        "desc": "Hot Bitumen mixer 0.5 cum i/c hand cart",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 3500.0
+      },
+      {
+        "code": "0364",
+        "desc": "Wire brush",
+        "unit": "each",
+        "qty": 0.11,
+        "rate": 20.0
+      },
+      {
+        "code": "0365",
+        "desc": "Soft brush",
+        "unit": "each",
+        "qty": 0.32,
+        "rate": 20.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brooms and gunny bags",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 9.49,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.33.3",
+    "desc": "With Refinery Modified Bitumen CRMB 55 conforming to IRC: SP: 53",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 222.2,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.71,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.19,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 617.0
+      },
+      {
+        "code": "0364",
+        "desc": "Wire brush",
+        "unit": "each",
+        "qty": 0.11,
+        "rate": 20.0
+      },
+      {
+        "code": "0365",
+        "desc": "Soft brush",
+        "unit": "each",
+        "qty": 0.32,
+        "rate": 20.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brooms and gunny bags",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 9.49,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.34",
+    "desc": "2 cm premix carpet surfacing with 2.4 cum of stone chippings 11.2 mm nominal size per 100 sqm and bitumen emulsion (medium setting min. 65% ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 164.25,
+    "resources": [
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.19,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.54,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 9.49,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.35",
+    "desc": "2.5 cm premix carpet surfacing with 3 cum of stone chippings 10 mm nominal size per 100 sqm and bitumen emulsion (medium setting min. 65% bi",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 198.35,
+    "resources": [
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.19,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.1,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 9.49,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.36.1",
+    "desc": "For 50mm compacted thickness using coarse aggregate of size 50-20 mm graded @ 0.60 cum per 10 sqm key aggregate of size 12.5 mm graded @ 0.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 390.15,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 16.67,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 5.33,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.67,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.33,
+        "rate": 558.0
+      },
+      {
+        "code": "0138",
+        "desc": "Sprayer (for bitumen, tar etc.)",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.33,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.67,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 558.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 1.77,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "16.36.2",
+    "desc": "For 75 mm compacted thickness in two layers using stone aggregate of size 63- 41 mm graded @ 0.90 cum per 10 sqm key aggregate of size 20.0 ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 572.35,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 25.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 8.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0138",
+        "desc": "Sprayer (for bitumen, tar etc.)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 10.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 2.65,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "16.37.1",
+    "desc": "25 mm thick",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 671.85,
+    "resources": [
+      {
+        "code": "0784",
+        "desc": "Marble dust/ powder",
+        "unit": "cum",
+        "qty": 0.174,
+        "rate": 1130.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 617.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0138",
+        "desc": "Sprayer (for bitumen, tar etc.)",
+        "unit": "day",
+        "qty": 3.5,
+        "rate": 617.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 617.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 617.0
+      },
+      {
+        "code": "0016",
+        "desc": "Mastic Cooker",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 750.0
+      }
+    ]
+  },
+  {
+    "code": "16.37.2",
+    "desc": "40 mm thick",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1074.95,
+    "resources": [
+      {
+        "code": "0784",
+        "desc": "Marble dust/ powder",
+        "unit": "cum",
+        "qty": 0.174,
+        "rate": 1130.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 617.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0138",
+        "desc": "Sprayer (for bitumen, tar etc.)",
+        "unit": "day",
+        "qty": 3.5,
+        "rate": 617.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 617.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 617.0
+      },
+      {
+        "code": "0016",
+        "desc": "Mastic Cooker",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 750.0
+      }
+    ]
+  },
+  {
+    "code": "16.38.1",
+    "desc": "With paving Asphalt grade VG - 10 heated and then mixed with solvent at the rate of 70 grams per kg of asphalt",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 261.45,
+    "resources": [
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 1.65,
+        "rate": 1350.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.16,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.19,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.24,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.12,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.34,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.13,
+        "rate": 617.0
+      },
+      {
+        "code": "0364",
+        "desc": "Wire brush",
+        "unit": "each",
+        "qty": 0.13,
+        "rate": 20.0
+      },
+      {
+        "code": "0365",
+        "desc": "Soft brush",
+        "unit": "each",
+        "qty": 0.4,
+        "rate": 20.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brooms and gunny bags",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.97,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.38.2",
+    "desc": "With paving Asphalt grade VG - 30",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 317.45,
+    "resources": [
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 1.65,
+        "rate": 1350.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.16,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.19,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.24,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.12,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.34,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.13,
+        "rate": 617.0
+      },
+      {
+        "code": "0364",
+        "desc": "Wire brush",
+        "unit": "each",
+        "qty": 0.13,
+        "rate": 20.0
+      },
+      {
+        "code": "0365",
+        "desc": "Soft brush",
+        "unit": "each",
+        "qty": 0.4,
+        "rate": 20.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brooms and gunny bags",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.97,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.38.3",
+    "desc": "With Refinery Modified Bitumen CRMB 55 conforming to IRC: SP : 53",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 285.75,
+    "resources": [
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 1.65,
+        "rate": 1350.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.16,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.19,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.24,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.12,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.34,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.13,
+        "rate": 617.0
+      },
+      {
+        "code": "0364",
+        "desc": "Wire brush",
+        "unit": "each",
+        "qty": 0.13,
+        "rate": 20.0
+      },
+      {
+        "code": "0365",
+        "desc": "Soft brush",
+        "unit": "each",
+        "qty": 0.4,
+        "rate": 20.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brooms and gunny bags",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.97,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.39.1",
+    "desc": "With paving Asphalt grade VG - 10 heated and then mixed with solvent at the rate of 70 grams per kg of asphalt",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 393.0,
+    "resources": [
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 2.6,
+        "rate": 1350.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.16,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.88,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.31,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 9.46,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.45,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 617.0
+      },
+      {
+        "code": "0364",
+        "desc": "Wire brush",
+        "unit": "each",
+        "qty": 0.09,
+        "rate": 20.0
+      },
+      {
+        "code": "0365",
+        "desc": "Soft brush",
+        "unit": "each",
+        "qty": 0.27,
+        "rate": 20.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brooms and gunny bags",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.39.2",
+    "desc": "With paving asphalt grade VG - 30 with no solvent",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 481.55,
+    "resources": [
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 2.6,
+        "rate": 1350.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.16,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.88,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.31,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 9.46,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.45,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 617.0
+      },
+      {
+        "code": "0364",
+        "desc": "Wire brush",
+        "unit": "each",
+        "qty": 0.09,
+        "rate": 20.0
+      },
+      {
+        "code": "0365",
+        "desc": "Soft brush",
+        "unit": "each",
+        "qty": 0.27,
+        "rate": 20.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brooms and gunny bags",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.39.3",
+    "desc": "With Refinery Modified Bitumen CRMB 55 conforming to IRC: SP : 53",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 431.45,
+    "resources": [
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 2.6,
+        "rate": 1350.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.16,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.88,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.31,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 9.46,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.45,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 617.0
+      },
+      {
+        "code": "0364",
+        "desc": "Wire brush",
+        "unit": "each",
+        "qty": 0.09,
+        "rate": 20.0
+      },
+      {
+        "code": "0365",
+        "desc": "Soft brush",
+        "unit": "each",
+        "qty": 0.27,
+        "rate": 20.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brooms and gunny bags",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.40",
+    "desc": "Providing and laying seal coat of premixed fine aggregate ( passing 2.36 mm and retained on 180 micron sieve) with bitumen using 128 kg of b",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 73.7,
+    "resources": [
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.6,
+        "rate": 1350.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.49,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.97,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.11,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 738.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 617.0
+      },
+      {
+        "code": "0364",
+        "desc": "Wire brush",
+        "unit": "each",
+        "qty": 0.05,
+        "rate": 20.0
+      },
+      {
+        "code": "0365",
+        "desc": "Soft brush",
+        "unit": "each",
+        "qty": 0.12,
+        "rate": 20.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 18.2,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.41",
+    "desc": "Providing and laying seal coat over prepared surface of road with bitumen heated in bitumen boiler fitted with the spray set spraying using ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 99.15,
+    "resources": [
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 738.0
+      },
+      {
+        "code": "0138",
+        "desc": "Sprayer (for bitumen, tar etc.)",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.69,
+        "rate": 558.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.51,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 617.0
+      },
+      {
+        "code": "0007",
+        "desc": "Hire charges of Coaltar Sprayer",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 300.0
+      },
+      {
+        "code": "0364",
+        "desc": "Wire brush",
+        "unit": "each",
+        "qty": 0.05,
+        "rate": 20.0
+      },
+      {
+        "code": "0365",
+        "desc": "Soft brush",
+        "unit": "each",
+        "qty": 0.12,
+        "rate": 20.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 18.2,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brooms and gunny bags",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.42",
+    "desc": "Cement concrete 1:2:4 (1 cement : 2 coarse sand : 4 graded stone aggregate 40 mm nominal size) in pavements, laid to required slope and camb",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 6840.85,
+    "resources": [
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.445,
+        "rate": 1350.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.32,
+        "rate": 4940.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.63,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 617.0
+      },
+      {
+        "code": "0012",
+        "desc": "Vibrator (Needle type 40 mm)",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 370.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.43.1",
+    "desc": "Cement concrete prepared with batch mixing machine",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 8752.35,
+    "resources": [
+      {
+        "code": "16.43B",
+        "desc": "Rate as per SH: 16.43B",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 814.45
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.34,
+        "rate": 4940.0
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.445,
+        "rate": 1350.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 679.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 617.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 558.0
+      },
+      {
+        "code": "0021",
+        "desc": "Pin vibrator",
+        "unit": "day",
+        "qty": 0.025,
+        "rate": 325.0
+      },
+      {
+        "code": "0022",
+        "desc": "Surface Vibrator",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 400.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cutting and making joints",
+        "unit": "L.S.",
+        "qty": 50.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.43.2",
+    "desc": "Cement concrete manufactured in automatic batching plant (RMC plant) i/c transportation to site in transit mixer",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 9153.75,
+    "resources": [
+      {
+        "code": "16.43B",
+        "desc": "Rate as per SH: 16.43B",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 814.45
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.34,
+        "rate": 4940.0
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.445,
+        "rate": 1350.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 679.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 617.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 558.0
+      },
+      {
+        "code": "0029",
+        "desc": "Carriage of concrete by transit mixer. km/",
+        "unit": "cum",
+        "qty": 10.0,
+        "rate": 30.0
+      },
+      {
+        "code": "0021",
+        "desc": "Pin vibrator",
+        "unit": "day",
+        "qty": 0.025,
+        "rate": 325.0
+      },
+      {
+        "code": "0022",
+        "desc": "Surface Vibrator",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 400.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cutting and making joints",
+        "unit": "L.S.",
+        "qty": 50.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 679.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.68,
+        "rate": 558.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 2.86,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.86,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 5.73,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.44",
+    "desc": "Extra for providing and mixing hardening compound of approved quality as per manufacturer's specification in cement concrete.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 50.85,
+    "resources": []
+  },
+  {
+    "code": "16.45",
+    "desc": "Providing and fixing in position pre-moulded joint filler in expansion joints.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3.1,
+    "resources": [
+      {
+        "code": "0317",
+        "desc": "Premoulded joint filler 12 mm thick",
+        "unit": "sqm",
+        "qty": 45.0,
+        "rate": 360.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.46.1",
+    "desc": "Using grade 'A' sealing compound.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.03,
+    "resources": [
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 20.67,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.47.1",
+    "desc": "New work (Two or more coats)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 150.85,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of paint",
+        "unit": "L.S.",
+        "qty": 5.07,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 36.4,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.47.2",
+    "desc": "Old work (One or more coats)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 96.4,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of paint",
+        "unit": "L.S.",
+        "qty": 1.12,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 24.44,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.48.1",
+    "desc": "New work (Two or more coats)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 215.95,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of paint (1.48/0.8x0.08x6.9)",
+        "unit": "L.S.",
+        "qty": 2.65,
+        "rate": 2.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 617.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.68,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 36.4,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.48.2",
+    "desc": "Old work (One or more coats)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 141.7,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of paint.",
+        "unit": "L.S.",
+        "qty": 0.65,
+        "rate": 2.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 617.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.12,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 24.44,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.49",
+    "desc": "Making bell mouth opening/ entrance of size 100x50x50 cm for drainage pipe under footpath, including providing cement concrete 1:3:6 (1 ceme",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2481.6,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.024,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.05,
+        "rate": 900.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.035,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.003,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire charges of mixer",
+        "unit": "L.S.",
+        "qty": 1.27,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.27,
+        "rate": 2.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.488,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for removing burr",
+        "unit": "L.S.",
+        "qty": 8.71,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 7.62,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.50",
+    "desc": "Providing and fixing Glow studs of size 100x20 mm made of heavy duty body shall be moulded ASA (Acrylic styrene Acryloretrite ) or HIP (High",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 196.4,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of cats eyes",
+        "unit": "L.S.",
+        "qty": 2.6,
+        "rate": 2.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 39.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.51.1",
+    "desc": "Minimum thickness 15 cm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1111.05,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.116,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.116,
+        "rate": 558.0
+      },
+      {
+        "code": "0979",
+        "desc": "Royalty for good earth",
+        "unit": "cum",
+        "qty": 0.655,
+        "rate": 40.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.025,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.025,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 0.0008,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.18,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.26,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.26,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "16.52",
+    "desc": "Providing and fixing precast lime fly ash concrete blocks 1:2:3:6 (1 lime: 2 fly ash : 3 coarse sand : 6 graded stone aggregate 20 mm nomina",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 10802.45,
+    "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.0972,
+        "rate": 4664.55
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.72,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.0089,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.0107,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.0035,
+        "rate": 617.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.787,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.787,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.262,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.22,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 738.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.98,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.72,
+        "rate": 1350.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.45,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Running and upkeep of mortar mill",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.65,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 679.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mixer",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.53",
+    "desc": "Providing and fixing concertina coil fencing with punched tape concertina coil 600 mm dia 10 metre openable length ( total length 90 m), hav",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 290.8,
+    "resources": [
+      {
+        "code": "8692",
+        "desc": "RBT reinforced barbed wire",
+        "unit": "metre",
+        "qty": 270.0,
+        "rate": 6.5
+      },
+      {
+        "code": "8693",
+        "desc": "Turn buckle and strengthening bolt each",
+        "unit": "set",
+        "qty": 10.0,
+        "rate": 40.0
+      },
+      {
+        "code": "9999",
+        "desc": "G.I. staples clips etc.",
+        "unit": "L.S.",
+        "qty": 49.4,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      }
+    ]
+  },
+  {
+    "code": "16.54.1",
+    "desc": "50 to 100 mm average compacted thickness with bitumen of grade VG-30 @ 5% (percentage by weight of total mix) and lime filler @ 2% (percenta",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 10064.25,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.84,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 14.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "16.54.2",
+    "desc": "50 to 100 mm average compacted thickness with bitumen of grade VG-30 @ 5% (percentage by weight of total mix) and lime filler @ 2% (percenta",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 9981.9,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.84,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 14.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "16.55.1",
+    "desc": "50 to 100 mm average compacted thickness with bitumen of grade VG-30 @ 3.50% (percentage by weight of total mix) prepared in Batch Type Hot ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 7743.55,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.84,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 14.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "16.55.2",
+    "desc": "50 to 100 mm average compacted thickness with bitumen of grade VG-30 @ 3.50% (percentage by weight of total mix) prepared in Drum Type Hot M",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 7665.25,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.84,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 14.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "16.56.1",
+    "desc": "25 mm compacted thickness with bitumen of grade VG-30 @ 5% (percentage by weight of total mix) and lime filler @ 2% (percentage by weight of",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 250.75,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.84,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 14.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.56.2",
+    "desc": "25 mm compacted thickness with bitumen of grade VG-30 @ 5% (percentage by weight of total mix) and lime filler @ 2% (percentage by weight of",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 248.7,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.84,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 14.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.57.1",
+    "desc": "40/50 mm compacted thickness with bitumen of grade VG-30 @ 5.5% (percentage by weight of total mix) and lime filler @ 3% (percentage by weig",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 10944.65,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.84,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 14.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "16.57.2",
+    "desc": "40/50 mm compacted thickness with bitumen of grade VG-30 @ 5.5% (percentage by weight of total mix) and lime filler @ 3% (percentage by weig",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 11499.4,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.84,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 14.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "16.57.3",
+    "desc": "40/50 mm compacted thickness with bitumen of grade PMB-40 @ 5.5% (percentage by weight of total mix) and lime filler @ 3% (percentage by wei",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 9666.9,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.84,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 14.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "16.57.4",
+    "desc": "40/50 mm compacted thickness with bitumen of grade CRMB-60 @ 5.5% (percentage by weight of total mix) and lime filler @ 3% (percentage by we",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 9378.4,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.84,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 14.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "16.57.5",
+    "desc": "40/50 mm compacted thickness with bitumen of grade VG-30 @ 5.5% (percentage by weight of total mix) and lime filler @ 3% (percentage by weig",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 10860.6,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.84,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 14.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "16.57.6",
+    "desc": "40/50 mm compacted thickness with bitumen of grade VG-30 @ 5.5% (percentage by weight of total mix) and lime filler @ 3% (percentage by weig",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 11415.35,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.84,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 14.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "16.57.7",
+    "desc": "40/50 mm compacted thickness with bitumen of grade PMB-40 @ 5.5% (percentage by weight of total mix) and lime filler @ 3% (percentage by wei",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 9582.85,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.84,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 14.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "16.57.8",
+    "desc": "40/50 mm compacted thickness with bitumen of grade CRMB-60 @ 5.5% (percentage by weight of total mix) and lime filler @ 3% (percentage by we",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 9294.35,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.84,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 14.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "16.59.1",
+    "desc": "Mandatory/ Regulatory sign boards of 900 mm diametre with support length of 3750 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 5996.95,
+    "resources": [
+      {
+        "code": "8690",
+        "desc": "High intensity retro - reflective sheet",
+        "unit": "sqm",
+        "qty": 0.98,
+        "rate": 1300.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and hold fast etc.",
+        "unit": "L.S.",
+        "qty": 78.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.59.2",
+    "desc": "Cautionary /warning sign boards of equilateral triangular shape having each side of 900 mm with support length of 3650 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 4533.85,
+    "resources": [
+      {
+        "code": "8690",
+        "desc": "High intensity retro - reflective sheet",
+        "unit": "sqm",
+        "qty": 0.55,
+        "rate": 1300.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries & hold fast etc.",
+        "unit": "L.S.",
+        "qty": 65.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.60.1",
+    "desc": "Overhead informatory road signage",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 5284.45,
+    "resources": [
+      {
+        "code": "8690",
+        "desc": "High intensity retro - reflective sheet",
+        "unit": "sqm",
+        "qty": 5.04,
+        "rate": 1300.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire charges of drill machine and sundries",
+        "unit": "L.S.",
+        "qty": 52.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hoisting board",
+        "unit": "L.S.",
+        "qty": 390.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "fixing retro reflective sheet",
+        "unit": "L.S.",
+        "qty": 564.2,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.61",
+    "desc": "Providing Retro-reflective regulatory sign board of size 900 mm dia meter made out of 2 mm thick aluminium sheet, face to be fully covered w",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.7,
+    "resources": [
+      {
+        "code": "8690",
+        "desc": "High intensity retro - reflective sheet",
+        "unit": "sqm",
+        "qty": 0.98,
+        "rate": 1300.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries & hole fast etc,",
+        "unit": "L.S.",
+        "qty": 31.2,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.62",
+    "desc": "Providing and applying 2.5 mm thick road marking strips (retro- reflective) of specified shade/ colour using hot thermoplastic material by f",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 607.3,
+    "resources": [
+      {
+        "code": "8687",
+        "desc": "Thermoplastic paint",
+        "unit": "kg",
+        "qty": 1050.0,
+        "rate": 65.0
+      },
+      {
+        "code": "8688",
+        "desc": "Glass beads",
+        "unit": "kg",
+        "qty": 50.0,
+        "rate": 70.0
+      },
+      {
+        "code": "0033",
+        "desc": "Paint applicator.",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 750.0
+      },
+      {
+        "code": "0157",
+        "desc": "Operator (Pile/ Special machine)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.63",
+    "desc": "Providing, laying and making kerb channel 30 cm wide and 50 mm thick with cement concrete 1:3:6 (1 cement: 3 coarse sand:6 graded stone aggr",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 483.0,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.35,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.26,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "16.64",
+    "desc": "Providing and laying 75 mm thick compacted bed of dry brick aggregate of 40 mm thick nominal size including spreading, well ramming, consoli",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 176.7,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.35,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.26,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "16.65",
+    "desc": "Providing and fixing post delineators made of ABS round body fitted with 2 nos 100 mm dia high reflective reflectors and mounted on MS pipe ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 714.45,
+    "resources": [
+      {
+        "code": "8685",
+        "desc": "Delineator",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 300.0
+      },
+      {
+        "code": "9999",
+        "desc": "Fixing materials.",
+        "unit": "L.S.",
+        "qty": 78.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Fixing charges.",
+        "unit": "L.S.",
+        "qty": 39.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.66.1",
+    "desc": "All kind of soil",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 26.45,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.67",
+    "desc": "Providing and fixing at or near ground level factory made RCC pavement slab of M-30 grade of size 450x450x50 mm, including reinforcement wit",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1264.65,
+    "resources": [
+      {
+        "code": "3.10",
+        "desc": "Rate as per SH: 3.10",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3658.1
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of slab.",
+        "unit": "L.S.",
+        "qty": 52.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 1.1,
+        "rate": 709.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 1.1,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.55,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.68",
+    "desc": "Providing and laying 60mm thick faciory made cement concrete interlocking paver block of M -30 grade made by block making machine with stron",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 859.35,
+    "resources": [
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.5,
+        "rate": 1350.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.15,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.69",
+    "desc": "Providing and laying at or near ground level factory made kerb stone of M-25 grade cement concrete in position to the required line, level a",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 8376.15,
+    "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.073,
+        "rate": 4664.55
+      },
+      {
+        "code": "8686",
+        "desc": "Precast C.C. Kerb stone M - 25",
+        "unit": "cum",
+        "qty": 7.41,
+        "rate": 5500.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 2.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 2.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.65,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.70.1",
+    "desc": "Made of G.I. wire of dia 4 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 797.2,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage.",
+        "unit": "L.S.",
+        "qty": 156.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 2.14,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.62,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.70.2",
+    "desc": "Made of G.I. wire of dia. 4 mm, PVC coated to achieve outer dia not less than 5 mm in required colour and shade",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 825.3,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage.",
+        "unit": "L.S.",
+        "qty": 156.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 2.14,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.62,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.71",
+    "desc": "Providing and fixing G.I. chain link fabric fencing of required width in mesh size 25x25 mm made of G.I. wire of dia 3 mm including strength",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 909.6,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage.",
+        "unit": "L.S.",
+        "qty": 156.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 2.14,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.62,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.72",
+    "desc": "Supplying and stacking of hard stone (for stone pitching) 22.5 cm thick at site.",
+    "unit": "cum",
+    "basis": 2.25,
+    "say": 966.1,
+    "resources": []
+  },
+  {
+    "code": "16.73",
+    "desc": "Dry stone pitching 22.5 cm thick laid in courses and required profile with hammer dressed stones having no side less than 15 cm, with minimu",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 487.25,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.08,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 1.08,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.15,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.61,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.74.1",
+    "desc": "Moorum",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 73.9,
+    "resources": [
+      {
+        "code": "0810",
+        "desc": "Moorum",
+        "unit": "cum",
+        "qty": 7.5,
+        "rate": 500.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.64,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.13,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "16.74.2",
+    "desc": "Stone aggregate 20 mm nominal size",
+    "unit": "sqm",
+    "basis": 100.0,
+    "say": 162.25,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.05,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.13,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "16.74.3",
+    "desc": "Stone aggregate 40 mm nominal size",
+    "unit": "sqm",
+    "basis": 100.0,
+    "say": 158.15,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.05,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.13,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "16.75",
+    "desc": "Providing and laying C.C. pavement of mix M-25 with ready mixed concrete from batching plant. The ready mixed concrete shall be laid and fin",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 8663.05,
+    "resources": []
+  },
+  {
+    "code": "16.76",
+    "desc": "Deduct for using of M-20 grade concrete instead of M-25 grade concrete in C.C. pavement.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 188.3,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.027,
+        "rate": 4940.0
+      }
+    ]
+  },
+  {
+    "code": "16.77",
+    "desc": "Scarifying the existing bituminous road surface to a depth of 50 mm and disposal of scarified material within all lifts and lead upto 1km (b",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 4.75,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0038",
+        "desc": "Tractor with ripper attachment.",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 1200.0
+      },
+      {
+        "code": "0014",
+        "desc": "Front end loader capacity 1.00 cum",
+        "unit": "day",
+        "qty": 0.025,
+        "rate": 6000.0
+      },
+      {
+        "code": "0017",
+        "desc": "Hire and running charges of tipper",
+        "unit": "day",
+        "qty": 0.02875,
+        "rate": 1700.0
+      }
+    ]
+  },
+  {
+    "code": "16.78.1",
+    "desc": "With material conforming to Grade-I (size range 75 mm to 0.075 mm) having CBR Value-30",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2517.7,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 617.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 8.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.78.2",
+    "desc": "With material conforming to Grade-II (size range 53 mm to 0.075 mm ) having CBR Value-25",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2637.3,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 617.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 8.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.78.3",
+    "desc": "With material conforming to Grade-III (size range 26.5 mm to 0.075 mm ) having CBR Value-20",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2474.6,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 617.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 8.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.79",
+    "desc": "Providing, laying, spreading and compacting graded stone aggregate (size range 53 mm to 0.075 mm ) to wet mix macadam (WMM) specification in",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2641.4,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.48,
+        "rate": 617.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 10.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.80",
+    "desc": "Construction of dry lean cement concrete sub base over a prepared sub-grade with coarse and fine aggregate conforming to IS:383, the size of",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3881.85,
+    "resources": [
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 203.0,
+        "rate": 1350.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 67.5,
+        "rate": 4940.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 1.12,
+        "rate": 617.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 22.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.81",
+    "desc": "Providing and erecting 2.00 metre high temporary barricading at site; each panel of size 2.50mx2.00m made of 40x40x6mm angle iron or 50x50x3",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2566.7,
+    "resources": [
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.115,
+        "rate": 738.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.115,
+        "rate": 679.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.83,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 12.1,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.41,
+        "rate": 738.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 679.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 0.81,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 12.1,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.82",
+    "desc": "Taking out existing kerb stones of all types from footpath/ central verge, including removal of mortar etc., disposal of unserviceable mater",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 28.05,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.83",
+    "desc": "Taking out existing CC interlocking paver blocks from footpath/ central verge, including removal of rubbish etc., disposal of unserviceable ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 94.05,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.7,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.84",
+    "desc": "Laying old cement cocrete interlocking paver blocks of any design/ shape laid in required line, level, curvature, colour and pattern over an",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 324.2,
+    "resources": [
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.5,
+        "rate": 1350.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.15,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.85",
+    "desc": "Laying at or near ground level old kerb stones of all types in position to the required line, level and curvature, jointed with cement morta",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 82.95,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 2.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 2.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.65,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.86.1",
+    "desc": "With granite stone of area less than 0.50 sqm.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3725.9,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.56,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 17.6,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.87.1",
+    "desc": "With granite stone of area less than 0.50 sqm.",
+    "unit": "sqm",
+    "basis": 0.5,
+    "say": 4006.85,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.56,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 17.6,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.88",
+    "desc": "Providing and laying matt finished vitrified tile of size 100x100x16mm having water absorption less than 0.5% and conforming to IS: 15622 of",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 1933.75,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.24,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 3.64,
+        "rate": 2.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.0033,
+        "rate": 4940.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 738.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.89",
+    "desc": "Providing and laying matt finished vitrified tile of size 300x300x9.8mm having with water absorption less than 0.5% and conforming to IS: 15",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 1264.8,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.24,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 3.64,
+        "rate": 2.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.0033,
+        "rate": 4940.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 738.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.90",
+    "desc": "Providing and laying tactile tile (for vision impaired persons as per standards) of size 300x300x9.8mm having with water absorption less tha",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 1933.75,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 6.24,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 3.64,
+        "rate": 2.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.0033,
+        "rate": 4940.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 738.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.91.1",
+    "desc": "60mm thick cement concrete paver block of M-35 grade with approved colour, design & pattern.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 884.75,
+    "resources": [
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.5,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 25.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "16.91.2",
+    "desc": "80 mm thick C.C. paver block of M-30 grade with approved color design and pattern.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 953.0,
+    "resources": [
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.15,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.92",
+    "desc": "Providing and fixing 10x10x7.50 cm Granite stone block hand cut and chisel dressed on top, for paving in floors, drains etc. laid over 20mm ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1897.95,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.02,
+        "rate": 4940.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 1.08,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.62,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "16.93",
+    "desc": "Providing and placing in position 100 mm thick factory made machine batched & machine mixed Precast RCC Rectangular Covers on drains of foot",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2525.35,
+    "resources": []
+  },
+  {
+    "code": "16.94",
+    "desc": "Providing & making Gabion structure with Mechanically Woven Double Twisted Hexagonal Shaped Wire mesh Gabion Boxes as per IS 16014:2012,MORT",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3363.7,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 617.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.95",
+    "desc": "Providing & making Gabion structure with Mechanically Woven Double Twisted Hexagonal Shaped Wire mesh Gabion Boxes as per IS 16014:2012,MORT",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3584.45,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 617.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "16.96",
+    "desc": "Providing & making Gabion structure with Mechanically Woven Double Twisted Hexagonal Shaped Wire mesh Gabion Boxes as per IS 16014:2012,MORT",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 4099.55,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 617.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 558.0
+      }
+    ]
+  }
+]

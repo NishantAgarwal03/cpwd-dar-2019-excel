@@ -1,0 +1,1103 @@
+[
+  {
+    "code": "23.1.1",
+    "desc": "All types of soil 23.1.1.1 300 mm dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 512.3,
+    "resources": [
+      {
+        "code": "0005",
+        "desc": "Hire charges of Diesel Truck - 9 tonne",
+        "unit": "day",
+        "qty": 0.4286,
+        "rate": 2000.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0005",
+        "desc": "Hire charges of Diesel Truck - 9 tonne",
+        "unit": "day",
+        "qty": 0.4286,
+        "rate": 2000.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0005",
+        "desc": "Hire charges of Diesel Truck - 9 tonne",
+        "unit": "day",
+        "qty": 0.4286,
+        "rate": 2000.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "23.1.2",
+    "desc": "Rocky strata including Boulders 23.1.2.1 300 mm dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1223.2,
+    "resources": [
+      {
+        "code": "0005",
+        "desc": "Hire charges of Diesel Truck - 9 tonne",
+        "unit": "day",
+        "qty": 0.4286,
+        "rate": 2000.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0134",
+        "desc": "Rock Hole Driller",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 679.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0005",
+        "desc": "Hire charges of Diesel Truck - 9 tonne",
+        "unit": "day",
+        "qty": 0.4286,
+        "rate": 2000.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0134",
+        "desc": "Rock Hole Driller",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 679.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0005",
+        "desc": "Hire charges of Diesel Truck - 9 tonne",
+        "unit": "day",
+        "qty": 0.4286,
+        "rate": 2000.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0134",
+        "desc": "Rock Hole Driller",
+        "unit": "day",
+        "qty": 1.2,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 8.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 679.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "23.2.1",
+    "desc": "All types of soil 23.2.1.1 300 mm dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 597.65,
+    "resources": [
+      {
+        "code": "0005",
+        "desc": "Hire charges of Diesel Truck - 9 tonne",
+        "unit": "day",
+        "qty": 0.4286,
+        "rate": 2000.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0005",
+        "desc": "Hire charges of Diesel Truck - 9 tonne",
+        "unit": "day",
+        "qty": 0.4286,
+        "rate": 2000.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0005",
+        "desc": "Hire charges of Diesel Truck - 9 tonne",
+        "unit": "day",
+        "qty": 0.4286,
+        "rate": 2000.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "23.2.2",
+    "desc": "Rocky strata including Boulders 23.2.2.1 300 mm dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1349.95,
+    "resources": [
+      {
+        "code": "0005",
+        "desc": "Hire charges of Diesel Truck - 9 tonne",
+        "unit": "day",
+        "qty": 0.4286,
+        "rate": 2000.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0134",
+        "desc": "Rock Hole Driller",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 679.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0005",
+        "desc": "Hire charges of Diesel Truck - 9 tonne",
+        "unit": "day",
+        "qty": 0.4286,
+        "rate": 2000.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0134",
+        "desc": "Rock Hole Driller",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 679.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0005",
+        "desc": "Hire charges of Diesel Truck - 9 tonne",
+        "unit": "day",
+        "qty": 0.4286,
+        "rate": 2000.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0134",
+        "desc": "Rock Hole Driller",
+        "unit": "day",
+        "qty": 1.2,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 8.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0113",
+        "desc": "Chowkidar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "23.3.1",
+    "desc": "100 mm nominal size dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 600.35,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "23.3.2",
+    "desc": "150 mm nominal size dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 690.75,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries (Adhesive etc.)",
+        "unit": "L.S.",
+        "qty": 10.07,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "23.3.3",
+    "desc": "200 mm nominal size dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1066.05,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "23.4.1",
+    "desc": "100 mm nominal size dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 651.45,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries (Adhesive etc.)",
+        "unit": "L.S.",
+        "qty": 10.07,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "23.4.2",
+    "desc": "150 mm nominal size dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 746.15,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries (Adhesive etc.)",
+        "unit": "L.S.",
+        "qty": 10.07,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "23.4.3",
+    "desc": "200 mm nominal size dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1135.8,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries (Adhesive etc.)",
+        "unit": "L.S.",
+        "qty": 13.42,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "23.5",
+    "desc": "Supplying, filling, spreading & leveling stone boulders of size range 5 cm to 20 cm, in recharge pit, in the required thickness, for all lea",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1326.55,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "23.6",
+    "desc": "Supplying, filling, spreading & leveling gravels of size range 5 mm to 10 mm, in the recharge pit, over the existing layer of boulders, in r",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1326.55,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "23.7",
+    "desc": "Supplying, filling, spreading & leveling coarse sand of size range 1.5 mm to 2 mm in recharge pit, in required thickness over gravel layer, ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1326.55,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "23.8",
+    "desc": "Gravel packing in tubewell construction in accordance with IS: 4097, including providing gravel fine/ medium/ coarse, in required grading & ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1497.7,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "23.9",
+    "desc": "Providing and fixing factory made precast RCC perforated drain covers, having concrete of strength not less than M-25, of size 1000 x 450x50",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1210.85,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage and fixing charges",
+        "unit": "L.S.",
+        "qty": 15.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "23.10.1",
+    "desc": "100 mm nominal size dia having minimum wall thickness 5.00 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1187.95,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.35,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "23.10.2",
+    "desc": "150 mm nominal size dia having minimum wall thickness 5.00 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1661.85,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "23.10.3",
+    "desc": "200 mm nominal size dia having minimum wall thickness 5.40 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2062.05,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.35,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "23.11.1",
+    "desc": "100 mm nominal size dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1268.75,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 906.04,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.35,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "23.11.2",
+    "desc": "150 mm nominal size dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1769.6,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Extra for making slots",
+        "unit": "L.S.",
+        "qty": 1208.05,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "23.11.3",
+    "desc": "200 mm nominal size dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2171.05,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Extra for making slots",
+        "unit": "L.S.",
+        "qty": 1208.05,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "23.12",
+    "desc": "Development of tube well in accordance with IS : 2800 (part I) and IS: 11189, to establish maximum rate of usable water yield without sand c",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 857.6,
+    "resources": []
+  },
+  {
+    "code": "23.13.1",
+    "desc": "100 mm dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 189.65,
+    "resources": []
+  },
+  {
+    "code": "23.13.2",
+    "desc": "150 mm dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 210.75,
+    "resources": []
+  },
+  {
+    "code": "23.13.3",
+    "desc": "200 mm dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 280.95,
+    "resources": []
+  },
+  {
+    "code": "23.14.1",
+    "desc": "100 mm clamp",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1409.3,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries, nuts and bolts etc.",
+        "unit": "L.S.",
+        "qty": 25.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "23.14.2",
+    "desc": "150 mm clamp",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1489.8,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries, nuts and bolts etc.",
+        "unit": "L.S.",
+        "qty": 30.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "23.14.3",
+    "desc": "200 mm clamp",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1691.15,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries, nuts and bolts etc.",
+        "unit": "L.S.",
+        "qty": 30.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "23.15.1",
+    "desc": "100 mm dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 227.45,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 5.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "23.15.2",
+    "desc": "150 mm dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 280.95,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 5.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "23.15.3",
+    "desc": "200 mm dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 307.75,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 5.0,
+        "rate": 2.0
+      }
+    ]
+  }
+]

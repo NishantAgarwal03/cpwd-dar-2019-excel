@@ -1,0 +1,4247 @@
+[
+  {
+    "code": "14.1.1",
+    "desc": "With cement mortar 1:4 (1 cement : 4 fine sand)",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 417.8,
+    "resources": [
+      {
+        "code": "3.4",
+        "desc": "Rate as per SH: 3.4",
+        "unit": "cum",
+        "qty": 0.183,
+        "rate": 3528.85
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 1.21,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.29,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 15.21,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.1.2",
+    "desc": "With cement mortar 1:4 (1cement: 4 coarse sand)",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 429.6,
+    "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.183,
+        "rate": 4010.35
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 1.21,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.29,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 15.21,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.2.1",
+    "desc": "Door chowkhats",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1366.85,
+    "resources": [
+      {
+        "code": "3.6",
+        "desc": "Rate as per SH: 3.6",
+        "unit": "cum",
+        "qty": 0.01,
+        "rate": 2874.65
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.0141,
+        "rate": 1350.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.0066,
+        "rate": 4940.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.027,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.0195,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.0084,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.0018,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.0018,
+        "rate": 679.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.0012,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting two coats of coaltar",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Disposal of mulba",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.2.2",
+    "desc": "Window chowkhats",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 858.9,
+    "resources": [
+      {
+        "code": "3.6",
+        "desc": "Rate as per SH: 3.6",
+        "unit": "cum",
+        "qty": 0.006,
+        "rate": 2874.65
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.0094,
+        "rate": 1350.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.0044,
+        "rate": 4940.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.018,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.013,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.0056,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.0012,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.0012,
+        "rate": 679.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.0008,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.26,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement concrete 1:2:4",
+        "unit": "L.S.",
+        "qty": 9.88,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting two coats of coaltar",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "14.2.3",
+    "desc": "Clerestory window chowkhats",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 637.85,
+    "resources": [
+      {
+        "code": "3.6",
+        "desc": "Rate as per SH: 3.6",
+        "unit": "cum",
+        "qty": 0.003,
+        "rate": 2874.65
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.0047,
+        "rate": 1350.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.0022,
+        "rate": 4940.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.009,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.0065,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.0028,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.0006,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.0006,
+        "rate": 679.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.0004,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.13,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting two coats of coaltar",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.3",
+    "desc": "Fixing chowkhat in existing opening in brick/ RCC wall with dash fasteners/ Chemical fasteners of appropriate size (3 nos on each vertical m",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 193.95,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.027,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.0195,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.0084,
+        "rate": 738.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.0012,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Disposal of mulba",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.4.1",
+    "desc": "For door/ window/ clerestory window",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 932.45,
+    "resources": [
+      {
+        "code": "3.6",
+        "desc": "Rate as per SH: 3.6",
+        "unit": "cum",
+        "qty": 0.01,
+        "rate": 2874.65
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.2,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and Sundries",
+        "unit": "L.S.",
+        "qty": 3.5,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.5.1",
+    "desc": "Float glass panes of nominal thickness 4 mm (weight not less than 10kg/sqm)",
+    "unit": "glasses",
+    "basis": 10.0,
+    "say": 890.5,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage including sundries",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting or varnishing or beewaxing",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries Nails etc.",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "0119",
+        "desc": "Glazier",
+        "unit": "day",
+        "qty": 0.23,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.23,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries such as Rag, cotton etc",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.5.2",
+    "desc": "Float glass panes of nominal thickness 5 mm (weight not less than 12.5kg/sqm)",
+    "unit": "glasses",
+    "basis": 10.0,
+    "say": 1184.85,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage including sundries",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting or varnishing or beewaxing",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries Nails etc.",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "0119",
+        "desc": "Glazier",
+        "unit": "day",
+        "qty": 0.23,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.23,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries such as Rag, cotton etc",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.6.1",
+    "desc": "Float glass panes of nominal thickness 4 mm (weight not less than 10kg/sqm)",
+    "unit": "glasses",
+    "basis": 10.0,
+    "say": 1263.0,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Painting or varnishing or beewaxing",
+        "unit": "L.S.",
+        "qty": 4.42,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries Nails etc.",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 679.0
+      },
+      {
+        "code": "0119",
+        "desc": "Glazier",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.45,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries such as Rag, cotton etc",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.6.2",
+    "desc": "Float glass panes of nominal thickness 5 mm (weight not less than 12.5kg/sqm)",
+    "unit": "glasses",
+    "basis": 10.0,
+    "say": 1557.35,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Painting or varnishing or beewaxing",
+        "unit": "L.S.",
+        "qty": 4.42,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries Nails etc.",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 679.0
+      },
+      {
+        "code": "0119",
+        "desc": "Glazier",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.45,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries such as Rag, cotton etc",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.7.1",
+    "desc": "Float glass panes of nominal thickness 4 mm (weight not less than 10kg/sqm)",
+    "unit": "glasses",
+    "basis": 10.0,
+    "say": 989.85,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries Nails etc.",
+        "unit": "L.S.",
+        "qty": 9.88,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Methylated spirit",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0119",
+        "desc": "Glazier",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.7.2",
+    "desc": "Float glass panes of nominal thickness 5 mm (weight not less than 12.5kg/sqm)",
+    "unit": "glasses",
+    "basis": 10.0,
+    "say": 1284.2,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries Nails etc.",
+        "unit": "L.S.",
+        "qty": 9.88,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Methylated spirit",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0119",
+        "desc": "Glazier",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.8.1",
+    "desc": "2nd class teak wood fillets",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 61.5,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Nails",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.8.2",
+    "desc": "Hollock wood fillets",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 54.7,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Nails",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.9",
+    "desc": "Renewal of old putty of glass panes (length)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 42.6,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Nails",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Spirit",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.10",
+    "desc": "Refixing old glass panes with putty and nails",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 554.05,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Spirit",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Nails",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "0119",
+        "desc": "Glazier",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.11",
+    "desc": "Fixing old glass panes with wooden fillets (excluding cost of fillets)",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 510.75,
+    "resources": [
+      {
+        "code": "0119",
+        "desc": "Glazier",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Nails",
+        "unit": "L.S.",
+        "qty": 3.9,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.12",
+    "desc": "Providing and fixing 16 mm M.S. Fan clamps of standard shape and size in existing R.C.C. slab, including cutting chase, anchoring clamp to r",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 425.1,
+    "resources": [
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.03,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.13",
+    "desc": "Regrading terracing of mud phaska covered with tiles or brick, in cement mortar by dismantling tiles or bricks, removing mud plaster, prepar",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 521.6,
+    "resources": [
+      {
+        "code": "3.18",
+        "desc": "Rate as per SH: 3.18",
+        "unit": "cum",
+        "qty": 0.24,
+        "rate": 737.0
+      },
+      {
+        "code": "3.18",
+        "desc": "Rate as per SH: 3.18",
+        "unit": "cum",
+        "qty": 0.12,
+        "rate": 737.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 1.2,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Disposal of mulba",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.14.1",
+    "desc": "Red/ white sand stone slabs 30 to 50 mm thick",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 957.7,
+    "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.0105,
+        "rate": 4010.35
+      },
+      {
+        "code": "3.3",
+        "desc": "Rate as per SH: 3.3",
+        "unit": "cum",
+        "qty": 0.0075,
+        "rate": 4183.05
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.885,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.375,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 4.03,
+        "rate": 2.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 1.69,
+        "rate": 709.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 2.03,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.69,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.34,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.15.1",
+    "desc": "Sal wood battens",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 91114.45,
+    "resources": [
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Disposal of mulba",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0859",
+        "desc": "Oil type wood preservative",
+        "unit": "litre",
+        "qty": 1.22,
+        "rate": 130.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.183,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.183,
+        "rate": 558.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.78,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes",
+        "unit": "L.S.",
+        "qty": 5.07,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 4.81,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.16.1",
+    "desc": "Not exceeding 4.00 metres in length. SUB HEAD : 14- REPAIRS TO BUILDING 1011 14.16.1.1 Sal wood beams",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 95325.8,
+    "resources": [
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.13,
+        "rate": 709.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 558.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0859",
+        "desc": "Oil type wood preservative",
+        "unit": "litre",
+        "qty": 0.455,
+        "rate": 130.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.13,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Making good the holes",
+        "unit": "L.S.",
+        "qty": 20.67,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0302",
+        "desc": "Safeda ballies 125 mm diameter",
+        "unit": "metre",
+        "qty": 2.5,
+        "rate": 40.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.13,
+        "rate": 709.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 558.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0859",
+        "desc": "Oil type wood preservative",
+        "unit": "litre",
+        "qty": 0.455,
+        "rate": 130.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.13,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Making good the holes",
+        "unit": "L.S.",
+        "qty": 20.67,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0302",
+        "desc": "Safeda ballies 125 mm diameter",
+        "unit": "metre",
+        "qty": 2.5,
+        "rate": 40.0
+      }
+    ]
+  },
+  {
+    "code": "14.16.2",
+    "desc": "Above 4.00 metres and upto 5.00 metres length. 14.16.2.1 Sal wood beams",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 97267.0,
+    "resources": [
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 709.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.63,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0859",
+        "desc": "Oil type wood preservative",
+        "unit": "litre",
+        "qty": 0.565,
+        "rate": 130.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.26,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 2.34,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes",
+        "unit": "L.S.",
+        "qty": 2.21,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Making good the holes",
+        "unit": "L.S.",
+        "qty": 20.67,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 33.15,
+        "rate": 2.0
+      },
+      {
+        "code": "0302",
+        "desc": "Safeda ballies 125 mm diameter",
+        "unit": "metre",
+        "qty": 3.75,
+        "rate": 40.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 709.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.63,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0859",
+        "desc": "Oil type wood preservative",
+        "unit": "litre",
+        "qty": 0.565,
+        "rate": 130.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.26,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 2.34,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes",
+        "unit": "L.S.",
+        "qty": 2.21,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Making good the holes",
+        "unit": "L.S.",
+        "qty": 20.67,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 33.15,
+        "rate": 2.0
+      },
+      {
+        "code": "0302",
+        "desc": "Safeda ballies 125 mm diameter",
+        "unit": "metre",
+        "qty": 3.75,
+        "rate": 40.0
+      }
+    ]
+  },
+  {
+    "code": "14.17",
+    "desc": "Raking out joints in lime or cement mortar and preparing the surface for re- pointing or replastering, including disposal of rubbish to the ",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 51.7,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.53,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.18.1",
+    "desc": "With F.P.S. brick tiles",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 103.45,
+    "resources": [
+      {
+        "code": "3.3",
+        "desc": "Rate as per SH: 3.3",
+        "unit": "cum",
+        "qty": 0.015,
+        "rate": 4183.05
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 18.85,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.18.2",
+    "desc": "With modular brick tiles",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 104.65,
+    "resources": [
+      {
+        "code": "3.3",
+        "desc": "Rate as per SH: 3.3",
+        "unit": "cum",
+        "qty": 0.017,
+        "rate": 4183.05
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 18.85,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.19",
+    "desc": "Taking out wind ties from roof including cutting out rusted bolts, nuts etc. and removing materials to any distance within compound and stac",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 63.0,
+    "resources": [
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.09,
+        "rate": 679.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.16,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "14.20",
+    "desc": "Fixing of old wind tie with new fittings including painting two or more coats with anticorrosive bitumastic paint of approved brand & manufa",
+    "unit": "m",
+    "basis": 20.2,
+    "say": 102.6,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of bolts, nuts and washers etc.",
+        "unit": "L.S.",
+        "qty": 1.17,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.34,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.34,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.91,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.21",
+    "desc": "Renewing bottom rail and/or top runner of collapsible gate including making good all damages and applying priming coat of zinc chromate yell",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 224.6,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Disposal of mulba",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.6,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.22.1",
+    "desc": "Wheel 50 mm dia and below",
+    "unit": "nos",
+    "basis": 10.0,
+    "say": 146.75,
+    "resources": [
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 679.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.39,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.03,
+        "rate": 738.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.69,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.22.2",
+    "desc": "Wheel above 50 mm dia",
+    "unit": "nos",
+    "basis": 10.0,
+    "say": 240.45,
+    "resources": [
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 679.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.03,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.04,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 738.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.23",
+    "desc": "Pumping out water caused by springs, tidal or river seepage, broken water mains or drains and the like.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 169.05,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "14.24",
+    "desc": "Mud mortar made with local clay good earth.",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 737.0,
+    "resources": [
+      {
+        "code": "0811",
+        "desc": "Mud (dry)",
+        "unit": "cum",
+        "qty": 1.08,
+        "rate": 165.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.63,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.315,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.45,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.25",
+    "desc": "Brick work with common burnt clay bricks of class designation 7.5 in mud mortar",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 5281.35,
+    "resources": [
+      {
+        "code": "3.18",
+        "desc": "Rate as per SH: 3.18",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 737.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.37,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "14.26.1",
+    "desc": "Panelled or panelled & glazed shutters : 14.26.1.1 Superior class teak wood including nickel plated bright finished M.S. piano hinges with n",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 4456.6,
+    "resources": [
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 2.4,
+        "rate": 738.0
+      },
+      {
+        "code": "0119",
+        "desc": "Glazier",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.77,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 40.43,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 2.4,
+        "rate": 738.0
+      },
+      {
+        "code": "0119",
+        "desc": "Glazier",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.77,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 40.43,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.26.2",
+    "desc": "Glazed shutters : 14.26.2.1 Superior class teak wood including nickel plated bright finished M.S. piano hinges with necessary screws.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 4448.45,
+    "resources": [
+      {
+        "code": "0156",
+        "desc": "Carpenter (average)",
+        "unit": "day",
+        "qty": 1.83,
+        "rate": 709.0
+      },
+      {
+        "code": "0119",
+        "desc": "Glazier",
+        "unit": "day",
+        "qty": 0.23,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.77,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 40.43,
+        "rate": 2.0
+      },
+      {
+        "code": "0156",
+        "desc": "Carpenter (average)",
+        "unit": "day",
+        "qty": 1.83,
+        "rate": 709.0
+      },
+      {
+        "code": "0119",
+        "desc": "Glazier",
+        "unit": "day",
+        "qty": 0.23,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.77,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 40.43,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.27.1",
+    "desc": "Second class teak wood",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 18.0,
+    "resources": [
+      {
+        "code": "41.1",
+        "desc": "Rate as per SH: 41.1",
+        "unit": "sqm",
+        "qty": 1.51,
+        "rate": 2546.9
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 679.0
+      }
+    ]
+  },
+  {
+    "code": "14.28.1",
+    "desc": "20 mm diameter.",
+    "unit": "metre",
+    "basis": 2.0,
+    "say": 292.9,
+    "resources": [
+      {
+        "code": "0446",
+        "desc": "Brass brackets (curtain rods) 20 mm",
+        "unit": "each",
+        "qty": 2.0,
+        "rate": 45.0
+      },
+      {
+        "code": "9999",
+        "desc": "Screws",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 1.56,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "LABOUR",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.56,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.28.2",
+    "desc": "25 mm diameter.",
+    "unit": "metre",
+    "basis": 2.0,
+    "say": 359.8,
+    "resources": [
+      {
+        "code": "0446",
+        "desc": "Brass brackets (curtain rods) 20 mm",
+        "unit": "each",
+        "qty": 2.0,
+        "rate": 45.0
+      },
+      {
+        "code": "9999",
+        "desc": "Screws",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 1.56,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "LABOUR",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.56,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.29",
+    "desc": "Providing and fixing M.S. round or square bars with M.S. flats at required spacing in wooden frames of windows and clerestory windows.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.063,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.35,
+        "rate": 679.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.45,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "14.30.1",
+    "desc": "Sal wood",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 90056.65,
+    "resources": [
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.45,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.30.2",
+    "desc": "Hollock wood",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 55939.25,
+    "resources": [
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.45,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.31.1",
+    "desc": "150 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 647.55,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 3.64,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "14.31.2",
+    "desc": "125 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 460.25,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 3.64,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "14.31.3",
+    "desc": "100 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 408.1,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 3.64,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "14.32.1",
+    "desc": "150 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 721.15,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 3.64,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "14.32.2",
+    "desc": "125 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 614.1,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 3.64,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "14.32.3",
+    "desc": "100 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 595.4,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 3.64,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "14.33.1",
+    "desc": "250 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 229.45,
+    "resources": [
+      {
+        "code": "0404",
+        "desc": "Brass flush bolt 250 mm",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 150.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 3.64,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.33.2",
+    "desc": "150 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 199.5,
+    "resources": [
+      {
+        "code": "0405",
+        "desc": "Brass flush bolt 150 mm",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 130.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "14.33.3",
+    "desc": "100 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 145.95,
+    "resources": [
+      {
+        "code": "0406",
+        "desc": "Brass flush bolt 100 mm",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 90.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "14.34",
+    "desc": "Providing and fixing 150 mm bright finished floor brass door stopper with rubber cushion, necessary brass screws etc. to suit shutter thickn",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 232.5,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "14.35.1",
+    "desc": "300 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 86.45,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "14.35.2",
+    "desc": "250 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 82.95,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "14.35.3",
+    "desc": "200 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 74.4,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "14.35.4",
+    "desc": "150 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 59.7,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "14.35.5",
+    "desc": "100 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 52.35,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "14.36",
+    "desc": "Providing and fixing bright finished brass fan light pivot with necessary brass screws etc. complete.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 39.7,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "14.37",
+    "desc": "Providing and fixing 300 mm long bright finished brass chain with hook for fan light including necessary brass screws etc. complete.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 63.65,
+    "resources": [
+      {
+        "code": "0430",
+        "desc": "Brass chain with hook for fan light catch",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 36.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "14.38",
+    "desc": "Providing and fixing bright finished brass quadrant stay 300 mm long with necessary brass screws etc. complete.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 162.65,
+    "resources": [
+      {
+        "code": "0427",
+        "desc": "Brass quadrant stays 300 mm",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 110.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "14.39",
+    "desc": "Providing and fixing bright finished brass helical door spring (superior quality).",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 457.9,
+    "resources": [
+      {
+        "code": "0442",
+        "desc": "Brass helical spring 150 mm",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 290.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 3.84,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "14.40.1",
+    "desc": "125x70x4 mm (ordinary type)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 170.1,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 3.64,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.14,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "14.40.2",
+    "desc": "100x70x4 mm (ordinary type)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 145.6,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 3.64,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.14,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "14.40.3",
+    "desc": "75x65x4 mm (heavy type)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 162.15,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.14,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "14.40.4",
+    "desc": "75x40x2.5 mm (ordinary type)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 97.35,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.14,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "14.40.5",
+    "desc": "50x40x2.5 mm (ordinary type)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 40.8,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "14.41",
+    "desc": "Providing and fixing 85x42 mm chromium plated brass pull bolt lock with necessary chromium plated brass screws, nuts, bolts and washers etc.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 245.2,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials & sundries",
+        "unit": "L.S.",
+        "qty": 6.37,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      }
+    ]
+  },
+  {
+    "code": "14.72",
+    "desc": "Providing and fixing double scaffolding system (cup lock type) on the exterior side, up to seven story height made with 40 mm dia M.S. tube ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 257.95,
+    "resources": [
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 15.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 31.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1035.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.73",
+    "desc": "Providing and fixing bright finished brass casement window fasteners or peg stays to windows/ ventilators with necessary welding and machine",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 473.9,
+    "resources": [
+      {
+        "code": "0423",
+        "desc": "Brass casement window fastener",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 45.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 3.64,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.74",
+    "desc": "Providing and fixing 14 mm bright finished brass spring catch to steel centre hung ventilators with necessary welding and machine screws etc",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 57.3,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 3.64,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.75",
+    "desc": "Repair to plaster of thickness 12mm to 20 mm in patches of area 2.5 sqm and under, including cutting the patch in proper shape, raking out j",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 512.0,
+    "resources": [
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 1.21,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.29,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sunderies",
+        "unit": "L.S.",
+        "qty": 15.21,
+        "rate": 2.0
+      },
+      {
+        "code": "0117",
+        "desc": "Assistant Fitter or 2nd class Fitter",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "14.76",
+    "desc": "Cleaning and desilting of gully trap chamber, including removal of rubbish mixed with earth etc. and disposal of same, all as per the direct",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 77.65,
+    "resources": [
+      {
+        "code": "0129",
+        "desc": "Sewerman",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "14.77",
+    "desc": "Cleaning of chocked sewer line by diesel running vehicle mounting hydraulic operated high pressure suction cum jetting sewer cleaning machin",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 256.9,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Soap, brush, cloths & sundries",
+        "unit": "L.S.",
+        "qty": 345.0,
+        "rate": 2.0
+      },
+      {
+        "code": "8500",
+        "desc": "Water for jetting / blowback 1000",
+        "unit": "litre",
+        "qty": 0.002,
+        "rate": 1500.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 617.0
+      },
+      {
+        "code": "0160",
+        "desc": "Technician",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 775.0
+      }
+    ]
+  },
+  {
+    "code": "14.78",
+    "desc": "Cleaning of under ground sump, Over Head R.C.C. Tank ( independent staging) including disposal of slit and rubbish, all as per direction of ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 63.7,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 10.88,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 5.13,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 2.28,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 2.28,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 142.5,
+        "rate": 2.0
+      },
+      {
+        "code": "0138",
+        "desc": "Sprayer (for bitumen, tar etc.)",
+        "unit": "day",
+        "qty": 14.25,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.0625,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "14.79",
+    "desc": "Disconnecting damaged overhead/terrace PVC water storage tank of any size from water supply line and removing from the terrace including shi",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 317.75,
+    "resources": [
+      {
+        "code": "0117",
+        "desc": "Assistant Fitter or 2nd class Fitter",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.1,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.80.1",
+    "desc": "Long pattern W.C Pan of size 580x440 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2724.1,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Cement sand & grit etc.",
+        "unit": "L.S.",
+        "qty": 13.36,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0129",
+        "desc": "Sewerman",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "0126",
+        "desc": "Mason 1st class",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "14.80.2",
+    "desc": "Orissa pattern W.C Pan of size 580x440 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3537.8,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Cement sand & grit etc.",
+        "unit": "L.S.",
+        "qty": 13.36,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0129",
+        "desc": "Sewerman",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 558.0
+      },
+      {
+        "code": "0126",
+        "desc": "Mason 1st class",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "14.81",
+    "desc": "Cutting holes of required size in brick masonry wall for fixing of exhaust fan including providing and fixing 300 mm dia PVC pipe conforming",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 220.4,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.1,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Add L.S. For Delay",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.82",
+    "desc": "Dismantling W.C. Pan of all sizes including disposal of dismantled materials i/c malba all complete as per directions of Engineer-in-Charge.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 96.0,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.83",
+    "desc": "Hacking of CC flooring including cleaning for surface etc. complete as per direction of the Engineer-in-Charge.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2.5,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.03,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.84",
+    "desc": "Dismantling 15 to 40 mm dia G.I. pipe including stacking of dismantled pipes (within 50 metres lead) as per direction of Engineer-in-Charge.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2.7,
+    "resources": []
+  },
+  {
+    "code": "14.85",
+    "desc": "Taking out existing wooden door shutter, repair by cutting, painting etc. and refixing of repaired door shutters to existing door frames, in",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 297.85,
+    "resources": [
+      {
+        "code": "0156",
+        "desc": "Carpenter (average)",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "14.86",
+    "desc": "Providing and laying in situ seven course water proofing treatment with APP (Atactic poly-propylene) modified Polymeric memberane over roof ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 592.65,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of polymeric felt",
+        "unit": "L.S.",
+        "qty": 7.8,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 2.16,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.24,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 738.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, brushes etc",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.87",
+    "desc": "Providing and laying in situ five course water proofing treatment with APP (Atactic Polypropylene) modified Polymeric memberane over roof co",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 408.75,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of polymeric felt",
+        "unit": "L.S.",
+        "qty": 7.8,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 1.58,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.37,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.13,
+        "rate": 738.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, brushes etc",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.88",
+    "desc": "Providing and laying in situ seven course water proofing treatment with APP (Atactic Polypropylene) modified Polymeric memberane over roof c",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 651.5,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of polymeric felt",
+        "unit": "L.S.",
+        "qty": 7.8,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 2.16,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.24,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 738.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, brushes etc",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.89.1",
+    "desc": "2mm (for corrugated roof sheets)",
+    "unit": "sqm",
+    "basis": 30.0,
+    "say": 419.75,
+    "resources": [
+      {
+        "code": "8206",
+        "desc": "Bitumen primer for bitumen membrance",
+        "unit": "litre",
+        "qty": 12.0,
+        "rate": 80.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of bitumen membrance",
+        "unit": "L.S.",
+        "qty": 7.8,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Preparing roof surface, cutting grooves",
+        "unit": "L.S.",
+        "qty": 49.53,
+        "rate": 2.0
+      },
+      {
+        "code": "0159",
+        "desc": "Skilled torch operator for laying tack",
+        "unit": "day",
+        "qty": 2.16,
+        "rate": 738.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.24,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, brushes, bitumen torch etc",
+        "unit": "L.S.",
+        "qty": 23.4,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.90.1",
+    "desc": "3 mm thick",
+    "unit": "sqm",
+    "basis": 30.0,
+    "say": 512.95,
+    "resources": [
+      {
+        "code": "8206",
+        "desc": "Bitumen primer for bitumen membrance",
+        "unit": "litre",
+        "qty": 12.0,
+        "rate": 80.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of bitumen membrance",
+        "unit": "L.S.",
+        "qty": 7.8,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Preparing roof surface, cutting grooves",
+        "unit": "L.S.",
+        "qty": 49.53,
+        "rate": 2.0
+      },
+      {
+        "code": "0159",
+        "desc": "Skilled torch operator for laying tack",
+        "unit": "day",
+        "qty": 2.16,
+        "rate": 738.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.24,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, brushes, bitumen torch etc",
+        "unit": "L.S.",
+        "qty": 23.4,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.91.1",
+    "desc": "3 mm thick",
+    "unit": "sqm",
+    "basis": 30.0,
+    "say": 535.0,
+    "resources": [
+      {
+        "code": "8206",
+        "desc": "Bitumen primer for bitumen membrance",
+        "unit": "litre",
+        "qty": 12.0,
+        "rate": 80.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of bitumen membrance",
+        "unit": "L.S.",
+        "qty": 7.8,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Preparing roof surface, cutting grooves",
+        "unit": "L.S.",
+        "qty": 49.53,
+        "rate": 2.0
+      },
+      {
+        "code": "0159",
+        "desc": "Skilled torch operator for laying tack",
+        "unit": "day",
+        "qty": 2.16,
+        "rate": 738.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.24,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, brushes, bitumen torch etc",
+        "unit": "L.S.",
+        "qty": 23.4,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.92",
+    "desc": "Extra for covering top of membrane with Geotextile, 120 gsm non woven, 100% polyester of thickness 1 to 1.25 mm bonded to the membrane with ",
+    "unit": "sqm",
+    "basis": 30.0,
+    "say": 99.75,
+    "resources": [
+      {
+        "code": "8207",
+        "desc": "Geotextile 120 gsm membrance",
+        "unit": "sqm",
+        "qty": 31.5,
+        "rate": 45.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of Geotextile",
+        "unit": "L.S.",
+        "qty": 7.8,
+        "rate": 2.0
+      },
+      {
+        "code": "0159",
+        "desc": "Skilled torch operator for laying tack",
+        "unit": "day",
+        "qty": 0.43,
+        "rate": 738.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.65,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, torch, LPG etc",
+        "unit": "L.S.",
+        "qty": 46.8,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.92",
+    "desc": "Extra for covering top of membrane with Geotextile, 120 gsm non woven, 100% polyester of thickness 1 to 1.25 mm bonded to the membrane with ",
+    "unit": "sqm",
+    "basis": 30.0,
+    "say": 99.75,
+    "resources": [
+      {
+        "code": "8207",
+        "desc": "Geotextile 120 gsm membrance",
+        "unit": "sqm",
+        "qty": 31.5,
+        "rate": 45.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of Geotextile",
+        "unit": "L.S.",
+        "qty": 7.8,
+        "rate": 2.0
+      },
+      {
+        "code": "0159",
+        "desc": "Skilled torch operator for laying tack",
+        "unit": "day",
+        "qty": 0.43,
+        "rate": 738.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.65,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, torch, LPG etc",
+        "unit": "L.S.",
+        "qty": 46.8,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.93",
+    "desc": "Providing round the clock security guard without gun for watch & ward of Government premises and its all belongings by deploying neatly dres",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 732.55,
+    "resources": [
+      {
+        "code": "0164",
+        "desc": "Security guard (without gun)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Lathi,torch,dress & other sundries",
+        "unit": "L.S.",
+        "qty": 10.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.94",
+    "desc": "Providing round the clock security guard with gun for watch & ward of Government premises and its all belongings by deploying neatly dressed",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 803.85,
+    "resources": [
+      {
+        "code": "0165",
+        "desc": "Security guard (with gun)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 679.0
+      }
+    ]
+  }
+]

@@ -1,0 +1,5972 @@
+[
+  {
+    "code": "17.1.1",
+    "desc": "White Vitreous china Orissa pattern W.C. pan of size 580x440 mm with integral type foot rests",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 5421.5,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 1.25,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.1.2",
+    "desc": "Stainless Steel AISI-304(18/8) Orissa pattern W.C. pan of size 585x480 mm with flush pipe and integrated type foot rests",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 9836.7,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 1.25,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.2.1",
+    "desc": "W.C. pan with ISI marked white solid plastic seat and lid",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 5260.95,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 1.25,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.2.2",
+    "desc": "W.C. pan with ISI marked black solid plastic seat and lid",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 5140.55,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 1.25,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.3.1",
+    "desc": "W.C. pan with ISI marked white solid plastic seat and lid",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 6685.0,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Plugs ,screws etc.",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.3.2",
+    "desc": "W.C. pan with ISI marked black solid plastic seat and lid",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 6564.6,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Plugs, screws etc.",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.4.1",
+    "desc": "One urinal basin with 5 litre white P.V.C. automatic flushing cistern",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 4982.25,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Plugs ,screws etc.",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of fittings etc.",
+        "unit": "L.S.",
+        "qty": 39.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.88,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.88,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.4.2",
+    "desc": "Range of two urinal basins with 5 litre white P.V.C. automatic flushing cistern",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 7677.75,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 20.28,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Plugs ,screws etc.",
+        "unit": "L.S.",
+        "qty": 20.28,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 20.28,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of fittings etc.",
+        "unit": "L.S.",
+        "qty": 39.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.4.3",
+    "desc": "Range of three urinal basins with 10litre white P.V.C. automatic flushing cistern",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 10605.3,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 33.67,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Plugs ,screws etc.",
+        "unit": "L.S.",
+        "qty": 33.67,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 33.67,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of fittings etc.",
+        "unit": "L.S.",
+        "qty": 39.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 40.3,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.4.4",
+    "desc": "Range of four urinal basins with 10 litre white P.V.C. automatic flushing cistern",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 14648.5,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Plugs ,screws etc.",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of fittings etc.",
+        "unit": "L.S.",
+        "qty": 39.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.5.1",
+    "desc": "Single half stall urinal with 5 litre P.V.C. automatic flushing cistern",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 9360.6,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 17.55,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of fittings etc.",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 40.43,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 1.75,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.5.2",
+    "desc": "Range of two half stall urinals with 5 litre P.V.C. automatic flushing cistern",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 14020.75,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 17.55,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of fittings etc.",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 2.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.5.3",
+    "desc": "Range of three half stall urinals with 10 litre P.V.C. automatic flushing cistern",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 17307.55,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 17.55,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 80.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of fittings etc.",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 67.21,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 3.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 7.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.5.4",
+    "desc": "Range of four half stall urinals with 10 litre P.V.C. automatic flushing cistern",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 20448.85,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 17.55,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 107.64,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of fittings etc.",
+        "unit": "L.S.",
+        "qty": 39.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 80.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 3.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 8.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.6.1",
+    "desc": "Single squatting plate with 5 litre P.V.C. automatic flushing cistern",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 7240.55,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 17.55,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of fittings etc.",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 1.75,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.6.2",
+    "desc": "Range of two squatting plates with 5 litre P.V.C. automatic flushing cistern",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 10572.45,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 17.55,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of fittings etc.",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 33.15,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 2.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.6.3",
+    "desc": "Range of three squatting plates with 10 litre P.V.C. automatic flushing cistern",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 13931.7,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 17.55,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 80.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of fittings etc.",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 42.12,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.6.4",
+    "desc": "Range of four squatting plates with 10 litre P.V.C. automatic flushing cistern",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 16718.8,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 17.55,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 107.64,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of fittings etc.",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 69.03,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 3.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.75,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 5.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.7.1",
+    "desc": "White Vitreous China Wash basin size 630x450 mm with a pair of 15 mm C.P. brass pillar taps",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3087.7,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of brackets, fittings etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.7.2",
+    "desc": "White Vitreous China Wash basin size 630x450 mm with a single 15 mm C.P. brass pillar tap",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2751.3,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of brackets, fittings etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.63,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.7.3",
+    "desc": "White Vitreous China Wash basin size 550x400 mm with a pair of 15 mm C.P. brass pillar taps",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2846.9,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of brackets, fittings etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.7.4",
+    "desc": "White Vitreous China Flat back wash basin size 550x 400 mm with single 15 mm C.P. brass pillar tap",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2510.45,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of brackets, fittings etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.63,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.7.5",
+    "desc": "White Vitreous China Angle back wash basin size 600 x 480 mm with single 15mm C.P. brass pillar tap",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2751.3,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of brackets, fittings etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.63,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.7.6",
+    "desc": "White Vitreous China Angle back wash basin size 400 x 400 mm with single 15 mm C.P. brass pillar tap",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2349.9,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of brackets, fittings etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.63,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.7.7",
+    "desc": "White Vitreous China Flat back wash basin size 450x 300 mm with single 15mm C.P. brass pillar tap",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2196.05,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of brackets, fittings etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.63,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.7.8",
+    "desc": "White Vitreous China Surgeon type wash basin of size 660x460 mm with a pair of 15 mm C.P. brass pillar taps with elbow including operated le",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 4052.35,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of brackets, fittings etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.7.9",
+    "desc": "White Vitreous China Surgeon type wash basin of size 660x460 mm with single 15 mm C.P. brass pillar taps with elbow operated levers ISI Mark",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3417.55,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of brackets, fittings etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.63,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.7.10",
+    "desc": "Stainless Steel AISI-304(18/8) Round basin 405x355 mm with single 15 mm C.P. brass pillar tap",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3788.2,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of brackets, fittings etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.63,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.7.11",
+    "desc": "Stainless Steel AISI-304(18/8) Wash basin 530x345 mm with single 15 mm C.P. brass pillar tap",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 4457.15,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of brackets, fittings etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.63,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, Sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of brackets, fittings etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.63,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Red Lead, White Lead and Gasket",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of brackets, fittings etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.8",
+    "desc": "Providing and fixing white vitreous china pedestal for wash basin completely recessed at the back for the reception of pipes and fittings.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1420.15,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "White cement mortar",
+        "unit": "L.S.",
+        "qty": 40.3,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 40.43,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.9.1",
+    "desc": "White glazed fire clay kitchen sink of size 600x450x 250 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3163.25,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting brackets etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.22,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.56,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.10.1",
+    "desc": "Kitchen sink with drain board 17.10.1.1 510x1040 mm bowl depth 250 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 5155.95,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 27.04,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of brackets etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.22,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.82,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 27.04,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of brackets etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.22,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.82,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 27.04,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of brackets etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.22,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.82,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 27.04,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting brackets",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.22,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.82,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.10.2",
+    "desc": "Kitchen sink without drain board 17.10.2.1 610x510 mm bowl depth 200 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3631.55,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting brackets",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.22,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.56,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting brackets",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.22,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.56,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting brackets",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.22,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.56,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.11.1",
+    "desc": "Size 450x300x150 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 4122.55,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.22,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.56,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.11.2",
+    "desc": "Size 600x450x200 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 5460.45,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskit",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.22,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.56,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.12.1",
+    "desc": "White glazed fire clay draining board of size 600x450x 25 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1337.8,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting brackets etc.",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 7.8,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.22,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.13.1",
+    "desc": "Long pattern W.C. pan of size 580 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1541.05,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.13.2",
+    "desc": "Orissa pattern W.C. pan of size 580x440 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2544.5,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.14.1",
+    "desc": "Orissa pattern W.C. pan 580x440 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 842.9,
+    "resources": []
+  },
+  {
+    "code": "17.15",
+    "desc": "Providing and fixing white vitreous china pedestal type (European type/ wash down type) water closet pan.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2276.95,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.16",
+    "desc": "Extra for using coloured pedestal type W.C pan (European type) with low level cistern of same colour instead of white vitreous china W.C pan",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 260.9,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Carriage of material and fixing charges",
+        "unit": "L.S.",
+        "qty": 11.2,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.17.1",
+    "desc": "250x130x30 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 214.6,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "17.17.2",
+    "desc": "250x125x25 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 214.6,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "17.18.1",
+    "desc": "10 litre capacity - White",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 999.95,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 5.2,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.18.2",
+    "desc": "10 litre capacity - coloured",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 971.4,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 7.02,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.19.1",
+    "desc": "10 litre (full flush) capacity-white",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1839.7,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.19.2",
+    "desc": "10 litre (full flush) capacity-coloured",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2441.8,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.20.1",
+    "desc": "White solid plastic seat with lid",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 571.0,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.20.2",
+    "desc": "Black solid plastic seat with lid",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 450.6,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.20.3",
+    "desc": "Coloured (other than black & white) solid plastic seat with lid",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 557.65,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.22",
+    "desc": "Providing and fixing G.I. inlet connection for flush pipe connecting with W.C. pan.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 116.1,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage and sundries",
+        "unit": "L.S.",
+        "qty": 20.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material and fixing charges",
+        "unit": "L.S.",
+        "qty": 34.71,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.23",
+    "desc": "Providing and fixing white vitreous china flat back or wall corner type lipped front urinal basin of 430x260x350 mm or 340x410x265 mm sizes ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1299.75,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 9.49,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.38,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.38,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.24",
+    "desc": "Providing and fixing white vitreous china squatting plate urinal with integral rim longitudinal flush pipe.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3207.5,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.25.1",
+    "desc": "Flat back wash basin of size 630x450 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1139.4,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Fixing charges",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 9.49,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.25.2",
+    "desc": "Flat back wash basin of size 550x400 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 898.6,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Fixing charges",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 9.49,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.25.3",
+    "desc": "Angle back wash basin of size 600x480 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1139.4,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Fixing charges",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 9.49,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.25.3",
+    "desc": "Angle back wash basin of size 600x480 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1139.4,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Fixing charges",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 9.49,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.25.4",
+    "desc": "Angle back wash basin of size 400x400 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 738.05,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Fixing charges",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 9.49,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.25.5",
+    "desc": "Flat back wash basin of size 450x300 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 584.15,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Fixing charges",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 9.49,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.25.6",
+    "desc": "Surgeon type wash basin of size 660x460 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1507.35,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Fixing charges",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 9.49,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.26.1",
+    "desc": "White glazed fire clay sink of size 600x450x250 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1853.65,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Fixing charges",
+        "unit": "L.S.",
+        "qty": 40.43,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.27.1",
+    "desc": "Size 450x300x150 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2143.95,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Fixing charges",
+        "unit": "L.S.",
+        "qty": 40.43,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.27.2",
+    "desc": "Size 600x450x200 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3481.9,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Fixing charges",
+        "unit": "L.S.",
+        "qty": 40.43,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.28.1",
+    "desc": "Semi rigid pipe 17.28.1.1 32 mm dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 87.7,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 20.28,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 20.28,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.28.2",
+    "desc": "Flexible pipe 17.28.2.1 32 mm dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 101.1,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 20.28,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 20.28,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.29",
+    "desc": "Providing and fixing 100 mm sand cast Iron grating for gully trap.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 44.6,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.30",
+    "desc": "Providing and fixing in position 25 mm diameter mosquito proof coupling of approved municipal design.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 45.0,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.31",
+    "desc": "Providing and fixing 600x450 mm beveled edge mirror of superior glass (of approved quality) complete with 6 mm thick hard board ground fixed",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1283.05,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.32.1",
+    "desc": "Circular shape 450 mm dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1242.0,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.32.2",
+    "desc": "Rectangular shape 453x357 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1120.25,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.32.3",
+    "desc": "Oval shape 450x350 mm (outer dimensions)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1185.6,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.32.4",
+    "desc": "Rectangular shape 1500x450 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1786.55,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.33",
+    "desc": "Providing and fixing 600x120x5 mm glass shelf with edges round off, supported on anodised aluminium angle frame with C.P. brass brackets and",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 841.8,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.34.1",
+    "desc": "C.P. brass",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 583.75,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 4.29,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.34.2",
+    "desc": "Vitreous china",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 426.15,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 4.29,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.35.1",
+    "desc": "100 mm dia 17.35.1.1 Sand cast iron S&S pipe as per IS: 1729",
+    "unit": "m",
+    "basis": 18.0,
+    "say": 1008.2,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 80.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.42,
+        "rate": 738.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.21,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.83,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 80.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.42,
+        "rate": 738.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.21,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.83,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 80.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.42,
+        "rate": 738.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.21,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.83,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.35.2",
+    "desc": "75 mm diameter : 17.35.2.1 Sand cast iron S&S pipe as per IS: 1729",
+    "unit": "m",
+    "basis": 18.0,
+    "say": 923.25,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 80.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 40.38,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.35,
+        "rate": 738.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 80.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 40.38,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.35,
+        "rate": 738.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 80.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 40.38,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.35,
+        "rate": 738.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.36.1",
+    "desc": "75 mm dia pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 126.0,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Cement mortar, spun yarn etc.",
+        "unit": "L.S.",
+        "qty": 6.89,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.28,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.28,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.36.2",
+    "desc": "100 mm dia pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 148.45,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Cement mortar, spun yarn etc.",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.37.1",
+    "desc": "For 100 mm dia pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 287.45,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of bat clamps",
+        "unit": "L.S.",
+        "qty": 2.47,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.0022,
+        "rate": 1350.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.0016,
+        "rate": 4940.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.0045,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.0032,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.0014,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.0003,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.0003,
+        "rate": 679.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.0002,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire charges of machine etc.",
+        "unit": "L.S.",
+        "qty": 0.26,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.13,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.13,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.37.2",
+    "desc": "For 75 mm dia pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 283.4,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of bat clamps",
+        "unit": "L.S.",
+        "qty": 2.47,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.0022,
+        "rate": 1350.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.0016,
+        "rate": 4940.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.0045,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.0032,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.0014,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.0003,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.0003,
+        "rate": 679.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.0002,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire charges of machine etc.",
+        "unit": "L.S.",
+        "qty": 0.26,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.13,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.13,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.38.1",
+    "desc": "100 mm dia 17.38.1.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 461.65,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.38.2",
+    "desc": "75 mm dia 17.38.2.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 371.4,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.39.1",
+    "desc": "100 mm dia 17.39.1.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 381.35,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.39.2",
+    "desc": "75 mm dia 17.39.2.1 Sand cast iron S&S as per IS -1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 309.85,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.40.1",
+    "desc": "100 mm dia 17.40.1.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 500.45,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.40.2",
+    "desc": "75 mm dia 17.40.2.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 395.45,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.41.1",
+    "desc": "100x100x100x100 mm 17.41.1.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1016.55,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.41.2",
+    "desc": "75x75x75x75 mm 17.41.2.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 719.25,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.42.1",
+    "desc": "100x100x100x100 mm 17.42.1.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 825.55,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.42.2",
+    "desc": "75x75x75x75 mm 17.42.2.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 539.95,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.43.1",
+    "desc": "100x100x100 mm 17.43.1.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 602.15,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.43.2",
+    "desc": "75x75x75 mm 17.43.2.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 478.4,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.44.1",
+    "desc": "100x100x100 mm 17.44.1.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 517.85,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.44.2",
+    "desc": "75x75x75 mm 17.44.2.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 400.8,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.45.1",
+    "desc": "100x100x75x75 mm 17.45.1.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 996.8,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.46.1",
+    "desc": "100x100x75x75 mm 17.46.1.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 859.0,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.47.1",
+    "desc": "100x100x75 mm 17.47.1.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 796.15,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.48.1",
+    "desc": "100x100x75 mm 17.48.1.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 697.1,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.49.1",
+    "desc": "100x100x100x100 mm 17.49.1.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 772.05,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.49.2",
+    "desc": "75x75x75x75 mm 17.49.2.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 577.45,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.50.1",
+    "desc": "100x100x100 mm 17.50.1.1 Sand cast iron S&S as per iron 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 584.75,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.50.2",
+    "desc": "75x75x75 mm 17.50.2.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 453.1,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.51.1",
+    "desc": "100x100x75x75 mm 17.51.1.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 798.8,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.52.1",
+    "desc": "100x100x75 mm 17.52.1.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 698.45,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.53.1",
+    "desc": "76 mm off sets 17.53.1.1 With 75 mm dia pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 320.55,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.53.2",
+    "desc": "114 mm off sets 17.53.2.1 With 75 mm dia pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 437.55,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.53.3",
+    "desc": "152 mm off sets 17.53.3.1 With 75 mm dia pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 527.0,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 17.94,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 17.94,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.54.1",
+    "desc": "75 mm off sets 17.54.1.1 With 75 mm dia pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 329.9,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.54.2",
+    "desc": "150 mm off sets 17.54.2.1 With 75 mm dia pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 424.45,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.55.1",
+    "desc": "100 mm 17.55.1.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 695.8,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.55.2",
+    "desc": "75 mm 17.55.2.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 428.9,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.56.1",
+    "desc": "100 mm 17.56.1.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 355.95,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.56.2",
+    "desc": "75 mm 17.56.2.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 284.4,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.57.1",
+    "desc": "100 mm 17.57.1.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 365.3,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.57.2",
+    "desc": "75 mm 17.57.2.1 Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 265.7,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.58.1",
+    "desc": "100 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 481.45,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Kerosene oil, fuel and other sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      },
+      {
+        "code": "0117",
+        "desc": "Assistant Fitter or 2nd class Fitter",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.58.2",
+    "desc": "75 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 407.9,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Kerosene oil, fuel and other sundries",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 738.0
+      },
+      {
+        "code": "0117",
+        "desc": "Assistant Fitter or 2nd class Fitter",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.09,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.58.3",
+    "desc": "50 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 329.5,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Kerosene oil, fuel and other sundries",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 738.0
+      },
+      {
+        "code": "0117",
+        "desc": "Assistant Fitter or 2nd class Fitter",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.59.1",
+    "desc": "100 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 126.5,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.59.2",
+    "desc": "75 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 78.4,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.59.3",
+    "desc": "50 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 72.2,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 9.49,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.60.1",
+    "desc": "100 mm inlet and 100 mm outlet 17.60.1.1 Sand cast iron S&S as per IS: 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1512.55,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.60.2",
+    "desc": "100 mm inlet and 75 mm outlet 17.60.2.1 Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1579.45,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.61.1",
+    "desc": "100 mm dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 555.3,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Plastering in cement mortar 1:4",
+        "unit": "L.S.",
+        "qty": 10.4,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.14,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.61.2",
+    "desc": "75 mm dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 398.7,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Plastering in cement mortar 1:4",
+        "unit": "L.S.",
+        "qty": 7.8,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 3.51,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.61.3",
+    "desc": "50 mm dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 259.05,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Plastering in cement mortar 1:4",
+        "unit": "L.S.",
+        "qty": 5.2,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.14,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.62",
+    "desc": "Painting C.I. cistern with bitumastic or any other anti-corrosive paint inside and white paint over a coat of zinc chromate yellow primer (o",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 768.15,
+    "resources": [
+      {
+        "code": "0828",
+        "desc": "Anticorrosive bituminous paint (black)",
+        "unit": "litre",
+        "qty": 0.23,
+        "rate": 100.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.63",
+    "desc": "Re-painting C.I. cistern with bitumastic or any other anti-corrosive paint inside and white paint on the outside surface of the cistern, flu",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 516.35,
+    "resources": [
+      {
+        "code": "0828",
+        "desc": "Anticorrosive bituminous paint (black)",
+        "unit": "litre",
+        "qty": 0.23,
+        "rate": 100.0
+      },
+      {
+        "code": "9988",
+        "desc": "Sundries and carriage of materials",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.64",
+    "desc": "Repainting C.I. cistern with synthetic enamel paint of approved colour, brand and manufacture on the outside surface of cistern, flush pipe,",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 223.9,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Sundries and carriage of materials",
+        "unit": "L.S.",
+        "qty": 3.64,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.09,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.65.1",
+    "desc": "100 mm diameter pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 64.2,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Add for delay",
+        "unit": "L.S.",
+        "qty": 17.16,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.65.2",
+    "desc": "75 mm diameter pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 48.85,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Add for delay",
+        "unit": "L.S.",
+        "qty": 15.21,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.66.1",
+    "desc": "100 mm diameter pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 30.95,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Add for delay",
+        "unit": "L.S.",
+        "qty": 12.22,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.66.2",
+    "desc": "75 mm diameter pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 23.15,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Add for delay",
+        "unit": "L.S.",
+        "qty": 9.49,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.67",
+    "desc": "Repainting bath tub of size 1700x730x430 mm with enamel paint.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 630.55,
+    "resources": [
+      {
+        "code": "0830",
+        "desc": "Enamel paint",
+        "unit": "litre",
+        "qty": 0.9,
+        "rate": 165.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.68.1",
+    "desc": "White vitreous china dual purpose WC pan with white solid plastic seat and lid with white vitreous china flushing cistern and C.P. flush ben",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 10023.9,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Plugs, screws etc.",
+        "unit": "L.S.",
+        "qty": 59.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Red lead, white lead and gaskin etc.",
+        "unit": "L.S.",
+        "qty": 71.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement,sand and grit",
+        "unit": "L.S.",
+        "qty": 118.43,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 118.43,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.69.1",
+    "desc": "Waste coupling 31 mm dia of 79 mm length and 62mm breadth weighing not less than 45 gms",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 99.75,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 20.28,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.69.2",
+    "desc": "Waste coupling 38 mm dia of 83 mm length and 77mm breadth, weighing not less than 60 gms",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 118.5,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 20.28,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.70.1",
+    "desc": "Bottle trap 31mm single piece moulded with height of 270 mm, effective length of tail pipe 260 mm from the centre of the waste coupling, 77 ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 335.25,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 20.28,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.70.2",
+    "desc": "Bottle trap 38 mm single piece moulded with height of 270 mm, effective length of tail pipe 260 mm from the centre of the waste coupling, 77",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 348.6,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 20.28,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.71",
+    "desc": "Providing and fixing PTMT liquid soap container 109 mm wide, 125 mm high and 112 mm distance from wall of standard shape with bracket of the",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 158.55,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.72",
+    "desc": "Providing and fixing PTMT towel ring trapezoidal shape 215 mm long, 200 mm wide with minimum distances of 37 mm from wall face with conceale",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 228.2,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 20.28,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.73.1",
+    "desc": "450 mm long towel rail with total length of 495 mm, 78 mm wide and effective height of 88 mm, weighing not less than 170 gms",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 555.35,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.73.2",
+    "desc": "600 mm long towel rail with total length of 645 mm, width 78 mm and effective height of 88 mm, weighing not less than 190 gms.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 595.5,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.74",
+    "desc": "Providing and fixing PTMT shelf 440 mm long, 124 mm width and 36 mm height of approved quality and colour, weighing not less than 300 gms.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 642.3,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.75",
+    "desc": "Providing and fixing PTMT 15 mm Urinal spreader size 95x69x100 mm with 1/2\" BSP thread and shapes, weighing not less than 60 gms.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 119.75,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.76.1",
+    "desc": "15 mm nominal bore, 80 mm long, 42 mm high and 30mm wide with BSP female threads weighing not less than 48 gms",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 164.05,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.77.1",
+    "desc": "Total bracket length 580 mm of approved shape and design (for single 100 mm dia pipe)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 247.8,
+    "resources": [
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.033,
+        "rate": 738.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.049,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.065,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.35,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.77.2",
+    "desc": "Total bracket length 810 mm of approved shape and design (for two 100 mm dia pipes)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 302.35,
+    "resources": [
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.048,
+        "rate": 738.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.072,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.096,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.98,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.77.3",
+    "desc": "Total bracket length 1040 mm of approved shape and design (for three 100 mm dia pipes)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 356.7,
+    "resources": [
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.063,
+        "rate": 738.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.095,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.126,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.6,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.78",
+    "desc": "Providing and fixing white vitreous china extended wall mounting water closet of size 780x370x690 mm of approved shape including providing &",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 13852.45,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 9.79,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.79",
+    "desc": "Providing & fixing white vitreous china water less urinal of size 600 x 330 x 315 mm having antibacterial /germs free ceramic surface, fixed",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 16868.15,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 9.79,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.80",
+    "desc": "Providing and fixing white vitreous china battery based infrared sensor operated urinal of approx. size 610 x 390 x 370 mm having pre & post",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 6913.9,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 9.79,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.81",
+    "desc": "Providing and fixing floor mounted, white vitreous china single piece, double traps syphonic water closet of approved brand/make, shape, siz",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 15457.95,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 9.79,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      }
+    ]
+  }
+]

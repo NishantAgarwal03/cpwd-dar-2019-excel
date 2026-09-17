@@ -1,0 +1,1434 @@
+[
+  {
+    "code": "21.1.1",
+    "desc": "For fixed portion 21.1.1.1 Anodised aluminium (anodised transparent or dyed to required shade according to IS: 1868, Minimum anodic coating ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 423.95,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 52.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 52.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 52.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "21.1.2",
+    "desc": "For shutters of doors, windows & ventilators including providing and fixing hinges/ pivots and making provision for fixing of fittings where",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 513.4,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 31.2,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 617.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 31.2,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 617.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 31.2,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 617.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "21.2.1",
+    "desc": "Pre-laminated particle board with decorative lamination on one side and balancing lamination on other side",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 997.7,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of particle board",
+        "unit": "L.S.",
+        "qty": 13.65,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries & screws etc.",
+        "unit": "L.S.",
+        "qty": 27.3,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "21.2.2",
+    "desc": "Pre-laminated particle board with decorative lamination on both sides",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1046.9,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of particle board",
+        "unit": "L.S.",
+        "qty": 13.65,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries & screws etc.",
+        "unit": "L.S.",
+        "qty": 27.3,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "21.3.1",
+    "desc": "With float glass panes of 4.0 mm thickness (weight not less than 10kg/sqm)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 999.6,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of glass",
+        "unit": "L.S.",
+        "qty": 2.42,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.23,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.23,
+        "rate": 558.0
+      },
+      {
+        "code": "9988",
+        "desc": "Sundries and carriage of gasket",
+        "unit": "L.S.",
+        "qty": 6.89,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "21.3.2",
+    "desc": "With float glass panes of 5 mm thickness (weight not less than 12.50 kg/sqm)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1296.4,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of glass",
+        "unit": "L.S.",
+        "qty": 3.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.23,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.23,
+        "rate": 558.0
+      },
+      {
+        "code": "9988",
+        "desc": "Sundries and carriage of gasket",
+        "unit": "L.S.",
+        "qty": 6.89,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "21.3.3",
+    "desc": "With float glass panes of 8 mm thickness (weight not less than 20 kg/sqm)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1462.35,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of glass",
+        "unit": "L.S.",
+        "qty": 4.84,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.23,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.23,
+        "rate": 558.0
+      },
+      {
+        "code": "9988",
+        "desc": "Sundries and carriage of gasket",
+        "unit": "L.S.",
+        "qty": 6.89,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "21.4.1",
+    "desc": "With stainless steel cover plate minimum 1.25 mm thickness",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2412.5,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "CARRIAGE",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and screws",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 679.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "21.4.2",
+    "desc": "With brass cover plate minimum 1.25 mm thickness",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2573.05,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "CARRIAGE",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and screws",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 679.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "21.5",
+    "desc": "Providing and fixing powder coated aluminium work (minimum thickness of powder coating 50 micron) consisting of tee/ angle sections, of appr",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 670.85,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.64,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.64,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "21.6",
+    "desc": "Providing and fixing 6 mm dia. G.I. level adjusting hangers (upto 1200mm length), fixed to roof slabs by means of ceiling cleats made out of",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 69.95,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 5.2,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.35,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "21.7.1",
+    "desc": "Anodised aluminium sheet 2.5mm thick (anodised transparent or dyed to required shade according to IS: 1868, Minimum anodic coating of grade ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 582.05,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 6.5,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.392,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.392,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries including machine work",
+        "unit": "L.S.",
+        "qty": 21.45,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "21.7.2",
+    "desc": "Powder coated aluminium sheet 2.5mm thick (minimum thickness of powder coating 50 micron)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 614.35,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 6.5,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.392,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.392,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries including machine work",
+        "unit": "L.S.",
+        "qty": 21.45,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "21.8.1",
+    "desc": "Upto 5mm depth and 5 mm width",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 79.45,
+    "resources": [
+      {
+        "code": "8654",
+        "desc": "Masking tape",
+        "unit": "metre",
+        "qty": 2.0,
+        "rate": 1.95
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries & profile",
+        "unit": "L.S.",
+        "qty": 2.6,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "LABOUR",
+        "unit": "L.S.",
+        "qty": 20.8,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "21.9.1",
+    "desc": "For fixed portion",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 13.4,
+    "resources": []
+  },
+  {
+    "code": "21.9.2",
+    "desc": "For shutters of doors, windows & ventilators",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 13.4,
+    "resources": []
+  },
+  {
+    "code": "21.10",
+    "desc": "Providing and fixing double glazed hermetically sealed glazing in aluminium windows, ventilators and partition etc. with 6 mm thick clear fl",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3905.35,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of glass",
+        "unit": "L.S.",
+        "qty": 6.66,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.23,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.46,
+        "rate": 558.0
+      },
+      {
+        "code": "9988",
+        "desc": "Sundries and carriage of gasket",
+        "unit": "L.S.",
+        "qty": 6.89,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "21.11.1",
+    "desc": "205 X 19 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 255.75,
+    "resources": [
+      {
+        "code": "8647",
+        "desc": "Stainless steel screws 30 mm x4 mm 100",
+        "unit": "nos",
+        "qty": 0.4,
+        "rate": 32.0
+      },
+      {
+        "code": "9977",
+        "desc": "CARRIAGE",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.14,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.14,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "21.11.2",
+    "desc": "255 X 19 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 322.65,
+    "resources": [
+      {
+        "code": "8647",
+        "desc": "Stainless steel screws 30 mm x4 mm 100",
+        "unit": "nos",
+        "qty": 0.4,
+        "rate": 32.0
+      },
+      {
+        "code": "9977",
+        "desc": "CARRIAGE",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.14,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.14,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "21.11.3",
+    "desc": "355 X 19 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 286.5,
+    "resources": [
+      {
+        "code": "8647",
+        "desc": "Stainless steel screws 30 mm x4 mm 100",
+        "unit": "nos",
+        "qty": 0.4,
+        "rate": 32.0
+      },
+      {
+        "code": "9977",
+        "desc": "CARRIAGE",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.14,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.14,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "21.11.4",
+    "desc": "510 X 19 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 728.05,
+    "resources": [
+      {
+        "code": "8647",
+        "desc": "Stainless steel screws 30 mm x4 mm 100",
+        "unit": "nos",
+        "qty": 0.4,
+        "rate": 32.0
+      },
+      {
+        "code": "9977",
+        "desc": "CARRIAGE",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.14,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.14,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "21.11.5",
+    "desc": "710 X 19 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1229.75,
+    "resources": [
+      {
+        "code": "8647",
+        "desc": "Stainless steel screws 30 mm x4 mm 100",
+        "unit": "nos",
+        "qty": 0.4,
+        "rate": 32.0
+      },
+      {
+        "code": "9977",
+        "desc": "CARRIAGE",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.14,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.14,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "21.12.1",
+    "desc": "Anodized (AC 15 ) aluminium tubular handle bar",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 512.3,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 4.42,
+        "rate": 2.0
+      },
+      {
+        "code": "8647",
+        "desc": "Stainless steel screws 30 mm x4 mm 100",
+        "unit": "nos",
+        "qty": 0.08,
+        "rate": 32.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "21.12.2",
+    "desc": "Powder coated minimum thickness 50 micron aluminium tubular handle bar",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 562.6,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 4.42,
+        "rate": 2.0
+      },
+      {
+        "code": "8647",
+        "desc": "Stainless steel screws 30 mm x4 mm 100",
+        "unit": "nos",
+        "qty": 0.08,
+        "rate": 32.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "21.12.3",
+    "desc": "Polyester powder coated minimum thickness 50 micron aluminium tubular handle bar",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 575.7,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 4.42,
+        "rate": 2.0
+      },
+      {
+        "code": "8647",
+        "desc": "Stainless steel screws 30 mm x4 mm 100",
+        "unit": "nos",
+        "qty": 0.08,
+        "rate": 32.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "21.13",
+    "desc": "Providing and fixing Brass 100mm mortice latch and lock with 6 levers without pair of handles (best make of approved quality) for aluminium ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 458.55,
+    "resources": [
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 738.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundry and screws",
+        "unit": "L.S.",
+        "qty": 3.64,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "21.14",
+    "desc": "Providing and fixing anodised aluminium (anodised transparent or dyed to required shade according to IS: 1868. Minimum anodic coating of gra",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 354.75,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 5.2,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 738.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "21.15.1",
+    "desc": "Anodized (AC 15) aluminium",
+    "unit": "nos",
+    "basis": 10.0,
+    "say": 67.55,
+    "resources": [
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "21.15.2",
+    "desc": "Powder coated minimum thickness 50 micron aluminium",
+    "unit": "nos",
+    "basis": 10.0,
+    "say": 71.55,
+    "resources": [
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "21.15.3",
+    "desc": "Polyester powder coated minimum thickness 50 micron aluminium",
+    "unit": "nos",
+    "basis": 10.0,
+    "say": 70.25,
+    "resources": [
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "21.16.1",
+    "desc": "Anodized (AC 15 ) aluminium",
+    "unit": "nos",
+    "basis": 10.0,
+    "say": 79.6,
+    "resources": [
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "21.16.2",
+    "desc": "Powder coated minimum thickness 50 micron aluminium",
+    "unit": "nos",
+    "basis": 10.0,
+    "say": 83.6,
+    "resources": [
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "21.16.3",
+    "desc": "Polyester powder coated minimum thickness 50 micron aluminium",
+    "unit": "nos",
+    "basis": 10.0,
+    "say": 88.95,
+    "resources": [
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "21.17",
+    "desc": "Providing and fixing anodised aluminium grill (anodised transparent or dyed to required shade according to IS: 1868 with minimum anodic coat",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 519.85,
+    "resources": [
+      {
+        "code": "8774",
+        "desc": "Aluminium Grill",
+        "unit": "kg",
+        "qty": 12.0,
+        "rate": 260.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 11.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 25.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "21.4.1",
+    "desc": "Rate as per Item No.21.4.1 of SH:Aluminium Work each 1.00 2412.50 2412.50 A",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 4447.9,
+    "resources": [
+      {
+        "code": "0119",
+        "desc": "Glazier",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries,sush rog cotton etc.",
+        "unit": "L.S.",
+        "qty": 1.13,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "21.19.1",
+    "desc": "Upto 5 mm depth and 5 mm width",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 125.1,
+    "resources": [
+      {
+        "code": "8654",
+        "desc": "Masking tape",
+        "unit": "metre",
+        "qty": 20.0,
+        "rate": 1.95
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 8.4,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "21.19.2",
+    "desc": "Upto 10 mm depth and 10 mm width",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 170.55,
+    "resources": [
+      {
+        "code": "8654",
+        "desc": "Masking tape",
+        "unit": "metre",
+        "qty": 20.0,
+        "rate": 1.95
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 8.4,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "21.19.3",
+    "desc": "Upto 20 mm depth and 20 mm width",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 308.7,
+    "resources": [
+      {
+        "code": "8654",
+        "desc": "Masking tape",
+        "unit": "metre",
+        "qty": 20.0,
+        "rate": 1.95
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 8.4,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 738.0
+      }
+    ]
+  }
+]

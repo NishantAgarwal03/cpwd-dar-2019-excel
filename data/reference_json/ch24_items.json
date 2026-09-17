@@ -1,0 +1,284 @@
+[
+  {
+    "code": "24.1",
+    "desc": "Raking out joints of stone masonry surface to the required width and depth, with due care and precaution, by mechanical / manual means, incl",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 51.7,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.53,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "24.2",
+    "desc": "Providing and fixing double scaffolding system (cup lock type) on the exterior side of building/structure, upto 25 metre height, above groun",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 257.95,
+    "resources": [
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 15.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 31.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1035.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "24.3",
+    "desc": "Cleaning the sand stone surface and removing dirt, dust, bird dropping, grease, oil, algae, fungus, monkey beats, vegetable growth etc., inc",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 158.15,
+    "resources": [
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 617.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 558.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "24.4",
+    "desc": "Providing and applying antifungal wash treatment using 3% solution of sodium pentachlorophenate, of reputed brand and manufacturer, on clean",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 59.05,
+    "resources": [
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "24.5",
+    "desc": "Ruled / Flush pointing on Red sand stone masonry surface with lime, surkhi and marble dust mortar in the ratio of 1:1.5:1/2 {One lime: 1.5 s",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 276.1,
+    "resources": [
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.37,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.93,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 4.03,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "24.6",
+    "desc": "Ruled/ Flush pointing on White sand stone masonry surface with lime, surkhi and marble dust mortar in the ratio of 1:1.5:1/2 {One lime : 1.5",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 276.1,
+    "resources": [
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.37,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.93,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 4.03,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "24.7",
+    "desc": "Applying two or more coat of Ethyl Silicate chemical as approved by Archaeological Survey of India/ Engineer-in-charge, of approved brand an",
+    "unit": "sqm",
+    "basis": 5.0,
+    "say": 293.7,
+    "resources": [
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "24.8",
+    "desc": "Applying breathable, non-reactive, antifungal, and water repellant Silane/ Siloxane chemical as approved by Archaeological Survey of India/ ",
+    "unit": "sqm",
+    "basis": 45.0,
+    "say": 92.45,
+    "resources": [
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Handling / Transportation charges",
+        "unit": "L.S.",
+        "qty": 6.0,
+        "rate": 2.0
+      }
+    ]
+  }
+]

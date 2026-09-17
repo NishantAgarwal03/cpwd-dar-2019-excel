@@ -1,0 +1,8531 @@
+[
+  {
+    "code": "13.1.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 266.85,
+    "resources": [
+      {
+        "code": "3.4",
+        "desc": "Rate as per SH: 3.4",
+        "unit": "cum",
+        "qty": 0.144,
+        "rate": 3528.85
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.1.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 254.25,
+    "resources": [
+      {
+        "code": "3.6",
+        "desc": "Rate as per SH: 3.6",
+        "unit": "cum",
+        "qty": 0.144,
+        "rate": 2874.65
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.2.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 307.9,
+    "resources": [
+      {
+        "code": "3.4",
+        "desc": "Rate as per SH: 3.4",
+        "unit": "cum",
+        "qty": 0.172,
+        "rate": 3528.85
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.88,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.99,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.2.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 292.85,
+    "resources": [
+      {
+        "code": "3.6",
+        "desc": "Rate as per SH: 3.6",
+        "unit": "cum",
+        "qty": 0.172,
+        "rate": 2874.65
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.88,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.99,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.3.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 365.25,
+    "resources": [
+      {
+        "code": "3.4",
+        "desc": "Rate as per SH: 3.4",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 3528.85
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.94,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.02,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 1.1,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.3.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 345.65,
+    "resources": [
+      {
+        "code": "3.6",
+        "desc": "Rate as per SH: 3.6",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 2874.65
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.94,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.02,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 1.1,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.4.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 276.15,
+    "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.144,
+        "rate": 4010.35
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.4.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 263.55,
+    "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.144,
+        "rate": 3356.15
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.5.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 318.95,
+    "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.172,
+        "rate": 4010.35
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.88,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.99,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.5.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 303.9,
+    "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.172,
+        "rate": 3356.15
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.88,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.99,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.6.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 379.7,
+    "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 4010.35
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.94,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.02,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 1.1,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.6.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 360.1,
+    "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 3356.15
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.94,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.02,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 1.1,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.7.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 340.85,
+    "resources": [
+      {
+        "code": "3.3",
+        "desc": "Rate as per SH: 3.3",
+        "unit": "cum",
+        "qty": 0.144,
+        "rate": 4183.05
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.02,
+        "rate": 4940.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.7.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 328.25,
+    "resources": [
+      {
+        "code": "3.4",
+        "desc": "Rate as per SH: 3.4",
+        "unit": "cum",
+        "qty": 0.144,
+        "rate": 3528.85
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.02,
+        "rate": 4940.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.8.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 384.35,
+    "resources": [
+      {
+        "code": "3.3",
+        "desc": "Rate as per SH: 3.3",
+        "unit": "cum",
+        "qty": 0.172,
+        "rate": 4183.05
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.88,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.99,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.02,
+        "rate": 4940.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.8.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 369.3,
+    "resources": [
+      {
+        "code": "3.4",
+        "desc": "Rate as per SH: 3.4",
+        "unit": "cum",
+        "qty": 0.172,
+        "rate": 3528.85
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.88,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.99,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.02,
+        "rate": 4940.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.9.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 350.15,
+    "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.144,
+        "rate": 4664.55
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.02,
+        "rate": 4940.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.9.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 460.7,
+    "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 4664.55
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.94,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.02,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 1.1,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.02,
+        "rate": 4940.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.10",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 395.4,
+    "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.172,
+        "rate": 4664.55
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.88,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.99,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.02,
+        "rate": 4940.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.11",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 399.3,
+    "resources": [
+      {
+        "code": "3.10",
+        "desc": "Rate as per SH: 3.10",
+        "unit": "cum",
+        "qty": 0.144,
+        "rate": 3658.1
+      },
+      {
+        "code": "3.6",
+        "desc": "Rate as per SH: 3.6",
+        "unit": "cum",
+        "qty": 0.072,
+        "rate": 2874.65
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 1.21,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.29,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 1.05,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.12",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 416.55,
+    "resources": [
+      {
+        "code": "3.10",
+        "desc": "Rate as per SH: 3.10",
+        "unit": "cum",
+        "qty": 0.144,
+        "rate": 3658.1
+      },
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.072,
+        "rate": 4664.55
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 1.21,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.29,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 1.05,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.13",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 297.3,
+    "resources": [
+      {
+        "code": "3.12",
+        "desc": "Rate as per SH: 3.12",
+        "unit": "cum",
+        "qty": 0.144,
+        "rate": 5108.05
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.14",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 344.25,
+    "resources": [
+      {
+        "code": "3.12",
+        "desc": "Rate as per SH: 3.12",
+        "unit": "cum",
+        "qty": 0.172,
+        "rate": 5108.05
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.88,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.99,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.15",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 412.6,
+    "resources": [
+      {
+        "code": "3.12",
+        "desc": "Rate as per SH: 3.12",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 5108.05
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.94,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.02,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 1.1,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.16.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 227.35,
+    "resources": [
+      {
+        "code": "3.3",
+        "desc": "Rate as per SH: 3.3",
+        "unit": "cum",
+        "qty": 0.072,
+        "rate": 4183.05
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.51,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 11.7,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.17",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 301.65,
+    "resources": [
+      {
+        "code": "3.3",
+        "desc": "Rate as per SH: 3.3",
+        "unit": "cum",
+        "qty": 0.072,
+        "rate": 4183.05
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.51,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 11.7,
+        "rate": 2.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.02,
+        "rate": 4940.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Indigo gum etc",
+        "unit": "L.S.",
+        "qty": 2.08,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries ladder etc.",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0141",
+        "desc": "White Washer",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.18",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 62.75,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.022,
+        "rate": 4940.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.19.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 681.1,
+    "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.144,
+        "rate": 4010.35
+      },
+      {
+        "code": "3.3",
+        "desc": "Rate as per SH: 3.3",
+        "unit": "cum",
+        "qty": 0.12,
+        "rate": 4183.05
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 9.88,
+        "rate": 2.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.61,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.69,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.85,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 9.88,
+        "rate": 2.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 617.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of lime",
+        "unit": "L.S.",
+        "qty": 3.64,
+        "rate": 2.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 9.88,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "13.20",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 638.95,
+    "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.144,
+        "rate": 4010.35
+      },
+      {
+        "code": "3.3",
+        "desc": "Rate as per SH: 3.3",
+        "unit": "cum",
+        "qty": 0.12,
+        "rate": 4183.05
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 9.88,
+        "rate": 2.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.61,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.69,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.85,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 9.88,
+        "rate": 2.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 617.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of lime",
+        "unit": "L.S.",
+        "qty": 3.64,
+        "rate": 2.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 9.88,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 4.42,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.21",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 59.75,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.22",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 65.95,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.23.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 35.8,
+    "resources": [
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.23.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 54.45,
+    "resources": [
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.24.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 532.75,
+    "resources": [
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.24.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 878.4,
+    "resources": [
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.25.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 133.6,
+    "resources": [
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.74,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.25.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 144.75,
+    "resources": [
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 34.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.25.3",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 88.35,
+    "resources": [
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.26",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 196.7,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of plaster of paris",
+        "unit": "L.S.",
+        "qty": 3.9,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.91,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 83.98,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.27",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 85.25,
+    "resources": [
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Solution of lime putty",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.28.1",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 5.7,
+    "resources": [
+      {
+        "code": "3.4",
+        "desc": "Rate as per SH: 3.4",
+        "unit": "cum",
+        "qty": 0.014,
+        "rate": 3528.85
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.28.2",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 6.2,
+    "resources": [
+      {
+        "code": "3.4",
+        "desc": "Rate as per SH: 3.4",
+        "unit": "cum",
+        "qty": 0.014,
+        "rate": 3528.85
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.08,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.28.3",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 7.1,
+    "resources": [
+      {
+        "code": "3.4",
+        "desc": "Rate as per SH: 3.4",
+        "unit": "cum",
+        "qty": 0.014,
+        "rate": 3528.85
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.35,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.35,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.28.4",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 12.15,
+    "resources": [
+      {
+        "code": "3.4",
+        "desc": "Rate as per SH: 3.4",
+        "unit": "cum",
+        "qty": 0.014,
+        "rate": 3528.85
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.65,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.65,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.56,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.29.1",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 6.9,
+    "resources": [
+      {
+        "code": "3.4",
+        "desc": "Rate as per SH: 3.4",
+        "unit": "cum",
+        "qty": 0.02,
+        "rate": 3528.85
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.32,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.32,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.08,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.29.2",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 7.6,
+    "resources": [
+      {
+        "code": "3.4",
+        "desc": "Rate as per SH: 3.4",
+        "unit": "cum",
+        "qty": 0.02,
+        "rate": 3528.85
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.29.3",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 8.7,
+    "resources": [
+      {
+        "code": "3.4",
+        "desc": "Rate as per SH: 3.4",
+        "unit": "cum",
+        "qty": 0.02,
+        "rate": 3528.85
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.42,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.42,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 4.42,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.29.3",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 8.7,
+    "resources": [
+      {
+        "code": "3.4",
+        "desc": "Rate as per SH: 3.4",
+        "unit": "cum",
+        "qty": 0.02,
+        "rate": 3528.85
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.42,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.42,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 4.42,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.29.4",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 16.25,
+    "resources": [
+      {
+        "code": "3.10",
+        "desc": "Rate as per SH: 3.10",
+        "unit": "cum",
+        "qty": 0.024,
+        "rate": 3658.1
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.86,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.86,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.30",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 16.2,
+    "resources": [
+      {
+        "code": "3.10",
+        "desc": "Rate as per SH: 3.10",
+        "unit": "cum",
+        "qty": 0.014,
+        "rate": 3658.1
+      },
+      {
+        "code": "3.4",
+        "desc": "Rate as per SH: 3.4",
+        "unit": "cum",
+        "qty": 0.01,
+        "rate": 3528.85
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.86,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.86,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.31.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 191.55,
+    "resources": [
+      {
+        "code": "3.3",
+        "desc": "Rate as per SH: 3.3",
+        "unit": "cum",
+        "qty": 0.03,
+        "rate": 4183.05
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.93,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.31.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 313.8,
+    "resources": [
+      {
+        "code": "3.3",
+        "desc": "Rate as per SH: 3.3",
+        "unit": "cum",
+        "qty": 0.046,
+        "rate": 4183.05
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 1.07,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.31,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.32.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 260.9,
+    "resources": [
+      {
+        "code": "3.3",
+        "desc": "Rate as per SH: 3.3",
+        "unit": "cum",
+        "qty": 0.046,
+        "rate": 4183.05
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 1.28,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "13.33.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 285.4,
+    "resources": [
+      {
+        "code": "3.3",
+        "desc": "Rate as per SH: 3.3",
+        "unit": "cum",
+        "qty": 0.023,
+        "rate": 4183.05
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.37,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.93,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "13.33.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 520.75,
+    "resources": [
+      {
+        "code": "3.3",
+        "desc": "Rate as per SH: 3.3",
+        "unit": "cum",
+        "qty": 0.038,
+        "rate": 4183.05
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 2.96,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "13.34",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 538.25,
+    "resources": [
+      {
+        "code": "3.16",
+        "desc": "Rate as per SH: 3.16",
+        "unit": "cum",
+        "qty": 0.038,
+        "rate": 7621.75
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 2.96,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "13.35.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 159.0,
+    "resources": [
+      {
+        "code": "3.2",
+        "desc": "Rate as per SH: 3.2",
+        "unit": "cum",
+        "qty": 0.015,
+        "rate": 4918.05
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.69,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.59,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "13.36",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 7.15,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.37.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 28.55,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of lime",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0141",
+        "desc": "White Washer",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Indigo gum etc",
+        "unit": "L.S.",
+        "qty": 4.42,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries ladders etc",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.38",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 11.5,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of lime",
+        "unit": "L.S.",
+        "qty": 2.08,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Indigo gum etc",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0141",
+        "desc": "White Washer",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries ladders etc",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.39.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 38.95,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of lime",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Add for colouring stuff",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0141",
+        "desc": "White Washer",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Indigo gum etc",
+        "unit": "L.S.",
+        "qty": 4.42,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries ladders etc",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.39.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 38.5,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of lime",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Add for colouring stuff",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0141",
+        "desc": "White Washer",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Indigo gum etc",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries ladders etc",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.40",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 117.75,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Putty, glue etc",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 1.56,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.41.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 153.45,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Brushes, putty etc",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Sundries including Carriage",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 4.42,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.42.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 87.15,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 4.42,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.46,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.43.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 60.0,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Brushes, putty etc",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "9988",
+        "desc": "Sundries including carriage",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.44.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 91.25,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 1.56,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.46,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.23,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.45.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 232.0,
+    "resources": [
+      {
+        "code": "8507",
+        "desc": "Textured exterior paint",
+        "unit": "litre",
+        "qty": 3.28,
+        "rate": 240.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 1.56,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 7.02,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.46.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 164.7,
+    "resources": [
+      {
+        "code": "8505",
+        "desc": "Acrylic exterior paint",
+        "unit": "litre",
+        "qty": 1.67,
+        "rate": 170.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 1.56,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.47.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 161.15,
+    "resources": [
+      {
+        "code": "8506",
+        "desc": "Premium Acrylic exterior paint",
+        "unit": "litre",
+        "qty": 1.43,
+        "rate": 180.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 1.56,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.48.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 142.2,
+    "resources": [
+      {
+        "code": "8504",
+        "desc": "Multi surface paint",
+        "unit": "litre",
+        "qty": 1.25,
+        "rate": 255.0
+      },
+      {
+        "code": "8509",
+        "desc": "Special Primer (C.W.)",
+        "unit": "litre",
+        "qty": 0.75,
+        "rate": 140.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 1.56,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 7.02,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.48.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 130.25,
+    "resources": [
+      {
+        "code": "8504",
+        "desc": "Multi surface paint",
+        "unit": "litre",
+        "qty": 0.9,
+        "rate": 255.0
+      },
+      {
+        "code": "8509",
+        "desc": "Special Primer (C.W.)",
+        "unit": "litre",
+        "qty": 0.75,
+        "rate": 140.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 1.56,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 7.02,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.48.3",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 125.8,
+    "resources": [
+      {
+        "code": "8504",
+        "desc": "Multi surface paint",
+        "unit": "litre",
+        "qty": 0.9,
+        "rate": 255.0
+      },
+      {
+        "code": "8510",
+        "desc": "Metal Primer (U.G.)",
+        "unit": "litre",
+        "qty": 0.8,
+        "rate": 90.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 1.56,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 7.02,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "0837",
+        "desc": "Acrylic Exterior Primer",
+        "unit": "litre",
+        "qty": 0.9,
+        "rate": 100.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 1.56,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.45,
+        "rate": 679.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.45,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc.",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "ITEM",
+        "desc": "Silicone additives exterior paint",
+        "unit": "litre",
+        "qty": 1.43,
+        "rate": 270.0
+      }
+    ]
+  },
+  {
+    "code": "13.50.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 57.05,
+    "resources": [
+      {
+        "code": "0823",
+        "desc": "Pink primer (for wood)",
+        "unit": "litre",
+        "qty": 0.75,
+        "rate": 105.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.39,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.50.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 57.55,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Putty",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.39,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.50.3",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 50.7,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.24,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.24,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes,sand paper including sundries",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.50.4",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 27.2,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.39,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes,sand paper including",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.51.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 81.2,
+    "resources": [
+      {
+        "code": "0801",
+        "desc": "Silicon and acrylic emulsion",
+        "unit": "litre",
+        "qty": 1.8,
+        "rate": 130.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty etc",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.51.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 129.05,
+    "resources": [
+      {
+        "code": "0801",
+        "desc": "Silicon and acrylic emulsion",
+        "unit": "litre",
+        "qty": 2.88,
+        "rate": 130.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty etc",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.43,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.43,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 8.53,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 17.26,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.52.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 189.75,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Putty",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.39,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 5.46,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 10.66,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.52.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 189.4,
+    "resources": [
+      {
+        "code": "0821",
+        "desc": "Distemper primer",
+        "unit": "litre",
+        "qty": 0.84,
+        "rate": 70.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Materials for filling in holes and cracks",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.53.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 138.0,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.39,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.54.1",
+    "unit": "sqm",
+    "basis": 25.0,
+    "say": 48.25,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Soft Water",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 35.88,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 35.88,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.54.2",
+    "unit": "sqm",
+    "basis": 25.0,
+    "say": 48.05,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Soft Water",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 35.88,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 35.88,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.55.1",
+    "unit": "mtrs",
+    "basis": 30.0,
+    "say": 58.15,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.24,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.24,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "0828",
+        "desc": "Anticorrosive bituminous paint (black)",
+        "unit": "litre",
+        "qty": 0.95,
+        "rate": 100.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, sand paper etc",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Wire brushes for cleaning",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for delays",
+        "unit": "L.S.",
+        "qty": 61.1,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.55.2",
+    "unit": "mtrs",
+    "basis": 30.0,
+    "say": 86.7,
+    "resources": [
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 15.99,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0828",
+        "desc": "Anticorrosive bituminous paint (black)",
+        "unit": "litre",
+        "qty": 1.41,
+        "rate": 100.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 2.08,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, sand paper etc",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 11.96,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Wire brushes for cleaning",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for delays",
+        "unit": "L.S.",
+        "qty": 94.12,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.56.1",
+    "unit": "mtrs",
+    "basis": 30.0,
+    "say": 63.7,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.24,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.24,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, sand paper etc",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Wire brushes for cleaning",
+        "unit": "L.S.",
+        "qty": 11.96,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for delays",
+        "unit": "L.S.",
+        "qty": 66.43,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.56.2",
+    "unit": "mtrs",
+    "basis": 30.0,
+    "say": 94.85,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.65,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 15.99,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 2.08,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, sand paper etc",
+        "unit": "L.S.",
+        "qty": 7.93,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 10.01,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Wire brushes for cleaning",
+        "unit": "L.S.",
+        "qty": 17.81,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for delays",
+        "unit": "L.S.",
+        "qty": 101.4,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.57.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 44.5,
+    "resources": [
+      {
+        "code": "0859",
+        "desc": "Oil type wood preservative",
+        "unit": "litre",
+        "qty": 1.0,
+        "rate": 130.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes etc",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 3.9,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.58",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 292.0,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.59",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 50.3,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Lime",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "0324",
+        "desc": "Coal Tar",
+        "unit": "litre",
+        "qty": 2.8,
+        "rate": 30.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "0771",
+        "desc": "Kerosene oil",
+        "unit": "litre",
+        "qty": 0.5,
+        "rate": 50.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.43,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes etc",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.60.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 128.65,
+    "resources": [
+      {
+        "code": "0835",
+        "desc": "Plastic emulsion paint",
+        "unit": "litre",
+        "qty": 1.21,
+        "rate": 200.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.61.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 121.55,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "For filling holes and cracks with putty etc",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.62.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 177.15,
+    "resources": [
+      {
+        "code": "0823",
+        "desc": "Pink primer (for wood)",
+        "unit": "litre",
+        "qty": 0.75,
+        "rate": 105.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.39,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of paint and material",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.63.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 112.25,
+    "resources": [
+      {
+        "code": "0826",
+        "desc": "Aluminium paint",
+        "unit": "litre",
+        "qty": 0.8,
+        "rate": 150.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of paint and material",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty etc",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 11.96,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.64.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 130.05,
+    "resources": [
+      {
+        "code": "0827",
+        "desc": "Acid proof paint (chocolate or black)",
+        "unit": "litre",
+        "qty": 1.16,
+        "rate": 225.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of paint",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty etc",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.65.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 106.05,
+    "resources": [
+      {
+        "code": "0828",
+        "desc": "Anticorrosive bituminous paint (black)",
+        "unit": "litre",
+        "qty": 0.95,
+        "rate": 100.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.66.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 144.65,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty etc",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.67.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 182.4,
+    "resources": [
+      {
+        "code": "0856",
+        "desc": "Ordinary varnish",
+        "unit": "litre",
+        "qty": 0.7,
+        "rate": 100.0
+      },
+      {
+        "code": "0857",
+        "desc": "Superior copal varnish",
+        "unit": "litre",
+        "qty": 1.16,
+        "rate": 115.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty for repair to holes etc",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.67.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 183.25,
+    "resources": [
+      {
+        "code": "0856",
+        "desc": "Ordinary varnish",
+        "unit": "litre",
+        "qty": 0.7,
+        "rate": 100.0
+      },
+      {
+        "code": "0858",
+        "desc": "Superior spar varnish",
+        "unit": "litre",
+        "qty": 1.26,
+        "rate": 115.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Repair etc",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.68.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 351.15,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Pigment",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "White woolen cloth, putty",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sand paper cotton etc",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Lineseed oil",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 3.5,
+        "rate": 679.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.69.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 150.9,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.39,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Soap, brushes, cloth etc",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.70",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 72.85,
+    "resources": [
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Acetic acid soap, cloth etc",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Sundries including Carriage",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.71",
+    "unit": "letters",
+    "basis": 100.0,
+    "say": 4.7,
+    "resources": [
+      {
+        "code": "0829",
+        "desc": "Black Japan paint",
+        "unit": "litre",
+        "qty": 0.56,
+        "rate": 90.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting brushes, turpentine, stencil etc",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.72",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 896.75,
+    "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.144,
+        "rate": 4010.35
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 8.97,
+        "rate": 2.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.02,
+        "rate": 4940.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.04,
+        "rate": 1350.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.1,
+        "rate": 4940.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.08,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 24.44,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries soft brushes etc",
+        "unit": "L.S.",
+        "qty": 25.22,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.73.1",
+    "unit": "mtrs",
+    "basis": 30.0,
+    "say": 57.15,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of wood",
+        "unit": "L.S.",
+        "qty": 0.39,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.86,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Nails and cement mortar",
+        "unit": "L.S.",
+        "qty": 71.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.73.2",
+    "unit": "mtrs",
+    "basis": 30.0,
+    "say": 57.75,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of wood",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.86,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Nails and cement mortar",
+        "unit": "L.S.",
+        "qty": 71.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.74",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 129.65,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 215.28,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 28.6,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.75",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 101.1,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.76",
+    "unit": "mtrs",
+    "basis": 30.0,
+    "say": 86.75,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of timber",
+        "unit": "L.S.",
+        "qty": 38.98,
+        "rate": 2.0
+      },
+      {
+        "code": "0117",
+        "desc": "Assistant Fitter or 2nd class Fitter",
+        "unit": "day",
+        "qty": 0.46,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.86,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Nails and cement mortar",
+        "unit": "L.S.",
+        "qty": 71.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.77",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 83.75,
+    "resources": [
+      {
+        "code": "0368",
+        "desc": "White Cement",
+        "unit": "tonne",
+        "qty": 0.1,
+        "rate": 11200.0
+      }
+    ]
+  },
+  {
+    "code": "13.78",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 342.85,
+    "resources": [
+      {
+        "code": "0868",
+        "desc": "Premixed super white gypsum plaster.",
+        "unit": "kg",
+        "qty": 169.47,
+        "rate": 6.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 1.2,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.2,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.79",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 66.9,
+    "resources": []
+  },
+  {
+    "code": "13.80",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 14.58,
+    "resources": [
+      {
+        "code": "0824",
+        "desc": "Cement base wall care putty",
+        "unit": "kg",
+        "qty": 14.58,
+        "rate": 13.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 3.9,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.45,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 40.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.81.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 50.6,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Brushes, putty etc.",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Sundries including carriage",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.81.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 81.9,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Brushes, putty etc.",
+        "unit": "L.S.",
+        "qty": 11.57,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Sundries including carriage",
+        "unit": "L.S.",
+        "qty": 4.42,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.46,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.82.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 71.8,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "For filling holes and cracks with putty etc",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc.",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.82.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 106.8,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "For filling holes and cracks with putty etc",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc.",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.83.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 75.1,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc.",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.83.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 113.9,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc.",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.85.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 57.05,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Putty",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 0.39,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc.",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.85.3",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 60.0,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc.",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.86",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 205.5,
+    "resources": [
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.51,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sunderies",
+        "unit": "L.S.",
+        "qty": 11.7,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.87.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 16.75,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of lime",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0141",
+        "desc": "White Washer",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Indigo gum etc",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries ladders etc",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.87.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 10.25,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of lime",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0141",
+        "desc": "White Washer",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.03,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Indigo gum etc",
+        "unit": "L.S.",
+        "qty": 2.08,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries ladders etc",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.88",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 14.2,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.09,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Repair to scraches",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.89",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 49.55,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of distemper",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand-paper etc.",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 4.42,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.90.1",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 54.3,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Brushes, putty etc.",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Sundries including carriage",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.91",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 18.25,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scrapper, sand paper etc.",
+        "unit": "L.S.",
+        "qty": 6.24,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.92.1",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 71.05,
+    "resources": [
+      {
+        "code": "0845",
+        "desc": "Roofing paint for iron sheets in red colour",
+        "unit": "litre",
+        "qty": 0.46,
+        "rate": 120.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, brushes sand paper etc.",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.93.1",
+    "unit": "metres",
+    "basis": 30.0,
+    "say": 43.6,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carraige",
+        "unit": "L.S.",
+        "qty": 0.39,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 8.19,
+        "rate": 2.0
+      },
+      {
+        "code": "0828",
+        "desc": "Anticorrosive bituminous paint (black)",
+        "unit": "litre",
+        "qty": 0.73,
+        "rate": 100.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carraige",
+        "unit": "L.S.",
+        "qty": 1.04,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.41,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.41,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, sand paper etc",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.24,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Wire brushes for cleaning",
+        "unit": "L.S.",
+        "qty": 4.42,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for delays",
+        "unit": "L.S.",
+        "qty": 40.3,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.94.1",
+    "unit": "metres",
+    "basis": 30.0,
+    "say": 20.55,
+    "resources": [
+      {
+        "code": "0828",
+        "desc": "Anticorrosive bituminous paint (black)",
+        "unit": "litre",
+        "qty": 0.43,
+        "rate": 100.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.39,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, sand paper etc",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.24,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Wire brushes for cleaning",
+        "unit": "L.S.",
+        "qty": 4.42,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for delays",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.94.2",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 27.15,
+    "resources": [
+      {
+        "code": "0828",
+        "desc": "Anticorrosive bituminous paint (black)",
+        "unit": "litre",
+        "qty": 0.57,
+        "rate": 100.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, sand paper brushes etc.",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Wire brushes for cleaning",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for delay",
+        "unit": "L.S.",
+        "qty": 34.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.94.3",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 39.1,
+    "resources": [
+      {
+        "code": "0828",
+        "desc": "Anticorrosive bituminous paint (black)",
+        "unit": "litre",
+        "qty": 0.85,
+        "rate": 100.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.65,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.53,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.53,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, sand paper brushes etc.",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 11.96,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Wire brushes for cleaning",
+        "unit": "L.S.",
+        "qty": 7.14,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for delay",
+        "unit": "L.S.",
+        "qty": 40.3,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.95.1",
+    "unit": "metres",
+    "basis": 30.0,
+    "say": 45.15,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.39,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.19,
+        "rate": 2.0
+      },
+      {
+        "code": "0826",
+        "desc": "Aluminium paint",
+        "unit": "litre",
+        "qty": 0.61,
+        "rate": 150.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 1.04,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, sand paper etc",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.41,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.41,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 5.2,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Wire brushes for cleaning",
+        "unit": "L.S.",
+        "qty": 9.1,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for delays",
+        "unit": "L.S.",
+        "qty": 44.85,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.95.2",
+    "unit": "metres",
+    "basis": 30.0,
+    "say": 62.65,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.24,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.24,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "0826",
+        "desc": "Aluminium paint",
+        "unit": "litre",
+        "qty": 1.16,
+        "rate": 150.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, sand paper etc",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Wire brushes for cleaning",
+        "unit": "L.S.",
+        "qty": 11.96,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for delays",
+        "unit": "L.S.",
+        "qty": 66.43,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.95.3",
+    "unit": "metres",
+    "basis": 30.0,
+    "say": 93.35,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.65,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 15.99,
+        "rate": 2.0
+      },
+      {
+        "code": "0826",
+        "desc": "Aluminium paint",
+        "unit": "litre",
+        "qty": 1.72,
+        "rate": 150.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 2.08,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, sand paper etc",
+        "unit": "L.S.",
+        "qty": 7.93,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 10.01,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Wire brushes for cleaning",
+        "unit": "L.S.",
+        "qty": 17.81,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for delays",
+        "unit": "L.S.",
+        "qty": 101.4,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.96.1",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 21.75,
+    "resources": [
+      {
+        "code": "0826",
+        "desc": "Aluminium paint",
+        "unit": "litre",
+        "qty": 0.35,
+        "rate": 150.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, sand paper etc.",
+        "unit": "L.S.",
+        "qty": 0.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 2.08,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.28,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.28,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, sand paper brushes etc.",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.24,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Wire brushes for cleaning",
+        "unit": "L.S.",
+        "qty": 4.42,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for delay",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.96.2",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 27.95,
+    "resources": [
+      {
+        "code": "0826",
+        "desc": "Aluminium paint",
+        "unit": "litre",
+        "qty": 0.46,
+        "rate": 150.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, sand paper etc.",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, sand paper brushes etc.",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Wire brushes for cleaning",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for delay",
+        "unit": "L.S.",
+        "qty": 34.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.96.3",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 40.2,
+    "resources": [
+      {
+        "code": "0826",
+        "desc": "Aluminium paint",
+        "unit": "litre",
+        "qty": 0.68,
+        "rate": 150.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, sand paper etc.",
+        "unit": "L.S.",
+        "qty": 0.65,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 3.9,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.53,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.53,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, sand paper brushes etc.",
+        "unit": "L.S.",
+        "qty": 7.93,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 11.96,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Wire brushes for cleaning",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for delay",
+        "unit": "L.S.",
+        "qty": 40.3,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.97.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 33.9,
+    "resources": [
+      {
+        "code": "0859",
+        "desc": "Oil type wood preservative",
+        "unit": "litre",
+        "qty": 0.81,
+        "rate": 130.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.11,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes etc",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.98.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 84.65,
+    "resources": [
+      {
+        "code": "0835",
+        "desc": "Plastic emulsion paint",
+        "unit": "litre",
+        "qty": 0.73,
+        "rate": 200.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.99.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 79.95,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of paint and materials",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes sand paper etc.",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.100.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 73.25,
+    "resources": [
+      {
+        "code": "0826",
+        "desc": "Aluminium paint",
+        "unit": "litre",
+        "qty": 0.46,
+        "rate": 150.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of paint and material",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty etc",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.101.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 85.1,
+    "resources": [
+      {
+        "code": "0827",
+        "desc": "Acid proof paint (chocolate or black)",
+        "unit": "litre",
+        "qty": 0.7,
+        "rate": 225.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of paint",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty etc",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.102.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 70.95,
+    "resources": [
+      {
+        "code": "0828",
+        "desc": "Anticorrosive bituminous paint (black)",
+        "unit": "litre",
+        "qty": 0.57,
+        "rate": 100.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.103.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 176.85,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Linseed oil",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 1.76,
+        "rate": 679.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.104.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 76.3,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Caariage",
+        "unit": "L.S.",
+        "qty": 0.39,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Soap, brushes, cloth etc",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 4.42,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.105",
+    "unit": "letters",
+    "basis": 100.0,
+    "say": 3.0,
+    "resources": [
+      {
+        "code": "0829",
+        "desc": "Black Japan paint",
+        "unit": "litre",
+        "qty": 0.37,
+        "rate": 90.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting brushes, turpentine, stencil etc",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.106",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 72.45,
+    "resources": [
+      {
+        "code": "0829",
+        "desc": "Black Japan paint",
+        "unit": "litre",
+        "qty": 0.7,
+        "rate": 90.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty etc.",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc.",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.107.1",
+    "unit": "no",
+    "basis": 1.0,
+    "say": 75.1,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.107.2",
+    "unit": "no",
+    "basis": 1.0,
+    "say": 75.1,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.108.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 48.05,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Brushes, putty etc",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Sundries including carriage of material",
+        "unit": "L.S.",
+        "qty": 10.76,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.22,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.22,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.109.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 87.2,
+    "resources": [
+      {
+        "code": "8508",
+        "desc": "Primer for cement paint",
+        "unit": "litre",
+        "qty": 0.8,
+        "rate": 79.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 1.56,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.46,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.23,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.109.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 59.35,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 1.1,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.35,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 3.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.110.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 168.75,
+    "resources": [
+      {
+        "code": "8507",
+        "desc": "Textured exterior paint",
+        "unit": "litre",
+        "qty": 3.28,
+        "rate": 240.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 1.56,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.46,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.23,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.110.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 105.3,
+    "resources": [
+      {
+        "code": "8507",
+        "desc": "Textured exterior paint",
+        "unit": "litre",
+        "qty": 1.82,
+        "rate": 240.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.111.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 99.9,
+    "resources": [
+      {
+        "code": "8505",
+        "desc": "Acrylic exterior paint",
+        "unit": "litre",
+        "qty": 1.67,
+        "rate": 170.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.46,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.23,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 4.81,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.111.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 67.35,
+    "resources": [
+      {
+        "code": "8505",
+        "desc": "Acrylic exterior paint",
+        "unit": "litre",
+        "qty": 0.9,
+        "rate": 170.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.112.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 97.75,
+    "resources": [
+      {
+        "code": "8506",
+        "desc": "Premium Acrylic exterior paint",
+        "unit": "litre",
+        "qty": 1.43,
+        "rate": 180.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 1.04,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.46,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.23,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.112.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 66.95,
+    "resources": [
+      {
+        "code": "8506",
+        "desc": "Premium Acrylic exterior paint",
+        "unit": "litre",
+        "qty": 0.83,
+        "rate": 180.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.113.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 73.4,
+    "resources": [
+      {
+        "code": "0857",
+        "desc": "Superior copal varnish",
+        "unit": "litre",
+        "qty": 0.7,
+        "rate": 115.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Repair to the surface",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.113.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 73.85,
+    "resources": [
+      {
+        "code": "0858",
+        "desc": "Superior spar varnish",
+        "unit": "litre",
+        "qty": 0.75,
+        "rate": 115.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Repair etc",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper etc",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.114",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 110.75,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage charge of Machine & Marerial",
+        "unit": "L.S.",
+        "qty": 4.42,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.35,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.35,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 4.42,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "13.115",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 76.65,
+    "resources": [
+      {
+        "code": "0856",
+        "desc": "Ordinary varnish",
+        "unit": "litre",
+        "qty": 0.7,
+        "rate": 100.0
+      },
+      {
+        "code": "9999",
+        "desc": "Glue, putty etc",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting brushes, turpentine, stencil etc",
+        "unit": "L.S.",
+        "qty": 24.18,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      }
+    ]
+  }
+]

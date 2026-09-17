@@ -1,0 +1,1295 @@
+[
+  {
+    "code": "20.1.1",
+    "desc": "400 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2244.1,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 521.08,
+        "rate": 2.0
+      },
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 3000.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.1.2",
+    "desc": "450 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2735.65,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 392.7,
+        "rate": 2.0
+      },
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 3000.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.1.3",
+    "desc": "500 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3292.75,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 530.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 3000.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.1.4",
+    "desc": "550 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3601.45,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 371.88,
+        "rate": 2.0
+      },
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 3000.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.1.5",
+    "desc": "750 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 6181.15,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 573.57,
+        "rate": 2.0
+      },
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 3000.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.14,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.1.6",
+    "desc": "1000 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 10301.15,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 897.89,
+        "rate": 2.0
+      },
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 3000.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.16,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.1.7",
+    "desc": "1200 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 13457.45,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 733.37,
+        "rate": 2.0
+      },
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 3000.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.1.8",
+    "desc": "1500 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 19169.55,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1113.48,
+        "rate": 2.0
+      },
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 3000.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.2.1",
+    "desc": "450 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1806.15,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 230.69,
+        "rate": 2.0
+      },
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 3000.0
+      },
+      {
+        "code": "0018",
+        "desc": "Hire and running charges of loader",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 5000.0
+      },
+      {
+        "code": "0017",
+        "desc": "Hire and running charges of tipper",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 1700.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.2.2",
+    "desc": "500 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2123.95,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 87.95,
+        "rate": 2.0
+      },
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 3000.0
+      },
+      {
+        "code": "0017",
+        "desc": "Hire and running charges of tipper",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 1700.0
+      },
+      {
+        "code": "0018",
+        "desc": "Hire and running charges of loader",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 5000.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.2.3",
+    "desc": "600 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2911.1,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 317.43,
+        "rate": 2.0
+      },
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 3000.0
+      },
+      {
+        "code": "0017",
+        "desc": "Hire and running charges of tipper",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 1700.0
+      },
+      {
+        "code": "0018",
+        "desc": "Hire and running charges of loader",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 5000.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.2.4",
+    "desc": "750 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 4482.3,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 131.58,
+        "rate": 2.0
+      },
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 3000.0
+      },
+      {
+        "code": "0017",
+        "desc": "Hire and running charges of tipper",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 1700.0
+      },
+      {
+        "code": "0018",
+        "desc": "Hire and running charges of loader",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 5000.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.14,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 317.43,
+        "rate": 2.0
+      },
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 3000.0
+      },
+      {
+        "code": "0018",
+        "desc": "Hire and running charges of loader",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 5000.0
+      },
+      {
+        "code": "0017",
+        "desc": "Hire and running charges of tipper",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 1700.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 131.58,
+        "rate": 2.0
+      },
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 3000.0
+      },
+      {
+        "code": "0018",
+        "desc": "Hire and running charges of loader",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 5000.0
+      },
+      {
+        "code": "0017",
+        "desc": "Hire and running charges of tipper",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 1700.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.14,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 175.89,
+        "rate": 2.0
+      },
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 3000.0
+      },
+      {
+        "code": "0018",
+        "desc": "Hire and running charges of loader",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 5000.0
+      },
+      {
+        "code": "0017",
+        "desc": "Hire and running charges of tipper",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 1700.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.16,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 290.79,
+        "rate": 2.0
+      },
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 3000.0
+      },
+      {
+        "code": "0018",
+        "desc": "Hire and running charges of loader.",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 5000.0
+      },
+      {
+        "code": "0017",
+        "desc": "Hire and running charges of tipper",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 1700.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 593.48,
+        "rate": 2.0
+      },
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 3000.0
+      },
+      {
+        "code": "0018",
+        "desc": "Hire and running charges of loader",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 5000.0
+      },
+      {
+        "code": "0017",
+        "desc": "Hire and running charges of tipper",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 1700.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.3.1",
+    "desc": "300 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2387.4,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 410.92,
+        "rate": 2.0
+      },
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.03,
+        "rate": 3000.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.3.2",
+    "desc": "400 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2951.1,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 276.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 3000.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.3.3",
+    "desc": "450 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3287.3,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 194.81,
+        "rate": 2.0
+      },
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 3000.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.3.4",
+    "desc": "550 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3689.9,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 208.15,
+        "rate": 2.0
+      },
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 3000.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.4.1",
+    "desc": "300 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1931.85,
+    "resources": [
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 3000.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.4.2",
+    "desc": "400 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2183.65,
+    "resources": [
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 3000.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.4.3",
+    "desc": "450 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2335.5,
+    "resources": [
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 3000.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.4.4",
+    "desc": "550 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2558.2,
+    "resources": [
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane.",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 3000.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.5.1",
+    "desc": "400 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3056.3,
+    "resources": [
+      {
+        "code": "3.7",
+        "desc": "Rate as per SH: 3.7",
+        "unit": "cum",
+        "qty": 0.025,
+        "rate": 5345.55
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 442.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.5.2",
+    "desc": "450 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3853.8,
+    "resources": [
+      {
+        "code": "3.7",
+        "desc": "Rate as per SH: 3.7",
+        "unit": "cum",
+        "qty": 0.025,
+        "rate": 5345.55
+      },
+      {
+        "code": "9999",
+        "desc": "Wooden block @ 1 block per two piles",
+        "unit": "L.S.",
+        "qty": 442.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 1.08,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 10.78,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.5.3",
+    "desc": "500 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 4027.1,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Wooden block @ 1 block per two piles",
+        "unit": "L.S.",
+        "qty": 442.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.5.4",
+    "desc": "550 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 4593.1,
+    "resources": [
+      {
+        "code": "3.7",
+        "desc": "Rate as per SH: 3.7",
+        "unit": "cum",
+        "qty": 0.025,
+        "rate": 5345.55
+      },
+      {
+        "code": "9999",
+        "desc": "Wooden block @ 1 block per two piles",
+        "unit": "L.S.",
+        "qty": 442.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.5.5",
+    "desc": "750 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 8798.75,
+    "resources": [
+      {
+        "code": "3.7",
+        "desc": "Rate as per SH: 3.7",
+        "unit": "cum",
+        "qty": 0.025,
+        "rate": 5345.55
+      },
+      {
+        "code": "9999",
+        "desc": "Wooden block @ 1 block per two piles",
+        "unit": "L.S.",
+        "qty": 442.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.5.6",
+    "desc": "1000 mm dia piles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 12105.6,
+    "resources": [
+      {
+        "code": "3.7",
+        "desc": "Rate as per SH: 3.7",
+        "unit": "cum",
+        "qty": 0.025,
+        "rate": 5345.55
+      },
+      {
+        "code": "9999",
+        "desc": "Wooden block @ 1 block per two piles",
+        "unit": "L.S.",
+        "qty": 442.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "20.6.1",
+    "desc": "Single pile upto 50 tonne Safe capacity 20.6.1.1 Initial test (Test Load 2.5 times the Safe capacity)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 53517.5,
+    "resources": []
+  },
+  {
+    "code": "20.6.2",
+    "desc": "Single pile above 50 tonne and upto 100 tonne Safe capacity 20.6.2.1 Initial test (Test Load 2.5 times the Safe capacity)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 60207.2,
+    "resources": []
+  },
+  {
+    "code": "20.6.3",
+    "desc": "Group of two or more piles upto 50 tonne Safe capacity 20.6.3.1 Initial test (Test Load 2.5 times the Safe capacity)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 66896.9,
+    "resources": []
+  },
+  {
+    "code": "20.7.1",
+    "desc": "Single pile 20.7.1.1 Upto 50 tonne Safe capacity pile",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 20069.05,
+    "resources": []
+  },
+  {
+    "code": "20.7.2",
+    "desc": "Group of two or more piles 20.7.2.1 Upto 400 tonne Safe capacity of group",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 39469.15,
+    "resources": []
+  },
+  {
+    "code": "20.8.1",
+    "desc": "Upto 50 tonne capacity pile",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 20069.05,
+    "resources": []
+  },
+  {
+    "code": "20.8.2",
+    "desc": "Above 50 tonne and upto 100 tonne capacity pile",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 31575.35,
+    "resources": []
+  },
+  {
+    "code": "20.9",
+    "desc": "Integrity testing of Pile using Low Strain/ Sonic Integrity Test/ Sonic Echo Test method in accordance with IS 14893 including surface prepa",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 938.9,
+    "resources": [
+      {
+        "code": "0081",
+        "desc": "Pile Integrity testing equipment",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 3000.0
+      },
+      {
+        "code": "0160",
+        "desc": "Technician",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 775.0
+      },
+      {
+        "code": "0161",
+        "desc": "Helper (Technician)",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Reporting charges",
+        "unit": "L.S.",
+        "qty": 100.67,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Transportation and consumables etc.",
+        "unit": "L.S.",
+        "qty": 33.56,
+        "rate": 2.0
+      }
+    ]
+  }
+]

@@ -1,0 +1,3660 @@
+[
+  {
+    "code": "19.1.1",
+    "desc": "100 mm diameter",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 317.05,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.019,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.01,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.1.2",
+    "desc": "150 mm diameter",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 500.2,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.036,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.019,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.1.3",
+    "desc": "200 mm diameter",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 794.25,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.053,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.028,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.75,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 1.75,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 1.25,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.1.4",
+    "desc": "250 mm diameter",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1173.7,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.094,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.05,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 2.25,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 2.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 5.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.1.5",
+    "desc": "300 mm diameter",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1607.15,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.125,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.075,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 2.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 2.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.2.1",
+    "desc": "100 mm diameter S.W. pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.148,
+    "resources": []
+  },
+  {
+    "code": "19.2.2",
+    "desc": "150 mm diameter S.W. pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.181,
+    "resources": []
+  },
+  {
+    "code": "19.2.3",
+    "desc": "200 mm diameter S.W. pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.211,
+    "resources": []
+  },
+  {
+    "code": "19.2.4",
+    "desc": "250 mm diameter S.W. pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.244,
+    "resources": []
+  },
+  {
+    "code": "19.3.1",
+    "desc": "100 mm diameter S.W. pipe",
+    "unit": "metres",
+    "basis": 10.0,
+    "say": 70341.0,
+    "resources": []
+  },
+  {
+    "code": "19.3.2",
+    "desc": "150 mm diameter S.W. pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 113677.7,
+    "resources": []
+  },
+  {
+    "code": "19.3.3",
+    "desc": "200 mm diameter S.W. pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 133817.0,
+    "resources": []
+  },
+  {
+    "code": "19.3.4",
+    "desc": "250 mm diameter S.W. pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 155968.0,
+    "resources": []
+  },
+  {
+    "code": "19.3.5",
+    "desc": "300 mm diameter S.W. pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.18,
+    "resources": []
+  },
+  {
+    "code": "19.4.1",
+    "desc": "100x100 mm size P type 19.4.1.1 With common burnt clay F.P.S. (non modular) bricks of class designation 7.5",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2307.0,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 4.5,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 4.5,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.4.2",
+    "desc": "150 x 100 mm size P type 19.4.2.1 With common burnt clay F.P.S. (non modular) bricks of class designation 7.5",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2317.4,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 4.5,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 4.5,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.4.3",
+    "desc": "180x150 mm size P type 19.4.3.1 With common burnt clay F.P.S. (non modular) bricks of class designation 7.5",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2409.6,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 4.5,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 4.5,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.5.1",
+    "desc": "100 mm diameter",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 63.45,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.49,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "19.5.2",
+    "desc": "150 mm diameter",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 70.2,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.49,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.45,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "19.5.3",
+    "desc": "200 mm diameter",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 74.65,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.49,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.51,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "19.5.4",
+    "desc": "250 mm diameter",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 79.15,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.49,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.57,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "19.5.5",
+    "desc": "300 mm diameter",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 83.6,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.49,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.63,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "19.5.6",
+    "desc": "350 mm diameter",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 96.3,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.69,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "19.5.7",
+    "desc": "400 mm diameter",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 105.25,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.66,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "19.5.7",
+    "desc": "400 mm diameter",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 105.25,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.66,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "19.5.8",
+    "desc": "450 mm diameter",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 109.75,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.66,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.81,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "19.6.1",
+    "desc": "100 mm dia. R.C.C. pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 415.75,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.005,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.006,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.32,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.32,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.63,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.16,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.6.2",
+    "desc": "150 mm dia. R.C.C. pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 462.6,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.006,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.008,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.39,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.39,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.78,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.16,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.6.3",
+    "desc": "250 mm dia. R.C.C. pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 754.45,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.009,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.012,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.23,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.6.4",
+    "desc": "300 mm dia. R.C.C. pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 863.65,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.011,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.015,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.59,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.59,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.16,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.6.5",
+    "desc": "450 mm dia. R.C.C. pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1392.7,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.024,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.033,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.6.6",
+    "desc": "500 mm dia. R.C.C. pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1656.95,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.026,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.036,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.81,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.81,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.62,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.6.7",
+    "desc": "600 mm dia. R.C.C. pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1948.35,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.032,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.043,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.83,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.6.8",
+    "desc": "700 mm dia. R.C.C. pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2533.05,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.037,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.05,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.03,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 1.03,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.06,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.42,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.6.9",
+    "desc": "800 mm dia. R.C.C. pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3022.85,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.042,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.057,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.14,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 1.14,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.28,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.42,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.6.10",
+    "desc": "900 mm dia. R.C.C. pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.049,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.049,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.066,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.25,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 1.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.6.11",
+    "desc": "1000 mm dia. R.C.C. pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 4800.35,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.055,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.074,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.36,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 1.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.33,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.6.12",
+    "desc": "1100 mm dia. R.C.C. pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 5393.75,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.061,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.082,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.47,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 1.47,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.3,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.6.13",
+    "desc": "1200 mm dia. R.C.C. pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 6046.8,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.068,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.092,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.59,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 1.59,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 8.67,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.7.1",
+    "desc": "Inside size 90x80 cm and 45 cm deep including C.I. cover with frame (light duty) 455x610 mm internal dimensions, total weight of cover and f",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.43,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 679.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of C.I. cover & frame",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 679.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of C.I. cover & frame",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.7.2",
+    "desc": "Inside size 120x90 cm and 90 cm deep including C.I. cover with frame (medium duty) 500 mm internal diameter, total weight of cover and frame",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.55,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 679.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of C.I. cover & frame",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 16.64,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 679.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of C.I. cover & frame",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 16.64,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.7.3",
+    "desc": "Inside size 120x90 cm and 90 cm deep including C.I. cover with frame (heavy duty) 560 mm internal diameter, total weight of cover and frame ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.55,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 679.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of C.I. cover & frame",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 20.28,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 679.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of C.I. cover & frame",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 20.28,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.8.1",
+    "desc": "Size 90x80 cm 19.8.1.1 With common burnt clay F.P.S. (non modular) bricks of class designation 7.5",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.99,
+    "resources": []
+  },
+  {
+    "code": "19.8.2",
+    "desc": "Size 120x90 cm 19.8.2.1 With common burnt clay F.P.S. (non modular) bricks of class designation 7.5",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1.18,
+    "resources": []
+  },
+  {
+    "code": "19.9.1",
+    "desc": "0.91 m deep with S.F.R.C. cover and frame (heavy duty, HD-20 grade designation) 560 mm internal diameter conforming to I.S. 12592, total wei",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.53,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 679.0
+      },
+      {
+        "code": "9977",
+        "desc": "CARRIAGE",
+        "unit": "L.S.",
+        "qty": 6.89,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 16.9,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 679.0
+      },
+      {
+        "code": "9977",
+        "desc": "CARRIAGE",
+        "unit": "L.S.",
+        "qty": 6.89,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 16.9,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.10.1",
+    "desc": "With common burnt clay F.P.S. (non modular) bricks of class designation 7.5",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 6448.4,
+    "resources": []
+  },
+  {
+    "code": "19.10.2",
+    "desc": "With Sewer bricks conforming IS : 4885",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 6474.15,
+    "resources": []
+  },
+  {
+    "code": "19.11.1",
+    "desc": "1.68 m deep with SFRC Cover and frame (heavy duty HD-20 grade designation) 560 mm internal diameter conforming to I.S. 12592, total weight o",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1.18,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 679.0
+      },
+      {
+        "code": "9977",
+        "desc": "CARRIAGE",
+        "unit": "L.S.",
+        "qty": 6.89,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 16.9,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 679.0
+      },
+      {
+        "code": "9977",
+        "desc": "CARRIAGE",
+        "unit": "L.S.",
+        "qty": 6.89,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 16.9,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.12.1",
+    "desc": "With common burnt clay F.P.S. (non modular) bricks of class designation 7.5",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 8368.4,
+    "resources": []
+  },
+  {
+    "code": "19.12.2",
+    "desc": "With Sewer bricks conforming IS : 4885",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 8402.0,
+    "resources": []
+  },
+  {
+    "code": "19.13.1",
+    "desc": "2.30 m deep with SFRC Cover and frame (heavy duty HD- 20 grade designation) 560 mm internal diameter conforming to I.S. 12592, total weight ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3.68,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 679.0
+      },
+      {
+        "code": "9977",
+        "desc": "CARRIAGE",
+        "unit": "L.S.",
+        "qty": 6.89,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 16.9,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 679.0
+      },
+      {
+        "code": "9977",
+        "desc": "CARRIAGE",
+        "unit": "L.S.",
+        "qty": 6.89,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 16.9,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.14.1",
+    "desc": "With common burnt clay F.P.S. (non modular) bricks of class designation 7.5",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 19514.3,
+    "resources": []
+  },
+  {
+    "code": "19.14.2",
+    "desc": "With Sewer bricks conforming IS : 4885",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 19601.35,
+    "resources": []
+  },
+  {
+    "code": "19.15.1",
+    "desc": "With 20x20 mm square bar",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 422.2,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage, painting, and other sundries",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "19.15.2",
+    "desc": "With 20 mm diameter round bar",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 383.7,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage,painting, and other sundries",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "19.16",
+    "desc": "Providing orange colour safety foot rest of minimum 6 mm thick plastic encapsulated as per IS : 10910, on 12 mm dia steel bar conforming to ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 463.05,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage and other sundries",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "19.17.1",
+    "desc": "With 20x20 mm square bar",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 516.4,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage,painting, and other sundries",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "19.17.2",
+    "desc": "With 20 mm diameter round bar",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 477.9,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage,painting, and other sundries",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "19.18.1",
+    "desc": "455x610 mm rectangular C.I. cover (light duty) the weight of the cover to be not less than 23 kg",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1326.25,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of C.I. Manhole cover",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "19.18.2",
+    "desc": "500 mm diameter C.I. cover (medium duty) the weight of the cover to be not less than 58 kg",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3202.9,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of C.I. cover",
+        "unit": "L.S.",
+        "qty": 13.47,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "19.18.3",
+    "desc": "560 mm diameter C.I. cover (heavy duty) the weight of the cover to be not less than 108 kg",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 6822.4,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of C.I. cover",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "19.19.1",
+    "desc": "L D- 2.5 19.19.1.1 Rectangular shape 600x450 mm internal dimensions",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.04,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of R.C.C cover with frame",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of manhole cover",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of manhole cover",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.19.2",
+    "desc": "M D - 10 19.19.2.1 Square shape 450 mm internal dimension",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.04,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of manhole cover",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 16.64,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of manhole cover",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 16.64,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.19.3",
+    "desc": "H D - 20 19.19.3.1 Circular shape 560 mm internal diameter",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.03,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of manhole cover",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 20.28,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.19.4",
+    "desc": "EHD - 35 19.19.4.1 Circular shape 560 mm internal dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.03,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of manhole cover",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 20.28,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.20",
+    "desc": "Supplying and fixing C.I. cover 300x300 mm without frame for gully trap (standard pattern) the weight of cover to be not less than 4.5 kg",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 667.8,
+    "resources": [
+      {
+        "code": "9988",
+        "desc": "Carriage for cover",
+        "unit": "L.S.",
+        "qty": 2.7,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.03,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "19.21.1",
+    "desc": "For pipes 100 to 250 mm diameter",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.01,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Add for delay sundries etc.",
+        "unit": "L.S.",
+        "qty": 20.15,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.21.2",
+    "desc": "For pipes 250 to 300 mm diameter",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.02,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Add for delay sundries etc.",
+        "unit": "L.S.",
+        "qty": 20.67,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.21.3",
+    "desc": "For pipes 350 to 450 mm diameter",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.03,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.16,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.16,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Add for delay sundries etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.22.1",
+    "desc": "100 mm dia sand cast iron drop connection",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.21,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of pipe",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Sundries including carriage of bends etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.7,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "19.22.2",
+    "desc": "150 mm dia sand cast iron drop connection",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.28,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of pipe",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.85,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.85,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "19.23.1",
+    "desc": "For 100 mm dia sand cast iron drop connection",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.16,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "19.23.2",
+    "desc": "For 150 mm dia sand cast iron drop connection",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.2,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.09,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "19.24.1",
+    "desc": "Rectangular manhole 90x80 cm and 45 cm deep",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.43,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Removal of C.I. Cover with frame",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.24.2",
+    "desc": "Rectangular manhole 120x90 cm and 90 cm deep",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.55,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Removal of C.I. Cover with frame",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.24.3",
+    "desc": "Rectangular arch type manhole 140x90 cm and 2.45 m deep",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2.54,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Removal of C.I. Cover with frame",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Removal of M.S foot rest",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.24.4",
+    "desc": "Circular manhole 122 cm diameter and 1.68 m deep",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1.18,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Removal of M.S. foot rests",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.25.1",
+    "desc": "Rectangular manhole 90x80 cm and beyond 45 cm depth",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.99,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Removing of M.S. foot rests",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.25.2",
+    "desc": "Rectangular manhole 120x90 cm and beyond 90 cm depth",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1.18,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Removing of M.S. foot rests",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.25.3",
+    "desc": "Rectangular arch type manhole 140x90 cm and beyond 2.45 m depth (up to 4.25 m depth)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2.54,
+    "resources": []
+  },
+  {
+    "code": "19.25.4",
+    "desc": "Circular manhole 122 cm diameter and beyond 1.68 m depth (up to 2.29 m depth)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1.18,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Removal of SFRC cover",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Removal of M.S. foot rests",
+        "unit": "L.S.",
+        "qty": 8.09,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.24.4",
+    "desc": "Rate as per Item No.19.24.4 of SH: DRAINAGE each -1.00 4624.55 -4624.55 A TOTAL 959.93 W Add 1 % Water charges on \"W-A\" 0.30 TOTAL 960.24 X",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1590.55,
+    "resources": []
+  },
+  {
+    "code": "19.26.1",
+    "desc": "Rectangular manhole 90x80 cm with rectangular cover 600 x 450 mm of grade LD - 2.5",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.17,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Removal of R.C.C cover and frame",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.26.2",
+    "desc": "Rectangular manhole 120x90 cm with circular cover 500 mm dia of grade MD - 10",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.26,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Removal of R.C.C cover and frame",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 16.64,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.26.3",
+    "desc": "Rectangular manhole 120x90 cm with circular cover 560 mm dia of grade HD - 20",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.24,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Removal of R.C.C cover and frame",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 20.28,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.26.4",
+    "desc": "Circular manhole 140 cm dia with circular cover 600 mm dia of grade EHD - 35",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.02,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Removal of R.C.C cover and frame",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 20.28,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.27.1",
+    "desc": "With common burnt clay F.P.S. (non modular) bricks of class designation 7.5",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.18,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of R.C.C. grating",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Fixing R.C.C. grating",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.28.1",
+    "desc": "With common burnt clay F.P.S. (non modular) bricks of class designation 7.5",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.43,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Fixing and carriage of R.C.C. grating",
+        "unit": "L.S.",
+        "qty": 20.67,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.29.1",
+    "desc": "With common burnt clay F.P.S. (non modular) bricks of class designation 7.5",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.29,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of R.C.C. grating",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.30.1",
+    "desc": "Inside dimensions 455x610 mm and 45 cm deep for single pipe line : 19.30.1.1 With common burnt clay F.P.S. (non modular) bricks of class des",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.2,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of C.I.cover and frame",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.30.2",
+    "desc": "Inside dimensions 500x700 mm and 45 cm deep for pipe line with one or two inlets : 19.30.2.1 With common burnt clay F.P.S. (non modular) bri",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.22,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of C.I. Cover and frame",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.30.3",
+    "desc": "Inside dimensions 600x 850 mm and 45 cm deep for pipe line with three or more inlets : 19.30.3.1 With common burnt clay F.P.S. (non modular)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.26,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of C.I. Cover and frame",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.31.1",
+    "desc": "For 455x610 mm size 19.31.1.1 With common burnt clay F.P.S. (non modular) bricks of class designation 7.5",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3979.1,
+    "resources": []
+  },
+  {
+    "code": "19.31.2",
+    "desc": "For 500x700 mm size 19.31.2.1 With common burnt clay F.P.S. (non modular) bricks of class designation 7.5",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 5686.3,
+    "resources": []
+  },
+  {
+    "code": "19.31.3",
+    "desc": "For 600x850 mm size 19.31.3.1 With common burnt clay F.P.S. (non modular) bricks of class designation 7.5",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 6626.55,
+    "resources": []
+  },
+  {
+    "code": "19.32.1",
+    "desc": "With common burnt clay F.P.S. (non modular) bricks of class designation 7.5",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 145.0,
+    "resources": [
+      {
+        "code": "0362",
+        "desc": "Brick bats",
+        "unit": "cum",
+        "qty": 2.74,
+        "rate": 450.0
+      },
+      {
+        "code": "9999",
+        "desc": "Single matting 2.5x2.5 m = 6.25 sqm",
+        "unit": "L.S.",
+        "qty": 112.14,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "19.33",
+    "desc": "Constructing soak pit 1.20x1.20x1.20 m filled with brickbats including S.W. drain pipe 100 mm diameter and 1.20 m long complete as per stand",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2608.0,
+    "resources": [
+      {
+        "code": "0362",
+        "desc": "Brick bats",
+        "unit": "cum",
+        "qty": 1.73,
+        "rate": 450.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 25.84,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "19.34.1",
+    "desc": "100 mm dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 365.65,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of trap",
+        "unit": "L.S.",
+        "qty": 1.04,
+        "rate": 2.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.0013,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.001,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.34.2",
+    "desc": "150 mm dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 494.75,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of trap",
+        "unit": "L.S.",
+        "qty": 2.08,
+        "rate": 2.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.0019,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.0014,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.03,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.03,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.03,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.35.1",
+    "desc": "450 mm dia RCC pipes.",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 2323.9,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.012,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.017,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.375,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.375,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.41,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.35.2",
+    "desc": "600 mm dia RCC pipes.",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 2984.55,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.016,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.022,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.46,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.46,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.83,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.35.3",
+    "desc": "900 mm dia RCC pipes.",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 4695.35,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.025,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.033,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.625,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.625,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.35.4",
+    "desc": "1000 mm dia RCC pipes. (Laying by manual/ machanical means)",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 5816.3,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.028,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.037,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.68,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.68,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.33,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.35.5",
+    "desc": "1200 mm dia RCC pipes. (Laying by manual/ machanical means)",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 7726.75,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.034,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.046,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.795,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.795,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 8.67,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.35.6",
+    "desc": "1800 mm dia RCC pipes. (Laying by manual/ machenical means)",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 14056.15,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.049,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.055,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.15,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 1.15,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 13.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.36.1",
+    "desc": "450 mm dia RCC pipes.",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 2641.0,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.012,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.017,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.375,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.375,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.41,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.36.2",
+    "desc": "600 mm dia RCC pipes.",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 3406.0,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.016,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.022,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.46,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.46,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.83,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.36.3",
+    "desc": "900 mm dia RCC pipes.",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 6493.55,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.025,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.033,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.625,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.625,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.36.4",
+    "desc": "1000 mm dia RCC pipes.(Laying by manual/ machanical means)",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 8064.05,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.028,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.037,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.68,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.68,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.33,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.36.5",
+    "desc": "1200 mm dia RCC pipes. (Laying by manual/ machanical means)",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 9693.5,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.034,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.046,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.795,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.795,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 8.67,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "19.36.6",
+    "desc": "1800 mm dia RCC pipes. (Laying by manual/ machanical means)",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 19571.0,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.049,
+        "rate": 4940.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.055,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.15,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 13.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 617.0
+      }
+    ]
+  }
+]

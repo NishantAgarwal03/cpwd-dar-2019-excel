@@ -1,0 +1,4347 @@
+[
+  {
+    "code": "26.1",
+    "desc": "Providing & fixing in position Phenol bonded Bamboowood flooring with planks of sizes 14mm thick, 1800mm length (minimum) and 130 mm wide(mi",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 5279.1,
+    "resources": [
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 100.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.2",
+    "desc": "Providing & fixing in position Phenol bonded Bamboo wood in wall skirting with planks of sizes 14mm thick, 1900mm length (minimum) and 85mm ",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 5162.75,
+    "resources": [
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 20.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.3",
+    "desc": "Providing & fixing in position Phenol bonded Bamboowood wall cladding at all height with planks of sizes 10mm thick, 1800mm length (minimum)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 5559.4,
+    "resources": [
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 100.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.4",
+    "desc": "Providing & fixing in position Phenol bonded Bamboowood panelled or panelled and glazed shutters for doors windows, clerestorey windows with",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 5460.25,
+    "resources": [
+      {
+        "code": "0156",
+        "desc": "Carpenter (average)",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries T&P etc.",
+        "unit": "L.S.",
+        "qty": 5.62,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.5",
+    "desc": "Providing & fixing in position Phenol bonded Bamboo wood panelling of 10mm thick, in 25 to 40 mm thick panelled or panelled & glazed shutter",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3561.7,
+    "resources": [
+      {
+        "code": "0156",
+        "desc": "Carpenter (average)",
+        "unit": "day",
+        "qty": 0.57,
+        "rate": 709.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 4.42,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.6",
+    "desc": "Providing & fixing in position 65 mm thick factory made door frame of Phenol bonded Bamboo wood (superior class, interior use), in approved ",
+    "unit": "cudm",
+    "basis": 33.0,
+    "say": 254.0,
+    "resources": [
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.72,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 558.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of bolts and washers",
+        "unit": "L.S.",
+        "qty": 11.58,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 56.78,
+        "rate": 2.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 9.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 9.71,
+        "rate": 2.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 738.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 558.0
+      },
+      {
+        "code": "8615",
+        "desc": "Hanger rod 4mm thick",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 8.0
+      },
+      {
+        "code": "8616",
+        "desc": "Adjustment clip 85x30x0.8mm",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 5.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of grid materials",
+        "unit": "L.S.",
+        "qty": 89.28,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 187.95,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 28.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 23.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and screws",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and screws",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and screws",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and screws",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and screws",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.7",
+    "desc": "Providing and fixing 50 mm thick extruded polystyrene rigid insulation board of required size between cavity wall, complying with ISO 4898:2",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 807.2,
+    "resources": [
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 738.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.8",
+    "desc": "Providing and fixing 50 mm thick extruded polystyrene rigid insulation board of required size underdeck on ceiling surface, complying with I",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 871.2,
+    "resources": [
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.9",
+    "desc": "Providing and fixing factory made solid Foam uPVC profile for kitchen cabinet frame (45 x 20 mm) of approved shade, quality and make. The pr",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 377.0,
+    "resources": [
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.10",
+    "desc": "Providing and fixing factory made Kitchen Cabinet Shutter/Partition 20 mm nominal thickness of approved shade, quality and make, made from r",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 4535.3,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 20.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.11",
+    "desc": "Providing and fixing concealed hinge of approved quality for 19-20mm thick door with stainless steel screws complete :",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 105.25,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.14,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.09,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.12",
+    "desc": "Supplying & laying of bi-axial extruded high modulus polypropylene geogrid coforming to MORTH SPECIFICATION for base/sub-base reinforcement ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 171.35,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.13",
+    "desc": "Supplying & laying of bi-axial extruded high modulus polypropylene geogrid coforming to MORTH SPECIFICATION for base/sub-base reinforcement ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 193.45,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.14",
+    "desc": "Supplying & laying of bi-axial extruded high modulus polypropylene geogrid coforming to MORTH SPECIFICATION for base/sub-base reinforcement ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 296.45,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.15",
+    "desc": "Supplying & laying of bi-axial extruded high modulus polypropylene geogrid coforming to MORTH SPECIFICATION for base/sub-base reinforcement ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 428.9,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.16",
+    "desc": "Supplying & laying of drainage composite for use behind walls, between two different fills, alongside drains of road, below concrete lining ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 804.2,
+    "resources": [
+      {
+        "code": "8960",
+        "desc": "Geosynthetic Drainage Composite",
+        "unit": "sqm",
+        "qty": 300.0,
+        "rate": 530.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.17",
+    "desc": "Supplying & laying of drainage composite for use behind walls, between two different fills, alongside drains of road, below concrete lining ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 951.35,
+    "resources": [
+      {
+        "code": "8961",
+        "desc": "Geosynthetic Drainage Composite",
+        "unit": "sqm",
+        "qty": 300.0,
+        "rate": 630.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.18.1",
+    "desc": "Ultimate tensile strength- 100 kN/m",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 347.95,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.19.1",
+    "desc": "0.71 mm thick, the profile detail width 1044/920 mm, cover width 1000/875 mm.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 976.05,
+    "resources": [
+      {
+        "code": "8977",
+        "desc": "Aluminium profile sheet 0.71 mm",
+        "unit": "sqm",
+        "qty": 230.12,
+        "rate": 600.0
+      },
+      {
+        "code": "9999",
+        "desc": "Carriage of sheets",
+        "unit": "L.S.",
+        "qty": 104.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Carriage of bolts and nuts, washers etc.",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 39.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 2.34,
+        "rate": 738.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 9.34,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 9.34,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.19.2",
+    "desc": "0.91 mm thick, the profile detail width 1044/920 mm, cover width 1000/875 mm.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1239.55,
+    "resources": [
+      {
+        "code": "8978",
+        "desc": "Aluminium profile sheet 0.91 mm",
+        "unit": "sqm",
+        "qty": 230.12,
+        "rate": 785.0
+      },
+      {
+        "code": "9999",
+        "desc": "Carriage of sheets",
+        "unit": "L.S.",
+        "qty": 104.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Carriage of bolts and nuts, washers etc.",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 39.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 2.34,
+        "rate": 738.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 9.34,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 9.34,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.22.1",
+    "desc": "With 15 mm thick tegular edged light weight calcium silicate false ceiling tiles.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1688.8,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Scaffolding etc.",
+        "unit": "L.S.",
+        "qty": 498.65,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials etc.",
+        "unit": "L.S.",
+        "qty": 237.48,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 310.7,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 28.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 23.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.23.1",
+    "desc": "With 15 mm thick integral densified micro edge light weight calcium silicate false ceiling tiles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1952.7,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Scaffolding etc.",
+        "unit": "L.S.",
+        "qty": 498.65,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials etc.",
+        "unit": "L.S.",
+        "qty": 237.48,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 310.7,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 28.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 23.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.24.1",
+    "desc": "With 15 mm thick fully perforated square/butt edge light weight calcium silicate panels/ tiles",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2736.8,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage of materials etc.",
+        "unit": "L.S.",
+        "qty": 52.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 6.57,
+        "rate": 738.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 2.847,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 7.665,
+        "rate": 558.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 1.095,
+        "rate": 679.0
+      }
+    ]
+  },
+  {
+    "code": "26.25",
+    "desc": "Providing and fixing 15 mm thick false ceiling tiles at all heights with integral densified calcium silicate reinforced with fibre and natur",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1379.1,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 14.95,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 2.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 31.07,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 31.07,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.26.1",
+    "desc": "With semi perforated 12 mm thick micro tegular edged GRG false ceiling tiles.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1572.85,
+    "resources": [
+      {
+        "code": "8211",
+        "desc": "40mm SS with plastic rawl plugs 100",
+        "unit": "nos",
+        "qty": 1.0,
+        "rate": 215.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding etc.",
+        "unit": "L.S.",
+        "qty": 498.65,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials etc.",
+        "unit": "L.S.",
+        "qty": 237.48,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 310.7,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 28.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 23.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.26.2",
+    "desc": "With fully perforated 12 mm thick micro tegular edged or 10 mm thick square edged GRG false ceiling tiles.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1699.3,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Scaffolding etc.",
+        "unit": "L.S.",
+        "qty": 498.65,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials etc.",
+        "unit": "L.S.",
+        "qty": 237.48,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 310.7,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 28.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 23.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.27.1",
+    "desc": "With 16 mm thick beveled tegular mineral fibre false ceiling tile (NRC 0.55 to 0.6",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2000.85,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries i.e. scaffolding etc",
+        "unit": "L.S.",
+        "qty": 187.95,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material etc.",
+        "unit": "L.S.",
+        "qty": 89.35,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 28.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 23.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.27.2",
+    "desc": "With 20 mm thick beveled tegular mineral fibre false ceiling tile (NRC 0.7)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2296.85,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries i.e. scaffolding etc",
+        "unit": "L.S.",
+        "qty": 187.95,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material etc.",
+        "unit": "L.S.",
+        "qty": 89.35,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 28.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 23.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.27.3",
+    "desc": "With 16 mm thick beveled tegular mineral fibre Anti-microbial false ceiling tile confirming to ISO 5 (class 100 ) specifications",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2128.25,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries i.e. scaffolding etc",
+        "unit": "L.S.",
+        "qty": 187.95,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material etc.",
+        "unit": "L.S.",
+        "qty": 89.35,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 28.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 23.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.28.1",
+    "desc": "75mm average thickness",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 287.1,
+    "resources": [
+      {
+        "code": "0157",
+        "desc": "Machine Operator",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.28.2",
+    "desc": "50mm average thickness",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 194.6,
+    "resources": [
+      {
+        "code": "0157",
+        "desc": "Machine Operator",
+        "unit": "day",
+        "qty": 0.134,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.28.3",
+    "desc": "25 mm average thickness",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 96.5,
+    "resources": [
+      {
+        "code": "0157",
+        "desc": "Machine Operator",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.03,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.29.1",
+    "desc": "Bars upto 12 mm diameter",
+    "unit": "sqm",
+    "basis": 3.0,
+    "say": 5.9,
+    "resources": [
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.162,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.162,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, brush, sand paper",
+        "unit": "L.S.",
+        "qty": 3.162,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.98,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.29.2",
+    "desc": "Bars above 12 mm diameter",
+    "unit": "sqm",
+    "basis": 3.0,
+    "say": 11.8,
+    "resources": [
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.162,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.162,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Putty, brush, sand paper",
+        "unit": "L.S.",
+        "qty": 3.162,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.98,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.30.1",
+    "desc": "Upto and including 12mm dia.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 113.05,
+    "resources": [
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.31.1",
+    "desc": "SBR Polymer (@10% of cement weight) modified cementitious bond coat @ 2.2 kg cement per sqm of surface area mixed with specified proportion ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 117.3,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.022,
+        "rate": 4940.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries (8.06/2=4.03)",
+        "unit": "L.S.",
+        "qty": 4.03,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.31.2",
+    "desc": "Epoxy bonding adhesive having coverage 2.20 sqm/kg of approved make",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 388.5,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Cost of brushes etc.",
+        "unit": "L.S.",
+        "qty": 8.4,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.32.1",
+    "desc": "12 mm average thickness.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 304.1,
+    "resources": [
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.32.2",
+    "desc": "25 mm average thickness in 2 layers.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 471.0,
+    "resources": [
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.94,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.02,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 1.01,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.61,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.32.3",
+    "desc": "50 mm average thickness in 3 layers.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 942.0,
+    "resources": [
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 1.88,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 2.04,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 2.02,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 25.22,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.33.1",
+    "desc": "50mm thick in Grade M 25 with cement content not less than 330 kg per cum",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 539.9,
+    "resources": []
+  },
+  {
+    "code": "26.33.2",
+    "desc": "75mm thick in Grade M 25 with cement content not less than 330 kg per cum",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 809.8,
+    "resources": []
+  },
+  {
+    "code": "26.34.1",
+    "desc": "50mm thick in Grade M 25 with cement content not less than 330 kg per cum",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 539.9,
+    "resources": []
+  },
+  {
+    "code": "26.34.2",
+    "desc": "75mm thick in Grade M 25 with cement content not less than 330 kg per cum",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 809.8,
+    "resources": []
+  },
+  {
+    "code": "26.34.3",
+    "desc": "100mm thick in Grade M 25 with cement content not less than 330 kg per cum",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 1079.75,
+    "resources": []
+  },
+  {
+    "code": "26.35.1",
+    "desc": "Stirrer mixed Acrylic Polymer of approved make @ 2% of weight of cement used) modified Cement slurry made with non shrink compound in concre",
+    "unit": "kg",
+    "basis": 100.0,
+    "say": 97.3,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.1,
+        "rate": 4940.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 1.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0122",
+        "desc": "Foreman",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0157",
+        "desc": "Nozzleman",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0157",
+        "desc": "Pump Operator",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "26.35.2",
+    "desc": "Stirrer mixed SBR Polymer (of approved make) modified Cement slurry made with Shrinkage Compensating Cement in concrete/RCC work.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 101.55,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement (OPC-43 grade)",
+        "unit": "tonne",
+        "qty": 0.1,
+        "rate": 4940.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 1.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0122",
+        "desc": "Foreman",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0157",
+        "desc": "Nozzle Operator",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0157",
+        "desc": "Pump Operator",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "26.35.3",
+    "desc": "Epoxy injection grout in concrete/RCC work of approved make",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 792.3,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 558.0
+      },
+      {
+        "code": "0157",
+        "desc": "Nozzle Operator",
+        "unit": "day",
+        "qty": 0.03,
+        "rate": 738.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries (gloves gogles etc.)",
+        "unit": "L.S.",
+        "qty": 5.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.36.1",
+    "desc": "Wooven PVC cloth",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 45.5,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Fixing double scaffolding outside",
+        "unit": "L.S.",
+        "qty": 11.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.37",
+    "desc": "Cleaning of exposed concrete surface of sticking material including loose and foreign material by sand blasting with coarse sand followed by",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 289.9,
+    "resources": [
+      {
+        "code": "0090",
+        "desc": "Hire charges of compressor",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 420.0
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 1350.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 10.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.38.1",
+    "desc": "25mm thick in Grade M 25 with cement content not less than 330 kg per cum",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 635.65,
+    "resources": [
+      {
+        "code": "0157",
+        "desc": "Operator (Pile/ Special machine)",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 738.0
+      },
+      {
+        "code": "0154",
+        "desc": "Nozzel man/ gun man",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 679.0
+      },
+      {
+        "code": "0161",
+        "desc": "Helper (Technician)",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.38.2",
+    "desc": "50mm thick in Grade M 25 with cement content not less than 330 kg per cum",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 1009.7,
+    "resources": [
+      {
+        "code": "0157",
+        "desc": "Operator (Pile/ Special machine)",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 738.0
+      },
+      {
+        "code": "0154",
+        "desc": "Nozzel man/ gun man",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 679.0
+      },
+      {
+        "code": "0161",
+        "desc": "Helper (Technician)",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.38.3",
+    "desc": "75mm thick in Grade M 25 with cement content not less than 330 kg per cum",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 1445.3,
+    "resources": [
+      {
+        "code": "0157",
+        "desc": "Operator (Pile/ Special machine)",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 738.0
+      },
+      {
+        "code": "0154",
+        "desc": "Nozzel man/ gun man",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 679.0
+      },
+      {
+        "code": "0161",
+        "desc": "Helper (Technician)",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.39",
+    "desc": "Providing and inserting 12mm dia galvanised steel injection nipple in honey comb area and along crack line including drilling of holes of re",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 188.0,
+    "resources": [
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.40",
+    "desc": "Providing and fixing hard drawn steel wire fabric of size 75 x25 mm mesh or other suitable size wire mesh to be fixed & firmly anchored to t",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 801.7,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage at site",
+        "unit": "L.S.",
+        "qty": 5.61,
+        "rate": 2.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.41",
+    "desc": "Designing, providing, installing and fixing factory finished custom designed cold form Light Gauge Steel Framed super structure comprising o",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 217.5,
+    "resources": [
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 1.685,
+        "rate": 2.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.03,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.42",
+    "desc": "Providing and fixing of external wall system on Light gauge steel frame work with . Outer face having 6mm thick heavy duty fiber cement boar",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3418.95,
+    "resources": [
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.0132,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.0132,
+        "rate": 558.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.026,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.026,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.43",
+    "desc": "Providing and fixing internal wall panels on Light gauge steel frame work with 12.5mm thick gypsum plaster board conforming IS 2095:2011 fix",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2118.95,
+    "resources": [
+      {
+        "code": "0241",
+        "desc": "12.5 mm thick Gypsum plaster board",
+        "unit": "sqm",
+        "qty": 22.0,
+        "rate": 170.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 1.11,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.33,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.44",
+    "desc": "Providing and fixing in all exterior face panels breathable vapour barrier underneath the cement fiber board as per National Building Code 2",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 293.95,
+    "resources": [
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.22,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.22,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.45",
+    "desc": "Supplying and installation of moisture resistant/fire resistant 6 mm thick Heavy duty fiber cement board (High pressure steam cured) conform",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1179.3,
+    "resources": [
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 1.11,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.33,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.46",
+    "desc": "Providing and fixing in position, 200 mm thick factory made Expanded Polystyrene Core (EPS Core) wall panels consisting of EPS core sandwich",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3854.6,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "For fixing wall with foundation",
+        "unit": "L.S.",
+        "qty": 312.15,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.47",
+    "desc": "Providing and fixing in position, 230mm thick factory made Expanded Polystyrene Core (EPS Core) roof/floor panels made of 3 mm dia G.I. wire",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 4144.95,
+    "resources": []
+  },
+  {
+    "code": "26.48",
+    "desc": "Providing and fixing of costomized Aluminium formwork for monolithic construction RCC members with a repetitive usage of 100 times using gra",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 202.45,
+    "resources": [
+      {
+        "code": "8038",
+        "desc": "Pin-50 = 936 x0.75/100 = 7.02",
+        "unit": "each",
+        "qty": 7.02,
+        "rate": 15.0
+      },
+      {
+        "code": "8039",
+        "desc": "Pin-127 = 8 x0.75/100 = 0.06",
+        "unit": "each",
+        "qty": 0.06,
+        "rate": 55.0
+      },
+      {
+        "code": "8040",
+        "desc": "Wedge = 944 x0.75/100 = 7.08",
+        "unit": "each",
+        "qty": 7.08,
+        "rate": 14.0
+      },
+      {
+        "code": "8042",
+        "desc": "Polythene Sleeve 90 x 150mm",
+        "unit": "each",
+        "qty": 1.26,
+        "rate": 3.0
+      },
+      {
+        "code": "8043",
+        "desc": "Polythene Roll - 150mm Long.",
+        "unit": "each",
+        "qty": 1.26,
+        "rate": 6.0
+      },
+      {
+        "code": "8044",
+        "desc": "Vertical Soldier -1100mm = 4 x0.75/100",
+        "unit": "each",
+        "qty": 0.03,
+        "rate": 365.0
+      },
+      {
+        "code": "8045",
+        "desc": "Wall Attached Bracket 600x1000mm",
+        "unit": "each",
+        "qty": 0.06,
+        "rate": 985.0
+      },
+      {
+        "code": "8048",
+        "desc": "Tie Rod for Bracket - 500mm",
+        "unit": "each",
+        "qty": 0.09,
+        "rate": 115.0
+      },
+      {
+        "code": "8049",
+        "desc": "Anchor Wing Nut Ø100 mm",
+        "unit": "each",
+        "qty": 0.1275,
+        "rate": 64.0
+      },
+      {
+        "code": "8051",
+        "desc": "PVC Pipe Ø20mm - 150mm long",
+        "unit": "each",
+        "qty": 0.09,
+        "rate": 5.0
+      },
+      {
+        "code": "8052",
+        "desc": "PVC Cone = 10 x0.75/100 = 0.075",
+        "unit": "each",
+        "qty": 0.075,
+        "rate": 5.0
+      },
+      {
+        "code": "8053",
+        "desc": "Bolt+Nut - 16 x 80 mm = 10 x0.75/100",
+        "unit": "each",
+        "qty": 0.075,
+        "rate": 30.0
+      },
+      {
+        "code": "8054",
+        "desc": "Flat Washer Ø16, 3mm thik",
+        "unit": "each",
+        "qty": 0.12,
+        "rate": 5.0
+      },
+      {
+        "code": "8055",
+        "desc": "Bolt+Nut - 16 x 30 mm = 50 x0.75/100",
+        "unit": "each",
+        "qty": 0.375,
+        "rate": 18.0
+      },
+      {
+        "code": "8056",
+        "desc": "Door Spacer 45x45x5 -1135mm Long",
+        "unit": "each",
+        "qty": 0.015,
+        "rate": 360.0
+      },
+      {
+        "code": "8057",
+        "desc": "Door Spacer 45x45x5 - 985mm long",
+        "unit": "each",
+        "qty": 0.015,
+        "rate": 315.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0117",
+        "desc": "Assistant Fitter or 2nd class Fitter",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Shuttering oil",
+        "unit": "L.S.",
+        "qty": 220.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cleaning of shuttering",
+        "unit": "L.S.",
+        "qty": 440.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.49.1",
+    "desc": "Non load bearing panels 50mm thick of required size",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1166.85,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason Grade -1",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.49.2",
+    "desc": "Non load bearing panels 60mm thick of required size",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1321.0,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason Grade -1",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.49.3",
+    "desc": "Non load bearing panels 75mm thick of required size",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1605.45,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason Grade -1",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.49.4",
+    "desc": "Non load bearing panels 90mm thick of required size",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1915.25,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason Grade -1",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.49.5",
+    "desc": "Non load bearing panels 100mm thick of required size",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2258.55,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason Grade -1",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.50.1",
+    "desc": "Non load bearing panels 50mm thick of required size (minimum 4mm thick fibre cement board)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1317.95,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason Grade -1",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      }
+    ]
+  },
+  {
+    "code": "26.50.2",
+    "desc": "Non load bearing panels 75mm thick of required size (minimum 5mm thick fibre cement board)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1535.7,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason Grade -1",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      }
+    ]
+  },
+  {
+    "code": "26.51",
+    "desc": "Supplying of standard quality GFRG panel of 124 mm thickness with modular cavities purchased from GFRG panel manufacturing plant in the coun",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1305.6,
+    "resources": []
+  },
+  {
+    "code": "26.52",
+    "desc": "Erection of GFRG Panels in walls in all floors using suitable crane as per instructions of Engineer-in-Charge, as per cutting drawings and s",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 266.55,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (Brick layer) 1st class",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (Brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (Brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (Brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (Grade 1)",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0037",
+        "desc": "Mobile crane",
+        "unit": "day",
+        "qty": 0.375,
+        "rate": 7500.0
+      }
+    ]
+  },
+  {
+    "code": "26.53",
+    "desc": "Filling of empty cavities (as shown in the structural design drawing) with quarry dust mixed with 5% cement (by volume). After initial infil",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2346.15,
+    "resources": [
+      {
+        "code": "0002",
+        "desc": "Mixer hire charges",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 800.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.54",
+    "desc": "Laying of GFRG panel as roof / floor slab panel and staircase panel using suitable crane as per instructions of Engineer-in-Charge, includin",
+    "unit": "sqm",
+    "basis": 9.0,
+    "say": 285.15,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (Brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (Brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (Brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0037",
+        "desc": "Mobile crane",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 7500.0
+      }
+    ]
+  },
+  {
+    "code": "26.55",
+    "desc": "Supplying and fixing 10 Gauge weld mesh of size 100mm x100 mm for floor/roof slab concrete screed over the micro beams as reinforcement. The",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 233.7,
+    "resources": [
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.56",
+    "desc": "Application of ZMB 60/equivalent solution (100 Kg ZMB 60/equivalent, 1 litre ZMB Nano Thinner, 20 litre water & 1 Litre Zycoprime/equivalent",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 286.0,
+    "resources": [
+      {
+        "code": "8516",
+        "desc": "ZMB 60 / equivalent",
+        "unit": "kg",
+        "qty": 100.0,
+        "rate": 105.0
+      },
+      {
+        "code": "8517",
+        "desc": "ZMB Thinner",
+        "unit": "litre",
+        "qty": 1.0,
+        "rate": 205.0
+      },
+      {
+        "code": "8518",
+        "desc": "Zycoprime / equivalent",
+        "unit": "litre",
+        "qty": 1.0,
+        "rate": 210.0
+      },
+      {
+        "code": "9999",
+        "desc": "Water, brush, technical supervision etc.",
+        "unit": "L.S.",
+        "qty": 78.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (Brick layer) 1st class",
+        "unit": "day",
+        "qty": 20.333,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "26.57",
+    "desc": "After erection of GFRG wall panels, seal all GFRG wall joints with paper tape temporarily. Water proofing treatment of vertical joints with ",
+    "unit": "metre",
+    "basis": 3.0,
+    "say": 81.25,
+    "resources": [
+      {
+        "code": "8519",
+        "desc": "Zycosil /equivalent",
+        "unit": "litre",
+        "qty": 0.02609,
+        "rate": 1800.0
+      },
+      {
+        "code": "8518",
+        "desc": "Zycoprime / equivalent",
+        "unit": "litre",
+        "qty": 0.05217,
+        "rate": 210.0
+      },
+      {
+        "code": "9999",
+        "desc": "water, syringe, etc.",
+        "unit": "L.S.",
+        "qty": 16.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (Brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "26.58",
+    "desc": "Filling of joints between RCC plinth beam / floor slab and wall panel of external walls, toilet / bath room / wet areas walls on all floor a",
+    "unit": "metre",
+    "basis": 48.0,
+    "say": 39.6,
+    "resources": [
+      {
+        "code": "8520",
+        "desc": "Elastobar / equivalent",
+        "unit": "kg",
+        "qty": 1.0,
+        "rate": 300.0
+      },
+      {
+        "code": "0367",
+        "desc": "OPC Cement",
+        "unit": "tonne",
+        "qty": 0.0015,
+        "rate": 4940.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (Brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "26.59",
+    "desc": "Water proofing treatment of Vertical joints (of external side and internal side) between door frame, window & ventilator frames (on all four",
+    "unit": "sqm",
+    "basis": 40.0,
+    "say": 40.4,
+    "resources": [
+      {
+        "code": "8519",
+        "desc": "Zycosil / equivalent",
+        "unit": "litre",
+        "qty": 1.0,
+        "rate": 1800.0
+      },
+      {
+        "code": "8518",
+        "desc": "Zycoprime / equivalent",
+        "unit": "litre",
+        "qty": 2.0,
+        "rate": 210.0
+      },
+      {
+        "code": "9999",
+        "desc": "Water, technical supervision, etc.",
+        "unit": "L.S.",
+        "qty": 6.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (Brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.28571,
+        "rate": 738.0
+      },
+      {
+        "code": "8520",
+        "desc": "Elastobar / equivalent",
+        "unit": "kg",
+        "qty": 1.0,
+        "rate": 300.0
+      },
+      {
+        "code": "0367",
+        "desc": "OPC Cement",
+        "unit": "tonne",
+        "qty": 0.0015,
+        "rate": 4940.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (Brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "26.60",
+    "desc": "Water proofing treatment of RCC sunshade with Zycosil/equivalent water proofing Solution (1 litre of Zycosil/equivalent & 20 litres of water",
+    "unit": "sqm",
+    "basis": 40.0,
+    "say": 131.5,
+    "resources": [
+      {
+        "code": "8519",
+        "desc": "Zycosil / equivalent",
+        "unit": "litre",
+        "qty": 1.0,
+        "rate": 1800.0
+      },
+      {
+        "code": "8518",
+        "desc": "Zycoprime /equivalent",
+        "unit": "litre",
+        "qty": 2.0,
+        "rate": 210.0
+      },
+      {
+        "code": "9999",
+        "desc": "Water, technical supervision, etc.",
+        "unit": "L.S.",
+        "qty": 7.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 2.5,
+        "rate": 679.0
+      }
+    ]
+  },
+  {
+    "code": "26.61",
+    "desc": "In-filling / sealing of joint between RCC lintel cum sunshade and wall (on external side) in all floors by pushing in Grout RW/equivalent in",
+    "unit": "sqm",
+    "basis": 40.0,
+    "say": 40.4,
+    "resources": [
+      {
+        "code": "8519",
+        "desc": "Zycosil / equivalent",
+        "unit": "litre",
+        "qty": 1.0,
+        "rate": 1800.0
+      },
+      {
+        "code": "8518",
+        "desc": "Zycoprime / equivalent",
+        "unit": "litre",
+        "qty": 2.0,
+        "rate": 210.0
+      },
+      {
+        "code": "9999",
+        "desc": "Water, technical supervision, etc.",
+        "unit": "L.S.",
+        "qty": 6.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (Brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.28571,
+        "rate": 738.0
+      },
+      {
+        "code": "8520",
+        "desc": "Elastobar / equivalent",
+        "unit": "kg",
+        "qty": 1.0,
+        "rate": 300.0
+      },
+      {
+        "code": "0367",
+        "desc": "OPC Cement",
+        "unit": "tonne",
+        "qty": 0.0015,
+        "rate": 4940.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (Brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "26.62",
+    "desc": "Designing, Providing, installing and fixing factory finished customed design pregalvanized high tensile steel joists manufactured from G350 ",
+    "unit": "kgs",
+    "basis": 212.816,
+    "say": 139.65,
+    "resources": [
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 1.064,
+        "rate": 738.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 1.596,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.128,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.63",
+    "desc": "Providing and fixing special adjustable lockbars of mild steel E-250 to support the temporary plywood for work between joists during constru",
+    "unit": "kgs",
+    "basis": 298.75,
+    "say": 20.55,
+    "resources": [
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 1.49,
+        "rate": 738.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 2.24,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.99,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.64.1",
+    "desc": "Suspended floors, roofs, landings, balconies and access platform.",
+    "unit": "sqm",
+    "basis": 13.5,
+    "say": 87.95,
+    "resources": [
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.65",
+    "desc": "Providing and fixing roofing consist of 0.8 mm thick galvanized steel deck sheet confirming to IS 277:1992 used as permanent shuttering over",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 1451.7,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Nails/Tagged screws",
+        "unit": "L.S.",
+        "qty": 138.7,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Labour for fixing shear stud",
+        "unit": "L.S.",
+        "qty": 462.4,
+        "rate": 2.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.108,
+        "rate": 738.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.432,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.432,
+        "rate": 558.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.66",
+    "desc": "Providing and fixing in position, 130 mm thick factory made Expanded Polystyrene Core (EPS Core) wall panels consisting of EPS core sandwich",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2318.9,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "For fixing wall with foundation",
+        "unit": "L.S.",
+        "qty": 312.15,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.67",
+    "desc": "Providing and fixing of external thermal insulation and composite system with First layer of self-extinguishing type Expanded Polystyrene (E",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3366.6,
+    "resources": [
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.68.1",
+    "desc": "Cement mortar 1:6 (1 cement : 6 coarse sand)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 5808.25,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.69.1",
+    "desc": "Cement mortar 1:6 (1 cement : 6 coarse sand)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 7590.9,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.8,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 22.36,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.70.1",
+    "desc": "Cement mortar 1:4(1 cement : 4 coarse sand)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 695.4,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.45,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.45,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.55,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.71.1",
+    "desc": "Cement mortar 1:4 (1 cement : 4 coarse sand)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 853.75,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.29,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.72",
+    "desc": "Providing and laying 60mm thick factory made cement concrete paver block of approved shape and colour of M -30 grade made of C&D waste by bl",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 748.6,
+    "resources": [
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.5,
+        "rate": 1350.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.15,
+        "rate": 900.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.1",
+    "desc": "Concrete Grade-M-40 (cement content 400 kg ) SUB HEAD : 26- NEW TECHNOLOGIES AND MATERIALS 1970 26.73.1.1 100 mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1152.35,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Hollow core bed cost",
+        "unit": "L.S.",
+        "qty": 1301.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0031",
+        "desc": "Steam curing by using boiler /Heater",
+        "unit": "cum",
+        "qty": 10.8,
+        "rate": 500.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cutting, marking, lifting & transportation",
+        "unit": "L.S.",
+        "qty": 578.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hollow core bed cost",
+        "unit": "L.S.",
+        "qty": 1301.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0031",
+        "desc": "Steam curing by using boiler /Heater",
+        "unit": "cum",
+        "qty": 12.96,
+        "rate": 500.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cutting, marking, lifting & transportation",
+        "unit": "L.S.",
+        "qty": 578.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hollow core bed cost",
+        "unit": "L.S.",
+        "qty": 1301.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0031",
+        "desc": "Steam curing by using boiler /Heater",
+        "unit": "cum",
+        "qty": 16.2,
+        "rate": 500.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cutting, marking, lifting & transportation",
+        "unit": "L.S.",
+        "qty": 578.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hollow core bed cost",
+        "unit": "L.S.",
+        "qty": 1301.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0031",
+        "desc": "Steam curing by using boiler /Heater",
+        "unit": "cum",
+        "qty": 20.16,
+        "rate": 500.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cutting, marking, lifting & transportation",
+        "unit": "L.S.",
+        "qty": 578.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hollow core bed cost",
+        "unit": "L.S.",
+        "qty": 1301.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0031",
+        "desc": "Steam curing by using boiler /Heater",
+        "unit": "cum",
+        "qty": 25.2,
+        "rate": 500.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cutting, marking, lifting & transportation",
+        "unit": "L.S.",
+        "qty": 578.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hollow core bed cost",
+        "unit": "L.S.",
+        "qty": 1301.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0031",
+        "desc": "Steam curing by using boiler /Heater",
+        "unit": "cum",
+        "qty": 30.24,
+        "rate": 500.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cutting, marking, lifting & transportation",
+        "unit": "L.S.",
+        "qty": 578.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hollow core bed cost",
+        "unit": "L.S.",
+        "qty": 1301.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0031",
+        "desc": "Steam curing by using boiler /Heater",
+        "unit": "cum",
+        "qty": 35.28,
+        "rate": 500.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cutting, marking, lifting & transportation",
+        "unit": "L.S.",
+        "qty": 578.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hollow core bed cost",
+        "unit": "L.S.",
+        "qty": 1301.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0031",
+        "desc": "Steam curing by using boiler /Heater",
+        "unit": "cum",
+        "qty": 40.32,
+        "rate": 500.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cutting, marking, lifting & transportation",
+        "unit": "L.S.",
+        "qty": 578.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.2",
+    "desc": "Extra for using M-50 (Cement content 425 kg) instead of M-40 26.73.2.1 100mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 17.3,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.27,
+        "rate": 4940.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.324,
+        "rate": 4940.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.405,
+        "rate": 4940.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.504,
+        "rate": 4940.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.63,
+        "rate": 4940.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.756,
+        "rate": 4940.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.882,
+        "rate": 4940.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 1.008,
+        "rate": 4940.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.3",
+    "desc": "Extra for using M-60 (Cement content 440 kg) instead of M-40 26.73.3.1 100mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 27.7,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.432,
+        "rate": 4940.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.518,
+        "rate": 4940.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.648,
+        "rate": 4940.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.806,
+        "rate": 4940.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 1.008,
+        "rate": 4940.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 1.21,
+        "rate": 4940.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 1.411,
+        "rate": 4940.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 1.613,
+        "rate": 4940.0
+      }
+    ]
+  },
+  {
+    "code": "26.74.1",
+    "desc": "Concrete grade M-35 (Cement content 370 kgs)",
+    "unit": "Cum",
+    "basis": 1.26,
+    "say": 14554.65,
+    "resources": [
+      {
+        "code": "0155",
+        "desc": "Mason (Average)",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0157",
+        "desc": "Operator",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (Grade 1)",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 738.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.74.2",
+    "desc": "Extra for using M-40 (Cement content 400 kg) instead of M-35",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 230.9,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.03,
+        "rate": 4940.0
+      }
+    ]
+  },
+  {
+    "code": "26.74.3",
+    "desc": "Extra for using M-50 (Cement content 425 kg) instead of M-35",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 423.3,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.055,
+        "rate": 4940.0
+      }
+    ]
+  },
+  {
+    "code": "26.74.4",
+    "desc": "Extra for using M-60 (Cement content 440 kg) instead of M-35",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 538.75,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.07,
+        "rate": 4940.0
+      }
+    ]
+  },
+  {
+    "code": "26.75",
+    "desc": "Providing & laying in position Prestressing steel strands (low relaxation) on hollow core bed by using mechanical pulling arrangement like R",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1740.0,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Strand cutting by cutting saw machine",
+        "unit": "L.S.",
+        "qty": 555.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cost of wedge",
+        "unit": "L.S.",
+        "qty": 617.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 617.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 617.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (Grade-1)",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0157",
+        "desc": "Operators",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0032",
+        "desc": "Stressing Machine (jack with pump)",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 11500.0
+      },
+      {
+        "code": "0034",
+        "desc": "Cutting Saw Machine",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 1350.0
+      },
+      {
+        "code": "0030",
+        "desc": "Hire charges of Generator 250 KVA",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 2500.0
+      },
+      {
+        "code": "0036",
+        "desc": "Bed master (Pulling strands)",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 3000.0
+      }
+    ]
+  },
+  {
+    "code": "26.76.1",
+    "desc": "Lead within 15km",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 444.05,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "wooden battens for tranporatation",
+        "unit": "L.S.",
+        "qty": 57.8,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "sundries",
+        "unit": "L.S.",
+        "qty": 220.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.76.2",
+    "desc": "Add/Deduct over item 26.76.1 for every additional lead of 5 km",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 97.2,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "sundries",
+        "unit": "L.S.",
+        "qty": 220.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.77.1",
+    "desc": "Prestressed hollow core Slab up to 200 mm thickness",
+    "unit": "Sqm",
+    "basis": 150.0,
+    "say": 160.85,
+    "resources": [
+      {
+        "code": "0044",
+        "desc": "Cost for crane upto 40 tonne capacity",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 8000.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire charges of props & Misc",
+        "unit": "L.S.",
+        "qty": 434.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.77.2",
+    "desc": "Prestressed hollow core slab above 200 mm up to 400 mm thickness",
+    "unit": "Sqm",
+    "basis": 120.0,
+    "say": 277.15,
+    "resources": [
+      {
+        "code": "0067",
+        "desc": "Cost for crane upto 80 tonne capacity",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 15000.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire charges of props & Misc",
+        "unit": "L.S.",
+        "qty": 347.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.77.3",
+    "desc": "Solid concrete wall elements",
+    "unit": "Cum",
+    "basis": 18.0,
+    "say": 2147.55,
+    "resources": [
+      {
+        "code": "0072",
+        "desc": "Cost for crane (50 MT) duration 01 day",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 8500.0
+      },
+      {
+        "code": "9999",
+        "desc": "Shifting of elements",
+        "unit": "L.S.",
+        "qty": 434.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Forman",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0116",
+        "desc": "rigger",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 8.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.78.1",
+    "desc": "Sealant 25mmx10mm at joints",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 137.0,
+    "resources": [
+      {
+        "code": "8654",
+        "desc": "Masking tape",
+        "unit": "metre",
+        "qty": 2.0,
+        "rate": 1.95
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding, hire charge etc.",
+        "unit": "L.S.",
+        "qty": 2.87,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.87,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.79.1",
+    "desc": "2mm thick",
+    "unit": "nos",
+    "basis": 100.0,
+    "say": 23.65,
+    "resources": [
+      {
+        "code": "0246",
+        "desc": "2 mm thick sim pad",
+        "unit": "each",
+        "qty": 100.0,
+        "rate": 10.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 5.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (Grade-1)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 10.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.79.2",
+    "desc": "5 mm thick",
+    "unit": "nos",
+    "basis": 100.0,
+    "say": 30.35,
+    "resources": [
+      {
+        "code": "0247",
+        "desc": "5 mm thick sim pad",
+        "unit": "each",
+        "qty": 100.0,
+        "rate": 15.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 5.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (Grade-1)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 10.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.79.3",
+    "desc": "10 mm thick",
+    "unit": "nos",
+    "basis": 100.0,
+    "say": 43.7,
+    "resources": [
+      {
+        "code": "0248",
+        "desc": "10 mm thick sim pad",
+        "unit": "each",
+        "qty": 100.0,
+        "rate": 25.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (Grade-1)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "26.80.1",
+    "desc": "Stirrer mixed cementitious grout (non shrink) of approved make in dowel tubes / Shear keys / Joints of precast members.",
+    "unit": "kgs",
+    "basis": 250.0,
+    "say": 74.25,
+    "resources": [
+      {
+        "code": "0155",
+        "desc": "Masson (Average)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 709.0
+      },
+      {
+        "code": "0161",
+        "desc": "Helper (Technician)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "26.81",
+    "desc": "Providing and fixing Scaffolding net of required width made of high density Polyethylene UV stabilized knitted on warp knitting machines hav",
+    "unit": "sqm",
+    "basis": 300.0,
+    "say": 24.2,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 3.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries for tying the net",
+        "unit": "L.S.",
+        "qty": 10.0,
+        "rate": 2.0
+      }
+    ]
+  }
+]

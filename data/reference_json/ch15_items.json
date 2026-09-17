@@ -1,0 +1,3244 @@
+[
+  {
+    "code": "15.1",
+    "desc": "Demolishing lime concrete manually/ by mechanical means and disposal of material within 50 metres lead as per direction of Engineer- in-char",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 607.5,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.44,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.37,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.04,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.2.1",
+    "desc": "Nominal concrete 1:3:6 or richer mix (i/c equivalent design mix)",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 1737.45,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.59,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.72,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 4.81,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.2.2",
+    "desc": "Nominal concrete 1:4:8 or leaner mix (i/c equivalent design mix)",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 1072.8,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.88,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.55,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.95,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.3",
+    "desc": "Demolishing R.C.C. work manually/ by mechanical means including stacking of steel bars and disposal of unserviceable material within 50 metr",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 2534.7,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.65,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.72,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 7.02,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.4",
+    "desc": "Demolishing R.B. work manually/ by mechanical means including stacking of steel bars and disposal of unserviceable material within 50 metres",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 2267.15,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.12,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 4.68,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.5",
+    "desc": "Extra for cutting reinforcement bars manually/ by mechanical means in R.C.C. or R.B. work (Payment shall be made on the cross sectional area",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 863.35,
+    "resources": [
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.6",
+    "desc": "Extra for scrapping, cleaning and straightening reinforcement from R.C.C. or R.B. work.",
+    "unit": "Nos",
+    "basis": 10.0,
+    "say": 6.7,
+    "resources": [
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.7.1",
+    "desc": "In mud mortar",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 503.0,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.37,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.04,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.7.2",
+    "desc": "In lime mortar with old mughal bricks",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 1271.95,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.24,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.46,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.04,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.7.3",
+    "desc": "In lime mortar",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 607.5,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.44,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.37,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.04,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.7.4",
+    "desc": "In cement mortar",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 1469.9,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.06,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.47,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.8.1",
+    "desc": "From brick work in mud mortar",
+    "unit": "Nos",
+    "basis": 1000.0,
+    "say": 3354.55,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.6,
+        "rate": 558.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 679.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.8.2",
+    "desc": "From brick work in lime mortar",
+    "unit": "Nos",
+    "basis": 1000.0,
+    "say": 3886.35,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.8,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 679.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.97,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.8.3",
+    "desc": "From brick work in cement mortar",
+    "unit": "Nos",
+    "basis": 1000.0,
+    "say": 4880.9,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 1.24,
+        "rate": 679.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.9.1",
+    "desc": "In lime mortar",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 826.45,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.61,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.49,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.95,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.9.2",
+    "desc": "In cement mortar",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 1754.3,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.3,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.04,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.10.1",
+    "desc": "In lime mortar",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 1045.05,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.78,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.61,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.10.2",
+    "desc": "In cement mortar",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 2052.9,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.55,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.19,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.11.1",
+    "desc": "In lime mortar",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 345.45,
+    "resources": [
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.11.2",
+    "desc": "In cement mortar",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 495.8,
+    "resources": [
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.12.1",
+    "desc": "Of area 3 sq. metres and below",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 274.5,
+    "resources": [
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 558.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 679.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.12.2",
+    "desc": "Of area beyond 3 sq. metres",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 375.65,
+    "resources": [
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.13,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 679.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.13.1",
+    "desc": "Of area 3 sq. metres and below",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 106.55,
+    "resources": [
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.13.2",
+    "desc": "Of area beyond 3 sq. metres",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 140.7,
+    "resources": [
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.14.1",
+    "desc": "Of sectional area 40 square centimetres and above",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 3345.9,
+    "resources": [
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.14.2",
+    "desc": "Of sectional area below 40 square centimetres",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 13.4,
+    "resources": [
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.15.1",
+    "desc": "Of sectional area 40 square centimetres and above",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 441.5,
+    "resources": [
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.15.2",
+    "desc": "Of sectional area below 40 square centimetres",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 1.25,
+    "resources": [
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.008,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.39,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.16.1",
+    "desc": "Of sectional area 40 square centimetres and above",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 636.25,
+    "resources": [
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.16.2",
+    "desc": "Of sectional area below 40 square centimetres",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 2.5,
+    "resources": [
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.39,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.17.1",
+    "desc": "R.S. Joists",
+    "unit": "quintal",
+    "basis": 1.0,
+    "say": 2.45,
+    "resources": [
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 679.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.17.2",
+    "desc": "Channels, angles, tees and flats",
+    "unit": "quintal",
+    "basis": 1.0,
+    "say": 1.7,
+    "resources": [
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 679.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.18",
+    "desc": "Dismantling steel work in built up sections in angles, tees, flats and channels including all gusset plates, bolts, nuts, cutting rivets, we",
+    "unit": "quintal",
+    "basis": 1.0,
+    "say": 4.15,
+    "resources": [
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 679.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.19",
+    "desc": "Dismantling steel work manually/ by mechanical means in built up sections without dismembering and stacking within 50 metres lead as per dir",
+    "unit": "quintal",
+    "basis": 1.0,
+    "say": 2.75,
+    "resources": [
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.20",
+    "desc": "Extra for dismantling trusses, rafters, purlins etc. of steel work for every additional span of one metre or part thereof beyond 10 metres",
+    "unit": "quintal",
+    "basis": 1.0,
+    "say": 0.6,
+    "resources": [
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.39,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.21",
+    "desc": "Extra for dismantling trusses, rafters, purlins etc. of steel work for every additional height of one metre or part thereof beyond 5 metres.",
+    "unit": "quintal",
+    "basis": 1.0,
+    "say": 0.6,
+    "resources": [
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.39,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.22",
+    "desc": "Extra for marking of structural steel work required to be re-erected.",
+    "unit": "quintal",
+    "basis": 1.0,
+    "say": 3.45,
+    "resources": [
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "15.23.1",
+    "desc": "For thickness of tiles 10 mm to 25 mm",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 54.85,
+    "resources": [
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.24,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.23.2",
+    "desc": "For thickness of tiles above 25 mm and up to 40 mm",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 85.7,
+    "resources": [
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.59,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.24,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.24",
+    "desc": "Demolishing dry brick pitching in floors, drains etc. including stacking of serviceable material and disposal of unserviceable material with",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 940.5,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.25",
+    "desc": "Dismantling stone slab flooring laid in cement mortar including stacking of serviceable material and disposal of unserviceable material with",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 190.3,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.77,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.26",
+    "desc": "Demolishing brick tile covering in terracing including stacking of serviceable material and disposal of unserviceable material within 50 met",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 79.6,
+    "resources": [
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.16,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.24,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.47,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.27",
+    "desc": "Demolishing mud phaska in terracing and disposal of material within 50 metres lead.",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 652.3,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.62,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.04,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.28.1",
+    "desc": "G.S. Sheet",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 121.9,
+    "resources": [
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.28.2",
+    "desc": "Asbestos cement sheet",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 56.9,
+    "resources": [
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.29",
+    "desc": "Dismantling stone slab roofing over wooden karries or R.C.C. battens (dismantling karries and battens to be paid for separately), including ",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 1902.9,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.77,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.30",
+    "desc": "Dismantling jack arch roofing and floors including stacking of serviceable material and disposal of unserviceable material within 50 metres ",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 181.35,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.19,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.21,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.31",
+    "desc": "Dismantling tiled roofing with battens, boarding etc. complete including stacking of serviceable material and disposal of unserviceable mate",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 150.0,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.73,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.32",
+    "desc": "Demolishing thatch roofing including mats, bamboo, jaffari etc. complete including stacking of serviceable material and disposal of unservic",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 41.3,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 3.64,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.33",
+    "desc": "Dismantling wooden ballies in posts and struts including stacking within 50metres lead.",
+    "unit": "metre",
+    "basis": 50.0,
+    "say": 14.95,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.34.1",
+    "desc": "T' or 'L' iron or pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 170.25,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.107,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.067,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.34.2",
+    "desc": "R.C.C.",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 182.6,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.097,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.26,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.35",
+    "desc": "Cutting ballies or wooden posts of fencing at the point of projection above the concrete or ground and stacking the same within 50 metres le",
+    "unit": "ballie",
+    "basis": 1.0,
+    "say": 11.15,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Cutting",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Transporting and stacking",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.36",
+    "desc": "Dismantling barbed wire or flexible wire rope in fencing including making rolls and stacking within 50 metres lead.",
+    "unit": "quintal",
+    "basis": 1.0,
+    "say": 26.25,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.37",
+    "desc": "Dismantling wooden trellis work excluding frames but including stacking the serviceable material within 50 metres lead.",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 47.15,
+    "resources": [
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.38",
+    "desc": "Dismantling expanded metal or I.R.C. fabrics with necessary battens and beading including stacking the serviceable material within 50 metres",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 55.0,
+    "resources": [
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 4.16,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.39.1",
+    "desc": "Up to 10 mm thick",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 44.9,
+    "resources": [
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.39.2",
+    "desc": "Thickness above 10 mm up to 25 mm",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 57.3,
+    "resources": [
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.39.3",
+    "desc": "Thickness above 25 mm up to 40 mm",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 66.55,
+    "resources": [
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.40.1",
+    "desc": "Thickness up to 40 mm",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 208.4,
+    "resources": [
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.40.2",
+    "desc": "Thickness above 40 mm up to 75 mm",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 312.25,
+    "resources": [
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 18.85,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.41",
+    "desc": "Dismantling cement asbestos or other hard board ceiling or partition walls including stacking of serviceable materials and disposal of unser",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 42.0,
+    "resources": [
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.42.1",
+    "desc": "75 to 80 mm dia pipe",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 54.0,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.42.2",
+    "desc": "100 mm dia pipe",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 55.65,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.38,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.56,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.42.3",
+    "desc": "150 mm dia pipe",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 57.3,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.08,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.43.1",
+    "desc": "Water bound macadam road",
+    "unit": "sqm",
+    "basis": 36.0,
+    "say": 156.0,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.8,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 2.4,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "15.43.2",
+    "desc": "bituminous road",
+    "unit": "sqm",
+    "basis": 36.0,
+    "say": 306.65,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 9.6,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 4.8,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "15.44.1",
+    "desc": "15 mm to 40 mm nominal bore",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 108.15,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.66,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.66,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Dismantling G.I. pipe and stacking etc",
+        "unit": "L.S.",
+        "qty": 35.88,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.44.2",
+    "desc": "Above 40 mm nominal bore",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 117.75,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.66,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.66,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Dismantling G.I. pipe and stacking etc",
+        "unit": "L.S.",
+        "qty": 71.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.45.1",
+    "desc": "Up to 150 mm diameter",
+    "unit": "metre",
+    "basis": 40.26,
+    "say": 299.05,
+    "resources": [
+      {
+        "code": "0771",
+        "desc": "Kerosene oil",
+        "unit": "litre",
+        "qty": 0.38,
+        "rate": 50.0
+      },
+      {
+        "code": "0117",
+        "desc": "Assistant Fitter or 2nd class Fitter",
+        "unit": "day",
+        "qty": 0.63,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.45.2",
+    "desc": "Above 150 mm dia up to 300 mm dia",
+    "unit": "metre",
+    "basis": 40.26,
+    "say": 395.1,
+    "resources": [
+      {
+        "code": "0771",
+        "desc": "Kerosene oil",
+        "unit": "litre",
+        "qty": 1.14,
+        "rate": 50.0
+      },
+      {
+        "code": "0117",
+        "desc": "Assistant Fitter or 2nd class Fitter",
+        "unit": "day",
+        "qty": 1.3,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 7.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 80.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.45.3",
+    "desc": "Above 300 mm diameter",
+    "unit": "metre",
+    "basis": 40.26,
+    "say": 515.45,
+    "resources": [
+      {
+        "code": "0771",
+        "desc": "Kerosene oil",
+        "unit": "litre",
+        "qty": 2.27,
+        "rate": 50.0
+      },
+      {
+        "code": "0117",
+        "desc": "Assistant Fitter or 2nd class Fitter",
+        "unit": "day",
+        "qty": 2.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 11.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage and sundries",
+        "unit": "L.S.",
+        "qty": 134.55,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.46.1",
+    "desc": "Up to 600 mm diameter",
+    "unit": "metre",
+    "basis": 40.26,
+    "say": 506.25,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 5.32,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 5.46,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.31,
+        "rate": 617.0
+      },
+      {
+        "code": "0771",
+        "desc": "Kerosene oil",
+        "unit": "litre",
+        "qty": 2.27,
+        "rate": 50.0
+      },
+      {
+        "code": "0117",
+        "desc": "Assistant Fitter or 2nd class Fitter",
+        "unit": "day",
+        "qty": 2.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 11.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage and sundries",
+        "unit": "L.S.",
+        "qty": 134.55,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.46.2",
+    "desc": "Above 600 mm diameter",
+    "unit": "metre",
+    "basis": 40.26,
+    "say": 1281.7,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 15.82,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 16.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.93,
+        "rate": 617.0
+      },
+      {
+        "code": "0771",
+        "desc": "Kerosene oil",
+        "unit": "litre",
+        "qty": 5.0,
+        "rate": 50.0
+      },
+      {
+        "code": "0117",
+        "desc": "Assistant Fitter or 2nd class Fitter",
+        "unit": "day",
+        "qty": 10.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 20.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage and sundries",
+        "unit": "L.S.",
+        "qty": 179.4,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.47.1",
+    "desc": "Up to 150 mm diameter",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 236.9,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.16,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.19,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.38,
+        "rate": 558.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage and sundries",
+        "unit": "L.S.",
+        "qty": 1.56,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.47.2",
+    "desc": "Above 150 mm diameter",
+    "unit": "metre",
+    "basis": 10.0,
+    "say": 287.5,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.24,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.28,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.88,
+        "rate": 558.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage and sundries",
+        "unit": "L.S.",
+        "qty": 3.77,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.48",
+    "desc": "Taking out C.I. cover with frame from R.C.C. top slab of manholes of various sizes including demolishing of R.C.C. work manually/ by mechani",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 500.4,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.14,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.49",
+    "desc": "Taking out C.I. cover with frame from R.C.C. top slab of inspection chambers of various sizes including demolishing of R.C.C. work manually/",
+    "unit": "man",
+    "basis": 1.0,
+    "say": 0.11,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.29,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.50",
+    "desc": "Dismantling of R.C.C. spun vent shaft including excavating the cement concrete pit completely, taking out the shaft, refilling the excavated",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.92,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.81,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.51,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.16,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 679.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries for scaffolding etc",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.51",
+    "desc": "Dismantling of road gully chamber of various sizes including C.I. grating with frame including stacking of useful materials near the site an",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 686.7,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.14,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.09,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.26,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.22,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.13,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries for scaffolding etc",
+        "unit": "L.S.",
+        "qty": 0.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Dismantling C.I. Grating",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.52",
+    "desc": "Dismantling of flushing cistern of all types (C.I./PVC/Vitrious China) including stacking of useful materials near the site and disposal of ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 668.15,
+    "resources": [
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 17.94,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.53.1",
+    "desc": "Up to 150 mm diameter",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 239.05,
+    "resources": [
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 738.0
+      },
+      {
+        "code": "0117",
+        "desc": "Assistant Fitter or 2nd class Fitter",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.6,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "15.53.2",
+    "desc": "Above 150 mm diameter",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 878.7,
+    "resources": [
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 2.4,
+        "rate": 738.0
+      },
+      {
+        "code": "0117",
+        "desc": "Assistant Fitter or 2nd class Fitter",
+        "unit": "day",
+        "qty": 1.54,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.4,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "15.54",
+    "desc": "Dismantling of spindle fire hydrant including stacking of useful materials within 50 metres lead.",
+    "unit": "Nos",
+    "basis": 10.0,
+    "say": 537.6,
+    "resources": [
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0117",
+        "desc": "Assistant Fitter or 2nd class Fitter",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "15.55.1",
+    "desc": "120 x 120 cm (outside to outside)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.22,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.19,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.39,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.35,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.03,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries for scaffolding etc",
+        "unit": "L.S.",
+        "qty": 0.13,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.55.2",
+    "desc": "210 x 120 cm (outside to outside)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.35,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.31,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.19,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.65,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.42,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.3,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.13,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries for scaffolding etc",
+        "unit": "L.S.",
+        "qty": 0.39,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.55.3",
+    "desc": "320 x 120 cm (outside to outside)",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 0.5,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.44,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.28,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.69,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.59,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.56,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.19,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.09,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries for scaffolding etc",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.56",
+    "desc": "Dismantling old plaster or skirting raking out joints and cleaning the surface for plaster including disposal of rubbish to the dumping grou",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 39.0,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries for scaffolding etc",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.57",
+    "desc": "Dismantling aluminium/ Gypsum partitions, doors, windows, fixed glazing and false ceiling including disposal of unserviceable material and s",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 42.0,
+    "resources": [
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 5.38,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "15.58",
+    "desc": "Demolishing R.C.C. work by mechanical means and stockpiling at designated locations and disposal of dismantled materials up to a lead of 1 k",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2130.0,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.03,
+        "rate": 617.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0039",
+        "desc": "Tractor with trolley .",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 1350.0
+      },
+      {
+        "code": "0041",
+        "desc": "Joint cutting machine with 2-3 blades",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 800.0
+      }
+    ]
+  },
+  {
+    "code": "15.59",
+    "desc": "Dismantling of flexible pavement (bituminous courses) by mechanical means and disposal of dismantled material up to a lead of 1 kilometre, a",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 321.25,
+    "resources": [
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 558.0
+      },
+      {
+        "code": "0039",
+        "desc": "Tractor with trolley .",
+        "unit": "day",
+        "qty": 0.0475,
+        "rate": 1350.0
+      },
+      {
+        "code": "0038",
+        "desc": "Tractor with ripper attachment.",
+        "unit": "day",
+        "qty": 0.002,
+        "rate": 1200.0
+      }
+    ]
+  },
+  {
+    "code": "15.60",
+    "desc": "Disposal of building rubbish / malba / similar unserviceable, dismantled or waste materials by mechanical means, including loading, transpor",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 138.85,
+    "resources": []
+  }
+]

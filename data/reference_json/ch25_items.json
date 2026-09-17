@@ -1,0 +1,183 @@
+[
+  {
+    "code": "25.1",
+    "desc": "Providing and supplying aluminium extruded tubular and other aluminium sections as per the architectural drawings and approved shop drawings",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 370.45,
+    "resources": []
+  },
+  {
+    "code": "25.2",
+    "desc": "Designing, fabricating, testing, protection, installing and fixing in position semi (grid) unitized system of structural glazing (with open ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2949.3,
+    "resources": [
+      {
+        "code": "8654",
+        "desc": "Masking tape",
+        "unit": "metre",
+        "qty": 6.72,
+        "rate": 1.95
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 225.5,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries (For Fabrication)",
+        "unit": "L.S.",
+        "qty": 1804.03,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries (For Installation)",
+        "unit": "L.S.",
+        "qty": 1804.03,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries (Transporation)",
+        "unit": "L.S.",
+        "qty": 451.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries (Designing charges etc.)",
+        "unit": "L.S.",
+        "qty": 216.18,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "25.3",
+    "desc": "Providing, assembling and supplying vision glass panels (IGUs) comprising of hermetically-sealed 6-12- 6 mm insulated glass (double glazed) ",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3250.95,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries (for insurance Charges)",
+        "unit": "L.S.",
+        "qty": 126.27,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "25.4",
+    "desc": "Extra for openable side / top hung vision glass panels (IGUs) including providing and supplying at site all accessories and hardwares for th",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3163.1,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 118.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries (For Fabrication)",
+        "unit": "L.S.",
+        "qty": 354.36,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "25.5",
+    "desc": "Providing, fabricating and supplying shadow box of required size and shape, for fixing in the spandrel portion of the structural glazing, in",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1883.55,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries with clips & adhesives",
+        "unit": "L.S.",
+        "qty": 308.5,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries (For Fabrication)",
+        "unit": "L.S.",
+        "qty": 170.64,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries (For Installation)",
+        "unit": "L.S.",
+        "qty": 170.64,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "25.6",
+    "desc": "Providing and supplying Spandrel Glass Panels comprising of 6 mm thick heat strengthened monolithic float glass of approved colour and shade",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2127.95,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Sundries (Insurance charges)",
+        "unit": "L.S.",
+        "qty": 43.46,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "25.8",
+    "desc": "Design supply & installation of suspended Spider Glazing system designed to withstand the wind pressure as per IS 875 (Part-III). The Suspen",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 8130.45,
+    "resources": [
+      {
+        "code": "8949",
+        "desc": "400 mm long fin plate without fastners",
+        "unit": "pair",
+        "qty": 5.0,
+        "rate": 5931.0
+      },
+      {
+        "code": "9999",
+        "desc": "Labour",
+        "unit": "L.S.",
+        "qty": 10000.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 2600.0,
+        "rate": 2.0
+      },
+      {
+        "code": "8778",
+        "desc": "Toughened glass 12 mm thickness",
+        "unit": "sqm",
+        "qty": 37.04,
+        "rate": 1747.0
+      }
+    ]
+  }
+]
