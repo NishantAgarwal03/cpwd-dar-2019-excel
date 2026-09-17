@@ -1,6 +1,7 @@
 [
   {
     "code": "5.1.2",
+    "desc": "1:1.5:3 (1 cement : 1.5 coarse sand (zone-III): 3 graded stone aggregate 20 mm nominal size)",
     "unit": "cum",
     "basis": 1.0,
     "say": 7718.25,
@@ -100,6 +101,7 @@
   },
   {
     "code": "5.1.3",
+    "desc": "1:2:4 (1 cement : 2 coarse sand : 4 graded stone aggregate 20 mm nominal size)",
     "unit": "cum",
     "basis": 1.0,
     "say": 7296.35,
@@ -199,6 +201,7 @@
   },
   {
     "code": "5.2.2",
+    "desc": "1:1.5:3 (1 cement : 1.5 coarse sand(zone-III) : 3 graded stone aggregate 20 mm nominal size)",
     "unit": "cum",
     "basis": 9.18,
     "say": 9306.0,
@@ -326,6 +329,7 @@
   },
   {
     "code": "5.3",
+    "desc": "Reinforced cement concrete work in beams, suspended floors, roofs having slope up to 15° landings, balconies, shelves, chajjas, lintels, ban",
     "unit": "cum",
     "basis": 1.0,
     "say": 9763.8,
@@ -431,16 +435,17 @@
     ]
   },
   {
-    "code": "4.4.1",
-    "unit": "nos",
+    "code": "5.4",
+    "desc": "Providing and laying up to floor five level reinforced cement concrete in kerbs, steps and the like excluding the cost of centering, shutter",
+    "unit": "cum",
     "basis": 1.0,
     "say": 8962.7,
     "resources": [
       {
-        "code": "work)",
-        "desc": "cum",
-        "unit": "1.00",
-        "qty": 7210.55,
+        "code": "3",
+        "desc": "Rate as per SH: 3",
+        "unit": "cum",
+        "qty": 1.0,
         "rate": 7210.55
       },
       {
@@ -489,6 +494,7 @@
   },
   {
     "code": "5.5",
+    "desc": "Reinforced cement concrete work in arches, archribs, domes, vaults, shells, folded plate and roofs having slope more than 15° up to floor fi",
     "unit": "cum",
     "basis": 26.73,
     "say": 10289.0,
@@ -622,16 +628,17 @@
     ]
   },
   {
-    "code": "5.2.2",
-    "unit": "nos",
+    "code": "5.6",
+    "desc": "Reinforced cement concrete work in chimneys, shafts, up to floor five level, excluding the cost of centering, shuttering, finishing and rein",
+    "unit": "cum",
     "basis": 1.0,
     "say": 9500.1,
     "resources": [
       {
-        "code": "CONCRETE",
-        "desc": "cum",
-        "unit": "1.00",
-        "qty": 9306.0,
+        "code": "5.2.2",
+        "desc": "Rate as per SH: 5.2.2",
+        "unit": "cum",
+        "qty": 1.0,
         "rate": 9306.0
       },
       {
@@ -644,16 +651,17 @@
     ]
   },
   {
-    "code": "4.1.2",
-    "unit": "nos",
+    "code": "5.7",
+    "desc": "Reinforced cement concrete work in well-steining, excluding the cost of centering, shuttering, finishing and reinforcement with 1:1.5:3 (1 c",
+    "unit": "cum",
     "basis": 1.0,
     "say": 7270.3,
     "resources": [
       {
-        "code": "SH: CONCRETE WORK",
-        "desc": "cum",
-        "unit": "1.00",
-        "qty": 7210.55,
+        "code": "4.1.2",
+        "desc": "Rate as per SH: 4.1.2",
+        "unit": "cum",
+        "qty": 1.0,
         "rate": 7210.55
       },
       {
@@ -667,7 +675,8 @@
   },
   {
     "code": "5.8",
-    "unit": "m",
+    "desc": "Reinforced cement concrete work in vertical and horizontal fins individually or forming box louvers, facias and eaves boards above plinth le",
+    "unit": "RCC",
     "basis": 4.0,
     "say": 8550.25,
     "resources": [
@@ -686,8 +695,8 @@
         "rate": 1350.0
       },
       {
-        "code": ".",
-        "desc": "40 mm nominal size",
+        "code": "2202",
+        "desc": "Carriage of Stone aggregate below . 40 mm nominal size",
         "unit": "cum",
         "qty": 0.561,
         "rate": 103.77
@@ -822,8 +831,9 @@
   },
   {
     "code": "5.9.1",
-    "unit": "m",
-    "basis": 1.0,
+    "desc": "Foundations, footings, bases of columns, etc. for mass concrete",
+    "unit": "sqm",
+    "basis": 10.8,
     "say": 284.85,
     "resources": [
       {
@@ -914,8 +924,9 @@
   },
   {
     "code": "5.9.2",
-    "unit": "m",
-    "basis": 7.9,
+    "desc": "Walls (any thickness) including attached pilasters, butteresses, plinth and string courses etc.",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 609.3,
     "resources": [
       {
@@ -998,17 +1009,18 @@
     ]
   },
   {
-    "code": "10.1",
-    "unit": "nos",
-    "basis": 1.0,
+    "code": "5.9.3",
+    "desc": "Suspended floors, roofs, landings, balconies and access platform",
+    "unit": "sqm",
+    "basis": 13.5,
     "say": 693.05,
     "resources": [
       {
-        "code": "S.H. steel work",
-        "desc": "kg",
-        "unit": "9.2055",
-        "qty": 86.05,
-        "rate": 792.13
+        "code": "10.1",
+        "desc": "Rate as per SH: 10.1",
+        "unit": "kg",
+        "qty": 9.2055,
+        "rate": 86.05
       },
       {
         "code": "7342",
@@ -1069,17 +1081,18 @@
     ]
   },
   {
-    "code": "10.1",
-    "unit": "nos",
-    "basis": 1.0,
+    "code": "5.9.4",
+    "desc": "Shelves (Cast in situ)",
+    "unit": "sqm",
+    "basis": 13.5,
     "say": 693.05,
     "resources": [
       {
-        "code": "S.H. steel work",
-        "desc": "kg",
-        "unit": "9.2055",
-        "qty": 86.05,
-        "rate": 792.13
+        "code": "10.1",
+        "desc": "Rate as per SH: 10.1",
+        "unit": "kg",
+        "qty": 9.2055,
+        "rate": 86.05
       },
       {
         "code": "7342",
@@ -1140,17 +1153,18 @@
     ]
   },
   {
-    "code": "10.1",
+    "code": "5.9.5",
+    "desc": "Lintels, beams, plinth beams, girders, bressumers and cantilevers Consider a beam of 6 m clear span, 0.50 m deep 0.30 m wide and height 3.5 ",
     "unit": "nos",
     "basis": 1.0,
     "say": 552.05,
     "resources": [
       {
-        "code": "S.H. steel work",
-        "desc": "kg",
-        "unit": "6.4356",
-        "qty": 86.05,
-        "rate": 553.78
+        "code": "10.1",
+        "desc": "Rate as per SH: 10.1",
+        "unit": "kg",
+        "qty": 6.4356,
+        "rate": 86.05
       },
       {
         "code": "7343",
@@ -1161,8 +1175,8 @@
       },
       {
         "code": "7344",
-        "desc": "Beam clamp 300-380 mm (450-1070 mm)",
-        "unit": "each set",
+        "desc": "Beam clamp 300-380 mm (450-1070 mm) each",
+        "unit": "set",
         "qty": 0.1063,
         "rate": 355.0
       },
@@ -1212,6 +1226,7 @@
   },
   {
     "code": "5.9.6",
+    "desc": "Columns, Pillars, Piers, Abutments, Posts and Struts",
     "unit": "sqm",
     "basis": 4.5,
     "say": 733.7,
@@ -1290,24 +1305,11 @@
   },
   {
     "code": "5.9.7",
+    "desc": "Stairs, (excluding landings) except spiral-staircases",
     "unit": "sqm",
     "basis": 5.79,
     "say": 622.35,
     "resources": [
-      {
-        "code": "1198",
-        "desc": "Second class kail wood in planks",
-        "unit": "10 cudm",
-        "qty": 2.8875,
-        "rate": 260.0
-      },
-      {
-        "code": "1197",
-        "desc": "Second class kail wood in scantling",
-        "unit": "10 cudm",
-        "qty": 0.4875,
-        "rate": 260.0
-      },
       {
         "code": "0302",
         "desc": "Safeda ballies 125 mm diameter",
@@ -1346,28 +1348,29 @@
     ]
   },
   {
-    "code": "5.9.5",
-    "unit": "nos",
-    "basis": 1.0,
+    "code": "5.9.8",
+    "desc": "Spiral staircases (including landing)",
+    "unit": "sqm",
+    "basis": 6.28,
     "say": 600.0,
     "resources": [
       {
-        "code": "SH:",
-        "desc": "RCC",
+        "code": "5.9.5",
+        "desc": "Rate as per SH: 5.9.5",
         "unit": "sqm",
         "qty": 1.4,
         "rate": 552.05
       },
       {
         "code": "5.9.2",
-        "desc": "Rate as per item no 5.9.2 of SH : RCC",
+        "desc": "Rate as per SH: 5.9.2",
         "unit": "sqm",
         "qty": 3.22,
         "rate": 609.3
       },
       {
         "code": "5.9.7",
-        "desc": "Rate as per item no 5.9.7 of SH: RCC",
+        "desc": "Rate as per SH: 5.9.7",
         "unit": "sqm",
         "qty": 1.66,
         "rate": 622.35
@@ -1376,17 +1379,11 @@
   },
   {
     "code": "5.9.9",
-    "unit": "m",
-    "basis": 6.0,
+    "desc": "Arches, domes, vaults up to 6 m span",
+    "unit": "2",
+    "basis": 2.0,
     "say": 1713.2,
     "resources": [
-      {
-        "code": "1197",
-        "desc": "Second class kail wood in scantling",
-        "unit": "10 cudm",
-        "qty": 25.625,
-        "rate": 260.0
-      },
       {
         "code": "0302",
         "desc": "Safeda ballies 125 mm diameter",
@@ -1440,17 +1437,11 @@
   },
   {
     "code": "5.9.10",
-    "unit": "m",
-    "basis": 6.0,
-    "say": null,
+    "desc": "Extra for arches, domes, vaults exceeding 6 m span",
+    "unit": "sqm",
+    "basis": 33.31,
+    "say": 560.65,
     "resources": [
-      {
-        "code": "1197",
-        "desc": "Second class kail wood in scantling",
-        "unit": "10 cudm",
-        "qty": 88.79,
-        "rate": 260.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -1503,24 +1494,10 @@
     ]
   },
   {
-    "code": "5.9.9",
+    "code": "5.9.11",
+    "desc": "Chimneys and shafts",
     "unit": "nos",
     "basis": 1.0,
-    "say": 560.65,
-    "resources": [
-      {
-        "code": "SH : RCC",
-        "desc": "sqm",
-        "unit": "-33.31",
-        "qty": 1713.2,
-        "rate": -57066.69
-      }
-    ]
-  },
-  {
-    "code": "5.9.11",
-    "unit": "m",
-    "basis": 7.9,
     "say": 609.3,
     "resources": [
       {
@@ -1604,24 +1581,11 @@
   },
   {
     "code": "5.9.12",
-    "unit": "sqm",
-    "basis": 26.39,
+    "desc": "Well steining",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 246.4,
     "resources": [
-      {
-        "code": "1198",
-        "desc": "Second class kail wood in planks",
-        "unit": "10 cudm",
-        "qty": 15.0,
-        "rate": 260.0
-      },
-      {
-        "code": "1197",
-        "desc": "Second class kail wood in scantling",
-        "unit": "10 cudm",
-        "qty": 0.00198,
-        "rate": 260.0
-      },
       {
         "code": "0302",
         "desc": "Safeda ballies 125 mm diameter",
@@ -1633,24 +1597,11 @@
   },
   {
     "code": "5.9.13",
+    "desc": "Vertical and horizontal fins individually or forming box louvers band, facias and eaves boards",
     "unit": "sqm",
     "basis": 23.9,
     "say": 1023.55,
     "resources": [
-      {
-        "code": "1198",
-        "desc": "Second class kail wood in planks",
-        "unit": "10 cudm",
-        "qty": 11.925,
-        "rate": 260.0
-      },
-      {
-        "code": "1197",
-        "desc": "Second class kail wood in scantling",
-        "unit": "10 cudm",
-        "qty": 3.3625,
-        "rate": 260.0
-      },
       {
         "code": "0302",
         "desc": "Safeda ballies 125 mm diameter",
@@ -1690,8 +1641,9 @@
   },
   {
     "code": "5.9.15",
-    "unit": "m",
-    "basis": 1.5,
+    "desc": "Small lintels not exceeding 1.5 m clear span, moulding as in cornices, window sills, string courses, bands, copings, bed plates, anchor bloc",
+    "unit": "sqm",
+    "basis": 10.8,
     "say": 284.85,
     "resources": [
       {
@@ -1782,24 +1734,11 @@
   },
   {
     "code": "5.9.16.1",
-    "unit": "m",
-    "basis": 3.0,
+    "desc": "Under 20 cm wide",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 173.25,
     "resources": [
-      {
-        "code": "1198",
-        "desc": "Second class kail wood in planks",
-        "unit": "10 cudm",
-        "qty": 0.7125,
-        "rate": 260.0
-      },
-      {
-        "code": "1197",
-        "desc": "Second class kail wood in scantling",
-        "unit": "10 cudm",
-        "qty": 1.9375,
-        "rate": 260.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -1832,24 +1771,11 @@
   },
   {
     "code": "5.9.16.2",
-    "unit": "metre",
-    "basis": 16.0,
+    "desc": "Above 20 cm wide",
+    "unit": "mx4xslab",
+    "basis": 4.0,
     "say": 737.3,
     "resources": [
-      {
-        "code": "1198",
-        "desc": "Second class kail wood in planks",
-        "unit": "10 cudm",
-        "qty": 2.0,
-        "rate": 260.0
-      },
-      {
-        "code": "1197",
-        "desc": "Second class kail wood in scantling",
-        "unit": "10 cudm",
-        "qty": 2.188,
-        "rate": 260.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -1882,24 +1808,11 @@
   },
   {
     "code": "5.9.17",
+    "desc": "Cornices and mouldings",
     "unit": "m",
     "basis": 10.0,
     "say": 740.25,
     "resources": [
-      {
-        "code": "1198",
-        "desc": "Second class kail wood in planks",
-        "unit": "10 cudm",
-        "qty": 2.275,
-        "rate": 260.0
-      },
-      {
-        "code": "1197",
-        "desc": "Second class kail wood in scantling",
-        "unit": "10 cudm",
-        "qty": 2.725,
-        "rate": 260.0
-      },
       {
         "code": "2447",
         "desc": "Hollock ballies 125 mm diameter",
@@ -1939,24 +1852,11 @@
   },
   {
     "code": "5.9.18",
-    "unit": "m",
-    "basis": 1.2,
+    "desc": "Small surfaces such as cantilever ends, brackets and ends of steps, caps and bases to pilasters and columns and the like",
+    "unit": "sqm",
+    "basis": 1.62,
     "say": 773.7,
     "resources": [
-      {
-        "code": "1198",
-        "desc": "Second class kail wood in planks",
-        "unit": "10 cudm",
-        "qty": 1.3375,
-        "rate": 260.0
-      },
-      {
-        "code": "1197",
-        "desc": "Second class kail wood in scantling",
-        "unit": "10 cudm",
-        "qty": 0.315,
-        "rate": 260.0
-      },
       {
         "code": "2447",
         "desc": "Hollock ballies 125 mm diameter",
@@ -1996,24 +1896,11 @@
   },
   {
     "code": "5.9.19",
+    "desc": "Weather shade, Chajjas, corbels etc., including edges",
     "unit": "sqm",
     "basis": 0.954,
     "say": 766.75,
     "resources": [
-      {
-        "code": "1198",
-        "desc": "Second class kail wood in planks",
-        "unit": "10 cudm",
-        "qty": 0.5125,
-        "rate": 260.0
-      },
-      {
-        "code": "1197",
-        "desc": "Second class kail wood in scantling",
-        "unit": "10 cudm",
-        "qty": 0.15,
-        "rate": 260.0
-      },
       {
         "code": "2447",
         "desc": "Hollock ballies 125 mm diameter",
@@ -2052,17 +1939,18 @@
     ]
   },
   {
-    "code": "10.1",
-    "unit": "nos",
-    "basis": 1.0,
+    "code": "5.9.20",
+    "desc": "Suspended floors, roofs, landings, balconies and access platform. with water proof ply 12 mm thick",
+    "unit": "sqm",
+    "basis": 13.5,
     "say": 779.3,
     "resources": [
       {
-        "code": "SH:Steel Work",
-        "desc": "kg",
-        "unit": "5.425",
-        "qty": 86.05,
-        "rate": 466.82
+        "code": "10.1",
+        "desc": "Rate as per SH: 10.1",
+        "unit": "kg",
+        "qty": 5.425,
+        "rate": 86.05
       },
       {
         "code": "1215",
@@ -2158,17 +2046,18 @@
     ]
   },
   {
-    "code": "10.1",
-    "unit": "nos",
-    "basis": 1.0,
+    "code": "5.9.21",
+    "desc": "Lintels, beams, plinth beams, girders, bressumers and cantilevers. with water proof ply 12 mm thick",
+    "unit": "cum",
+    "basis": 0.99,
     "say": 641.6,
     "resources": [
       {
-        "code": "SH:Steel Work",
-        "desc": "kg",
-        "unit": "3.72",
-        "qty": 86.05,
-        "rate": 320.11
+        "code": "10.1",
+        "desc": "Rate as per SH: 10.1",
+        "unit": "kg",
+        "qty": 3.72,
+        "rate": 86.05
       },
       {
         "code": "1215",
@@ -2214,8 +2103,8 @@
       },
       {
         "code": "7344",
-        "desc": "Beam clamp 300-380 mm (450-1070 mm)",
-        "unit": "each set",
+        "desc": "Beam clamp 300-380 mm (450-1070 mm) each",
+        "unit": "set",
         "qty": 0.1063,
         "rate": 355.0
       },
@@ -2265,7 +2154,8 @@
   },
   {
     "code": "5.10.1",
-    "unit": "m",
+    "desc": "12 mm dia. & 100 mm length",
+    "unit": "nos",
     "basis": 1.0,
     "say": 140.8,
     "resources": [
@@ -2308,7 +2198,8 @@
   },
   {
     "code": "5.10.2",
-    "unit": "m",
+    "desc": "12 mm dia. & 150 mm length",
+    "unit": "nos",
     "basis": 1.0,
     "say": 154.2,
     "resources": [
@@ -2351,7 +2242,8 @@
   },
   {
     "code": "5.10.3",
-    "unit": "m",
+    "desc": "20 mm dia. & 150 mm length",
+    "unit": "nos",
     "basis": 1.0,
     "say": 166.25,
     "resources": [
@@ -2394,7 +2286,8 @@
   },
   {
     "code": "5.10.4",
-    "unit": "m",
+    "desc": "20 mm dia.& 225 mm length",
+    "unit": "nos",
     "basis": 1.0,
     "say": 179.6,
     "resources": [
@@ -2437,8 +2330,9 @@
   },
   {
     "code": "5.11.1",
-    "unit": "m",
-    "basis": 4.8,
+    "desc": "Suspended floors, roofs, landing, beams and balconies (Plan area to be measured)",
+    "unit": "sqm",
+    "basis": 28.8,
     "say": 287.5,
     "resources": [
       {
@@ -2447,13 +2341,6 @@
         "unit": "each",
         "qty": 0.4463,
         "rate": 910.0
-      },
-      {
-        "code": "7343",
-        "desc": "Adjustable telescopic prop 3 m (2.02-3.75 m)",
-        "unit": "each",
-        "qty": -0.4463,
-        "rate": 955.0
       },
       {
         "code": "7330",
@@ -2500,16 +2387,17 @@
     ]
   },
   {
-    "code": "4.5.1",
-    "unit": "nos",
+    "code": "5.12",
+    "desc": "Providing, hoisting and fixing above plinth level up to floor five level precast reinforced cement concrete work in string courses, bands, c",
+    "unit": "cum",
     "basis": 1.0,
     "say": 8886.35,
     "resources": [
       {
-        "code": "SH:CONCRETE WORK",
-        "desc": "cum",
-        "unit": "1.00",
-        "qty": 8537.75,
+        "code": "4.5.1",
+        "desc": "Rate as per SH: 4.5.1",
+        "unit": "cum",
+        "qty": 1.0,
         "rate": 8537.75
       },
       {
@@ -2550,32 +2438,25 @@
     ]
   },
   {
-    "code": "4.2.2",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "SH: Concrete Work",
-        "desc": "cum",
-        "unit": "0.054",
-        "qty": 8976.45,
-        "rate": 484.73
-      }
-    ]
-  },
-  {
-    "code": "4.3.1",
-    "unit": "nos",
-    "basis": 1.0,
+    "code": "5.13",
+    "desc": "Providing, hoisting and fixing up to floor five level precast reinforced cement concrete in small lintels not exceeding 1.5m clear span up t",
+    "unit": "cum",
+    "basis": 0.054,
     "say": 12464.25,
     "resources": [
       {
-        "code": "SH: Concrete work",
-        "desc": "sqm",
-        "unit": "0.60",
-        "qty": 284.85,
-        "rate": 170.91
+        "code": "4.2.2",
+        "desc": "Rate as per SH: 4.2.2",
+        "unit": "cum",
+        "qty": 0.054,
+        "rate": 8976.45
+      },
+      {
+        "code": "4.3.1",
+        "desc": "Rate as per SH: 4.3.1",
+        "unit": "sqm",
+        "qty": 0.6,
+        "rate": 284.85
       },
       {
         "code": "0114",
@@ -2615,17 +2496,25 @@
     ]
   },
   {
-    "code": "4.1.2",
-    "unit": "nos",
+    "code": "5.14",
+    "desc": "Providing, hoisting and fixing above plinth level up to floor five level precast reinforced cement concrete in mouldings as in cornices, win",
+    "unit": "mx0",
     "basis": 1.0,
-    "say": null,
+    "say": 14479.55,
     "resources": [
       {
-        "code": "SH: Concrete Work",
-        "desc": "cum",
-        "unit": "0.03",
-        "qty": 7210.55,
-        "rate": 216.32
+        "code": "4.1.2",
+        "desc": "Rate as per SH: 4.1.2",
+        "unit": "cum",
+        "qty": 0.03,
+        "rate": 7210.55
+      },
+      {
+        "code": "4.3.1",
+        "desc": "Rate as per SH: 4.3.1",
+        "unit": "sqm",
+        "qty": 0.36,
+        "rate": 284.85
       },
       {
         "code": "0115",
@@ -2640,21 +2529,6 @@
         "unit": "L.S.",
         "qty": 2.73,
         "rate": 2.0
-      }
-    ]
-  },
-  {
-    "code": "4.3.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 14479.55,
-    "resources": [
-      {
-        "code": "SH: Concrete Work",
-        "desc": "sqm",
-        "unit": "0.36",
-        "qty": 284.85,
-        "rate": 102.55
       },
       {
         "code": "9999",
@@ -2729,24 +2603,25 @@
     ]
   },
   {
-    "code": "4.1.2",
-    "unit": "nos",
-    "basis": 1.0,
+    "code": "5.15",
+    "desc": "Providing, hoisting and fixing above plinth level up to floor five level precast reinforced cement concrete in lintels, beams and bressumers",
+    "unit": "x0",
+    "basis": 6.6,
     "say": 11351.35,
     "resources": [
       {
-        "code": "SH: Concrete Work",
-        "desc": "cum",
-        "unit": "0.99",
-        "qty": 7210.55,
-        "rate": 7138.44
+        "code": "4.1.2",
+        "desc": "Rate as per SH: 4.1.2",
+        "unit": "cum",
+        "qty": 0.99,
+        "rate": 7210.55
       },
       {
-        "code": "SH: Concrete work",
-        "desc": "sqm",
-        "unit": "6.90",
-        "qty": 284.85,
-        "rate": 1965.47
+        "code": "4.3.1",
+        "desc": "Rate as per SH: 4.3.1",
+        "unit": "sqm",
+        "qty": 6.9,
+        "rate": 284.85
       },
       {
         "code": "0115",
@@ -2807,47 +2682,25 @@
     ]
   },
   {
-    "code": "4.1.2",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "SH: Concrete Work",
-        "desc": "cum",
-        "unit": "0.0162",
-        "qty": 7210.55,
-        "rate": 116.81
-      }
-    ]
-  },
-  {
-    "code": "13.18",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "SH : Finishing",
-        "desc": "sqm",
-        "unit": "0.85",
-        "qty": 62.75,
-        "rate": 53.34
-      }
-    ]
-  },
-  {
-    "code": "4.3.1",
-    "unit": "nos",
-    "basis": 1.0,
+    "code": "5.16",
+    "desc": "Providing, hoisting and fixing above plinth level up to floor five level precast reinforced cement concrete in shelves, including setting in",
+    "unit": "x0",
+    "basis": 0.9,
     "say": 17196.0,
     "resources": [
       {
-        "code": "SH : concrete work",
-        "desc": "sqm",
-        "unit": "0.108",
-        "qty": 284.85,
-        "rate": 30.76
+        "code": "4.1.2",
+        "desc": "Rate as per SH: 4.1.2",
+        "unit": "cum",
+        "qty": 0.0162,
+        "rate": 7210.55
+      },
+      {
+        "code": "4.3.1",
+        "desc": "Rate as per SH: 4.3.1",
+        "unit": "sqm",
+        "qty": 0.108,
+        "rate": 284.85
       },
       {
         "code": "0115",
@@ -2908,32 +2761,25 @@
     ]
   },
   {
-    "code": "4.1.2",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "SH: Concrete Work",
-        "desc": "cum",
-        "unit": "0.66",
-        "qty": 7210.55,
-        "rate": 4758.96
-      }
-    ]
-  },
-  {
-    "code": "4.3.1",
-    "unit": "nos",
-    "basis": 1.0,
+    "code": "5.17",
+    "desc": "Providing, hoisting and fixing above plinth level up to floor five level precast reinforced cement concrete in vertical & horizontal fins, i",
+    "unit": "RCC",
+    "basis": 4.0,
     "say": 9948.8,
     "resources": [
       {
-        "code": "SH: Concrete work",
-        "desc": "sqm",
-        "unit": "2.56",
-        "qty": 284.85,
-        "rate": 729.22
+        "code": "4.1.2",
+        "desc": "Rate as per SH: 4.1.2",
+        "unit": "cum",
+        "qty": 0.66,
+        "rate": 7210.55
+      },
+      {
+        "code": "4.3.1",
+        "desc": "Rate as per SH: 4.3.1",
+        "unit": "sqm",
+        "qty": 2.56,
+        "rate": 284.85
       },
       {
         "code": "0115",
@@ -3002,8 +2848,9 @@
   },
   {
     "code": "5.18.1",
-    "unit": "m",
-    "basis": 0.75,
+    "desc": "50 mm thick",
+    "unit": "sqm",
+    "basis": 1.5,
     "say": 1474.05,
     "resources": [
       {
@@ -3052,8 +2899,9 @@
   },
   {
     "code": "5.18.2",
-    "unit": "m",
-    "basis": 0.6,
+    "desc": "40 mm thick",
+    "unit": "mx0",
+    "basis": 1.2,
     "say": 1329.75,
     "resources": [
       {
@@ -3102,8 +2950,9 @@
   },
   {
     "code": "5.18.3",
-    "unit": "m",
-    "basis": 0.5,
+    "desc": "25 mm thick",
+    "unit": "sqm",
+    "basis": 0.375,
     "say": 1194.95,
     "resources": [
       {
@@ -3151,17 +3000,18 @@
     ]
   },
   {
-    "code": "4.1.2",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
+    "code": "5.19",
+    "desc": "Encasing rolled steel sections, in beams and columns, with cement concrete 1:1.5:3 (1 cement : 1.5 coarse sand(zone-III) : 3 graded stone ag",
+    "unit": "cum",
+    "basis": 0.424,
+    "say": 13020.5,
     "resources": [
       {
-        "code": "SH: Concrete Work",
-        "desc": "cum",
-        "unit": "0.424",
-        "qty": 7210.55,
-        "rate": 3057.27
+        "code": "4.1.2",
+        "desc": "Rate as per SH: 4.1.2",
+        "unit": "cum",
+        "qty": 0.424,
+        "rate": 7210.55
       },
       {
         "code": "0114",
@@ -3197,21 +3047,6 @@
         "unit": "day",
         "qty": 0.017,
         "rate": 617.0
-      }
-    ]
-  },
-  {
-    "code": "5.9.5",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 13020.5,
-    "resources": [
-      {
-        "code": "SH: Reinforced cement concrete work",
-        "desc": "sqm",
-        "unit": "4.09",
-        "qty": 552.05,
-        "rate": 2257.88
       },
       {
         "code": "9999",
@@ -3223,17 +3058,18 @@
     ]
   },
   {
-    "code": "4.1.2",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
+    "code": "5.20",
+    "desc": "Encasing rolled steel section in grillages with cement concrete 1:1.5:3 (1 cement : 1.5 coarse sand (zone-III): 3 graded stone aggregate 20 ",
+    "unit": "cum",
+    "basis": 12.25,
+    "say": 8190.1,
     "resources": [
       {
-        "code": "SH: Concrete Work",
-        "desc": "cum",
-        "unit": "12.25",
-        "qty": 7210.55,
-        "rate": 88329.24
+        "code": "4.1.2",
+        "desc": "Rate as per SH: 4.1.2",
+        "unit": "cum",
+        "qty": 12.25,
+        "rate": 7210.55
       },
       {
         "code": "0114",
@@ -3273,24 +3109,10 @@
     ]
   },
   {
-    "code": "5.9.5",
+    "code": "5.21",
+    "desc": "Extra for providing and fixing expanded metal mesh of size 20x60 mm and strands 3.25 mm wide 1.6 mm thick weighing 3.64 kg per sqm for encas",
     "unit": "nos",
     "basis": 1.0,
-    "say": 8190.1,
-    "resources": [
-      {
-        "code": "SH: Reinforced cement concrete work",
-        "desc": "sqm",
-        "unit": "14.00",
-        "qty": 552.05,
-        "rate": 7728.7
-      }
-    ]
-  },
-  {
-    "code": "5.21",
-    "unit": "kg",
-    "basis": 3.64,
     "say": 443.95,
     "resources": [
       {
@@ -3332,6 +3154,7 @@
   },
   {
     "code": "5.22.1",
+    "desc": "Mild steel and Medium Tensile steel bars",
     "unit": "quintal",
     "basis": 1.0,
     "say": 82.1,
@@ -3382,6 +3205,7 @@
   },
   {
     "code": "5.22.2",
+    "desc": "Hard drawn steel wire",
     "unit": "quintal",
     "basis": 1.0,
     "say": 85.6,
@@ -3425,6 +3249,7 @@
   },
   {
     "code": "5.22.3",
+    "desc": "Cold twisted bars",
     "unit": "quintal",
     "basis": 1.0,
     "say": 83.5,
@@ -3475,6 +3300,7 @@
   },
   {
     "code": "5.22.4",
+    "desc": "Hot rolled deformed bars",
     "unit": "quintal",
     "basis": 1.0,
     "say": 83.5,
@@ -3525,6 +3351,7 @@
   },
   {
     "code": "5.22.5",
+    "desc": "Hard drawn steel wire fabric",
     "unit": "quintal",
     "basis": 1.0,
     "say": 92.15,
@@ -3575,9 +3402,10 @@
   },
   {
     "code": "5.22.6",
+    "desc": "Thermo-Mechanically Treated bars of grade Fe-500D or more.",
     "unit": "quintal",
     "basis": 1.0,
-    "say": 77.65,
+    "say": 83.5,
     "resources": [
       {
         "code": "1005",
@@ -3620,7 +3448,16 @@
         "unit": "L.S.",
         "qty": 26.91,
         "rate": 2.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "5.22A.1",
+    "desc": "Mild steel and Medium Tensile steel bars",
+    "unit": "quintal",
+    "basis": 1.0,
+    "say": 82.1,
+    "resources": [
       {
         "code": "1004",
         "desc": "Average rate of Mild steel round bars for reinforcements",
@@ -3662,7 +3499,16 @@
         "unit": "L.S.",
         "qty": 26.91,
         "rate": 2.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "5.22A.2",
+    "desc": "Hard drawn steel wire",
+    "unit": "quintal",
+    "basis": 1.0,
+    "say": 85.6,
+    "resources": [
       {
         "code": "1224",
         "desc": "Hard drawn steel wire",
@@ -3697,7 +3543,16 @@
         "unit": "L.S.",
         "qty": 26.91,
         "rate": 2.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "5.22A.3",
+    "desc": "Cold twisted bars",
+    "unit": "quintal",
+    "basis": 1.0,
+    "say": 83.5,
+    "resources": [
       {
         "code": "1005",
         "desc": "Twisted steel / deformed bars",
@@ -3739,7 +3594,16 @@
         "unit": "L.S.",
         "qty": 26.91,
         "rate": 2.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "5.22A.4",
+    "desc": "Hot rolled deformed bars",
+    "unit": "quintal",
+    "basis": 1.0,
+    "say": 83.5,
+    "resources": [
       {
         "code": "1005",
         "desc": "Twisted steel / deformed bars",
@@ -3781,7 +3645,16 @@
         "unit": "L.S.",
         "qty": 26.91,
         "rate": 2.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "5.22A.5",
+    "desc": "Hard drawn steel wire fabric",
+    "unit": "quintal",
+    "basis": 1.0,
+    "say": 92.15,
+    "resources": [
       {
         "code": "1021",
         "desc": "Hard drawn steel wire fabric",
@@ -3823,7 +3696,16 @@
         "unit": "L.S.",
         "qty": 13.52,
         "rate": 2.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "5.22A.6",
+    "desc": "Thermo-Mechanically Treated bars of grade Fe-500D or more.",
+    "unit": "quintal",
+    "basis": 1.0,
+    "say": 83.5,
+    "resources": [
       {
         "code": "1005",
         "desc": "Twisted steel / deformed bars",
@@ -3865,7 +3747,16 @@
         "unit": "L.S.",
         "qty": 26.91,
         "rate": 2.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "5.22B.1",
+    "desc": "Thermo-Mechanically Treated bars of grade Fe-500D or more.",
+    "unit": "quintal",
+    "basis": 1.0,
+    "say": 77.65,
+    "resources": [
       {
         "code": "1005",
         "desc": "Twisted steel / deformed bars",
@@ -3914,7 +3805,16 @@
         "unit": "L.S.",
         "qty": 26.91,
         "rate": 2.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "5.22C.1",
+    "desc": "Thermo-Mechanically Treated bars of grade Fe-500D or more.",
+    "unit": "quintal",
+    "basis": 1.0,
+    "say": 77.65,
+    "resources": [
       {
         "code": "1005",
         "desc": "Twisted steel / deformed bars",
@@ -3968,13 +3868,14 @@
   },
   {
     "code": "5.23",
+    "desc": "Smooth finishing of the exposed surface of R.C.C. work with 6 mm thick cement mortar 1:3 (1 Cement : 3 fine sand).",
     "unit": "sqm",
     "basis": 10.0,
     "say": 227.35,
     "resources": [
       {
         "code": "3.3",
-        "desc": "Rate as per item No 3.3 of SH: Mortars",
+        "desc": "Rate as per SH: 3.3",
         "unit": "cum",
         "qty": 0.072,
         "rate": 4183.05
@@ -4018,13 +3919,14 @@
   },
   {
     "code": "5.24",
+    "desc": "Extra for rendering smooth the top of suspended floors, landings and staircases (treads and risers) with cement mortar 1:2 (1 cement : 2 coa",
     "unit": "sqm",
     "basis": 10.0,
     "say": 125.1,
     "resources": [
       {
         "code": "3.7",
-        "desc": "Rate as per item No 3.7 of SH: Mortars",
+        "desc": "Rate as per SH: 3.7",
         "unit": "cum",
         "qty": 0.03,
         "rate": 5345.55
@@ -4103,6 +4005,7 @@
   },
   {
     "code": "5.25",
+    "desc": "Providing and fixing in position copper plate as per design for expansion joints.",
     "unit": "kg",
     "basis": 10.56,
     "say": 728.2,
@@ -4132,8 +4035,9 @@
   },
   {
     "code": "5.26",
-    "unit": "m",
-    "basis": 300.0,
+    "desc": "Providing and filling in position, blown bitumen in expansion joints.",
+    "unit": "cum",
+    "basis": 1.125,
     "say": 61509.8,
     "resources": [
       {
@@ -4196,8 +4100,9 @@
   },
   {
     "code": "5.27",
-    "unit": "kg",
-    "basis": 80.0,
+    "desc": "Providing and filling in position bitumen mix filler of Proportion 80 kg. of hot bitumen, 1 kg. of cement and 0.25 cubic metre of coarse san",
+    "unit": "cum",
+    "basis": 1.125,
     "say": 21054.5,
     "resources": [
       {
@@ -4288,8 +4193,9 @@
   },
   {
     "code": "5.28",
-    "unit": "m",
-    "basis": 100.0,
+    "desc": "Providing and fixing in position 12mm thick bitumen impregnated fiber board conforming to IS: 1838, including cost of primer, sealing compou",
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 557.65,
     "resources": [
       {
@@ -4352,6 +4258,7 @@
   },
   {
     "code": "5.29.1.1",
+    "desc": "150mm wide",
     "unit": "m",
     "basis": 3.0,
     "say": 190.5,
@@ -4395,6 +4302,7 @@
   },
   {
     "code": "5.29.1.2",
+    "desc": "200mm wide",
     "unit": "m",
     "basis": 3.0,
     "say": 256.25,
@@ -4438,7 +4346,8 @@
   },
   {
     "code": "5.29.2.1",
-    "unit": "nos",
+    "desc": "150 mm wide",
+    "unit": "meter",
     "basis": 1.0,
     "say": 493.4,
     "resources": [
@@ -4488,7 +4397,8 @@
   },
   {
     "code": "5.29.2.2",
-    "unit": "nos",
+    "desc": "200 mm wide",
+    "unit": "meter",
     "basis": 1.0,
     "say": 654.95,
     "resources": [
@@ -4538,6 +4448,7 @@
   },
   {
     "code": "5.29.3.1",
+    "desc": "150 mm wide",
     "unit": "metre",
     "basis": 3.0,
     "say": 187.35,
@@ -4557,13 +4468,6 @@
         "rate": 92.24
       },
       {
-        "code": "9999",
-        "desc": "50mm iron screws with washer and rawl plugs",
-        "unit": "L.S",
-        "qty": 40.3,
-        "rate": 2.0
-      },
-      {
         "code": "0112",
         "desc": "Carpenter 2nd class",
         "unit": "day",
@@ -4581,6 +4485,7 @@
   },
   {
     "code": "5.29.3.2",
+    "desc": "200 mm wide",
     "unit": "m",
     "basis": 3.0,
     "say": 252.0,
@@ -4600,13 +4505,6 @@
         "rate": 92.24
       },
       {
-        "code": "9999",
-        "desc": "50mm iron screws with washer and rawl plugs",
-        "unit": "L.S",
-        "qty": 53.82,
-        "rate": 2.0
-      },
-      {
         "code": "0112",
         "desc": "Carpenter 2nd class",
         "unit": "day",
@@ -4624,6 +4522,7 @@
   },
   {
     "code": "5.30",
+    "desc": "Add for plaster drip course/ groove in plastered surface or moulding to R.C.C. projections.",
     "unit": "metre",
     "basis": 30.0,
     "say": 58.9,
@@ -4660,13 +4559,14 @@
   },
   {
     "code": "5.31",
-    "unit": "m",
-    "basis": 0.1,
+    "desc": "Extra for laying reinforced cement concrete in or under water and/ or liquid mud, including cost of pumping or bailing out water and removin",
+    "unit": "cum",
+    "basis": 14.0,
     "say": 794.65,
     "resources": [
       {
-        "code": "0011",
-        "desc": "Hire charges of Pumpset of capacity 4000 litres/hour. for cleaning slush",
+        "code": "4000",
+        "desc": "litres/hour. for cleaning slush",
         "unit": "day",
         "qty": 0.375,
         "rate": 700.0
@@ -4682,8 +4582,9 @@
   },
   {
     "code": "5.32",
-    "unit": "m",
-    "basis": 0.3,
+    "desc": "Extra for laying reinforced cement concrete in or under foul positions.",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 336.55,
     "resources": [
       {
@@ -4718,6 +4619,7 @@
   },
   {
     "code": "5.33.1",
+    "desc": "All works upto plinth level",
     "unit": "cum",
     "basis": 1.0,
     "say": 7997.3,
@@ -4831,6 +4733,7 @@
   },
   {
     "code": "5.33.2",
+    "desc": "All works above plinth level upto floor V level",
     "unit": "cum",
     "basis": 1.0,
     "say": 9400.85,
@@ -4951,8 +4854,9 @@
   },
   {
     "code": "5.34.1",
-    "unit": "kg",
-    "basis": 340.0,
+    "desc": "Providing M-30 grade concrete instead of M-25 grade BMC/ RMC. (Note:- Cement content considered in M-30 is @ 340 kg/cum)",
+    "unit": "cum",
+    "basis": 1.0,
     "say": 69.75,
     "resources": [
       {
@@ -4980,8 +4884,9 @@
   },
   {
     "code": "5.34.2",
-    "unit": "kg",
-    "basis": 350.0,
+    "desc": "Providing M-35 grade concrete instead of M-25 grade BMC/ RMC. (Note : Cement content considered in M-35 is @ 350 kg/ cum)",
+    "unit": "cum",
+    "basis": 1.0,
     "say": 139.45,
     "resources": [
       {
@@ -5009,8 +4914,9 @@
   },
   {
     "code": "5.34.3",
-    "unit": "kg",
-    "basis": 360.0,
+    "desc": "Providing M-40 grade concrete instead of M-25 grade BMC/ RMC.(Note : Cement content considered in M-40 is @ 360 kg/ cum)",
+    "unit": "cum",
+    "basis": 1.0,
     "say": 209.2,
     "resources": [
       {
@@ -5038,6 +4944,7 @@
   },
   {
     "code": "5.35",
+    "desc": "Add for using extra cement in the items of design mix over and above the specified cement content therein.",
     "unit": "quintal",
     "basis": 1.0,
     "say": 673.3,
@@ -5059,47 +4966,39 @@
     ]
   },
   {
-    "code": "5.2.2",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
+    "code": "5.36",
+    "desc": "Providing and placing in position precast reinforced cement concrete waffle units, square or rectangular, as per design and shape for floors",
+    "unit": "cum",
+    "basis": 1.38,
+    "say": 25483.1,
     "resources": [
       {
-        "code": "SH : RCC",
-        "desc": "cum",
-        "unit": "1.38",
-        "qty": 9306.0,
-        "rate": 12842.28
-      }
-    ]
-  },
-  {
-    "code": "5.9.15",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
+        "code": "5.2.2",
+        "desc": "Rate as per SH: 5.2.2",
+        "unit": "cum",
+        "qty": 1.38,
+        "rate": 9306.0
+      },
       {
-        "code": "SH : RCC",
-        "desc": "sqm",
-        "unit": "45.86",
-        "qty": 284.85,
-        "rate": 13063.22
-      }
-    ]
-  },
-  {
-    "code": "10.2",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
+        "code": "5.9.15",
+        "desc": "Rate as per SH: 5.9.15",
+        "unit": "sqm",
+        "qty": 45.86,
+        "rate": 284.85
+      },
       {
-        "code": "SH : Steel work",
-        "desc": "kg",
-        "unit": "9.00",
-        "qty": 101.75,
-        "rate": 915.75
+        "code": "10.2",
+        "desc": "Rate as per SH: 10.2",
+        "unit": "kg",
+        "qty": 9.0,
+        "rate": 101.75
+      },
+      {
+        "code": "13.35.1",
+        "desc": "Rate as per SH: 13.35.1",
+        "unit": "sqm",
+        "qty": 16.54,
+        "rate": 159.0
       },
       {
         "code": "9988",
@@ -5132,22 +5031,8 @@
     ]
   },
   {
-    "code": "13.35.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 25483.1,
-    "resources": [
-      {
-        "code": "SH : Finishing",
-        "desc": "sqm",
-        "unit": "16.54",
-        "qty": 159.0,
-        "rate": 2629.86
-      }
-    ]
-  },
-  {
     "code": "5.37.1",
+    "desc": "All works upto plinth level",
     "unit": "cum",
     "basis": 1.0,
     "say": 8398.65,
@@ -5217,8 +5102,8 @@
       },
       {
         "code": "0029",
-        "desc": "Carriage of concrete by transit mixer.",
-        "unit": "km/ cum",
+        "desc": "Carriage of concrete by transit mixer. km/",
+        "unit": "cum",
         "qty": 10.0,
         "rate": 30.0
       },
@@ -5268,6 +5153,7 @@
   },
   {
     "code": "5.37.2",
+    "desc": "All works above plinth level upto floor V level",
     "unit": "cum",
     "basis": 1.0,
     "say": 9802.2,
@@ -5337,8 +5223,8 @@
       },
       {
         "code": "0029",
-        "desc": "Carriage of concrete by transit mixer.",
-        "unit": "km/ cum",
+        "desc": "Carriage of concrete by transit mixer. km/",
+        "unit": "cum",
         "qty": 10.0,
         "rate": 30.0
       },
@@ -5395,6 +5281,7 @@
   },
   {
     "code": "5.38",
+    "desc": "Extra for R.C.C./ B.M.C/ R.M.C. work above floor V level for each four floors or part thereof.",
     "unit": "cum",
     "basis": 1.0,
     "say": 280.95,
@@ -5410,6 +5297,7 @@
   },
   {
     "code": "5.40.1",
+    "desc": "All works up to Plinth level.",
     "unit": "cum",
     "basis": 1.0,
     "say": 8365.8,
@@ -5500,8 +5388,8 @@
       },
       {
         "code": "0029",
-        "desc": "Carriage of concrete by transit mixer.",
-        "unit": "km/ cum",
+        "desc": "Carriage of concrete by transit mixer. km/",
+        "unit": "cum",
         "qty": 10.0,
         "rate": 30.0
       },
@@ -5551,6 +5439,7 @@
   },
   {
     "code": "5.40.2",
+    "desc": "All works above plinth & up to floor V level.",
     "unit": "cum",
     "basis": 1.0,
     "say": 9769.35,
@@ -5641,8 +5530,8 @@
       },
       {
         "code": "0029",
-        "desc": "Carriage of concrete by transit mixer.",
-        "unit": "km/ cum",
+        "desc": "Carriage of concrete by transit mixer. km/",
+        "unit": "cum",
         "qty": 10.0,
         "rate": 30.0
       },
@@ -5699,6 +5588,7 @@
   },
   {
     "code": "5.41.1",
+    "desc": "Non pigmented wet curing compound",
     "unit": "sqm",
     "basis": 10.0,
     "say": 53.9,
@@ -5742,7 +5632,8 @@
   },
   {
     "code": "5.42.1",
-    "unit": "nos",
+    "desc": "Coupler for 16 mm diameter reinforcement bar",
+    "unit": "Nos",
     "basis": 1.0,
     "say": 97.8,
     "resources": [
@@ -5771,7 +5662,8 @@
   },
   {
     "code": "5.42.2",
-    "unit": "nos",
+    "desc": "Coupler for 20 mm diameter reinforcement bar",
+    "unit": "Nos",
     "basis": 1.0,
     "say": 135.3,
     "resources": [
@@ -5800,7 +5692,8 @@
   },
   {
     "code": "5.42.3",
-    "unit": "nos",
+    "desc": "Coupler for 25 mm diameter reinforcement bar",
+    "unit": "Nos",
     "basis": 1.0,
     "say": 195.45,
     "resources": [
@@ -5829,7 +5722,8 @@
   },
   {
     "code": "5.42.4",
-    "unit": "nos",
+    "desc": "Coupler for 28 mm diameter reinforcement bar",
+    "unit": "Nos",
     "basis": 1.0,
     "say": 228.55,
     "resources": [
@@ -5858,7 +5752,8 @@
   },
   {
     "code": "5.42.5",
-    "unit": "nos",
+    "desc": "Coupler for 32 mm diameter reinforcement bar",
+    "unit": "Nos",
     "basis": 1.0,
     "say": 275.75,
     "resources": [
@@ -5887,14 +5782,15 @@
   },
   {
     "code": "5.43.1",
+    "desc": "200 mm wide.",
     "unit": "metre",
     "basis": 1.0,
     "say": 711.9,
     "resources": [
       {
         "code": "2393",
-        "desc": "1 mm thick Stainless Steel Cover plate grade 304",
-        "unit": "kg",
+        "desc": "1 mm thick Stainless Steel Cover plate grade",
+        "unit": "304 kg",
         "qty": 1.6,
         "rate": 275.0
       },
@@ -5937,14 +5833,15 @@
   },
   {
     "code": "5.43.2",
+    "desc": "300 mm wide.",
     "unit": "metre",
     "basis": 1.0,
     "say": 1006.25,
     "resources": [
       {
         "code": "2393",
-        "desc": "1 mm thick Stainless Steel Cover plate grade 304",
-        "unit": "kg",
+        "desc": "1 mm thick Stainless Steel Cover plate grade",
+        "unit": "304 kg",
         "qty": 2.4,
         "rate": 275.0
       },
@@ -5987,6 +5884,7 @@
   },
   {
     "code": "5.44.1",
+    "desc": "Floor Joint of 100 mm gap",
     "unit": "metre",
     "basis": 1.0,
     "say": 5594.85,
@@ -6037,6 +5935,7 @@
   },
   {
     "code": "5.44.2",
+    "desc": "Floor Joint of 150 mm gap",
     "unit": "metre",
     "basis": 1.0,
     "say": 6849.15,
@@ -6087,6 +5986,7 @@
   },
   {
     "code": "5.44.3",
+    "desc": "Floor Joint of 200 mm gap",
     "unit": "metre",
     "basis": 1.0,
     "say": 8772.45,
@@ -6137,6 +6037,7 @@
   },
   {
     "code": "5.45.1",
+    "desc": "Wall Joint of 100 mm gap",
     "unit": "metre",
     "basis": 1.0,
     "say": 4658.3,
@@ -6187,6 +6088,7 @@
   },
   {
     "code": "5.45.2",
+    "desc": "Wall Joint of 150 mm gap",
     "unit": "metre",
     "basis": 1.0,
     "say": 5243.65,
@@ -6237,6 +6139,7 @@
   },
   {
     "code": "5.45.3",
+    "desc": "Wall Joint of 200 mm gap",
     "unit": "metre",
     "basis": 1.0,
     "say": 6096.6,
@@ -6287,6 +6190,7 @@
   },
   {
     "code": "5.46.1",
+    "desc": "Roof Joint of 100 mm gap",
     "unit": "metre",
     "basis": 1.0,
     "say": 5193.45,
@@ -6337,6 +6241,7 @@
   },
   {
     "code": "5.46.2",
+    "desc": "Roof Joint of 150 mm gap",
     "unit": "metre",
     "basis": 1.0,
     "say": 5778.8,
@@ -6387,6 +6292,7 @@
   },
   {
     "code": "5.46.3",
+    "desc": "Roof Joint of 200 mm gap",
     "unit": "metre",
     "basis": 1.0,
     "say": 6854.2,
@@ -6436,41 +6342,47 @@
     ]
   },
   {
-    "code": "5.33.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
+    "code": "5.47.1",
+    "desc": "Door frame 125 mmx 60 mm",
+    "unit": "metre",
+    "basis": 5.2,
+    "say": 666.65,
     "resources": [
       {
-        "code": "CONCRETE",
-        "desc": "cum",
-        "unit": "0.039",
-        "qty": 7997.3,
-        "rate": 311.89
-      }
-    ]
-  },
-  {
-    "code": "5.34.3",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 0.039,
+        "rate": 7997.3
+      },
       {
-        "code": "CONCRETE",
-        "desc": "cum",
-        "unit": "0.039",
-        "qty": 209.2,
-        "rate": 8.16
-      }
-    ]
-  },
-  {
-    "code": "0.25",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
+        "code": "5.34.3",
+        "desc": "Rate as per SH: 5.34.3",
+        "unit": "cum",
+        "qty": 0.039,
+        "rate": 209.2
+      },
+      {
+        "code": "4.3.3",
+        "desc": "Rate as per SH: 4.3.3",
+        "unit": "sqm",
+        "qty": 1.27,
+        "rate": 733.7
+      },
+      {
+        "code": "14.2.1",
+        "desc": "Rate as per SH: 14.2.1",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1366.85
+      },
+      {
+        "code": "13.48.2",
+        "desc": "Rate as per SH: 13.48.2",
+        "unit": "sqm",
+        "qty": 1.27,
+        "rate": 130.25
+      },
       {
         "code": "1005",
         "desc": "Twisted steel/ deformed bars",
@@ -6484,51 +6396,6 @@
         "unit": "10 Nos",
         "qty": 0.6,
         "rate": 56.0
-      }
-    ]
-  },
-  {
-    "code": "4.3.3",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "SH: CONCRETE WORK",
-        "desc": "sqm",
-        "unit": "1.27",
-        "qty": 733.7,
-        "rate": 931.8
-      }
-    ]
-  },
-  {
-    "code": "14.2.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "SH: REPAIRS TO BUILDINGS",
-        "desc": "each",
-        "unit": "1.00",
-        "qty": 1366.85,
-        "rate": 1366.85
-      }
-    ]
-  },
-  {
-    "code": "13.48.2",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 666.65,
-    "resources": [
-      {
-        "code": "SH. FINISHING",
-        "desc": "sqm",
-        "unit": "1.27",
-        "qty": 130.25,
-        "rate": 165.42
       },
       {
         "code": "9999",
@@ -6540,32 +6407,46 @@
     ]
   },
   {
-    "code": "5.33.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
+    "code": "5.47.2",
+    "desc": "Door frame 100 mmx 60 mm",
+    "unit": "metre",
+    "basis": 5.2,
+    "say": 617.9,
     "resources": [
       {
-        "code": "CONCRETE",
-        "desc": "cum",
-        "unit": "0.031",
-        "qty": 7997.3,
-        "rate": 247.92
-      }
-    ]
-  },
-  {
-    "code": "5.34.3",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 0.031,
+        "rate": 7997.3
+      },
       {
-        "code": "CONCRETE",
-        "desc": "cum",
-        "unit": "0.031",
-        "qty": 209.2,
-        "rate": 6.49
+        "code": "5.34.3",
+        "desc": "Rate as per SH: 5.34.3",
+        "unit": "cum",
+        "qty": 0.031,
+        "rate": 209.2
+      },
+      {
+        "code": "4.3.3",
+        "desc": "Rate as per SH: 4.3.3",
+        "unit": "sqm",
+        "qty": 1.14,
+        "rate": 733.7
+      },
+      {
+        "code": "14.2.1",
+        "desc": "Rate as per SH: 14.2.1",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1366.85
+      },
+      {
+        "code": "13.48.2",
+        "desc": "Rate as per SH: 13.48.2",
+        "unit": "sqm",
+        "qty": 1.14,
+        "rate": 130.25
       },
       {
         "code": "1005",
@@ -6580,51 +6461,6 @@
         "unit": "10 Nos",
         "qty": 0.6,
         "rate": 56.0
-      }
-    ]
-  },
-  {
-    "code": "4.3.3",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "SH: CONCRETE WORK",
-        "desc": "sqm",
-        "unit": "1.14",
-        "qty": 733.7,
-        "rate": 836.42
-      }
-    ]
-  },
-  {
-    "code": "14.2.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "SH: REPAIRS TO BUILDINGS",
-        "desc": "each",
-        "unit": "1.00",
-        "qty": 1366.85,
-        "rate": 1366.85
-      }
-    ]
-  },
-  {
-    "code": "13.48.2",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 617.9,
-    "resources": [
-      {
-        "code": "SH. FINISHING",
-        "desc": "sqm",
-        "unit": "1.14",
-        "qty": 130.25,
-        "rate": 148.49
       },
       {
         "code": "9999",
@@ -6636,32 +6472,46 @@
     ]
   },
   {
-    "code": "5.33.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
+    "code": "5.47.3",
+    "desc": "Door frame 85 mmx60 mm",
+    "unit": "metre",
+    "basis": 5.2,
+    "say": 592.25,
     "resources": [
       {
-        "code": "CONCRETE",
-        "desc": "cum",
-        "unit": "0.027",
-        "qty": 7997.3,
-        "rate": 215.93
-      }
-    ]
-  },
-  {
-    "code": "5.34.2",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 0.027,
+        "rate": 7997.3
+      },
       {
-        "code": "CONCRETE",
-        "desc": "cum",
-        "unit": "0.027",
-        "qty": 139.45,
-        "rate": 3.77
+        "code": "5.34.2",
+        "desc": "Rate as per SH: 5.34.2",
+        "unit": "cum",
+        "qty": 0.027,
+        "rate": 139.45
+      },
+      {
+        "code": "4.3.3",
+        "desc": "Rate as per SH: 4.3.3",
+        "unit": "sqm",
+        "qty": 1.07,
+        "rate": 733.7
+      },
+      {
+        "code": "14.2.1",
+        "desc": "Rate as per SH: 14.2.1",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1366.85
+      },
+      {
+        "code": "13.48.2",
+        "desc": "Rate as per SH: 13.48.2",
+        "unit": "sqm",
+        "qty": 1.07,
+        "rate": 130.25
       },
       {
         "code": "1005",
@@ -6676,51 +6526,6 @@
         "unit": "10 Nos",
         "qty": 0.6,
         "rate": 56.0
-      }
-    ]
-  },
-  {
-    "code": "4.3.3",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "SH: CONCRETE WORK",
-        "desc": "sqm",
-        "unit": "1.07",
-        "qty": 733.7,
-        "rate": 785.06
-      }
-    ]
-  },
-  {
-    "code": "14.2.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "SH: REPAIRS TO BUILDINGS",
-        "desc": "each",
-        "unit": "1.00",
-        "qty": 1366.85,
-        "rate": 1366.85
-      }
-    ]
-  },
-  {
-    "code": "13.48.2",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 592.25,
-    "resources": [
-      {
-        "code": "SH. FINISHING",
-        "desc": "sqm",
-        "unit": "1.07",
-        "qty": 130.25,
-        "rate": 139.37
       },
       {
         "code": "9999",
@@ -6733,53 +6538,75 @@
   },
   {
     "code": "5.48.1",
+    "desc": "Reinforced Cement Concrete -M-50",
     "unit": "cum",
     "basis": 120.0,
     "say": 7425.0,
     "resources": [
       {
-        "code": "item 5.48.1",
-        "desc": "each",
-        "unit": "1.00",
-        "qty": 592482.2,
+        "code": "5.48X",
+        "desc": "Sub-analysis annexure: 5.48X",
+        "unit": "each",
+        "qty": 1.0,
         "rate": 592482.2
       }
     ]
   },
   {
     "code": "5.48.2",
+    "desc": "Reinforced Cement Concrete -M-60",
     "unit": "cum",
     "basis": 120.0,
-    "say": 752474.7,
+    "say": 8681.45,
     "resources": [
       {
-        "code": "for item 5.48.2",
-        "desc": "each",
-        "unit": "1.00",
-        "qty": 692740.4,
+        "code": "5.48Y",
+        "desc": "Sub-analysis annexure: 5.48Y",
+        "unit": "each",
+        "qty": 1.0,
         "rate": 692740.4
-      },
+      }
+    ]
+  },
+  {
+    "code": "5.48.3",
+    "desc": "Extra for using M-50/ M-60 Grade Self-compacting Cement Concrete",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 748.6,
+    "resources": [
       {
-        "code": "5.48.3",
-        "desc": "Extra for using M-50/ M-60 Grade Self-compacting Cement Concrete Detail of cost for 1 cum. MATERIAL 5.48X Sub Analysis no 5.48 (Annexure) for sub analysis 5.48.3X",
+        "code": "5.48X",
+        "desc": "Sub-analysis annexure: 5.48X",
         "unit": "each",
         "qty": 1.0,
         "rate": 9430.05
-      },
+      }
+    ]
+  },
+  {
+    "code": "5.48.3X",
+    "desc": "M 60 grade Self-compacting Reinforced Cement Concrete",
+    "unit": "cum",
+    "basis": 120.0,
+    "say": 9430.05,
+    "resources": [
       {
-        "code": "5.48.2",
-        "desc": "Rate as per Item No.5.48.2 of SH: REINFORCED CEMENT CONCRETE",
-        "unit": "cum",
-        "qty": -1.0,
-        "rate": 8681.45
-      },
-      {
-        "code": "sub analysis 5.48.3X",
-        "desc": "each",
-        "unit": "1.00",
-        "qty": 752474.7,
+        "code": "5.48Z",
+        "desc": "Sub-analysis annexure: 5.48Z",
+        "unit": "each",
+        "qty": 1.0,
         "rate": 752474.7
-      },
+      }
+    ]
+  },
+  {
+    "code": "5.48X",
+    "desc": "Annexure for item 5.48.1, Providing M50 grade Reinforced Cement Concrete data for 120.00 cum Sub Analysis for use in Item no 5.48.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 592482.2,
+    "resources": [
       {
         "code": "0367",
         "desc": "Portland Cement",
@@ -6837,40 +6664,21 @@
         "rate": 558.0
       },
       {
-        "code": "0066",
-        "desc": "Batching and Mixing Plant @ 75 cum per hour",
-        "unit": "hour",
-        "qty": 1.6,
-        "rate": 2400.0
-      },
-      {
-        "code": "0070",
-        "desc": "Generator 100 KVA/125 KVA",
-        "unit": "hour",
-        "qty": 1.6,
-        "rate": 250.0
-      },
-      {
-        "code": "0052",
-        "desc": "Front end loader 1 cum bucket capacity (incl POL)",
-        "unit": "hour",
-        "qty": 1.6,
-        "rate": 900.0
-      },
-      {
-        "code": "0029",
-        "desc": "Carriage of concrete by transit mixer",
-        "unit": "km/cum",
-        "qty": 1200.0,
-        "rate": 30.0
-      },
-      {
         "code": "0009",
         "desc": "Pumping charges of concrete including Hire charges of pump, piping work & accessories etc.",
         "unit": "cum",
         "qty": 120.0,
         "rate": 210.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "5.48Y",
+    "desc": "Annexure for items 5.48.2 for using M 60 grade Self Compacting Reinforced cement concrete data for 120.00 cum Sub Analysis for use in Item n",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 692740.4,
+    "resources": [
       {
         "code": "0367",
         "desc": "Portland Cement",
@@ -6935,40 +6743,21 @@
         "rate": 558.0
       },
       {
-        "code": "0066",
-        "desc": "Batching and Mixing Plant @ 75 cum per hour",
-        "unit": "hour",
-        "qty": 1.6,
-        "rate": 2400.0
-      },
-      {
-        "code": "0070",
-        "desc": "Generator 100 KVA/125 KVA",
-        "unit": "hour",
-        "qty": 1.6,
-        "rate": 250.0
-      },
-      {
-        "code": "0052",
-        "desc": "Front end loader 1 cum bucket capacity (incl POL)",
-        "unit": "hour",
-        "qty": 1.6,
-        "rate": 900.0
-      },
-      {
-        "code": "0029",
-        "desc": "Carriage of concrete by transit mixer",
-        "unit": "km/cum",
-        "qty": 1200.0,
-        "rate": 30.0
-      },
-      {
         "code": "0009",
         "desc": "Pumping charges of concrete including Hire charges of pump, piping work & accessories etc.",
         "unit": "cum",
         "qty": 120.0,
         "rate": 210.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "5.48Z",
+    "desc": "Annexure for items 5.48.3. Extra for using M 60 grade Self Compacting Reinforced cement concrete data for 120.00 cum Sub Analysis for use in",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 752474.7,
+    "resources": [
       {
         "code": "0367",
         "desc": "Portland Cement",
@@ -7033,34 +6822,6 @@
         "rate": 558.0
       },
       {
-        "code": "0066",
-        "desc": "Batching and Mixing Plant @ 75 cum per hour",
-        "unit": "hour",
-        "qty": 1.6,
-        "rate": 2400.0
-      },
-      {
-        "code": "0070",
-        "desc": "Generator 100 KVA/125 KVA",
-        "unit": "hour",
-        "qty": 1.6,
-        "rate": 250.0
-      },
-      {
-        "code": "0052",
-        "desc": "Front end loader 1 cum bucket capacity (incl POL)",
-        "unit": "hour",
-        "qty": 1.6,
-        "rate": 900.0
-      },
-      {
-        "code": "0029",
-        "desc": "Carriage of concrete by transit mixer",
-        "unit": "km/cum",
-        "qty": 1200.0,
-        "rate": 30.0
-      },
-      {
         "code": "0009",
         "desc": "Pumping charges of concrete including Hire charges of pump, piping work & accessories etc.",
         "unit": "cum",
@@ -7071,76 +6832,66 @@
   },
   {
     "code": "5.49",
-    "unit": "kg",
-    "basis": 400.0,
-    "say": null,
+    "desc": "Constructing cast-in situ RCC diaphragm wall by providing and laying machine batched, machine mixed, self compacting, ready mix reinforced c",
+    "unit": "cum",
+    "basis": 144.0,
+    "say": 16618.7,
     "resources": [
+      {
+        "code": "5.1.3",
+        "desc": "Rate as per SH: 5.1.3",
+        "unit": "cum",
+        "qty": 11.7,
+        "rate": 7296.35
+      },
+      {
+        "code": "5.22.6",
+        "desc": "Rate as per SH: 5.22.6",
+        "unit": "kilogram",
+        "qty": 819.0,
+        "rate": 83.5
+      },
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 164.4,
+        "rate": 7997.3
+      },
+      {
+        "code": "5.34.1",
+        "desc": "Rate as per SH: 5.34.1",
+        "unit": "cum",
+        "qty": 164.4,
+        "rate": 69.75
+      },
+      {
+        "code": "10.22",
+        "desc": "Rate as per SH: 10.22",
+        "unit": "cm",
+        "qty": 6161.0,
+        "rate": 3.35
+      },
+      {
+        "code": "15.60",
+        "desc": "Rate as per SH: 15.60",
+        "unit": "cum",
+        "qty": 193.32,
+        "rate": 138.85
+      },
+      {
+        "code": "15.3",
+        "desc": "Rate as per SH: 15.3",
+        "unit": "cum",
+        "qty": 20.4,
+        "rate": 2534.7
+      },
       {
         "code": "0082",
         "desc": "Excavation of Diaphragm wall by Mechanical Grab",
         "unit": "sqm",
         "qty": 240.0,
         "rate": 1300.0
-      }
-    ]
-  },
-  {
-    "code": "5.1.3",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "CONCRETE",
-        "desc": "cum",
-        "unit": "11.70",
-        "qty": 7296.35,
-        "rate": 85367.3
-      }
-    ]
-  },
-  {
-    "code": "5.22.6",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "CONCRETE",
-        "desc": "kilogram",
-        "unit": "819.00",
-        "qty": 83.5,
-        "rate": 68386.5
-      }
-    ]
-  },
-  {
-    "code": "5.33.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "CONCRETE",
-        "desc": "cum",
-        "unit": "164.40",
-        "qty": 7997.3,
-        "rate": 1314756.12
-      }
-    ]
-  },
-  {
-    "code": "5.34.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "CONCRETE",
-        "desc": "cum",
-        "unit": "164.40",
-        "qty": 69.75,
-        "rate": 11466.9
       },
       {
         "code": "7183",
@@ -7183,21 +6934,6 @@
         "unit": "quintal",
         "qty": 18.084,
         "rate": 4600.0
-      }
-    ]
-  },
-  {
-    "code": "10.22",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "SH: STEEL WORK",
-        "desc": "cm",
-        "unit": "6161.00",
-        "qty": 3.35,
-        "rate": 20639.35
       },
       {
         "code": "9999",
@@ -7233,36 +6969,6 @@
         "unit": "day",
         "qty": 2.0,
         "rate": 3500.0
-      }
-    ]
-  },
-  {
-    "code": "15.60",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "SH: DISMANTLING & DEMOLISHING",
-        "desc": "cum",
-        "unit": "193.32",
-        "qty": 138.85,
-        "rate": 26842.48
-      }
-    ]
-  },
-  {
-    "code": "15.3",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 16618.7,
-    "resources": [
-      {
-        "code": "SH: DISMANTLING & DEMOLISHING",
-        "desc": "cum",
-        "unit": "20.40",
-        "qty": 2534.7,
-        "rate": 51707.88
       },
       {
         "code": "9999",

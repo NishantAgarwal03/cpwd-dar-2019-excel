@@ -2,10 +2,52 @@
   {
     "code": "26.1",
     "desc": "Providing & fixing in position Phenol bonded Bamboowood flooring with planks of sizes 14mm thick, 1800mm length (minimum) and 130 mm wide(mi",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 10.0,
     "say": 5279.1,
     "resources": [
+      {
+        "code": "8021",
+        "desc": "Bamboo wood Tile Flooring 14mm thick of minimum size 1800mm x 130mm",
+        "unit": "sqm",
+        "qty": 110.0,
+        "rate": 3470.0
+      },
+      {
+        "code": "8022",
+        "desc": "Bamboo wood Quarter Round 18mm thick of size 1900mm x 18mm",
+        "unit": "metre",
+        "qty": 39.9,
+        "rate": 112.0
+      },
+      {
+        "code": "8023",
+        "desc": "Bamboo wood door reducer 14mm thick of size 1900mm x 44mm",
+        "unit": "metre",
+        "qty": 2.0,
+        "rate": 255.0
+      },
+      {
+        "code": "8015",
+        "desc": "Expanded polyethylene Foam sheet 4mm thick of Density 40kg/m3",
+        "unit": "sqm",
+        "qty": 105.0,
+        "rate": 18.0
+      },
+      {
+        "code": "1246",
+        "desc": "Silicon based Joint Sealant for Tiles",
+        "unit": "kg",
+        "qty": 5.0,
+        "rate": 160.0
+      },
+      {
+        "code": "1247",
+        "desc": "Rubber base Adhesive",
+        "unit": "kg",
+        "qty": 5.0,
+        "rate": 223.0
+      },
       {
         "code": "0111",
         "desc": "Carpenter 1st class",
@@ -37,6 +79,41 @@
     "say": 5162.75,
     "resources": [
       {
+        "code": "8024",
+        "desc": "Bamboo wood Skirting 14mm thick of Size 1900mm x 85mm",
+        "unit": "metre",
+        "qty": 120.59,
+        "rate": 300.0
+      },
+      {
+        "code": "8015",
+        "desc": "High Density Expanded poly ethylene Foam sheet 4mm thick of Density 40kg/m3",
+        "unit": "sqm",
+        "qty": 10.5,
+        "rate": 18.0
+      },
+      {
+        "code": "8210",
+        "desc": "Stainless steel screws 50 mm",
+        "unit": "100 Nos",
+        "qty": 1.86,
+        "rate": 270.0
+      },
+      {
+        "code": "1246",
+        "desc": "Silicon based Joint Sealant for Tiles",
+        "unit": "kg",
+        "qty": 1.0,
+        "rate": 160.0
+      },
+      {
+        "code": "1247",
+        "desc": "Rubber base Adhesive",
+        "unit": "kg",
+        "qty": 1.0,
+        "rate": 223.0
+      },
+      {
         "code": "0111",
         "desc": "Carpenter 1st class",
         "unit": "day",
@@ -62,10 +139,52 @@
   {
     "code": "26.3",
     "desc": "Providing & fixing in position Phenol bonded Bamboowood wall cladding at all height with planks of sizes 10mm thick, 1800mm length (minimum)",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 10.0,
     "say": 5559.4,
     "resources": [
+      {
+        "code": "8025",
+        "desc": "Bamboo wood Tile Wall Cladding 10mm thick of size 1900mm x 135mm",
+        "unit": "sqm",
+        "qty": 104.5,
+        "rate": 3385.0
+      },
+      {
+        "code": "8026",
+        "desc": "Bamboo wood T-mold 14mm thick of size 1900mm x 44mm",
+        "unit": "metre",
+        "qty": 41.62,
+        "rate": 250.0
+      },
+      {
+        "code": "8027",
+        "desc": "Bamboo wood Threshold 14mm thick of size 1900mm x 44mm",
+        "unit": "metre",
+        "qty": 40.95,
+        "rate": 255.0
+      },
+      {
+        "code": "8016",
+        "desc": "High Density expanded poly ethylene (EPE) Foam 1mm thick",
+        "unit": "sqm",
+        "qty": 199.5,
+        "rate": 8.5
+      },
+      {
+        "code": "8210",
+        "desc": "Stainless steel screws 50 mm",
+        "unit": "100 Nos",
+        "qty": 2.58,
+        "rate": 270.0
+      },
+      {
+        "code": "8212",
+        "desc": "Stainless steel screws 30 mm",
+        "unit": "100 Nos",
+        "qty": 18.5,
+        "rate": 190.0
+      },
       {
         "code": "0111",
         "desc": "Carpenter 1st class",
@@ -99,10 +218,24 @@
   {
     "code": "26.4",
     "desc": "Providing & fixing in position Phenol bonded Bamboowood panelled or panelled and glazed shutters for doors windows, clerestorey windows with",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 5460.25,
     "resources": [
+      {
+        "code": "8215",
+        "desc": "Stainless steel butt hinges 125x64x 1.9 mm IS : 12817 marked",
+        "unit": "10 Nos",
+        "qty": 0.4,
+        "rate": 265.0
+      },
+      {
+        "code": "8211",
+        "desc": "Stainless steel screws 40 mm",
+        "unit": "100 Nos",
+        "qty": 0.32,
+        "rate": 215.0
+      },
       {
         "code": "0156",
         "desc": "Carpenter (average)",
@@ -129,8 +262,8 @@
   {
     "code": "26.5",
     "desc": "Providing & fixing in position Phenol bonded Bamboo wood panelling of 10mm thick, in 25 to 40 mm thick panelled or panelled & glazed shutter",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 3561.7,
     "resources": [
       {
@@ -171,6 +304,41 @@
         "rate": 558.0
       },
       {
+        "code": "8144",
+        "desc": "Bamboo Mat corrugated sheets 3.5 to 4mm thick conforming to IS 15476:2004",
+        "unit": "sqm",
+        "qty": 250.69,
+        "rate": 2648.0
+      },
+      {
+        "code": "2358",
+        "desc": "Carriage of Bamboo Mat corrugated sheets and accessories",
+        "unit": "tonne",
+        "qty": 1.14,
+        "rate": 11500.0
+      },
+      {
+        "code": "1023",
+        "desc": "Galvanized steel J or L hooks 8mm dia",
+        "unit": "10 Nos",
+        "qty": 68.4,
+        "rate": 120.0
+      },
+      {
+        "code": "1208",
+        "desc": "Bitumen washer",
+        "unit": "100 Nos",
+        "qty": 6.84,
+        "rate": 30.0
+      },
+      {
+        "code": "1209",
+        "desc": "G.I. plain washer thick",
+        "unit": "100 Nos",
+        "qty": 6.84,
+        "rate": 35.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of bolts and washers",
         "unit": "L.S.",
@@ -206,6 +374,20 @@
         "rate": 558.0
       },
       {
+        "code": "8145",
+        "desc": "Bamboo Mat Ridge cap 3.5 to 4mm thick conforming to IS 15476:2004",
+        "unit": "metre",
+        "qty": 22.05,
+        "rate": 2570.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage (The ridges to be fixed with the same hooks as the sheets)",
+        "unit": "L.S.",
+        "qty": 19.43,
+        "rate": 2.0
+      },
+      {
         "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
@@ -234,6 +416,48 @@
         "rate": 558.0
       },
       {
+        "code": "8147",
+        "desc": "4mm thick Bamboo Mat Board conforming to IS 13958:1994",
+        "unit": "sqm",
+        "qty": 105.0,
+        "rate": 1738.0
+      },
+      {
+        "code": "2358",
+        "desc": "Carriage of 4mm thick Bamboo mat board and accessories.",
+        "unit": "tonne",
+        "qty": 0.39,
+        "rate": 11500.0
+      },
+      {
+        "code": "8570",
+        "desc": "GI Main T ceiling section 30x25x 0.3 mm (3 metre long) including of wastage of 10%",
+        "unit": "each",
+        "qty": 29.5,
+        "rate": 187.0
+      },
+      {
+        "code": "8571",
+        "desc": "GI Perimeter wall angle 25x25x0.4 mm (3 metre long) including of wastage of 10%",
+        "unit": "each",
+        "qty": 13.5,
+        "rate": 157.0
+      },
+      {
+        "code": "8572",
+        "desc": "GI Intermediate cross T section 25x25x0.3 mm (1.2 metre long) including of wastage of 10% on grid cutouts.",
+        "unit": "each",
+        "qty": 147.0,
+        "rate": 72.0
+      },
+      {
+        "code": "8573",
+        "desc": "GI Intermediate cross T section 25x25x0.3 mm (0.6 metre long) including of wastage of 10% on grid cutouts.",
+        "unit": "each",
+        "qty": 147.0,
+        "rate": 34.0
+      },
+      {
         "code": "8615",
         "desc": "Hanger rod 4mm thick",
         "unit": "each",
@@ -246,6 +470,20 @@
         "unit": "each",
         "qty": 72.0,
         "rate": 5.0
+      },
+      {
+        "code": "7015",
+        "desc": "Soffit cleat (size 27x37x25x1.60mm)",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 3.0
+      },
+      {
+        "code": "7388",
+        "desc": "Dash hold fasteners 12.5mm dia, 50mm long with 6mm dia bolts",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 11.0
       },
       {
         "code": "9977",
@@ -276,25 +514,18 @@
         "rate": 558.0
       },
       {
-        "code": "9999",
-        "desc": "Sundries and screws",
-        "unit": "L.S.",
-        "qty": 26.91,
-        "rate": 2.0
+        "code": "8146",
+        "desc": "3mm thick Bamboo Mat Board conforming to IS 13958:1994",
+        "unit": "sqm",
+        "qty": 7.35,
+        "rate": 1508.0
       },
       {
-        "code": "0112",
-        "desc": "Carpenter 2nd class",
-        "unit": "day",
-        "qty": 0.9,
-        "rate": 679.0
-      },
-      {
-        "code": "0114",
-        "desc": "Beldar",
-        "unit": "day",
-        "qty": 1.0,
-        "rate": 558.0
+        "code": "2358",
+        "desc": "Carriage of 3mm thick Bamboo mat board and accessories.",
+        "unit": "tonne",
+        "qty": 0.02,
+        "rate": 11500.0
       },
       {
         "code": "9999",
@@ -318,25 +549,18 @@
         "rate": 558.0
       },
       {
-        "code": "9999",
-        "desc": "Sundries and screws",
-        "unit": "L.S.",
-        "qty": 26.91,
-        "rate": 2.0
+        "code": "8147",
+        "desc": "4mm thick Bamboo Mat Board conforming to IS 13958:1994",
+        "unit": "sqm",
+        "qty": 7.35,
+        "rate": 1738.0
       },
       {
-        "code": "0112",
-        "desc": "Carpenter 2nd class",
-        "unit": "day",
-        "qty": 0.9,
-        "rate": 679.0
-      },
-      {
-        "code": "0114",
-        "desc": "Beldar",
-        "unit": "day",
-        "qty": 1.0,
-        "rate": 558.0
+        "code": "2358",
+        "desc": "Carriage of 4mm thick Bamboo mat board and accessories.",
+        "unit": "tonne",
+        "qty": 0.03,
+        "rate": 11500.0
       },
       {
         "code": "9999",
@@ -360,6 +584,20 @@
         "rate": 558.0
       },
       {
+        "code": "8148",
+        "desc": "6mm thick Bamboo Mat Board conforming to IS 13958:1994",
+        "unit": "sqm",
+        "qty": 7.35,
+        "rate": 2098.0
+      },
+      {
+        "code": "2358",
+        "desc": "Carriage of 6mm thick Bamboo mat board and accessories.",
+        "unit": "tonne",
+        "qty": 0.04,
+        "rate": 11500.0
+      },
+      {
         "code": "9999",
         "desc": "Sundries and screws",
         "unit": "L.S.",
@@ -379,6 +617,111 @@
         "unit": "day",
         "qty": 1.0,
         "rate": 558.0
+      },
+      {
+        "code": "8149",
+        "desc": "9mm thick Bamboo Mat Board conforming to IS 13958:1994",
+        "unit": "sqm",
+        "qty": 7.35,
+        "rate": 2688.0
+      },
+      {
+        "code": "2358",
+        "desc": "Carriage of 9mm thick Bamboo mat board and accessories.",
+        "unit": "tonne",
+        "qty": 0.06,
+        "rate": 11500.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and screws",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "8150",
+        "desc": "12mm thick Bamboo Mat Board conforming to IS 13958:1994",
+        "unit": "sqm",
+        "qty": 7.35,
+        "rate": 3115.0
+      },
+      {
+        "code": "2358",
+        "desc": "Carriage of 12mm thick Bamboo mat board and accessories.",
+        "unit": "tonne",
+        "qty": 0.07,
+        "rate": 11500.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and screws",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "8149",
+        "desc": "9mm thick Bamboo Mat Board conforming to IS 13958:1994",
+        "unit": "sqm",
+        "qty": 21.0,
+        "rate": 2688.0
+      },
+      {
+        "code": "2358",
+        "desc": "Carriage of 9mm thick Bamboo mat board and accessories.",
+        "unit": "tonne",
+        "qty": 0.18,
+        "rate": 11500.0
+      },
+      {
+        "code": "1316",
+        "desc": "50mmx50mm hardwood plug",
+        "unit": "each",
+        "qty": 45.0,
+        "rate": 75.0
+      },
+      {
+        "code": "2204",
+        "desc": "Carriage of timber",
+        "unit": "cum",
+        "qty": 0.02477,
+        "rate": 118.59
+      },
+      {
+        "code": "0637",
+        "desc": "Bright finished or black enamelled mild steel screws 40mm",
+        "unit": "100 Nos",
+        "qty": 0.7,
+        "rate": 60.0
       },
       {
         "code": "9999",
@@ -400,6 +743,41 @@
         "unit": "day",
         "qty": 2.0,
         "rate": 558.0
+      },
+      {
+        "code": "8150",
+        "desc": "12mm thick Bamboo Mat Board conforming to IS 13958:1994",
+        "unit": "sqm",
+        "qty": 21.0,
+        "rate": 3115.0
+      },
+      {
+        "code": "2358",
+        "desc": "Carriage of 12mm thick Bamboo mat board and accessories.",
+        "unit": "tonne",
+        "qty": 0.21,
+        "rate": 11500.0
+      },
+      {
+        "code": "1316",
+        "desc": "50mmx50mm hardwood plug",
+        "unit": "each",
+        "qty": 45.0,
+        "rate": 75.0
+      },
+      {
+        "code": "2204",
+        "desc": "Carriage of timber",
+        "unit": "cum",
+        "qty": 0.02477,
+        "rate": 118.59
+      },
+      {
+        "code": "0637",
+        "desc": "Bright finished or black enamelled mild steel screws 40mm",
+        "unit": "100 Nos",
+        "qty": 0.7,
+        "rate": 60.0
       },
       {
         "code": "9999",
@@ -427,10 +805,17 @@
   {
     "code": "26.7",
     "desc": "Providing and fixing 50 mm thick extruded polystyrene rigid insulation board of required size between cavity wall, complying with ISO 4898:2",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 10.0,
     "say": 807.2,
     "resources": [
+      {
+        "code": "8561",
+        "desc": "Extruded polystyrene rigid insulation board 50 mm thick",
+        "unit": "sqm",
+        "qty": 10.2,
+        "rate": 525.0
+      },
       {
         "code": "0111",
         "desc": "Carpenter 1st class",
@@ -451,16 +836,30 @@
         "unit": "day",
         "qty": 0.25,
         "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries (Water based adhesive, fasteners, scaffolding etc.)",
+        "unit": "L.S.",
+        "qty": 100.0,
+        "rate": 2.0
       }
     ]
   },
   {
     "code": "26.8",
     "desc": "Providing and fixing 50 mm thick extruded polystyrene rigid insulation board of required size underdeck on ceiling surface, complying with I",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 10.0,
     "say": 871.2,
     "resources": [
+      {
+        "code": "8561",
+        "desc": "Extruded polystyrene rigid insulation board 50 mm thick",
+        "unit": "sqm",
+        "qty": 10.2,
+        "rate": 525.0
+      },
       {
         "code": "0111",
         "desc": "Carpenter 1st class",
@@ -481,16 +880,51 @@
         "unit": "day",
         "qty": 0.5,
         "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries (Water based adhesive, fasteners, scaffolding etc.)",
+        "unit": "L.S.",
+        "qty": 100.0,
+        "rate": 2.0
       }
     ]
   },
   {
     "code": "26.9",
     "desc": "Providing and fixing factory made solid Foam uPVC profile for kitchen cabinet frame (45 x 20 mm) of approved shade, quality and make. The pr",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "mtr",
+    "basis": 2.13,
     "say": 377.0,
     "resources": [
+      {
+        "code": "2491",
+        "desc": "Pre laminated both side solid foam uPVC profile (45x20mm)",
+        "unit": "metre",
+        "qty": 2.13,
+        "rate": 130.0
+      },
+      {
+        "code": "2493",
+        "desc": "PVC edge beading",
+        "unit": "metre",
+        "qty": 4.26,
+        "rate": 31.0
+      },
+      {
+        "code": "2494",
+        "desc": "Expandable fastner with plastic sleeve",
+        "unit": "each",
+        "qty": 8.0,
+        "rate": 5.0
+      },
+      {
+        "code": "8210",
+        "desc": "Stainless steel screws 50 mm",
+        "unit": "100 Nos",
+        "qty": 0.08,
+        "rate": 270.0
+      },
       {
         "code": "0111",
         "desc": "Carpenter 1st class",
@@ -510,10 +944,24 @@
   {
     "code": "26.10",
     "desc": "Providing and fixing factory made Kitchen Cabinet Shutter/Partition 20 mm nominal thickness of approved shade, quality and make, made from r",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 0.281,
     "say": 4535.3,
     "resources": [
+      {
+        "code": "2492",
+        "desc": "Solid foam uPVC sheet 20mm thick prelaminated on both side",
+        "unit": "sqm",
+        "qty": 0.281,
+        "rate": 2090.0
+      },
+      {
+        "code": "2493",
+        "desc": "PVC edge beading",
+        "unit": "metre",
+        "qty": 2.13,
+        "rate": 31.0
+      },
       {
         "code": "9999",
         "desc": "Sundries",
@@ -541,9 +989,23 @@
     "code": "26.11",
     "desc": "Providing and fixing concealed hinge of approved quality for 19-20mm thick door with stainless steel screws complete :",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 105.25,
     "resources": [
+      {
+        "code": "8226",
+        "desc": "Concealed zinc coated hinges 19-20 mm thick with mounting plate",
+        "unit": "10 Nos",
+        "qty": 1.0,
+        "rate": 420.0
+      },
+      {
+        "code": "8210",
+        "desc": "Stainless steel screws 50 mm",
+        "unit": "100 Nos",
+        "qty": 0.8,
+        "rate": 270.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",
@@ -570,10 +1032,17 @@
   {
     "code": "26.12",
     "desc": "Supplying & laying of bi-axial extruded high modulus polypropylene geogrid coforming to MORTH SPECIFICATION for base/sub-base reinforcement ",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 300.0,
     "say": 171.35,
     "resources": [
+      {
+        "code": "8956",
+        "desc": "Bi-Axial Extruded GeoGrids of Minimum Tensile Strength 15 kN/m in the longitudinal and transverse direction",
+        "unit": "Sqm",
+        "qty": 300.0,
+        "rate": 100.0
+      },
       {
         "code": "0128",
         "desc": "Mate",
@@ -600,10 +1069,17 @@
   {
     "code": "26.13",
     "desc": "Supplying & laying of bi-axial extruded high modulus polypropylene geogrid coforming to MORTH SPECIFICATION for base/sub-base reinforcement ",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 300.0,
     "say": 193.45,
     "resources": [
+      {
+        "code": "8957",
+        "desc": "Bi-Axial Extruded GeoGrids of Minimum Tensile Strength 20kN/m in the longitudinal and transverse direction",
+        "unit": "sqm",
+        "qty": 300.0,
+        "rate": 115.0
+      },
       {
         "code": "0128",
         "desc": "Mate",
@@ -630,10 +1106,17 @@
   {
     "code": "26.14",
     "desc": "Supplying & laying of bi-axial extruded high modulus polypropylene geogrid coforming to MORTH SPECIFICATION for base/sub-base reinforcement ",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 300.0,
     "say": 296.45,
     "resources": [
+      {
+        "code": "8958",
+        "desc": "Bi-Axial Extruded GeoGrids of Minimum Tensile Strength 30kN/m in the longitudinal and transverse direction",
+        "unit": "sqm",
+        "qty": 300.0,
+        "rate": 185.0
+      },
       {
         "code": "0128",
         "desc": "Mate",
@@ -660,10 +1143,17 @@
   {
     "code": "26.15",
     "desc": "Supplying & laying of bi-axial extruded high modulus polypropylene geogrid coforming to MORTH SPECIFICATION for base/sub-base reinforcement ",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 300.0,
     "say": 428.9,
     "resources": [
+      {
+        "code": "8959",
+        "desc": "Bi-Axial Extruded GeoGrids of Minimum Tensile Strength 40kN/m in the longitudinal and transverse direction",
+        "unit": "Sqm",
+        "qty": 300.0,
+        "rate": 275.0
+      },
       {
         "code": "0128",
         "desc": "Mate",
@@ -690,8 +1180,8 @@
   {
     "code": "26.16",
     "desc": "Supplying & laying of drainage composite for use behind walls, between two different fills, alongside drains of road, below concrete lining ",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 300.0,
     "say": 804.2,
     "resources": [
       {
@@ -727,8 +1217,8 @@
   {
     "code": "26.17",
     "desc": "Supplying & laying of drainage composite for use behind walls, between two different fills, alongside drains of road, below concrete lining ",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 300.0,
     "say": 951.35,
     "resources": [
       {
@@ -764,10 +1254,17 @@
   {
     "code": "26.18.1",
     "desc": "Ultimate tensile strength- 100 kN/m",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 300.0,
     "say": 347.95,
     "resources": [
+      {
+        "code": "8962",
+        "desc": "Synthetic Geogrid having ultimate tensile strength - 100 kN/m",
+        "unit": "Sqm",
+        "qty": 300.0,
+        "rate": 220.0
+      },
       {
         "code": "0128",
         "desc": "Mate",
@@ -794,8 +1291,8 @@
   {
     "code": "26.19.1",
     "desc": "0.71 mm thick, the profile detail width 1044/920 mm, cover width 1000/875 mm.",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 216.14,
     "say": 976.05,
     "resources": [
       {
@@ -811,6 +1308,27 @@
         "unit": "L.S.",
         "qty": 104.0,
         "rate": 2.0
+      },
+      {
+        "code": "1023",
+        "desc": "Galvanised steel J or L hooks 8 mm dia",
+        "unit": "10 Nos",
+        "qty": 47.6,
+        "rate": 120.0
+      },
+      {
+        "code": "1208",
+        "desc": "Bitumen washer",
+        "unit": "100 Nos",
+        "qty": 4.76,
+        "rate": 30.0
+      },
+      {
+        "code": "1209",
+        "desc": "G.I. plain washer thick",
+        "unit": "100 Nos",
+        "qty": 4.76,
+        "rate": 35.0
       },
       {
         "code": "9999",
@@ -852,8 +1370,8 @@
   {
     "code": "26.19.2",
     "desc": "0.91 mm thick, the profile detail width 1044/920 mm, cover width 1000/875 mm.",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 216.14,
     "say": 1239.55,
     "resources": [
       {
@@ -869,6 +1387,27 @@
         "unit": "L.S.",
         "qty": 104.0,
         "rate": 2.0
+      },
+      {
+        "code": "1023",
+        "desc": "Galvanised steel J or L hooks 8 mm dia",
+        "unit": "10 Nos",
+        "qty": 47.6,
+        "rate": 120.0
+      },
+      {
+        "code": "1208",
+        "desc": "Bitumen washer",
+        "unit": "100 Nos",
+        "qty": 4.76,
+        "rate": 30.0
+      },
+      {
+        "code": "1209",
+        "desc": "G.I. plain washer thick",
+        "unit": "100 Nos",
+        "qty": 4.76,
+        "rate": 35.0
       },
       {
         "code": "9999",
@@ -910,10 +1449,73 @@
   {
     "code": "26.22.1",
     "desc": "With 15 mm thick tegular edged light weight calcium silicate false ceiling tiles.",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 100.0,
     "say": 1688.8,
     "resources": [
+      {
+        "code": "8589",
+        "desc": "Calcium Silicate tegular edged celling tiles 595x595 mm and 15 mm thick",
+        "unit": "sqm",
+        "qty": 105.0,
+        "rate": 685.0
+      },
+      {
+        "code": "8590",
+        "desc": "Galvanised iron main Tee ceiling section Size 24x38x0.33 mm (3 metre long)",
+        "unit": "each",
+        "qty": 29.5,
+        "rate": 120.0
+      },
+      {
+        "code": "8591",
+        "desc": "Galvanised iron perimeter wall Angle Size 24 x 24 x 0.40 mm (3.00 metre long)",
+        "unit": "each",
+        "qty": 13.5,
+        "rate": 65.0
+      },
+      {
+        "code": "8592",
+        "desc": "Galvanised iron intermediate cross T section Size 24 x 32 x 0.33 mm (1.2 metre long)",
+        "unit": "each",
+        "qty": 147.0,
+        "rate": 40.0
+      },
+      {
+        "code": "8593",
+        "desc": "Galvanised iron intermediate cross T section Size 24 x 32 x 0.33 mm ( 0.6 metre long)",
+        "unit": "each",
+        "qty": 147.0,
+        "rate": 20.0
+      },
+      {
+        "code": "8588",
+        "desc": "Galavanised MS hanger rod 6 mm dia MS fully threaded up to 1000 mm length",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 26.0
+      },
+      {
+        "code": "8619",
+        "desc": "Galavanised MS L-shape level adjuster of size 85x25x2 mm",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 15.0
+      },
+      {
+        "code": "8596",
+        "desc": "Galavanised MS 8 mm outer diameter M-6 dash fastener 50mm long",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 32.0
+      },
+      {
+        "code": "8211",
+        "desc": "40 mm long S.S screws with plastic rawl plugs",
+        "unit": "100 nos",
+        "qty": 1.0,
+        "rate": 215.0
+      },
       {
         "code": "9999",
         "desc": "Scaffolding etc.",
@@ -954,10 +1556,73 @@
   {
     "code": "26.23.1",
     "desc": "With 15 mm thick integral densified micro edge light weight calcium silicate false ceiling tiles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 100.0,
     "say": 1952.7,
     "resources": [
+      {
+        "code": "8563",
+        "desc": "15 mm thick, light weight, integral densified micro look edged,false ceiling tiles of size 595x595 mm.",
+        "unit": "sqm",
+        "qty": 105.0,
+        "rate": 720.0
+      },
+      {
+        "code": "8567",
+        "desc": "Galvanized mild steel perimeter wall angle 22x19x0.40 mm (3000 mm long)",
+        "unit": "each",
+        "qty": 13.5,
+        "rate": 115.0
+      },
+      {
+        "code": "8566",
+        "desc": "Powder coated steel section main-T ceiling sections 15x42x0.40 mm (3000 mm long)",
+        "unit": "each",
+        "qty": 29.5,
+        "rate": 235.0
+      },
+      {
+        "code": "8568",
+        "desc": "Powder coated Galvanised Iron intermediate cross-T section 15x42x0.40 mm (1200 mm long)",
+        "unit": "each",
+        "qty": 147.0,
+        "rate": 95.0
+      },
+      {
+        "code": "8569",
+        "desc": "Powder coated Galvanized Iron intermediate cross-T section 15x42x0.40mm (600 mm long )",
+        "unit": "each",
+        "qty": 147.0,
+        "rate": 47.0
+      },
+      {
+        "code": "8588",
+        "desc": "Galavanised MS hanger rod 6 mm dia MS fully threaded up to 1000 mm length",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 26.0
+      },
+      {
+        "code": "8619",
+        "desc": "Galavanised MS L-shape level adjuster of size 85x25x2 mm",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 15.0
+      },
+      {
+        "code": "8515",
+        "desc": "Galavanised MS 8 mm outer diameter M-6 dash fastener 50mm long",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 31.0
+      },
+      {
+        "code": "8211",
+        "desc": "40 mm long S.S screws with plastic rawl plugs",
+        "unit": "100 nos",
+        "qty": 1.0,
+        "rate": 215.0
+      },
       {
         "code": "9999",
         "desc": "Scaffolding etc.",
@@ -998,10 +1663,66 @@
   {
     "code": "26.24.1",
     "desc": "With 15 mm thick fully perforated square/butt edge light weight calcium silicate panels/ tiles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "x",
+    "basis": 6.0,
     "say": 2736.8,
     "resources": [
+      {
+        "code": "8564",
+        "desc": "15 mm thick, light weight,fully perforated square/butt edge integral densified,false ceiling tiles of size 595x595 mm.",
+        "unit": "sqm",
+        "qty": 23.0,
+        "rate": 900.0
+      },
+      {
+        "code": "7367",
+        "desc": "Galvanised M.S. sheet 0.5 mm thick pressed channel section of size 50x32 mm",
+        "unit": "metre",
+        "qty": 12.6,
+        "rate": 57.0
+      },
+      {
+        "code": "7369",
+        "desc": "Galvanised M.S. sheet 0.50 mm thick pressed stud : 48x34x36 mm",
+        "unit": "metre",
+        "qty": 73.66,
+        "rate": 71.0
+      },
+      {
+        "code": "7025",
+        "desc": "Self tapping pan head nickle coated mild steel screws of size 13 x 3.2 mm",
+        "unit": "1000 Nos",
+        "qty": 0.392,
+        "rate": 525.0
+      },
+      {
+        "code": "7383",
+        "desc": "12 mm dia 50 mm long wedge type expanded zinc alloy dash fastner",
+        "unit": "each",
+        "qty": 19.0,
+        "rate": 7.0
+      },
+      {
+        "code": "7274",
+        "desc": "Glass wool 50 mm thick",
+        "unit": "sqm",
+        "qty": 23.0,
+        "rate": 238.0
+      },
+      {
+        "code": "0764",
+        "desc": "Calcium silicate base compound for jointing calcium silicate tiles",
+        "unit": "kg",
+        "qty": 4.82,
+        "rate": 26.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries such as scaffolding, tools, bits, etc.",
+        "unit": "L.S.",
+        "qty": 130.0,
+        "rate": 2.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of materials etc.",
@@ -1042,10 +1763,17 @@
   {
     "code": "26.25",
     "desc": "Providing and fixing 15 mm thick false ceiling tiles at all heights with integral densified calcium silicate reinforced with fibre and natur",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 10.0,
     "say": 1379.1,
     "resources": [
+      {
+        "code": "8589",
+        "desc": "Calcium Silicate tegular edged celling tiles 595x595 mm and 15 mm thick",
+        "unit": "sqm",
+        "qty": 10.5,
+        "rate": 685.0
+      },
       {
         "code": "9977",
         "desc": "Carriage",
@@ -1086,14 +1814,70 @@
   {
     "code": "26.26.1",
     "desc": "With semi perforated 12 mm thick micro tegular edged GRG false ceiling tiles.",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 100.0,
     "say": 1572.85,
     "resources": [
       {
+        "code": "8581",
+        "desc": "12 mm thick micro tegular edged semi perforated GFRG (Glass Fibre Reinforced Gypsum) false celing tiles of Size 595x595 mm",
+        "unit": "sqm",
+        "qty": 105.0,
+        "rate": 510.0
+      },
+      {
+        "code": "8555",
+        "desc": "Galvanized iron main-T ceiling sections 15x32x0.33 mm (3000 mm long)",
+        "unit": "each",
+        "qty": 29.5,
+        "rate": 185.0
+      },
+      {
+        "code": "8591",
+        "desc": "Galvanized iron perimeter wall angle 24x24x0.40 mm (3000 mm long)",
+        "unit": "each",
+        "qty": 13.5,
+        "rate": 65.0
+      },
+      {
+        "code": "8556",
+        "desc": "Galvanized iron intermediate cross-T section 15x32x0.33 mm (1200 mm long)",
+        "unit": "each",
+        "qty": 147.0,
+        "rate": 78.0
+      },
+      {
+        "code": "8587",
+        "desc": "Galvanized iron intermediate cross- T section 15x32x0.33 mm (600 mm long)",
+        "unit": "each",
+        "qty": 147.0,
+        "rate": 35.0
+      },
+      {
+        "code": "8588",
+        "desc": "Galavanised MS hanger rod 6mm dia MS fully threaded up to 1000 mm length",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 26.0
+      },
+      {
+        "code": "8619",
+        "desc": "Galavanised MS L-shape level adjuster of size 85x25x2 mm",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 15.0
+      },
+      {
+        "code": "8596",
+        "desc": "Galvanised MS 8mm outer diameter M-6 dash fastener 25mm long",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 32.0
+      },
+      {
         "code": "8211",
-        "desc": "40mm SS with plastic rawl plugs 100",
-        "unit": "nos",
+        "desc": "40mm SS with plastic rawl plugs",
+        "unit": "100 nos",
         "qty": 1.0,
         "rate": 215.0
       },
@@ -1137,10 +1921,73 @@
   {
     "code": "26.26.2",
     "desc": "With fully perforated 12 mm thick micro tegular edged or 10 mm thick square edged GRG false ceiling tiles.",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 100.0,
     "say": 1699.3,
     "resources": [
+      {
+        "code": "8582",
+        "desc": "12 mm thick micro tegular edged fully perforated GFRG (Glass Fibre Reinforced Gypsum) false celing tiles of Size 595x595 mm",
+        "unit": "sqm",
+        "qty": 105.0,
+        "rate": 600.0
+      },
+      {
+        "code": "8555",
+        "desc": "Galvanized iron main-T ceiling sections 15x32x0.33 mm (3000 mm long)",
+        "unit": "each",
+        "qty": 29.5,
+        "rate": 185.0
+      },
+      {
+        "code": "8591",
+        "desc": "Galvanized iron perimeter wall angle 24x24x0.40 mm (3000 mm long)",
+        "unit": "each",
+        "qty": 13.5,
+        "rate": 65.0
+      },
+      {
+        "code": "8556",
+        "desc": "Galvanized iron intermediate cross- T section 15x32x0.33 mm (1200 mm long)",
+        "unit": "each",
+        "qty": 147.0,
+        "rate": 78.0
+      },
+      {
+        "code": "8587",
+        "desc": "Galvanized iron intermediate cross-T section 15x32x0.33 mm (600 mm long)",
+        "unit": "each",
+        "qty": 147.0,
+        "rate": 35.0
+      },
+      {
+        "code": "8588",
+        "desc": "Galavanised MS hanger rod 6mm dia MS fully threaded up to 1000 mm length",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 26.0
+      },
+      {
+        "code": "8619",
+        "desc": "Galavanised MS L-shape level adjuster of size 85x25x2 mm",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 15.0
+      },
+      {
+        "code": "8596",
+        "desc": "Galvanised MS 8mm outer diameter M-6 dash fastener 25mm long",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 32.0
+      },
+      {
+        "code": "8211",
+        "desc": "40mm long SS screws with plastic rawl plugs",
+        "unit": "100 nos",
+        "qty": 1.0,
+        "rate": 215.0
+      },
       {
         "code": "9999",
         "desc": "Scaffolding etc.",
@@ -1181,10 +2028,73 @@
   {
     "code": "26.27.1",
     "desc": "With 16 mm thick beveled tegular mineral fibre false ceiling tile (NRC 0.55 to 0.6",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 100.0,
     "say": 2000.85,
     "resources": [
+      {
+        "code": "8552",
+        "desc": "Mineral fibre beveled tegular edged ceiling tiles 595x595 mm, 16 mm thick",
+        "unit": "sqm",
+        "qty": 105.0,
+        "rate": 830.0
+      },
+      {
+        "code": "8555",
+        "desc": "G.I. main runner 15X32mm of 3000 mm l ength, 0.33mm thick",
+        "unit": "each",
+        "qty": 29.5,
+        "rate": 185.0
+      },
+      {
+        "code": "8556",
+        "desc": "G.I. cross Tee 15X32mm of 1200mm length 0.33mm thick",
+        "unit": "each",
+        "qty": 147.0,
+        "rate": 78.0
+      },
+      {
+        "code": "8557",
+        "desc": "G.I. cross Tee 15X32mm of 600mm length, 0.33 mm thick",
+        "unit": "each",
+        "qty": 147.0,
+        "rate": 35.0
+      },
+      {
+        "code": "8591",
+        "desc": "Galvanised Steel perimeter wall Angle Size 24 x 24 x 0.40 mm (3.00 metre long)",
+        "unit": "each",
+        "qty": 13.5,
+        "rate": 65.0
+      },
+      {
+        "code": "8558",
+        "desc": "Galvanised Iron hanger rod 6mm dia fully threaded upto 1000mm length",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 26.0
+      },
+      {
+        "code": "8619",
+        "desc": "Galavanised MS L-shape level adjuster of size 85x25x2 mm",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 15.0
+      },
+      {
+        "code": "8515",
+        "desc": "Galavanised MS 8 mm outer diameter M-6 dash fastener 50mm long",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 31.0
+      },
+      {
+        "code": "8211",
+        "desc": "40 mm long S.S screws with plastic rawl plugs",
+        "unit": "100 nos",
+        "qty": 1.0,
+        "rate": 215.0
+      },
       {
         "code": "9999",
         "desc": "Sundries i.e. scaffolding etc",
@@ -1218,10 +2128,73 @@
   {
     "code": "26.27.2",
     "desc": "With 20 mm thick beveled tegular mineral fibre false ceiling tile (NRC 0.7)",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 100.0,
     "say": 2296.85,
     "resources": [
+      {
+        "code": "8554",
+        "desc": "Mineral fibre beveled tegular edged ceiling tiles 595x595mm, 20 mm thick",
+        "unit": "sqm",
+        "qty": 105.0,
+        "rate": 1040.0
+      },
+      {
+        "code": "3000",
+        "desc": "mm length, 0.33mm thick",
+        "unit": "each",
+        "qty": 29.5,
+        "rate": 185.0
+      },
+      {
+        "code": "8556",
+        "desc": "G.I. cross Tee 15X32mm of 1200mm length 0.33mm thick",
+        "unit": "each",
+        "qty": 147.0,
+        "rate": 78.0
+      },
+      {
+        "code": "8587",
+        "desc": "G.I. cross Tee 15X32mm of 600mm length, 0.33 mm thick",
+        "unit": "each",
+        "qty": 147.0,
+        "rate": 35.0
+      },
+      {
+        "code": "8591",
+        "desc": "Galvanised Steel perimeter wall Angle Size 24 x 24 x 0.40 mm (3.00 metre long)",
+        "unit": "each",
+        "qty": 13.5,
+        "rate": 65.0
+      },
+      {
+        "code": "8558",
+        "desc": "Galvanised Iron hanger rod 6mm dia fully threaded upto 1000mm length",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 26.0
+      },
+      {
+        "code": "8619",
+        "desc": "Galavanised MS L-shape level adjuster of size 85x25x2 mm",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 15.0
+      },
+      {
+        "code": "8596",
+        "desc": "Galavanised MS 8 mm outer diameter 50mm long",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 32.0
+      },
+      {
+        "code": "8211",
+        "desc": "40 mm long S.S screws with plastic rawl plugs",
+        "unit": "100 nos",
+        "qty": 1.0,
+        "rate": 215.0
+      },
       {
         "code": "9999",
         "desc": "Sundries i.e. scaffolding etc",
@@ -1255,10 +2228,73 @@
   {
     "code": "26.27.3",
     "desc": "With 16 mm thick beveled tegular mineral fibre Anti-microbial false ceiling tile confirming to ISO 5 (class 100 ) specifications",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 100.0,
     "say": 2128.25,
     "resources": [
+      {
+        "code": "8553",
+        "desc": "Mineral fibre beveled tegular edged ceiling tiles 595x595 mm, 16 mm thick with bioblock, confirming to ISO 5 (class 100) specifications",
+        "unit": "sqm",
+        "qty": 105.0,
+        "rate": 920.0
+      },
+      {
+        "code": "8555",
+        "desc": "G.I. main runner 15X32mm of 3000 mm l ength, 0.33mm thick",
+        "unit": "each",
+        "qty": 29.5,
+        "rate": 185.0
+      },
+      {
+        "code": "8556",
+        "desc": "G.I. cross Tee 15X32mm of 1200mm length 0.33mm thick",
+        "unit": "each",
+        "qty": 147.0,
+        "rate": 78.0
+      },
+      {
+        "code": "8557",
+        "desc": "G.I. cross Tee 15X32mm of 600mm length,0.33 mm thick",
+        "unit": "each",
+        "qty": 147.0,
+        "rate": 35.0
+      },
+      {
+        "code": "8591",
+        "desc": "Galvanised Steel perimeter wall Angle Size 24 x 24 x 0.40 mm (3.00 metre long)",
+        "unit": "each",
+        "qty": 13.5,
+        "rate": 65.0
+      },
+      {
+        "code": "8558",
+        "desc": "Galvanised Iron hanger rod 6mm dia fully threaded upto 1000mm length",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 26.0
+      },
+      {
+        "code": "8619",
+        "desc": "Galavanised MS L-shape level adjuster of size 85x25x2 mm",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 15.0
+      },
+      {
+        "code": "8596",
+        "desc": "Galavanised MS 8 mm outer diameter M-6 dash fastener 50mm long",
+        "unit": "each",
+        "qty": 72.0,
+        "rate": 32.0
+      },
+      {
+        "code": "8211",
+        "desc": "40 mm long S.S screws with plastic rawl plugs",
+        "unit": "100 nos",
+        "qty": 1.0,
+        "rate": 215.0
+      },
       {
         "code": "9999",
         "desc": "Sundries i.e. scaffolding etc",
@@ -1297,6 +2333,13 @@
     "say": 287.1,
     "resources": [
       {
+        "code": "9999",
+        "desc": "Hire charges for HILTY-TE 504 Pneumatic Chisel",
+        "unit": "L.S.",
+        "qty": 5.6,
+        "rate": 2.0
+      },
+      {
         "code": "0157",
         "desc": "Machine Operator",
         "unit": "day",
@@ -1319,6 +2362,13 @@
     "basis": 1.0,
     "say": 194.6,
     "resources": [
+      {
+        "code": "9999",
+        "desc": "Hire charges for HILTY-TE 504 Pneumatic Chisel",
+        "unit": "L.S.",
+        "qty": 3.74,
+        "rate": 2.0
+      },
       {
         "code": "0157",
         "desc": "Machine Operator",
@@ -1343,6 +2393,13 @@
     "say": 96.5,
     "resources": [
       {
+        "code": "9999",
+        "desc": "Hire charges for HILTY-TE 504 Pneumatic Chisel",
+        "unit": "L.S.",
+        "qty": 1.87,
+        "rate": 2.0
+      },
+      {
         "code": "0157",
         "desc": "Machine Operator",
         "unit": "day",
@@ -1365,6 +2422,13 @@
     "basis": 3.0,
     "say": 5.9,
     "resources": [
+      {
+        "code": "7911",
+        "desc": "Chemical Rust Remover",
+        "unit": "litre",
+        "qty": 1.0,
+        "rate": 210.0
+      },
       {
         "code": "0131",
         "desc": "Painter",
@@ -1403,6 +2467,13 @@
     "say": 11.8,
     "resources": [
       {
+        "code": "7911",
+        "desc": "Chemical Rust Remover",
+        "unit": "litre",
+        "qty": 1.0,
+        "rate": 210.0
+      },
+      {
         "code": "0131",
         "desc": "Painter",
         "unit": "day",
@@ -1435,10 +2506,24 @@
   {
     "code": "26.30.1",
     "desc": "Upto and including 12mm dia.",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "holes",
+    "basis": 10.0,
     "say": 113.05,
     "resources": [
+      {
+        "code": "7913",
+        "desc": "Epoxy",
+        "unit": "kg",
+        "qty": 0.2,
+        "rate": 585.0
+      },
+      {
+        "code": "0088",
+        "desc": "Hire charges of Drill machine upto 30 mm dia",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 160.0
+      },
       {
         "code": "0116",
         "desc": "Fitter (grade 1)",
@@ -1458,8 +2543,8 @@
   {
     "code": "26.31.1",
     "desc": "SBR Polymer (@10% of cement weight) modified cementitious bond coat @ 2.2 kg cement per sqm of surface area mixed with specified proportion ",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 10.0,
     "say": 117.3,
     "resources": [
       {
@@ -1468,6 +2553,13 @@
         "unit": "tonne",
         "qty": 0.022,
         "rate": 4940.0
+      },
+      {
+        "code": "7914",
+        "desc": "SBR Polymer",
+        "unit": "kg",
+        "qty": 2.2,
+        "rate": 190.0
       },
       {
         "code": "0155",
@@ -1495,10 +2587,24 @@
   {
     "code": "26.31.2",
     "desc": "Epoxy bonding adhesive having coverage 2.20 sqm/kg of approved make",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 2.2,
     "say": 388.5,
     "resources": [
+      {
+        "code": "7913",
+        "desc": "Epoxy",
+        "unit": "kg",
+        "qty": 1.0,
+        "rate": 585.0
+      },
+      {
+        "code": "9999",
+        "desc": "Application charge for applying bonding coat of Epoxy",
+        "unit": "L.S.",
+        "qty": 18.5,
+        "rate": 2.0
+      },
       {
         "code": "9999",
         "desc": "Cost of brushes etc.",
@@ -1511,10 +2617,24 @@
   {
     "code": "26.32.1",
     "desc": "12 mm average thickness.",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 10.0,
     "say": 304.1,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.144,
+        "rate": 4010.35
+      },
+      {
+        "code": "7914",
+        "desc": "SBR Polymer",
+        "unit": "kg",
+        "qty": 1.1,
+        "rate": 190.0
+      },
       {
         "code": "0155",
         "desc": "Mason (average)",
@@ -1548,10 +2668,24 @@
   {
     "code": "26.32.2",
     "desc": "25 mm average thickness in 2 layers.",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 10.0,
     "say": 471.0,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.3,
+        "rate": 4010.35
+      },
+      {
+        "code": "7914",
+        "desc": "SBR Polymer",
+        "unit": "kg",
+        "qty": 2.28,
+        "rate": 190.0
+      },
       {
         "code": "0155",
         "desc": "Mason (average)",
@@ -1585,10 +2719,24 @@
   {
     "code": "26.32.3",
     "desc": "50 mm average thickness in 3 layers.",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 10.0,
     "say": 942.0,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.6,
+        "rate": 4010.35
+      },
+      {
+        "code": "7914",
+        "desc": "SBR Polymer",
+        "unit": "kg",
+        "qty": 4.56,
+        "rate": 190.0
+      },
       {
         "code": "0155",
         "desc": "Mason (average)",
@@ -1625,7 +2773,22 @@
     "unit": "sqm",
     "basis": 10.0,
     "say": 539.9,
-    "resources": []
+    "resources": [
+      {
+        "code": "5.33.2",
+        "desc": "Rate as per SH: 5.33.2",
+        "unit": "cum",
+        "qty": 0.5,
+        "rate": 9400.85
+      },
+      {
+        "code": "7914",
+        "desc": "SBR Polymer",
+        "unit": "kg",
+        "qty": 3.3,
+        "rate": 190.0
+      }
+    ]
   },
   {
     "code": "26.33.2",
@@ -1633,7 +2796,22 @@
     "unit": "sqm",
     "basis": 10.0,
     "say": 809.8,
-    "resources": []
+    "resources": [
+      {
+        "code": "5.33.2",
+        "desc": "Rate as per SH: 5.33.2",
+        "unit": "cum",
+        "qty": 0.75,
+        "rate": 9400.85
+      },
+      {
+        "code": "7914",
+        "desc": "SBR Polymer",
+        "unit": "kg",
+        "qty": 4.95,
+        "rate": 190.0
+      }
+    ]
   },
   {
     "code": "26.34.1",
@@ -1641,7 +2819,22 @@
     "unit": "sqm",
     "basis": 10.0,
     "say": 539.9,
-    "resources": []
+    "resources": [
+      {
+        "code": "5.33.2",
+        "desc": "Rate as per SH: 5.33.2",
+        "unit": "cum",
+        "qty": 0.5,
+        "rate": 9400.85
+      },
+      {
+        "code": "7914",
+        "desc": "SBR Polymer",
+        "unit": "kg",
+        "qty": 3.3,
+        "rate": 190.0
+      }
+    ]
   },
   {
     "code": "26.34.2",
@@ -1649,7 +2842,22 @@
     "unit": "sqm",
     "basis": 10.0,
     "say": 809.8,
-    "resources": []
+    "resources": [
+      {
+        "code": "5.33.2",
+        "desc": "Rate as per SH: 5.33.2",
+        "unit": "cum",
+        "qty": 0.75,
+        "rate": 9400.85
+      },
+      {
+        "code": "7914",
+        "desc": "SBR Polymer @2% of cement 247.50 kg = 247.50X2% = 4.95 kg",
+        "unit": "kg",
+        "qty": 4.95,
+        "rate": 190.0
+      }
+    ]
   },
   {
     "code": "26.34.3",
@@ -1657,7 +2865,22 @@
     "unit": "sqm",
     "basis": 10.0,
     "say": 1079.75,
-    "resources": []
+    "resources": [
+      {
+        "code": "5.33.2",
+        "desc": "Rate as per SH: 5.33.2",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 9400.85
+      },
+      {
+        "code": "7914",
+        "desc": "SBR Polymer @2% of cement 330 kg = 330X2% = 6.6 kg",
+        "unit": "kg",
+        "qty": 6.6,
+        "rate": 190.0
+      }
+    ]
   },
   {
     "code": "26.35.1",
@@ -1666,6 +2889,13 @@
     "basis": 100.0,
     "say": 97.3,
     "resources": [
+      {
+        "code": "7927",
+        "desc": "Acrylic Polymer chemical for cracks",
+        "unit": "kg",
+        "qty": 2.0,
+        "rate": 31.0
+      },
       {
         "code": "0367",
         "desc": "Portland Cement (OPC-43 grade)",
@@ -1706,10 +2936,17 @@
   {
     "code": "26.35.2",
     "desc": "Stirrer mixed SBR Polymer (of approved make) modified Cement slurry made with Shrinkage Compensating Cement in concrete/RCC work.",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "kg",
+    "basis": 100.0,
     "say": 101.55,
     "resources": [
+      {
+        "code": "7914",
+        "desc": "SBR Polymer for crack",
+        "unit": "kg",
+        "qty": 2.0,
+        "rate": 190.0
+      },
       {
         "code": "0367",
         "desc": "Portland Cement (OPC-43 grade)",
@@ -1750,10 +2987,24 @@
   {
     "code": "26.35.3",
     "desc": "Epoxy injection grout in concrete/RCC work of approved make",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "kg",
+    "basis": 10.0,
     "say": 792.3,
     "resources": [
+      {
+        "code": "7913",
+        "desc": "Epoxy",
+        "unit": "kg",
+        "qty": 10.0,
+        "rate": 585.0
+      },
+      {
+        "code": "0092",
+        "desc": "Hire charges of Plant and machinery, it can inject - 350kg/day",
+        "unit": "day",
+        "qty": 0.03,
+        "rate": 200.0
+      },
       {
         "code": "0114",
         "desc": "Beldar",
@@ -1780,10 +3031,17 @@
   {
     "code": "26.36.1",
     "desc": "Wooven PVC cloth",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 45.5,
     "resources": [
+      {
+        "code": "7915",
+        "desc": "Wooven PVC cloth",
+        "unit": "sqm",
+        "qty": 10.0,
+        "rate": 25.0
+      },
       {
         "code": "9999",
         "desc": "Fixing double scaffolding outside",
@@ -1796,10 +3054,17 @@
   {
     "code": "26.37",
     "desc": "Cleaning of exposed concrete surface of sticking material including loose and foreign material by sand blasting with coarse sand followed by",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 10.0,
     "say": 289.9,
     "resources": [
+      {
+        "code": "0089",
+        "desc": "Hire charges of sand blasting equipment (14 sqm per day)",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 160.0
+      },
       {
         "code": "0090",
         "desc": "Hire charges of compressor",
@@ -1837,6 +3102,13 @@
     "basis": 10.0,
     "say": 635.65,
     "resources": [
+      {
+        "code": "5.33.2",
+        "desc": "Rate as per SH: 5.33.2",
+        "unit": "cum",
+        "qty": 0.3125,
+        "rate": 9400.85
+      },
       {
         "code": "0157",
         "desc": "Operator (Pile/ Special machine)",
@@ -1882,6 +3154,13 @@
     "say": 1009.7,
     "resources": [
       {
+        "code": "5.33.2",
+        "desc": "Rate as per SH: 5.33.2",
+        "unit": "cum",
+        "qty": 0.625,
+        "rate": 9400.85
+      },
+      {
         "code": "0157",
         "desc": "Operator (Pile/ Special machine)",
         "unit": "day",
@@ -1926,6 +3205,13 @@
     "say": 1445.3,
     "resources": [
       {
+        "code": "5.33.2",
+        "desc": "Rate as per SH: 5.33.2",
+        "unit": "cum",
+        "qty": 0.9375,
+        "rate": 9400.85
+      },
+      {
         "code": "0157",
         "desc": "Operator (Pile/ Special machine)",
         "unit": "day",
@@ -1965,10 +3251,31 @@
   {
     "code": "26.39",
     "desc": "Providing and inserting 12mm dia galvanised steel injection nipple in honey comb area and along crack line including drilling of holes of re",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Nos",
+    "basis": 20.0,
     "say": 188.0,
     "resources": [
+      {
+        "code": "7922",
+        "desc": "Bit of drilling machine for Hole upto 30mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 500.0
+      },
+      {
+        "code": "7923",
+        "desc": "GI injection nipple 12mm dia, 75mm long",
+        "unit": "each",
+        "qty": 20.0,
+        "rate": 42.0
+      },
+      {
+        "code": "7924",
+        "desc": "Blowing compressed air for cleaning holes upto 30mm dia",
+        "unit": "each",
+        "qty": 20.0,
+        "rate": 10.0
+      },
       {
         "code": "0155",
         "desc": "Mason (average)",
@@ -1995,10 +3302,31 @@
   {
     "code": "26.40",
     "desc": "Providing and fixing hard drawn steel wire fabric of size 75 x25 mm mesh or other suitable size wire mesh to be fixed & firmly anchored to t",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 801.7,
     "resources": [
+      {
+        "code": "7925",
+        "desc": "L shaped 100mm long, 10mm dia mild steel shear key",
+        "unit": "kg",
+        "qty": 1.55,
+        "rate": 67.0
+      },
+      {
+        "code": "0091",
+        "desc": "Welding charges of shear key to existing reinforcement",
+        "unit": "each",
+        "qty": 25.0,
+        "rate": 5.0
+      },
+      {
+        "code": "1021",
+        "desc": "Hard drawn steel wire fabric",
+        "unit": "sqm",
+        "qty": 10.5,
+        "rate": 430.0
+      },
       {
         "code": "9977",
         "desc": "Carriage at site",
@@ -2025,10 +3353,17 @@
   {
     "code": "26.41",
     "desc": "Designing, providing, installing and fixing factory finished custom designed cold form Light Gauge Steel Framed super structure comprising o",
-    "unit": "nos",
+    "unit": "Kg",
     "basis": 1.0,
     "say": 217.5,
     "resources": [
+      {
+        "code": "8579",
+        "desc": "Cold form light gauge Steel C-section of thickness 0.75mm i/c zink coating/ sliting etc.",
+        "unit": "kg",
+        "qty": 1.05,
+        "rate": 130.0
+      },
       {
         "code": "9977",
         "desc": "Carriage",
@@ -2055,10 +3390,66 @@
   {
     "code": "26.42",
     "desc": "Providing and fixing of external wall system on Light gauge steel frame work with . Outer face having 6mm thick heavy duty fiber cement boar",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 10.0,
     "say": 3418.95,
     "resources": [
+      {
+        "code": "0238",
+        "desc": "6 mm thick heavy duty fiber cement board",
+        "unit": "sqm",
+        "qty": 11.0,
+        "rate": 470.0
+      },
+      {
+        "code": "2636",
+        "desc": "GI Screws of gauge 10, length 45 mm for fixing cement fibre board to C section",
+        "unit": "each",
+        "qty": 40.0,
+        "rate": 3.0
+      },
+      {
+        "code": "0240",
+        "desc": "9 mm thick heavy duty fiber cement board",
+        "unit": "sqm",
+        "qty": 11.0,
+        "rate": 625.0
+      },
+      {
+        "code": "2635",
+        "desc": "GI Screws of gauge 10, length 25 mm for fixing cement fibre board to C section",
+        "unit": "each",
+        "qty": 40.0,
+        "rate": 3.0
+      },
+      {
+        "code": "0239",
+        "desc": "8mm thick heavy duty fiber cement board",
+        "unit": "sqm",
+        "qty": 11.0,
+        "rate": 300.0
+      },
+      {
+        "code": "2636",
+        "desc": "GI Screws of gauge 10, length 45 mm for fixing cement fibre board to C section",
+        "unit": "each",
+        "qty": 40.0,
+        "rate": 3.0
+      },
+      {
+        "code": "7009",
+        "desc": "12.5 mm thick tapered edge gypsum plain borad",
+        "unit": "sqm",
+        "qty": 11.0,
+        "rate": 155.0
+      },
+      {
+        "code": "2635",
+        "desc": "GI Screws of gauge 10, length 25 mm for fixing cement fibre board to C section",
+        "unit": "each",
+        "qty": 40.0,
+        "rate": 3.0
+      },
       {
         "code": "0112",
         "desc": "Carpenter 2nd class",
@@ -2074,6 +3465,13 @@
         "rate": 558.0
       },
       {
+        "code": "1248",
+        "desc": "Epoxy based sealing Compound",
+        "unit": "kg",
+        "qty": 0.14,
+        "rate": 535.0
+      },
+      {
         "code": "0112",
         "desc": "Carpenter 2nd class",
         "unit": "day",
@@ -2086,6 +3484,27 @@
         "unit": "day",
         "qty": 0.0132,
         "rate": 558.0
+      },
+      {
+        "code": "1248",
+        "desc": "Epoxy based sealing Compound",
+        "unit": "kg",
+        "qty": 0.14,
+        "rate": 535.0
+      },
+      {
+        "code": "1249",
+        "desc": "Acrylic based sealing compound",
+        "unit": "kg",
+        "qty": 0.26,
+        "rate": 500.0
+      },
+      {
+        "code": "1250",
+        "desc": "Non woven reinforcement Tape",
+        "unit": "metre",
+        "qty": 25.0,
+        "rate": 0.14
       },
       {
         "code": "0112",
@@ -2106,16 +3525,37 @@
   {
     "code": "26.43",
     "desc": "Providing and fixing internal wall panels on Light gauge steel frame work with 12.5mm thick gypsum plaster board conforming IS 2095:2011 fix",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 10.0,
     "say": 2118.95,
     "resources": [
+      {
+        "code": "0239",
+        "desc": "8mm thick heavy duty fiber cement board",
+        "unit": "sqm",
+        "qty": 22.0,
+        "rate": 300.0
+      },
+      {
+        "code": "2635",
+        "desc": "GI Screws of gauge 10, length 25 mm for fixing cement fibre board to C section",
+        "unit": "each",
+        "qty": 80.0,
+        "rate": 3.0
+      },
       {
         "code": "0241",
         "desc": "12.5 mm thick Gypsum plaster board",
         "unit": "sqm",
         "qty": 22.0,
         "rate": 170.0
+      },
+      {
+        "code": "2635",
+        "desc": "GI Screws of gauge 10, length 25 mm for fixing cement fibre board to C section",
+        "unit": "each",
+        "qty": 80.0,
+        "rate": 3.0
       },
       {
         "code": "0112",
@@ -2136,10 +3576,17 @@
   {
     "code": "26.44",
     "desc": "Providing and fixing in all exterior face panels breathable vapour barrier underneath the cement fiber board as per National Building Code 2",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 10.0,
     "say": 293.95,
     "resources": [
+      {
+        "code": "2637",
+        "desc": "Vapour barrier",
+        "unit": "sqm",
+        "qty": 11.0,
+        "rate": 175.0
+      },
       {
         "code": "0112",
         "desc": "Carpenter 2nd class",
@@ -2159,10 +3606,24 @@
   {
     "code": "26.45",
     "desc": "Supplying and installation of moisture resistant/fire resistant 6 mm thick Heavy duty fiber cement board (High pressure steam cured) conform",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 10.0,
     "say": 1179.3,
     "resources": [
+      {
+        "code": "0238",
+        "desc": "6 mm thick heavy duty fiber cement board",
+        "unit": "sqm",
+        "qty": 11.0,
+        "rate": 470.0
+      },
+      {
+        "code": "2635",
+        "desc": "GI Screws of gauge 10, length 25 mm for fixing cement fibre board to C section",
+        "unit": "each",
+        "qty": 40.0,
+        "rate": 3.0
+      },
       {
         "code": "0112",
         "desc": "Carpenter 2nd class",
@@ -2182,15 +3643,43 @@
   {
     "code": "26.46",
     "desc": "Providing and fixing in position, 200 mm thick factory made Expanded Polystyrene Core (EPS Core) wall panels consisting of EPS core sandwich",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "x3",
+    "basis": 1.2,
     "say": 3854.6,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.36,
+        "rate": 4664.55
+      },
+      {
+        "code": "8013",
+        "desc": "Factory made EPS Core wallpanel /roof panel sandwiched between two Engineered welded wire fabric mesh of 3 mm dia G.I. wire mesh,with 50 mm pitch in both the directions, kept at 120- 135 mm gap and interconnected by the zig zag G.I. wire of 3 mm dia at alternate row by welding.",
+        "unit": "sqm",
+        "qty": 3.78,
+        "rate": 1650.0
+      },
+      {
+        "code": "9999",
+        "desc": "Add for L-shape,U-shape & straight lap mesh",
+        "unit": "L.S.",
+        "qty": 208.0,
+        "rate": 2.0
+      },
       {
         "code": "9999",
         "desc": "For fixing wall with foundation",
         "unit": "L.S.",
         "qty": 312.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "For carrying out shotcreting, shoring, leveling, and finishing the surface with trowel.",
+        "unit": "L.S.",
+        "qty": 707.5,
         "rate": 2.0
       }
     ]
@@ -2198,18 +3687,103 @@
   {
     "code": "26.47",
     "desc": "Providing and fixing in position, 230mm thick factory made Expanded Polystyrene Core (EPS Core) roof/floor panels made of 3 mm dia G.I. wire",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "x3",
+    "basis": 1.2,
     "say": 4144.95,
-    "resources": []
+    "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.216,
+        "rate": 4664.55
+      },
+      {
+        "code": "5.3",
+        "desc": "Rate as per SH: 5.3",
+        "unit": "cum",
+        "qty": 0.252,
+        "rate": 9763.8
+      },
+      {
+        "code": "8013",
+        "desc": "Factory made EPS Core wallpanel /roof panel sandwiched between two Engineered welded wire fabric mesh of 3 mm dia G.I. wire mesh,with 50 mm pitch in both the directions, kept at 120-135 mm gap and interconnected by the zig zag G.I. wire of 3 mm dia at alternate row by welding. sqm 3.78",
+        "unit": "sqm",
+        "qty": 3.78,
+        "rate": 1650.0
+      },
+      {
+        "code": "9999",
+        "desc": "Add for L-shape, U-shape & straight lap mesh",
+        "unit": "L.S.",
+        "qty": 202.32,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "For providing concreting, shotcreting, shoring, leveling, plastering and finishing the surface with trowel.",
+        "unit": "L.S.",
+        "qty": 832.36,
+        "rate": 2.0
+      }
+    ]
   },
   {
     "code": "26.48",
     "desc": "Providing and fixing of costomized Aluminium formwork for monolithic construction RCC members with a repetitive usage of 100 times using gra",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 75.998,
     "say": 202.45,
     "resources": [
+      {
+        "code": "8031",
+        "desc": "Aluminium sheets Grade 5052, 4 mm thick for wall panel/deck panel/WRB panel/Kicker Panels/door closing panels",
+        "unit": "sqm",
+        "qty": 0.499,
+        "rate": 8500.0
+      },
+      {
+        "code": "8032",
+        "desc": "Aluminium sheets Grade 5052, 4 mm thick for Internal Corner/Column Corners/9 Mid Soldier",
+        "unit": "sqm",
+        "qty": 0.0672,
+        "rate": 11500.0
+      },
+      {
+        "code": "8033",
+        "desc": "Aluminium sheets Grade 5052, 4 mm thick for Mid Soldier/End soldier",
+        "unit": "sqm",
+        "qty": 0.0038,
+        "rate": 32000.0
+      },
+      {
+        "code": "8034",
+        "desc": "External Corner 2050 mm = 2 x0.75/100= 0.015",
+        "unit": "each",
+        "qty": 0.015,
+        "rate": 1400.0
+      },
+      {
+        "code": "8035",
+        "desc": "External Corner 825 mm = 2 x0.75/100= 0.015",
+        "unit": "each",
+        "qty": 0.015,
+        "rate": 590.0
+      },
+      {
+        "code": "8036",
+        "desc": "Soldier Tie 370 mm = 8 x0.75/100 = 0.06",
+        "unit": "each",
+        "qty": 0.06,
+        "rate": 290.0
+      },
+      {
+        "code": "8037",
+        "desc": "Adjustable Prop - 2.00 x 2.00m = 8 x0.75/100 = 0.06",
+        "unit": "each",
+        "qty": 0.06,
+        "rate": 1080.0
+      },
       {
         "code": "8038",
         "desc": "Pin-50 = 936 x0.75/100 = 7.02",
@@ -2230,6 +3804,13 @@
         "unit": "each",
         "qty": 7.08,
         "rate": 14.0
+      },
+      {
+        "code": "8041",
+        "desc": "Wall Tie - 150 ( 355 )mm = 168 x0.75/100 = 1.26",
+        "unit": "each",
+        "qty": 1.26,
+        "rate": 45.0
       },
       {
         "code": "8042",
@@ -2260,6 +3841,20 @@
         "rate": 985.0
       },
       {
+        "code": "8046",
+        "desc": "Allignment Pipe - 3.00 Mtr. = 2 x0.75/100",
+        "unit": "each",
+        "qty": 0.015,
+        "rate": 995.0
+      },
+      {
+        "code": "8047",
+        "desc": "Allignment Bracket = 6 x0.75/100 = 0.045",
+        "unit": "each",
+        "qty": 0.045,
+        "rate": 475.0
+      },
+      {
         "code": "8048",
         "desc": "Tie Rod for Bracket - 500mm",
         "unit": "each",
@@ -2272,6 +3867,13 @@
         "unit": "each",
         "qty": 0.1275,
         "rate": 64.0
+      },
+      {
+        "code": "8050",
+        "desc": "Debit Pin - 250mm = 5 x0.75/100 = 0.0375",
+        "unit": "each",
+        "qty": 0.0375,
+        "rate": 60.0
       },
       {
         "code": "8051",
@@ -2367,6 +3969,20 @@
     "say": 1166.85,
     "resources": [
       {
+        "code": "7996",
+        "desc": "Factory made EPS light weight composite sandwitched wall/roof panel (50mm thick) having core material of EPS granule balls/beads (conforming to IS 4671:1984 and shall have density not less than 15kg per cum). The outer face on both sides of the panels will be non asbestos fiber cement board confirming to IS 14862:2000 or Calcium silicate board confirming to EN 14306:2009 of 5mm thick each",
+        "unit": "sqm",
+        "qty": 10.5,
+        "rate": 735.25
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, wooden wedge for levelling, cement mortar, Chemical adhesive & dowel bar (6mm dia)",
+        "unit": "L.S.",
+        "qty": 37.0,
+        "rate": 2.0
+      },
+      {
         "code": "0123",
         "desc": "Mason Grade -1",
         "unit": "day",
@@ -2389,6 +4005,20 @@
     "basis": 1.0,
     "say": 1321.0,
     "resources": [
+      {
+        "code": "7997",
+        "desc": "Factory made EPS light weight composite sandwitched wall/roof panel (60mm thick) having core material of EPS granule balls/beads (conforming to IS 4671:1984 and shall have density not less than 15kg per cum). The outer face on both sides of the panels will be non asbestos fiber cement board confirming to IS 14862:2000 or Calcium silicate board confirming to EN 14306:2009 of 5mm thick each",
+        "unit": "sqm",
+        "qty": 10.5,
+        "rate": 845.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, wooden wedge for levelling, cement mortar, Chemical adhesive & dowel bar (6mm dia)",
+        "unit": "L.S.",
+        "qty": 37.0,
+        "rate": 2.0
+      },
       {
         "code": "0123",
         "desc": "Mason Grade -1",
@@ -2413,6 +4043,20 @@
     "say": 1605.45,
     "resources": [
       {
+        "code": "7998",
+        "desc": "Factory made EPS light weight composite sandwitched wall/roof panel (75mm thick) having core material of EPS granule balls/beads (conforming to IS 4671:1984 and shall have density not less than 15kg per cum). The outer face on both sides of the panels will be non asbestos fiber cement board confirming to IS 14862:2000 or Calcium silicate board confirming to EN 14306:2009 of 5mm thick each",
+        "unit": "sqm",
+        "qty": 10.5,
+        "rate": 1047.46
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, wooden wedge for levelling, cement mortar, Chemical adhesive & dowel bar (6mm dia)",
+        "unit": "L.S.",
+        "qty": 37.0,
+        "rate": 2.0
+      },
+      {
         "code": "0123",
         "desc": "Mason Grade -1",
         "unit": "day",
@@ -2435,6 +4079,20 @@
     "basis": 1.0,
     "say": 1915.25,
     "resources": [
+      {
+        "code": "7999",
+        "desc": "Factory made EPS light weight composite sandwitched wall/roof panel (90mm thick) having core material of EPS granule balls/beads (conforming to IS 4671:1984 and shall have density not less than 15kg per cum). The outer face on both sides of the panels will be non asbestos fiber cement board confirming to IS 14862:2000 or Calcium silicate board confirming to EN 14306:2009 of 5mm thick each",
+        "unit": "sqm",
+        "qty": 10.5,
+        "rate": 1268.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, wooden wedge for levelling, cement mortar, Chemical adhesive & dowel bar (6mm dia)",
+        "unit": "L.S.",
+        "qty": 37.0,
+        "rate": 2.0
+      },
       {
         "code": "0123",
         "desc": "Mason Grade -1",
@@ -2459,6 +4117,20 @@
     "say": 2258.55,
     "resources": [
       {
+        "code": "8000",
+        "desc": "Factory made EPS light weight composite sandwitched wall/roof panel (100mm thick) having core material of EPS granule balls/beads (conforming to IS 4671:1984 and shall have density not less than 15kg per cum). The outer face on both sides of the panels will be non asbestos fiber cement board confirming to IS 14862:2000 or Calcium silicate board confirming to EN 14306:2009 of 5mm thick each",
+        "unit": "sqm",
+        "qty": 10.5,
+        "rate": 1512.37
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, wooden wedge for levelling, cement mortar, Chemical adhesive & dowel bar (6mm dia)",
+        "unit": "L.S.",
+        "qty": 37.0,
+        "rate": 2.0
+      },
+      {
         "code": "0123",
         "desc": "Mason Grade -1",
         "unit": "day",
@@ -2481,6 +4153,20 @@
     "basis": 1.0,
     "say": 1317.95,
     "resources": [
+      {
+        "code": "0244",
+        "desc": "Factory made light weight composite non asbestos fibre reinforced aerated cement sandwitched wall/roof panel (50mm thick). The outer face on both sides of the panels will be non asbestos fibre cement board (minimum 4mm thick) confirming to IS 14862:2000",
+        "unit": "sqm",
+        "qty": 10.5,
+        "rate": 634.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, cement based polymer modified jointing compound, polymer based jointing compound having superior flexibility, fibre glass tape etc.",
+        "unit": "L.S.",
+        "qty": 500.0,
+        "rate": 2.0
+      },
       {
         "code": "0123",
         "desc": "Mason Grade -1",
@@ -2512,6 +4198,20 @@
     "say": 1535.7,
     "resources": [
       {
+        "code": "0245",
+        "desc": "Factory made light weight non asbestos fibre reinforced aerated cement sandwitched wall/roof panel (75mm thick). The outer face on both sides of the panels will be non asbestos fibre cement board (minimum 5mm thick) confirming to IS 14862:2000",
+        "unit": "sqm",
+        "qty": 10.5,
+        "rate": 789.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, cement based polymer modified jointing compound, polymer based jointing compound having superior flexibility, fibre glass tape etc.",
+        "unit": "L.S.",
+        "qty": 500.0,
+        "rate": 2.0
+      },
+      {
         "code": "0123",
         "desc": "Mason Grade -1",
         "unit": "day",
@@ -2537,16 +4237,38 @@
   {
     "code": "26.51",
     "desc": "Supplying of standard quality GFRG panel of 124 mm thickness with modular cavities purchased from GFRG panel manufacturing plant in the coun",
-    "unit": "nos",
+    "unit": "sqm",
     "basis": 1.0,
     "say": 1305.6,
-    "resources": []
+    "resources": [
+      {
+        "code": "7368",
+        "desc": "GFRG panel of 124mm thick",
+        "unit": "sqm",
+        "qty": 1.05,
+        "rate": 847.46
+      },
+      {
+        "code": "9999",
+        "desc": "\"Transportation of panel in suitable truck“(Rs 0.15/sqm/km) upto 300 Km\"",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire Charges for Stillages/Lifting jaw, unloading of panel at site using for lift or crane, Hire Charges for Stillages/ Lifting jaw",
+        "unit": "L.S.",
+        "qty": 17.0,
+        "rate": 2.0
+      }
+    ]
   },
   {
     "code": "26.52",
     "desc": "Erection of GFRG Panels in walls in all floors using suitable crane as per instructions of Engineer-in-Charge, as per cutting drawings and s",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 36.0,
     "say": 266.55,
     "resources": [
       {
@@ -2590,6 +4312,13 @@
         "unit": "day",
         "qty": 0.375,
         "rate": 7500.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire charge for lateral support & Lifting jaws",
+        "unit": "L.S.",
+        "qty": 150.0,
+        "rate": 2.0
       }
     ]
   },
@@ -2600,6 +4329,20 @@
     "basis": 1.0,
     "say": 2346.15,
     "resources": [
+      {
+        "code": "1159",
+        "desc": "Stone dust/Quarry dust filling in cavities of size 230x94 mm",
+        "unit": "cum",
+        "qty": 0.85,
+        "rate": 1100.0
+      },
+      {
+        "code": "0367",
+        "desc": "OPC Cement @ 5% volume of quarry dust",
+        "unit": "tonne",
+        "qty": 0.06091,
+        "rate": 4940.0
+      },
       {
         "code": "0002",
         "desc": "Mixer hire charges",
@@ -2652,6 +4395,13 @@
         "rate": 738.0
       },
       {
+        "code": "9999",
+        "desc": "Hire charges for runner and support system and side shuttering for external side of slab for 5 days",
+        "unit": "L.S.",
+        "qty": 29.0,
+        "rate": 2.0
+      },
+      {
         "code": "0037",
         "desc": "Mobile crane",
         "unit": "day",
@@ -2663,10 +4413,17 @@
   {
     "code": "26.55",
     "desc": "Supplying and fixing 10 Gauge weld mesh of size 100mm x100 mm for floor/roof slab concrete screed over the micro beams as reinforcement. The",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 9.0,
     "say": 233.7,
     "resources": [
+      {
+        "code": "1223",
+        "desc": "Steel weld mesh",
+        "unit": "sqm",
+        "qty": 9.45,
+        "rate": 150.0
+      },
       {
         "code": "0103",
         "desc": "Blacksmith 2nd class",
@@ -2686,8 +4443,8 @@
   {
     "code": "26.56",
     "desc": "Application of ZMB 60/equivalent solution (100 Kg ZMB 60/equivalent, 1 litre ZMB Nano Thinner, 20 litre water & 1 Litre Zycoprime/equivalent",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 122.0,
     "say": 286.0,
     "resources": [
       {
@@ -2786,6 +4543,13 @@
         "rate": 4940.0
       },
       {
+        "code": "9999",
+        "desc": "100 mesh silica, water, technical supervision, etc.",
+        "unit": "L.S.",
+        "qty": 3.0,
+        "rate": 2.0
+      },
+      {
         "code": "0123",
         "desc": "Mason (Brick layer) 1st class",
         "unit": "day",
@@ -2842,6 +4606,13 @@
         "unit": "tonne",
         "qty": 0.0015,
         "rate": 4940.0
+      },
+      {
+        "code": "9999",
+        "desc": "100 mesh silica, water, technical supervision, etc.",
+        "unit": "L.S.",
+        "qty": 3.0,
+        "rate": 2.0
       },
       {
         "code": "0123",
@@ -2939,6 +4710,13 @@
         "rate": 4940.0
       },
       {
+        "code": "9999",
+        "desc": "100 mesh silica, water, technical supervision, etc.",
+        "unit": "L.S.",
+        "qty": 3.0,
+        "rate": 2.0
+      },
+      {
         "code": "0123",
         "desc": "Mason (Brick layer) 1st class",
         "unit": "day",
@@ -2954,6 +4732,13 @@
     "basis": 212.816,
     "say": 139.65,
     "resources": [
+      {
+        "code": "1012",
+        "desc": "Pregalvanized high tensile steel",
+        "unit": "kg",
+        "qty": 212.816,
+        "rate": 90.0
+      },
       {
         "code": "0116",
         "desc": "Fitter (grade 1)",
@@ -3015,6 +4800,13 @@
     "say": 87.95,
     "resources": [
       {
+        "code": "8659",
+        "desc": "12mm thick waterproofing plywood confirming to IS 4990:2011",
+        "unit": "sqm",
+        "qty": 1.4175,
+        "rate": 517.0
+      },
+      {
         "code": "0112",
         "desc": "Carpenter 2nd class",
         "unit": "day",
@@ -3037,6 +4829,34 @@
     "basis": 10.0,
     "say": 1451.7,
     "resources": [
+      {
+        "code": "8019",
+        "desc": "GI sheet 0.8 mm thick confirming to IS 277:1992",
+        "unit": "kg",
+        "qty": 79.0,
+        "rate": 75.0
+      },
+      {
+        "code": "1217",
+        "desc": "GI Wire mesh 100x100 mm",
+        "unit": "kg",
+        "qty": 12.6,
+        "rate": 75.0
+      },
+      {
+        "code": "2314",
+        "desc": "Carriage of sheet & wire",
+        "unit": "tonne",
+        "qty": 0.0916,
+        "rate": 92.24
+      },
+      {
+        "code": "1218",
+        "desc": "Shear stud",
+        "unit": "each",
+        "qty": 40.0,
+        "rate": 50.0
+      },
       {
         "code": "9999",
         "desc": "Nails/Tagged screws",
@@ -3091,15 +4911,50 @@
   {
     "code": "26.66",
     "desc": "Providing and fixing in position, 130 mm thick factory made Expanded Polystyrene Core (EPS Core) wall panels consisting of EPS core sandwich",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "x3",
+    "basis": 1.2,
     "say": 2318.9,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.252,
+        "rate": 4664.55
+      },
+      {
+        "code": "8020",
+        "desc": "Factory made EPS Core wall panel /roof panel sandwiched between two Engineered welded wire fabric mesh of 3 mm dia G.I. wire mesh, with 50 mm pitch in both the directions, connected by G.I. wire of 3mm dia at alternate row by welding",
+        "unit": "sqm",
+        "qty": 3.78,
+        "rate": 600.0
+      },
+      {
+        "code": "9999",
+        "desc": "Add for L-shape, U-shape & straight lap mesh Cement mortar 1:3 (1cement:3 coarse sand) 2x1.20x3.00x0.05= 0.36 cum",
+        "unit": "L.S.",
+        "qty": 208.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Tag screw with washers for wire mesh fixing",
+        "unit": "L.S.",
+        "qty": 78.0,
+        "rate": 2.0
+      },
       {
         "code": "9999",
         "desc": "For fixing wall with foundation",
         "unit": "L.S.",
         "qty": 312.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "For carrying out shotcreting, shoring, leveling, and finishing the surface with trowel.",
+        "unit": "L.S.",
+        "qty": 707.5,
         "rate": 2.0
       }
     ]
@@ -3107,10 +4962,45 @@
   {
     "code": "26.67",
     "desc": "Providing and fixing of external thermal insulation and composite system with First layer of self-extinguishing type Expanded Polystyrene (E",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 3366.6,
     "resources": [
+      {
+        "code": "1252",
+        "desc": "Cementitious polymer base adhesive confirming to EOTA ETAG 004 (European Technical Approval)",
+        "unit": "kg",
+        "qty": 50.0,
+        "rate": 34.0
+      },
+      {
+        "code": "1253",
+        "desc": "Polypropylene mechanical fastener with plastic pin confirming to EOTA ETAG 014 (European Technical Approval) having dia 10mm & L=200mm",
+        "unit": "each",
+        "qty": 100.0,
+        "rate": 30.0
+      },
+      {
+        "code": "1255",
+        "desc": "PVC Corner Bead of size 25mmx25mm fixed with glass fibre mesh (100mm x 100mm)",
+        "unit": "metre",
+        "qty": 5.0,
+        "rate": 90.0
+      },
+      {
+        "code": "1256",
+        "desc": "Cementitious polymer base coat confirming to EOTA ETAG 004 (European Technical Approval)",
+        "unit": "kg",
+        "qty": 50.0,
+        "rate": 40.0
+      },
+      {
+        "code": "1257",
+        "desc": "Fiberglass mesh with alkali-resistant coating having mass per unit area > 145 g/m2, mesh size: 3.9x4.0 mm ±10%",
+        "unit": "sqm",
+        "qty": 10.0,
+        "rate": 75.0
+      },
       {
         "code": "0131",
         "desc": "Painter",
@@ -3124,16 +5014,51 @@
         "unit": "day",
         "qty": 4.0,
         "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Trowel, Angle Float, Brushes, sand paper etc.",
+        "unit": "L.S.",
+        "qty": 72.25,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries (PVC drip bead with glass fibre mesh wing (100mm x 100mm), expansion joint, starter track of 1mm thick aluminium alloy (120mm wide), polyurethane sealent, scaffolding etc.)",
+        "unit": "L.S.",
+        "qty": 1445.09,
+        "rate": 2.0
       }
     ]
   },
   {
     "code": "26.68.1",
     "desc": "Cement mortar 1:6 (1 cement : 6 coarse sand)",
-    "unit": "nos",
+    "unit": "cum",
     "basis": 1.0,
     "say": 5808.25,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.113,
+        "rate": 3356.15
+      },
+      {
+        "code": "8658",
+        "desc": "Precast C&D waste concrete block",
+        "unit": "1000 Nos",
+        "qty": 0.1109,
+        "rate": 25150.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of blocks",
+        "unit": "1000 Nos",
+        "qty": 0.1109,
+        "rate": 276.72
+      },
       {
         "code": "9999",
         "desc": "Sundries",
@@ -3174,10 +5099,31 @@
   {
     "code": "26.69.1",
     "desc": "Cement mortar 1:6 (1 cement : 6 coarse sand)",
-    "unit": "nos",
+    "unit": "cum",
     "basis": 1.0,
     "say": 7590.9,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.113,
+        "rate": 3356.15
+      },
+      {
+        "code": "8658",
+        "desc": "Precast C&D waste concrete block",
+        "unit": "1000 Nos",
+        "qty": 0.1109,
+        "rate": 25150.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of blocks",
+        "unit": "1000 Nos",
+        "qty": 0.1109,
+        "rate": 276.72
+      },
       {
         "code": "9999",
         "desc": "Sundries",
@@ -3232,10 +5178,31 @@
   {
     "code": "26.70.1",
     "desc": "Cement mortar 1:4(1 cement : 4 coarse sand)",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 695.4,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.0708,
+        "rate": 4010.35
+      },
+      {
+        "code": "8658",
+        "desc": "Precast C&D waste concrete block",
+        "unit": "1000 Nos",
+        "qty": 0.1161,
+        "rate": 25150.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of blocks",
+        "unit": "1000 Nos",
+        "qty": 0.1161,
+        "rate": 276.72
+      },
       {
         "code": "9999",
         "desc": "Sundries",
@@ -3276,10 +5243,31 @@
   {
     "code": "26.71.1",
     "desc": "Cement mortar 1:4 (1 cement : 4 coarse sand)",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 853.75,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.0708,
+        "rate": 4010.35
+      },
+      {
+        "code": "8658",
+        "desc": "Precast C&D waste concrete block",
+        "unit": "1000 Nos",
+        "qty": 0.1161,
+        "rate": 25150.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of blocks",
+        "unit": "1000 Nos",
+        "qty": 0.1161,
+        "rate": 276.72
+      },
       {
         "code": "9999",
         "desc": "Sundries",
@@ -3327,10 +5315,17 @@
   {
     "code": "26.72",
     "desc": "Providing and laying 60mm thick factory made cement concrete paver block of approved shape and colour of M -30 grade made of C&D waste by bl",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 748.6,
     "resources": [
+      {
+        "code": "7776",
+        "desc": "Concrete paver block of grade M-30 made of C&D waste (60mm thickness)",
+        "unit": "sqm",
+        "qty": 10.0,
+        "rate": 317.22
+      },
       {
         "code": "0982",
         "desc": "Coarse sand (zone III)",
@@ -3339,11 +5334,25 @@
         "rate": 1350.0
       },
       {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 0.5,
+        "rate": 103.77
+      },
+      {
         "code": "0983",
         "desc": "Fine sand (zone IV)",
         "unit": "cum",
         "qty": 0.15,
         "rate": 900.0
+      },
+      {
+        "code": "2261",
+        "desc": "Carriage of fine sand",
+        "unit": "cum",
+        "qty": 0.15,
+        "rate": 103.77
       },
       {
         "code": "0123",
@@ -3376,12 +5385,40 @@
     ]
   },
   {
-    "code": "26.73.1",
-    "desc": "Concrete Grade-M-40 (cement content 400 kg ) SUB HEAD : 26- NEW TECHNOLOGIES AND MATERIALS 1970 26.73.1.1 100 mm thick hollow core slab",
+    "code": "26.73.1.1",
+    "desc": "100 mm thick hollow core slab",
     "unit": "nos",
     "basis": 1.0,
     "say": 1152.35,
     "resources": [
+      {
+        "code": "5.33.2",
+        "desc": "Rate as per SH: 5.33.2",
+        "unit": "cum",
+        "qty": 10.8,
+        "rate": 9400.85
+      },
+      {
+        "code": "5.34.2",
+        "desc": "Rate as per SH: 5.34.2",
+        "unit": "cum",
+        "qty": 10.8,
+        "rate": 139.45
+      },
+      {
+        "code": "5.35",
+        "desc": "Rate as per SH: 5.35",
+        "unit": "L.S.",
+        "qty": 1301.0,
+        "rate": 2.0
+      },
+      {
+        "code": "5.41.1",
+        "desc": "Rate as per SH: 5.41.1",
+        "unit": "sqm",
+        "qty": 312.0,
+        "rate": 53.9
+      },
       {
         "code": "9999",
         "desc": "Hollow core bed cost",
@@ -3398,6 +5435,13 @@
       },
       {
         "code": "9999",
+        "desc": "Extra cost for preparing zero slump concrete",
+        "unit": "L.S.",
+        "qty": 936.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
         "desc": "Cutting, marking, lifting & transportation",
         "unit": "L.S.",
         "qty": 578.0,
@@ -3409,6 +5453,43 @@
         "unit": "L.S.",
         "qty": 13.0,
         "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.1.2",
+    "desc": "120 mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1348.5,
+    "resources": [
+      {
+        "code": "5.33.2",
+        "desc": "Rate as per SH: 5.33.2",
+        "unit": "cum",
+        "qty": 12.96,
+        "rate": 9400.85
+      },
+      {
+        "code": "5.34.2",
+        "desc": "Rate as per SH: 5.34.2",
+        "unit": "cum",
+        "qty": 12.96,
+        "rate": 139.45
+      },
+      {
+        "code": "5.35",
+        "desc": "Rate as per SH: 5.35",
+        "unit": "L.S.",
+        "qty": 1301.0,
+        "rate": 2.0
+      },
+      {
+        "code": "5.41.1",
+        "desc": "Rate as per SH: 5.41.1",
+        "unit": "sqm",
+        "qty": 316.8,
+        "rate": 53.9
       },
       {
         "code": "9999",
@@ -3426,6 +5507,13 @@
       },
       {
         "code": "9999",
+        "desc": "Extra cost for preparing zero slump concrete",
+        "unit": "L.S.",
+        "qty": 1124.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
         "desc": "Cutting, marking, lifting & transportation",
         "unit": "L.S.",
         "qty": 578.0,
@@ -3437,6 +5525,43 @@
         "unit": "L.S.",
         "qty": 13.0,
         "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.1.3",
+    "desc": "150 mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1642.75,
+    "resources": [
+      {
+        "code": "5.33.2",
+        "desc": "Rate as per SH: 5.33.2",
+        "unit": "cum",
+        "qty": 16.2,
+        "rate": 9400.85
+      },
+      {
+        "code": "5.34.2",
+        "desc": "Rate as per SH: 5.34.2",
+        "unit": "cum",
+        "qty": 16.2,
+        "rate": 139.45
+      },
+      {
+        "code": "5.35",
+        "desc": "Rate as per SH: 5.35",
+        "unit": "L.S.",
+        "qty": 1301.0,
+        "rate": 2.0
+      },
+      {
+        "code": "5.41.1",
+        "desc": "Rate as per SH: 5.41.1",
+        "unit": "sqm",
+        "qty": 324.0,
+        "rate": 53.9
       },
       {
         "code": "9999",
@@ -3454,6 +5579,13 @@
       },
       {
         "code": "9999",
+        "desc": "Extra cost for preparing zero slump concrete",
+        "unit": "L.S.",
+        "qty": 1405.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
         "desc": "Cutting, marking, lifting & transportation",
         "unit": "L.S.",
         "qty": 578.0,
@@ -3465,6 +5597,43 @@
         "unit": "L.S.",
         "qty": 13.0,
         "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.1.4",
+    "desc": "200 mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2003.8,
+    "resources": [
+      {
+        "code": "5.33.2",
+        "desc": "Rate as per SH: 5.33.2",
+        "unit": "cum",
+        "qty": 20.16,
+        "rate": 9400.85
+      },
+      {
+        "code": "5.34.2",
+        "desc": "Rate as per SH: 5.34.2",
+        "unit": "cum",
+        "qty": 20.16,
+        "rate": 139.45
+      },
+      {
+        "code": "5.35",
+        "desc": "Rate as per SH: 5.35",
+        "unit": "L.S.",
+        "qty": 1301.0,
+        "rate": 2.0
+      },
+      {
+        "code": "5.41.1",
+        "desc": "Rate as per SH: 5.41.1",
+        "unit": "sqm",
+        "qty": 336.0,
+        "rate": 53.9
       },
       {
         "code": "9999",
@@ -3482,6 +5651,13 @@
       },
       {
         "code": "9999",
+        "desc": "Extra cost for preparing zero slump concrete",
+        "unit": "L.S.",
+        "qty": 1748.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
         "desc": "Cutting, marking, lifting & transportation",
         "unit": "L.S.",
         "qty": 578.0,
@@ -3493,6 +5669,43 @@
         "unit": "L.S.",
         "qty": 13.0,
         "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.1.5",
+    "desc": "250 mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2461.85,
+    "resources": [
+      {
+        "code": "5.33.2",
+        "desc": "Rate as per SH: 5.33.2",
+        "unit": "cum",
+        "qty": 25.2,
+        "rate": 9400.85
+      },
+      {
+        "code": "5.34.2",
+        "desc": "Rate as per SH: 5.34.2",
+        "unit": "cum",
+        "qty": 25.2,
+        "rate": 139.45
+      },
+      {
+        "code": "5.35",
+        "desc": "Rate as per SH: 5.35",
+        "unit": "L.S.",
+        "qty": 1301.0,
+        "rate": 2.0
+      },
+      {
+        "code": "5.41.1",
+        "desc": "Rate as per SH: 5.41.1",
+        "unit": "sqm",
+        "qty": 348.0,
+        "rate": 53.9
       },
       {
         "code": "9999",
@@ -3510,6 +5723,13 @@
       },
       {
         "code": "9999",
+        "desc": "Extra cost for preparing zero slump concrete",
+        "unit": "L.S.",
+        "qty": 2185.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
         "desc": "Cutting, marking, lifting & transportation",
         "unit": "L.S.",
         "qty": 578.0,
@@ -3521,6 +5741,43 @@
         "unit": "L.S.",
         "qty": 13.0,
         "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.1.6",
+    "desc": "300 mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2919.95,
+    "resources": [
+      {
+        "code": "5.33.2",
+        "desc": "Rate as per SH: 5.33.2",
+        "unit": "cum",
+        "qty": 30.24,
+        "rate": 9400.85
+      },
+      {
+        "code": "5.34.2",
+        "desc": "Rate as per SH: 5.34.2",
+        "unit": "cum",
+        "qty": 30.24,
+        "rate": 139.45
+      },
+      {
+        "code": "5.35",
+        "desc": "Rate as per SH: 5.35",
+        "unit": "L.S.",
+        "qty": 1301.0,
+        "rate": 2.0
+      },
+      {
+        "code": "5.41.1",
+        "desc": "Rate as per SH: 5.41.1",
+        "unit": "sqm",
+        "qty": 360.0,
+        "rate": 53.9
       },
       {
         "code": "9999",
@@ -3538,6 +5795,13 @@
       },
       {
         "code": "9999",
+        "desc": "Extra cost for preparing zero slump concrete",
+        "unit": "L.S.",
+        "qty": 2622.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
         "desc": "Cutting, marking, lifting & transportation",
         "unit": "L.S.",
         "qty": 578.0,
@@ -3549,6 +5813,43 @@
         "unit": "L.S.",
         "qty": 13.0,
         "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.1.7",
+    "desc": "350 mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3378.0,
+    "resources": [
+      {
+        "code": "5.33.2",
+        "desc": "Rate as per SH: 5.33.2",
+        "unit": "cum",
+        "qty": 35.28,
+        "rate": 9400.85
+      },
+      {
+        "code": "5.34.2",
+        "desc": "Rate as per SH: 5.34.2",
+        "unit": "cum",
+        "qty": 35.28,
+        "rate": 139.45
+      },
+      {
+        "code": "5.35",
+        "desc": "Rate as per SH: 5.35",
+        "unit": "L.S.",
+        "qty": 1301.0,
+        "rate": 2.0
+      },
+      {
+        "code": "5.41.1",
+        "desc": "Rate as per SH: 5.41.1",
+        "unit": "sqm",
+        "qty": 372.0,
+        "rate": 53.9
       },
       {
         "code": "9999",
@@ -3566,6 +5867,13 @@
       },
       {
         "code": "9999",
+        "desc": "Extra cost for preparing zero slump concrete",
+        "unit": "L.S.",
+        "qty": 3059.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
         "desc": "Cutting, marking, lifting & transportation",
         "unit": "L.S.",
         "qty": 578.0,
@@ -3577,6 +5885,43 @@
         "unit": "L.S.",
         "qty": 13.0,
         "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.1.8",
+    "desc": "400 mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3836.05,
+    "resources": [
+      {
+        "code": "5.33.2",
+        "desc": "Rate as per SH: 5.33.2",
+        "unit": "cum",
+        "qty": 40.32,
+        "rate": 9400.85
+      },
+      {
+        "code": "5.34.2",
+        "desc": "Rate as per SH: 5.34.2",
+        "unit": "cum",
+        "qty": 40.32,
+        "rate": 139.45
+      },
+      {
+        "code": "5.35",
+        "desc": "Rate as per SH: 5.35",
+        "unit": "L.S.",
+        "qty": 1301.0,
+        "rate": 2.0
+      },
+      {
+        "code": "5.41.1",
+        "desc": "Rate as per SH: 5.41.1",
+        "unit": "sqm",
+        "qty": 384.0,
+        "rate": 53.9
       },
       {
         "code": "9999",
@@ -3594,6 +5939,13 @@
       },
       {
         "code": "9999",
+        "desc": "Extra cost for preparing zero slump concrete",
+        "unit": "L.S.",
+        "qty": 3496.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
         "desc": "Cutting, marking, lifting & transportation",
         "unit": "L.S.",
         "qty": 578.0,
@@ -3609,8 +5961,8 @@
     ]
   },
   {
-    "code": "26.73.2",
-    "desc": "Extra for using M-50 (Cement content 425 kg) instead of M-40 26.73.2.1 100mm thick hollow core slab",
+    "code": "26.73.2.1",
+    "desc": "100mm thick hollow core slab",
     "unit": "nos",
     "basis": 1.0,
     "say": 17.3,
@@ -3623,12 +5975,58 @@
         "rate": 4940.0
       },
       {
+        "code": "2209",
+        "desc": "Carriage of cement",
+        "unit": "tonne",
+        "qty": 0.27,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer or Super Plasticizer 2% of cement content",
+        "unit": "kg",
+        "qty": 5.4,
+        "rate": 36.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.2.2",
+    "desc": "120mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 20.8,
+    "resources": [
+      {
         "code": "0367",
         "desc": "Portland Cement",
         "unit": "tonne",
         "qty": 0.324,
         "rate": 4940.0
       },
+      {
+        "code": "2209",
+        "desc": "Carriage of cement",
+        "unit": "tonne",
+        "qty": 0.324,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer or Super Plasticizer 2% of cement content",
+        "unit": "kg",
+        "qty": 6.48,
+        "rate": 36.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.2.3",
+    "desc": "150mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 25.95,
+    "resources": [
       {
         "code": "0367",
         "desc": "Portland Cement",
@@ -3637,12 +6035,58 @@
         "rate": 4940.0
       },
       {
+        "code": "2209",
+        "desc": "Carriage of cement",
+        "unit": "tonne",
+        "qty": 0.405,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer or Super Plasticizer 2% of cement content",
+        "unit": "kg",
+        "qty": 8.1,
+        "rate": 36.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.2.4",
+    "desc": "200mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 32.3,
+    "resources": [
+      {
         "code": "0367",
         "desc": "Portland Cement",
         "unit": "tonne",
         "qty": 0.504,
         "rate": 4940.0
       },
+      {
+        "code": "2209",
+        "desc": "Carriage of cement",
+        "unit": "tonne",
+        "qty": 0.504,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer or Super Plasticizer 2% of cement content",
+        "unit": "kg",
+        "qty": 10.08,
+        "rate": 36.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.2.5",
+    "desc": "250mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 40.4,
+    "resources": [
       {
         "code": "0367",
         "desc": "Portland Cement",
@@ -3651,12 +6095,58 @@
         "rate": 4940.0
       },
       {
+        "code": "2209",
+        "desc": "Carriage of cement",
+        "unit": "tonne",
+        "qty": 0.63,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer or Super Plasticizer 2% of cement content",
+        "unit": "kg",
+        "qty": 12.6,
+        "rate": 36.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.2.6",
+    "desc": "300mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 48.5,
+    "resources": [
+      {
         "code": "0367",
         "desc": "Portland Cement",
         "unit": "tonne",
         "qty": 0.756,
         "rate": 4940.0
       },
+      {
+        "code": "2209",
+        "desc": "Carriage of cement",
+        "unit": "tonne",
+        "qty": 0.756,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer or Super Plasticizer 2% of cement content",
+        "unit": "kg",
+        "qty": 15.12,
+        "rate": 36.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.2.7",
+    "desc": "350mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 56.55,
+    "resources": [
       {
         "code": "0367",
         "desc": "Portland Cement",
@@ -3665,17 +6155,54 @@
         "rate": 4940.0
       },
       {
+        "code": "2209",
+        "desc": "Carriage of cement",
+        "unit": "tonne",
+        "qty": 0.882,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer or Super Plasticizer 2% of cement content",
+        "unit": "kg",
+        "qty": 17.64,
+        "rate": 36.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.2.8",
+    "desc": "400mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 64.65,
+    "resources": [
+      {
         "code": "0367",
         "desc": "Portland Cement",
         "unit": "tonne",
         "qty": 1.008,
         "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of cement",
+        "unit": "tonne",
+        "qty": 1.008,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer or Super Plasticizer 2% of cement content",
+        "unit": "kg",
+        "qty": 20.16,
+        "rate": 36.0
       }
     ]
   },
   {
-    "code": "26.73.3",
-    "desc": "Extra for using M-60 (Cement content 440 kg) instead of M-40 26.73.3.1 100mm thick hollow core slab",
+    "code": "26.73.3.1",
+    "desc": "100mm thick hollow core slab",
     "unit": "nos",
     "basis": 1.0,
     "say": 27.7,
@@ -3688,12 +6215,58 @@
         "rate": 4940.0
       },
       {
+        "code": "2209",
+        "desc": "Carriage of cement",
+        "unit": "tonne",
+        "qty": 0.432,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer or Super Plasticizer 2% of cement content",
+        "unit": "kg",
+        "qty": 8.64,
+        "rate": 36.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.3.2",
+    "desc": "120mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 33.2,
+    "resources": [
+      {
         "code": "0367",
         "desc": "Portland Cement",
         "unit": "tonne",
         "qty": 0.518,
         "rate": 4940.0
       },
+      {
+        "code": "2209",
+        "desc": "Carriage of cement",
+        "unit": "tonne",
+        "qty": 0.518,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer or Super Plasticizer 2% of cement content",
+        "unit": "kg",
+        "qty": 10.368,
+        "rate": 36.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.3.3",
+    "desc": "150mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 41.55,
+    "resources": [
       {
         "code": "0367",
         "desc": "Portland Cement",
@@ -3702,12 +6275,58 @@
         "rate": 4940.0
       },
       {
+        "code": "2209",
+        "desc": "Carriage of cement",
+        "unit": "tonne",
+        "qty": 0.648,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer or Super Plasticizer 2% of cement content",
+        "unit": "kg",
+        "qty": 12.96,
+        "rate": 36.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.3.4",
+    "desc": "200mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 51.7,
+    "resources": [
+      {
         "code": "0367",
         "desc": "Portland Cement",
         "unit": "tonne",
         "qty": 0.806,
         "rate": 4940.0
       },
+      {
+        "code": "2209",
+        "desc": "Carriage of cement",
+        "unit": "tonne",
+        "qty": 0.806,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer or Super Plasticizer 2% of cement content",
+        "unit": "kg",
+        "qty": 16.128,
+        "rate": 36.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.3.5",
+    "desc": "250mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 64.65,
+    "resources": [
       {
         "code": "0367",
         "desc": "Portland Cement",
@@ -3716,12 +6335,58 @@
         "rate": 4940.0
       },
       {
+        "code": "2209",
+        "desc": "Carriage of cement",
+        "unit": "tonne",
+        "qty": 1.008,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer or Super Plasticizer 2% of cement content",
+        "unit": "kg",
+        "qty": 20.16,
+        "rate": 36.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.3.6",
+    "desc": "300mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 77.6,
+    "resources": [
+      {
         "code": "0367",
         "desc": "Portland Cement",
         "unit": "tonne",
         "qty": 1.21,
         "rate": 4940.0
       },
+      {
+        "code": "2209",
+        "desc": "Carriage of cement",
+        "unit": "tonne",
+        "qty": 1.21,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer or Super Plasticizer 2% of cement content",
+        "unit": "kg",
+        "qty": 24.192,
+        "rate": 36.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.3.7",
+    "desc": "350mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 90.5,
+    "resources": [
       {
         "code": "0367",
         "desc": "Portland Cement",
@@ -3730,11 +6395,48 @@
         "rate": 4940.0
       },
       {
+        "code": "2209",
+        "desc": "Carriage of cement",
+        "unit": "tonne",
+        "qty": 1.411,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer or Super Plasticizer 2% of cement content",
+        "unit": "kg",
+        "qty": 28.224,
+        "rate": 36.0
+      }
+    ]
+  },
+  {
+    "code": "26.73.3.8",
+    "desc": "400mm thick hollow core slab",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 103.45,
+    "resources": [
+      {
         "code": "0367",
         "desc": "Portland Cement",
         "unit": "tonne",
         "qty": 1.613,
         "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of cement",
+        "unit": "tonne",
+        "qty": 1.613,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer or Super Plasticizer 2% of cement content",
+        "unit": "kg",
+        "qty": 32.256,
+        "rate": 36.0
       }
     ]
   },
@@ -3745,6 +6447,55 @@
     "basis": 1.26,
     "say": 14554.65,
     "resources": [
+      {
+        "code": "5.33.2",
+        "desc": "Rate as per SH: 5.33.2",
+        "unit": "cum",
+        "qty": 1.26,
+        "rate": 9400.85
+      },
+      {
+        "code": "5.34.2",
+        "desc": "Rate as per SH: 5.34.2",
+        "unit": "cum",
+        "qty": 1.26,
+        "rate": 139.45
+      },
+      {
+        "code": "5.35",
+        "desc": "Rate as per SH: 5.35",
+        "unit": "sqm",
+        "qty": 1.74,
+        "rate": 284.85
+      },
+      {
+        "code": "5.41.1",
+        "desc": "Rate as per SH: 5.41.1",
+        "unit": "sqm",
+        "qty": 18.54,
+        "rate": 53.9
+      },
+      {
+        "code": "7929",
+        "desc": "Shear loops (6mm dia GI wire rope) (For vertical joints) 6 nos on each side",
+        "unit": "each",
+        "qty": 12.0,
+        "rate": 192.0
+      },
+      {
+        "code": "7930",
+        "desc": "dowel tubes (Corrugated GI pipes 50 to 80mm dia) (For horizontal joints)",
+        "unit": "metre",
+        "qty": 3.0,
+        "rate": 120.0
+      },
+      {
+        "code": "7931",
+        "desc": "Hooks for lifting (Alloy steel) having 2.5 tonne capacity",
+        "unit": "each",
+        "qty": 2.0,
+        "rate": 250.0
+      },
       {
         "code": "0155",
         "desc": "Mason (Average)",
@@ -3784,7 +6535,7 @@
   },
   {
     "code": "26.74.2",
-    "desc": "Extra for using M-40 (Cement content 400 kg) instead of M-35",
+    "desc": "Extra for using M-40 (Cement content 400 kg) instead of M-35 Cement for M-35 Mix = 0.370 T Cement for M-40 Mix = 0.400 T Difference 0.030 T",
     "unit": "nos",
     "basis": 1.0,
     "say": 230.9,
@@ -3795,12 +6546,26 @@
         "unit": "tonne",
         "qty": 0.03,
         "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of cement",
+        "unit": "tonne",
+        "qty": 0.03,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer or Super Plasticizer 2% of cement content",
+        "unit": "kg",
+        "qty": 0.6,
+        "rate": 36.0
       }
     ]
   },
   {
     "code": "26.74.3",
-    "desc": "Extra for using M-50 (Cement content 425 kg) instead of M-35",
+    "desc": "Extra for using M-50 (Cement content 425 kg) instead of M-35 Cement for M-35 Mix = 0.370 T Cement for M-50 Mix = 0.425 T Difference 0.055 T",
     "unit": "nos",
     "basis": 1.0,
     "say": 423.3,
@@ -3811,12 +6576,26 @@
         "unit": "tonne",
         "qty": 0.055,
         "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of cement",
+        "unit": "tonne",
+        "qty": 0.055,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer or Super Plasticizer 2% of cement content",
+        "unit": "kg",
+        "qty": 1.1,
+        "rate": 36.0
       }
     ]
   },
   {
     "code": "26.74.4",
-    "desc": "Extra for using M-60 (Cement content 440 kg) instead of M-35",
+    "desc": "Extra for using M-60 (Cement content 440 kg) instead of M-35 Cement for M-35 Mix = 0.370 T Cement for M-60 Mix = 0.440 T Difference 0.070 T",
     "unit": "nos",
     "basis": 1.0,
     "say": 538.75,
@@ -3827,14 +6606,28 @@
         "unit": "tonne",
         "qty": 0.07,
         "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of cement",
+        "unit": "tonne",
+        "qty": 0.07,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer or Super Plasticizer 2% of cement content",
+        "unit": "kg",
+        "qty": 1.4,
+        "rate": 36.0
       }
     ]
   },
   {
     "code": "26.75",
     "desc": "Providing & laying in position Prestressing steel strands (low relaxation) on hollow core bed by using mechanical pulling arrangement like R",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Kg",
+    "basis": 1740.0,
     "say": 1740.0,
     "resources": [
       {
@@ -3922,21 +6715,56 @@
         "rate": 2500.0
       },
       {
+        "code": "0035",
+        "desc": "Strands Roller machinery for laying strands",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 3500.0
+      },
+      {
         "code": "0036",
         "desc": "Bed master (Pulling strands)",
         "unit": "day",
         "qty": 1.5,
         "rate": 3000.0
+      },
+      {
+        "code": "0028",
+        "desc": "\"Crane handling charges for bed master & stressing machine.“One bed master approx wt = 03 Ton (to be placed on each bed with the help of crane for laying of strands )“One stressing Machine approx wt = 2.5 Ton (to be placed on each active ends of bed with the help of crane for initial pulling & stressing of strands ). Handling & Shifting of bed master & stressing machine has to be done for each bed separately.\"",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 7000.0
+      },
+      {
+        "code": "1235",
+        "desc": "Diesel for generator set (14 litres per hour for 11 hours)",
+        "unit": "Litre",
+        "qty": 154.0,
+        "rate": 73.5
       }
     ]
   },
   {
     "code": "26.76.1",
-    "desc": "Lead within 15km",
+    "desc": "Lead within 15km Trailors having capcity 22MT Hire charges of truck trailors Number of trips in working day of 8 hours N=8/{(2L/S)+2)}. Wher",
     "unit": "nos",
     "basis": 1.0,
     "say": 444.05,
     "resources": [
+      {
+        "code": "9999",
+        "desc": "Charges of Trailors having capcity 22MT including cost of fuel & driver cost and maintenance",
+        "unit": "L.S.",
+        "qty": 1738.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0028",
+        "desc": "Hire charges of Crane capacity of 30MT for loading from stock yard and unloading at site for 120 MT.",
+        "unit": "day",
+        "qty": 0.3667,
+        "rate": 7000.0
+      },
       {
         "code": "0128",
         "desc": "Mate",
@@ -3960,6 +6788,13 @@
       },
       {
         "code": "9999",
+        "desc": "Chain for packing & binding precast elements",
+        "unit": "L.S.",
+        "qty": 57.8,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
         "desc": "sundries",
         "unit": "L.S.",
         "qty": 220.0,
@@ -3969,11 +6804,18 @@
   },
   {
     "code": "26.76.2",
-    "desc": "Add/Deduct over item 26.76.1 for every additional lead of 5 km",
+    "desc": "Add/Deduct over item 26.76.1 for every additional lead of 5 km Extra for lead 5 km",
     "unit": "nos",
     "basis": 1.0,
     "say": 97.2,
     "resources": [
+      {
+        "code": "9999",
+        "desc": "Charges of Trailors having capcity 22MT including cost of fuel & driver and maintenance",
+        "unit": "L.S.",
+        "qty": 579.0,
+        "rate": 2.0
+      },
       {
         "code": "9999",
         "desc": "sundries",
@@ -4038,6 +6880,13 @@
         "unit": "day",
         "qty": 2.0,
         "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries (Miscellaneous tools and lifting slings)",
+        "unit": "L.S.",
+        "qty": 500.0,
+        "rate": 2.0
       }
     ]
   },
@@ -4096,6 +6945,13 @@
         "unit": "day",
         "qty": 2.0,
         "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries (Miscellaneous tools and lifting slings)",
+        "unit": "L.S.",
+        "qty": 500.0,
+        "rate": 2.0
       }
     ]
   },
@@ -4119,6 +6975,20 @@
         "unit": "L.S.",
         "qty": 434.0,
         "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire charges of props & Misc for 3 days (3x3 = 9 / pc)",
+        "unit": "L.S.",
+        "qty": 780.0,
+        "rate": 2.0
+      },
+      {
+        "code": "1027",
+        "desc": "Erection Bolts ( Minimum 04 nos for each element)",
+        "unit": "each",
+        "qty": 60.0,
+        "rate": 25.0
       },
       {
         "code": "0111",
@@ -4161,6 +7031,20 @@
         "unit": "day",
         "qty": 8.0,
         "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding, hire charge of drill machine etc.",
+        "unit": "L.S.",
+        "qty": 500.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries (Miscellaneous tools and lifting slings)",
+        "unit": "L.S.",
+        "qty": 500.0,
+        "rate": 2.0
       }
     ]
   },
@@ -4299,6 +7183,27 @@
     "say": 74.25,
     "resources": [
       {
+        "code": "1251",
+        "desc": "M-60 grade cemetitious grout (Non Shrink)",
+        "unit": "kg",
+        "qty": 262.5,
+        "rate": 28.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of cementitious material",
+        "unit": "tonne",
+        "qty": 0.25,
+        "rate": 92.24
+      },
+      {
+        "code": "0122",
+        "desc": "Mason (for plaster of paris work) 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
         "code": "0155",
         "desc": "Masson (Average)",
         "unit": "day",
@@ -4321,6 +7226,13 @@
     "basis": 300.0,
     "say": 24.2,
     "resources": [
+      {
+        "code": "8761",
+        "desc": "Scaffolding net made of high density Polyethylene UV stabilized having density 100gm/sqm",
+        "unit": "sqm",
+        "qty": 300.0,
+        "rate": 21.5
+      },
       {
         "code": "9999",
         "desc": "Carriage",

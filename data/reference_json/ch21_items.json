@@ -1,45 +1,31 @@
 [
   {
-    "code": "21.1.1",
-    "desc": "For fixed portion 21.1.1.1 Anodised aluminium (anodised transparent or dyed to required shade according to IS: 1868, Minimum anodic coating ",
-    "unit": "nos",
-    "basis": 1.0,
+    "code": "21.1.1.1",
+    "desc": "Anodised aluminium (anodised transparent or dyed to required shade according to IS: 1868, Minimum anodic coating of grade AC 15)",
+    "unit": "kg",
+    "basis": 40.02,
     "say": 423.95,
     "resources": [
       {
-        "code": "9977",
-        "desc": "Carriage of material",
-        "unit": "L.S.",
-        "qty": 52.0,
-        "rate": 2.0
+        "code": "7306",
+        "desc": "Aluminium T or L sections",
+        "unit": "kilogram",
+        "qty": 42.02,
+        "rate": 190.0
       },
       {
-        "code": "0116",
-        "desc": "Fitter (grade 1)",
-        "unit": "day",
-        "qty": 2.0,
-        "rate": 738.0
+        "code": "0589",
+        "desc": "Chromium plated Brass screws 20 mm",
+        "unit": "100 Nos",
+        "qty": 0.72,
+        "rate": 160.0
       },
       {
-        "code": "0139",
-        "desc": "Skilled Beldar (for floor rubbing etc.)",
-        "unit": "day",
-        "qty": 1.0,
-        "rate": 617.0
-      },
-      {
-        "code": "0114",
-        "desc": "Beldar",
-        "unit": "day",
-        "qty": 1.0,
-        "rate": 558.0
-      },
-      {
-        "code": "0100",
-        "desc": "Bandhani",
-        "unit": "day",
-        "qty": 0.05,
-        "rate": 617.0
+        "code": "7389",
+        "desc": "Anodising 15 microns on aluminium sections",
+        "unit": "kilogram",
+        "qty": 42.02,
+        "rate": 38.0
       },
       {
         "code": "9977",
@@ -77,55 +63,206 @@
         "rate": 617.0
       },
       {
-        "code": "9977",
-        "desc": "Carriage of material",
+        "code": "9999",
+        "desc": "Labour for drilling holes, hire charges of drill, electricity charges, carriage of dash hold fastners and sundries",
         "unit": "L.S.",
-        "qty": 52.0,
+        "qty": 100.0,
         "rate": 2.0
-      },
-      {
-        "code": "0116",
-        "desc": "Fitter (grade 1)",
-        "unit": "day",
-        "qty": 2.0,
-        "rate": 738.0
-      },
-      {
-        "code": "0139",
-        "desc": "Skilled Beldar (for floor rubbing etc.)",
-        "unit": "day",
-        "qty": 1.0,
-        "rate": 617.0
-      },
-      {
-        "code": "0114",
-        "desc": "Beldar",
-        "unit": "day",
-        "qty": 1.0,
-        "rate": 558.0
-      },
-      {
-        "code": "0100",
-        "desc": "Bandhani",
-        "unit": "day",
-        "qty": 0.05,
-        "rate": 617.0
       }
     ]
   },
   {
-    "code": "21.1.2",
-    "desc": "For shutters of doors, windows & ventilators including providing and fixing hinges/ pivots and making provision for fixing of fittings where",
-    "unit": "nos",
-    "basis": 1.0,
+    "code": "21.1.1.2",
+    "desc": "Powder coated aluminium (minimum thickness of powder coating 50 micron)",
+    "unit": "kg",
+    "basis": 40.02,
+    "say": 456.3,
+    "resources": [
+      {
+        "code": "7306",
+        "desc": "Aluminium T or L sections",
+        "unit": "kilogram",
+        "qty": 42.02,
+        "rate": 190.0
+      },
+      {
+        "code": "0589",
+        "desc": "Chromium plated Brass screws 20 mm",
+        "unit": "100 Nos",
+        "qty": 0.72,
+        "rate": 160.0
+      },
+      {
+        "code": "7392",
+        "desc": "Powder coating 50 microns on aluminium sections",
+        "unit": "kilogram",
+        "qty": 42.02,
+        "rate": 61.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 52.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Labour for drilling holes, hire charges of drill, electricity charges, carriage of dash hold fastners and sundries",
+        "unit": "L.S.",
+        "qty": 100.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "21.1.1.3",
+    "desc": "Polyester powder coated aluminium (minimum thickness of polyester powder coating 50 micron)",
+    "unit": "kg",
+    "basis": 40.02,
+    "say": 464.7,
+    "resources": [
+      {
+        "code": "7306",
+        "desc": "Aluminium T or L sections",
+        "unit": "kilogram",
+        "qty": 42.02,
+        "rate": 190.0
+      },
+      {
+        "code": "0589",
+        "desc": "Chromium plated Brass screws 20 mm",
+        "unit": "100 Nos",
+        "qty": 0.72,
+        "rate": 160.0
+      },
+      {
+        "code": "7393",
+        "desc": "Polyester powder coating 50 microns on aluminium sections",
+        "unit": "kilogram",
+        "qty": 42.02,
+        "rate": 67.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 52.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Labour for drilling holes, hire charges of drill, electricity charges, carriage of dash hold fastners and sundries",
+        "unit": "L.S.",
+        "qty": 100.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "21.1.2.1",
+    "desc": "Anodised aluminium (anodised transparent or dyed to required shade according to IS: 1868, Minimum anodic coating of grade AC 15)",
+    "unit": "kg",
+    "basis": 20.21,
     "say": 513.4,
     "resources": [
       {
+        "code": "7306",
+        "desc": "Aluminium T or L sections",
+        "unit": "kilogram",
+        "qty": 21.65,
+        "rate": 190.0
+      },
+      {
+        "code": "0689",
+        "desc": "Anodised Aluminium butt hinges 100x75x4 mm",
+        "unit": "10 Nos",
+        "qty": 0.4,
+        "rate": 393.0
+      },
+      {
+        "code": "0589",
+        "desc": "Chromium plated Brass screws 20 mm",
+        "unit": "100 Nos",
+        "qty": 0.92,
+        "rate": 160.0
+      },
+      {
+        "code": "7389",
+        "desc": "Anodising 15 microns on aluminium sections",
+        "unit": "kilogram",
+        "qty": 21.65,
+        "rate": 38.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of material",
         "unit": "L.S.",
         "qty": 31.2,
         "rate": 2.0
+      },
+      {
+        "code": "7390",
+        "desc": "Neoprene/EPDM rubber gasket",
+        "unit": "metre",
+        "qty": 2.35,
+        "rate": 19.0
       },
       {
         "code": "0116",
@@ -170,11 +307,62 @@
         "rate": 558.0
       },
       {
+        "code": "9999",
+        "desc": "Labour for making provision for fittings and carriage of screws etc. including sundries",
+        "unit": "L.S.",
+        "qty": 50.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "21.1.2.2",
+    "desc": "Powder coated aluminium (minimum thickness of powder coating 50 micron)",
+    "unit": "kg",
+    "basis": 20.21,
+    "say": 546.35,
+    "resources": [
+      {
+        "code": "7306",
+        "desc": "Aluminium T or L sections",
+        "unit": "kilogram",
+        "qty": 21.65,
+        "rate": 190.0
+      },
+      {
+        "code": "0689",
+        "desc": "Anodised Aluminium butt hinges 100x75x4 mm",
+        "unit": "10 Nos",
+        "qty": 0.4,
+        "rate": 393.0
+      },
+      {
+        "code": "0589",
+        "desc": "Chromium plated Brass screws 20 mm",
+        "unit": "100 Nos",
+        "qty": 0.92,
+        "rate": 160.0
+      },
+      {
+        "code": "7392",
+        "desc": "Powder coating 50 microns on aluminium sections",
+        "unit": "kilogram",
+        "qty": 21.65,
+        "rate": 61.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of material",
         "unit": "L.S.",
         "qty": 31.2,
         "rate": 2.0
+      },
+      {
+        "code": "7390",
+        "desc": "Neoprene/EPDM rubber gasket",
+        "unit": "metre",
+        "qty": 2.35,
+        "rate": 19.0
       },
       {
         "code": "0116",
@@ -219,11 +407,62 @@
         "rate": 558.0
       },
       {
+        "code": "9999",
+        "desc": "Labour for making provision for fittings and carriage of screws etc. including sundries",
+        "unit": "L.S.",
+        "qty": 50.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "21.1.2.3",
+    "desc": "Polyester powder coated aluminium (minimum thickness of polyester powder coating 50 micron)",
+    "unit": "kg",
+    "basis": 20.21,
+    "say": 554.95,
+    "resources": [
+      {
+        "code": "7306",
+        "desc": "Aluminium T or L sections",
+        "unit": "kilogram",
+        "qty": 21.65,
+        "rate": 190.0
+      },
+      {
+        "code": "0689",
+        "desc": "Anodised Aluminium butt hinges 100x75x4 mm",
+        "unit": "10 Nos",
+        "qty": 0.4,
+        "rate": 393.0
+      },
+      {
+        "code": "0589",
+        "desc": "Chromium plated Brass screws 20 mm",
+        "unit": "100 Nos",
+        "qty": 0.92,
+        "rate": 160.0
+      },
+      {
+        "code": "7393",
+        "desc": "Polyester powder coating 50 microns on aluminium sections",
+        "unit": "kilogram",
+        "qty": 21.65,
+        "rate": 67.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of material",
         "unit": "L.S.",
         "qty": 31.2,
         "rate": 2.0
+      },
+      {
+        "code": "7390",
+        "desc": "Neoprene/EPDM rubber gasket",
+        "unit": "metre",
+        "qty": 2.35,
+        "rate": 19.0
       },
       {
         "code": "0116",
@@ -259,16 +498,30 @@
         "unit": "day",
         "qty": 0.2,
         "rate": 738.0
+      },
+      {
+        "code": "9999",
+        "desc": "Labour for making provision for fittings and carriage of screws etc. including sundries",
+        "unit": "L.S.",
+        "qty": 50.0,
+        "rate": 2.0
       }
     ]
   },
   {
     "code": "21.2.1",
     "desc": "Pre-laminated particle board with decorative lamination on one side and balancing lamination on other side",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 7.0,
     "say": 997.7,
     "resources": [
+      {
+        "code": "7477",
+        "desc": "Prelaminated particle board with one side decorative and other side balancing lamination, flat pressed 3 layer & graded (medium density) Grade I, Type II conforming to IS : 12823 (exterior grade) 12 mm thick",
+        "unit": "sqm",
+        "qty": 7.35,
+        "rate": 540.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of particle board",
@@ -302,10 +555,17 @@
   {
     "code": "21.2.2",
     "desc": "Pre-laminated particle board with decorative lamination on both sides",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 7.0,
     "say": 1046.9,
     "resources": [
+      {
+        "code": "7480",
+        "desc": "Prelaminated particle board with both sides decorative lamination, flat pressed 3 layer & graded (medium density) Grade I, Type II conforming to IS : 12823 (exterior grade) 12 mm thick",
+        "unit": "sqm",
+        "qty": 7.35,
+        "rate": 575.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of particle board",
@@ -339,16 +599,30 @@
   {
     "code": "21.3.1",
     "desc": "With float glass panes of 4.0 mm thickness (weight not less than 10kg/sqm)",
-    "unit": "nos",
+    "unit": "sqm",
     "basis": 1.0,
     "say": 999.6,
     "resources": [
+      {
+        "code": "2406",
+        "desc": "Float glass sheet of nominal thickness 4 mm (weight not less than 10kg/sqm).",
+        "unit": "sqm",
+        "qty": 1.1,
+        "rate": 300.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of glass",
         "unit": "L.S.",
         "qty": 2.42,
         "rate": 2.0
+      },
+      {
+        "code": "7390",
+        "desc": "Neoprene/EPDM rubber gasket",
+        "unit": "metre",
+        "qty": 6.0,
+        "rate": 19.0
       },
       {
         "code": "0112",
@@ -376,16 +650,30 @@
   {
     "code": "21.3.2",
     "desc": "With float glass panes of 5 mm thickness (weight not less than 12.50 kg/sqm)",
-    "unit": "nos",
+    "unit": "sqm",
     "basis": 1.0,
     "say": 1296.4,
     "resources": [
+      {
+        "code": "2407",
+        "desc": "Float glass sheet of nominal thickness 5 mm (weight not less than 12.50 kg/sqm)",
+        "unit": "sqm",
+        "qty": 1.1,
+        "rate": 500.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of glass",
         "unit": "L.S.",
         "qty": 3.33,
         "rate": 2.0
+      },
+      {
+        "code": "7390",
+        "desc": "Neoprene/EPDM rubber gasket",
+        "unit": "metre",
+        "qty": 6.0,
+        "rate": 19.0
       },
       {
         "code": "0112",
@@ -413,16 +701,30 @@
   {
     "code": "21.3.3",
     "desc": "With float glass panes of 8 mm thickness (weight not less than 20 kg/sqm)",
-    "unit": "nos",
+    "unit": "sqm",
     "basis": 1.0,
     "say": 1462.35,
     "resources": [
+      {
+        "code": "2408",
+        "desc": "Float glass sheet of nominal thickness 8 mm.(weight not less than 20.00 kg/ sqm).",
+        "unit": "sqm",
+        "qty": 1.1,
+        "rate": 610.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of glass",
         "unit": "L.S.",
         "qty": 4.84,
         "rate": 2.0
+      },
+      {
+        "code": "7390",
+        "desc": "Neoprene/EPDM rubber gasket",
+        "unit": "metre",
+        "qty": 6.0,
+        "rate": 19.0
       },
       {
         "code": "0112",
@@ -454,6 +756,20 @@
     "basis": 1.0,
     "say": 2412.5,
     "resources": [
+      {
+        "code": "4.1.3",
+        "desc": "Rate as per SH: 4.1.3",
+        "unit": "cum",
+        "qty": 0.002,
+        "rate": 6788.6
+      },
+      {
+        "code": "7394",
+        "desc": "Double action hydraulic floor spring with stainless steel cover plate",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1500.0
+      },
       {
         "code": "9977",
         "desc": "CARRIAGE",
@@ -506,6 +822,20 @@
     "say": 2573.05,
     "resources": [
       {
+        "code": "4.1.3",
+        "desc": "Rate as per SH: 4.1.3",
+        "unit": "cum",
+        "qty": 0.002,
+        "rate": 6788.6
+      },
+      {
+        "code": "7396",
+        "desc": "Double action hydraulic floor spring with brass cover plate",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1620.0
+      },
+      {
         "code": "9977",
         "desc": "CARRIAGE",
         "unit": "L.S.",
@@ -552,13 +882,48 @@
   {
     "code": "21.5",
     "desc": "Providing and fixing powder coated aluminium work (minimum thickness of powder coating 50 micron) consisting of tee/ angle sections, of appr",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "kg",
+    "basis": 6.35,
     "say": 670.85,
     "resources": [
       {
+        "code": "7306",
+        "desc": "Aluminium T or L sections",
+        "unit": "kilogram",
+        "qty": 6.672,
+        "rate": 190.0
+      },
+      {
+        "code": "0589",
+        "desc": "Chromium plated Brass screws 20 mm",
+        "unit": "100 Nos",
+        "qty": 0.0116,
+        "rate": 160.0
+      },
+      {
+        "code": "7048",
+        "desc": "Rawl plug 50 mm (designation 10 no.)",
+        "unit": "each",
+        "qty": 24.0,
+        "rate": 25.0
+      },
+      {
+        "code": "7392",
+        "desc": "Powder coating 50 microns on aluminium sections",
+        "unit": "kilogram",
+        "qty": 6.67,
+        "rate": 61.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "C.P. brass screws for fixing frame with suspenders",
         "unit": "L.S.",
         "qty": 13.0,
         "rate": 2.0
@@ -590,9 +955,23 @@
     "code": "21.6",
     "desc": "Providing and fixing 6 mm dia. G.I. level adjusting hangers (upto 1200mm length), fixed to roof slabs by means of ceiling cleats made out of",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 23.0,
     "say": 69.95,
     "resources": [
+      {
+        "code": "7395",
+        "desc": "6 mm dia. G.I. adjustable hangers including clips (upto 1.2 m length)",
+        "unit": "each",
+        "qty": 23.0,
+        "rate": 20.0
+      },
+      {
+        "code": "7388",
+        "desc": "Dash hold fastener 12.5 mm dia, 40 mm long with 6 mm dia bolt",
+        "unit": "each",
+        "qty": 23.0,
+        "rate": 11.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of materials",
@@ -619,10 +998,45 @@
   {
     "code": "21.7.1",
     "desc": "Anodised aluminium sheet 2.5mm thick (anodised transparent or dyed to required shade according to IS: 1868, Minimum anodic coating of grade ",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "kg",
+    "basis": 7.0,
     "say": 582.05,
     "resources": [
+      {
+        "code": "2704",
+        "desc": "Aluminium Strip 40 mm wide and 2 mm thick",
+        "unit": "kilogram",
+        "qty": 7.35,
+        "rate": 240.0
+      },
+      {
+        "code": "7389",
+        "desc": "Anodising 15 microns on aluminium sections",
+        "unit": "kilogram",
+        "qty": 7.35,
+        "rate": 38.0
+      },
+      {
+        "code": "7347",
+        "desc": "Cadmium plated full threaded steel screws (30x4 mm dia.)",
+        "unit": "100 Nos",
+        "qty": 0.3,
+        "rate": 27.0
+      },
+      {
+        "code": "7348",
+        "desc": "Aluminium washer 2 mm thick 15 mm dia",
+        "unit": "100 Nos",
+        "qty": 0.3,
+        "rate": 10.0
+      },
+      {
+        "code": "8776",
+        "desc": "Stainless steel dash fastener of 8 mm dia and 75 mm long bolt",
+        "unit": "each",
+        "qty": 30.0,
+        "rate": 15.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of materials",
@@ -656,10 +1070,45 @@
   {
     "code": "21.7.2",
     "desc": "Powder coated aluminium sheet 2.5mm thick (minimum thickness of powder coating 50 micron)",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "kg",
+    "basis": 7.0,
     "say": 614.35,
     "resources": [
+      {
+        "code": "2704",
+        "desc": "Aluminium Strip 40 mm wide and 2 mm thick",
+        "unit": "kilogram",
+        "qty": 7.35,
+        "rate": 240.0
+      },
+      {
+        "code": "7392",
+        "desc": "Powder coating 50 microns on aluminium sections",
+        "unit": "kilogram",
+        "qty": 7.35,
+        "rate": 61.0
+      },
+      {
+        "code": "7347",
+        "desc": "Cadmium plated full threaded steel screws (30x4 mm dia.)",
+        "unit": "100 Nos",
+        "qty": 0.3,
+        "rate": 27.0
+      },
+      {
+        "code": "7348",
+        "desc": "Aluminium washer 2 mm thick 15 mm dia",
+        "unit": "100 Nos",
+        "qty": 0.3,
+        "rate": 10.0
+      },
+      {
+        "code": "8776",
+        "desc": "Stainless steel dash fastener of 8 mm dia and 75 mm long bolt",
+        "unit": "each",
+        "qty": 30.0,
+        "rate": 15.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of materials",
@@ -693,7 +1142,7 @@
   {
     "code": "21.8.1",
     "desc": "Upto 5mm depth and 5 mm width",
-    "unit": "nos",
+    "unit": "metre",
     "basis": 1.0,
     "say": 79.45,
     "resources": [
@@ -723,32 +1172,62 @@
   {
     "code": "21.9.1",
     "desc": "For fixed portion",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "kg",
+    "basis": 41.09,
     "say": 13.4,
-    "resources": []
+    "resources": [
+      {
+        "code": "7391",
+        "desc": "Anodising 25 microns on aluminium sections",
+        "unit": "kilogram",
+        "qty": 41.09,
+        "rate": 48.0
+      }
+    ]
   },
   {
     "code": "21.9.2",
     "desc": "For shutters of doors, windows & ventilators",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "kg",
+    "basis": 21.65,
     "say": 13.4,
-    "resources": []
+    "resources": [
+      {
+        "code": "7391",
+        "desc": "Anodising 25 microns on aluminium sections",
+        "unit": "kilogram",
+        "qty": 21.65,
+        "rate": 48.0
+      }
+    ]
   },
   {
     "code": "21.10",
     "desc": "Providing and fixing double glazed hermetically sealed glazing in aluminium windows, ventilators and partition etc. with 6 mm thick clear fl",
-    "unit": "nos",
+    "unit": "sqm",
     "basis": 1.0,
     "say": 3905.35,
     "resources": [
+      {
+        "code": "8648",
+        "desc": "Hermetically sealed double glazed unit made with 6 mm thick clear float glass both side having 12 mm air gap",
+        "unit": "sqm",
+        "qty": 1.1,
+        "rate": 2150.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of glass",
         "unit": "L.S.",
         "qty": 6.66,
         "rate": 2.0
+      },
+      {
+        "code": "7390",
+        "desc": "Neoprene/EPDM rubber gasket",
+        "unit": "metre",
+        "qty": 6.0,
+        "rate": 19.0
       },
       {
         "code": "0112",
@@ -777,13 +1256,20 @@
     "code": "21.11.1",
     "desc": "205 X 19 mm",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 255.75,
     "resources": [
       {
+        "code": "8649",
+        "desc": "Stainless steel (SS 304 grade) adjustable friction window stay 205 x 19 mm",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 172.0
+      },
+      {
         "code": "8647",
-        "desc": "Stainless steel screws 30 mm x4 mm 100",
-        "unit": "nos",
+        "desc": "Stainless steel screws 30 mm x4 mm",
+        "unit": "100 nos",
         "qty": 0.4,
         "rate": 32.0
       },
@@ -814,13 +1300,20 @@
     "code": "21.11.2",
     "desc": "255 X 19 mm",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 322.65,
     "resources": [
       {
+        "code": "8650",
+        "desc": "Stainless steel (SS 304 grade) adjustable 255 x 19mm",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 222.0
+      },
+      {
         "code": "8647",
-        "desc": "Stainless steel screws 30 mm x4 mm 100",
-        "unit": "nos",
+        "desc": "Stainless steel screws 30 mm x4 mm",
+        "unit": "100 nos",
         "qty": 0.4,
         "rate": 32.0
       },
@@ -851,13 +1344,20 @@
     "code": "21.11.3",
     "desc": "355 X 19 mm",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 286.5,
     "resources": [
       {
+        "code": "8651",
+        "desc": "Stainless steel (SS 304 grade) adjustable friction window stay 355 x 19 mm",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 195.0
+      },
+      {
         "code": "8647",
-        "desc": "Stainless steel screws 30 mm x4 mm 100",
-        "unit": "nos",
+        "desc": "Stainless steel screws 30 mm x4 mm",
+        "unit": "100 nos",
         "qty": 0.4,
         "rate": 32.0
       },
@@ -888,13 +1388,20 @@
     "code": "21.11.4",
     "desc": "510 X 19 mm",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 728.05,
     "resources": [
       {
+        "code": "8652",
+        "desc": "Stainless steel (SS 304 grade) adjustable friction window stay 510 x 19 mm",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 525.0
+      },
+      {
         "code": "8647",
-        "desc": "Stainless steel screws 30 mm x4 mm 100",
-        "unit": "nos",
+        "desc": "Stainless steel screws 30 mm x4 mm",
+        "unit": "100 nos",
         "qty": 0.4,
         "rate": 32.0
       },
@@ -925,13 +1432,20 @@
     "code": "21.11.5",
     "desc": "710 X 19 mm",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 1229.75,
     "resources": [
       {
+        "code": "8653",
+        "desc": "Stainless steel (SS 304 grade) adjustable friction window stay 710 x 19 mm",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 900.0
+      },
+      {
         "code": "8647",
-        "desc": "Stainless steel screws 30 mm x4 mm 100",
-        "unit": "nos",
+        "desc": "Stainless steel screws 30 mm x4 mm",
+        "unit": "100 nos",
         "qty": 0.4,
         "rate": 32.0
       },
@@ -962,9 +1476,23 @@
     "code": "21.12.1",
     "desc": "Anodized (AC 15 ) aluminium tubular handle bar",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 512.3,
     "resources": [
+      {
+        "code": "7306",
+        "desc": "Aluminium T or L sections",
+        "unit": "kilogram",
+        "qty": 16.34,
+        "rate": 190.0
+      },
+      {
+        "code": "7389",
+        "desc": "Anodising 15 microns on aluminium sections",
+        "unit": "kilogram",
+        "qty": 16.34,
+        "rate": 38.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",
@@ -974,8 +1502,8 @@
       },
       {
         "code": "8647",
-        "desc": "Stainless steel screws 30 mm x4 mm 100",
-        "unit": "nos",
+        "desc": "Stainless steel screws 30 mm x4 mm",
+        "unit": "100 nos",
         "qty": 0.08,
         "rate": 32.0
       },
@@ -992,9 +1520,23 @@
     "code": "21.12.2",
     "desc": "Powder coated minimum thickness 50 micron aluminium tubular handle bar",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 562.6,
     "resources": [
+      {
+        "code": "7306",
+        "desc": "Aluminium T or L sections",
+        "unit": "kilogram",
+        "qty": 16.34,
+        "rate": 190.0
+      },
+      {
+        "code": "7392",
+        "desc": "Powder coating 50 microns on aluminium sections",
+        "unit": "kilogram",
+        "qty": 16.34,
+        "rate": 61.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",
@@ -1004,8 +1546,8 @@
       },
       {
         "code": "8647",
-        "desc": "Stainless steel screws 30 mm x4 mm 100",
-        "unit": "nos",
+        "desc": "Stainless steel screws 30 mm x4 mm",
+        "unit": "100 nos",
         "qty": 0.08,
         "rate": 32.0
       },
@@ -1022,9 +1564,23 @@
     "code": "21.12.3",
     "desc": "Polyester powder coated minimum thickness 50 micron aluminium tubular handle bar",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 575.7,
     "resources": [
+      {
+        "code": "7306",
+        "desc": "Aluminium T or L sections",
+        "unit": "kilogram",
+        "qty": 16.34,
+        "rate": 190.0
+      },
+      {
+        "code": "7393",
+        "desc": "Polyester powder coating 50 microns on aluminium sections",
+        "unit": "kilogram",
+        "qty": 16.34,
+        "rate": 67.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",
@@ -1034,8 +1590,8 @@
       },
       {
         "code": "8647",
-        "desc": "Stainless steel screws 30 mm x4 mm 100",
-        "unit": "nos",
+        "desc": "Stainless steel screws 30 mm x4 mm",
+        "unit": "100 nos",
         "qty": 0.08,
         "rate": 32.0
       },
@@ -1056,6 +1612,13 @@
     "say": 458.55,
     "resources": [
       {
+        "code": "7001",
+        "desc": "Brass 100mm mortice latch and lock with 6 levers without pair of handles",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 210.0
+      },
+      {
         "code": "0111",
         "desc": "Carpenter 1st class",
         "unit": "day",
@@ -1074,10 +1637,31 @@
   {
     "code": "21.14",
     "desc": "Providing and fixing anodised aluminium (anodised transparent or dyed to required shade according to IS: 1868. Minimum anodic coating of gra",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "kg",
+    "basis": 4.082,
     "say": 354.75,
     "resources": [
+      {
+        "code": "7306",
+        "desc": "Aluminium T or L sections",
+        "unit": "kilogram",
+        "qty": 4.286,
+        "rate": 190.0
+      },
+      {
+        "code": "0589",
+        "desc": "Chromium plated Brass screws 20 mm",
+        "unit": "100 Nos",
+        "qty": 0.08,
+        "rate": 160.0
+      },
+      {
+        "code": "7389",
+        "desc": "Anodising 15 microns on aluminium sections",
+        "unit": "kilogram",
+        "qty": 4.286,
+        "rate": 38.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",
@@ -1112,6 +1696,13 @@
         "unit": "day",
         "qty": 0.01,
         "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Labour for drilling holes, hire charges of drill, electricity charges, carriage of dash hold fastners & sundries",
+        "unit": "L.S.",
+        "qty": 5.2,
+        "rate": 2.0
       }
     ]
   },
@@ -1122,6 +1713,20 @@
     "basis": 10.0,
     "say": 67.55,
     "resources": [
+      {
+        "code": "8660",
+        "desc": "Aluminium casement window fastener (Anodised AC 15)",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 44.0
+      },
+      {
+        "code": "8666",
+        "desc": "Stainless steel screws 25 mm x4 mm",
+        "unit": "100 Nos",
+        "qty": 0.4,
+        "rate": 38.0
+      },
       {
         "code": "0111",
         "desc": "Carpenter 1st class",
@@ -1146,6 +1751,20 @@
     "say": 71.55,
     "resources": [
       {
+        "code": "8661",
+        "desc": "Aluminium casement window fastener (powder coated )",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 47.0
+      },
+      {
+        "code": "8666",
+        "desc": "Stainless steel screws 25 mm x4 mm",
+        "unit": "100 Nos",
+        "qty": 0.4,
+        "rate": 38.0
+      },
+      {
         "code": "0111",
         "desc": "Carpenter 1st class",
         "unit": "day",
@@ -1168,6 +1787,20 @@
     "basis": 10.0,
     "say": 70.25,
     "resources": [
+      {
+        "code": "8662",
+        "desc": "Aluminium casement window fastener (polyester powder coated)",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 46.0
+      },
+      {
+        "code": "8666",
+        "desc": "Stainless steel screws 25 mm x4 mm",
+        "unit": "100 Nos",
+        "qty": 0.4,
+        "rate": 38.0
+      },
       {
         "code": "0111",
         "desc": "Carpenter 1st class",
@@ -1192,6 +1825,20 @@
     "say": 79.6,
     "resources": [
       {
+        "code": "8663",
+        "desc": "Aluminium round shape handle (anodised AC 15) outer dia 100mm",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 53.0
+      },
+      {
+        "code": "8666",
+        "desc": "Stainless steel screws 25 mm x4 mm",
+        "unit": "100 Nos",
+        "qty": 0.4,
+        "rate": 38.0
+      },
+      {
         "code": "0111",
         "desc": "Carpenter 1st class",
         "unit": "day",
@@ -1214,6 +1861,20 @@
     "basis": 10.0,
     "say": 83.6,
     "resources": [
+      {
+        "code": "8664",
+        "desc": "Aluminium round shape handle (powder coated) outer dia 100 mm",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 56.0
+      },
+      {
+        "code": "8666",
+        "desc": "Stainless steel screws 25 mm x4 mm",
+        "unit": "100 Nos",
+        "qty": 0.4,
+        "rate": 38.0
+      },
       {
         "code": "0111",
         "desc": "Carpenter 1st class",
@@ -1238,6 +1899,20 @@
     "say": 88.95,
     "resources": [
       {
+        "code": "8665",
+        "desc": "Aluminium round shape handle (polyester powder coated) outer dia 100 mm",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 60.0
+      },
+      {
+        "code": "8666",
+        "desc": "Stainless steel screws 25 mm x4 mm",
+        "unit": "100 Nos",
+        "qty": 0.4,
+        "rate": 38.0
+      },
+      {
         "code": "0111",
         "desc": "Carpenter 1st class",
         "unit": "day",
@@ -1256,8 +1931,8 @@
   {
     "code": "21.17",
     "desc": "Providing and fixing anodised aluminium grill (anodised transparent or dyed to required shade according to IS: 1868 with minimum anodic coat",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "kg",
+    "basis": 10.0,
     "say": 519.85,
     "resources": [
       {
@@ -1312,12 +1987,33 @@
     ]
   },
   {
-    "code": "21.4.1",
-    "desc": "Rate as per Item No.21.4.1 of SH:Aluminium Work each 1.00 2412.50 2412.50 A",
-    "unit": "nos",
-    "basis": 1.0,
+    "code": "21.18",
+    "desc": "Providing and fixing 12 mm thick frameless toughened glass door shutter of approved brand and manufacture, including providing and fixing to",
+    "unit": "sqm",
+    "basis": 2.1,
     "say": 4447.9,
     "resources": [
+      {
+        "code": "21.4.1",
+        "desc": "Rate as per SH: 21.4.1",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 2412.5
+      },
+      {
+        "code": "8778",
+        "desc": "Toughened glass 12 mm thickness",
+        "unit": "sqm",
+        "qty": 2.31,
+        "rate": 1747.0
+      },
+      {
+        "code": "9999",
+        "desc": "Methylated spirit",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
       {
         "code": "0119",
         "desc": "Glazier",
@@ -1344,16 +2040,30 @@
   {
     "code": "21.19.1",
     "desc": "Upto 5 mm depth and 5 mm width",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 10.0,
     "say": 125.1,
     "resources": [
+      {
+        "code": "2604",
+        "desc": "Weather/structural non sag elastomeric PU sealant (600ml Sausage) for joints in RCC/Brick/ Stone/ wood/ Ceramic/ Gypsum/Alluminium work complying to ASTM C920, DIN 18540-F & ISO 11600 incl all taxes",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 532.0
+      },
       {
         "code": "8654",
         "desc": "Masking tape",
         "unit": "metre",
         "qty": 20.0,
         "rate": 1.95
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, including charges of Sealant gun machine, dhoti etc",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
       },
       {
         "code": "9977",
@@ -1374,16 +2084,30 @@
   {
     "code": "21.19.2",
     "desc": "Upto 10 mm depth and 10 mm width",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 10.0,
     "say": 170.55,
     "resources": [
+      {
+        "code": "2604",
+        "desc": "Weather/structural non sag elastomeric PU sealant (600ml Sausage) for joints in RCC/Brick/ Stone/ wood/ Ceramic/ Gypsum/Alluminium work complying to ASTM C920, DIN 18540-F & ISO 11600 incl all taxes",
+        "unit": "each",
+        "qty": 1.5,
+        "rate": 532.0
+      },
       {
         "code": "8654",
         "desc": "Masking tape",
         "unit": "metre",
         "qty": 20.0,
         "rate": 1.95
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, including charges of Sealant gun machine, dhoti etc",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
       },
       {
         "code": "9977",
@@ -1404,16 +2128,37 @@
   {
     "code": "21.19.3",
     "desc": "Upto 20 mm depth and 20 mm width",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 10.0,
     "say": 308.7,
     "resources": [
+      {
+        "code": "2604",
+        "desc": "Weather/structural non sag elastomeric PU sealant (600ml Sausage) for joints in RCC/Brick/ Stone/ wood/ Ceramic/ Gypsum/Alluminium work complying to ASTM C920, DIN 18540-F & ISO 11600 incl all taxes",
+        "unit": "each",
+        "qty": 3.0,
+        "rate": 532.0
+      },
       {
         "code": "8654",
         "desc": "Masking tape",
         "unit": "metre",
         "qty": 20.0,
         "rate": 1.95
+      },
+      {
+        "code": "2630",
+        "desc": "Baker rod",
+        "unit": "metre",
+        "qty": 10.0,
+        "rate": 5.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, including charges of Sealant gun machine, dhoti etc",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
       },
       {
         "code": "9977",

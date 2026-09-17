@@ -1,10 +1,25 @@
 [
   {
     "code": "8.1.1.1",
+    "desc": "Area of slab upto 0.50 sqm",
     "unit": "sqm",
     "basis": 0.5,
     "say": 4439.4,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.008,
+        "rate": 4664.55
+      },
+      {
+        "code": "3.15",
+        "desc": "Rate as per SH: 3.15",
+        "unit": "cum",
+        "qty": 0.0012,
+        "rate": 9393.35
+      },
       {
         "code": "7452",
         "desc": "Raj nagar plain white marble (table rubbed and polished) 18 mm thick (slab area upto 0.50 sqm)",
@@ -18,20 +33,6 @@
         "unit": "tonne",
         "qty": 0.03,
         "rate": 92.24
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.008,
-        "rate": 4664.55
-      },
-      {
-        "code": "3.15",
-        "desc": "Rate as per Item Number 3.15 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.0012,
-        "rate": 9393.35
       },
       {
         "code": "0126",
@@ -93,10 +94,25 @@
   },
   {
     "code": "8.1.1.2",
+    "desc": "Area of slab over 0.50 sqm",
     "unit": "sqm",
-    "basis": 0.5,
+    "basis": 1.0,
     "say": 4615.65,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.0144,
+        "rate": 4664.55
+      },
+      {
+        "code": "3.15",
+        "desc": "Rate as per SH: 3.15",
+        "unit": "cum",
+        "qty": 0.0025,
+        "rate": 9393.35
+      },
       {
         "code": "7453",
         "desc": "Raj nagar plain white marble (table rubbed and polished) 18 mm thick (slab area more than 0.50 sqm)",
@@ -110,20 +126,6 @@
         "unit": "tonne",
         "qty": 0.06,
         "rate": 92.24
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.0144,
-        "rate": 4664.55
-      },
-      {
-        "code": "3.15",
-        "desc": "Rate as per Item Number 3.15 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.0025,
-        "rate": 9393.35
       },
       {
         "code": "0126",
@@ -185,23 +187,24 @@
   },
   {
     "code": "8.2.1.1",
+    "desc": "Area of slab upto 0.50 sqm",
     "unit": "sqm",
     "basis": 0.5,
     "say": 2777.4,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.012,
+        "rate": 4010.35
+      },
       {
         "code": "7452",
         "desc": "Raj nagar plain white marble (table rubbed and polished) 18 mm thick (slab area upto 0.50 sqm)",
         "unit": "sqm",
         "qty": 0.525,
         "rate": 575.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.012,
-        "rate": 4010.35
       },
       {
         "code": "0123",
@@ -242,23 +245,24 @@
   },
   {
     "code": "8.2.1.2",
+    "desc": "Area of slab over 0.50 sqm",
     "unit": "sqm",
-    "basis": 0.5,
+    "basis": 1.0,
     "say": 2552.65,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.024,
+        "rate": 4010.35
+      },
       {
         "code": "7453",
         "desc": "Raj nagar plain white marble (table rubbed and polished) 18 mm thick (slab area more than 0.50 sqm)",
         "unit": "sqm",
         "qty": 1.05,
         "rate": 690.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.024,
-        "rate": 4010.35
       },
       {
         "code": "0123",
@@ -299,23 +303,24 @@
   },
   {
     "code": "8.2.2.1",
+    "desc": "Area of slab upto 0.50 sqm",
     "unit": "sqm",
     "basis": 0.5,
     "say": 4217.35,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.012,
+        "rate": 4010.35
+      },
       {
         "code": "7295",
         "desc": "Granite of any colour, 18 mm thick (slab area upto 0.50 sqm)",
         "unit": "sqm",
         "qty": 0.525,
         "rate": 1600.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.012,
-        "rate": 4010.35
       },
       {
         "code": "0123",
@@ -356,23 +361,24 @@
   },
   {
     "code": "8.2.2.2",
+    "desc": "Area of slab over 0.50 sqm",
     "unit": "sqm",
-    "basis": 0.5,
+    "basis": 2.0,
     "say": 4007.65,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.048,
+        "rate": 4010.35
+      },
       {
         "code": "7297",
         "desc": "Granite of any colour, 18 mm thick (slab area above 0.50 sqm)",
         "unit": "sqm",
         "qty": 2.1,
         "rate": 1800.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.048,
-        "rate": 4010.35
       },
       {
         "code": "0123",
@@ -413,6 +419,7 @@
   },
   {
     "code": "8.3.1",
+    "desc": "Marble work",
     "unit": "m",
     "basis": 10.0,
     "say": 220.35,
@@ -442,6 +449,7 @@
   },
   {
     "code": "8.3.2",
+    "desc": "Granite work",
     "unit": "m",
     "basis": 10.0,
     "say": 376.25,
@@ -471,10 +479,18 @@
   },
   {
     "code": "8.4",
-    "unit": "m",
-    "basis": 1.5,
+    "desc": "Extra for fixing marble /granite stone, over and above corresponding basic item, in facia and drops of width upto 150 mm with epoxy resin ba",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 434.25,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.005,
+        "rate": 4010.35
+      },
       {
         "code": "0123",
         "desc": "Mason (brick layer) 1st class",
@@ -495,18 +511,12 @@
         "unit": "L.S.",
         "qty": 39.0,
         "rate": 2.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.005,
-        "rate": 4010.35
       }
     ]
   },
   {
     "code": "8.5",
+    "desc": "Extra for providing opening of required size & shape for wash basin/ kitchen sink in kitchen platform, vanity counter and similar location i",
     "unit": "nos",
     "basis": 1.0,
     "say": 734.55,
@@ -536,6 +546,7 @@
   },
   {
     "code": "8.6",
+    "desc": "Mirror polishing on marble work/Granite work/stone work where ever required to give high gloss finish complete.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 368.0,
@@ -572,10 +583,18 @@
   },
   {
     "code": "8.7.1",
+    "desc": "Gunmetal cramps",
     "unit": "kg",
     "basis": 1.03,
     "say": 627.85,
     "resources": [
+      {
+        "code": "3.7",
+        "desc": "Rate as per SH: 3.7",
+        "unit": "cum",
+        "qty": 0.001,
+        "rate": 5345.55
+      },
       {
         "code": "7338",
         "desc": "Gun metal cramp",
@@ -591,13 +610,6 @@
         "rate": 2.0
       },
       {
-        "code": "3.7",
-        "desc": "Rate as per Item Number 3.7 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.001,
-        "rate": 5345.55
-      },
-      {
         "code": "9999",
         "desc": "Labour for fixing in position",
         "unit": "L.S.",
@@ -608,10 +620,18 @@
   },
   {
     "code": "8.7.2",
+    "desc": "Stainless steel cramps",
     "unit": "kg",
     "basis": 0.934,
     "say": 612.6,
     "resources": [
+      {
+        "code": "3.7",
+        "desc": "Rate as per SH: 3.7",
+        "unit": "cum",
+        "qty": 0.001,
+        "rate": 5345.55
+      },
       {
         "code": "7339",
         "desc": "Stainless steel cramp",
@@ -627,13 +647,6 @@
         "rate": 2.0
       },
       {
-        "code": "3.7",
-        "desc": "Rate as per Item Number 3.7 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.001,
-        "rate": 5345.55
-      },
-      {
         "code": "9999",
         "desc": "Labour for fixing in position",
         "unit": "L.S.",
@@ -644,6 +657,7 @@
   },
   {
     "code": "8.8.1.1",
+    "desc": "Fastener with threaded dia 6 mm",
     "unit": "nos",
     "basis": 30.0,
     "say": 33.05,
@@ -687,6 +701,7 @@
   },
   {
     "code": "8.8.1.2",
+    "desc": "Fastener with threaded dia 10 mm",
     "unit": "nos",
     "basis": 30.0,
     "say": 33.35,
@@ -730,6 +745,7 @@
   },
   {
     "code": "8.8.1.3",
+    "desc": "Fastener with threaded dia 12 mm",
     "unit": "nos",
     "basis": 30.0,
     "say": 55.1,
@@ -773,10 +789,18 @@
   },
   {
     "code": "8.9.1.1",
+    "desc": "Raj nagar plain white marble/ Udaipur green marble/ Zebra black marble",
     "unit": "sqm",
     "basis": 1.0,
     "say": 2515.4,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.014,
+        "rate": 4664.55
+      },
       {
         "code": "2751",
         "desc": "8 mm thick marble tiles (polished) Raj Nagar",
@@ -790,13 +814,6 @@
         "unit": "L.S.",
         "qty": 3.95,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.014,
-        "rate": 4664.55
       },
       {
         "code": "9999",
@@ -837,10 +854,18 @@
   },
   {
     "code": "8.9.1.2",
+    "desc": "Granite of any colour and shade",
     "unit": "sqm",
     "basis": 1.0,
     "say": 2926.85,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.014,
+        "rate": 4664.55
+      },
       {
         "code": "2750",
         "desc": "8 mm thick granite stone tiles (mirror polished of all shades)",
@@ -854,13 +879,6 @@
         "unit": "L.S.",
         "qty": 3.95,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.014,
-        "rate": 4664.55
       },
       {
         "code": "9999",
@@ -901,6 +919,7 @@
   },
   {
     "code": "8.10.1",
+    "desc": "White Agaria Marble Stone",
     "unit": "sqm",
     "basis": 0.375,
     "say": 3216.9,
@@ -937,6 +956,7 @@
   },
   {
     "code": "8.10.2",
+    "desc": "Granite Stone of approved shade",
     "unit": "sqm",
     "basis": 0.375,
     "say": 3216.9,
@@ -973,10 +993,18 @@
   },
   {
     "code": "8.11.1",
+    "desc": "18 mm thick Italian Marble stone slab,Perlato, Rosso verona, Fire Red or Dark Emperadore etc.",
     "unit": "sqm",
     "basis": 0.5,
     "say": 8823.75,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.008,
+        "rate": 4664.55
+      },
       {
         "code": "1240",
         "desc": "18 mm thick Italian Marble stone slab, Perlato (slab area up to 0.5 sqm).",
@@ -990,13 +1018,6 @@
         "unit": "tonne",
         "qty": 0.03,
         "rate": 92.24
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item No.3.8 of SH: MORTARS",
-        "unit": "cum",
-        "qty": 0.008,
-        "rate": 4664.55
       },
       {
         "code": "0368",
@@ -1079,16 +1100,17 @@
   },
   {
     "code": "8.14.1.1",
+    "desc": "70 mm thick",
     "unit": "sqm",
     "basis": 1.0,
     "say": 4460.95,
     "resources": [
       {
-        "code": "1160",
-        "desc": "Red sand stone block",
-        "unit": "10 cudm",
-        "qty": 9.333,
-        "rate": 79.0
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 4664.55
       },
       {
         "code": "2216",
@@ -1187,28 +1209,22 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.018,
-        "rate": 4664.55
       }
     ]
   },
   {
     "code": "8.14.1.2",
+    "desc": "60 mm thick",
     "unit": "sqm",
     "basis": 1.0,
     "say": 4316.2,
     "resources": [
       {
-        "code": "1160",
-        "desc": "Red sand stone block",
-        "unit": "10 cudm",
-        "qty": 8.0,
-        "rate": 79.0
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 4664.55
       },
       {
         "code": "2216",
@@ -1307,28 +1323,22 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.018,
-        "rate": 4664.55
       }
     ]
   },
   {
     "code": "8.14.1.3",
+    "desc": "50 mm thick",
     "unit": "sqm",
     "basis": 1.0,
     "say": 4171.8,
     "resources": [
       {
-        "code": "1160",
-        "desc": "Red sand stone block",
-        "unit": "10 cudm",
-        "qty": 6.67,
-        "rate": 79.0
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 4664.55
       },
       {
         "code": "2216",
@@ -1427,28 +1437,22 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.018,
-        "rate": 4664.55
       }
     ]
   },
   {
     "code": "8.14.1.4",
+    "desc": "40 mm thick",
     "unit": "sqm",
     "basis": 1.0,
     "say": 4026.8,
     "resources": [
       {
-        "code": "1160",
-        "desc": "Red sand stone block",
-        "unit": "10 cudm",
-        "qty": 5.333,
-        "rate": 79.0
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 4664.55
       },
       {
         "code": "2216",
@@ -1547,28 +1551,22 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.018,
-        "rate": 4664.55
       }
     ]
   },
   {
     "code": "8.14.1.5",
+    "desc": "30 mm thick",
     "unit": "sqm",
     "basis": 1.0,
     "say": 3882.0,
     "resources": [
       {
-        "code": "1160",
-        "desc": "Red sand stone block",
-        "unit": "10 cudm",
-        "qty": 3.999,
-        "rate": 79.0
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 4664.55
       },
       {
         "code": "2216",
@@ -1667,28 +1665,22 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.018,
-        "rate": 4664.55
       }
     ]
   },
   {
     "code": "8.14.2.1",
+    "desc": "70 mm thick",
     "unit": "sqm",
     "basis": 1.0,
     "say": 6154.7,
     "resources": [
       {
-        "code": "1160",
-        "desc": "Red sand stone block",
-        "unit": "10 cudm",
-        "qty": 9.333,
-        "rate": 79.0
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 4664.55
       },
       {
         "code": "2216",
@@ -1787,28 +1779,22 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.018,
-        "rate": 4664.55
       }
     ]
   },
   {
     "code": "8.14.2.2",
+    "desc": "60 mm thick",
     "unit": "sqm",
     "basis": 1.0,
     "say": 6010.0,
     "resources": [
       {
-        "code": "1160",
-        "desc": "Red sand stone block",
-        "unit": "10 cudm",
-        "qty": 8.0,
-        "rate": 79.0
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 4664.55
       },
       {
         "code": "2216",
@@ -1907,28 +1893,22 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.018,
-        "rate": 4664.55
       }
     ]
   },
   {
     "code": "8.14.2.3",
+    "desc": "50 mm thick",
     "unit": "sqm",
     "basis": 1.0,
     "say": 5865.6,
     "resources": [
       {
-        "code": "1160",
-        "desc": "Red sand stone block",
-        "unit": "10 cudm",
-        "qty": 6.67,
-        "rate": 79.0
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 4664.55
       },
       {
         "code": "2216",
@@ -2027,28 +2007,22 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.018,
-        "rate": 4664.55
       }
     ]
   },
   {
     "code": "8.14.2.4",
+    "desc": "40 mm thick",
     "unit": "sqm",
     "basis": 1.0,
     "say": 5720.6,
     "resources": [
       {
-        "code": "1160",
-        "desc": "Red sand stone block",
-        "unit": "10 cudm",
-        "qty": 5.333,
-        "rate": 79.0
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 4664.55
       },
       {
         "code": "2216",
@@ -2147,28 +2121,22 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.018,
-        "rate": 4664.55
       }
     ]
   },
   {
     "code": "8.14.2.5",
+    "desc": "30 mm thick",
     "unit": "sqm",
     "basis": 1.0,
     "say": 5575.75,
     "resources": [
       {
-        "code": "1160",
-        "desc": "Red sand stone block",
-        "unit": "10 cudm",
-        "qty": 3.999,
-        "rate": 79.0
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 4664.55
       },
       {
         "code": "2216",
@@ -2267,28 +2235,22 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.018,
-        "rate": 4664.55
       }
     ]
   },
   {
     "code": "8.14.3.1",
+    "desc": "70 mm thick",
     "unit": "sqm",
     "basis": 1.0,
     "say": 6034.3,
     "resources": [
       {
-        "code": "1161",
-        "desc": "White sand stone block",
-        "unit": "10 cudm",
-        "qty": 9.333,
-        "rate": 205.0
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 4664.55
       },
       {
         "code": "2216",
@@ -2387,28 +2349,22 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.018,
-        "rate": 4664.55
       }
     ]
   },
   {
     "code": "8.14.3.2",
+    "desc": "60 mm thick",
     "unit": "sqm",
     "basis": 1.0,
     "say": 5664.85,
     "resources": [
       {
-        "code": "1161",
-        "desc": "White sand stone block",
-        "unit": "10 cudm",
-        "qty": 8.0,
-        "rate": 205.0
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 4664.55
       },
       {
         "code": "2216",
@@ -2507,28 +2463,22 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.018,
-        "rate": 4664.55
       }
     ]
   },
   {
     "code": "8.14.3.3",
+    "desc": "50 mm thick",
     "unit": "sqm",
     "basis": 1.0,
     "say": 5296.25,
     "resources": [
       {
-        "code": "1161",
-        "desc": "White sand stone block",
-        "unit": "10 cudm",
-        "qty": 6.67,
-        "rate": 205.0
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 4664.55
       },
       {
         "code": "2216",
@@ -2627,28 +2577,22 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.018,
-        "rate": 4664.55
       }
     ]
   },
   {
     "code": "8.14.3.4",
+    "desc": "40 mm thick",
     "unit": "sqm",
     "basis": 1.0,
     "say": 4925.0,
     "resources": [
       {
-        "code": "1161",
-        "desc": "White sand stone block",
-        "unit": "10 cudm",
-        "qty": 5.33,
-        "rate": 205.0
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 4664.55
       },
       {
         "code": "2216",
@@ -2747,28 +2691,22 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.018,
-        "rate": 4664.55
       }
     ]
   },
   {
     "code": "8.14.3.5",
+    "desc": "30 mm thick",
     "unit": "sqm",
     "basis": 1.0,
     "say": 4556.15,
     "resources": [
       {
-        "code": "1161",
-        "desc": "White sand stone block",
-        "unit": "10 cudm",
-        "qty": 3.999,
-        "rate": 205.0
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 4664.55
       },
       {
         "code": "2216",
@@ -2867,28 +2805,22 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.018,
-        "rate": 4664.55
       }
     ]
   },
   {
     "code": "8.14.4.1",
+    "desc": "70 mm thick",
     "unit": "sqm",
     "basis": 1.0,
     "say": 7728.1,
     "resources": [
       {
-        "code": "1161",
-        "desc": "White sand stone block",
-        "unit": "10 cudm",
-        "qty": 9.333,
-        "rate": 205.0
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 4664.55
       },
       {
         "code": "2216",
@@ -2987,28 +2919,22 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.018,
-        "rate": 4664.55
       }
     ]
   },
   {
     "code": "8.14.4.2",
+    "desc": "60 mm thick",
     "unit": "sqm",
     "basis": 1.0,
     "say": 7358.65,
     "resources": [
       {
-        "code": "1161",
-        "desc": "White sand stone block",
-        "unit": "10 cudm",
-        "qty": 8.0,
-        "rate": 205.0
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 4664.55
       },
       {
         "code": "2216",
@@ -3107,28 +3033,22 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.018,
-        "rate": 4664.55
       }
     ]
   },
   {
     "code": "8.14.4.3",
+    "desc": "50 mm thick",
     "unit": "sqm",
     "basis": 1.0,
     "say": 6990.05,
     "resources": [
       {
-        "code": "1161",
-        "desc": "White sand stone block",
-        "unit": "10 cudm",
-        "qty": 6.67,
-        "rate": 205.0
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 4664.55
       },
       {
         "code": "2216",
@@ -3227,28 +3147,22 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.018,
-        "rate": 4664.55
       }
     ]
   },
   {
     "code": "8.14.4.4",
+    "desc": "40 mm thick",
     "unit": "sqm",
     "basis": 1.0,
     "say": 6618.8,
     "resources": [
       {
-        "code": "1161",
-        "desc": "White sand stone block",
-        "unit": "10 cudm",
-        "qty": 5.33,
-        "rate": 205.0
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 4664.55
       },
       {
         "code": "2216",
@@ -3347,28 +3261,22 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.018,
-        "rate": 4664.55
       }
     ]
   },
   {
     "code": "8.14.4.5",
+    "desc": "30 mm thick",
     "unit": "sqm",
     "basis": 1.0,
     "say": 6249.9,
     "resources": [
       {
-        "code": "1161",
-        "desc": "White sand stone block",
-        "unit": "10 cudm",
-        "qty": 3.999,
-        "rate": 205.0
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 4664.55
       },
       {
         "code": "2216",
@@ -3467,22 +3375,23 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.018,
-        "rate": 4664.55
       }
     ]
   },
   {
     "code": "8.14.5.1",
+    "desc": "30mm thick White sand stone",
     "unit": "sqm",
     "basis": 1.0,
     "say": 2549.75,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 4664.55
+      },
       {
         "code": "8684",
         "desc": "White sand stone gang saw cut 30 mm thick",
@@ -3552,22 +3461,23 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.018,
-        "rate": 4664.55
       }
     ]
   },
   {
     "code": "8.14.5.2",
+    "desc": "30mm thick Red sand stone",
     "unit": "sqm",
     "basis": 1.0,
     "say": 2360.1,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 4664.55
+      },
       {
         "code": "8683",
         "desc": "Red sand stone gang saw cut 30 mm thick",
@@ -3637,22 +3547,23 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.018,
-        "rate": 4664.55
       }
     ]
   },
   {
     "code": "8.15",
-    "unit": "kg",
-    "basis": 0.934,
+    "desc": "Providing and fixing stainless steel cramps of required size and shape for anchoring stone wall lining to the backing or securing adjacent s",
+    "unit": "x",
+    "basis": 9.6,
     "say": 612.6,
     "resources": [
+      {
+        "code": "3.7",
+        "desc": "Rate as per SH: 3.7",
+        "unit": "cum",
+        "qty": 0.001,
+        "rate": 5345.55
+      },
       {
         "code": "7339",
         "desc": "Stainless steel cramp",
@@ -3668,13 +3579,6 @@
         "rate": 2.0
       },
       {
-        "code": "3.7",
-        "desc": "Rate as per Item Number 3.7 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.001,
-        "rate": 5345.55
-      },
-      {
         "code": "9999",
         "desc": "Labour for fixing in position",
         "unit": "L.S.",
@@ -3685,10 +3589,18 @@
   },
   {
     "code": "8.16",
+    "desc": "Providing and fixing copper pins 7.5 cm long 6 mm diameter for securing adjacent stones in stone wall lining in cement mortar 1:2 (1 cement ",
     "unit": "nos",
     "basis": 1.0,
     "say": 36.2,
     "resources": [
+      {
+        "code": "3.7",
+        "desc": "Rate as per SH: 3.7",
+        "unit": "cum",
+        "qty": 0.001,
+        "rate": 5345.55
+      },
       {
         "code": "0873",
         "desc": "Copper pins 6 mm dia 7.5 cm long",
@@ -3704,13 +3616,6 @@
         "rate": 2.0
       },
       {
-        "code": "3.7",
-        "desc": "Rate as per Item Number 3.7 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.001,
-        "rate": 5345.55
-      },
-      {
         "code": "9999",
         "desc": "Sundries including hire charges of hand cut machine etc.",
         "unit": "L.S.",
@@ -3721,10 +3626,25 @@
   },
   {
     "code": "8.17",
-    "unit": "m",
-    "basis": 10.0,
-    "say": null,
+    "desc": "Wall lining butch work upto 10m height with Dholpur stone 40 mm thick rough facing on the exposed surface with stone strips of minimum lengt",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 2388.0,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.0304,
+        "rate": 4664.55
+      },
+      {
+        "code": "18.78",
+        "desc": "Rate as per SH: 18.78",
+        "unit": "metre",
+        "qty": 3.0,
+        "rate": 154.15
+      },
       {
         "code": "1165",
         "desc": "White sand stone slab 40 mm thick (un-dressed)",
@@ -3752,28 +3672,6 @@
         "unit": "metre",
         "qty": 20.0,
         "rate": 10.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.0304,
-        "rate": 4664.55
-      }
-    ]
-  },
-  {
-    "code": "18.78",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 2388.0,
-    "resources": [
-      {
-        "code": "SH: Water",
-        "desc": "metre",
-        "unit": "3.00",
-        "qty": 154.15,
-        "rate": 462.45
       },
       {
         "code": "9999",
@@ -3821,16 +3719,17 @@
   },
   {
     "code": "8.18.1.1",
+    "desc": "25 mm thick",
     "unit": "sqm",
     "basis": 10.0,
     "say": 2890.25,
     "resources": [
       {
-        "code": "1169",
-        "desc": "Kotastone slab 25mm thick (rough cheseled)",
-        "unit": "sq.m.",
-        "qty": 11.5,
-        "rate": 301.0
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.144,
+        "rate": 4664.55
       },
       {
         "code": "2216",
@@ -3838,13 +3737,6 @@
         "unit": "tonne",
         "qty": 0.67,
         "rate": 92.24
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.144,
-        "rate": 4664.55
       },
       {
         "code": "9999",
@@ -3892,7 +3784,8 @@
   },
   {
     "code": "8.19",
-    "unit": "m",
+    "desc": "Extra for stone work for wall lining on exterior walls of height more than 10 m from ground level for every additional height of 3 m or part",
+    "unit": "sqm",
     "basis": 10.0,
     "say": 129.65,
     "resources": [
@@ -3935,6 +3828,7 @@
   },
   {
     "code": "8.20.1",
+    "desc": "Red sand stone - 30mm thick gang saw cut stone",
     "unit": "sqm",
     "basis": 1.0,
     "say": 2217.75,
@@ -4013,6 +3907,7 @@
   },
   {
     "code": "8.20.2",
+    "desc": "White sand stone - 30mm thick gang saw cut stone",
     "unit": "sqm",
     "basis": 1.0,
     "say": 2407.4,
@@ -4091,10 +3986,25 @@
   },
   {
     "code": "8.21",
+    "desc": "Providing and fixing structural steel frame (for dry cladding with 30 mm thick gang saw cut with machine cut edges sand stone) on walls at a",
     "unit": "kg",
     "basis": 100.78,
-    "say": null,
+    "say": 183.35,
     "resources": [
+      {
+        "code": "4.1.3",
+        "desc": "Rate as per SH: 4.1.3",
+        "unit": "cum",
+        "qty": 0.331,
+        "rate": 6788.6
+      },
+      {
+        "code": "13.52.1",
+        "desc": "Rate as per SH: 13.52.1",
+        "unit": "sqm",
+        "qty": 5.82,
+        "rate": 189.75
+      },
       {
         "code": "4009",
         "desc": "Mild steel tubes hot finished welded type",
@@ -4108,21 +4018,6 @@
         "unit": "quintal",
         "qty": 0.594,
         "rate": 4600.0
-      }
-    ]
-  },
-  {
-    "code": "4.1.3",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "SH : concrete work",
-        "desc": "cum",
-        "unit": "0.331",
-        "qty": 6788.6,
-        "rate": 2247.03
       },
       {
         "code": "0123",
@@ -4179,21 +4074,6 @@
         "unit": "L.S.",
         "qty": 80.73,
         "rate": 2.0
-      }
-    ]
-  },
-  {
-    "code": "13.52.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 183.35,
-    "resources": [
-      {
-        "code": "SH: Finishing",
-        "desc": "sqm",
-        "unit": "5.82",
-        "qty": 189.75,
-        "rate": 1104.35
       },
       {
         "code": "9999",
@@ -4206,7 +4086,8 @@
   },
   {
     "code": "8.22",
-    "unit": "nos",
+    "desc": "Providing and fixing adjustable stainless steel cramps of approved quality, required shape and size, adjustable with stainless steel nuts, b",
+    "unit": "Nos",
     "basis": 10.0,
     "say": 327.0,
     "resources": [
@@ -4256,16 +4137,17 @@
   },
   {
     "code": "8.23",
-    "unit": "nos",
+    "desc": "Providing 50x50x50 mm 2nd class teak wood plugs including cutting brick work and fixing in cement mortar 1:3 (1 cement : 3 fine sand) and ma",
+    "unit": "Nos",
     "basis": 100.0,
     "say": 33.9,
     "resources": [
       {
-        "code": "1189",
-        "desc": "Second class teak wood in scantling",
-        "unit": "10 cudm",
-        "qty": 1.4,
-        "rate": 776.0
+        "code": "3.3",
+        "desc": "Rate as per SH: 3.3",
+        "unit": "cum",
+        "qty": 0.002,
+        "rate": 4183.05
       },
       {
         "code": "2204",
@@ -4273,13 +4155,6 @@
         "unit": "cum",
         "qty": 0.014,
         "rate": 118.59
-      },
-      {
-        "code": "3.3",
-        "desc": "Rate as per Item Number 3.3 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.002,
-        "rate": 4183.05
       },
       {
         "code": "0112",
@@ -4306,6 +4181,7 @@
   },
   {
     "code": "8.24.1",
+    "desc": "25 mm long",
     "unit": "nos",
     "basis": 10.0,
     "say": 18.95,
@@ -4328,6 +4204,7 @@
   },
   {
     "code": "8.24.2",
+    "desc": "32 mm long",
     "unit": "nos",
     "basis": 10.0,
     "say": 20.35,
@@ -4350,6 +4227,7 @@
   },
   {
     "code": "8.24.3",
+    "desc": "40 mm long",
     "unit": "nos",
     "basis": 10.0,
     "say": 24.35,
@@ -4372,6 +4250,7 @@
   },
   {
     "code": "8.24.4",
+    "desc": "50 mm long",
     "unit": "nos",
     "basis": 10.0,
     "say": 25.7,
@@ -4394,53 +4273,24 @@
   },
   {
     "code": "8.25.1",
+    "desc": "40 mm thick",
     "unit": "sqm",
     "basis": 10.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 44.0,
-        "rate": 791.0
-      },
-      {
-        "code": "1231",
-        "desc": "Extra for selected planks of second class teakwood",
-        "unit": "10 cudm",
-        "qty": 44.0,
-        "rate": 150.0
-      }
-    ]
-  },
-  {
-    "code": "9.32",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "SH : Wood work and PVC work",
-        "desc": "each",
-        "unit": "55.00",
-        "qty": 33.9,
-        "rate": 1864.5
-      }
-    ]
-  },
-  {
-    "code": "13.50.1",
-    "unit": "nos",
-    "basis": 1.0,
     "say": 6137.7,
     "resources": [
       {
-        "code": "SH : Finishing",
-        "desc": "sqm",
-        "unit": "10.00",
-        "qty": 57.05,
-        "rate": 570.5
+        "code": "9.32",
+        "desc": "Rate as per SH: 9.32",
+        "unit": "each",
+        "qty": 55.0,
+        "rate": 33.9
+      },
+      {
+        "code": "13.50.1",
+        "desc": "Rate as per SH: 13.50.1",
+        "unit": "sqm",
+        "qty": 10.0,
+        "rate": 57.05
       },
       {
         "code": "2204",
@@ -4474,23 +4324,24 @@
   },
   {
     "code": "8.25.2",
+    "desc": "25 mm thick",
     "unit": "sqm",
     "basis": 10.0,
-    "say": null,
+    "say": 4057.75,
     "resources": [
       {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 27.5,
-        "rate": 791.0
+        "code": "9.32",
+        "desc": "Rate as per SH: 9.32",
+        "unit": "each",
+        "qty": 55.0,
+        "rate": 33.9
       },
       {
-        "code": "1231",
-        "desc": "Extra for selected planks of second class teakwood",
-        "unit": "10 cudm",
-        "qty": 27.5,
-        "rate": 150.0
+        "code": "13.50.1",
+        "desc": "Rate as per SH: 13.50.1",
+        "unit": "sqm",
+        "qty": 10.0,
+        "rate": 57.05
       },
       {
         "code": "2204",
@@ -4498,36 +4349,6 @@
         "unit": "cum",
         "qty": 0.275,
         "rate": 118.59
-      }
-    ]
-  },
-  {
-    "code": "9.32",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "SH : Wood work",
-        "desc": "each",
-        "unit": "55.00",
-        "qty": 33.9,
-        "rate": 1864.5
-      }
-    ]
-  },
-  {
-    "code": "13.50.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 4057.75,
-    "resources": [
-      {
-        "code": "SH : Finishing",
-        "desc": "sqm",
-        "unit": "10.00",
-        "qty": 57.05,
-        "rate": 570.5
       },
       {
         "code": "0111",
@@ -4554,23 +4375,24 @@
   },
   {
     "code": "8.25.3",
+    "desc": "20 mm thick",
     "unit": "sqm",
     "basis": 10.0,
-    "say": null,
+    "say": 3291.15,
     "resources": [
       {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 22.0,
-        "rate": 791.0
+        "code": "9.32",
+        "desc": "Rate as per SH: 9.32",
+        "unit": "each",
+        "qty": 55.0,
+        "rate": 33.9
       },
       {
-        "code": "1231",
-        "desc": "Extra for selected planks of second class teakwood",
-        "unit": "10 cudm",
-        "qty": 22.0,
-        "rate": 150.0
+        "code": "13.50.1",
+        "desc": "Rate as per SH: 13.50.1",
+        "unit": "sqm",
+        "qty": 10.0,
+        "rate": 57.05
       },
       {
         "code": "2204",
@@ -4578,36 +4400,6 @@
         "unit": "cum",
         "qty": 0.22,
         "rate": 118.59
-      }
-    ]
-  },
-  {
-    "code": "9.32",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "SH : Wood work",
-        "desc": "each",
-        "unit": "55.00",
-        "qty": 33.9,
-        "rate": 1864.5
-      }
-    ]
-  },
-  {
-    "code": "13.50.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 3291.15,
-    "resources": [
-      {
-        "code": "SH : Finishing",
-        "desc": "sqm",
-        "unit": "10.00",
-        "qty": 57.05,
-        "rate": 570.5
       },
       {
         "code": "0111",
@@ -4641,23 +4433,24 @@
   },
   {
     "code": "8.25.4",
+    "desc": "12 mm thick",
     "unit": "sqm",
     "basis": 10.0,
-    "say": null,
+    "say": 2181.8,
     "resources": [
       {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 13.2,
-        "rate": 791.0
+        "code": "9.32",
+        "desc": "Rate as per SH: 9.32",
+        "unit": "each",
+        "qty": 55.0,
+        "rate": 33.9
       },
       {
-        "code": "1231",
-        "desc": "Extra for selected planks of second class teakwood",
-        "unit": "10 cudm",
-        "qty": 13.2,
-        "rate": 150.0
+        "code": "13.50.1",
+        "desc": "Rate as per SH: 13.50.1",
+        "unit": "sqm",
+        "qty": 10.0,
+        "rate": 57.05
       },
       {
         "code": "2204",
@@ -4665,21 +4458,6 @@
         "unit": "cum",
         "qty": 0.132,
         "rate": 118.59
-      }
-    ]
-  },
-  {
-    "code": "9.32",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "SH : Wood work",
-        "desc": "each",
-        "unit": "55.00",
-        "qty": 33.9,
-        "rate": 1864.5
       },
       {
         "code": "0111",
@@ -4701,21 +4479,6 @@
         "unit": "day",
         "qty": 1.08,
         "rate": 558.0
-      }
-    ]
-  },
-  {
-    "code": "13.50.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 2181.8,
-    "resources": [
-      {
-        "code": "SH : Finishing",
-        "desc": "sqm",
-        "unit": "10.00",
-        "qty": 57.05,
-        "rate": 570.5
       },
       {
         "code": "9999",
@@ -4728,10 +4491,18 @@
   },
   {
     "code": "8.26.1",
+    "desc": "12 mm thick",
     "unit": "sqm",
     "basis": 10.0,
-    "say": null,
+    "say": 1269.6,
     "resources": [
+      {
+        "code": "13.50.1",
+        "desc": "Rate as per SH: 13.50.1",
+        "unit": "sqm",
+        "qty": 10.0,
+        "rate": 57.05
+      },
       {
         "code": "7477",
         "desc": "Prelaminated particle board with one side decorative and other side balancing lamination, flat pressed 3 layer & graded (medium density) Grade I, Type II conforming to IS : 12823 (exterior grade) 12 mm thick",
@@ -4752,21 +4523,6 @@
         "unit": "L.S.",
         "qty": 26.91,
         "rate": 2.0
-      }
-    ]
-  },
-  {
-    "code": "13.50.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 1269.6,
-    "resources": [
-      {
-        "code": "SH : Finishing",
-        "desc": "sqm",
-        "unit": "10.00",
-        "qty": 57.05,
-        "rate": 570.5
       },
       {
         "code": "0112",
@@ -4793,10 +4549,18 @@
   },
   {
     "code": "8.26.2",
+    "desc": "18 mm thick",
     "unit": "sqm",
     "basis": 10.0,
-    "say": null,
+    "say": 1431.5,
     "resources": [
+      {
+        "code": "13.50.1",
+        "desc": "Rate as per SH: 13.50.1",
+        "unit": "sqm",
+        "qty": 10.0,
+        "rate": 57.05
+      },
       {
         "code": "7478",
         "desc": "Prelaminated particle board with one side decorative and other side balancing lamination, flat pressed 3 layer & graded (medium density) Grade I, Type II conforming to IS : 12823 (exterior grade) 18 mm thick",
@@ -4817,21 +4581,6 @@
         "unit": "L.S.",
         "qty": 26.91,
         "rate": 2.0
-      }
-    ]
-  },
-  {
-    "code": "13.50.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 1431.5,
-    "resources": [
-      {
-        "code": "SH : Finishing",
-        "desc": "sqm",
-        "unit": "10.00",
-        "qty": 57.05,
-        "rate": 570.5
       },
       {
         "code": "0112",
@@ -4858,10 +4607,18 @@
   },
   {
     "code": "8.26.3",
+    "desc": "25 mm thick",
     "unit": "sqm",
     "basis": 10.0,
-    "say": null,
+    "say": 1799.45,
     "resources": [
+      {
+        "code": "13.50.1",
+        "desc": "Rate as per SH: 13.50.1",
+        "unit": "sqm",
+        "qty": 10.0,
+        "rate": 57.05
+      },
       {
         "code": "7479",
         "desc": "Prelaminated particle board with one side decorative and other side balancing lamination, flat pressed 3 layer & graded (medium density) Grade I, Type II conforming to IS : 12823 (exterior grade) 25 mm thick",
@@ -4882,21 +4639,6 @@
         "unit": "L.S.",
         "qty": 26.91,
         "rate": 2.0
-      }
-    ]
-  },
-  {
-    "code": "13.50.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 1799.45,
-    "resources": [
-      {
-        "code": "SH : Finishing",
-        "desc": "sqm",
-        "unit": "10.00",
-        "qty": 57.05,
-        "rate": 570.5
       },
       {
         "code": "0112",
@@ -4923,16 +4665,17 @@
   },
   {
     "code": "8.27.1",
-    "unit": "cum",
-    "basis": 0.03125,
-    "say": null,
+    "desc": "Kiln seasoned and chemically treated hollock wood",
+    "unit": "no",
+    "basis": 5.0,
+    "say": 165255.05,
     "resources": [
       {
-        "code": "2505",
-        "desc": "Hollock wood in planks",
-        "unit": "10 cudm",
-        "qty": 3.3,
-        "rate": 390.0
+        "code": "13.50.1",
+        "desc": "Rate as per SH: 13.50.1",
+        "unit": "sqm",
+        "qty": 3.75,
+        "rate": 57.05
       },
       {
         "code": "2204",
@@ -4961,21 +4704,6 @@
         "unit": "L.S.",
         "qty": 6.76,
         "rate": 2.0
-      }
-    ]
-  },
-  {
-    "code": "13.50.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 165255.05,
-    "resources": [
-      {
-        "code": "SH : Finishing",
-        "desc": "sqm",
-        "unit": "3.75",
-        "qty": 57.05,
-        "rate": 213.94
       },
       {
         "code": "7048",
@@ -4995,10 +4723,25 @@
   },
   {
     "code": "8.28.1",
+    "desc": "Decorative veneer facings of approved manufacture",
     "unit": "sqm",
     "basis": 10.0,
-    "say": null,
+    "say": 1551.0,
     "resources": [
+      {
+        "code": "9.32",
+        "desc": "Rate as per SH: 9.32",
+        "unit": "each",
+        "qty": 55.0,
+        "rate": 33.9
+      },
+      {
+        "code": "13.50.1",
+        "desc": "Rate as per SH: 13.50.1",
+        "unit": "sqm",
+        "qty": 10.0,
+        "rate": 57.05
+      },
       {
         "code": "0759",
         "desc": "Decorative plywood 4 mm",
@@ -5012,21 +4755,6 @@
         "unit": "L.S.",
         "qty": 5.46,
         "rate": 2.0
-      }
-    ]
-  },
-  {
-    "code": "9.32",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "SH : Wood work",
-        "desc": "each",
-        "unit": "55.00",
-        "qty": 33.9,
-        "rate": 1864.5
       },
       {
         "code": "0111",
@@ -5059,26 +4787,26 @@
     ]
   },
   {
-    "code": "13.50.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 1551.0,
-    "resources": [
-      {
-        "code": "SH : Finishing",
-        "desc": "sqm",
-        "unit": "10.00",
-        "qty": 57.05,
-        "rate": 570.5
-      }
-    ]
-  },
-  {
     "code": "8.29",
+    "desc": "Providing and fixing 4mm thick coir veneer board, ISI marked IS : 14842, plain lining with necessary screws, priming coat on unexposed surfa",
     "unit": "sqm",
     "basis": 10.0,
-    "say": null,
+    "say": 1502.85,
     "resources": [
+      {
+        "code": "9.32",
+        "desc": "Rate as per SH: 9.32",
+        "unit": "each",
+        "qty": 55.0,
+        "rate": 33.9
+      },
+      {
+        "code": "13.50.1",
+        "desc": "Rate as per SH: 13.50.1",
+        "unit": "sqm",
+        "qty": 10.0,
+        "rate": 57.05
+      },
       {
         "code": "7552",
         "desc": "Coir veneered board 4mm thick",
@@ -5092,21 +4820,6 @@
         "unit": "L.S.",
         "qty": 5.46,
         "rate": 2.0
-      }
-    ]
-  },
-  {
-    "code": "9.32",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": null,
-    "resources": [
-      {
-        "code": "SH : Wood work",
-        "desc": "each",
-        "unit": "55.00",
-        "qty": 33.9,
-        "rate": 1864.5
       },
       {
         "code": "0111",
@@ -5139,26 +4852,19 @@
     ]
   },
   {
-    "code": "13.50.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 1502.85,
+    "code": "8.30.1",
+    "desc": "18 mm thick",
+    "unit": "x30",
+    "basis": 0.2,
+    "say": 1891.5,
     "resources": [
       {
-        "code": "SH : Finishing",
-        "desc": "sqm",
-        "unit": "10.00",
-        "qty": 57.05,
-        "rate": 570.5
-      }
-    ]
-  },
-  {
-    "code": "8.30.1",
-    "unit": "m",
-    "basis": 30.0,
-    "say": null,
-    "resources": [
+        "code": "13.50.1",
+        "desc": "Rate as per SH: 13.50.1",
+        "unit": "sqm",
+        "qty": 6.0,
+        "rate": 57.05
+      },
       {
         "code": "7478",
         "desc": "Prelaminated particle board with one side decorative and other side balancing lamination, flat pressed 3 layer & graded (medium density) Grade I, Type II conforming to IS : 12823 (exterior grade) 18 mm thick",
@@ -5211,26 +4917,19 @@
     ]
   },
   {
-    "code": "13.50.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 1891.5,
+    "code": "8.30.2",
+    "desc": "25 mm thick",
+    "unit": "x30",
+    "basis": 0.2,
+    "say": 2259.4,
     "resources": [
       {
-        "code": "SH : Finishing",
-        "desc": "sqm",
-        "unit": "6.00",
-        "qty": 57.05,
-        "rate": 342.3
-      }
-    ]
-  },
-  {
-    "code": "8.30.2",
-    "unit": "m",
-    "basis": 30.0,
-    "say": null,
-    "resources": [
+        "code": "13.50.1",
+        "desc": "Rate as per SH: 13.50.1",
+        "unit": "sqm",
+        "qty": 6.0,
+        "rate": 57.05
+      },
       {
         "code": "7479",
         "desc": "Prelaminated particle board with one side decorative and other side balancing lamination, flat pressed 3 layer & graded (medium density) Grade I, Type II conforming to IS : 12823 (exterior grade) 25 mm thick",
@@ -5283,32 +4982,18 @@
     ]
   },
   {
-    "code": "13.50.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 2259.4,
-    "resources": [
-      {
-        "code": "SH : Finishing",
-        "desc": "sqm",
-        "unit": "6.00",
-        "qty": 57.05,
-        "rate": 342.3
-      }
-    ]
-  },
-  {
     "code": "8.31",
-    "unit": "kg",
-    "basis": 3.3,
+    "desc": "Providing and fixing Ist quality ceramic glazed wall tiles conforming to IS: 15622 (thickness to be specified by the manufacturer), of appro",
+    "unit": "sqm",
+    "basis": 1.0,
     "say": 1030.3,
     "resources": [
       {
-        "code": "7800",
-        "desc": "Ceramic Glazed Tiles Ist quality minimum thickness 5mm in all colours shades and designs except burgundy, bottle green, black",
-        "unit": "Sq.m.",
-        "qty": 1.025,
-        "rate": 212.0
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.014,
+        "rate": 4664.55
       },
       {
         "code": "9977",
@@ -5316,13 +5001,6 @@
         "unit": "L.S.",
         "qty": 6.24,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.014,
-        "rate": 4664.55
       },
       {
         "code": "9999",
@@ -5363,8 +5041,9 @@
   },
   {
     "code": "8.32",
-    "unit": "nos",
-    "basis": 1.0,
+    "desc": "Designing, fabricating, testing, installing and fixing in position Curtain Wall with Aluminium Composite Panel Cladding, with open grooves f",
+    "unit": "sqm",
+    "basis": 6.72,
     "say": 4309.8,
     "resources": [
       {

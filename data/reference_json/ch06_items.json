@@ -1,10 +1,18 @@
 [
   {
     "code": "6.1.1",
+    "desc": "Cement mortar 1:4 (1 cement : 4 coarse sand)",
     "unit": "cum",
     "basis": 1.0,
     "say": 6376.25,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 4010.35
+      },
       {
         "code": "2602",
         "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
@@ -18,13 +26,6 @@
         "unit": "1000 Nos",
         "qty": 0.494,
         "rate": 276.72
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per item No 3.9 of SH: Mortar",
-        "unit": "cum",
-        "qty": 0.25,
-        "rate": 4010.35
       },
       {
         "code": "9999",
@@ -65,10 +66,18 @@
   },
   {
     "code": "6.1.2",
+    "desc": "Cement mortar 1:6 (1 cement : 6 coarse sand)",
     "unit": "cum",
     "basis": 1.0,
     "say": 6157.45,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3356.15
+      },
       {
         "code": "2602",
         "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
@@ -82,13 +91,6 @@
         "unit": "1000 Nos",
         "qty": 0.494,
         "rate": 276.72
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per Item No.3.11 of SH: Mortar",
-        "unit": "cum",
-        "qty": 0.25,
-        "rate": 3356.15
       },
       {
         "code": "9999",
@@ -129,10 +131,18 @@
   },
   {
     "code": "6.2.1",
+    "desc": "Cement mortar 1:4 (1 cement : 4 coarse sand)",
     "unit": "cum",
     "basis": 1.0,
     "say": 5495.15,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 4010.35
+      },
       {
         "code": "7900",
         "desc": "Modular common burnt clay bricks of class designation 7.5",
@@ -146,13 +156,6 @@
         "unit": "1000 Nos",
         "qty": 0.487,
         "rate": 276.72
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per item No 3.9 of SH: Mortar",
-        "unit": "cum",
-        "qty": 0.22,
-        "rate": 4010.35
       },
       {
         "code": "9999",
@@ -193,10 +196,18 @@
   },
   {
     "code": "6.2.2",
+    "desc": "Cement Mortar 1:6 (1 cement : 6 coarse sand).",
     "unit": "cum",
     "basis": 1.0,
     "say": 5302.6,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 3356.15
+      },
       {
         "code": "7900",
         "desc": "Modular common burnt clay bricks of class designation 7.5",
@@ -210,13 +221,6 @@
         "unit": "1000 Nos",
         "qty": 0.487,
         "rate": 276.72
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per item No 3.11 of SH: Mortar",
-        "unit": "cum",
-        "qty": 0.22,
-        "rate": 3356.15
       },
       {
         "code": "9999",
@@ -257,10 +261,18 @@
   },
   {
     "code": "6.3.1",
+    "desc": "With F.P.S.(non modular) bricks",
     "unit": "cum",
     "basis": 1.0,
     "say": 7722.65,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3356.15
+      },
       {
         "code": "7901",
         "desc": "Machine moulded perforated common burnt clay FPS (non modular) bricks of class designation 12.5",
@@ -274,13 +286,6 @@
         "unit": "1000 Nos",
         "qty": 0.494,
         "rate": 276.72
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per item No 3.11 of SH: Mortar",
-        "unit": "cum",
-        "qty": 0.25,
-        "rate": 3356.15
       },
       {
         "code": "9999",
@@ -335,10 +340,18 @@
   },
   {
     "code": "6.3.2",
+    "desc": "With Modular bricks",
     "unit": "cum",
     "basis": 1.0,
     "say": 7501.5,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 3356.15
+      },
       {
         "code": "7902",
         "desc": "Machine moulded common burnt clay modular perforated bricks of class designation 12.5",
@@ -352,13 +365,6 @@
         "unit": "1000 Nos",
         "qty": 0.487,
         "rate": 276.72
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per item No 3.11 of SH: Mortar",
-        "unit": "cum",
-        "qty": 0.22,
-        "rate": 3356.15
       },
       {
         "code": "9999",
@@ -413,23 +419,24 @@
   },
   {
     "code": "6.4.1",
+    "desc": "Cement mortar 1:4 (1 cement : 4 coarse sand)",
     "unit": "cum",
     "basis": 1.0,
     "say": 7809.25,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 4010.35
+      },
       {
         "code": "2602",
         "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
         "unit": "1000 Nos",
         "qty": 0.494,
         "rate": 4500.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.25,
-        "rate": 4010.35
       },
       {
         "code": "2201",
@@ -491,23 +498,24 @@
   },
   {
     "code": "6.4.2",
+    "desc": "Cement mortar 1:6 (1 cement : 6 coarse sand)",
     "unit": "cum",
     "basis": 1.0,
-    "say": 236.65,
+    "say": 7590.45,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3356.15
+      },
       {
         "code": "2602",
         "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
         "unit": "1000 Nos",
         "qty": 0.494,
         "rate": 4500.0
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.25,
-        "rate": 3356.15
       },
       {
         "code": "2201",
@@ -564,7 +572,16 @@
         "unit": "day",
         "qty": 1.13,
         "rate": 558.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "6.5",
+    "desc": "Extra for brick work / AAC block masonry / Tile brick masonry in superstructure above floor V level, for each four floors or part thereof by",
+    "unit": "cum",
+    "basis": 5.3,
+    "say": 236.65,
+    "resources": [
       {
         "code": "0037",
         "desc": "Mobile crane",
@@ -576,6 +593,7 @@
   },
   {
     "code": "6.6",
+    "desc": "Extra for forming cavity 5 cm to 11.5 cm wide in cavity walls with necessary weep and vent holes including use of cores and cost of providin",
     "unit": "sqm",
     "basis": 10.0,
     "say": 176.25,
@@ -632,22 +650,23 @@
     ]
   },
   {
-    "code": "6.12.1",
-    "unit": "nos",
-    "basis": 1.0,
+    "code": "6.7",
+    "desc": "Providing half brick masonry with common burnt clay F.P.S. (non modular) bricks of class designation 7.5 in cement mortar 1:3 (1 Cement : 3 ",
+    "unit": "m",
+    "basis": 10.0,
     "say": 254.0,
     "resources": [
       {
-        "code": "SH: Brick Work",
-        "desc": "sqm",
-        "unit": "2.70",
-        "qty": 798.25,
-        "rate": 2155.28
+        "code": "6.12.1",
+        "desc": "Rate as per SH: 6.12.1",
+        "unit": "sqm",
+        "qty": 2.7,
+        "rate": 798.25
       },
       {
         "code": "0322",
-        "desc": "Bitumen felt :Type 3 grade 1",
-        "unit": "sqm",
+        "desc": "Bitumen felt :Type 3 grade",
+        "unit": "1 sqm",
         "qty": 1.2,
         "rate": 70.0
       },
@@ -676,23 +695,24 @@
   },
   {
     "code": "6.8",
+    "desc": "Brick work 7 cm thick with common burnt clay F.P.S. (non modular) brick of class designation 7.5 in cement mortar 1:3 (1 cement : 3 coarse s",
     "unit": "sqm",
     "basis": 10.0,
     "say": 749.75,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.181,
+        "rate": 4664.55
+      },
       {
         "code": "2602",
         "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
         "unit": "1000 Nos",
         "qty": 0.377,
         "rate": 4500.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.181,
-        "rate": 4664.55
       },
       {
         "code": "2201",
@@ -747,23 +767,31 @@
   },
   {
     "code": "6.9",
-    "unit": "metre",
-    "basis": 6.0,
-    "say": null,
+    "desc": "Brick work in plain arches in superstructure above plinth level and upto floor five level including centering and shuttering complete for sp",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 12352.95,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 4664.55
+      },
+      {
+        "code": "5.9.9",
+        "desc": "Rate as per SH: 5.9.9",
+        "unit": "sqm",
+        "qty": 2.25,
+        "rate": 1713.2
+      },
       {
         "code": "2602",
         "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
         "unit": "1000 Nos",
         "qty": 0.494,
         "rate": 4500.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.25,
-        "rate": 4664.55
       },
       {
         "code": "2201",
@@ -778,21 +806,6 @@
         "unit": "L.S.",
         "qty": 2.73,
         "rate": 2.0
-      }
-    ]
-  },
-  {
-    "code": "5.9.9",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 12352.95,
-    "resources": [
-      {
-        "code": "SH : Reinforced cement concrete work",
-        "desc": "sqm",
-        "unit": "2.25",
-        "qty": 1713.2,
-        "rate": 3854.7
       },
       {
         "code": "9999",
@@ -840,23 +853,31 @@
   },
   {
     "code": "6.10",
+    "desc": "Brick work in gauged arches in superstructure above plinth level and upto floor five level in cement mortar 1:3 (1 cement : 3 coarse sand) i",
     "unit": "cum",
     "basis": 1.0,
-    "say": null,
+    "say": 15361.9,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 4664.55
+      },
+      {
+        "code": "5.9.9",
+        "desc": "Rate as per SH: 5.9.9",
+        "unit": "sqm",
+        "qty": 2.25,
+        "rate": 1713.2
+      },
       {
         "code": "2602",
         "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
         "unit": "1000 Nos",
         "qty": 0.538,
         "rate": 4500.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.25,
-        "rate": 4664.55
       },
       {
         "code": "2201",
@@ -871,21 +892,6 @@
         "unit": "L.S.",
         "qty": 2.73,
         "rate": 2.0
-      }
-    ]
-  },
-  {
-    "code": "5.9.9",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 15361.9,
-    "resources": [
-      {
-        "code": "SH : Reinforced cement concrete work",
-        "desc": "sqm",
-        "unit": "2.25",
-        "qty": 1713.2,
-        "rate": 3854.7
       },
       {
         "code": "9999",
@@ -933,17 +939,11 @@
   },
   {
     "code": "6.11",
-    "unit": "m",
-    "basis": 6.0,
-    "say": null,
+    "desc": "Extra for additional cost of centering for arches exceeding 6m span including all shuttering, bolting, wedging and removal (Area of the soff",
+    "unit": "sqm",
+    "basis": 33.31,
+    "say": 560.65,
     "resources": [
-      {
-        "code": "1197",
-        "desc": "Second class kail wood in scantling",
-        "unit": "10 cudm",
-        "qty": 88.79,
-        "rate": 260.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -996,22 +996,8 @@
     ]
   },
   {
-    "code": "5.9.9",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 560.65,
-    "resources": [
-      {
-        "code": "SH : Reinforced cement concrete work",
-        "desc": "sqm",
-        "unit": "-33.31",
-        "qty": 1713.2,
-        "rate": -57066.69
-      }
-    ]
-  },
-  {
     "code": "6.12.1",
+    "desc": "Cement mortar 1:3 (1 cement : 3 coarse sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 798.25,
@@ -1022,13 +1008,6 @@
         "unit": "1000 Nos",
         "qty": 0.565,
         "rate": 4500.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Cement mortar 1:3 (1 cement : 3 coarse sand) (Rate as per item No 3.8)",
-        "unit": "cum",
-        "qty": 0.28,
-        "rate": 4664.55
       },
       {
         "code": "2201",
@@ -1076,6 +1055,7 @@
   },
   {
     "code": "6.12.2",
+    "desc": "cement mortar 1:4 (1 cement : 4 coarse sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 773.75,
@@ -1086,13 +1066,6 @@
         "unit": "1000 Nos",
         "qty": 0.565,
         "rate": 4500.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Cement mortar 1 : 4 (1 cement : 4 coarse sand) (Rate as per item No 3.9)",
-        "unit": "cum",
-        "qty": 0.28,
-        "rate": 4010.35
       },
       {
         "code": "2201",
@@ -1140,23 +1113,24 @@
   },
   {
     "code": "6.13.1",
+    "desc": "Cement mortar 1:3 (1 cement :3 coarse sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 956.6,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.28,
+        "rate": 4664.55
+      },
       {
         "code": "2602",
         "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
         "unit": "1000 Nos",
         "qty": 0.565,
         "rate": 4500.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.28,
-        "rate": 4664.55
       },
       {
         "code": "2201",
@@ -1211,23 +1185,24 @@
   },
   {
     "code": "6.13.2",
+    "desc": "Cement mortar 1:4 (1 cement :4 coarse sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 932.1,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.28,
+        "rate": 4010.35
+      },
       {
         "code": "2602",
         "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
         "unit": "1000 Nos",
         "qty": 0.565,
         "rate": 4500.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.28,
-        "rate": 4010.35
       },
       {
         "code": "2201",
@@ -1282,6 +1257,7 @@
   },
   {
     "code": "6.14",
+    "desc": "Extra for half brick masonry in superstructure, above floor V level for every four floors or part thereof by mechanical means.",
     "unit": "sqm",
     "basis": 59.83,
     "say": 20.95,
@@ -1297,8 +1273,9 @@
   },
   {
     "code": "6.15",
-    "unit": "nos",
-    "basis": 2.0,
+    "desc": "Extra for providing and placing in position 2 Nos 6mm dia. M.S. bars at every third course of half brick masonry.",
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 80.1,
     "resources": [
       {
@@ -1326,23 +1303,24 @@
   },
   {
     "code": "6.16.1",
+    "desc": "Cement mortar 1:4 (1 cement : 4 coarse sand)",
     "unit": "cum",
     "basis": 1.0,
     "say": 9651.05,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.4,
+        "rate": 4010.35
+      },
       {
         "code": "1984",
         "desc": "Common burnt clay F.P.S. (non modular) bricks tile class designation 10",
         "unit": "1000 Nos",
         "qty": 0.777,
         "rate": 4500.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.4,
-        "rate": 4010.35
       },
       {
         "code": "2207",
@@ -1390,23 +1368,24 @@
   },
   {
     "code": "6.16.2",
+    "desc": "Cement mortar 1:6 (1 cement : 6 coarse sand)",
     "unit": "cum",
     "basis": 1.0,
     "say": 9300.9,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.4,
+        "rate": 3356.15
+      },
       {
         "code": "1984",
         "desc": "Common burnt clay F.P.S. (non modular) bricks tile class designation 10",
         "unit": "1000 Nos",
         "qty": 0.777,
         "rate": 4500.0
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.4,
-        "rate": 3356.15
       },
       {
         "code": "2207",
@@ -1454,10 +1433,18 @@
   },
   {
     "code": "6.17",
+    "desc": "Tile brick masonry with common burnt clay machine moulded tile bricks of class designation 12.5 conforming to IS : 2690 (Part I) in foundati",
     "unit": "cum",
     "basis": 1.0,
     "say": 9716.75,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.4,
+        "rate": 3356.15
+      },
       {
         "code": "7904",
         "desc": "Machine moulded common burnt clay tile bricks of class designation 12.5",
@@ -1471,13 +1458,6 @@
         "unit": "1000 Nos",
         "qty": 0.777,
         "rate": 166.03
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.4,
-        "rate": 3356.15
       },
       {
         "code": "9999",
@@ -1518,10 +1498,18 @@
   },
   {
     "code": "6.18",
+    "desc": "Tile brick masonry with common burnt clay F.P.S. (non modular) tile bricks of class designation 10 in superstructure above plinth level up t",
     "unit": "cum",
     "basis": 1.0,
     "say": 10808.25,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.4,
+        "rate": 3356.15
+      },
       {
         "code": "1984",
         "desc": "Common burnt clay F.P.S. (non modular) bricks tile class designation 10",
@@ -1535,13 +1523,6 @@
         "unit": "1000 Nos",
         "qty": 0.777,
         "rate": 166.03
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.4,
-        "rate": 3356.15
       },
       {
         "code": "9999",
@@ -1596,10 +1577,25 @@
   },
   {
     "code": "6.20",
+    "desc": "Tile brick masonry with common burnt clay F.P.S. (non modular) tile bricks of class designation 10 in plain arch work in superstructure abov",
     "unit": "cum",
     "basis": 1.0,
-    "say": null,
+    "say": 15551.35,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.35,
+        "rate": 4010.35
+      },
+      {
+        "code": "5.9.9",
+        "desc": "Rate as per SH: 5.9.9",
+        "unit": "sqm",
+        "qty": 2.25,
+        "rate": 1713.2
+      },
       {
         "code": "1984",
         "desc": "Common burnt clay F.P.S. (non modular) bricks tile class designation 10",
@@ -1615,33 +1611,11 @@
         "rate": 166.03
       },
       {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.35,
-        "rate": 4010.35
-      },
-      {
         "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
         "qty": 5.46,
         "rate": 2.0
-      }
-    ]
-  },
-  {
-    "code": "5.9.9",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 15551.35,
-    "resources": [
-      {
-        "code": "SH : Reinforced cement concrete work",
-        "desc": "sqm",
-        "unit": "2.25",
-        "qty": 1713.2,
-        "rate": 3854.7
       },
       {
         "code": "9999",
@@ -1689,10 +1663,25 @@
   },
   {
     "code": "6.21",
+    "desc": "Tile brick masonry with common burnt clay F.P.S. (non modular) tile bricks of class designation 10 in gauged arch work in superstructure abo",
     "unit": "cum",
     "basis": 1.0,
-    "say": null,
+    "say": 18567.55,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.35,
+        "rate": 4010.35
+      },
+      {
+        "code": "5.9.9",
+        "desc": "Rate as per SH: 5.9.9",
+        "unit": "sqm",
+        "qty": 2.25,
+        "rate": 1713.2
+      },
       {
         "code": "1984",
         "desc": "Common burnt clay F.P.S. (non modular) bricks tile class designation 10",
@@ -1708,33 +1697,11 @@
         "rate": 166.03
       },
       {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.35,
-        "rate": 4010.35
-      },
-      {
         "code": "9999",
         "desc": "Sundries and shuttering",
         "unit": "L.S.",
         "qty": 5.46,
         "rate": 2.0
-      }
-    ]
-  },
-  {
-    "code": "5.9.9",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 18567.55,
-    "resources": [
-      {
-        "code": "SH : Reinforced cement concrete work",
-        "desc": "sqm",
-        "unit": "2.25",
-        "qty": 1713.2,
-        "rate": 3854.7
       },
       {
         "code": "9999",
@@ -1782,10 +1749,18 @@
   },
   {
     "code": "6.22",
+    "desc": "Tile brick masonry work 5 cm thick with common burnt clay F.P.S. (non modular) tile bricks of class designation 10 in cement mortar 1:3 (1 c",
     "unit": "sqm",
     "basis": 10.0,
     "say": 773.25,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.15,
+        "rate": 4664.55
+      },
       {
         "code": "1984",
         "desc": "Common burnt clay F.P.S. (non modular) bricks tile class designation 10",
@@ -1799,13 +1774,6 @@
         "unit": "1000 Nos",
         "qty": 0.377,
         "rate": 166.03
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.15,
-        "rate": 4664.55
       },
       {
         "code": "9999",
@@ -1852,17 +1820,18 @@
     ]
   },
   {
-    "code": "6.4.1",
-    "unit": "nos",
+    "code": "6.23",
+    "desc": "Honey-comb brick work 10 / 11.4 cm thick with common burnt clay bricks of class designation 7.5 in super structure above plinth level upto f",
+    "unit": "sqm",
     "basis": 1.0,
     "say": 594.15,
     "resources": [
       {
-        "code": "SH :- Brick work.",
-        "desc": "cum",
-        "unit": "0.069",
-        "qty": 7809.25,
-        "rate": 538.84
+        "code": "6.4.1",
+        "desc": "Rate as per SH: 6.4.1",
+        "unit": "cum",
+        "qty": 0.069,
+        "rate": 7809.25
       },
       {
         "code": "9999",
@@ -1875,13 +1844,14 @@
   },
   {
     "code": "6.24",
-    "unit": "m",
-    "basis": 0.1,
+    "desc": "Extra for laying brick work in or under water and/or liquid mud including cost of pumping or bailing out water and removing slush etc. compl",
+    "unit": "cum",
+    "basis": 14.0,
     "say": 794.65,
     "resources": [
       {
-        "code": "0011",
-        "desc": "Hire charges of Pumpset of capacity 4000 litres/hour.",
+        "code": "4000",
+        "desc": "litres/hour.",
         "unit": "day",
         "qty": 0.375,
         "rate": 700.0
@@ -1897,6 +1867,7 @@
   },
   {
     "code": "6.25",
+    "desc": "Extra for laying brick work in or under foul position.",
     "unit": "cum",
     "basis": 1.0,
     "say": 336.55,
@@ -1933,10 +1904,18 @@
   },
   {
     "code": "6.26.1",
+    "desc": "From ground level upto plinth level",
     "unit": "cum",
     "basis": 1.0,
     "say": 6324.3,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3356.15
+      },
       {
         "code": "2602",
         "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
@@ -1950,13 +1929,6 @@
         "unit": "1000 Nos",
         "qty": 0.494,
         "rate": 276.72
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.25,
-        "rate": 3356.15
       },
       {
         "code": "9999",
@@ -2004,10 +1976,18 @@
   },
   {
     "code": "6.26.2",
+    "desc": "Above plinth level upto floor V level",
     "unit": "cum",
     "basis": 1.0,
     "say": 7832.0,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3356.15
+      },
       {
         "code": "2602",
         "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
@@ -2021,13 +2001,6 @@
         "unit": "1000 Nos",
         "qty": 0.494,
         "rate": 276.72
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.25,
-        "rate": 3356.15
       },
       {
         "code": "9999",
@@ -2089,10 +2062,18 @@
   },
   {
     "code": "6.27.1",
+    "desc": "From ground level upto plinth level",
     "unit": "cum",
     "basis": 1.0,
     "say": 5339.1,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 3356.15
+      },
       {
         "code": "7900",
         "desc": "Modular common burnt clay bricks of class designation 7.5",
@@ -2106,13 +2087,6 @@
         "unit": "1000 Nos",
         "qty": 0.487,
         "rate": 276.72
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.22,
-        "rate": 3356.15
       },
       {
         "code": "9999",
@@ -2153,10 +2127,18 @@
   },
   {
     "code": "6.27.2",
+    "desc": "Above plinth level upto floor V level",
     "unit": "cum",
     "basis": 1.0,
     "say": 6772.15,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 3356.15
+      },
       {
         "code": "7900",
         "desc": "Modular common burnt clay bricks of class designation 7.5",
@@ -2170,13 +2152,6 @@
         "unit": "1000 Nos",
         "qty": 0.487,
         "rate": 276.72
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.22,
-        "rate": 3356.15
       },
       {
         "code": "9999",
@@ -2231,10 +2206,18 @@
   },
   {
     "code": "6.28.1",
+    "desc": "From ground level upto plinth level",
     "unit": "cum",
     "basis": 1.0,
     "say": 5990.7,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 3356.15
+      },
       {
         "code": "1986",
         "desc": "Common burnt clay modular bricks class designation 12.5",
@@ -2248,13 +2231,6 @@
         "unit": "1000 Nos",
         "qty": 0.487,
         "rate": 276.72
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.22,
-        "rate": 3356.15
       },
       {
         "code": "9999",
@@ -2295,10 +2271,18 @@
   },
   {
     "code": "6.28.2",
+    "desc": "Above plinth level upto floor V level",
     "unit": "cum",
     "basis": 1.0,
     "say": 7423.7,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 3356.15
+      },
       {
         "code": "1986",
         "desc": "Common burnt clay modular bricks class designation 12.5",
@@ -2312,13 +2296,6 @@
         "unit": "1000 Nos",
         "qty": 0.487,
         "rate": 276.72
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.22,
-        "rate": 3356.15
       },
       {
         "code": "9999",
@@ -2373,10 +2350,18 @@
   },
   {
     "code": "6.29.1",
+    "desc": "From ground level upto plinth level",
     "unit": "cum",
     "basis": 1.0,
     "say": 6524.4,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3356.15
+      },
       {
         "code": "7903",
         "desc": "Machine moulded common burnt clay FPS (non modular) bricks of class designation 12.5",
@@ -2390,13 +2375,6 @@
         "unit": "1000 Nos",
         "qty": 0.494,
         "rate": 276.72
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.25,
-        "rate": 3356.15
       },
       {
         "code": "9999",
@@ -2437,10 +2415,18 @@
   },
   {
     "code": "6.29.2",
+    "desc": "Above plinth level upto floor V level",
     "unit": "cum",
     "basis": 1.0,
     "say": 7900.55,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3356.15
+      },
       {
         "code": "7903",
         "desc": "Machine moulded common burnt clay FPS (non modular) bricks of class designation 12.5",
@@ -2454,13 +2440,6 @@
         "unit": "1000 Nos",
         "qty": 0.494,
         "rate": 276.72
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.25,
-        "rate": 3356.15
       },
       {
         "code": "9999",
@@ -2515,10 +2494,18 @@
   },
   {
     "code": "6.30.1",
+    "desc": "From ground level upto plinth level",
     "unit": "cum",
     "basis": 1.0,
     "say": 6326.15,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3356.15
+      },
       {
         "code": "7901",
         "desc": "Machine moulded perforated common burnt clay FPS (non modular) bricks of class designation 12.5",
@@ -2532,13 +2519,6 @@
         "unit": "1000 Nos",
         "qty": 0.494,
         "rate": 276.72
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.25,
-        "rate": 3356.15
       },
       {
         "code": "9999",
@@ -2579,10 +2559,18 @@
   },
   {
     "code": "6.30.2",
+    "desc": "Above plinth level upto floor V level",
     "unit": "cum",
     "basis": 1.0,
     "say": 7759.15,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3356.15
+      },
       {
         "code": "7901",
         "desc": "Machine moulded perforated common burnt clay FPS (non modular) bricks of class designation 12.5",
@@ -2596,13 +2584,6 @@
         "unit": "1000 Nos",
         "qty": 0.494,
         "rate": 276.72
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.25,
-        "rate": 3356.15
       },
       {
         "code": "9999",
@@ -2657,6 +2638,7 @@
   },
   {
     "code": "6.31.1",
+    "desc": "From ground level upto plinth level",
     "unit": "cum",
     "basis": 1.0,
     "say": 6121.0,
@@ -2674,13 +2656,6 @@
         "unit": "1000 Nos",
         "qty": 0.487,
         "rate": 276.72
-      },
-      {
-        "code": "3.11",
-        "desc": "Cement mortar 1 : 6 (1 cement : 6 coarse sand) (Rate as per item No 3.11)",
-        "unit": "cum",
-        "qty": 0.22,
-        "rate": 3356.15
       },
       {
         "code": "9999",
@@ -2721,10 +2696,18 @@
   },
   {
     "code": "6.31.2",
+    "desc": "Above plinth level upto floor V level",
     "unit": "cum",
     "basis": 1.0,
     "say": 7554.0,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 3356.15
+      },
       {
         "code": "7902",
         "desc": "Machine moulded common burnt clay modular perforated bricks of class designation 12.5",
@@ -2738,13 +2721,6 @@
         "unit": "1000 Nos",
         "qty": 0.487,
         "rate": 276.72
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.22,
-        "rate": 3356.15
       },
       {
         "code": "9999",
@@ -2799,23 +2775,24 @@
   },
   {
     "code": "6.32.1",
+    "desc": "Cement mortar 1:4 (1 cement : 4 coarse sand)",
     "unit": "cum",
     "basis": 1.0,
     "say": 7971.7,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 4010.35
+      },
       {
         "code": "7008",
         "desc": "F.P.S.(non modular) clay fly ash bricks class designation 7.5",
         "unit": "1000 Nos",
         "qty": 0.494,
         "rate": 4800.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.25,
-        "rate": 4010.35
       },
       {
         "code": "2201",
@@ -2877,23 +2854,24 @@
   },
   {
     "code": "6.32.2",
+    "desc": "Cement mortar 1:6 (1 cement : 6 coarse sand)",
     "unit": "cum",
     "basis": 1.0,
     "say": 7752.9,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3356.15
+      },
       {
         "code": "7008",
         "desc": "F.P.S.(non modular) clay fly ash bricks class designation 7.5",
         "unit": "1000 Nos",
         "qty": 0.494,
         "rate": 4800.0
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.25,
-        "rate": 3356.15
       },
       {
         "code": "2201",
@@ -2955,23 +2933,24 @@
   },
   {
     "code": "6.34.1",
+    "desc": "Cement mortar 1:4 (1 cement : 4 coarse sand)",
     "unit": "cum",
     "basis": 1.0,
     "say": 7473.25,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 4010.35
+      },
       {
         "code": "7737",
         "desc": "Fly ash bricks conforming to I.S. 12894",
         "unit": "1000 Nos",
         "qty": 0.487,
         "rate": 4300.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.22,
-        "rate": 4010.35
       },
       {
         "code": "2201",
@@ -3033,23 +3012,24 @@
   },
   {
     "code": "6.34.2",
+    "desc": "Cement mortar 1:6 (1 cement : 6 Coarse sand)",
     "unit": "cum",
     "basis": 1.0,
     "say": 7280.7,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 3356.15
+      },
       {
         "code": "7737",
         "desc": "Fly ash bricks conforming to I.S. 12894",
         "unit": "1000 Nos",
         "qty": 0.487,
         "rate": 4300.0
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.22,
-        "rate": 3356.15
       },
       {
         "code": "2201",
@@ -3111,16 +3091,24 @@
   },
   {
     "code": "6.35.1",
+    "desc": "Cement mortar 1:4 (1 cement : 4 coarse sand)",
     "unit": "cum",
     "basis": 1.0,
     "say": 8190.0,
     "resources": [
       {
         "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
+        "desc": "Rate as per SH: 3.9",
         "unit": "cum",
         "qty": 0.22,
         "rate": 4010.35
+      },
+      {
+        "code": "1989",
+        "desc": "1000",
+        "unit": "Nos",
+        "qty": 0.487,
+        "rate": 5400.0
       },
       {
         "code": "2201",
@@ -3182,23 +3170,24 @@
   },
   {
     "code": "6.35.2",
+    "desc": "Cement mortar 1:6 (1 cement : 6 Coarse sand)",
     "unit": "cum",
     "basis": 1.0,
     "say": 7997.4,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 3356.15
+      },
       {
         "code": "7738",
         "desc": "Calcium Silicate Bricks machine moulded confirming to I.S. 4139 - 1989",
         "unit": "1000 Nos",
         "qty": 0.487,
         "rate": 5400.0
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.22,
-        "rate": 3356.15
       },
       {
         "code": "2201",
@@ -3260,23 +3249,24 @@
   },
   {
     "code": "6.36.1",
+    "desc": "Cement Mortar 1:4 ( 1 cement : 4 coarse sand)",
     "unit": "cum",
     "basis": 1.0,
     "say": 6407.35,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 4010.35
+      },
       {
         "code": "7736",
         "desc": "Extruded burnt flyash clay sewer bricks conforming to I.S 4885 - 1988",
         "unit": "1000 Nos",
         "qty": 0.487,
         "rate": 5400.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.22,
-        "rate": 4010.35
       },
       {
         "code": "2201",
@@ -3324,23 +3314,31 @@
   },
   {
     "code": "6.37",
+    "desc": "Brick work with modular extruded brunt fly ash clay sewer bricks (conforming to IS : 4885) in arches in foundation and plinth in cement mort",
     "unit": "cum",
     "basis": 1.0,
-    "say": null,
+    "say": 11309.95,
     "resources": [
+      {
+        "code": "3.3",
+        "desc": "Rate as per SH: 3.3",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 4183.05
+      },
+      {
+        "code": "5.9.9",
+        "desc": "Rate as per SH: 5.9.9",
+        "unit": "sqm",
+        "qty": 2.25,
+        "rate": 1713.2
+      },
       {
         "code": "7736",
         "desc": "Extruded burnt flyash clay sewer bricks conforming to I.S 4885 - 1988",
         "unit": "1000 Nos",
         "qty": 0.487,
         "rate": 5400.0
-      },
-      {
-        "code": "3.3",
-        "desc": "Rate as per item no 3.3 SH Mortar",
-        "unit": "cum",
-        "qty": 0.25,
-        "rate": 4183.05
       },
       {
         "code": "2201",
@@ -3355,21 +3353,6 @@
         "unit": "L.S.",
         "qty": 2.73,
         "rate": 2.0
-      }
-    ]
-  },
-  {
-    "code": "5.9.9",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 11309.95,
-    "resources": [
-      {
-        "code": "SH : Reinforced cement concrete work",
-        "desc": "sqm",
-        "unit": "2.25",
-        "qty": 1713.2,
-        "rate": 3854.7
       },
       {
         "code": "0123",
@@ -3403,23 +3386,31 @@
   },
   {
     "code": "6.38",
-    "unit": "nos",
-    "basis": 2.0,
-    "say": null,
+    "desc": "Providing and laying autoclaved aerated cement blocks masonry with 100 mm thick AAC blocks in super structure above plinth level up to floor",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 8227.35,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.15,
+        "rate": 4010.35
+      },
+      {
+        "code": "5.22.1",
+        "desc": "Rate as per SH: 5.22.1",
+        "unit": "kg",
+        "qty": 13.2,
+        "rate": 82.1
+      },
       {
         "code": "8655",
         "desc": "Autoclaved aerated cement (AAC) blocks.",
         "unit": "cum",
         "qty": 1.0,
         "rate": 2600.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.15,
-        "rate": 4010.35
       },
       {
         "code": "2208",
@@ -3462,21 +3453,6 @@
         "unit": "day",
         "qty": 0.2,
         "rate": 617.0
-      }
-    ]
-  },
-  {
-    "code": "5.22.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 8227.35,
-    "resources": [
-      {
-        "code": "SH : Reinforced cement concrete work",
-        "desc": "kg",
-        "unit": "13.20",
-        "qty": 82.1,
-        "rate": 1083.72
       },
       {
         "code": "0115",
@@ -3489,8 +3465,9 @@
   },
   {
     "code": "6.40",
-    "unit": "kg",
-    "basis": 9.3,
+    "desc": "Providing and laying Gypsum panel partitions 100 mm thick with water proof Gypsum panels of size 666x500x100 mm, made of calcite phosphor Gy",
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 853.5,
     "resources": [
       {
@@ -3532,6 +3509,7 @@
   },
   {
     "code": "6.41",
+    "desc": "Extra for Gypsum panel Partitions in superstructure above floor V level for every four floors or part thereof.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 129.15,
@@ -3547,10 +3525,18 @@
   },
   {
     "code": "6.44",
+    "desc": "Brick edging 7cm wide 11.4 cm deep to plinth protection with common burnt clay F.P.S. (non modular) bricks of class designation 7.5 includin",
     "unit": "m",
     "basis": 10.0,
     "say": 52.0,
     "resources": [
+      {
+        "code": "3.4",
+        "desc": "Rate as per SH: 3.4",
+        "unit": "cum",
+        "qty": 0.0036,
+        "rate": 3528.85
+      },
       {
         "code": "9999",
         "desc": "Excavation and disposal of surplus earth",
@@ -3571,13 +3557,6 @@
         "unit": "1000 Nos",
         "qty": 0.046,
         "rate": 276.72
-      },
-      {
-        "code": "3.4",
-        "desc": "Rate as per Item Number 3.4 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.0036,
-        "rate": 3528.85
       },
       {
         "code": "0155",
@@ -3611,23 +3590,24 @@
   },
   {
     "code": "6.45.1",
+    "desc": "Cement mortar 1 : 3 (1 cement : 3 coarse sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 941.5,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.28,
+        "rate": 4664.55
+      },
       {
         "code": "7737",
         "desc": "Fly ash bricks conforming to I.S. 12894",
         "unit": "1000 Nos",
         "qty": 0.565,
         "rate": 4300.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.28,
-        "rate": 4664.55
       },
       {
         "code": "2201",
@@ -3682,16 +3662,24 @@
   },
   {
     "code": "6.45.2",
+    "desc": "Cement mortar 1 : 4 (1 cement : 4 coarse sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 917.0,
     "resources": [
       {
         "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
+        "desc": "Rate as per SH: 3.9",
         "unit": "cum",
         "qty": 0.28,
         "rate": 4010.35
+      },
+      {
+        "code": "7737",
+        "desc": "Fly ash bricks conforming to I.S. 12894",
+        "unit": "1000 Nos",
+        "qty": 0.565,
+        "rate": 4300.0
       },
       {
         "code": "2201",
@@ -3746,6 +3734,7 @@
   },
   {
     "code": "6.47",
+    "desc": "Providing and laying autoclaved aerated cement blocks masonry with 150mm/ 230mm/300 mm thick AAC blocks in super structure above plinth leve",
     "unit": "cum",
     "basis": 1.0,
     "say": 6636.95,

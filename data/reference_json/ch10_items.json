@@ -1,10 +1,18 @@
 [
   {
     "code": "10.1",
-    "unit": "nos",
+    "desc": "Structural steel work in single section, fixed with or without connecting plate, including cutting, hoisting, fixing in position and applyin",
+    "unit": "q",
     "basis": 1.0,
     "say": 86.05,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 3.0,
+        "rate": 50.7
+      },
       {
         "code": "1007",
         "desc": "Structurals such as tees,angles channels and R.S. joists",
@@ -41,13 +49,6 @@
         "rate": 558.0
       },
       {
-        "code": "13.50.3",
-        "desc": "Rate as per Item Number 13.50.3 of SH:Finishing",
-        "unit": "sqm",
-        "qty": 3.0,
-        "rate": 50.7
-      },
-      {
         "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
@@ -58,10 +59,18 @@
   },
   {
     "code": "10.2",
-    "unit": "m",
-    "basis": 7.6,
+    "desc": "Structural steel work riveted, bolted or welded in built up sections, trusses and framed work, including cutting, hoisting, fixing in positi",
+    "unit": "quintal",
+    "basis": 3.95,
     "say": 101.75,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 5.68,
+        "rate": 50.7
+      },
       {
         "code": "1007",
         "desc": "Structurals such as tees,angles channels and R.S. joists",
@@ -140,13 +149,6 @@
         "rate": 617.0
       },
       {
-        "code": "13.50.3",
-        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 5.68,
-        "rate": 50.7
-      },
-      {
         "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
@@ -157,10 +159,18 @@
   },
   {
     "code": "10.3",
-    "unit": "m",
-    "basis": 1.5,
+    "desc": "Providing and fixing in position collapsible steel shutters with vertical channels 20x10x2 mm and braced with flat iron diagonals 20x5 mm si",
+    "unit": "sqm",
+    "basis": 3.6,
     "say": 8670.5,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 10.5,
+        "rate": 50.7
+      },
       {
         "code": "1007",
         "desc": "Structurals such as tees,angles channels and R.S. joists",
@@ -209,13 +219,6 @@
         "unit": "each",
         "qty": 10.0,
         "rate": 30.0
-      },
-      {
-        "code": "13.50.3",
-        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 10.5,
-        "rate": 50.7
       },
       {
         "code": "0116",
@@ -270,10 +273,18 @@
   },
   {
     "code": "10.4",
-    "unit": "m",
-    "basis": 2.4,
+    "desc": "Providing and fixing 1 mm thick M.S. sheet sliding-shutters, with frame and diagonal braces of 40x40x6 mm angle iron, 3 mm M.S. gusset plate",
+    "unit": "sqm",
+    "basis": 5.76,
     "say": 4992.05,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 18.0,
+        "rate": 50.7
+      },
       {
         "code": "1013",
         "desc": "Mild steel sheets for tanks",
@@ -345,13 +356,6 @@
         "rate": 2.0
       },
       {
-        "code": "13.50.3",
-        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 18.0,
-        "rate": 50.7
-      },
-      {
         "code": "0116",
         "desc": "Fitter (grade 1)",
         "unit": "day",
@@ -404,10 +408,18 @@
   },
   {
     "code": "10.5.1",
-    "unit": "m",
-    "basis": 2.4,
+    "desc": "Using M.S. angels 40x40x6 mm for diagonal braces",
+    "unit": "sqm",
+    "basis": 5.76,
     "say": 4428.15,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 15.41,
+        "rate": 50.7
+      },
       {
         "code": "1013",
         "desc": "Mild steel sheets for tanks",
@@ -472,13 +484,6 @@
         "rate": 2.0
       },
       {
-        "code": "13.50.3",
-        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 15.41,
-        "rate": 50.7
-      },
-      {
         "code": "0116",
         "desc": "Fitter (grade 1)",
         "unit": "day",
@@ -531,10 +536,18 @@
   },
   {
     "code": "10.5.2",
-    "unit": "m",
-    "basis": 2.4,
+    "desc": "Using flats 30x6mm for diagonal braces and central cross piece",
+    "unit": "sqm",
+    "basis": 5.76,
     "say": 4278.15,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 14.7,
+        "rate": 50.7
+      },
       {
         "code": "1013",
         "desc": "Mild steel sheets for tanks",
@@ -606,13 +619,6 @@
         "rate": 2.0
       },
       {
-        "code": "13.50.3",
-        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 14.7,
-        "rate": 50.7
-      },
-      {
         "code": "0116",
         "desc": "Fitter (grade 1)",
         "unit": "day",
@@ -665,8 +671,9 @@
   },
   {
     "code": "10.6.1",
-    "unit": "m",
-    "basis": 2.5,
+    "desc": "80x1.25 mm M.S. laths with 1.25 mm thick top cover",
+    "unit": "sqm",
+    "basis": 7.5,
     "say": 2944.1,
     "resources": [
       {
@@ -736,8 +743,9 @@
   },
   {
     "code": "10.6.2",
-    "unit": "m",
-    "basis": 2.5,
+    "desc": "80x1.20 mm M.S. laths with 1.20 mm thick top cover",
+    "unit": "sqm",
+    "basis": 7.5,
     "say": 2803.65,
     "resources": [
       {
@@ -807,8 +815,9 @@
   },
   {
     "code": "10.6.3",
-    "unit": "m",
-    "basis": 2.5,
+    "desc": "80x0.90 mm M.S. laths with 0.90 mm thick top cover",
+    "unit": "sqm",
+    "basis": 7.5,
     "say": 2654.25,
     "resources": [
       {
@@ -878,7 +887,8 @@
   },
   {
     "code": "10.7",
-    "unit": "nos",
+    "desc": "Providing and fixing ball bearing for rolling shutters.",
+    "unit": "No",
     "basis": 1.0,
     "say": 419.85,
     "resources": [
@@ -900,8 +910,9 @@
   },
   {
     "code": "10.8.1",
-    "unit": "sqm",
-    "basis": 10.0,
+    "desc": "Exceeding 10.00 sqm and upto 16.80 sqm in the area",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 1106.55,
     "resources": [
       {
@@ -922,8 +933,9 @@
   },
   {
     "code": "10.8.2",
-    "unit": "sqm",
-    "basis": 16.8,
+    "desc": "Exceeding 16.80 sqm in area",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 1106.55,
     "resources": [
       {
@@ -944,8 +956,9 @@
   },
   {
     "code": "10.9",
-    "unit": "m",
-    "basis": 2.5,
+    "desc": "Extra for providing grilled rolling shutters manufactured out of 8 mm dia M.S. bar instead of laths as per design approved by Engineer-in- c",
+    "unit": "sqm",
+    "basis": 1.5,
     "say": 668.95,
     "resources": [
       {
@@ -959,13 +972,14 @@
   },
   {
     "code": "10.10.1",
-    "unit": "m",
-    "basis": 0.76,
+    "desc": "Fixing with 15x3 mm lugs 10 cm long embedded in cement concrete block 15x10x10 cm of C.C. 1:3:6 (1 Cement : 3 coarse sand : 6 graded stone a",
+    "unit": "sqm",
+    "basis": 1.52,
     "say": 63.0,
     "resources": [
       {
         "code": "4.2.5",
-        "desc": "Rate as per item no 4.2.5 of SH : Concrete work",
+        "desc": "Rate as per SH: 4.2.5",
         "unit": "cum",
         "qty": 0.009,
         "rate": 8025.0
@@ -1009,8 +1023,9 @@
   },
   {
     "code": "10.10.2",
-    "unit": "m",
-    "basis": 0.76,
+    "desc": "Fixing with carbon steel galvanised dash fastener of required dia and size (to be paid for separately)",
+    "unit": "sqm",
+    "basis": 1.52,
     "say": 31.65,
     "resources": [
       {
@@ -1038,10 +1053,25 @@
   },
   {
     "code": "10.11.1",
-    "unit": "m",
-    "basis": 1.175,
+    "desc": "Fixing with 15x3 mm lugs 10 cm long embedded in cement concrete block 15x10x10 cm of C.C. 1:3:6 (1 Cement : 3 coarse sand : 6 graded stone a",
+    "unit": "sqm",
+    "basis": 2.44,
     "say": 166.5,
     "resources": [
+      {
+        "code": "10.10.1",
+        "desc": "Rate as per SH: 10.10.1",
+        "unit": "kg",
+        "qty": 30.0,
+        "rate": 63.0
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 2.44,
+        "rate": 50.7
+      },
       {
         "code": "1011",
         "desc": "Steel glazed door,window/ ventilator, all members like as F7D, F4B, K11 and K12B etc.",
@@ -1083,29 +1113,23 @@
         "unit": "L.S.",
         "qty": 15.37,
         "rate": 2.0
-      },
-      {
-        "code": "10.10.1",
-        "desc": "Rate as per Item No.10.10.1",
-        "unit": "kg",
-        "qty": 30.0,
-        "rate": 63.0
-      },
-      {
-        "code": "13.50.3",
-        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 2.44,
-        "rate": 50.7
       }
     ]
   },
   {
     "code": "10.11.2",
-    "unit": "m",
-    "basis": 1.175,
+    "desc": "Fixing with carbon steel galvanised dash fastener of required dia and size (to be paid for separately)",
+    "unit": "sqm",
+    "basis": 2.44,
     "say": 106.05,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 2.44,
+        "rate": 50.7
+      },
       {
         "code": "1011",
         "desc": "Steel glazed door,window/ ventilator, all members like as F7D, F4B, K11 and K12B etc.",
@@ -1182,18 +1206,12 @@
         "unit": "L.S.",
         "qty": 12.22,
         "rate": 2.0
-      },
-      {
-        "code": "13.50.3",
-        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 2.44,
-        "rate": 50.7
       }
     ]
   },
   {
     "code": "10.12",
+    "desc": "Extra for providing and fixing steel beading of size 10 x 10 x 1.6 mm (box type), approved shape and section with screws instead of glazing ",
     "unit": "metre",
     "basis": 1.0,
     "say": 45.4,
@@ -1223,10 +1241,18 @@
   },
   {
     "code": "10.13.1",
-    "unit": "kg",
+    "desc": "Fixing with 15x3 mm lugs 10 cm long embedded in cement concrete block 15x10x10 cm of C.C. 1:3:6 (1 Cement : 3 coarse sand : 6 graded stone a",
+    "unit": "Kg",
     "basis": 17.5,
     "say": 106.45,
     "resources": [
+      {
+        "code": "4.2.5",
+        "desc": "Rate as per SH: 4.2.5",
+        "unit": "cum",
+        "qty": 0.009,
+        "rate": 8025.0
+      },
       {
         "code": "1007",
         "desc": "Structurals such as tees,angles channels and R.S. joists",
@@ -1247,13 +1273,6 @@
         "unit": "quintal",
         "qty": 0.002,
         "rate": 4500.0
-      },
-      {
-        "code": "4.2.5",
-        "desc": "Rate as per item no 4.2.5 of SH : Concrete work",
-        "unit": "cum",
-        "qty": 0.009,
-        "rate": 8025.0
       },
       {
         "code": "0595",
@@ -1315,7 +1334,8 @@
   },
   {
     "code": "10.13.2",
-    "unit": "kg",
+    "desc": "Fixing with carbon steel galvanised dash fastener of required dia and size (to be paid for separately)",
+    "unit": "Kg",
     "basis": 17.5,
     "say": 101.65,
     "resources": [
@@ -1393,11 +1413,19 @@
   },
   {
     "code": "10.14.1.1",
+    "desc": "Fixing with adjustable lugs with split end tail to each jamb",
     "unit": "metre",
     "basis": 5.0,
     "say": 417.6,
     "resources": [
       {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 2.69,
+        "rate": 50.7
+      },
+      {
         "code": "4006",
         "desc": "Pressed steel door frames (mild steel sheet 1.60mm) Profile \"B\" frame",
         "unit": "metre",
@@ -1452,22 +1480,23 @@
         "unit": "L.S.",
         "qty": 8.97,
         "rate": 2.0
-      },
-      {
-        "code": "13.50.3",
-        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 2.69,
-        "rate": 50.7
       }
     ]
   },
   {
     "code": "10.14.1.2",
+    "desc": "Fixing with carbon steel galvanised dash fastener of required dia and size (to be paid for separately)",
     "unit": "metre",
     "basis": 5.0,
     "say": 406.9,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 2.69,
+        "rate": 50.7
+      },
       {
         "code": "4006",
         "desc": "Pressed steel door frames (mild steel sheet 1.60mm) Profile \"B\" frame",
@@ -1476,13 +1505,6 @@
         "rate": 190.0
       },
       {
-        "code": "9999",
-        "desc": "Deduct sundries for not providing adjustable lugs",
-        "unit": "L.S.",
-        "qty": -20.0,
-        "rate": 2.0
-      },
-      {
         "code": "0595",
         "desc": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
         "unit": "10 Nos",
@@ -1530,23 +1552,24 @@
         "unit": "L.S.",
         "qty": 8.97,
         "rate": 2.0
-      },
-      {
-        "code": "13.50.3",
-        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 2.69,
-        "rate": 50.7
       }
     ]
   },
   {
     "code": "10.14.2.1",
+    "desc": "Fixing with adjustable lugs with split end tail to each jamb",
     "unit": "metre",
     "basis": 5.0,
     "say": 444.35,
     "resources": [
       {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 2.69,
+        "rate": 50.7
+      },
+      {
         "code": "4007",
         "desc": "Pressed steel door frames (mild steel sheet 1.60mm) Profile \"C\"",
         "unit": "metre",
@@ -1601,35 +1624,29 @@
         "unit": "L.S.",
         "qty": 8.97,
         "rate": 2.0
-      },
-      {
-        "code": "13.50.3",
-        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 2.69,
-        "rate": 50.7
       }
     ]
   },
   {
     "code": "10.14.2.2",
+    "desc": "Fixing with carbon steel galvanised dash fastener of required dia and size (to be paid for separately)",
     "unit": "metre",
     "basis": 5.0,
     "say": 433.65,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 2.69,
+        "rate": 50.7
+      },
       {
         "code": "4007",
         "desc": "Pressed steel door frames (mild steel sheet 1.60mm) Profile \"C\"",
         "unit": "metre",
         "qty": 5.0,
         "rate": 210.0
-      },
-      {
-        "code": "9999",
-        "desc": "Sundries for not providing adjustable lugs(-)",
-        "unit": "L.S.",
-        "qty": -20.0,
-        "rate": 2.0
       },
       {
         "code": "0595",
@@ -1679,23 +1696,24 @@
         "unit": "L.S.",
         "qty": 8.97,
         "rate": 2.0
-      },
-      {
-        "code": "13.50.3",
-        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 2.69,
-        "rate": 50.7
       }
     ]
   },
   {
     "code": "10.14.3.1",
+    "desc": "Fixing with adjustable lugs with split end tail to each jamb",
     "unit": "metre",
     "basis": 5.0,
     "say": 484.5,
     "resources": [
       {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 2.69,
+        "rate": 50.7
+      },
+      {
         "code": "4008",
         "desc": "Pressed steel door frames (mild steel sheet 1.60mm) Profile \"E\"",
         "unit": "metre",
@@ -1750,35 +1768,29 @@
         "unit": "L.S.",
         "qty": 8.97,
         "rate": 2.0
-      },
-      {
-        "code": "13.50.3",
-        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 2.69,
-        "rate": 50.7
       }
     ]
   },
   {
     "code": "10.14.3.2",
+    "desc": "Fixing with carbon steel galvanised dash fastener of required dia and size (to be paid for separately)",
     "unit": "metre",
     "basis": 5.0,
     "say": 473.8,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 2.69,
+        "rate": 50.7
+      },
       {
         "code": "4008",
         "desc": "Pressed steel door frames (mild steel sheet 1.60mm) Profile \"E\"",
         "unit": "metre",
         "qty": 5.0,
         "rate": 240.0
-      },
-      {
-        "code": "9999",
-        "desc": "Sundries for not providing adjustable lugs (-)",
-        "unit": "L.S.",
-        "qty": -20.0,
-        "rate": 2.0
       },
       {
         "code": "0595",
@@ -1828,22 +1840,23 @@
         "unit": "L.S.",
         "qty": 8.97,
         "rate": 2.0
-      },
-      {
-        "code": "13.50.3",
-        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 2.69,
-        "rate": 50.7
       }
     ]
   },
   {
     "code": "10.15.1",
-    "unit": "kg",
+    "desc": "Fixing with 15x3 mm lugs 10 cm long embedded in cement concrete block 15x10x10 cm of C.C. 1:3:6 (1 Cement : 3 coarse sand : 6 graded stone a",
+    "unit": "Kg",
     "basis": 7.13,
     "say": 137.3,
     "resources": [
+      {
+        "code": "4.2.5",
+        "desc": "Rate as per SH: 4.2.5",
+        "unit": "cum",
+        "qty": 0.009,
+        "rate": 8025.0
+      },
       {
         "code": "4011",
         "desc": "Mild steel tubes electric resistant or induction butt welded",
@@ -1864,13 +1877,6 @@
         "unit": "quintal",
         "qty": 0.002,
         "rate": 4500.0
-      },
-      {
-        "code": "4.2.5",
-        "desc": "Rate as per item no 4.2.5 of SH : Concrete work",
-        "unit": "cum",
-        "qty": 0.009,
-        "rate": 8025.0
       },
       {
         "code": "0595",
@@ -1932,7 +1938,8 @@
   },
   {
     "code": "10.15.2",
-    "unit": "kg",
+    "desc": "Fixing with carbon steel galvanised dash fastener of required dia and size (to be paid for separately)",
+    "unit": "Kg",
     "basis": 7.13,
     "say": 125.5,
     "resources": [
@@ -2010,10 +2017,18 @@
   },
   {
     "code": "10.16.1",
-    "unit": "metre",
-    "basis": 8.0,
+    "desc": "Hot finished welded type tubes",
+    "unit": "kg",
+    "basis": 119.0,
     "say": 143.45,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 2.8,
+        "rate": 50.7
+      },
       {
         "code": "4009",
         "desc": "Mild steel tubes hot finished welded type",
@@ -2027,13 +2042,6 @@
         "unit": "tonne",
         "qty": 0.125,
         "rate": 92.24
-      },
-      {
-        "code": "13.50.3",
-        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 2.8,
-        "rate": 50.7
       },
       {
         "code": "1215",
@@ -2074,10 +2082,18 @@
   },
   {
     "code": "10.16.2",
-    "unit": "metre",
-    "basis": 8.0,
+    "desc": "Hot finished seamless type tubes",
+    "unit": "kg",
+    "basis": 119.0,
     "say": 157.5,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 2.8,
+        "rate": 50.7
+      },
       {
         "code": "4010",
         "desc": "Mild steel tubes hot finished seamless type",
@@ -2091,13 +2107,6 @@
         "unit": "tonne",
         "qty": 0.125,
         "rate": 92.24
-      },
-      {
-        "code": "13.50.3",
-        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 2.8,
-        "rate": 50.7
       },
       {
         "code": "1215",
@@ -2138,10 +2147,18 @@
   },
   {
     "code": "10.16.3",
-    "unit": "metre",
-    "basis": 8.0,
+    "desc": "Electric resistance or induction butt welded tubes",
+    "unit": "kg",
+    "basis": 119.0,
     "say": 129.35,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 2.8,
+        "rate": 50.7
+      },
       {
         "code": "4011",
         "desc": "Mild steel tubes electric resistant or induction butt welded",
@@ -2155,13 +2172,6 @@
         "unit": "tonne",
         "qty": 0.125,
         "rate": 92.24
-      },
-      {
-        "code": "13.50.3",
-        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 2.8,
-        "rate": 50.7
       },
       {
         "code": "1215",
@@ -2202,7 +2212,8 @@
   },
   {
     "code": "10.17",
-    "unit": "m",
+    "desc": "Providing and fixing M.S. fan clamp type I or II of 16 mm dia M.S. bar, bent to shape with hooked ends in R.C.C. slabs or beams during layin",
+    "unit": "clamp",
     "basis": 1.0,
     "say": 171.15,
     "resources": [
@@ -2238,8 +2249,9 @@
   },
   {
     "code": "10.18",
-    "unit": "nos",
-    "basis": 1.0,
+    "desc": "Providing and fixing circular/ Hexagonal cast iron or M.S. sheet box for ceiling fan clamp, of internal dia 140 mm, 73 mm height, top lid of",
+    "unit": "kg",
+    "basis": 0.72,
     "say": 172.25,
     "resources": [
       {
@@ -2281,8 +2293,9 @@
   },
   {
     "code": "10.19",
-    "unit": "m",
-    "basis": 2.0,
+    "desc": "Providing and fixing mild steel round holding down bolts with nuts and washer plates complete.",
+    "unit": "kg",
+    "basis": 1.895,
     "say": 83.85,
     "resources": [
       {
@@ -2317,8 +2330,9 @@
   },
   {
     "code": "10.20",
-    "unit": "nos",
-    "basis": 1.0,
+    "desc": "Providing and fixing bolts including nuts and washers complete.",
+    "unit": "q",
+    "basis": 0.1,
     "say": 128.45,
     "resources": [
       {
@@ -2360,8 +2374,9 @@
   },
   {
     "code": "10.21",
-    "unit": "nos",
-    "basis": 1.0,
+    "desc": "Providing and fixing M.S. rivets of sizes in position.",
+    "unit": "q",
+    "basis": 0.1,
     "say": 220.4,
     "resources": [
       {
@@ -2403,6 +2418,7 @@
   },
   {
     "code": "10.22",
+    "desc": "Welding by gas or electric plant including transportation of plant at site etc. complete.",
     "unit": "nos",
     "basis": 1.0,
     "say": 3.35,
@@ -2425,10 +2441,18 @@
   },
   {
     "code": "10.25.1",
+    "desc": "In stringers, treads, landings etc. of stair cases, including use of chequered plate wherever required, all complete",
     "unit": "kg",
     "basis": 5.331,
     "say": 93.65,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 48.29,
+        "rate": 50.7
+      },
       {
         "code": "1007",
         "desc": "Structurals such as tees,angles channels and R.S. joists",
@@ -2500,13 +2524,6 @@
         "rate": 617.0
       },
       {
-        "code": "13.50.3",
-        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 48.29,
-        "rate": 50.7
-      },
-      {
         "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
@@ -2517,10 +2534,18 @@
   },
   {
     "code": "10.25.2",
-    "unit": "m",
+    "desc": "In gratings, frames, guard bar, ladder, railings, brackets, gates and similar works",
+    "unit": "nos",
     "basis": 1.0,
     "say": 131.0,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 0.6,
+        "rate": 50.7
+      },
       {
         "code": "1008",
         "desc": "Flats upto 10 mm in thickness",
@@ -2571,13 +2596,6 @@
         "rate": 617.0
       },
       {
-        "code": "13.50.3",
-        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 0.6,
-        "rate": 50.7
-      },
-      {
         "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
@@ -2588,10 +2606,18 @@
   },
   {
     "code": "10.26.1",
+    "desc": "M.S. tube",
     "unit": "kg",
     "basis": 19.49,
     "say": 145.65,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 0.82,
+        "rate": 50.7
+      },
       {
         "code": "4009",
         "desc": "Mild steel tubes hot finished welded type",
@@ -2605,13 +2631,6 @@
         "unit": "tonne",
         "qty": 0.0205,
         "rate": 92.24
-      },
-      {
-        "code": "13.50.3",
-        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 0.82,
-        "rate": 50.7
       },
       {
         "code": "1215",
@@ -2652,10 +2671,18 @@
   },
   {
     "code": "10.26.2",
+    "desc": "E.R.W. tubes",
     "unit": "kg",
     "basis": 17.71,
     "say": 138.15,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 0.82,
+        "rate": 50.7
+      },
       {
         "code": "4011",
         "desc": "Mild steel tubes electric resistant or induction butt welded",
@@ -2669,13 +2696,6 @@
         "unit": "tonne",
         "qty": 0.0186,
         "rate": 92.24
-      },
-      {
-        "code": "13.50.3",
-        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 0.82,
-        "rate": 50.7
       },
       {
         "code": "1215",
@@ -2716,10 +2736,18 @@
   },
   {
     "code": "10.26.3",
+    "desc": "G.I. pipes",
     "unit": "m",
     "basis": 5.4,
     "say": 158.0,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 0.82,
+        "rate": 50.7
+      },
       {
         "code": "1549",
         "desc": "G.I. pipes 40 mm dia",
@@ -2733,13 +2761,6 @@
         "unit": "tonne",
         "qty": 0.0211,
         "rate": 92.24
-      },
-      {
-        "code": "13.50.3",
-        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 0.82,
-        "rate": 50.7
       },
       {
         "code": "1215",
@@ -2780,6 +2801,7 @@
   },
   {
     "code": "10.27.1",
+    "desc": "10 x 60 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 103.65,
@@ -2816,6 +2838,7 @@
   },
   {
     "code": "10.27.2",
+    "desc": "10 x 80 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 109.0,
@@ -2852,6 +2875,7 @@
   },
   {
     "code": "10.27.3",
+    "desc": "10 x 120 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 134.25,
@@ -2888,10 +2912,18 @@
   },
   {
     "code": "10.27.4",
+    "desc": "10 x 140 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 145.65,
     "resources": [
+      {
+        "code": "2509",
+        "desc": "Carben Steel galvanised dash fastner (min 5 micron) of 10 mm dia double threaded 6.8 grade counter sunk head screw comprising of 10 mm dia polyamide PA 6 grade sleave. Size 10mm x 140mm",
+        "unit": "10 nos",
+        "qty": 1.0,
+        "rate": 450.0
+      },
       {
         "code": "0124",
         "desc": "Mason (brick layer) 2nd class",
@@ -2917,6 +2949,7 @@
   },
   {
     "code": "10.27.5",
+    "desc": "10 x 160 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 178.9,
@@ -2953,6 +2986,7 @@
   },
   {
     "code": "10.28",
+    "desc": "Providing and fixing stainless steel ( Grade 304) railing made of Hollow tubes, channels, plates etc., including welding, grinding, buffing,",
     "unit": "kg",
     "basis": 2.0,
     "say": 575.45,
@@ -3017,6 +3051,7 @@
   },
   {
     "code": "10.29.1",
+    "desc": "Galvanised M.S. Wire gauze with 0.63 mm dia wire and 1.4 mm aperture on both sides",
     "unit": "sqm",
     "basis": 1.54,
     "say": 709.3,
@@ -3081,6 +3116,7 @@
   },
   {
     "code": "10.29.2",
+    "desc": "Stainless steel (grade 304) wire gauze of 0.5 mm dia wire and 1.4 mm aperture on both sides",
     "unit": "sqm",
     "basis": 1.54,
     "say": 929.55,
@@ -3145,8 +3181,9 @@
   },
   {
     "code": "10.30.1",
-    "unit": "sqm",
-    "basis": 0.1,
+    "desc": "4.0 mm thick glass panes",
+    "unit": "glass",
+    "basis": 10.0,
     "say": 900.55,
     "resources": [
       {
@@ -3181,8 +3218,9 @@
   },
   {
     "code": "10.30.2",
-    "unit": "sqm",
-    "basis": 0.1,
+    "desc": "5.5 mm thick glass panes",
+    "unit": "glass",
+    "basis": 10.0,
     "say": 1194.85,
     "resources": [
       {
@@ -3217,6 +3255,7 @@
   },
   {
     "code": "10.31",
+    "desc": "Providing and fixing angle iron frames for doors, windows and ventilators of mild steel Angle sections of size 35x35x5 mm, joints mitred and",
     "unit": "kg",
     "basis": 17.5,
     "say": 96.2,
@@ -3227,20 +3266,6 @@
         "unit": "quintal",
         "qty": 0.18,
         "rate": 4600.0
-      },
-      {
-        "code": "1008",
-        "desc": "M.S. Flats 3x5 mm for fixing frame 6x0.05= 0.3 Metre @1.18 Kg/m= 0.354 Kg Add wastage @5% = 0.018 Kg Total= 0.37Kg. Say 0.0037 Qunital",
-        "unit": "quintal",
-        "qty": 0.0037,
-        "rate": 4500.0
-      },
-      {
-        "code": "1002",
-        "desc": "M.S. Bars 10mm =1x1 m = 1Metre 1 Metre @0.60Kg/m =0.60Kg + Add wastage @5% = 0.03 Kg. Total =0.63 Kg, say 0.006 Quintal Mild steel round bars 10mm dia and below",
-        "unit": "quintal",
-        "qty": 0.006,
-        "rate": 4500.0
       },
       {
         "code": "9999",

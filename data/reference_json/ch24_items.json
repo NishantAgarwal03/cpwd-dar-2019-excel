@@ -39,10 +39,59 @@
   {
     "code": "24.2",
     "desc": "Providing and fixing double scaffolding system (cup lock type) on the exterior side of building/structure, upto 25 metre height, above groun",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 202.5,
     "say": 257.95,
     "resources": [
+      {
+        "code": "7397",
+        "desc": "Base jack",
+        "unit": "each",
+        "qty": 0.3,
+        "rate": 145.0
+      },
+      {
+        "code": "4009",
+        "desc": "Mild steel tubes hot finished welded type",
+        "unit": "kilogram",
+        "qty": 80.02,
+        "rate": 57.0
+      },
+      {
+        "code": "7387",
+        "desc": "Spigot for standard jointing",
+        "unit": "kg",
+        "qty": 2.63,
+        "rate": 43.0
+      },
+      {
+        "code": "7346",
+        "desc": "Double coupler",
+        "unit": "each",
+        "qty": 2.555,
+        "rate": 46.0
+      },
+      {
+        "code": "7398",
+        "desc": "Challies",
+        "unit": "each",
+        "qty": 1.91,
+        "rate": 765.0
+      },
+      {
+        "code": "7399",
+        "desc": "Cup lock",
+        "unit": "each",
+        "qty": 27.92,
+        "rate": 48.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 6.054,
+        "rate": 92.24
+      },
       {
         "code": "0116",
         "desc": "Fitter (grade 1)",
@@ -74,6 +123,20 @@
     "say": 158.15,
     "resources": [
       {
+        "code": "7767",
+        "desc": "Stone cleaning chemical approved by ASI",
+        "unit": "litre",
+        "qty": 0.1,
+        "rate": 295.0
+      },
+      {
+        "code": "7771",
+        "desc": "Liquid Amonia 5%",
+        "unit": "litre",
+        "qty": 0.17,
+        "rate": 160.0
+      },
+      {
         "code": "0103",
         "desc": "Blacksmith 2nd class",
         "unit": "day",
@@ -93,6 +156,20 @@
         "unit": "day",
         "qty": 0.1,
         "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cleaning T & P & its manitinance cost (Jet Pump, electrice cable, horse pipe, waler pipe, Nozel safety belt Rope & mantance cost and safety machine for window etc.)",
+        "unit": "L.S.",
+        "qty": 1.0,
+        "rate": 2.0
+      },
+      {
+        "code": "6501",
+        "desc": "Sand zone V (Jamuna)",
+        "unit": "cum",
+        "qty": 0.0283,
+        "rate": 1225.0
       },
       {
         "code": "0103",
@@ -125,6 +202,13 @@
     "say": 59.05,
     "resources": [
       {
+        "code": "7775",
+        "desc": "Sodium pentachlorophenate",
+        "unit": "Kg",
+        "qty": 0.1,
+        "rate": 550.0
+      },
+      {
         "code": "0103",
         "desc": "Blacksmith 2nd class",
         "unit": "day",
@@ -154,6 +238,13 @@
     "basis": 10.0,
     "say": 276.1,
     "resources": [
+      {
+        "code": "3.19",
+        "desc": "Rate as per SH: 3.19",
+        "unit": "cum",
+        "qty": 0.023,
+        "rate": 2821.15
+      },
       {
         "code": "0155",
         "desc": "Mason (average)",
@@ -192,6 +283,13 @@
     "say": 276.1,
     "resources": [
       {
+        "code": "3.19",
+        "desc": "Rate as per SH: 3.19",
+        "unit": "cum",
+        "qty": 0.023,
+        "rate": 2821.15
+      },
+      {
         "code": "0155",
         "desc": "Mason (average)",
         "unit": "day",
@@ -229,6 +327,13 @@
     "say": 293.7,
     "resources": [
       {
+        "code": "7769",
+        "desc": "Stone surface strengthening chemical approved by ASI",
+        "unit": "litre",
+        "qty": 1.0,
+        "rate": 900.0
+      },
+      {
         "code": "0131",
         "desc": "Painter",
         "unit": "day",
@@ -258,6 +363,20 @@
     "basis": 45.0,
     "say": 92.45,
     "resources": [
+      {
+        "code": "7768",
+        "desc": "Water repallent chemical approved by ASI",
+        "unit": "litre",
+        "qty": 1.0,
+        "rate": 1200.0
+      },
+      {
+        "code": "7770",
+        "desc": "Turpentine oil",
+        "unit": "litre",
+        "qty": 12.0,
+        "rate": 55.0
+      },
       {
         "code": "0131",
         "desc": "Painter",

@@ -1,8 +1,9 @@
 [
   {
     "code": "12.1.1",
-    "unit": "m",
-    "basis": 5.1,
+    "desc": "1.00 mm thick with zinc coating not less than 275 gm/m²",
+    "unit": "x18",
+    "basis": 2.0,
     "say": 1234.25,
     "resources": [
       {
@@ -163,8 +164,9 @@
   },
   {
     "code": "12.1.2",
-    "unit": "m",
-    "basis": 5.1,
+    "desc": "0.80 mm thick with zinc coating not less than 275 gm/m²",
+    "unit": "x18",
+    "basis": 2.0,
     "say": 1061.8,
     "resources": [
       {
@@ -325,8 +327,9 @@
   },
   {
     "code": "12.1.3",
-    "unit": "m",
-    "basis": 5.1,
+    "desc": "0.63 mm thick with zinc coating not less than 275 gm/ m²",
+    "unit": "x18",
+    "basis": 2.0,
     "say": 915.0,
     "resources": [
       {
@@ -487,7 +490,8 @@
   },
   {
     "code": "12.2.1",
-    "unit": "metre",
+    "desc": "1.00 mm thick",
+    "unit": "metres",
     "basis": 3.0,
     "say": 86.7,
     "resources": [
@@ -509,7 +513,8 @@
   },
   {
     "code": "12.2.2",
-    "unit": "metre",
+    "desc": "0.80 mm thick",
+    "unit": "metres",
     "basis": 3.0,
     "say": 69.35,
     "resources": [
@@ -531,7 +536,8 @@
   },
   {
     "code": "12.2.3",
-    "unit": "metre",
+    "desc": "0.63 mm thick",
+    "unit": "metres",
     "basis": 3.0,
     "say": 69.35,
     "resources": [
@@ -553,8 +559,9 @@
   },
   {
     "code": "12.3.1",
-    "unit": "metre",
-    "basis": 0.5,
+    "desc": "1.00 mm thick",
+    "unit": "holes",
+    "basis": 10.0,
     "say": 494.2,
     "resources": [
       {
@@ -575,8 +582,9 @@
   },
   {
     "code": "12.3.2",
-    "unit": "metre",
-    "basis": 0.5,
+    "desc": "0.80 mm thick",
+    "unit": "holes",
+    "basis": 10.0,
     "say": 394.75,
     "resources": [
       {
@@ -597,8 +605,9 @@
   },
   {
     "code": "12.3.3",
-    "unit": "metre",
-    "basis": 0.5,
+    "desc": "0.63 mm thick",
+    "unit": "holes",
+    "basis": 10.0,
     "say": 394.75,
     "resources": [
       {
@@ -619,7 +628,8 @@
   },
   {
     "code": "12.4.1",
-    "unit": "metre",
+    "desc": "0.80 mm thick with zinc coating not less than 275 gm/m²",
+    "unit": "metres",
     "basis": 10.35,
     "say": 781.4,
     "resources": [
@@ -704,6 +714,7 @@
   },
   {
     "code": "12.4.2",
+    "desc": "0.63 mm thick with zinc coating not less than 275 gm/m²",
     "unit": "metre",
     "basis": 10.35,
     "say": 710.15,
@@ -789,6 +800,7 @@
   },
   {
     "code": "12.5.1",
+    "desc": "1.60 mm thick with zinc coating not less than 350 gm/m²",
     "unit": "m",
     "basis": 9.325,
     "say": 1324.7,
@@ -874,6 +886,7 @@
   },
   {
     "code": "12.6.1",
+    "desc": "1.00 mm thick with zinc coating not less than 275 gm/m²",
     "unit": "m",
     "basis": 12.125,
     "say": 657.1,
@@ -959,6 +972,7 @@
   },
   {
     "code": "12.7.1",
+    "desc": "0.80 mm thick with zinc coating not less than 275 gm/m²",
     "unit": "m",
     "basis": 9.04,
     "say": 765.0,
@@ -1079,6 +1093,7 @@
   },
   {
     "code": "12.7.2",
+    "desc": "0.63 mm thick with zinc coating not less than 275 gm/m²",
     "unit": "m",
     "basis": 9.04,
     "say": 705.7,
@@ -1199,6 +1214,7 @@
   },
   {
     "code": "12.8",
+    "desc": "Providing reinforced by organic fibres and/or inorganic synthetic fibres cement 6 mm thick corrugated sheets (as per IS: 14871) roofing up t",
     "unit": "sqm",
     "basis": 216.14,
     "say": 453.25,
@@ -1277,7 +1293,8 @@
   },
   {
     "code": "12.9",
-    "unit": "metre",
+    "desc": "Extra for straight cutting in reinforced by organic fibres and/or inorganic synthetic fibres cement corrugated, semi corrugated 6 mm thick s",
+    "unit": "metres",
     "basis": 3.0,
     "say": 69.35,
     "resources": [
@@ -1299,8 +1316,9 @@
   },
   {
     "code": "12.10",
-    "unit": "metre",
-    "basis": 0.72,
+    "desc": "Extra for circular cutting in reinforced by organic fibres and/or inorganic synthetic fibres cement corrugated/ semi corrugated 6 mm thick s",
+    "unit": "holes",
+    "basis": 4.0,
     "say": 191.6,
     "resources": [
       {
@@ -1321,7 +1339,8 @@
   },
   {
     "code": "12.11",
-    "unit": "metre",
+    "desc": "Extra for providing and fixing wind ties of 40x 6 mm flat iron section.",
+    "unit": "metres",
     "basis": 30.0,
     "say": 151.1,
     "resources": [
@@ -1364,8 +1383,9 @@
   },
   {
     "code": "12.12.1",
-    "unit": "metre",
-    "basis": 20.2,
+    "desc": "Corrugated serrated adjustable ridges",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 433.4,
     "resources": [
       {
@@ -1376,8 +1396,8 @@
         "rate": 210.0
       },
       {
-        "code": "the same hooks as the",
-        "desc": "Sheets)",
+        "code": "9977",
+        "desc": "Carriage (The ridge is to be fixed with the same hooks as the Sheets)",
         "unit": "L.S.",
         "qty": 13.52,
         "rate": 2.0
@@ -1414,8 +1434,9 @@
   },
   {
     "code": "12.12.2",
-    "unit": "metre",
-    "basis": 20.2,
+    "desc": "Plain wing adjustable ridges",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 433.4,
     "resources": [
       {
@@ -1426,8 +1447,8 @@
         "rate": 210.0
       },
       {
-        "code": "the same hooks as the",
-        "desc": "Sheets)",
+        "code": "9977",
+        "desc": "Carriage (The ridge is to be fixed with the same hooks as the Sheets)",
         "unit": "L.S.",
         "qty": 13.52,
         "rate": 2.0
@@ -1464,8 +1485,9 @@
   },
   {
     "code": "12.12.3",
-    "unit": "metre",
-    "basis": 20.2,
+    "desc": "Close fitting adjustable ridges",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 487.25,
     "resources": [
       {
@@ -1514,8 +1536,9 @@
   },
   {
     "code": "12.12.4",
-    "unit": "metre",
-    "basis": 20.2,
+    "desc": "Unserrated adjustable hips",
+    "unit": "pairs",
+    "basis": 19.0,
     "say": 432.5,
     "resources": [
       {
@@ -1564,8 +1587,9 @@
   },
   {
     "code": "12.13.1",
-    "unit": "metre",
-    "basis": 20.2,
+    "desc": "Corrugated apron pieces",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 358.75,
     "resources": [
       {
@@ -1614,8 +1638,9 @@
   },
   {
     "code": "12.13.2",
-    "unit": "metre",
-    "basis": 20.2,
+    "desc": "Eave's filler pieces",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 290.6,
     "resources": [
       {
@@ -1664,8 +1689,9 @@
   },
   {
     "code": "12.13.3",
-    "unit": "metre",
-    "basis": 20.2,
+    "desc": "North light curves",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 486.7,
     "resources": [
       {
@@ -1735,8 +1761,9 @@
   },
   {
     "code": "12.13.4",
-    "unit": "metre",
-    "basis": 20.2,
+    "desc": "Ventilator curves",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 529.05,
     "resources": [
       {
@@ -1806,7 +1833,8 @@
   },
   {
     "code": "12.13.5",
-    "unit": "metre",
+    "desc": "Barge boards",
+    "unit": "metres",
     "basis": 9.7,
     "say": 625.6,
     "resources": [
@@ -1877,8 +1905,9 @@
   },
   {
     "code": "12.13.6",
-    "unit": "pair",
-    "basis": 0.05,
+    "desc": "Ridge finials",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 260.65,
     "resources": [
       {
@@ -1899,7 +1928,8 @@
   },
   {
     "code": "12.13.7",
-    "unit": "nos",
+    "desc": "Special north light curves",
+    "unit": "Nos",
     "basis": 20.0,
     "say": 871.6,
     "resources": [
@@ -1970,13 +2000,14 @@
   },
   {
     "code": "12.13.8",
-    "unit": "metre",
+    "desc": "S type louvers",
+    "unit": "metres",
     "basis": 8.74,
     "say": 455.0,
     "resources": [
       {
-        "code": "type",
-        "desc": "louvers.",
+        "code": "0235",
+        "desc": "Fibre reinforced by organic fibres and/ or inorganic synthetic fibres cement S type louvers.",
         "unit": "each",
         "qty": 5.25,
         "rate": 260.0
@@ -2055,7 +2086,8 @@
   },
   {
     "code": "12.14",
-    "unit": "metre",
+    "desc": "Providing flat iron brackets 50x3 mm size with necessary bolts, nuts and washers etc. for fixing G.S. sheets gutters with purlins.",
+    "unit": "metres",
     "basis": 20.0,
     "say": 70.9,
     "resources": [
@@ -2105,7 +2137,8 @@
   },
   {
     "code": "12.15.1",
-    "unit": "sqm",
+    "desc": "With residual type petroleum bitumen of grade VG -10",
+    "unit": "Sqm",
     "basis": 10.0,
     "say": 126.0,
     "resources": [
@@ -2176,23 +2209,31 @@
   },
   {
     "code": "12.16.1",
-    "unit": "sqm",
-    "basis": 10.0,
+    "desc": "With common burnt clay F.P.S.(non modular) brick tile of class designation 10",
+    "unit": "cum",
+    "basis": 1.048,
     "say": 826.75,
     "resources": [
+      {
+        "code": "3.18",
+        "desc": "Rate as per SH: 3.18",
+        "unit": "cum",
+        "qty": 0.263,
+        "rate": 737.0
+      },
+      {
+        "code": "3.3",
+        "desc": "Rate as per SH: 3.3",
+        "unit": "cum",
+        "qty": 0.061,
+        "rate": 4183.05
+      },
       {
         "code": "0811",
         "desc": "Mud (dry)",
         "unit": "cum",
         "qty": 1.257,
         "rate": 165.0
-      },
-      {
-        "code": "3.18",
-        "desc": "Rate as per Item Number 3.18 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.263,
-        "rate": 737.0
       },
       {
         "code": "0308",
@@ -2237,13 +2278,6 @@
         "rate": 166.03
       },
       {
-        "code": "3.3",
-        "desc": "Rate as per Item Number 3.3 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.061,
-        "rate": 4183.05
-      },
-      {
         "code": "1213",
         "desc": "Water proofing materials",
         "unit": "kilogram",
@@ -2282,23 +2316,31 @@
   },
   {
     "code": "12.17.1",
-    "unit": "sqm",
-    "basis": 10.0,
+    "desc": "With machine moulded common burnt clay F.P.S. (non modular) brick tiles of class designation 12.5, conforming to IS 2690",
+    "unit": "cum",
+    "basis": 1.048,
     "say": 847.1,
     "resources": [
+      {
+        "code": "3.18",
+        "desc": "Rate as per SH: 3.18",
+        "unit": "cum",
+        "qty": 0.263,
+        "rate": 737.0
+      },
+      {
+        "code": "3.3",
+        "desc": "Rate as per SH: 3.3",
+        "unit": "cum",
+        "qty": 0.061,
+        "rate": 4183.05
+      },
       {
         "code": "0811",
         "desc": "Mud (dry)",
         "unit": "cum",
         "qty": 1.257,
         "rate": 165.0
-      },
-      {
-        "code": "3.18",
-        "desc": "Rate as per Item Number 3.18 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.263,
-        "rate": 737.0
       },
       {
         "code": "0308",
@@ -2343,13 +2385,6 @@
         "rate": 166.03
       },
       {
-        "code": "3.3",
-        "desc": "Rate as per Item Number 3.3 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.061,
-        "rate": 4183.05
-      },
-      {
         "code": "1213",
         "desc": "Water proofing materials",
         "unit": "kilogram",
@@ -2388,6 +2423,7 @@
   },
   {
     "code": "12.18",
+    "desc": "Extra for every additional 1 cm thickness of mud phaska.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 18.6,
@@ -2424,10 +2460,18 @@
   },
   {
     "code": "12.19.1",
+    "desc": "With common burnt clay F.P.S. (non modular) brick tiles of class designation 10",
     "unit": "sqm",
     "basis": 10.0,
     "say": 514.4,
     "resources": [
+      {
+        "code": "3.3",
+        "desc": "Rate as per SH: 3.3",
+        "unit": "cum",
+        "qty": 0.179,
+        "rate": 4183.05
+      },
       {
         "code": "1984",
         "desc": "Common burnt clay F.P.S. (non modular) bricks tile class designation 10",
@@ -2441,13 +2485,6 @@
         "unit": "1000 Nos",
         "qty": 0.38,
         "rate": 166.03
-      },
-      {
-        "code": "3.3",
-        "desc": "Rate as per Item Number 3.3 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.179,
-        "rate": 4183.05
       },
       {
         "code": "1213",
@@ -2488,10 +2525,25 @@
   },
   {
     "code": "12.20",
+    "desc": "Providing and laying pressed clay tiles (as per approved pattern 20 mm nominal thickness of approved size) on roofs jointed with cement mort",
     "unit": "sqm",
     "basis": 10.0,
     "say": 584.55,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.037,
+        "rate": 4010.35
+      },
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 4010.35
+      },
       {
         "code": "7266",
         "desc": "Pressed clay tiles 20 mm thick 250 x 250 mm size",
@@ -2507,25 +2559,11 @@
         "rate": 166.03
       },
       {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.037,
-        "rate": 4010.35
-      },
-      {
         "code": "1213",
         "desc": "Water proofing materials",
         "unit": "kilogram",
         "qty": 0.01,
         "rate": 35.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.224,
-        "rate": 4010.35
       },
       {
         "code": "0123",
@@ -2552,10 +2590,18 @@
   },
   {
     "code": "12.21.1",
-    "unit": "metre",
+    "desc": "In 75x75 mm deep chase",
+    "unit": "metres",
     "basis": 10.0,
     "say": 237.25,
     "resources": [
+      {
+        "code": "3.3",
+        "desc": "Rate as per SH: 3.3",
+        "unit": "cum",
+        "qty": 0.009,
+        "rate": 4183.05
+      },
       {
         "code": "0297",
         "desc": "Stone Aggregate (Single size) : 10 mm nominal size",
@@ -2704,13 +2750,6 @@
         "rate": 2.0
       },
       {
-        "code": "3.3",
-        "desc": "Rate as per Item Number 3.3 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.009,
-        "rate": 4183.05
-      },
-      {
         "code": "0155",
         "desc": "Mason (average)",
         "unit": "day",
@@ -2749,10 +2788,18 @@
   },
   {
     "code": "12.22",
-    "unit": "m",
+    "desc": "Making khurras 45x45 cm with average minimum thickness of 5 cm cement concrete 1:2:4 (1 cement : 2 coarse sand : 4 graded stone aggregate of",
+    "unit": "no",
     "basis": 1.0,
     "say": 244.05,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.0041,
+        "rate": 4664.55
+      },
       {
         "code": "0295",
         "desc": "Stone Aggregate (Single size) : 20 mm nominal size",
@@ -2866,13 +2913,6 @@
         "rate": 40.0
       },
       {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.0041,
-        "rate": 4664.55
-      },
-      {
         "code": "0155",
         "desc": "Mason (average)",
         "unit": "day",
@@ -2946,10 +2986,25 @@
   },
   {
     "code": "12.23.1.1",
+    "desc": "40 to 50 mm thick",
     "unit": "sqm",
     "basis": 10.0,
     "say": 793.1,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.0095,
+        "rate": 4010.35
+      },
+      {
+        "code": "3.3",
+        "desc": "Rate as per SH: 3.3",
+        "unit": "cum",
+        "qty": 0.0075,
+        "rate": 4183.05
+      },
       {
         "code": "1174",
         "desc": "Red sand stone slab 45 mm and 50 mm thick (un-dressed)",
@@ -2963,20 +3018,6 @@
         "unit": "tonne",
         "qty": 1.27,
         "rate": 92.24
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.0095,
-        "rate": 4010.35
-      },
-      {
-        "code": "3.3",
-        "desc": "Rate as per Item Number 3.3 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.0075,
-        "rate": 4183.05
       },
       {
         "code": "0155",
@@ -3017,10 +3058,25 @@
   },
   {
     "code": "12.23.2.1",
+    "desc": "40 to 50 mm thick",
     "unit": "sqm",
     "basis": 10.0,
     "say": 815.15,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.0095,
+        "rate": 4010.35
+      },
+      {
+        "code": "3.3",
+        "desc": "Rate as per SH: 3.3",
+        "unit": "cum",
+        "qty": 0.0075,
+        "rate": 4183.05
+      },
       {
         "code": "1175",
         "desc": "White sand stone slab 45 mm and 50 mm thick (un-dressed)",
@@ -3034,13 +3090,6 @@
         "unit": "tonne",
         "qty": 1.27,
         "rate": 92.24
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.0095,
-        "rate": 4010.35
       },
       {
         "code": "0155",
@@ -3076,18 +3125,12 @@
         "unit": "L.S.",
         "qty": 16.12,
         "rate": 2.0
-      },
-      {
-        "code": "3.3",
-        "desc": "Rate as per Item Number 3.3 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.0075,
-        "rate": 4183.05
       }
     ]
   },
   {
     "code": "12.24.1.1",
+    "desc": "12 mm thick",
     "unit": "sqm",
     "basis": 10.0,
     "say": 733.75,
@@ -3145,6 +3188,7 @@
   },
   {
     "code": "12.24.2.1",
+    "desc": "12 mm thick",
     "unit": "sqm",
     "basis": 10.0,
     "say": 770.55,
@@ -3202,6 +3246,7 @@
   },
   {
     "code": "12.24.3.1",
+    "desc": "12 mm thick",
     "unit": "sqm",
     "basis": 10.0,
     "say": 895.65,
@@ -3259,6 +3304,7 @@
   },
   {
     "code": "12.25.1",
+    "desc": "12 mm thick",
     "unit": "sqm",
     "basis": 10.0,
     "say": 847.85,
@@ -3316,6 +3362,7 @@
   },
   {
     "code": "12.26.1",
+    "desc": "6 mm thick Cement fiber board as per IS: 14862",
     "unit": "sqm",
     "basis": 10.0,
     "say": 733.05,
@@ -3373,6 +3420,7 @@
   },
   {
     "code": "12.26.2",
+    "desc": "6 mm thick Cement bonded wood particle board as per IS:14276",
     "unit": "sqm",
     "basis": 10.0,
     "say": 711.0,
@@ -3430,17 +3478,11 @@
   },
   {
     "code": "12.27.1",
-    "unit": "m",
-    "basis": 0.5,
+    "desc": "2nd class teak wood planks 20 mm thick",
+    "unit": "holes",
+    "basis": 10.0,
     "say": 603.05,
     "resources": [
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 4.3,
-        "rate": 791.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -3494,8 +3536,9 @@
   },
   {
     "code": "12.27.2.1",
-    "unit": "m",
-    "basis": 0.5,
+    "desc": "12 mm thick",
+    "unit": "holes",
+    "basis": 10.0,
     "say": 369.1,
     "resources": [
       {
@@ -3572,6 +3615,7 @@
   },
   {
     "code": "12.27.3.1",
+    "desc": "12 mm thick",
     "unit": "metre",
     "basis": 15.71,
     "say": 373.7,
@@ -3650,6 +3694,7 @@
   },
   {
     "code": "12.27.4.1",
+    "desc": "12 mm thick",
     "unit": "metre",
     "basis": 15.71,
     "say": 389.25,
@@ -3728,6 +3773,7 @@
   },
   {
     "code": "12.27.5.1",
+    "desc": "3 mm thick",
     "unit": "metre",
     "basis": 15.71,
     "say": 355.3,
@@ -3806,6 +3852,7 @@
   },
   {
     "code": "12.27.5.2",
+    "desc": "4.5 mm thick",
     "unit": "metre",
     "basis": 15.71,
     "say": 369.05,
@@ -3884,6 +3931,7 @@
   },
   {
     "code": "12.28",
+    "desc": "Extra for providing and fixing ceiling to curved surfaces in narrow widths",
     "unit": "sqm",
     "basis": 10.0,
     "say": 338.9,
@@ -3913,17 +3961,11 @@
   },
   {
     "code": "12.31.1",
-    "unit": "sqm",
-    "basis": 10.0,
+    "desc": "Flat surfaces",
+    "unit": "x2",
+    "basis": 4.0,
     "say": 1324.05,
     "resources": [
-      {
-        "code": "1196",
-        "desc": "First class kail wood in planks",
-        "unit": "10 cudm",
-        "qty": 4.752,
-        "rate": 300.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -4019,17 +4061,11 @@
   },
   {
     "code": "12.31.2",
-    "unit": "sqm",
-    "basis": 10.0,
+    "desc": "Curved surfaces",
+    "unit": "x2",
+    "basis": 4.0,
     "say": 1584.15,
     "resources": [
-      {
-        "code": "1196",
-        "desc": "First class kail wood in planks",
-        "unit": "10 cudm",
-        "qty": 4.752,
-        "rate": 300.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -4146,6 +4182,7 @@
   },
   {
     "code": "12.32",
+    "desc": "Extra for sunk or raised mouldings in the plaster of Paris (Gypsum anhydrous) ceiling.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 445.9,
@@ -4196,8 +4233,9 @@
   },
   {
     "code": "12.33",
-    "unit": "metre",
-    "basis": 5.0,
+    "desc": "Extra for providing plaster of Paris (Gypsum anhydrous) ceiling above 5 metres height from floor level.",
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 197.65,
     "resources": [
       {
@@ -4232,8 +4270,9 @@
   },
   {
     "code": "12.34",
-    "unit": "kg",
-    "basis": 24.0,
+    "desc": "Providing fixing thermal insulation of ceiling (under deck insulation) with Resin Bonded Fibre glass wool conforming to IS : 8183, density 2",
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 580.25,
     "resources": [
       {
@@ -4275,8 +4314,9 @@
   },
   {
     "code": "12.35",
-    "unit": "kg",
-    "basis": 16.0,
+    "desc": "Providing and fixing thermal insulation with Resin Bonded Fibre glass wool conforming to IS: 8183. Density 16 kg/m³, 50 mm thick, wrapped in",
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 247.8,
     "resources": [
       {
@@ -4311,6 +4351,7 @@
   },
   {
     "code": "12.36.1",
+    "desc": "With Type N - Normal 50 mm thick",
     "unit": "sqm",
     "basis": 10.0,
     "say": 275.1,
@@ -4354,6 +4395,7 @@
   },
   {
     "code": "12.36.2",
+    "desc": "With Type SE - Self Extinguishing type 50 mm thick",
     "unit": "sqm",
     "basis": 10.0,
     "say": 311.85,
@@ -4397,8 +4439,9 @@
   },
   {
     "code": "12.37.1",
-    "unit": "nos",
-    "basis": 1.0,
+    "desc": "Stone ware spout",
+    "unit": "stone",
+    "basis": 10.0,
     "say": 128.4,
     "resources": [
       {
@@ -4447,6 +4490,7 @@
   },
   {
     "code": "12.38.1",
+    "desc": "100 mm diameter",
     "unit": "nos",
     "basis": 5.0,
     "say": 287.45,
@@ -4609,6 +4653,7 @@
   },
   {
     "code": "12.38.2",
+    "desc": "150 mm diameter",
     "unit": "nos",
     "basis": 5.0,
     "say": 307.5,
@@ -4771,6 +4816,7 @@
   },
   {
     "code": "12.39.1",
+    "desc": "100 mm dia Pipe",
     "unit": "nos",
     "basis": 1.0,
     "say": 421.15,
@@ -4828,6 +4874,7 @@
   },
   {
     "code": "12.39.2",
+    "desc": "150 mm dia Pipe",
     "unit": "nos",
     "basis": 1.0,
     "say": 575.95,
@@ -4885,6 +4932,7 @@
   },
   {
     "code": "12.40.1.1",
+    "desc": "150 mm diameter",
     "unit": "nos",
     "basis": 1.0,
     "say": 428.25,
@@ -4907,7 +4955,8 @@
   },
   {
     "code": "12.41.1",
-    "unit": "metre",
+    "desc": "75 mm diameter",
+    "unit": "metres",
     "basis": 6.0,
     "say": 201.1,
     "resources": [
@@ -4971,7 +5020,8 @@
   },
   {
     "code": "12.41.2",
-    "unit": "metre",
+    "desc": "110 mm diameter",
+    "unit": "metres",
     "basis": 6.0,
     "say": 305.05,
     "resources": [
@@ -5035,7 +5085,8 @@
   },
   {
     "code": "12.42.1.1",
-    "unit": "nos",
+    "desc": "75 mm",
+    "unit": "coupler",
     "basis": 1.0,
     "say": 77.85,
     "resources": [
@@ -5071,7 +5122,8 @@
   },
   {
     "code": "12.42.1.2",
-    "unit": "nos",
+    "desc": "110 mm",
+    "unit": "coupler",
     "basis": 1.0,
     "say": 117.8,
     "resources": [
@@ -5107,7 +5159,8 @@
   },
   {
     "code": "12.42.2.1",
-    "unit": "nos",
+    "desc": "75 mm",
+    "unit": "coupler",
     "basis": 1.0,
     "say": 77.85,
     "resources": [
@@ -5143,7 +5196,8 @@
   },
   {
     "code": "12.42.2.2",
-    "unit": "nos",
+    "desc": "110 mm",
+    "unit": "coupler",
     "basis": 1.0,
     "say": 108.45,
     "resources": [
@@ -5179,7 +5233,8 @@
   },
   {
     "code": "12.42.3.1",
-    "unit": "nos",
+    "desc": "75x75x75 mm",
+    "unit": "tee",
     "basis": 1.0,
     "say": 139.85,
     "resources": [
@@ -5208,7 +5263,8 @@
   },
   {
     "code": "12.42.3.2",
-    "unit": "nos",
+    "desc": "110x110x110 mm",
+    "unit": "tee",
     "basis": 1.0,
     "say": 203.3,
     "resources": [
@@ -5237,7 +5293,8 @@
   },
   {
     "code": "12.42.4.1",
-    "unit": "nos",
+    "desc": "75x75x75 mm",
+    "unit": "tee",
     "basis": 1.0,
     "say": 122.45,
     "resources": [
@@ -5266,7 +5323,8 @@
   },
   {
     "code": "12.42.4.2",
-    "unit": "nos",
+    "desc": "110x110x110 mm",
+    "unit": "tee",
     "basis": 1.0,
     "say": 188.55,
     "resources": [
@@ -5295,7 +5353,8 @@
   },
   {
     "code": "12.42.5.1",
-    "unit": "nos",
+    "desc": "75 mm bend",
+    "unit": "bend",
     "basis": 1.0,
     "say": 89.9,
     "resources": [
@@ -5331,7 +5390,8 @@
   },
   {
     "code": "12.42.5.2",
-    "unit": "nos",
+    "desc": "110 mm bend",
+    "unit": "bend",
     "basis": 1.0,
     "say": 129.85,
     "resources": [
@@ -5367,7 +5427,8 @@
   },
   {
     "code": "12.42.6.1",
-    "unit": "nos",
+    "desc": "75 mm Shoe",
+    "unit": "shoe",
     "basis": 1.0,
     "say": 79.2,
     "resources": [
@@ -5403,7 +5464,8 @@
   },
   {
     "code": "12.42.6.2",
-    "unit": "nos",
+    "desc": "110 mm Shoe",
+    "unit": "shoe",
     "basis": 1.0,
     "say": 113.8,
     "resources": [
@@ -5439,6 +5501,7 @@
   },
   {
     "code": "12.43.1",
+    "desc": "75 mm",
     "unit": "nos",
     "basis": 5.0,
     "say": 290.15,
@@ -5510,6 +5573,7 @@
   },
   {
     "code": "12.43.2",
+    "desc": "110 mm",
     "unit": "nos",
     "basis": 5.0,
     "say": 288.8,
@@ -5581,7 +5645,8 @@
   },
   {
     "code": "12.44",
-    "unit": "nos",
+    "desc": "Providing and fixing to the inlet mouth of rain water pipe cast iron grating 15 cm diameter and weighing not less than 440 grams.",
+    "unit": "grating",
     "basis": 1.0,
     "say": 47.25,
     "resources": [
@@ -5603,8 +5668,9 @@
   },
   {
     "code": "12.45.1",
-    "unit": "m",
-    "basis": 9.6,
+    "desc": "12.5 mm thick tapered edge gypsum plain board conforming to IS: 2095- (Part I) :",
+    "unit": "x9",
+    "basis": 10.8,
     "say": 1117.65,
     "resources": [
       {
@@ -5685,13 +5751,6 @@
         "rate": 23.0
       },
       {
-        "code": "7018",
-        "desc": "Joint tape roll",
-        "unit": "roll",
-        "qty": 1.27,
-        "rate": 100.0
-      },
-      {
         "code": "7021",
         "desc": "Primer ( for gypsum board)",
         "unit": "litre",
@@ -5744,8 +5803,9 @@
   },
   {
     "code": "12.45.2",
-    "unit": "m",
-    "basis": 9.6,
+    "desc": "12.5 mm thick tapered edge Glass Reinforced Gypsum (GRG) board conforming to IS: 2095- (Part 3) : 1996 (Board with BIS Certification marks)",
+    "unit": "x9",
+    "basis": 10.8,
     "say": 1237.05,
     "resources": [
       {
@@ -5826,13 +5886,6 @@
         "rate": 23.0
       },
       {
-        "code": "7018",
-        "desc": "Joint tape roll",
-        "unit": "roll",
-        "qty": 1.27,
-        "rate": 100.0
-      },
-      {
         "code": "7021",
         "desc": "Primer ( for gypsum board)",
         "unit": "litre",
@@ -5885,8 +5938,9 @@
   },
   {
     "code": "12.45.3",
-    "unit": "m",
-    "basis": 9.6,
+    "desc": "12.5 mm thick tapered edge gypsum moisture resistant board",
+    "unit": "x9",
+    "basis": 10.8,
     "say": 1286.2,
     "resources": [
       {
@@ -5967,13 +6021,6 @@
         "rate": 23.0
       },
       {
-        "code": "7018",
-        "desc": "Joint tape roll",
-        "unit": "roll",
-        "qty": 1.27,
-        "rate": 100.0
-      },
-      {
         "code": "7021",
         "desc": "Primer ( for gypsum board)",
         "unit": "litre",
@@ -6026,8 +6073,9 @@
   },
   {
     "code": "12.45.4",
-    "unit": "m",
-    "basis": 9.6,
+    "desc": "Fully Perforated Gypsum Plaster Board of size 1200 x 2400x12.5 mm having approx. 15 % perforated area with perforation size and pattern as a",
+    "unit": "x9",
+    "basis": 10.8,
     "say": 1475.85,
     "resources": [
       {
@@ -6108,13 +6156,6 @@
         "rate": 23.0
       },
       {
-        "code": "7018",
-        "desc": "Joint tape roll",
-        "unit": "roll",
-        "qty": 1.27,
-        "rate": 100.0
-      },
-      {
         "code": "7021",
         "desc": "Primer ( for gypsum board)",
         "unit": "litre",
@@ -6167,7 +6208,8 @@
   },
   {
     "code": "12.46",
-    "unit": "nos",
+    "desc": "Providing and fixing to the inlet mouth of rain water pipe PTMT (an Engineering Thermoplastic) grating square (Slit) 150 mm square with a he",
+    "unit": "grating",
     "basis": 1.0,
     "say": 100.45,
     "resources": [
@@ -6189,6 +6231,7 @@
   },
   {
     "code": "12.47.1",
+    "desc": "2 mm thick corrugated (2.5\" or 4.2\" or 6\") or step-down (2\" or 3\" or 6\" ) as specified",
     "unit": "sqm",
     "basis": 184.518,
     "say": 1095.2,
@@ -6274,6 +6317,7 @@
   },
   {
     "code": "12.47.2",
+    "desc": "2 mm thick flat",
     "unit": "sqm",
     "basis": 184.518,
     "say": 999.35,
@@ -6359,6 +6403,7 @@
   },
   {
     "code": "12.48",
+    "desc": "Providing & fixing on roof pressed clay tile (Mangalore tile) of 20 mm nominal thickness and of approved size and as per approved pattern on",
     "unit": "sqm",
     "basis": 10.0,
     "say": 324.4,
@@ -6402,6 +6447,7 @@
   },
   {
     "code": "12.49",
+    "desc": "Providing & laying on roof pressed clay tile ridge (Mangalore tile) of 20mm thickness and of approved pattern on steel frame work complete (",
     "unit": "metre",
     "basis": 3.6,
     "say": 72.2,
@@ -6445,8 +6491,9 @@
   },
   {
     "code": "12.50",
-    "unit": "metre",
-    "basis": 12.0,
+    "desc": "Providing and fixing precoated galvanised iron profile sheets (size, shape and pitch of corrugation as approved by Engineer-in-charge) 0.50 ",
+    "unit": "sqm",
+    "basis": 216.14,
     "say": 627.55,
     "resources": [
       {
@@ -6523,6 +6570,7 @@
   },
   {
     "code": "12.51.1",
+    "desc": "Ridges plain (500 - 600mm)",
     "unit": "metre",
     "basis": 20.2,
     "say": 416.3,
@@ -6535,8 +6583,8 @@
         "rate": 210.0
       },
       {
-        "code": "the same hooks as the",
-        "desc": "Sheets)",
+        "code": "9977",
+        "desc": "Carriage (The ridge is to be fixed with the same hooks as the Sheets)",
         "unit": "L.S.",
         "qty": 13.52,
         "rate": 2.0
@@ -6573,8 +6621,9 @@
   },
   {
     "code": "12.51.2",
-    "unit": "metre",
-    "basis": 20.2,
+    "desc": "Flashings/ Aprons.( Upto 600 mm)",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 368.6,
     "resources": [
       {
@@ -6623,8 +6672,9 @@
   },
   {
     "code": "12.51.3",
-    "unit": "metre",
-    "basis": 20.2,
+    "desc": "North light curves",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 443.05,
     "resources": [
       {
@@ -6694,7 +6744,8 @@
   },
   {
     "code": "12.51.4",
-    "unit": "metre",
+    "desc": "Barge board (Upto 300 mm)",
+    "unit": "metres",
     "basis": 8.23,
     "say": 355.8,
     "resources": [
@@ -6765,8 +6816,9 @@
   },
   {
     "code": "12.51.5",
-    "unit": "metre",
-    "basis": 20.2,
+    "desc": "Crimp curve",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 408.95,
     "resources": [
       {
@@ -6836,6 +6888,7 @@
   },
   {
     "code": "12.51.6",
+    "desc": "Gutter (600 mm over all girth)",
     "unit": "metre",
     "basis": 10.0,
     "say": 1041.75,
@@ -6955,9 +7008,10 @@
     ]
   },
   {
-    "code": "12.52",
-    "unit": "nos",
-    "basis": 1.0,
+    "code": "12.52.1",
+    "desc": "GI Metal Ceiling Lay in plain Tegular edge Global white color tiles of size 595x595 mm, and 0.5 mm thick with 8 mm drop; made of G I sheet h",
+    "unit": "sqm",
+    "basis": 100.0,
     "say": 1504.45,
     "resources": [
       {
@@ -7055,6 +7109,7 @@
   },
   {
     "code": "12.52.2",
+    "desc": "GI Metal Ceiling Lay in perforated Tegular edge global white color tiles of size 595x595 mm and 0.5 mm thick with 8 mm drop; made of GI shee",
     "unit": "sqm",
     "basis": 100.0,
     "say": 1649.15,
@@ -7154,6 +7209,7 @@
   },
   {
     "code": "12.52.3",
+    "desc": "12.5 mm thick square edge PVC Laminated Gypsum Tile of size 595x595 mm, made of Gypsum plasterboard, manufactured from natural gypsum as per",
     "unit": "sqm",
     "basis": 100.0,
     "say": 1880.95,
@@ -7253,6 +7309,7 @@
   },
   {
     "code": "12.52.4",
+    "desc": "12.5 mm thick fully Perforated Gypsum Board tile made from plasterboard having glass fibre conforming to IS: 2095 part I, of size 595x595 mm",
     "unit": "sqm",
     "basis": 100.0,
     "say": 1171.5,
@@ -7352,6 +7409,7 @@
   },
   {
     "code": "12.53",
+    "desc": "Providing and Fixing 15 mm thick densified tegular edged eco friendly light weight calcium silicate false ceiling tiles of approved texture ",
     "unit": "sqm",
     "basis": 100.0,
     "say": 1643.95,
@@ -7465,6 +7523,7 @@
   },
   {
     "code": "12.54.1",
+    "desc": "GI Metal Ceiling Clip in plain Beveled edge global white color tiles of size 600x600 and 0.5 mm thick with 25 mm height, made of G I sheet h",
     "unit": "sqm",
     "basis": 100.0,
     "say": 1734.1,
@@ -7585,6 +7644,7 @@
   },
   {
     "code": "12.54.2",
+    "desc": "GI Metal Ceiling Clip in plain Beveled edge global white color tiles of size 600x600 and 0.5 mm thick with 25 mm height, made of G I sheet h",
     "unit": "sqm",
     "basis": 100.0,
     "say": 1881.6,
@@ -7705,23 +7765,24 @@
   },
   {
     "code": "12.55",
+    "desc": "Providing and fixing Heat Resistant Terrace Tiles (300 mm x 300 mm x 20 mm) with SRI (solar refractive index) > 78, solar reflection > 0.70 ",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1374.1,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 4010.35
+      },
       {
         "code": "1204",
         "desc": "Precast heat resistant terrace tiles (size 300x300mm) and 20mm thick",
         "unit": "sqm",
         "qty": 10.3,
         "rate": 409.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item No.3.9 of SH:Mortar",
-        "unit": "cum",
-        "qty": 0.224,
-        "rate": 4010.35
       },
       {
         "code": "0367",
@@ -7797,8 +7858,9 @@
   },
   {
     "code": "12.56",
-    "unit": "kg",
-    "basis": 45.0,
+    "desc": "Providing and laying roof insulation with 40 mm thick impervious sprayed, closed cell free Rigid Polyurethane foam over deck insulation conf",
+    "unit": "sqm",
+    "basis": 1.0,
     "say": 1412.2,
     "resources": [
       {
@@ -7889,8 +7951,9 @@
   },
   {
     "code": "12.57",
-    "unit": "kg",
-    "basis": 24.0,
+    "desc": "Providing and fixing thermal insulation with Resin Bonded Fibre glass wool conforming to IS: 8183 having density 24 kg/m3, 50 mm thick, wrap",
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 316.4,
     "resources": [
       {
@@ -7932,8 +7995,9 @@
   },
   {
     "code": "12.58.1",
-    "unit": "kg",
-    "basis": 225.0,
+    "desc": "8 mm thick fully perforated calcium silicate board made with Calcareous & Siliceous materials reinforced with cellulose fiber manufactured t",
+    "unit": "sqm",
+    "basis": 100.0,
     "say": 1759.75,
     "resources": [
       {
@@ -8031,6 +8095,7 @@
   },
   {
     "code": "12.59.1",
+    "desc": "8 mm thick Calcium Silicate Board made with Calcareous & Siliceous materials reinforced with cellulose fiber manufactured through autoclavin",
     "unit": "m",
     "basis": 10.8,
     "say": 1273.05,
@@ -8120,13 +8185,6 @@
         "rate": 11.0
       },
       {
-        "code": "7018",
-        "desc": "Joint Tape roll (120mm Roll)",
-        "unit": "roll",
-        "qty": 1.27,
-        "rate": 100.0
-      },
-      {
         "code": "7021",
         "desc": "Primer ( for gypsum board// calcium silicate board)",
         "unit": "litre",
@@ -8172,8 +8230,9 @@
   },
   {
     "code": "12.60",
-    "unit": "kg",
-    "basis": 48.0,
+    "desc": "Providing and fixing thermal insulation of ceiling (under deck insulation) with Resin Bonded Rockwool conforming to IS: 8183,density 48 kg/ ",
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 546.4,
     "resources": [
       {
@@ -8215,8 +8274,9 @@
   },
   {
     "code": "12.61",
-    "unit": "kg",
-    "basis": 48.0,
+    "desc": "Providing and fixing thermal insulation with Resin bonded rock wool conforming to IS: 8183, density 48 kg/m3, 50 mm thick, wrapped in 200 G ",
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 277.2,
     "resources": [
       {
@@ -8251,8 +8311,9 @@
   },
   {
     "code": "12.62",
-    "unit": "kg",
-    "basis": 48.0,
+    "desc": "Providing and fixing thermal insulation with Resin Bonded rock wool conforming to IS: 8183, having density 48 kg/m3,50 mm thick,wrapped in 2",
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 282.55,
     "resources": [
       {
@@ -8294,7 +8355,8 @@
   },
   {
     "code": "12.63",
-    "unit": "sqm",
+    "desc": "Providing and applying two coats of High Albedo paint having minimum Solar Reflective Index (SRI) 108 (with solar reflectance & thermal emit",
+    "unit": "Sqm",
     "basis": 10.0,
     "say": 314.85,
     "resources": [

@@ -831,7 +831,7 @@
   {
     "code": "15.15.1",
     "desc": "Of sectional area 40 square centimetres and above",
-    "unit": "nos",
+    "unit": "cum",
     "basis": 1.0,
     "say": 441.5,
     "resources": [
@@ -1599,6 +1599,20 @@
       },
       {
         "code": "9999",
+        "desc": "Excavation, transporting and stacking the posts to the required place within 50 metres lead, refilling the pit and dressing the same",
+        "unit": "L.S.",
+        "qty": 0.26,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for lifting of R.C.C. posts being heavier than L iron and cleaning the posts of stacking concrete",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
         "qty": 1.43,
@@ -1632,6 +1646,20 @@
         "desc": "Sundries",
         "unit": "L.S.",
         "qty": 0.26,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Excavation, transporting and stacking the posts to the required place within 50 metres lead, refilling the pit and dressing the same",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for lifting of R.C.C. posts being heavier than L iron and cleaning the posts of stacking concrete",
+        "unit": "L.S.",
+        "qty": 8.06,
         "rate": 2.0
       },
       {
@@ -2182,6 +2210,20 @@
     "say": 299.05,
     "resources": [
       {
+        "code": "2.8.1",
+        "desc": "Rate as per SH: 2.8.1",
+        "unit": "cum",
+        "qty": 16.17,
+        "rate": 252.3
+      },
+      {
+        "code": "2.25",
+        "desc": "Rate as per SH: 2.25",
+        "unit": "cum",
+        "qty": 16.17,
+        "rate": 219.65
+      },
+      {
         "code": "0771",
         "desc": "Kerosene oil",
         "unit": "litre",
@@ -2219,6 +2261,20 @@
     "say": 395.1,
     "resources": [
       {
+        "code": "2.8.1",
+        "desc": "Rate as per SH: 2.8.1",
+        "unit": "cum",
+        "qty": 17.26,
+        "rate": 252.3
+      },
+      {
+        "code": "2.25",
+        "desc": "Rate as per SH: 2.25",
+        "unit": "cum",
+        "qty": 17.26,
+        "rate": 219.65
+      },
+      {
         "code": "0771",
         "desc": "Kerosene oil",
         "unit": "litre",
@@ -2255,6 +2311,20 @@
     "basis": 40.26,
     "say": 515.45,
     "resources": [
+      {
+        "code": "2.8.1",
+        "desc": "Rate as per SH: 2.8.1",
+        "unit": "cum",
+        "qty": 18.38,
+        "rate": 252.3
+      },
+      {
+        "code": "2.25",
+        "desc": "Rate as per SH: 2.25",
+        "unit": "cum",
+        "qty": 18.38,
+        "rate": 219.65
+      },
       {
         "code": "0771",
         "desc": "Kerosene oil",
@@ -2506,7 +2576,7 @@
   {
     "code": "15.48",
     "desc": "Taking out C.I. cover with frame from R.C.C. top slab of manholes of various sizes including demolishing of R.C.C. work manually/ by mechani",
-    "unit": "nos",
+    "unit": "man",
     "basis": 1.0,
     "say": 500.4,
     "resources": [
@@ -2523,6 +2593,13 @@
         "unit": "day",
         "qty": 0.14,
         "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Removel of C.I. Cover with frame including stacking",
+        "unit": "L.S.",
+        "qty": 1.3,
+        "rate": 2.0
       },
       {
         "code": "9999",
@@ -2556,6 +2633,13 @@
       },
       {
         "code": "9999",
+        "desc": "Removel of C.I. Cover with frame including stacking",
+        "unit": "L.S.",
+        "qty": 0.65,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
         "qty": 5.33,
@@ -2566,8 +2650,8 @@
   {
     "code": "15.50",
     "desc": "Dismantling of R.C.C. spun vent shaft including excavating the cement concrete pit completely, taking out the shaft, refilling the excavated",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 1.094,
     "say": 0.92,
     "resources": [
       {
@@ -2659,8 +2743,8 @@
   {
     "code": "15.51",
     "desc": "Dismantling of road gully chamber of various sizes including C.I. grating with frame including stacking of useful materials near the site an",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 0.16,
     "say": 686.7,
     "resources": [
       {
@@ -2792,6 +2876,13 @@
         "unit": "day",
         "qty": 1.6,
         "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries for removing the R.C.C. cover etc for dismantling sluice valve",
+        "unit": "L.S.",
+        "qty": 89.7,
+        "rate": 2.0
       }
     ]
   },
@@ -2822,6 +2913,13 @@
         "unit": "day",
         "qty": 6.4,
         "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries for removing the R.C.C. cover etc for dismantling sluice valve",
+        "unit": "L.S.",
+        "qty": 89.7,
+        "rate": 2.0
       }
     ]
   },
@@ -2858,8 +2956,8 @@
   {
     "code": "15.55.1",
     "desc": "120 x 120 cm (outside to outside)",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 0.168,
     "say": 0.22,
     "resources": [
       {
@@ -2930,8 +3028,8 @@
   {
     "code": "15.55.2",
     "desc": "210 x 120 cm (outside to outside)",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 0.243,
     "say": 0.35,
     "resources": [
       {
@@ -3002,8 +3100,8 @@
   {
     "code": "15.55.3",
     "desc": "320 x 120 cm (outside to outside)",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 0.336,
     "say": 0.5,
     "resources": [
       {
@@ -3141,7 +3239,7 @@
   {
     "code": "15.58",
     "desc": "Demolishing R.C.C. work by mechanical means and stockpiling at designated locations and disposal of dismantled materials up to a lead of 1 k",
-    "unit": "nos",
+    "unit": "cum",
     "basis": 1.0,
     "say": 2130.0,
     "resources": [
@@ -3181,6 +3279,13 @@
         "rate": 558.0
       },
       {
+        "code": "0040",
+        "desc": "Air compressor 250 cfm with two leads for pneumatic cutters/ hammers.",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 1600.0
+      },
+      {
         "code": "0039",
         "desc": "Tractor with trolley .",
         "unit": "day",
@@ -3199,7 +3304,7 @@
   {
     "code": "15.59",
     "desc": "Dismantling of flexible pavement (bituminous courses) by mechanical means and disposal of dismantled material up to a lead of 1 kilometre, a",
-    "unit": "nos",
+    "unit": "cum",
     "basis": 1.0,
     "say": 321.25,
     "resources": [
@@ -3236,9 +3341,17 @@
   {
     "code": "15.60",
     "desc": "Disposal of building rubbish / malba / similar unserviceable, dismantled or waste materials by mechanical means, including loading, transpor",
-    "unit": "nos",
+    "unit": "cum",
     "basis": 1.0,
     "say": 138.85,
-    "resources": []
+    "resources": [
+      {
+        "code": "2264",
+        "desc": "Carriage of Rubbish",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 103.77
+      }
+    ]
   }
 ]

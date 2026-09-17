@@ -1,17 +1,11 @@
 [
   {
     "code": "9.1.1",
+    "desc": "Second class teak wood",
     "unit": "cum",
     "basis": 0.028,
     "say": 130183.05,
     "resources": [
-      {
-        "code": "1189",
-        "desc": "Second class teak wood in scantling",
-        "unit": "10 cudm",
-        "qty": 3.8,
-        "rate": 776.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -37,17 +31,11 @@
   },
   {
     "code": "9.1.2",
+    "desc": "Sal wood",
     "unit": "cum",
     "basis": 0.028,
     "say": 105327.2,
     "resources": [
-      {
-        "code": "1199",
-        "desc": "Sal wood in scantling",
-        "unit": "10 cudm",
-        "qty": 3.8,
-        "rate": 600.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -73,17 +61,11 @@
   },
   {
     "code": "9.1.3",
+    "desc": "Kiln seasoned and chemically treated hollock wood",
     "unit": "cum",
     "basis": 0.028,
     "say": 71746.4,
     "resources": [
-      {
-        "code": "2466",
-        "desc": "Hollock wood in scantling",
-        "unit": "10 cudm",
-        "qty": 3.8,
-        "rate": 350.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -123,17 +105,11 @@
   },
   {
     "code": "9.2",
+    "desc": "Providing laminated veneer lumber conforming to IS:14616 and TAD -15: 2001 (Part B) in factory made frames of doors, windows, clerestory win",
     "unit": "cum",
     "basis": 0.028,
     "say": 113706.4,
     "resources": [
-      {
-        "code": "7157",
-        "desc": "Laminated veneer lumber confirming to TADS 15:1995 manufactured in factory in frames of doors, windows",
-        "unit": "10 cudm",
-        "qty": 3.8,
-        "rate": 700.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -166,17 +142,11 @@
   },
   {
     "code": "9.3.1",
-    "unit": "m",
-    "basis": 3.0,
+    "desc": "Sal wood",
+    "unit": "x3",
+    "basis": 6.0,
     "say": 95893.9,
     "resources": [
-      {
-        "code": "1199",
-        "desc": "Sal wood in scantling",
-        "unit": "10 cudm",
-        "qty": 16.6,
-        "rate": 600.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -209,17 +179,11 @@
   },
   {
     "code": "9.3.2",
-    "unit": "m",
-    "basis": 3.0,
+    "desc": "Kiln seasoned and chemically treated hollock wood",
+    "unit": "x3",
+    "basis": 6.0,
     "say": 62114.45,
     "resources": [
-      {
-        "code": "2466",
-        "desc": "Hollock wood in scantling",
-        "unit": "10 cudm",
-        "qty": 16.6,
-        "rate": 350.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -266,17 +230,11 @@
   },
   {
     "code": "9.4.1",
+    "desc": "Second class teak wood",
     "unit": "nos",
     "basis": 1.0,
     "say": 13018.35,
     "resources": [
-      {
-        "code": "1189",
-        "desc": "Second class teak wood in scantling",
-        "unit": "10 cudm",
-        "qty": 0.38,
-        "rate": 776.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -302,17 +260,11 @@
   },
   {
     "code": "9.4.2",
+    "desc": "Sal wood",
     "unit": "nos",
     "basis": 1.0,
     "say": 10532.8,
     "resources": [
-      {
-        "code": "1199",
-        "desc": "Sal wood in scantling",
-        "unit": "10 cudm",
-        "qty": 0.38,
-        "rate": 600.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -338,17 +290,11 @@
   },
   {
     "code": "9.4.3",
+    "desc": "Kiln seasoned and chemically treated hollock wood",
     "unit": "nos",
     "basis": 1.0,
     "say": 7175.0,
     "resources": [
-      {
-        "code": "2466",
-        "desc": "Hollock wood in scantling",
-        "unit": "10 cudm",
-        "qty": 0.38,
-        "rate": 350.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -388,17 +334,11 @@
   },
   {
     "code": "9.5.1.1",
+    "desc": "35 mm thick shutters",
     "unit": "sqm",
     "basis": 2.16,
     "say": 3613.35,
     "resources": [
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 5.1,
-        "rate": 791.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -431,17 +371,11 @@
   },
   {
     "code": "9.5.1.2",
+    "desc": "30 mm thick shutters",
     "unit": "sqm",
     "basis": 2.16,
     "say": 3269.85,
     "resources": [
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 4.4,
-        "rate": 791.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -474,17 +408,11 @@
   },
   {
     "code": "9.5.2.1",
+    "desc": "35 mm thick shutters",
     "unit": "sqm",
     "basis": 2.16,
     "say": 2381.55,
     "resources": [
-      {
-        "code": "2505",
-        "desc": "Hollock wood in planks",
-        "unit": "10 cudm",
-        "qty": 5.1,
-        "rate": 390.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -531,17 +459,11 @@
   },
   {
     "code": "9.5.2.2",
+    "desc": "30 mm thick shutters",
     "unit": "sqm",
     "basis": 2.16,
     "say": 2208.65,
     "resources": [
-      {
-        "code": "2505",
-        "desc": "Hollock wood in planks",
-        "unit": "10 cudm",
-        "qty": 4.4,
-        "rate": 390.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -588,17 +510,11 @@
   },
   {
     "code": "9.5.3.1",
+    "desc": "35 mm thick shutters",
     "unit": "sqm",
     "basis": 2.16,
     "say": 3191.6,
     "resources": [
-      {
-        "code": "1200",
-        "desc": "Kiln seasoned selected sheesum wood planks",
-        "unit": "10 cudm",
-        "qty": 5.1,
-        "rate": 650.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -638,17 +554,11 @@
   },
   {
     "code": "9.5.3.2",
+    "desc": "30 mm thick shutters",
     "unit": "sqm",
     "basis": 2.16,
     "say": 2906.0,
     "resources": [
-      {
-        "code": "1200",
-        "desc": "Kiln seasoned selected sheesum wood planks",
-        "unit": "10 cudm",
-        "qty": 4.4,
-        "rate": 650.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -688,13 +598,14 @@
   },
   {
     "code": "9.6.1",
+    "desc": "12 mm thick plain grade -1, medium density flat pressed three layer particle board FPT - I or graded wood particle board FPT- I, IS : 3087 m",
     "unit": "sqm",
     "basis": 2.38,
     "say": 2636.6,
     "resources": [
       {
-        "code": "7137",
-        "desc": "Factory made 35 mm thick shutters with laminated veneer lumber styles rails as per TADS IS:1995 and panels of 12 mm thick plain type-I, medium density flat pressed three layer, graded particle board (FPT-I) as per IS:3087- 1985 bonded with BWP type synthetic resin adhesive, as per IS:848",
+        "code": "1985",
+        "desc": "bonded with BWP type synthetic resin adhesive, as per IS:848",
         "unit": "sqm",
         "qty": 2.38,
         "rate": 1620.0
@@ -731,6 +642,7 @@
   },
   {
     "code": "9.6.2",
+    "desc": "12 mm thick pre-laminated particle board (decorative lamination on both sides) grade -1, medium density flat pressed, three layer particle b",
     "unit": "sqm",
     "basis": 2.38,
     "say": 2770.4,
@@ -774,6 +686,7 @@
   },
   {
     "code": "9.6.3",
+    "desc": "12 mm thick one side Pre-laminated particle board (decorative lamination on one side and other sides balancing lamination) grade -1, medium ",
     "unit": "sqm",
     "basis": 2.38,
     "say": 3024.6,
@@ -817,17 +730,11 @@
   },
   {
     "code": "9.7.1",
+    "desc": "Second class teak wood",
     "unit": "sqm",
     "basis": 2.16,
     "say": 2942.3,
     "resources": [
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 1.29,
-        "rate": 791.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -853,17 +760,11 @@
   },
   {
     "code": "9.7.2",
+    "desc": "Kiln seasoned and chemically treated hollock wood",
     "unit": "sqm",
     "basis": 2.16,
     "say": 1949.65,
     "resources": [
-      {
-        "code": "2505",
-        "desc": "Hollock wood in planks",
-        "unit": "10 cudm",
-        "qty": 1.29,
-        "rate": 390.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -903,6 +804,7 @@
   },
   {
     "code": "9.7.3.1",
+    "desc": "Decorative plywood both side decorative veneer (Type - I) conforming to IS 1328 BWR type",
     "unit": "sqm",
     "basis": 2.16,
     "say": 2256.55,
@@ -939,6 +841,7 @@
   },
   {
     "code": "9.7.3.2",
+    "desc": "Decorative plywood one side decorative veneer and commercial veneer on other face (Type 1) conforming to IS 1328 BWR Type",
     "unit": "sqm",
     "basis": 2.16,
     "say": 2288.95,
@@ -975,6 +878,7 @@
   },
   {
     "code": "9.7.4.1",
+    "desc": "Decorative plywood one side decorative veneer and commercial veneer on other face (Type 1) conforming to IS 1328 BWR Type",
     "unit": "sqm",
     "basis": 2.16,
     "say": 2418.7,
@@ -1011,6 +915,7 @@
   },
   {
     "code": "9.7.5.1",
+    "desc": "Plain particle board flat pressed, 3 layer or graded wood particle board medium density Grade I, IS : 3087 marked",
     "unit": "sqm",
     "basis": 2.16,
     "say": 1345.1,
@@ -1047,6 +952,7 @@
   },
   {
     "code": "9.7.5.2",
+    "desc": "Veneered flat pressed three layer or graded wood particle board with commercial veneering on both sides conforming to IS:3097, grade I",
     "unit": "sqm",
     "basis": 2.16,
     "say": 1688.9,
@@ -1083,6 +989,7 @@
   },
   {
     "code": "9.7.5.3",
+    "desc": "Pre-laminated particle board with decorative lamination on one side and balancing lamination on other side, Grade I, Type II IS: 12823 marke",
     "unit": "sqm",
     "basis": 2.16,
     "say": 1753.8,
@@ -1119,6 +1026,7 @@
   },
   {
     "code": "9.7.5.4",
+    "desc": "Pre-laminated particle board with decorative lamination on both sides, Grade I, Type II, IS:12823 marked",
     "unit": "sqm",
     "basis": 2.16,
     "say": 1810.55,
@@ -1155,6 +1063,7 @@
   },
   {
     "code": "9.7.6.1",
+    "desc": "12 mm thick",
     "unit": "sqm",
     "basis": 2.16,
     "say": 1964.6,
@@ -1191,8 +1100,9 @@
   },
   {
     "code": "9.7.7.1",
-    "unit": "kg",
-    "basis": 10.0,
+    "desc": "4 mm thick glass pane (weight not less than 10kg/sqm).",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 1792.55,
     "resources": [
       {
@@ -1241,8 +1151,9 @@
   },
   {
     "code": "9.7.7.2",
-    "unit": "kg",
-    "basis": 12.5,
+    "desc": "5.0 mm thick glass panes (weight not less than 12.50 kg/sqm).",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 2116.9,
     "resources": [
       {
@@ -1291,6 +1202,7 @@
   },
   {
     "code": "9.7.8",
+    "desc": "Fly proof stainless steel grade 304 wire gauge with 0.5 mm dia. wire and 1.4mm wide aperture with matching wood beading",
     "unit": "sqm",
     "basis": 2.16,
     "say": 1458.6,
@@ -1327,17 +1239,11 @@
   },
   {
     "code": "9.9.1.1",
+    "desc": "35 mm thick",
     "unit": "sqm",
     "basis": 2.16,
     "say": 4353.75,
     "resources": [
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 5.8,
-        "rate": 791.0
-      },
       {
         "code": "2406",
         "desc": "Float glass sheet of nominal thickness 4 mm (weight not less than 10kg/sqm).",
@@ -1412,17 +1318,11 @@
   },
   {
     "code": "9.9.1.2",
+    "desc": "30 mm thick",
     "unit": "sqm",
     "basis": 2.16,
     "say": 3961.2,
     "resources": [
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 5.0,
-        "rate": 791.0
-      },
       {
         "code": "2406",
         "desc": "Float glass sheet of nominal thickness 4 mm (weight not less than 10kg/sqm).",
@@ -1497,17 +1397,11 @@
   },
   {
     "code": "9.9.2.1",
+    "desc": "35 mm thick",
     "unit": "sqm",
     "basis": 2.16,
     "say": 2951.35,
     "resources": [
-      {
-        "code": "2505",
-        "desc": "Hollock wood in planks",
-        "unit": "10 cudm",
-        "qty": 5.8,
-        "rate": 390.0
-      },
       {
         "code": "2504",
         "desc": "Kiln seasoning of timber",
@@ -1596,17 +1490,11 @@
   },
   {
     "code": "9.9.2.2",
+    "desc": "30 mm thick",
     "unit": "sqm",
     "basis": 2.16,
     "say": 2753.8,
     "resources": [
-      {
-        "code": "2505",
-        "desc": "Hollock wood in planks",
-        "unit": "10 cudm",
-        "qty": 5.0,
-        "rate": 390.0
-      },
       {
         "code": "2504",
         "desc": "Kiln seasoning of timber",
@@ -1695,17 +1583,11 @@
   },
   {
     "code": "9.9.3.1",
+    "desc": "35 mm thick",
     "unit": "sqm",
     "basis": 2.16,
     "say": 3874.15,
     "resources": [
-      {
-        "code": "1200",
-        "desc": "Kiln seasoned selected sheesum wood planks",
-        "unit": "10 cudm",
-        "qty": 5.8,
-        "rate": 650.0
-      },
       {
         "code": "2504",
         "desc": "Kiln seasoning of timber",
@@ -1787,17 +1669,11 @@
   },
   {
     "code": "9.9.3.2",
+    "desc": "30 mm thick",
     "unit": "sqm",
     "basis": 2.16,
     "say": 3547.75,
     "resources": [
-      {
-        "code": "1200",
-        "desc": "Kiln seasoned selected sheesum wood planks",
-        "unit": "10 cudm",
-        "qty": 5.0,
-        "rate": 650.0
-      },
       {
         "code": "2504",
         "desc": "Kiln seasoning of timber",
@@ -1879,6 +1755,7 @@
   },
   {
     "code": "9.10.1",
+    "desc": "30 mm thick shutters",
     "unit": "sqm",
     "basis": 2.38,
     "say": 2572.5,
@@ -1922,6 +1799,7 @@
   },
   {
     "code": "9.11.1",
+    "desc": "5.0 mm thick instead of 4 mm thick.",
     "unit": "nos",
     "basis": 1.0,
     "say": 267.6,
@@ -1932,19 +1810,13 @@
         "unit": "sqm",
         "qty": 1.0,
         "rate": 500.0
-      },
-      {
-        "code": "2406",
-        "desc": "Float glass sheet of nominal thickness 4 mm (weight not less than 10kg/sqm).",
-        "unit": "sqm",
-        "qty": -1.0,
-        "rate": 300.0
       }
     ]
   },
   {
     "code": "9.12",
-    "unit": "sqm",
+    "desc": "Extra for providing frosted glass panes 4 mm thick instead of ordinary float glass panes 4 mm thick in doors, windows and clerestory window ",
+    "unit": "nos",
     "basis": 1.0,
     "say": 214.05,
     "resources": [
@@ -1954,29 +1826,16 @@
         "unit": "sqm",
         "qty": 1.0,
         "rate": 460.0
-      },
-      {
-        "code": "2406",
-        "desc": "Float glass sheet of nominal thickness 4 mm (weight not less than 10kg/sqm).",
-        "unit": "sqm",
-        "qty": -1.0,
-        "rate": 300.0
       }
     ]
   },
   {
     "code": "9.13",
-    "unit": "sqm",
+    "desc": "Deduct for providing pin headed glass panes instead of ordinary float glass panes weighing 4 mm thick in doors, windows and clerestory windo",
+    "unit": "nos",
     "basis": 1.0,
     "say": 6.7,
     "resources": [
-      {
-        "code": "2406",
-        "desc": "Float glass sheet of nominal thickness 4 mm (weight not less than 10kg/sqm).",
-        "unit": "sqm",
-        "qty": -1.0,
-        "rate": 300.0
-      },
       {
         "code": "7451",
         "desc": "Glass sheet (Pin headed) 4 mm thick",
@@ -1988,6 +1847,7 @@
   },
   {
     "code": "9.14",
+    "desc": "Extra for providing ISI marked Stainless Steel butt hinges instead of M.S. pressed butt hinges bright finished of required size with necessa",
     "unit": "sqm",
     "basis": 2.16,
     "say": 126.5,
@@ -2019,39 +1879,12 @@
         "unit": "100 Nos",
         "qty": 0.08,
         "rate": 125.0
-      },
-      {
-        "code": "0595",
-        "desc": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
-        "unit": "10 Nos",
-        "qty": -0.6,
-        "rate": 80.0
-      },
-      {
-        "code": "0597",
-        "desc": "Bright finished or black enamelled mild steel butt hinges50x37x1.50 mm Black enameled Iron",
-        "unit": "10 Nos",
-        "qty": -0.2,
-        "rate": 49.0
-      },
-      {
-        "code": "0637",
-        "desc": "Bright finished or black enamelled mild steel screws 40 mm",
-        "unit": "100 Nos",
-        "qty": -0.48,
-        "rate": 60.0
-      },
-      {
-        "code": "0640",
-        "desc": "Bright finished or black enamelled mild steel screws 20 mm",
-        "unit": "100 Nos",
-        "qty": -0.08,
-        "rate": 30.0
       }
     ]
   },
   {
     "code": "9.15.1.1",
+    "desc": "For 2nd class teak wood and other class of wood shutters",
     "unit": "sqm",
     "basis": 2.16,
     "say": 181.6,
@@ -2088,6 +1921,7 @@
   },
   {
     "code": "9.15.2.1",
+    "desc": "For 2nd class teak wood and other class of wood shutters",
     "unit": "sqm",
     "basis": 2.16,
     "say": 55.15,
@@ -2124,17 +1958,11 @@
   },
   {
     "code": "9.16.1.1",
+    "desc": "Second class teak wood including ISI marked anodised aluminium butt hinges with necessary screws",
     "unit": "sqm",
     "basis": 2.16,
     "say": 3794.85,
     "resources": [
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 4.0,
-        "rate": 791.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -2195,17 +2023,11 @@
   },
   {
     "code": "9.16.1.2",
+    "desc": "Second class teak wood including iSi marked nickel plated bright finished M.S. piano hinges with necessary screws",
     "unit": "sqm",
     "basis": 2.16,
     "say": 3937.2,
     "resources": [
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 4.0,
-        "rate": 791.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -2266,17 +2088,11 @@
   },
   {
     "code": "9.16.2.1",
+    "desc": "Second class teak wood including ISI marked anodized aluminium butt hinges with necessary screws",
     "unit": "sqm",
     "basis": 2.16,
     "say": 3646.15,
     "resources": [
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 4.3,
-        "rate": 791.0
-      },
       {
         "code": "2406",
         "desc": "Float glass sheet of nominal thickness 4 mm (weight not less than 10kg/sqm).",
@@ -2337,17 +2153,11 @@
   },
   {
     "code": "9.16.2.2",
+    "desc": "Second class teak wood including ISI marked nickel plated bright finished M.S. piano hinges with necessary screws",
     "unit": "sqm",
     "basis": 2.16,
     "say": 3684.65,
     "resources": [
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 4.3,
-        "rate": 791.0
-      },
       {
         "code": "2406",
         "desc": "Float glass sheet of nominal thickness 4 mm (weight not less than 10kg/sqm).",
@@ -2408,8 +2218,9 @@
   },
   {
     "code": "9.17.1",
-    "unit": "sqm",
-    "basis": 7.0,
+    "desc": "12 mm thick",
+    "unit": "x200cm",
+    "basis": 350.0,
     "say": 643.5,
     "resources": [
       {
@@ -2451,8 +2262,9 @@
   },
   {
     "code": "9.17.2",
-    "unit": "sqm",
-    "basis": 7.0,
+    "desc": "18 mm thick",
+    "unit": "x200cm",
+    "basis": 350.0,
     "say": 915.6,
     "resources": [
       {
@@ -2494,6 +2306,7 @@
   },
   {
     "code": "9.18.1",
+    "desc": "18 mm thick",
     "unit": "nos",
     "basis": 4.0,
     "say": 1193.2,
@@ -2537,6 +2350,7 @@
   },
   {
     "code": "9.18.2",
+    "desc": "25 mm thick",
     "unit": "nos",
     "basis": 4.0,
     "say": 1548.45,
@@ -2580,6 +2394,7 @@
   },
   {
     "code": "9.20.1",
+    "desc": "35 mm thick including ISI marked Stainless Steel butt hinges with necessary screws",
     "unit": "sqm",
     "basis": 2.2,
     "say": 3023.95,
@@ -2630,6 +2445,7 @@
   },
   {
     "code": "9.20.2",
+    "desc": "30 mm thick including ISI marked Stainless Steel butt hinges with necessary screws",
     "unit": "sqm",
     "basis": 2.2,
     "say": 2756.35,
@@ -2680,6 +2496,7 @@
   },
   {
     "code": "9.20.3",
+    "desc": "25 mm thick (for cupboard) including ISI marked nickel plated bright finished M.S. Piano hinges IS : 3818 marked with necessary screws",
     "unit": "sqm",
     "basis": 2.2,
     "say": 2464.7,
@@ -2730,6 +2547,7 @@
   },
   {
     "code": "9.21.1",
+    "desc": "35 mm thick including ISI marked Stainless Steel butt hinges with necessary screws",
     "unit": "sqm",
     "basis": 2.2,
     "say": 1886.7,
@@ -2780,6 +2598,7 @@
   },
   {
     "code": "9.21.2",
+    "desc": "30 mm thick including ISI marked Stainless Steel butt hinges with necessary screws",
     "unit": "sqm",
     "basis": 2.2,
     "say": 1819.8,
@@ -2830,6 +2649,7 @@
   },
   {
     "code": "9.21.3",
+    "desc": "25 mm thick (for cupboard) including ISI marked nickel plated bright finished M.S. piano hinges with necessary screws",
     "unit": "sqm",
     "basis": 2.2,
     "say": 1782.35,
@@ -2880,9 +2700,10 @@
   },
   {
     "code": "9.22.1",
+    "desc": "On one side only",
     "unit": "sqm",
     "basis": 1.0,
-    "say": 401.4,
+    "say": 441.5,
     "resources": [
       {
         "code": "7307",
@@ -2890,10 +2711,19 @@
         "unit": "sqm",
         "qty": 1.0,
         "rate": 330.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "9.23",
+    "desc": "Extra for providing lipping with 2nd class teak wood battens 25 mm minimum depth on all edges of flush door shutters (over all area of door ",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 401.4,
+    "resources": [
       {
-        "code": "9.23",
-        "desc": "Extra for providing lipping with 2nd class teak wood battens 25 mm minimum depth on all edges of flush door shutters (over all area of door shutter to be measured). Details of cost for 1 sqm. of door area lipping",
+        "code": "0752",
+        "desc": "Block board construction flush door sqm of lipping",
         "unit": "door area",
         "qty": 1.0,
         "rate": 300.0
@@ -2901,21 +2731,31 @@
     ]
   },
   {
-    "code": "9.24",
+    "code": "9.24.1",
+    "desc": "Rectangular or square",
     "unit": "sqm",
-    "basis": 0.1,
-    "say": 180.6,
+    "basis": 1.0,
+    "say": 173.95,
     "resources": [
       {
-        "code": "9.24.1",
-        "desc": "Rectangular or square Details of cost for 1 sqm. of door area Block board construction flush door",
+        "code": "0753",
+        "desc": "Square vision panel (upto 0.10 sqm) in sqm of Block board construction flush door",
         "unit": "door area",
         "qty": 1.0,
         "rate": 130.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "9.24.2",
+    "desc": "Circular",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 180.6,
+    "resources": [
       {
-        "code": "9.24.2",
-        "desc": "Circular Details of cost for 1 sqm. of door area Block board construction flush door",
+        "code": "0754",
+        "desc": "Circular vision panel (upto 0.10 sqm) in sqm of Block board construction flush door",
         "unit": "door area",
         "qty": 1.0,
         "rate": 135.0
@@ -2924,9 +2764,10 @@
   },
   {
     "code": "9.25.1",
+    "desc": "Decorative type door",
     "unit": "sqm",
     "basis": 1.0,
-    "say": 93.65,
+    "say": 354.55,
     "resources": [
       {
         "code": "0755",
@@ -2934,10 +2775,19 @@
         "unit": "door area",
         "qty": 1.0,
         "rate": 265.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "9.26",
+    "desc": "Extra for cutting rebate in flush door shutters (Total area of the shutter to be measured).",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 93.65,
+    "resources": [
       {
-        "code": "9.26",
-        "desc": "Extra for cutting rebate in flush door shutters (Total area of the shutter to be measured). Details of cost for 1 sqm. of door area construction flush door",
+        "code": "0757",
+        "desc": "Rebate cutting in Block board sqm of construction flush door",
         "unit": "door area",
         "qty": 1.0,
         "rate": 70.0
@@ -2946,17 +2796,11 @@
   },
   {
     "code": "9.27.1.1.1",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Second class teak wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 4221.2,
     "resources": [
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 5.14,
-        "rate": 791.0
-      },
       {
         "code": "7029",
         "desc": "Galvanised wire mesh of average width of aperture 1.4 mm and nominal dia. Of wire 0.63 mm",
@@ -3038,17 +2882,11 @@
   },
   {
     "code": "9.27.1.1.2",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Kiln seasoned and chemically treated hollock wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 2979.5,
     "resources": [
-      {
-        "code": "2505",
-        "desc": "Hollock wood in planks",
-        "unit": "10 cudm",
-        "qty": 5.14,
-        "rate": 390.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -3144,17 +2982,11 @@
   },
   {
     "code": "9.27.1.1.3",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Kiln seasoned selected class of sheesham wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 3796.15,
     "resources": [
-      {
-        "code": "1200",
-        "desc": "Kiln seasoned selected sheesum wood planks",
-        "unit": "10 cudm",
-        "qty": 5.14,
-        "rate": 650.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -3243,17 +3075,11 @@
   },
   {
     "code": "9.27.1.2.1",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Second class teak wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 4347.7,
     "resources": [
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 5.14,
-        "rate": 791.0
-      },
       {
         "code": "7029",
         "desc": "Galvanised wire mesh of average width of aperture 1.4 mm and nominal dia. Of wire 0.63 mm",
@@ -3335,17 +3161,11 @@
   },
   {
     "code": "9.27.1.2.2",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Kiln seasoned and chemically treated hollock wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 3106.0,
     "resources": [
-      {
-        "code": "2505",
-        "desc": "Hollock wood in planks",
-        "unit": "10 cudm",
-        "qty": 5.14,
-        "rate": 390.0
-      },
       {
         "code": "2504",
         "desc": "Kiln seasoning of timber",
@@ -3441,17 +3261,11 @@
   },
   {
     "code": "9.27.1.2.3",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Kiln seasoned selected class of sheesham wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 3922.65,
     "resources": [
-      {
-        "code": "1200",
-        "desc": "Kiln seasoned selected sheesum wood planks",
-        "unit": "10 cudm",
-        "qty": 5.14,
-        "rate": 650.0
-      },
       {
         "code": "2504",
         "desc": "Kiln seasoning of timber",
@@ -3540,17 +3354,11 @@
   },
   {
     "code": "9.27.2.1.1",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Second class teak wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 3750.75,
     "resources": [
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 4.4,
-        "rate": 791.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -3564,13 +3372,6 @@
         "unit": "sqm",
         "qty": 1.41,
         "rate": 250.0
-      },
-      {
-        "code": "595",
-        "desc": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
-        "unit": "10 Nos",
-        "qty": 0.6,
-        "rate": 80.0
       },
       {
         "code": "0597",
@@ -3632,17 +3433,11 @@
   },
   {
     "code": "9.27.2.1.2",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Kiln seasoned and chemically treated hollock wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 2689.6,
     "resources": [
-      {
-        "code": "2505",
-        "desc": "Hollock wood in planks",
-        "unit": "10 cudm",
-        "qty": 4.4,
-        "rate": 390.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -3738,17 +3533,11 @@
   },
   {
     "code": "9.27.2.1.3",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Kiln seasoned selected class of sheesham wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 3386.9,
     "resources": [
-      {
-        "code": "1200",
-        "desc": "Kiln seasoned selected sheesum wood planks",
-        "unit": "10 cudm",
-        "qty": 4.4,
-        "rate": 650.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -3837,17 +3626,11 @@
   },
   {
     "code": "9.27.2.2.1",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Second class teak wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 3877.25,
     "resources": [
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 4.4,
-        "rate": 791.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -3929,17 +3712,11 @@
   },
   {
     "code": "9.27.2.2.2",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Kiln seasoned and chemically treated hollock wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 2815.9,
     "resources": [
-      {
-        "code": "2505",
-        "desc": "Hollock wood in planks",
-        "unit": "10 cudm",
-        "qty": 4.4,
-        "rate": 390.0
-      },
       {
         "code": "2504",
         "desc": "Kiln seasoning of timber",
@@ -4035,17 +3812,11 @@
   },
   {
     "code": "9.27.2.2.3",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Kiln seasoned selected class of sheesham wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 3513.4,
     "resources": [
-      {
-        "code": "1200",
-        "desc": "Kiln seasoned selected sheesum wood planks",
-        "unit": "10 cudm",
-        "qty": 4.4,
-        "rate": 650.0
-      },
       {
         "code": "2504",
         "desc": "Kiln seasoning of timber",
@@ -4134,6 +3905,7 @@
   },
   {
     "code": "9.31.1",
+    "desc": "35 mm thick shutters",
     "unit": "sqm",
     "basis": 2.38,
     "say": 2636.6,
@@ -4177,6 +3949,7 @@
   },
   {
     "code": "9.31.2",
+    "desc": "30 mm thick shutters",
     "unit": "sqm",
     "basis": 2.38,
     "say": 2382.4,
@@ -4220,16 +3993,17 @@
   },
   {
     "code": "9.40.1.1",
-    "unit": "metre",
-    "basis": 5.0,
+    "desc": "50x12 mm",
+    "unit": "cum",
+    "basis": 0.003,
     "say": 184.6,
     "resources": [
       {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 0.33,
-        "rate": 791.0
+        "code": "13.50.1",
+        "desc": "Rate as per SH: 13.50.1",
+        "unit": "sqm",
+        "qty": 0.37,
+        "rate": 57.05
       },
       {
         "code": "2204",
@@ -4244,13 +4018,6 @@
         "unit": "100 Nos",
         "qty": 0.36,
         "rate": 60.0
-      },
-      {
-        "code": "13.50.1",
-        "desc": "Rate as per item no 13.50.1 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 0.37,
-        "rate": 57.05
       },
       {
         "code": "0111",
@@ -4263,16 +4030,17 @@
   },
   {
     "code": "9.40.1.2",
-    "unit": "metre",
-    "basis": 5.0,
+    "desc": "50 x 20 mm",
+    "unit": "cum",
+    "basis": 0.005,
     "say": 232.15,
     "resources": [
       {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 0.55,
-        "rate": 791.0
+        "code": "13.50.1",
+        "desc": "Rate as per SH: 13.50.1",
+        "unit": "sqm",
+        "qty": 0.45,
+        "rate": 57.05
       },
       {
         "code": "2204",
@@ -4289,13 +4057,6 @@
         "rate": 60.0
       },
       {
-        "code": "13.50.1",
-        "desc": "Rate as per item no 13.50.1 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 0.45,
-        "rate": 57.05
-      },
-      {
         "code": "0111",
         "desc": "Carpenter 1st class",
         "unit": "day",
@@ -4306,16 +4067,17 @@
   },
   {
     "code": "9.40.2.1",
-    "unit": "metre",
-    "basis": 5.0,
+    "desc": "50x12 mm",
+    "unit": "cum",
+    "basis": 0.003,
     "say": 149.2,
     "resources": [
       {
-        "code": "2505",
-        "desc": "Hollock wood in planks",
-        "unit": "10 cudm",
-        "qty": 0.33,
-        "rate": 390.0
+        "code": "13.50.1",
+        "desc": "Rate as per SH: 13.50.1",
+        "unit": "sqm",
+        "qty": 0.37,
+        "rate": 57.05
       },
       {
         "code": "2204",
@@ -4332,13 +4094,6 @@
         "rate": 60.0
       },
       {
-        "code": "13.50.1",
-        "desc": "Rate as per item no 13.50.1 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 0.37,
-        "rate": 57.05
-      },
-      {
         "code": "0111",
         "desc": "Carpenter 1st class",
         "unit": "day",
@@ -4349,16 +4104,17 @@
   },
   {
     "code": "9.40.2.2",
-    "unit": "metre",
-    "basis": 5.0,
+    "desc": "50x20 mm",
+    "unit": "cum",
+    "basis": 0.005,
     "say": 173.15,
     "resources": [
       {
-        "code": "2505",
-        "desc": "Hollock wood in planks",
-        "unit": "10 cudm",
-        "qty": 0.55,
-        "rate": 390.0
+        "code": "13.50.1",
+        "desc": "Rate as per SH: 13.50.1",
+        "unit": "sqm",
+        "qty": 0.45,
+        "rate": 57.05
       },
       {
         "code": "2204",
@@ -4375,13 +4131,6 @@
         "rate": 60.0
       },
       {
-        "code": "13.50.1",
-        "desc": "Rate as per item no 13.50.1 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 0.45,
-        "rate": 57.05
-      },
-      {
         "code": "0111",
         "desc": "Carpenter 1st class",
         "unit": "day",
@@ -4392,17 +4141,11 @@
   },
   {
     "code": "9.41.1",
+    "desc": "Second class teak wood",
     "unit": "sqm",
     "basis": 2.2,
     "say": 2546.9,
     "resources": [
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 3.2,
-        "rate": 791.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -4449,8 +4192,9 @@
   },
   {
     "code": "9.42",
-    "unit": "m",
-    "basis": 2.0,
+    "desc": "Providing and fixing 18 mm thick, 150 mm wide pelmet of flat pressed 3 layer or graded wood particle board medium density grade I, IS : 3087",
+    "unit": "sqm",
+    "basis": 0.255,
     "say": 505.95,
     "resources": [
       {
@@ -4496,13 +4240,6 @@
         "rate": 2.0
       },
       {
-        "code": "2505",
-        "desc": "Hollock wood in planks",
-        "unit": "10 cudm",
-        "qty": 0.032,
-        "rate": 390.0
-      },
-      {
         "code": "7048",
         "desc": "Rawl plug 50 mm (designation 10 no.)",
         "unit": "each",
@@ -4541,8 +4278,9 @@
   },
   {
     "code": "9.43",
-    "unit": "m",
-    "basis": 2.0,
+    "desc": "Providing and fixing 18 mm thick, 150 mm wide pelmet of coir veneer board ISI marked IS : 14842, including top cover of 6 mm coir veneer boa",
+    "unit": "sqm",
+    "basis": 0.255,
     "say": 632.65,
     "resources": [
       {
@@ -4588,13 +4326,6 @@
         "rate": 2.0
       },
       {
-        "code": "2505",
-        "desc": "Hollock wood in planks",
-        "unit": "10 cudm",
-        "qty": 0.032,
-        "rate": 390.0
-      },
-      {
         "code": "7048",
         "desc": "Rawl plug 50 mm (designation 10 no.)",
         "unit": "each",
@@ -4633,8 +4364,9 @@
   },
   {
     "code": "9.44.1",
-    "unit": "m",
-    "basis": 2.0,
+    "desc": "Non decorative veneer on both sides",
+    "unit": "sqm",
+    "basis": 0.255,
     "say": 33.2,
     "resources": [
       {
@@ -4648,8 +4380,9 @@
   },
   {
     "code": "9.44.2",
-    "unit": "m",
-    "basis": 2.0,
+    "desc": "Particle board with decorative veneering on both sides",
+    "unit": "sqm",
+    "basis": 0.255,
     "say": 107.05,
     "resources": [
       {
@@ -4663,6 +4396,7 @@
   },
   {
     "code": "9.45",
+    "desc": "Providing and fixing teak wood lipping of size 25x3 mm in pelmet.",
     "unit": "metre",
     "basis": 10.0,
     "say": 60.1,
@@ -4692,6 +4426,7 @@
   },
   {
     "code": "9.46.1",
+    "desc": "12 mm dia",
     "unit": "m",
     "basis": 2.0,
     "say": 272.8,
@@ -4749,6 +4484,7 @@
   },
   {
     "code": "9.46.2",
+    "desc": "20 mm dia",
     "unit": "m",
     "basis": 2.0,
     "say": 373.15,
@@ -4806,6 +4542,7 @@
   },
   {
     "code": "9.46.3",
+    "desc": "25 mm dia",
     "unit": "m",
     "basis": 2.0,
     "say": 480.15,
@@ -4863,6 +4600,7 @@
   },
   {
     "code": "9.47.1",
+    "desc": "20 mm dia (heavy type)",
     "unit": "m",
     "basis": 2.0,
     "say": 155.65,
@@ -4920,6 +4658,7 @@
   },
   {
     "code": "9.47.2",
+    "desc": "25 mm dia (heavy type)",
     "unit": "m",
     "basis": 2.0,
     "say": 162.35,
@@ -4977,10 +4716,18 @@
   },
   {
     "code": "9.48.1",
+    "desc": "Fixed to steel windows by welding",
     "unit": "kg",
     "basis": 18.54,
     "say": 165.3,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 1.08,
+        "rate": 50.7
+      },
       {
         "code": "1003",
         "desc": "Mild steel round bar above 12 mm dia",
@@ -5015,13 +4762,6 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "13.50.3",
-        "desc": "Rate as per Item No.13.50.3 of SH: Finishing",
-        "unit": "sqm",
-        "qty": 1.08,
-        "rate": 50.7
       },
       {
         "code": "0102",
@@ -5041,10 +4781,18 @@
   },
   {
     "code": "9.48.2",
+    "desc": "Fixed to openings /wooden frames with rawl plugs screws etc.",
     "unit": "kg",
     "basis": 18.54,
     "say": 183.5,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 1.08,
+        "rate": 50.7
+      },
       {
         "code": "1003",
         "desc": "Mild steel round bar above 12 mm dia",
@@ -5079,13 +4827,6 @@
         "unit": "L.S.",
         "qty": 19.76,
         "rate": 2.0
-      },
-      {
-        "code": "13.50.3",
-        "desc": "Rate as per Item No.13.50.3 of SH: Finishing",
-        "unit": "sqm",
-        "qty": 1.08,
-        "rate": 50.7
       },
       {
         "code": "0102",
@@ -5119,10 +4860,18 @@
   },
   {
     "code": "9.49",
+    "desc": "Providing and fixing expanded metal 20x60 mm strands 3.25 mm wide and 1.6mm thick for windows etc. including 62 x19 mm beading of II nd clas",
     "unit": "sqm",
     "basis": 1.54,
     "say": 1240.55,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 1.54,
+        "rate": 50.7
+      },
       {
         "code": "1015",
         "desc": "Mild steel expanded metal 20x60 mm strands",
@@ -5136,20 +4885,6 @@
         "unit": "L.S.",
         "qty": 1.82,
         "rate": 2.0
-      },
-      {
-        "code": "13.50.3",
-        "desc": "Rate as per Item No.13.50.3 of SH: FINISHING",
-        "unit": "sqm",
-        "qty": 1.54,
-        "rate": 50.7
-      },
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 0.6,
-        "rate": 791.0
       },
       {
         "code": "2204",
@@ -5183,10 +4918,18 @@
   },
   {
     "code": "9.50",
-    "unit": "kg",
-    "basis": 7.75,
+    "desc": "Providing and fixing hard drawn steel wire fabric 75x25 mm mesh of weight not less than 7.75 Kg per sqm to window frames etc. including 62x1",
+    "unit": "sqm",
+    "basis": 1.54,
     "say": 1448.35,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 1.54,
+        "rate": 50.7
+      },
       {
         "code": "1021",
         "desc": "Hard drawn steel wire fabric",
@@ -5200,20 +4943,6 @@
         "unit": "L.S.",
         "qty": 1.82,
         "rate": 2.0
-      },
-      {
-        "code": "13.50.3",
-        "desc": "Rate as per Item No.13.50.3 of SH: FINISHING",
-        "unit": "sqm",
-        "qty": 1.54,
-        "rate": 50.7
-      },
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 0.6,
-        "rate": 791.0
       },
       {
         "code": "2204",
@@ -5247,6 +4976,7 @@
   },
   {
     "code": "9.51.1",
+    "desc": "With 2nd class teak wood beading 62X19 mm",
     "unit": "sqm",
     "basis": 1.54,
     "say": 1133.35,
@@ -5264,13 +4994,6 @@
         "unit": "L.S.",
         "qty": 1.82,
         "rate": 2.0
-      },
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 0.6,
-        "rate": 791.0
       },
       {
         "code": "2204",
@@ -5304,6 +5027,7 @@
   },
   {
     "code": "9.51.2",
+    "desc": "With 12 mm mild steel U beading",
     "unit": "sqm",
     "basis": 1.54,
     "say": 781.25,
@@ -5354,8 +5078,9 @@
   },
   {
     "code": "9.52",
-    "unit": "kg",
-    "basis": 7.75,
+    "desc": "Deduct for fixing 75x25 mm hard drawn steel wire fabric of weight not less than 7.75 Kg per sqm in panelled and glazed door and window shutt",
+    "unit": "sqm",
+    "basis": 1.0,
     "say": 173.95,
     "resources": [
       {
@@ -5364,22 +5089,23 @@
         "unit": "sqm",
         "qty": 1.0,
         "rate": 430.0
-      },
-      {
-        "code": "2406",
-        "desc": "Float glass sheet of nominal thickness 4 mm (weight not less than 10kg/sqm).",
-        "unit": "sqm",
-        "qty": -1.0,
-        "rate": 300.0
       }
     ]
   },
   {
     "code": "9.53",
-    "unit": "kg",
-    "basis": 1.68,
+    "desc": "Providing 40x5 mm flat iron hold fast 40 cm long including fixing to frame with 10 mm diameter bolts, nuts and wooden plugs and embedding in",
+    "unit": "hold",
+    "basis": 1.0,
     "say": 179.2,
     "resources": [
+      {
+        "code": "4.2.5",
+        "desc": "Rate as per SH: 4.2.5",
+        "unit": "cum",
+        "qty": 0.005,
+        "rate": 8025.0
+      },
       {
         "code": "1008",
         "desc": "Flats upto 10 mm in thickness",
@@ -5393,13 +5119,6 @@
         "unit": "L.S.",
         "qty": 1.82,
         "rate": 2.0
-      },
-      {
-        "code": "4.2.5",
-        "desc": "Rate as per item no 4.2.5 of SH : Concrete work",
-        "unit": "cum",
-        "qty": 0.005,
-        "rate": 8025.0
       },
       {
         "code": "9999",
@@ -5433,16 +5152,17 @@
   },
   {
     "code": "9.54.1",
+    "desc": "Sal wood",
     "unit": "cum",
     "basis": 0.203,
     "say": 93844.4,
     "resources": [
       {
-        "code": "1199",
-        "desc": "Sal wood in scantling",
-        "unit": "10 cudm",
-        "qty": 20.71,
-        "rate": 600.0
+        "code": "13.57.1",
+        "desc": "Rate as per SH: 13.57.1",
+        "unit": "sqm",
+        "qty": 0.54,
+        "rate": 44.5
       },
       {
         "code": "2204",
@@ -5450,13 +5170,6 @@
         "unit": "cum",
         "qty": 0.2071,
         "rate": 118.59
-      },
-      {
-        "code": "13.57.1",
-        "desc": "Rate as per item no 13.57.1 SH : Finishing",
-        "unit": "sqm",
-        "qty": 0.54,
-        "rate": 44.5
       },
       {
         "code": "0112",
@@ -5490,16 +5203,17 @@
   },
   {
     "code": "9.54.2",
+    "desc": "Hollock wood",
     "unit": "cum",
     "basis": 0.203,
     "say": 59720.35,
     "resources": [
       {
-        "code": "2466",
-        "desc": "Hollock wood in scantling",
-        "unit": "10 cudm",
-        "qty": 20.71,
-        "rate": 350.0
+        "code": "13.57.1",
+        "desc": "Rate as per SH: 13.57.1",
+        "unit": "sqm",
+        "qty": 0.54,
+        "rate": 44.5
       },
       {
         "code": "2204",
@@ -5507,13 +5221,6 @@
         "unit": "cum",
         "qty": 0.207,
         "rate": 118.59
-      },
-      {
-        "code": "13.57.1",
-        "desc": "Rate as per item no 13.57.1 SH : Finishing",
-        "unit": "sqm",
-        "qty": 0.54,
-        "rate": 44.5
       },
       {
         "code": "0112",
@@ -5547,6 +5254,7 @@
   },
   {
     "code": "9.55.1",
+    "desc": "125x65x2.12 mm",
     "unit": "nos",
     "basis": 1.0,
     "say": 46.25,
@@ -5590,6 +5298,7 @@
   },
   {
     "code": "9.55.2",
+    "desc": "100x58x1.90 mm",
     "unit": "nos",
     "basis": 1.0,
     "say": 37.3,
@@ -5633,6 +5342,7 @@
   },
   {
     "code": "9.55.3",
+    "desc": "75x47x1.70 mm",
     "unit": "nos",
     "basis": 1.0,
     "say": 31.05,
@@ -5676,6 +5386,7 @@
   },
   {
     "code": "9.55.4",
+    "desc": "50x37x1.50 mm",
     "unit": "nos",
     "basis": 1.0,
     "say": 15.65,
@@ -5712,6 +5423,7 @@
   },
   {
     "code": "9.56.1",
+    "desc": "125x90x4.00 mm",
     "unit": "nos",
     "basis": 1.0,
     "say": 56.3,
@@ -5755,6 +5467,7 @@
   },
   {
     "code": "9.56.2",
+    "desc": "100x75x3.50 mm",
     "unit": "nos",
     "basis": 1.0,
     "say": 48.0,
@@ -5798,6 +5511,7 @@
   },
   {
     "code": "9.56.3",
+    "desc": "75x60x3.10 mm",
     "unit": "nos",
     "basis": 1.0,
     "say": 36.25,
@@ -5841,6 +5555,7 @@
   },
   {
     "code": "9.56.4",
+    "desc": "50x40x2.50 mm",
     "unit": "nos",
     "basis": 1.0,
     "say": 19.8,
@@ -5877,6 +5592,7 @@
   },
   {
     "code": "9.57.1",
+    "desc": "125x65x2.12 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 45.95,
@@ -5920,6 +5636,7 @@
   },
   {
     "code": "9.57.2",
+    "desc": "100x58x1.90 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 38.2,
@@ -5963,6 +5680,7 @@
   },
   {
     "code": "9.57.3",
+    "desc": "75x47x1.70 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 32.3,
@@ -6006,6 +5724,7 @@
   },
   {
     "code": "9.57.4",
+    "desc": "50x37x1.50 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 16.3,
@@ -6042,6 +5761,7 @@
   },
   {
     "code": "9.58.1",
+    "desc": "150x125x27x2.80 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 75.2,
@@ -6085,6 +5805,7 @@
   },
   {
     "code": "9.58.2",
+    "desc": "125x125x27x2.80 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 71.9,
@@ -6128,6 +5849,7 @@
   },
   {
     "code": "9.58.3",
+    "desc": "100x125x27x2.80 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 61.45,
@@ -6171,6 +5893,7 @@
   },
   {
     "code": "9.58.4",
+    "desc": "75x100x20x2.24 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 54.05,
@@ -6214,6 +5937,7 @@
   },
   {
     "code": "9.59.1",
+    "desc": "150 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 244.75,
@@ -6257,6 +5981,7 @@
   },
   {
     "code": "9.59.2",
+    "desc": "125 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 218.0,
@@ -6300,6 +6025,7 @@
   },
   {
     "code": "9.59.3",
+    "desc": "100 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 189.75,
@@ -6343,6 +6069,7 @@
   },
   {
     "code": "9.60.1",
+    "desc": "150 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 270.2,
@@ -6386,6 +6113,7 @@
   },
   {
     "code": "9.60.2",
+    "desc": "125 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 235.65,
@@ -6429,6 +6157,7 @@
   },
   {
     "code": "9.60.3",
+    "desc": "100 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 216.5,
@@ -6472,7 +6201,8 @@
   },
   {
     "code": "9.61.1",
-    "unit": "nos",
+    "desc": "Overall width 35 mm",
+    "unit": "meter",
     "basis": 1.0,
     "say": 270.95,
     "resources": [
@@ -6515,7 +6245,8 @@
   },
   {
     "code": "9.61.2",
-    "unit": "nos",
+    "desc": "Overall width 50 mm",
+    "unit": "meter",
     "basis": 1.0,
     "say": 265.6,
     "resources": [
@@ -6558,7 +6289,8 @@
   },
   {
     "code": "9.61.3",
-    "unit": "nos",
+    "desc": "Overall width 65 mm",
+    "unit": "meter",
     "basis": 1.0,
     "say": 281.65,
     "resources": [
@@ -6601,6 +6333,7 @@
   },
   {
     "code": "9.62.1",
+    "desc": "300x16 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 183.3,
@@ -6644,6 +6377,7 @@
   },
   {
     "code": "9.62.2",
+    "desc": "250x16 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 170.0,
@@ -6687,6 +6421,7 @@
   },
   {
     "code": "9.63.1",
+    "desc": "250x10 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 74.15,
@@ -6723,6 +6458,7 @@
   },
   {
     "code": "9.63.2",
+    "desc": "200x10 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 60.55,
@@ -6759,6 +6495,7 @@
   },
   {
     "code": "9.63.3",
+    "desc": "150x10 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 52.55,
@@ -6795,6 +6532,7 @@
   },
   {
     "code": "9.63.4",
+    "desc": "100x10 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 38.7,
@@ -6831,6 +6569,7 @@
   },
   {
     "code": "9.64",
+    "desc": "Providing and fixing ISI marked 85x42 mm oxidised M.S. pull bolt lock conforming to IS : 7534 with necessary screws bolts, nut and washers e",
     "unit": "nos",
     "basis": 10.0,
     "say": 104.7,
@@ -6860,6 +6599,7 @@
   },
   {
     "code": "9.65.1",
+    "desc": "300x20x6 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 81.75,
@@ -6896,6 +6636,7 @@
   },
   {
     "code": "9.65.2",
+    "desc": "250x20x6 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 68.4,
@@ -6932,6 +6673,7 @@
   },
   {
     "code": "9.66.1",
+    "desc": "125 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 34.85,
@@ -6968,6 +6710,7 @@
   },
   {
     "code": "9.66.2",
+    "desc": "100 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 27.95,
@@ -7004,6 +6747,7 @@
   },
   {
     "code": "9.66.3",
+    "desc": "75 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 23.9,
@@ -7040,6 +6784,7 @@
   },
   {
     "code": "9.67.1",
+    "desc": "150 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 28.75,
@@ -7076,6 +6821,7 @@
   },
   {
     "code": "9.67.2",
+    "desc": "115 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 25.6,
@@ -7112,6 +6858,7 @@
   },
   {
     "code": "9.67.3",
+    "desc": "90 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 21.7,
@@ -7148,6 +6895,7 @@
   },
   {
     "code": "9.68.1",
+    "desc": "300 mm weighing not less than 200 gms",
     "unit": "nos",
     "basis": 10.0,
     "say": 58.8,
@@ -7184,6 +6932,7 @@
   },
   {
     "code": "9.68.2",
+    "desc": "250 mm weighing not less than 150 gms",
     "unit": "nos",
     "basis": 10.0,
     "say": 51.4,
@@ -7220,6 +6969,7 @@
   },
   {
     "code": "9.68.3",
+    "desc": "200 mm weighing not less than 120 gms",
     "unit": "nos",
     "basis": 10.0,
     "say": 44.7,
@@ -7256,6 +7006,7 @@
   },
   {
     "code": "9.69",
+    "desc": "Providing and fixing oxidised M.S. Safety chain with necessary fixtures for doors, (weighting not less than 450 gms)",
     "unit": "nos",
     "basis": 10.0,
     "say": 88.5,
@@ -7292,6 +7043,7 @@
   },
   {
     "code": "9.70.1",
+    "desc": "125x64x1.90 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 84.5,
@@ -7335,6 +7087,7 @@
   },
   {
     "code": "9.70.2",
+    "desc": "100X58X1.90 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 74.6,
@@ -7378,6 +7131,7 @@
   },
   {
     "code": "9.70.3",
+    "desc": "75x47x1.80 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 56.6,
@@ -7421,6 +7175,7 @@
   },
   {
     "code": "9.70.4",
+    "desc": "50x37x1.50 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 32.25,
@@ -7457,6 +7212,7 @@
   },
   {
     "code": "9.71.1",
+    "desc": "125x64x2.50 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 95.9,
@@ -7500,6 +7256,7 @@
   },
   {
     "code": "9.71.2",
+    "desc": "100x60x2.50 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 77.3,
@@ -7543,6 +7300,7 @@
   },
   {
     "code": "9.71.3",
+    "desc": "75x50x2.50 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 62.6,
@@ -7586,6 +7344,7 @@
   },
   {
     "code": "9.72.1",
+    "desc": "125x85x5.5 mm (heavy type)",
     "unit": "nos",
     "basis": 10.0,
     "say": 226.85,
@@ -7629,6 +7388,7 @@
   },
   {
     "code": "9.72.2",
+    "desc": "125x70x4 mm (ordinary type)",
     "unit": "nos",
     "basis": 10.0,
     "say": 155.4,
@@ -7672,6 +7432,7 @@
   },
   {
     "code": "9.72.3",
+    "desc": "100x85x5.5 mm (heavy type)",
     "unit": "nos",
     "basis": 10.0,
     "say": 173.6,
@@ -7715,6 +7476,7 @@
   },
   {
     "code": "9.72.4",
+    "desc": "100x70x4 mm (ordinary type)",
     "unit": "nos",
     "basis": 10.0,
     "say": 123.85,
@@ -7758,6 +7520,7 @@
   },
   {
     "code": "9.72.5",
+    "desc": "75x65x4 mm (heavy type)",
     "unit": "nos",
     "basis": 10.0,
     "say": 145.4,
@@ -7801,6 +7564,7 @@
   },
   {
     "code": "9.72.6",
+    "desc": "75x40x2.5 mm (ordinary type)",
     "unit": "nos",
     "basis": 10.0,
     "say": 84.1,
@@ -7844,6 +7608,7 @@
   },
   {
     "code": "9.72.7",
+    "desc": "50x40x2.5 mm (ordinary type)",
     "unit": "nos",
     "basis": 10.0,
     "say": 34.2,
@@ -7880,6 +7645,7 @@
   },
   {
     "code": "9.73.1",
+    "desc": "150x125x27x5 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 392.4,
@@ -7923,6 +7689,7 @@
   },
   {
     "code": "9.73.2",
+    "desc": "125x125x27x5 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 350.95,
@@ -7966,6 +7733,7 @@
   },
   {
     "code": "9.73.3",
+    "desc": "100x125x27x5 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 322.85,
@@ -8009,6 +7777,7 @@
   },
   {
     "code": "9.73.4",
+    "desc": "75x100x20x3.2 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 286.45,
@@ -8052,6 +7821,7 @@
   },
   {
     "code": "9.74.1",
+    "desc": "250x10 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 373.65,
@@ -8088,6 +7858,7 @@
   },
   {
     "code": "9.74.2",
+    "desc": "200x10 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 299.85,
@@ -8124,6 +7895,7 @@
   },
   {
     "code": "9.74.3",
+    "desc": "150x10 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 231.65,
@@ -8160,6 +7932,7 @@
   },
   {
     "code": "9.74.4",
+    "desc": "100x10 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 159.65,
@@ -8196,6 +7969,7 @@
   },
   {
     "code": "9.75.1",
+    "desc": "300x16x5 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 272.4,
@@ -8232,6 +8006,7 @@
   },
   {
     "code": "9.75.2",
+    "desc": "250x16x5 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 259.0,
@@ -8268,6 +8043,7 @@
   },
   {
     "code": "9.76",
+    "desc": "Providing and fixing bright finished brass 100 mm mortice latch and lock with 6 levers and a pair of lever handles of approved quality with ",
     "unit": "nos",
     "basis": 1.0,
     "say": 712.75,
@@ -8297,6 +8073,7 @@
   },
   {
     "code": "9.77",
+    "desc": "Providing and fixing bright finished brass 100 mm mortice latch with one dead bolt and a pair of lever handles of approved quality with nece",
     "unit": "nos",
     "basis": 1.0,
     "say": 592.35,
@@ -8326,6 +8103,7 @@
   },
   {
     "code": "9.78",
+    "desc": "Providing and fixing bright finished brass night latch of approved quality including necessary screws etc. complete.",
     "unit": "nos",
     "basis": 1.0,
     "say": 993.75,
@@ -8355,6 +8133,7 @@
   },
   {
     "code": "9.79.1",
+    "desc": "40 mm",
     "unit": "nos",
     "basis": 1.0,
     "say": 251.2,
@@ -8384,6 +8163,7 @@
   },
   {
     "code": "9.79.2",
+    "desc": "50 mm",
     "unit": "nos",
     "basis": 1.0,
     "say": 291.3,
@@ -8413,6 +8193,7 @@
   },
   {
     "code": "9.79.3",
+    "desc": "65 mm",
     "unit": "nos",
     "basis": 1.0,
     "say": 298.0,
@@ -8442,6 +8223,7 @@
   },
   {
     "code": "9.79.4",
+    "desc": "75 mm",
     "unit": "nos",
     "basis": 1.0,
     "say": 318.1,
@@ -8471,6 +8253,7 @@
   },
   {
     "code": "9.80",
+    "desc": "Providing and fixing 50 mm bright finished brass cup board or wardrobe knob of approved quality with necessary screws.",
     "unit": "nos",
     "basis": 10.0,
     "say": 62.7,
@@ -8500,6 +8283,7 @@
   },
   {
     "code": "9.81.1",
+    "desc": "125 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 204.65,
@@ -8536,6 +8320,7 @@
   },
   {
     "code": "9.81.2",
+    "desc": "100 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 189.45,
@@ -8572,6 +8357,7 @@
   },
   {
     "code": "9.81.3",
+    "desc": "75 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 149.35,
@@ -8608,8 +8394,9 @@
   },
   {
     "code": "9.82",
-    "unit": "nos",
-    "basis": 1.0,
+    "desc": "Providing and fixing bright finished brass hanging type floor door stopper with necessary screws, etc. complete.",
+    "unit": "hanging",
+    "basis": 10.0,
     "say": 106.7,
     "resources": [
       {
@@ -8644,8 +8431,9 @@
   },
   {
     "code": "9.83",
-    "unit": "kg",
-    "basis": 35.0,
+    "desc": "Providing and fixing aluminium die cast body tubular type universal hydraulic door closer (having brand logo with ISI, IS : 3564, embossed o",
+    "unit": "nos",
+    "basis": 10.0,
     "say": 1003.5,
     "resources": [
       {
@@ -8680,8 +8468,9 @@
   },
   {
     "code": "9.84",
-    "unit": "kg",
-    "basis": 36.0,
+    "desc": "Providing and fixing aluminium extruded section body tubular type universal hydraulic door closer (having brand logo with ISi, IS : 3564, em",
+    "unit": "nos",
+    "basis": 10.0,
     "say": 851.6,
     "resources": [
       {
@@ -8716,6 +8505,7 @@
   },
   {
     "code": "9.85",
+    "desc": "Providing and fixing bright finished brass casement window fastener with necessary screws etc. complete.",
     "unit": "nos",
     "basis": 10.0,
     "say": 75.7,
@@ -8752,6 +8542,7 @@
   },
   {
     "code": "9.86.1",
+    "desc": "300 mm weighing not less than 330 gms",
     "unit": "nos",
     "basis": 10.0,
     "say": 186.2,
@@ -8788,6 +8579,7 @@
   },
   {
     "code": "9.86.2",
+    "desc": "250 mm weighing not less than 280 gms",
     "unit": "nos",
     "basis": 10.0,
     "say": 149.25,
@@ -8824,6 +8616,7 @@
   },
   {
     "code": "9.86.3",
+    "desc": "200 mm weighing not less than 240 gms",
     "unit": "nos",
     "basis": 10.0,
     "say": 142.55,
@@ -8860,6 +8653,7 @@
   },
   {
     "code": "9.87.1",
+    "desc": "150 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 118.1,
@@ -8896,6 +8690,7 @@
   },
   {
     "code": "9.87.2",
+    "desc": "115 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 106.95,
@@ -8932,6 +8727,7 @@
   },
   {
     "code": "9.87.3",
+    "desc": "90 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 94.2,
@@ -8968,6 +8764,7 @@
   },
   {
     "code": "9.88",
+    "desc": "Providing and fixing chromium plated brass 100 mm mortice latch and lock with 6 levers and a pair of lever handles of approved quality with ",
     "unit": "nos",
     "basis": 1.0,
     "say": 806.45,
@@ -8997,6 +8794,7 @@
   },
   {
     "code": "9.89",
+    "desc": "Providing and fixing chromium plated brass night latch of approved quality including necessary screws etc. complete.",
     "unit": "nos",
     "basis": 1.0,
     "say": 846.55,
@@ -9026,6 +8824,7 @@
   },
   {
     "code": "9.90.1",
+    "desc": "Size 40 mm",
     "unit": "nos",
     "basis": 1.0,
     "say": 257.85,
@@ -9055,6 +8854,7 @@
   },
   {
     "code": "9.90.2",
+    "desc": "Size 50 mm",
     "unit": "nos",
     "basis": 1.0,
     "say": 271.25,
@@ -9084,6 +8884,7 @@
   },
   {
     "code": "9.90.3",
+    "desc": "Size 65 mm",
     "unit": "nos",
     "basis": 1.0,
     "say": 304.7,
@@ -9113,6 +8914,7 @@
   },
   {
     "code": "9.90.4",
+    "desc": "Size 75 mm",
     "unit": "nos",
     "basis": 1.0,
     "say": 338.15,
@@ -9142,6 +8944,7 @@
   },
   {
     "code": "9.91",
+    "desc": "Providing and fixing chromium plated brass 50 mm cupboard or wardrobe knobs with nuts complete.",
     "unit": "nos",
     "basis": 10.0,
     "say": 121.6,
@@ -9171,6 +8974,7 @@
   },
   {
     "code": "9.92.1",
+    "desc": "125 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 226.1,
@@ -9207,6 +9011,7 @@
   },
   {
     "code": "9.92.2",
+    "desc": "100 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 198.85,
@@ -9243,6 +9048,7 @@
   },
   {
     "code": "9.92.3",
+    "desc": "75 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 178.75,
@@ -9279,6 +9085,7 @@
   },
   {
     "code": "9.93",
+    "desc": "Providing and fixing chromium plated brass casement window fastener with necessary screws etc. complete.",
     "unit": "nos",
     "basis": 10.0,
     "say": 140.15,
@@ -9315,6 +9122,7 @@
   },
   {
     "code": "9.94.1",
+    "desc": "300 mm weighing not less than 330 gms",
     "unit": "nos",
     "basis": 10.0,
     "say": 207.05,
@@ -9351,6 +9159,7 @@
   },
   {
     "code": "9.94.2",
+    "desc": "250 mm weighing not less than 280 gms",
     "unit": "nos",
     "basis": 10.0,
     "say": 180.3,
@@ -9387,6 +9196,7 @@
   },
   {
     "code": "9.94.3",
+    "desc": "200 mm weighing not less than 240 gms",
     "unit": "nos",
     "basis": 10.0,
     "say": 153.55,
@@ -9423,6 +9233,7 @@
   },
   {
     "code": "9.95.1",
+    "desc": "125x75x4 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 136.6,
@@ -9466,6 +9277,7 @@
   },
   {
     "code": "9.95.2",
+    "desc": "125x63x4 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 114.25,
@@ -9509,6 +9321,7 @@
   },
   {
     "code": "9.95.3",
+    "desc": "100x75x4 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 104.9,
@@ -9552,6 +9365,7 @@
   },
   {
     "code": "9.95.4",
+    "desc": "100x63x4 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 95.65,
@@ -9595,6 +9409,7 @@
   },
   {
     "code": "9.95.5",
+    "desc": "100x63x3.2 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 88.45,
@@ -9638,6 +9453,7 @@
   },
   {
     "code": "9.95.6",
+    "desc": "75x63x4 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 77.1,
@@ -9681,6 +9497,7 @@
   },
   {
     "code": "9.95.7",
+    "desc": "75x63x3.2 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 70.55,
@@ -9724,6 +9541,7 @@
   },
   {
     "code": "9.95.8",
+    "desc": "75x45x3.2 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 66.5,
@@ -9767,6 +9585,7 @@
   },
   {
     "code": "9.96.1",
+    "desc": "300x16 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 257.15,
@@ -9803,6 +9622,7 @@
   },
   {
     "code": "9.96.2",
+    "desc": "250x16 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 231.7,
@@ -9839,6 +9659,7 @@
   },
   {
     "code": "9.97.1",
+    "desc": "300x10 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 116.8,
@@ -9875,6 +9696,7 @@
   },
   {
     "code": "9.97.2",
+    "desc": "250x10 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 103.55,
@@ -9911,6 +9733,7 @@
   },
   {
     "code": "9.97.3",
+    "desc": "200x10 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 90.0,
@@ -9947,6 +9770,7 @@
   },
   {
     "code": "9.97.4",
+    "desc": "150x10 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 75.0,
@@ -9983,6 +9807,7 @@
   },
   {
     "code": "9.97.5",
+    "desc": "100x10 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 58.15,
@@ -10019,8 +9844,9 @@
   },
   {
     "code": "9.98",
-    "unit": "nos",
-    "basis": 1.0,
+    "desc": "Providing and fixing aluminium pull bolt lock, ISI marked, anodised (anodic coating not less than grade AC 10 as per IS : 1868) transparent ",
+    "unit": "pull",
+    "basis": 10.0,
     "say": 85.95,
     "resources": [
       {
@@ -10048,6 +9874,7 @@
   },
   {
     "code": "9.99",
+    "desc": "Providing and fixing 50 cm long aluminium kicking plate of size 100x3.15 mm, anodised (anodic coating not less than grade AC 10 as per IS : ",
     "unit": "nos",
     "basis": 10.0,
     "say": 211.75,
@@ -10091,6 +9918,7 @@
   },
   {
     "code": "9.100.1",
+    "desc": "125 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 59.65,
@@ -10127,6 +9955,7 @@
   },
   {
     "code": "9.100.2",
+    "desc": "100 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 52.85,
@@ -10163,6 +9992,7 @@
   },
   {
     "code": "9.100.3",
+    "desc": "75 mm",
     "unit": "nos",
     "basis": 10.0,
     "say": 45.9,
@@ -10199,6 +10029,7 @@
   },
   {
     "code": "9.101.1",
+    "desc": "Single rubber stopper",
     "unit": "nos",
     "basis": 10.0,
     "say": 33.95,
@@ -10235,6 +10066,7 @@
   },
   {
     "code": "9.101.2",
+    "desc": "Twin rubber stopper",
     "unit": "nos",
     "basis": 10.0,
     "say": 62.05,
@@ -10271,6 +10103,7 @@
   },
   {
     "code": "9.102",
+    "desc": "Providing and fixing aluminium casement stays, ISI marked, anodised (anodic coating not less than grade AC 10 as per IS : 1868) transparent ",
     "unit": "nos",
     "basis": 10.0,
     "say": 62.55,
@@ -10307,7 +10140,8 @@
   },
   {
     "code": "9.103",
-    "unit": "nos",
+    "desc": "Providing and fixing bright finished brass 100 mm mortice latch and lock, ISI marked, with six levers and a pair of anodised (anodic coating",
+    "unit": "lock",
     "basis": 1.0,
     "say": 748.65,
     "resources": [
@@ -10343,6 +10177,7 @@
   },
   {
     "code": "9.104",
+    "desc": "Providing and fixing aluminium tee channels (heavy duty) with rollers & stop end in pelmets as curtain rod.",
     "unit": "m",
     "basis": 2.0,
     "say": 139.35,
@@ -10372,14 +10207,15 @@
   },
   {
     "code": "9.105.1",
-    "unit": "m",
-    "basis": 3.65,
+    "desc": "75 mm overall thickness partition with 12.5 mm thick double skin fire rated Glass Reinforced Gypsum (GRG), plaster board conforming to IS: 2",
+    "unit": "x3",
+    "basis": 6.0,
     "say": 1741.15,
     "resources": [
       {
         "code": "7366",
-        "desc": "Glass reinforced Gypsum (GRG) plaster board 12.5 mm thick confirming to IS 2095 (Part 3): 1996",
-        "unit": "sqm",
+        "desc": "Glass reinforced Gypsum (GRG) plaster board 12.5 mm thick confirming to IS 2095 (Part 3):",
+        "unit": "1996 sqm",
         "qty": 43.8,
         "rate": 240.0
       },
@@ -10431,13 +10267,6 @@
         "unit": "kilogram",
         "qty": 4.82,
         "rate": 75.0
-      },
-      {
-        "code": "7018",
-        "desc": "Joint tape roll",
-        "unit": "roll",
-        "qty": 0.584,
-        "rate": 100.0
       },
       {
         "code": "7021",
@@ -10506,8 +10335,9 @@
   },
   {
     "code": "9.105.2",
-    "unit": "m",
-    "basis": 3.65,
+    "desc": "75mm overall thickness partition with 12.5 mm thick double skin tapered edged plain Gypsum plaster board conforming to IS: 2095: (part I) 20",
+    "unit": "x3",
+    "basis": 6.0,
     "say": 1513.7,
     "resources": [
       {
@@ -10530,13 +10360,6 @@
         "unit": "metre",
         "qty": 40.15,
         "rate": 71.0
-      },
-      {
-        "code": "7020",
-        "desc": "All drive screws ( for gypsum board) [(3.65/0.30)+1]x11x2 = 308 [(6.00/0.30)+1]x2x2=84 Total = 392",
-        "unit": "100 Nos",
-        "qty": 3.92,
-        "rate": 58.0
       },
       {
         "code": "7388",
@@ -10565,13 +10388,6 @@
         "unit": "kilogram",
         "qty": 4.82,
         "rate": 75.0
-      },
-      {
-        "code": "7018",
-        "desc": "Joint tape roll",
-        "unit": "roll",
-        "qty": 0.584,
-        "rate": 100.0
       },
       {
         "code": "7021",
@@ -10640,8 +10456,9 @@
   },
   {
     "code": "9.105.3",
-    "unit": "kg",
-    "basis": 225.0,
+    "desc": "66mm overall thickness Partition with 8mm thick double skin Calcium Silicate Board made with Calcareous & Siliceous materials reinforced wit",
+    "unit": "x3",
+    "basis": 6.0,
     "say": 1808.05,
     "resources": [
       {
@@ -10699,13 +10516,6 @@
         "unit": "kilogram",
         "qty": 4.82,
         "rate": 75.0
-      },
-      {
-        "code": "7018",
-        "desc": "Joint tape roll",
-        "unit": "roll",
-        "qty": 0.584,
-        "rate": 100.0
       },
       {
         "code": "7021",
@@ -10774,9 +10584,10 @@
   },
   {
     "code": "9.105.4",
-    "unit": "sqm",
-    "basis": 21.9,
-    "say": 1674.25,
+    "desc": "66mm overall thickness partition using 8mm thick double skin multipurpose cement board reinforced with cellulose fibre manufactured through ",
+    "unit": "x3",
+    "basis": 6.0,
+    "say": 1687.6,
     "resources": [
       {
         "code": "0237",
@@ -10833,13 +10644,6 @@
         "unit": "kilogram",
         "qty": 4.82,
         "rate": 75.0
-      },
-      {
-        "code": "7018",
-        "desc": "Joint tape roll",
-        "unit": "roll",
-        "qty": 0.584,
-        "rate": 100.0
       },
       {
         "code": "7021",
@@ -10903,10 +10707,19 @@
         "unit": "day",
         "qty": 7.665,
         "rate": 558.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "9.105.5",
+    "desc": "66 mm overall thickness partition using 8 mm thick double skin multipurpose cement bonded wood particle board manufactured as per IS: 14276 ",
+    "unit": "sqm",
+    "basis": 21.9,
+    "say": 1674.25,
+    "resources": [
       {
-        "code": "9.105.5",
-        "desc": "66 mm overall thickness partition using 8 mm thick double skin multipurpose cement bonded wood particle board manufactured as per IS: 14276 with suitable cement bonded board screws Details of cost for 21.90 sqm MATERIAL: particle board 8 mm thick",
+        "code": "0243",
+        "desc": "Multipurpose cement bonded wood particle board 8 mm thick",
         "unit": "sqm",
         "qty": 43.8,
         "rate": 215.0
@@ -10926,13 +10739,6 @@
         "rate": 71.0
       },
       {
-        "code": "7020",
-        "desc": "All drive screws ( for gypsum board) [(3.65/0.30)+1]x11x2 = 308 [(6.00/0.30)+1]x2x2=84 Total = 392",
-        "unit": "100 nos",
-        "qty": 3.92,
-        "rate": 58.0
-      },
-      {
         "code": "7388",
         "desc": "Dash hold fastener 12.5 mm dia, 50 mm long with 6 mm dia bolt",
         "unit": "each",
@@ -10941,8 +10747,8 @@
       },
       {
         "code": "7048",
-        "desc": "Rawl plug 50 mm (designation 10 nos) [(3.65/0.45)+1]x2= 18",
-        "unit": "each",
+        "desc": "Rawl plug 50 mm (designation 10 nos) [(3.65/0.45)+1]x2=",
+        "unit": "18 each",
         "qty": 18.0,
         "rate": 25.0
       },
@@ -10959,13 +10765,6 @@
         "unit": "kg",
         "qty": 4.82,
         "rate": 75.0
-      },
-      {
-        "code": "7018",
-        "desc": "Joint tape roll (120m roll) (300/100)x21.90/120 = 0.584 No",
-        "unit": "roll",
-        "qty": 0.584,
-        "rate": 100.0
       },
       {
         "code": "7021",
@@ -10987,20 +10786,6 @@
         "unit": "100 Nos",
         "qty": 0.44,
         "rate": 32.0
-      },
-      {
-        "code": "9999",
-        "desc": "Sundries carriage",
-        "unit": "L.S",
-        "qty": 52.0,
-        "rate": 2.0
-      },
-      {
-        "code": "9999",
-        "desc": "Sundries scaffolding",
-        "unit": "L.S",
-        "qty": 130.0,
-        "rate": 2.0
       },
       {
         "code": "0111",
@@ -11034,6 +10819,7 @@
   },
   {
     "code": "9.106.1",
+    "desc": "125x34x24 mm weighing not less than 23 gms",
     "unit": "nos",
     "basis": 1.0,
     "say": 40.2,
@@ -11070,6 +10856,7 @@
   },
   {
     "code": "9.106.2",
+    "desc": "150x34x24 mm weighing not less than 26 gms",
     "unit": "nos",
     "basis": 1.0,
     "say": 40.2,
@@ -11106,6 +10893,7 @@
   },
   {
     "code": "9.107.1",
+    "desc": "75x60x10 mm fitted with 5.5 mm dia M.S. Bright Bar Rod weighing not less than 34 gms",
     "unit": "nos",
     "basis": 1.0,
     "say": 67.7,
@@ -11149,6 +10937,7 @@
   },
   {
     "code": "9.107.2",
+    "desc": "100x75x10 mm fitted with 5.5 mm dia MS Bright Bar Rod weighing not less than 53 gms",
     "unit": "nos",
     "basis": 1.0,
     "say": 84.1,
@@ -11192,6 +10981,7 @@
   },
   {
     "code": "9.108.1",
+    "desc": "152x42x18 mm weighing not less than 60 gms",
     "unit": "nos",
     "basis": 1.0,
     "say": 75.85,
@@ -11228,6 +11018,7 @@
   },
   {
     "code": "9.108.2",
+    "desc": "202x42x18 mm weighing not less than 78 gms",
     "unit": "nos",
     "basis": 1.0,
     "say": 104.25,
@@ -11264,6 +11055,7 @@
   },
   {
     "code": "9.109",
+    "desc": "Providing and fixing PTMT door catcher of length 72 mm and dia. of 42 mm with suitable washers weighing not less than 33 gms",
     "unit": "nos",
     "basis": 1.0,
     "say": 36.75,
@@ -11299,31 +11091,18 @@
     ]
   },
   {
-    "code": "0.966",
-    "unit": "nos",
-    "basis": 1.0,
+    "code": "9.110",
+    "desc": "Providing and fixing Bamboo jaffery/ fencing consisting of superior quality 25mm dia (Average) half cut bamboo placed vertically and fixed t",
+    "unit": "sqm",
+    "basis": 2.1,
     "say": 576.15,
     "resources": [
-      {
-        "code": "0305",
-        "desc": "Bamboo 25 mm dia 2.5 metre long",
-        "unit": "score",
-        "qty": 0.966,
-        "rate": 400.0
-      },
       {
         "code": "9977",
         "desc": "Carriage of Bamboo",
         "unit": "L.S.",
         "qty": 4.83,
         "rate": 2.0
-      },
-      {
-        "code": "2466",
-        "desc": "Hollock wood in scantling",
-        "unit": "10 cudm",
-        "qty": 0.394,
-        "rate": 350.0
       },
       {
         "code": "2204",
@@ -11364,16 +11143,17 @@
   },
   {
     "code": "9.111.1",
+    "desc": "50x50 mm (base and height)",
     "unit": "m",
     "basis": 5.0,
     "say": 250.25,
     "resources": [
       {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 0.688,
-        "rate": 791.0
+        "code": "13.50.1",
+        "desc": "Rate as per SH: 13.50.1",
+        "unit": "sqm",
+        "qty": 0.5,
+        "rate": 57.05
       },
       {
         "code": "2204",
@@ -11390,13 +11170,6 @@
         "rate": 60.0
       },
       {
-        "code": "13.50.1",
-        "desc": "Rate as per item no 13.50.1 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 0.5,
-        "rate": 57.05
-      },
-      {
         "code": "0111",
         "desc": "Carpenter 1st class",
         "unit": "day",
@@ -11407,6 +11180,7 @@
   },
   {
     "code": "9.112",
+    "desc": "Providing and fixing 2nd class teak wood lipping/ moulded beading or taj beading of size 18X5 mm fixed with wooden adhesive of approved qual",
     "unit": "m",
     "basis": 10.0,
     "say": 78.85,
@@ -11436,7 +11210,8 @@
   },
   {
     "code": "9.113",
-    "unit": "nos",
+    "desc": "Providing and fixing bright finished 100 mm mortice lock with 6 levers without pair of handles of approved quality for aluminium door, with ",
+    "unit": "no",
     "basis": 1.0,
     "say": 637.05,
     "resources": [
@@ -11465,7 +11240,8 @@
   },
   {
     "code": "9.114.1",
-    "unit": "nos",
+    "desc": "Triple strip vertical type",
+    "unit": "no",
     "basis": 1.0,
     "say": 39.05,
     "resources": [
@@ -11487,7 +11263,8 @@
   },
   {
     "code": "9.114.2",
-    "unit": "nos",
+    "desc": "Double strip (horizontal type)",
+    "unit": "no",
     "basis": 1.0,
     "say": 31.05,
     "resources": [
@@ -11509,7 +11286,8 @@
   },
   {
     "code": "9.115",
-    "unit": "set",
+    "desc": "Providing and fixing powder coated telescopic drawer channels 300 mm long with necessary screws etc. complete as per directions of Engineer-",
+    "unit": "sets",
     "basis": 10.0,
     "say": 339.75,
     "resources": [
@@ -11538,7 +11316,8 @@
   },
   {
     "code": "9.116",
-    "unit": "nos",
+    "desc": "Providing and fixing sliding arrangement in racks/ cupboards/cabinets shutter by with stainless steel rollers to run inside C or E aluminium",
+    "unit": "No",
     "basis": 1.0,
     "say": 14.8,
     "resources": [
@@ -11560,6 +11339,7 @@
   },
   {
     "code": "9.117.1",
+    "desc": "Extruded section profile size 48x40 mm",
     "unit": "metre",
     "basis": 5.0,
     "say": 221.65,
@@ -11596,6 +11376,7 @@
   },
   {
     "code": "9.117.2",
+    "desc": "Extruded section profile size 42x50 mm",
     "unit": "metre",
     "basis": 5.0,
     "say": 267.45,
@@ -11632,8 +11413,9 @@
   },
   {
     "code": "9.118.1",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "24 mm thick factory made PVC door shutters made of styles and rails of a uPVC hollow section of size 59x24 mm and wall thickness 2 mm (± 0.2",
+    "unit": "sqm",
+    "basis": 2.38,
     "say": 1760.7,
     "resources": [
       {
@@ -11668,8 +11450,9 @@
   },
   {
     "code": "9.118.2",
-    "unit": "nos",
-    "basis": 1.0,
+    "desc": "30 mm thick factory made Polyvinyl Chloride (PVC) door shutter made of styles and rails of a uPVC hollow section of size 60x30 mm and wall t",
+    "unit": "sqm",
+    "basis": 2.38,
     "say": 1978.65,
     "resources": [
       {
@@ -11704,8 +11487,9 @@
   },
   {
     "code": "9.118.3",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "25 mm thick PVC flush door shutters made out of a one piece Multi chamber extruded PVC section of the size of 762 mm X 25 mm or less as per ",
+    "unit": "sqm",
+    "basis": 2.38,
     "say": 2582.3,
     "resources": [
       {
@@ -11740,8 +11524,9 @@
   },
   {
     "code": "9.119",
+    "desc": "Providing and fixing factory made P.V.C. door frame of size 50x47 mm with awall thickness of 5 mm, made out of extruded 5mm rigid PVC foam s",
     "unit": "nos",
-    "basis": 2.0,
+    "basis": 1.0,
     "say": 391.65,
     "resources": [
       {
@@ -11776,8 +11561,9 @@
   },
   {
     "code": "9.120.1",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "30 mm thick plain PVC door shutters",
+    "unit": "sqm",
+    "basis": 2.38,
     "say": 2423.4,
     "resources": [
       {
@@ -11833,8 +11619,9 @@
   },
   {
     "code": "9.120.2",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "30 mm thick pre laminated PVC door shutters",
+    "unit": "sqm",
+    "basis": 2.38,
     "say": 2423.4,
     "resources": [
       {
@@ -11890,8 +11677,9 @@
   },
   {
     "code": "9.121",
-    "unit": "metre",
-    "basis": 5.0,
+    "desc": "Providing and fixing Fiber Glass Reinforced plastic (FRP) Door Frames of cross- section 90 mm x 45 mm having single rebate of 32 mm x 15 mm ",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 679.85,
     "resources": [
       {
@@ -11926,17 +11714,11 @@
   },
   {
     "code": "9.122.1",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "30 mm thick Glass Fibre Reinforced Plastic (FRP) panelled door shutter of required colour and approved brand and manufacture, made with fire",
+    "unit": "sqm",
+    "basis": 2.38,
     "say": 3465.05,
     "resources": [
-      {
-        "code": "8708",
-        "desc": "30 mm thick factory madeglass fiber reinforced plastic panel door shutter i/c carriage.",
-        "unit": "sqm",
-        "qty": 2.38,
-        "rate": 2326.0
-      },
       {
         "code": "8100",
         "desc": "Powder coated M.S. butt hinges 100mm X58mmX1.9mm",
@@ -11983,17 +11765,11 @@
   },
   {
     "code": "9.122.2",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "30 mm thick Fiberglass Reinforced Plastic (F.R.P.) flush door shutter in different plain and wood finish made with fire retardant grade unsa",
+    "unit": "sqm",
+    "basis": 2.38,
     "say": 3931.95,
     "resources": [
-      {
-        "code": "8730",
-        "desc": "30 mm thick factory made glass fiber reinforced plastic flush door shutter i/c carriage.",
-        "unit": "sqm",
-        "qty": 2.38,
-        "rate": 2675.0
-      },
       {
         "code": "8100",
         "desc": "Powder coated M.S. butt hinges 100mm X58mmX1.9mm",
@@ -12040,8 +11816,9 @@
   },
   {
     "code": "9.123",
-    "unit": "metre",
-    "basis": 5.0,
+    "desc": "Providing and fixing factory made door frame (single rebate) made out of single piece extruded solid PVC foam profile with homogenous fine c",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 476.5,
     "resources": [
       {
@@ -12076,8 +11853,9 @@
   },
   {
     "code": "9.124.1",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Non decorative finish",
+    "unit": "sqm",
+    "basis": 2.38,
     "say": 3028.85,
     "resources": [
       {
@@ -12133,8 +11911,9 @@
   },
   {
     "code": "9.124.2",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Decorative finish (both side wood grained finish)",
+    "unit": "sqm",
+    "basis": 2.38,
     "say": 3162.65,
     "resources": [
       {
@@ -12190,8 +11969,9 @@
   },
   {
     "code": "9.125",
-    "unit": "m",
-    "basis": 0.3,
+    "desc": "Providing and fixing PVC rigid foam sheet 1 mm thick on existing door shutters (bathroom and W.C. doors) using synthetic rubber based adhesi",
+    "unit": "x0",
+    "basis": 1.0,
     "say": 1200.35,
     "resources": [
       {
@@ -12233,6 +12013,7 @@
   },
   {
     "code": "9.126.1",
+    "desc": "Marine plywood conforming to IS: 710",
     "unit": "sqm",
     "basis": 2.16,
     "say": 2005.15,
@@ -12269,6 +12050,7 @@
   },
   {
     "code": "9.126.2",
+    "desc": "Fire retardant plywood conforming to IS: 5509",
     "unit": "sqm",
     "basis": 2.16,
     "say": 2256.55,
@@ -12305,6 +12087,7 @@
   },
   {
     "code": "9.127.1",
+    "desc": "1.5 mm thick",
     "unit": "sqm",
     "basis": 5.0,
     "say": 842.75,
@@ -12348,6 +12131,7 @@
   },
   {
     "code": "9.127.2",
+    "desc": "1.0 mm thick",
     "unit": "sqm",
     "basis": 5.0,
     "say": 717.65,
@@ -12391,8 +12175,9 @@
   },
   {
     "code": "9.128",
-    "unit": "nos",
-    "basis": 2.0,
+    "desc": "Providing and fixing factory made Fiberglass Reinforced plastics (F.R.P.) chajja 4 mm thick of required colour, size and design made by Resi",
+    "unit": "sqm",
+    "basis": 0.54,
     "say": 4851.25,
     "resources": [
       {
@@ -12420,8 +12205,9 @@
   },
   {
     "code": "9.129",
-    "unit": "m",
-    "basis": 1.0,
+    "desc": "Providing and fixing cup board shutters 25 mm thick, with Pre-laminated flat pressed three layer particle board or graded wood particle boar",
+    "unit": "sqm",
+    "basis": 2.2,
     "say": 1928.9,
     "resources": [
       {
@@ -12484,8 +12270,9 @@
   },
   {
     "code": "9.130.1",
-    "unit": "m",
-    "basis": 1.0,
+    "desc": "With decorative veneering on one side and commercial veneering on other side",
+    "unit": "sqm",
+    "basis": 2.2,
     "say": 1647.95,
     "resources": [
       {
@@ -12555,8 +12342,9 @@
   },
   {
     "code": "9.130.2",
-    "unit": "m",
-    "basis": 1.0,
+    "desc": "With non decorative veneering on both sides",
+    "unit": "sqm",
+    "basis": 2.2,
     "say": 1547.6,
     "resources": [
       {
@@ -12626,6 +12414,7 @@
   },
   {
     "code": "9.131.1",
+    "desc": "25 mm thick",
     "unit": "sqm",
     "basis": 2.1,
     "say": 1531.45,
@@ -12690,6 +12479,7 @@
   },
   {
     "code": "9.132",
+    "desc": "Providing and fixing aluminum U beading of required size to Pre-laminated/flush door shutter, including fixing etc. complete as per directio",
     "unit": "kg",
     "basis": 1.0,
     "say": 517.8,
@@ -12707,18 +12497,12 @@
         "unit": "L.S.",
         "qty": 65.0,
         "rate": 2.0
-      },
-      {
-        "code": "9999",
-        "desc": "Sundries including screws, fixing, carriage etc.",
-        "unit": "L.S.",
-        "qty": 13.0,
-        "rate": 2.0
       }
     ]
   },
   {
     "code": "9.133.1.1",
+    "desc": "10 mm thick",
     "unit": "m",
     "basis": 3.66,
     "say": 1420.45,
@@ -12766,13 +12550,6 @@
         "rate": 2.0
       },
       {
-        "code": "7018",
-        "desc": "Joint tape roll",
-        "unit": "roll",
-        "qty": 0.19,
-        "rate": 100.0
-      },
-      {
         "code": "9999",
         "desc": "Sundries i/c rawl plug, scaffolfing etc.",
         "unit": "L.S.",
@@ -12804,6 +12581,7 @@
   },
   {
     "code": "9.133.2.1",
+    "desc": "8 mm thick cement fibre board as per IS : 14862",
     "unit": "m",
     "basis": 3.66,
     "say": 1126.0,
@@ -12851,13 +12629,6 @@
         "rate": 2.0
       },
       {
-        "code": "7018",
-        "desc": "Joint tape roll",
-        "unit": "roll",
-        "qty": 0.19,
-        "rate": 100.0
-      },
-      {
         "code": "9999",
         "desc": "Sundries i/c rawl plug, scaffolfing etc.",
         "unit": "L.S.",
@@ -12889,6 +12660,7 @@
   },
   {
     "code": "9.133.2.2",
+    "desc": "8 mm thick Cement bonded wood particle board as per IS:14276",
     "unit": "m",
     "basis": 3.66,
     "say": 1118.65,
@@ -12929,34 +12701,6 @@
         "rate": 68.0
       },
       {
-        "code": "9999",
-        "desc": "Jointing compound",
-        "unit": "L.S",
-        "qty": 20.8,
-        "rate": 2.0
-      },
-      {
-        "code": "7018",
-        "desc": "Joint tape roll",
-        "unit": "each roll",
-        "qty": 0.19,
-        "rate": 100.0
-      },
-      {
-        "code": "9999",
-        "desc": "Sundries i/c rawl plug. Scaffolding etc.",
-        "unit": "L.S",
-        "qty": 52.0,
-        "rate": 2.0
-      },
-      {
-        "code": "9999",
-        "desc": "Carriage of materials",
-        "unit": "L.S",
-        "qty": 26.0,
-        "rate": 2.0
-      },
-      {
         "code": "0111",
         "desc": "Carpenter 1 st class",
         "unit": "day",
@@ -12974,6 +12718,7 @@
   },
   {
     "code": "9.133.3.1",
+    "desc": "12.5 mm thick",
     "unit": "m",
     "basis": 3.66,
     "say": 1030.35,
@@ -13021,13 +12766,6 @@
         "rate": 2.0
       },
       {
-        "code": "7018",
-        "desc": "Joint tape roll",
-        "unit": "roll",
-        "qty": 0.19,
-        "rate": 100.0
-      },
-      {
         "code": "9999",
         "desc": "Sundries i/c rawl plug, scaffolfing etc.",
         "unit": "L.S.",
@@ -13059,17 +12797,11 @@
   },
   {
     "code": "9.134.1.1.1",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Second class teak wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 4352.2,
     "resources": [
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 5.14,
-        "rate": 791.0
-      },
       {
         "code": "8737",
         "desc": "Stainless steel wire guage (Grade-304) aperture 1.4mm and 0.50 mm dia wire",
@@ -13151,17 +12883,11 @@
   },
   {
     "code": "9.134.1.1.2",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Kiln seasoned and chemically treated hollock wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 3110.5,
     "resources": [
-      {
-        "code": "2505",
-        "desc": "Hollock wood in planks",
-        "unit": "10 cudm",
-        "qty": 5.14,
-        "rate": 390.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -13257,17 +12983,11 @@
   },
   {
     "code": "9.134.1.1.3",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Kiln seasoned selected class of sheesham wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 3927.2,
     "resources": [
-      {
-        "code": "1200",
-        "desc": "Kiln seasoned selected sheesum wood planks",
-        "unit": "10 cudm",
-        "qty": 5.14,
-        "rate": 650.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -13356,17 +13076,11 @@
   },
   {
     "code": "9.134.1.2.1",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Second class teak wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 4478.7,
     "resources": [
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 5.14,
-        "rate": 791.0
-      },
       {
         "code": "8737",
         "desc": "Stainless steel wire guage (Grade-304) aperture 1.4mm and 0.50 mm dia wire",
@@ -13448,17 +13162,11 @@
   },
   {
     "code": "9.134.1.2.2",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Kiln seasoned and chemically treated hollock wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 3237.0,
     "resources": [
-      {
-        "code": "2505",
-        "desc": "Hollock wood in planks",
-        "unit": "10 cudm",
-        "qty": 5.14,
-        "rate": 390.0
-      },
       {
         "code": "2504",
         "desc": "Kiln seasoning of timber",
@@ -13554,17 +13262,11 @@
   },
   {
     "code": "9.134.1.2.3",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Kiln seasoned selected class of sheesham wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 4053.65,
     "resources": [
-      {
-        "code": "1200",
-        "desc": "Kiln seasoned selected sheesum wood planks",
-        "unit": "10 cudm",
-        "qty": 5.14,
-        "rate": 650.0
-      },
       {
         "code": "2504",
         "desc": "Kiln seasoning of timber",
@@ -13653,17 +13355,11 @@
   },
   {
     "code": "9.134.2.1.1",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Second class teak wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 3881.75,
     "resources": [
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 4.4,
-        "rate": 791.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -13745,17 +13441,11 @@
   },
   {
     "code": "9.134.2.1.2",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Kiln seasoned and chemically treated hollock wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 2820.4,
     "resources": [
-      {
-        "code": "2505",
-        "desc": "Hollock wood in planks",
-        "unit": "10 cudm",
-        "qty": 4.4,
-        "rate": 390.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -13851,17 +13541,11 @@
   },
   {
     "code": "9.134.2.1.3",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Kiln seasoned selected class of sheesham wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 3517.9,
     "resources": [
-      {
-        "code": "1200",
-        "desc": "Kiln seasoned selected sheesum wood planks",
-        "unit": "10 cudm",
-        "qty": 4.4,
-        "rate": 650.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -13950,17 +13634,11 @@
   },
   {
     "code": "9.134.2.2.1",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Second class teak wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 4008.25,
     "resources": [
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 4.4,
-        "rate": 791.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -14042,17 +13720,11 @@
   },
   {
     "code": "9.134.2.2.2",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Kiln seasoned and chemically treated hollock wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 2947.05,
     "resources": [
-      {
-        "code": "2505",
-        "desc": "Hollock wood in planks",
-        "unit": "10 cudm",
-        "qty": 4.4,
-        "rate": 390.0
-      },
       {
         "code": "2504",
         "desc": "Kiln seasoning of timber",
@@ -14148,17 +13820,11 @@
   },
   {
     "code": "9.134.2.2.3",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Kiln seasoned selected class of sheesham wood",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 3644.4,
     "resources": [
-      {
-        "code": "1200",
-        "desc": "Kiln seasoned selected sheesum wood planks",
-        "unit": "10 cudm",
-        "qty": 4.4,
-        "rate": 650.0
-      },
       {
         "code": "2504",
         "desc": "Kiln seasoning of timber",
@@ -14247,6 +13913,7 @@
   },
   {
     "code": "9.135.1",
+    "desc": "With 2nd class teak wood beading 62X19 mm",
     "unit": "sqm",
     "basis": 1.54,
     "say": 1353.6,
@@ -14264,13 +13931,6 @@
         "unit": "L.S.",
         "qty": 1.82,
         "rate": 2.0
-      },
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 0.6,
-        "rate": 791.0
       },
       {
         "code": "2204",
@@ -14304,6 +13964,7 @@
   },
   {
     "code": "9.135.2",
+    "desc": "With 12 mm mild steel U beading",
     "unit": "sqm",
     "basis": 1.54,
     "say": 1001.5,
@@ -14354,8 +14015,9 @@
   },
   {
     "code": "9.136",
-    "unit": "metre",
-    "basis": 9.1,
+    "desc": "Providing and fixing fire resistant door frame of section 143 x 57 mm having built in rebate made out of 16 SWG G.I. sheet (zinc coating not",
+    "unit": "0",
+    "basis": 330.0,
     "say": 1444.3,
     "resources": [
       {
@@ -14383,6 +14045,7 @@
   },
   {
     "code": "9.137",
+    "desc": "Providing and fixing 50 mm thick glazed fire resistant door shutters of 60 minutes fire rating conforming to IS:3614 (Part-II), tested and c",
     "unit": "sqm",
     "basis": 3.5,
     "say": 6166.0,
@@ -14412,8 +14075,9 @@
   },
   {
     "code": "9.138",
+    "desc": "Providing and fixing glazing in fire resistant door shutters, fixed panels & partitions etc., with G.I. beading made out of 1.6 mm thick G.I",
     "unit": "sqm",
-    "basis": 2.42,
+    "basis": 2.46,
     "say": 36050.45,
     "resources": [
       {
@@ -14455,7 +14119,8 @@
   },
   {
     "code": "9.139",
-    "unit": "nos",
+    "desc": "Providing and fixing panic bar / latch (Double point) fitted with a single body, Trim Latch & Lock on back side of the Panic Latch of repute",
+    "unit": "Nos",
     "basis": 1.0,
     "say": 7134.85,
     "resources": [
@@ -14484,23 +14149,24 @@
   },
   {
     "code": "9.140.1",
+    "desc": "12mm thick commercial ply conforming to IS : 1328 BWR type",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1040.8,
     "resources": [
+      {
+        "code": "13.50.1",
+        "desc": "Rate as per SH: 13.50.1",
+        "unit": "sqm",
+        "qty": 10.0,
+        "rate": 57.05
+      },
       {
         "code": "2413",
         "desc": "12 mm commercial ply",
         "unit": "sqm",
         "qty": 11.0,
         "rate": 500.0
-      },
-      {
-        "code": "13.50.1",
-        "desc": "Rate as per Item Number 13.50.1 of SH: Finishing",
-        "unit": "sqm",
-        "qty": 10.0,
-        "rate": 57.05
       },
       {
         "code": "9999",
@@ -14534,17 +14200,11 @@
   },
   {
     "code": "9.141",
+    "desc": "Providing and fixing PVC Door Frame of size 50x47 mm with a wall thickness of 5 mm (± 0.2 mm), made out of single piece extruded PVC profile",
     "unit": "nos",
-    "basis": 2.0,
+    "basis": 1.0,
     "say": 456.8,
     "resources": [
-      {
-        "code": "8014",
-        "desc": "Factory made door frame of size 50x47mm with wall thickness 5 mm made of single piecs extruded profile",
-        "unit": "meter",
-        "qty": 5.0,
-        "rate": 298.74
-      },
       {
         "code": "0156",
         "desc": "Carpenter (average)",
@@ -14570,8 +14230,9 @@
   },
   {
     "code": "9.142.1",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Non decorative finish (matt finish)",
+    "unit": "sqm",
+    "basis": 2.38,
     "say": 3240.8,
     "resources": [
       {
@@ -14627,8 +14288,9 @@
   },
   {
     "code": "9.142.2",
-    "unit": "m",
-    "basis": 1.08,
+    "desc": "Decorative finish (wood grained finish)",
+    "unit": "sqm",
+    "basis": 2.38,
     "say": 3842.85,
     "resources": [
       {
@@ -14684,8 +14346,9 @@
   },
   {
     "code": "9.143",
+    "desc": "Providing and Fixing factory made uPVC door frame, made of uPVC exturded sections, of size 65 mm x 55 mm with wall thickness 2.0 mm (± 0.2 m",
     "unit": "nos",
-    "basis": 3.0,
+    "basis": 1.0,
     "say": 528.35,
     "resources": [
       {
@@ -14720,17 +14383,11 @@
   },
   {
     "code": "9.144",
-    "unit": "nos",
-    "basis": 2.0,
+    "desc": "Providing and fixing 37 mm thick factory made PVC door shutter, styles and rails made of PVC hollow section of size 100 mm x 37 mm with wall",
+    "unit": "sqm",
+    "basis": 2.38,
     "say": 3518.85,
     "resources": [
-      {
-        "code": "8746",
-        "desc": "37 mm thick Factory made shutter with style,rails and panels of PVC extruded section in white or grey finish i/c carriage",
-        "unit": "sqm",
-        "qty": 2.38,
-        "rate": 2400.0
-      },
       {
         "code": "0156",
         "desc": "Carpenter (average)",
@@ -14756,8 +14413,9 @@
   },
   {
     "code": "9.145",
+    "desc": "Providing and Fixing factory made PVC door frame made of PVC extruded sections of size 75 mm x 53 mm, having wall thickness 2.0 mm (± 0.2 mm",
     "unit": "nos",
-    "basis": 3.0,
+    "basis": 1.0,
     "say": 588.55,
     "resources": [
       {
@@ -14792,9 +14450,10 @@
   },
   {
     "code": "9.146",
-    "unit": "nos",
-    "basis": 2.0,
-    "say": 7774.55,
+    "desc": "Providing and fixing 37 mm thick factory made PVC Door shutter, styles and rails made of PVC hollow extruded printed and laminated section h",
+    "unit": "sqm",
+    "basis": 2.38,
+    "say": 3786.45,
     "resources": [
       {
         "code": "8748",
@@ -14823,7 +14482,16 @@
         "unit": "L.S.",
         "qty": 20.36,
         "rate": 2.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "9.147A.1",
+    "desc": "Casement window single panel with S.S. friction hinges (300 x 19 x 1.9 mm), made of (small series) frame 47 x 50 mm & sash 47 x 68 mm both h",
+    "unit": "sqm",
+    "basis": 0.68,
+    "say": 9483.5,
+    "resources": [
       {
         "code": "8121",
         "desc": "uPVC extruded (small series) casement window frame size 47x50mm i/c 5% wastage",
@@ -14837,6 +14505,13 @@
         "unit": "metre",
         "qty": 3.68,
         "rate": 282.9
+      },
+      {
+        "code": "8125",
+        "desc": "uPVC extruded glazing bead of appropriate dimension for small series casement window Sash",
+        "unit": "metre",
+        "qty": 3.49,
+        "rate": 98.4
       },
       {
         "code": "3991",
@@ -14893,7 +14568,16 @@
         "unit": "sqm",
         "qty": 0.68,
         "rate": 430.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "9.147A.2",
+    "desc": "Casement window double panels with S.S. friction hinges (300 x 19 x 1.9 mm) made of (small series) frame 47 x 50 mm, sash 47 x 68 mm & mulli",
+    "unit": "sqm",
+    "basis": 1.35,
+    "say": 8717.7,
+    "resources": [
       {
         "code": "8121",
         "desc": "uPVC extruded (small series) casement window frame size 47x50mm i/c 5% wastage",
@@ -14907,6 +14591,13 @@
         "unit": "metre",
         "qty": 8.86,
         "rate": 282.9
+      },
+      {
+        "code": "8125",
+        "desc": "uPVC extruded glazing bead of appropriate dimension for small series casement window Sash i/c 5% wastage",
+        "unit": "metre",
+        "qty": 7.06,
+        "rate": 98.4
       },
       {
         "code": "3991",
@@ -14963,7 +14654,16 @@
         "unit": "sqm",
         "qty": 1.35,
         "rate": 430.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "9.147A.3",
+    "desc": "Casement window double panels with top fixed with S.S. friction hinges (350 x 19 x 1.9 mm) made of (small series) frame 47 x 50 mm, sash 47 ",
+    "unit": "sqm",
+    "basis": 2.16,
+    "say": 6982.0,
+    "resources": [
       {
         "code": "8121",
         "desc": "uPVC extruded (small series) casement window frame size 47x50mm i/c 5% wastage",
@@ -14977,6 +14677,13 @@
         "unit": "metre",
         "qty": 9.8,
         "rate": 282.9
+      },
+      {
+        "code": "8125",
+        "desc": "uPVC extruded glazing bead of appropriate dimension for small series casement window Sash i/c 5% wastage",
+        "unit": "metre",
+        "qty": 10.62,
+        "rate": 98.4
       },
       {
         "code": "3991",
@@ -15014,13 +14721,6 @@
         "rate": 130.0
       },
       {
-        "code": "9999",
-        "desc": "Sundries, plastic packers, plastic caps, SS screws and carriage of material",
-        "unit": "L.S.",
-        "qty": 170.0,
-        "rate": 2.0
-      },
-      {
         "code": "0162",
         "desc": "Labour for fabrication of uPVC extruded casement windows including drilling holes, fixing of fittings & hardwares, hire charges of drill machine and electricity charges etc.",
         "unit": "sqm",
@@ -15033,6 +14733,22 @@
         "unit": "sqm",
         "qty": 2.16,
         "rate": 430.0
+      }
+    ]
+  },
+  {
+    "code": "9.147A.4",
+    "desc": "Casement window single panel with S.S. friction hinges (400 x 19 x 1.9 mm) made of (big series)frame 67 x 60 mm & sash 67 x 80 mm both havin",
+    "unit": "sqm",
+    "basis": 0.95,
+    "say": 9331.0,
+    "resources": [
+      {
+        "code": "8126",
+        "desc": "uPVC extruded (big series) casement window frame size 67x60 mm i/c 5% wastage",
+        "unit": "metre",
+        "qty": 4.31,
+        "rate": 319.8
       },
       {
         "code": "8128",
@@ -15084,13 +14800,6 @@
         "rate": 130.0
       },
       {
-        "code": "9999",
-        "desc": "Sundries, plastic packers, plastic caps, SS screws and carriage of material",
-        "unit": "L.S.",
-        "qty": 170.0,
-        "rate": 2.0
-      },
-      {
         "code": "0162",
         "desc": "Labour for fabrication of uPVC extruded casement windows including drilling holes, fixing of fittings & hardwares, hire charges of drill machine and electricity charges etc.",
         "unit": "sqm",
@@ -15103,6 +14812,22 @@
         "unit": "sqm",
         "qty": 0.95,
         "rate": 430.0
+      }
+    ]
+  },
+  {
+    "code": "9.147A.5",
+    "desc": "Casement window double panels with S.S. friction hinges (350 x 19 x 1.9 mm) made of (big series)frame 67 x 60 mm & sash / mullion 67 x 80 mm",
+    "unit": "sqm",
+    "basis": 1.62,
+    "say": 9666.2,
+    "resources": [
+      {
+        "code": "8126",
+        "desc": "uPVC extruded (big series) casement window frame size 67x60 mm i/c 5% wastage",
+        "unit": "metre",
+        "qty": 5.36,
+        "rate": 319.8
       },
       {
         "code": "8128",
@@ -15154,13 +14879,6 @@
         "rate": 130.0
       },
       {
-        "code": "9999",
-        "desc": "Sundries, plastic packers, plastic caps, SS screws and carriage of material",
-        "unit": "L.S.",
-        "qty": 170.0,
-        "rate": 2.0
-      },
-      {
         "code": "0162",
         "desc": "Labour for fabrication of uPVC extruded casement windows including drilling holes, fixing of fittings & hardwares, hire charges of drill machine and electricity charges etc.",
         "unit": "sqm",
@@ -15173,6 +14891,22 @@
         "unit": "sqm",
         "qty": 1.62,
         "rate": 430.0
+      }
+    ]
+  },
+  {
+    "code": "9.147A.6",
+    "desc": "Casement cum fixed panel window having both end single casement panel, middle fixed panels and at top completely fixed ventilator with S.S f",
+    "unit": "sqm",
+    "basis": 4.0,
+    "say": 7242.25,
+    "resources": [
+      {
+        "code": "8126",
+        "desc": "uPVC extruded (big series) casement window frame size 67x60 mm i/c 5% wastage",
+        "unit": "metre",
+        "qty": 8.61,
+        "rate": 319.8
       },
       {
         "code": "8128",
@@ -15224,13 +14958,6 @@
         "rate": 130.0
       },
       {
-        "code": "9999",
-        "desc": "Sundries, plastic packers, plastic caps, SS screws and carriage of material",
-        "unit": "L.S.",
-        "qty": 170.0,
-        "rate": 2.0
-      },
-      {
         "code": "0162",
         "desc": "Labour for fabrication of uPVC extruded casement windows including drilling holes, fixing of fittings & hardwares, hire charges of drill machine and electricity charges etc.",
         "unit": "sqm",
@@ -15243,10 +14970,19 @@
         "unit": "sqm",
         "qty": 4.0,
         "rate": 430.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "9.147B.1",
+    "desc": "Fixed window / ventilator made of (small series) frame 47 x 50 mm & mullion 47 x 68 mm both having wall thickness of 1.9 ± 0.2 mm and single",
+    "unit": "sqm",
+    "basis": 0.6,
+    "say": 6478.75,
+    "resources": [
       {
-        "code": "window frame",
-        "desc": "size 47x50mm",
+        "code": "8121",
+        "desc": "uPVC extruded (small series) fixed window frame size 47x50mm",
         "unit": "metre",
         "qty": 3.57,
         "rate": 258.3
@@ -15259,8 +14995,15 @@
         "rate": 282.9
       },
       {
+        "code": "8125",
+        "desc": "uPVC extruded glazing bead of appropriate dimension for small series fixed window Sash",
+        "unit": "metre",
+        "qty": 3.99,
+        "rate": 98.4
+      },
+      {
         "code": "3991",
-        "desc": "Galvanized iron (1.6 ± 0.2 mm) thick reinforcement for small series fixed wastage",
+        "desc": "Galvanized iron (1.6 ± 0.2 mm) thick reinforcement for small series fixed window frame and mullion i/c 5% wastage",
         "unit": "metre",
         "qty": 4.25,
         "rate": 66.0
@@ -15280,13 +15023,6 @@
         "rate": 14.0
       },
       {
-        "code": "9999",
-        "desc": "Sundries, plastic packers, plastic caps, SS screws and carriage of material",
-        "unit": "L.S.",
-        "qty": 170.0,
-        "rate": 2.0
-      },
-      {
         "code": "0162",
         "desc": "Labour for fabrication of uPVC extruded fixed windows including drilling holes, fixing of fittings & hardwares, hire charges of drill machine and electricity charges etc.",
         "unit": "sqm",
@@ -15299,7 +15035,16 @@
         "unit": "sqm",
         "qty": 0.6,
         "rate": 430.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "9.147C.1",
+    "desc": "Casement door with 3D hinges made of (big series) frame 67 x 64 mm & sash 67 x 110 mm both having wall thickness of 2.3 ± 0.2 mm and single ",
+    "unit": "sqm",
+    "basis": 1.89,
+    "say": 9131.45,
+    "resources": [
       {
         "code": "8127",
         "desc": "uPVC extruded (big series) casement door frame size 67x64 mm i/c 5% wastage",
@@ -15315,8 +15060,8 @@
         "rate": 516.6
       },
       {
-        "code": "casement door sash",
-        "desc": "i/c 5% wastage",
+        "code": "8130",
+        "desc": "uPVC extruded glazing bead of appropriate dimension for big series casement door sash i/c 5% wastage",
         "unit": "metre",
         "qty": 5.22,
         "rate": 123.0
@@ -15358,17 +15103,10 @@
       },
       {
         "code": "8117",
-        "desc": "Zinc alloy (white powder coated) handles with zinc plated mild steel multi point locking having transmission gear, cylinder with keeps and one side key for uPVC casement door",
-        "unit": "each set",
+        "desc": "Zinc alloy (white powder coated) handles with zinc plated mild steel multi point locking having transmission gear, cylinder with keeps and one side key for uPVC casement door each",
+        "unit": "set",
         "qty": 1.0,
         "rate": 2296.0
-      },
-      {
-        "code": "9999",
-        "desc": "Sundries, plastic packers, plastic caps, SS screws and carriage of material",
-        "unit": "L.S.",
-        "qty": 170.0,
-        "rate": 2.0
       },
       {
         "code": "0162",
@@ -15383,7 +15121,16 @@
         "unit": "sqm",
         "qty": 1.89,
         "rate": 430.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "9.147C.2",
+    "desc": "Casement door with top hung ventilator with 3D and S.S. friction hinges (400 x 19 x 1.9 mm) made of (big series) frame 67 x 64 mm, sash 67 x",
+    "unit": "sqm",
+    "basis": 2.43,
+    "say": 9328.3,
+    "resources": [
       {
         "code": "8127",
         "desc": "uPVC extruded (big series) casement door frame size 67x64 mm i/c 5% wastage",
@@ -15449,8 +15196,8 @@
       },
       {
         "code": "8117",
-        "desc": "Zinc alloy (white powder coated) handles with zinc plated mild steel multi point locking having transmission gear, cylinder with keeps and one side key for uPVC casement door",
-        "unit": "each set",
+        "desc": "Zinc alloy (white powder coated) handles with zinc plated mild steel multi point locking having transmission gear, cylinder with keeps and one side key for uPVC casement door each",
+        "unit": "set",
         "qty": 1.0,
         "rate": 2296.0
       },
@@ -15469,13 +15216,6 @@
         "rate": 130.0
       },
       {
-        "code": "9999",
-        "desc": "Sundries, plastic packers, plastic caps, SS screws and carriage of material",
-        "unit": "L.S.",
-        "qty": 170.0,
-        "rate": 2.0
-      },
-      {
         "code": "0162",
         "desc": "Labour for fabrication of uPVC extruded casement doors including drilling holes, fixing of fittings & hardwares, hire charges of drill machine and electricity charges etc.",
         "unit": "sqm",
@@ -15488,7 +15228,16 @@
         "unit": "sqm",
         "qty": 2.43,
         "rate": 430.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "9.147D.1",
+    "desc": "Two track two panels sliding window made of (small series) frame 52 x 44 mm &sash 32 x 60 mm both having wall thickness of 1.9 ± 0.2 mm and ",
+    "unit": "sqm",
+    "basis": 1.62,
+    "say": 6709.6,
+    "resources": [
       {
         "code": "8133",
         "desc": "uPVC extruded (small series) 2 track sliding window frame size 52x44 mm i/c 5% wastage",
@@ -15504,8 +15253,15 @@
         "rate": 265.0
       },
       {
-        "code": "sliding",
-        "desc": "window sash i/c 5% wastage",
+        "code": "8140",
+        "desc": "uPVC extruded interlock of appropriate dimension for small series sliding window sash i/c 5% wastage",
+        "unit": "metre",
+        "qty": 2.69,
+        "rate": 80.0
+      },
+      {
+        "code": "8131",
+        "desc": "uPVC extruded glazing bead of appropriate dimension for small series sliding window sash i/c 5% wastage",
         "unit": "metre",
         "qty": 6.92,
         "rate": 60.0
@@ -15553,13 +15309,6 @@
         "rate": 56.0
       },
       {
-        "code": "9999",
-        "desc": "Sundries, plastic packers, plastic caps, SS screws and carriage of material",
-        "unit": "L.S.",
-        "qty": 170.0,
-        "rate": 2.0
-      },
-      {
         "code": "0162",
         "desc": "Labour for fabrication of uPVC extruded sliding windows including drilling holes, fixing of fittings & hardwares, hire charges of drill machine and electricity charges etc.",
         "unit": "sqm",
@@ -15572,7 +15321,16 @@
         "unit": "sqm",
         "qty": 1.62,
         "rate": 430.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "9.147D.2",
+    "desc": "Three track three panels sliding window with fly proof SS wire mesh (Two nos. glazed & one no. wire mesh panels) made of (small series) fram",
+    "unit": "sqm",
+    "basis": 1.62,
+    "say": 8954.2,
+    "resources": [
       {
         "code": "8135",
         "desc": "uPVC extruded (small series) 3 track sliding window frame size 92x44 mm i/c 5% wastage",
@@ -15588,8 +15346,15 @@
         "rate": 265.0
       },
       {
-        "code": "sliding",
-        "desc": "window sash i/c 5% wastage",
+        "code": "8140",
+        "desc": "uPVC extruded interlock of appropriate dimension for small series sliding window sash i/c 5% wastage",
+        "unit": "metre",
+        "qty": 4.04,
+        "rate": 80.0
+      },
+      {
+        "code": "8131",
+        "desc": "uPVC extruded glazing bead of appropriate dimension for small series sliding window sash i/c 5% wastage",
         "unit": "metre",
         "qty": 10.38,
         "rate": 60.0
@@ -15637,13 +15402,6 @@
         "rate": 56.0
       },
       {
-        "code": "9999",
-        "desc": "Sundries, plastic packers, plastic caps, SS screws and carriage of material",
-        "unit": "L.S.",
-        "qty": 170.0,
-        "rate": 2.0
-      },
-      {
         "code": "0162",
         "desc": "Labour for fabrication of uPVC extruded sliding windows including drilling holes, fixing of fittings & hardwares, hire charges of drill machine and electricity charges etc.",
         "unit": "sqm",
@@ -15656,7 +15414,16 @@
         "unit": "sqm",
         "qty": 1.62,
         "rate": 430.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "9.147D.3",
+    "desc": "Two track two panels sliding window made of (big series) frame 67 x 50 mm & sash 46 x 62 mm both having wall thickness of 2.3 ± 0.2 mm and s",
+    "unit": "sqm",
+    "basis": 2.03,
+    "say": 6912.15,
+    "resources": [
       {
         "code": "8134",
         "desc": "uPVC extruded (big series) 2 track sliding window frame size 67x50mm i/c 5% wastage",
@@ -15670,6 +15437,13 @@
         "unit": "metre",
         "qty": 8.36,
         "rate": 325.0
+      },
+      {
+        "code": "8141",
+        "desc": "uPVC extruded interlock of appropriate dimension for big series sliding window sash i/c 5% wastage",
+        "unit": "metre",
+        "qty": 2.65,
+        "rate": 90.0
       },
       {
         "code": "8132",
@@ -15728,13 +15502,6 @@
         "rate": 56.0
       },
       {
-        "code": "9999",
-        "desc": "Sundries, plastic packers, plastic caps, SS screws and carriage of material",
-        "unit": "L.S.",
-        "qty": 170.0,
-        "rate": 2.0
-      },
-      {
         "code": "0162",
         "desc": "Labour for fabrication of uPVC extruded sliding windows including drilling holes, fixing of fittings & hardwares, hire charges of drill machine and electricity charges etc.",
         "unit": "sqm",
@@ -15747,7 +15514,16 @@
         "unit": "sqm",
         "qty": 2.03,
         "rate": 430.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "9.147D.4",
+    "desc": "Three track three panels sliding window with fly proof S.S wire mesh (Two nos. glazed & one no. wire mesh panels) made of (big series) frame",
+    "unit": "sqm",
+    "basis": 2.43,
+    "say": 8616.0,
+    "resources": [
       {
         "code": "8136",
         "desc": "uPVC extruded (big series) 3 track sliding window frame size 116x45mm i/c 5% wastage",
@@ -15761,6 +15537,13 @@
         "unit": "metre",
         "qty": 13.49,
         "rate": 325.0
+      },
+      {
+        "code": "8141",
+        "desc": "uPVC extruded interlock of appropriate dimension for big series sliding window sash i/c 5% wastage",
+        "unit": "metre",
+        "qty": 3.98,
+        "rate": 90.0
       },
       {
         "code": "8132",
@@ -15819,13 +15602,6 @@
         "rate": 56.0
       },
       {
-        "code": "9999",
-        "desc": "Sundries, plastic packers, plastic caps, SS screws and carriage of material",
-        "unit": "L.S.",
-        "qty": 170.0,
-        "rate": 2.0
-      },
-      {
         "code": "0162",
         "desc": "Labour for fabrication of uPVC extruded sliding windows including drilling holes, fixing of fittings & hardwares, hire charges of drill machine and electricity charges etc.",
         "unit": "sqm",
@@ -15838,7 +15614,16 @@
         "unit": "sqm",
         "qty": 2.43,
         "rate": 430.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "9.147D.5",
+    "desc": "Three track three panels sliding window made of (big series) frame 116 x 45 mm & sash 46 x 62 mm both having wall thickness of 2.3 ± 0.2 mm ",
+    "unit": "sqm",
+    "basis": 2.43,
+    "say": 8177.05,
+    "resources": [
       {
         "code": "8136",
         "desc": "uPVC extruded (big series) 3 track sliding window frame size 116x45mm i/c 5% wastage",
@@ -15852,6 +15637,13 @@
         "unit": "metre",
         "qty": 11.85,
         "rate": 325.0
+      },
+      {
+        "code": "8141",
+        "desc": "uPVC extruded interlock of appropriate dimension for big series sliding window sash i/c 5% wastage",
+        "unit": "metre",
+        "qty": 5.3,
+        "rate": 90.0
       },
       {
         "code": "8132",
@@ -15910,13 +15702,6 @@
         "rate": 56.0
       },
       {
-        "code": "9999",
-        "desc": "Sundries, plastic packers, plastic caps, SS screws and carriage of material",
-        "unit": "L.S.",
-        "qty": 170.0,
-        "rate": 2.0
-      },
-      {
         "code": "0162",
         "desc": "Labour for fabrication of uPVC extruded sliding windows including drilling holes, fixing of fittings & hardwares, hire charges of drill machine and electricity charges etc.",
         "unit": "sqm",
@@ -15929,7 +15714,16 @@
         "unit": "sqm",
         "qty": 2.43,
         "rate": 430.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "9.147E.1",
+    "desc": "Two track two panels sliding window made of (big series) frame 67 x 50 mm & sash 46 x 62 mm both having wall thickness of 2.3 ± 0.2 mm and s",
+    "unit": "sqm",
+    "basis": 3.6,
+    "say": 6861.6,
+    "resources": [
       {
         "code": "8134",
         "desc": "uPVC extruded (big series) 2 track sliding window frame size 67x50mm i/c 5% wastage",
@@ -15943,6 +15737,13 @@
         "unit": "metre",
         "qty": 12.77,
         "rate": 325.0
+      },
+      {
+        "code": "8141",
+        "desc": "uPVC extruded interlock of appropriate dimension for big series sliding window sash i/c 5% wastage",
+        "unit": "metre",
+        "qty": 4.86,
+        "rate": 90.0
       },
       {
         "code": "8132",
@@ -15988,8 +15789,8 @@
       },
       {
         "code": "8118",
-        "desc": "Zinc alloy (white powder coated) handles along with zinc plated mild steel multi point locking having transmission gear with keeps for uPVC sliding window",
-        "unit": "each set",
+        "desc": "Zinc alloy (white powder coated) handles along with zinc plated mild steel multi point locking having transmission gear with keeps for uPVC sliding window each",
+        "unit": "set",
         "qty": 2.0,
         "rate": 1394.0
       },
@@ -15999,13 +15800,6 @@
         "unit": "each",
         "qty": 4.0,
         "rate": 95.0
-      },
-      {
-        "code": "9999",
-        "desc": "Sundries, plastic packers, plastic caps, SS screws and carriage of material",
-        "unit": "L.S.",
-        "qty": 170.0,
-        "rate": 2.0
       },
       {
         "code": "0162",
@@ -16020,7 +15814,16 @@
         "unit": "sqm",
         "qty": 3.6,
         "rate": 430.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "9.147E.2",
+    "desc": "Two track four panels sliding window made of (big series) frame 67 x 50 mm & sash 46 x 62 mm both having wall thickness of 2.3 ± 0.2 mm and ",
+    "unit": "sqm",
+    "basis": 7.2,
+    "say": 5941.95,
+    "resources": [
       {
         "code": "8134",
         "desc": "uPVC extruded (big series) 2 track sliding window frame size 67x50mm i/c 5% wastage",
@@ -16034,6 +15837,20 @@
         "unit": "metre",
         "qty": 25.75,
         "rate": 325.0
+      },
+      {
+        "code": "8141",
+        "desc": "uPVC extruded interlock of appropriate dimension for big series sliding window sash i/c 5% wastage",
+        "unit": "metre",
+        "qty": 9.71,
+        "rate": 90.0
+      },
+      {
+        "code": "8142",
+        "desc": "uPVC extruded inline adaptor of appropriate dimension for big series sliding window sash i/c 5% wastage",
+        "unit": "metre",
+        "qty": 2.4,
+        "rate": 90.0
       },
       {
         "code": "8132",
@@ -16079,8 +15896,8 @@
       },
       {
         "code": "8118",
-        "desc": "Zinc alloy (white powder coated) handles along with zinc plated mild steel multi point locking having transmission gear with keeps for uPVC sliding window",
-        "unit": "each set",
+        "desc": "Zinc alloy (white powder coated) handles along with zinc plated mild steel multi point locking having transmission gear with keeps for uPVC sliding window each",
+        "unit": "set",
         "qty": 2.0,
         "rate": 1394.0
       },
@@ -16099,13 +15916,6 @@
         "rate": 115.0
       },
       {
-        "code": "9999",
-        "desc": "Sundries, plastic packers, plastic caps, SS screws and carriage of material",
-        "unit": "L.S.",
-        "qty": 170.0,
-        "rate": 2.0
-      },
-      {
         "code": "0162",
         "desc": "Labour for fabrication of uPVC extruded sliding windows including drilling holes, fixing of fittings & hardwares, hire charges of drill machine and electricity charges etc.",
         "unit": "sqm",
@@ -16118,13 +15928,36 @@
         "unit": "sqm",
         "qty": 7.2,
         "rate": 430.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "9.147F.1",
+    "desc": "Two track two panels sliding door made of (big series) frame 67 x 50 mm & sash 46 x 82 mm both having wall thickness of 2.3 ± 0.2 mm and sin",
+    "unit": "sqm",
+    "basis": 4.2,
+    "say": 6005.0,
+    "resources": [
       {
         "code": "8134",
         "desc": "uPVC extruded (big series) 2 track sliding door frame size 67x50mm i/c 5% wastage",
         "unit": "metre",
         "qty": 8.61,
         "rate": 385.0
+      },
+      {
+        "code": "8143",
+        "desc": "uPVC extruded 2 track sliding door sash (big series) size 46x82mm i/c 5% wastage",
+        "unit": "metre",
+        "qty": 12.6,
+        "rate": 350.0
+      },
+      {
+        "code": "8141",
+        "desc": "uPVC extruded interlock of appropriate dimension for big series sliding door sash i/c 5% wastage",
+        "unit": "metre",
+        "qty": 4.23,
+        "rate": 90.0
       },
       {
         "code": "8132",
@@ -16170,8 +16003,8 @@
       },
       {
         "code": "8119",
-        "desc": "Zinc alloy (white powder coated) handles with key along with zinc plated mild steel multi point locking having transmission gear with keeps for uPVC sliding door",
-        "unit": "each set",
+        "desc": "Zinc alloy (white powder coated) handles with key along with zinc plated mild steel multi point locking having transmission gear with keeps for uPVC sliding door each",
+        "unit": "set",
         "qty": 2.0,
         "rate": 1150.0
       },
@@ -16181,13 +16014,6 @@
         "unit": "each",
         "qty": 4.0,
         "rate": 95.0
-      },
-      {
-        "code": "9999",
-        "desc": "Sundries, plastic packers, plastic caps, SS screws and carriage of material",
-        "unit": "L.S.",
-        "qty": 170.0,
-        "rate": 2.0
       },
       {
         "code": "0162",
@@ -16202,13 +16028,43 @@
         "unit": "sqm",
         "qty": 4.2,
         "rate": 430.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "9.147F.2",
+    "desc": "Two track four panels sliding door made of (big series) frame 67 x 50 mm & sash 46 x 82 mm both having wall thickness of 2.3 ± 0.2 mm and si",
+    "unit": "sqm",
+    "basis": 8.4,
+    "say": 5332.85,
+    "resources": [
       {
         "code": "8134",
         "desc": "uPVC extruded (big series) 2 track sliding door frame size 67x50mm i/c 5% wastage",
         "unit": "metre",
         "qty": 12.81,
         "rate": 385.0
+      },
+      {
+        "code": "8143",
+        "desc": "uPVC extruded 2 track sliding door sash (big series) size 46x82mm i/c 5% wastage",
+        "unit": "metre",
+        "qty": 25.42,
+        "rate": 350.0
+      },
+      {
+        "code": "8141",
+        "desc": "uPVC extruded interlock of appropriate dimension for big series sliding door sash i/c 5% wastage",
+        "unit": "metre",
+        "qty": 8.45,
+        "rate": 90.0
+      },
+      {
+        "code": "8142",
+        "desc": "uPVC extruded inline adaptor of appropriate dimension for big series sliding door sash",
+        "unit": "metre",
+        "qty": 2.1,
+        "rate": 90.0
       },
       {
         "code": "8132",
@@ -16254,8 +16110,8 @@
       },
       {
         "code": "8119",
-        "desc": "Zinc alloy (white powder coated) handles with key along with zinc plated mild steel multi point locking having transmission gear with keeps for uPVC sliding door",
-        "unit": "each set",
+        "desc": "Zinc alloy (white powder coated) handles with key along with zinc plated mild steel multi point locking having transmission gear with keeps for uPVC sliding door each",
+        "unit": "set",
         "qty": 2.0,
         "rate": 1150.0
       },
@@ -16293,13 +16149,36 @@
         "unit": "sqm",
         "qty": 8.4,
         "rate": 430.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "9.147F.3",
+    "desc": "Three track three panels sliding door made of (big series) frame 116 x 45 mm & sash 46 x 82 mm both having wall thickness of 2.3 ± 0.2 mm an",
+    "unit": "sqm",
+    "basis": 6.3,
+    "say": 6064.8,
+    "resources": [
       {
         "code": "8136",
         "desc": "uPVC extruded (big series) 3 track sliding door frame size 116x45mm i/c 5% wastage",
         "unit": "metre",
         "qty": 10.71,
         "rate": 530.0
+      },
+      {
+        "code": "8143",
+        "desc": "uPVC extruded 3 track sliding door sash (big series) size 46x82mm i/c 5% wastage",
+        "unit": "metre",
+        "qty": 19.09,
+        "rate": 350.0
+      },
+      {
+        "code": "8141",
+        "desc": "uPVC extruded interlock of appropriate dimension for big series sliding door sash i/c 5% wastage",
+        "unit": "metre",
+        "qty": 8.45,
+        "rate": 90.0
       },
       {
         "code": "8132",
@@ -16345,8 +16224,8 @@
       },
       {
         "code": "8119",
-        "desc": "Zinc alloy (white powder coated) handles with key along with zinc plated mild steel multi point locking having transmission gear with keeps for uPVC sliding door",
-        "unit": "each set",
+        "desc": "Zinc alloy (white powder coated) handles with key along with zinc plated mild steel multi point locking having transmission gear with keeps for uPVC sliding door each",
+        "unit": "set",
         "qty": 2.0,
         "rate": 1150.0
       },
@@ -16356,13 +16235,6 @@
         "unit": "each",
         "qty": 6.0,
         "rate": 95.0
-      },
-      {
-        "code": "9999",
-        "desc": "Sundries, plastic packers, plastic caps, SS screws and carriage of material",
-        "unit": "L.S.",
-        "qty": 170.0,
-        "rate": 2.0
       },
       {
         "code": "0162",
@@ -16377,13 +16249,36 @@
         "unit": "sqm",
         "qty": 6.3,
         "rate": 430.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "9.147F.4",
+    "desc": "Three track three panels sliding door with fly proof S.S wire mesh (Two nos. glazed & one no. wire mesh panels) made of (big series) frame 1",
+    "unit": "sqm",
+    "basis": 4.2,
+    "say": 7774.55,
+    "resources": [
       {
         "code": "8136",
         "desc": "uPVC extruded (big series) 3 track sliding door frame size 116x45mm i/c 5% wastage",
         "unit": "metre",
         "qty": 8.61,
         "rate": 530.0
+      },
+      {
+        "code": "8143",
+        "desc": "uPVC extruded 3 track sliding door sash (big series) size 46x82mm i/c 5% wastage",
+        "unit": "metre",
+        "qty": 18.9,
+        "rate": 350.0
+      },
+      {
+        "code": "8141",
+        "desc": "uPVC extruded interlock of appropriate dimension for big series sliding door sash i/c 5% wastage",
+        "unit": "metre",
+        "qty": 6.34,
+        "rate": 90.0
       },
       {
         "code": "8132",
@@ -16429,8 +16324,8 @@
       },
       {
         "code": "8119",
-        "desc": "Zinc alloy (white powder coated) handles with key along with zinc plated mild steel multi point locking having transmission gear with keeps for uPVC sliding door",
-        "unit": "each set",
+        "desc": "Zinc alloy (white powder coated) handles with key along with zinc plated mild steel multi point locking having transmission gear with keeps for uPVC sliding door each",
+        "unit": "set",
         "qty": 2.0,
         "rate": 1150.0
       },
@@ -16447,13 +16342,6 @@
         "unit": "each",
         "qty": 6.0,
         "rate": 95.0
-      },
-      {
-        "code": "9999",
-        "desc": "Sundries, plastic packers, plastic caps, SS screws and carriage of material",
-        "unit": "L.S.",
-        "qty": 170.0,
-        "rate": 2.0
       },
       {
         "code": "0162",
@@ -16473,7 +16361,8 @@
   },
   {
     "code": "9.148.1",
-    "unit": "nos",
+    "desc": "200 x 19 x 1.9 mm",
+    "unit": "Nos",
     "basis": 10.0,
     "say": 299.9,
     "resources": [
@@ -16516,7 +16405,8 @@
   },
   {
     "code": "9.148.2",
-    "unit": "nos",
+    "desc": "250 x 19 x 1.9 mm",
+    "unit": "Nos",
     "basis": 10.0,
     "say": 333.35,
     "resources": [
@@ -16559,7 +16449,8 @@
   },
   {
     "code": "9.148.3",
-    "unit": "nos",
+    "desc": "300 x 19 x 1.9 mm",
+    "unit": "Nos",
     "basis": 10.0,
     "say": 353.4,
     "resources": [
@@ -16602,7 +16493,8 @@
   },
   {
     "code": "9.148.4",
-    "unit": "nos",
+    "desc": "350 x 19 x 1.9 mm",
+    "unit": "Nos",
     "basis": 10.0,
     "say": 487.2,
     "resources": [
@@ -16645,7 +16537,8 @@
   },
   {
     "code": "9.148.5",
-    "unit": "nos",
+    "desc": "400 x 19 x 1.9 mm",
+    "unit": "Nos",
     "basis": 10.0,
     "say": 513.95,
     "resources": [
@@ -16688,7 +16581,8 @@
   },
   {
     "code": "9.149",
-    "unit": "nos",
+    "desc": "Providing and fixing casement handle made of zinc alloyed (white powder coated) for uPVC casement window with necessary screws etc. complete",
+    "unit": "Nos",
     "basis": 10.0,
     "say": 187.75,
     "resources": [
@@ -16724,7 +16618,8 @@
   },
   {
     "code": "9.150",
-    "unit": "nos",
+    "desc": "Providing and fixing zinc alloyed (white powder coated) touch lock for uPVC sliding window with necessary screws etc. complete.",
+    "unit": "Nos",
     "basis": 10.0,
     "say": 154.35,
     "resources": [
@@ -16760,7 +16655,8 @@
   },
   {
     "code": "9.151",
-    "unit": "nos",
+    "desc": "Providing and fixing steel roller for uPVC sliding window with necessary screws etc. complete.",
+    "unit": "Nos",
     "basis": 10.0,
     "say": 88.75,
     "resources": [
@@ -16796,7 +16692,8 @@
   },
   {
     "code": "9.152",
-    "unit": "nos",
+    "desc": "Providing and fixing steel roller for uPVC sliding door with necessary screws etc. complete.",
+    "unit": "Nos",
     "basis": 10.0,
     "say": 140.95,
     "resources": [
@@ -16832,7 +16729,8 @@
   },
   {
     "code": "9.153",
-    "unit": "nos",
+    "desc": "Providing and fixing steel (white power coated) crescent lock for uPVC sliding window/ door with necessary screws etc. complete.",
+    "unit": "Nos",
     "basis": 10.0,
     "say": 167.7,
     "resources": [
@@ -16868,10 +16766,18 @@
   },
   {
     "code": "9.154",
-    "unit": "m",
+    "desc": "Providing and fixing frame work for partitions/ wall lining etc. made of 50x50x1.6 mm hollow MS tube, placed along the walls, ceiling and fl",
+    "unit": "x2",
     "basis": 2.4,
     "say": 124.25,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 4.8,
+        "rate": 50.7
+      },
       {
         "code": "4009",
         "desc": "Mild steel tubes hot finished welded type",
@@ -16885,13 +16791,6 @@
         "unit": "each",
         "qty": 20.0,
         "rate": 15.0
-      },
-      {
-        "code": "13.50.3",
-        "desc": "Rate as per Item No.13.50.3 of SH: FINISHING",
-        "unit": "sqm",
-        "qty": 4.8,
-        "rate": 50.7
       },
       {
         "code": "0116",
@@ -16932,6 +16831,7 @@
   },
   {
     "code": "9.155",
+    "desc": "Providing and fixing panelling or paneling and glazing in panelled or panelled and glazed shutters for doors, windows and clerestory windows",
     "unit": "sqm",
     "basis": 0.66,
     "say": 1624.05,
@@ -16968,6 +16868,7 @@
   },
   {
     "code": "9.156.1",
+    "desc": "Pre-laminated with decorative lamination on both side exterior Grade - I MDF Board 12 mm thick confirming to IS:14587",
     "unit": "sqm",
     "basis": 7.0,
     "say": 885.15,
@@ -17011,8 +16912,9 @@
   },
   {
     "code": "9.156.2",
-    "unit": "sqm",
-    "basis": 7.0,
+    "desc": "Pre-laminated with decorative lamination on both side exterior Grade - I MDF Board 18 mm thick confirming to IS:14587",
+    "unit": "x200",
+    "basis": 350.0,
     "say": 1080.0,
     "resources": [
       {
@@ -17054,6 +16956,7 @@
   },
   {
     "code": "9.157.1",
+    "desc": "Pre-laminated with decorative lamination one side and other side balancing lamination exterior Grade - I MDF Board 18 mm thick confirming to",
     "unit": "sqm",
     "basis": 0.6,
     "say": 1207.6,
@@ -17104,6 +17007,7 @@
   },
   {
     "code": "9.157.2",
+    "desc": "Pre-laminated with decorative lamination one side and other side balancing lamination exterior Grade - I MDF Board 25 mm thick confirming to",
     "unit": "sqm",
     "basis": 0.6,
     "say": 1626.05,
@@ -17154,6 +17058,7 @@
   },
   {
     "code": "9.158.1",
+    "desc": "12 mm thick.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1050.65,
@@ -17204,6 +17109,7 @@
   },
   {
     "code": "9.158.2",
+    "desc": "18 mm thick.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1249.35,
@@ -17254,6 +17160,7 @@
   },
   {
     "code": "9.158.3",
+    "desc": "25 mm thick.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1683.5,
@@ -17304,6 +17211,7 @@
   },
   {
     "code": "9.159",
+    "desc": "Providing and fixing 25mm thick pre-laminated medium density fibre board exterior grade ( Grade-I) IS:14587:1998 marked with one side decora",
     "unit": "sqm",
     "basis": 2.2,
     "say": 1816.75,
@@ -17361,6 +17269,7 @@
   },
   {
     "code": "9.160.1",
+    "desc": "18 mm thick.",
     "unit": "sqm",
     "basis": 6.0,
     "say": 1843.15,
@@ -17425,9 +17334,10 @@
   },
   {
     "code": "9.160.2",
+    "desc": "25 mm thick.",
     "unit": "sqm",
     "basis": 6.0,
-    "say": 1512.95,
+    "say": 2277.3,
     "resources": [
       {
         "code": "2486",
@@ -17484,7 +17394,16 @@
         "unit": "L.S.",
         "qty": 53.82,
         "rate": 2.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "9.161",
+    "desc": "Providing and fixing fire resistant door frame of section 50 x 60 mm on horizontal side & 35 x 60 mm on vertical sides having built in rebat",
+    "unit": "metre",
+    "basis": 5.81,
+    "say": 1512.95,
+    "resources": [
       {
         "code": "8017",
         "desc": "Fire Rated door Frame made with 1.6 mm thick G.I. Sheet (120 minutes)",
@@ -17510,8 +17429,9 @@
   },
   {
     "code": "9.162",
-    "unit": "kg",
-    "basis": 96.0,
+    "desc": "Providing and fixing 60 mm thick glazed fire resistant door shutters of 120 min Fire Rating confirming to IS:3614 (Part II) or EN1634-1:1999",
+    "unit": "sqm",
+    "basis": 3.5,
     "say": 8379.3,
     "resources": [
       {
@@ -17520,6 +17440,13 @@
         "unit": "sqm",
         "qty": 3.5,
         "rate": 5000.0
+      },
+      {
+        "code": "8101",
+        "desc": "Stainless steel ball bearing hinges of size 100x89x3mm",
+        "unit": "each",
+        "qty": 8.0,
+        "rate": 450.0
       },
       {
         "code": "9999",
@@ -17539,8 +17466,9 @@
   },
   {
     "code": "9.163",
-    "unit": "kg",
-    "basis": 96.0,
+    "desc": "Providing and fixing non load bearing fixed frame for fire resistant glazed Partition for 120 minutes Fire Rating, made out to a profile of ",
+    "unit": "metre",
+    "basis": 5.81,
     "say": 1512.95,
     "resources": [
       {
@@ -17568,8 +17496,9 @@
   },
   {
     "code": "9.164",
+    "desc": "Providing and fixing glazing in fire resistant door shutters, fixed panels & partitions etc., with G.I. beading made out of 1.6 mm thick G.I",
     "unit": "sqm",
-    "basis": 2.42,
+    "basis": 2.46,
     "say": 39395.3,
     "resources": [
       {
@@ -17611,6 +17540,7 @@
   },
   {
     "code": "9.165.1",
+    "desc": "125 mm",
     "unit": "nos",
     "basis": 1.0,
     "say": 98.75,
@@ -17623,20 +17553,6 @@
         "rate": 640.0
       },
       {
-        "code": "8214",
-        "desc": "SS screws 20mm",
-        "unit": "100 Nos.",
-        "qty": 0.4,
-        "rate": 125.0
-      },
-      {
-        "code": "9999",
-        "desc": "Carriage of material",
-        "unit": "LS",
-        "qty": 1.82,
-        "rate": 2.0
-      },
-      {
         "code": "0111",
         "desc": "Carpenter 1st class",
         "unit": "day",
@@ -17647,6 +17563,7 @@
   },
   {
     "code": "9.165.2",
+    "desc": "100mm",
     "unit": "nos",
     "basis": 1.0,
     "say": 74.0,
@@ -17659,20 +17576,6 @@
         "rate": 455.0
       },
       {
-        "code": "8214",
-        "desc": "SS screws 20mm",
-        "unit": "100 Nos.",
-        "qty": 0.4,
-        "rate": 125.0
-      },
-      {
-        "code": "9999",
-        "desc": "Carriage of material",
-        "unit": "LS",
-        "qty": 1.82,
-        "rate": 2.0
-      },
-      {
         "code": "0111",
         "desc": "Carpenter 1st class",
         "unit": "day",
@@ -17683,6 +17586,7 @@
   },
   {
     "code": "9.165.3",
+    "desc": "75 mm",
     "unit": "nos",
     "basis": 1.0,
     "say": 47.2,
@@ -17693,20 +17597,6 @@
         "unit": "10 Nos",
         "qty": 1.0,
         "rate": 255.0
-      },
-      {
-        "code": "8214",
-        "desc": "SS screws 20mm",
-        "unit": "100 Nos.",
-        "qty": 0.4,
-        "rate": 125.0
-      },
-      {
-        "code": "9999",
-        "desc": "Carriage of material",
-        "unit": "LS",
-        "qty": 1.82,
-        "rate": 2.0
       },
       {
         "code": "0111",

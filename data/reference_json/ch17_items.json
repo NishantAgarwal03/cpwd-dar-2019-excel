@@ -7,6 +7,27 @@
     "say": 5421.5,
     "resources": [
       {
+        "code": "1954",
+        "desc": "Vitreous china orrisa type w.c. pan size 580 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1200.0
+      },
+      {
+        "code": "7358",
+        "desc": "Flushing Cistern P.V.C. 10 lts capacity (low level) (White) (with fittings, accessories and flush pipe)",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 575.0
+      },
+      {
+        "code": "1896",
+        "desc": "100 mm S.C.I. trap with vent heel",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 320.0
+      },
+      {
         "code": "9999",
         "desc": "Cement, sand and grit etc.",
         "unit": "L.S.",
@@ -50,6 +71,27 @@
     "basis": 1.0,
     "say": 9836.7,
     "resources": [
+      {
+        "code": "7805",
+        "desc": "Salem Stainless steel AISI - 304 (18/8) Orrisa pattern W.C. pan 724mm X 578mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 4500.0
+      },
+      {
+        "code": "7358",
+        "desc": "Flushing Cistern P.V.C. 10 lts capacity (low level) (White) (with fittings, accessories and flush pipe)",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 575.0
+      },
+      {
+        "code": "1896",
+        "desc": "100 mm S.C.I. trap with vent heel",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 320.0
+      },
       {
         "code": "9999",
         "desc": "Cement, sand and grit etc.",
@@ -95,6 +137,27 @@
     "say": 5260.95,
     "resources": [
       {
+        "code": "1875",
+        "desc": "White plastic seat (solid)with lid C.P.brass hinges and rubber buffers",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 400.0
+      },
+      {
+        "code": "1955",
+        "desc": "Vitreous china pedestal type water closet",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1000.0
+      },
+      {
+        "code": "7358",
+        "desc": "Flushing Cistern P.V.C. 10 lts capacity (low level) (White) (with fittings, accessories and flush pipe)",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 575.0
+      },
+      {
         "code": "9999",
         "desc": "Cement, sand and grit etc.",
         "unit": "L.S.",
@@ -139,6 +202,27 @@
     "say": 5140.55,
     "resources": [
       {
+        "code": "1876",
+        "desc": "Black plastic seat (solid) with lid C.P.brass hinges and rubber buffers",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 310.0
+      },
+      {
+        "code": "1955",
+        "desc": "Vitreous china pedestal type water closet",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1000.0
+      },
+      {
+        "code": "7358",
+        "desc": "Flushing Cistern P.V.C. 10 lts capacity (low level) (White) (with fittings, accessories and flush pipe)",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 575.0
+      },
+      {
         "code": "9999",
         "desc": "Cement, sand and grit etc.",
         "unit": "L.S.",
@@ -182,6 +266,41 @@
     "basis": 1.0,
     "say": 6685.0,
     "resources": [
+      {
+        "code": "1875",
+        "desc": "White plastic seat (solid)with lid C.P.brass hinges and rubber buffers",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 400.0
+      },
+      {
+        "code": "1955",
+        "desc": "Vitreous china pedestal type water closet",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1000.0
+      },
+      {
+        "code": "7006",
+        "desc": "Vitreous china 10 litres low level cistern with fittings",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1240.0
+      },
+      {
+        "code": "9999",
+        "desc": "Overflow arrangement and specials for oveflow pipe",
+        "unit": "L.S.",
+        "qty": 62.79,
+        "rate": 2.0
+      },
+      {
+        "code": "1350",
+        "desc": "Mosquito proof coupling of approved design",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 30.0
+      },
       {
         "code": "9999",
         "desc": "Plugs ,screws etc.",
@@ -241,6 +360,41 @@
     "say": 6564.6,
     "resources": [
       {
+        "code": "1876",
+        "desc": "Black plastic seat (solid) with lid C.P.brass hinges and rubber buffers",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 310.0
+      },
+      {
+        "code": "1955",
+        "desc": "Vitreous china pedestal type water closet",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1000.0
+      },
+      {
+        "code": "7006",
+        "desc": "Vitreous china 10 litres low level cistern with fittings",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1240.0
+      },
+      {
+        "code": "9999",
+        "desc": "Overflow arrangement and specials for oveflow pipe",
+        "unit": "L.S.",
+        "qty": 62.79,
+        "rate": 2.0
+      },
+      {
+        "code": "1350",
+        "desc": "Mosquito proof coupling of approved design",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 30.0
+      },
+      {
         "code": "9999",
         "desc": "Plugs, screws etc.",
         "unit": "L.S.",
@@ -298,6 +452,27 @@
     "basis": 1.0,
     "say": 4982.25,
     "resources": [
+      {
+        "code": "1913",
+        "desc": "Vitreous china lipped front urinal",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 460.0
+      },
+      {
+        "code": "7359",
+        "desc": "P.V.C. automatic flushing cistern 5 lts capacity",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 470.0
+      },
+      {
+        "code": "7375",
+        "desc": "G.I. flush pipe and C.P. brass spreader including C.P. connecting pipe Single lipped urinal",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 445.0
+      },
       {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
@@ -364,6 +539,27 @@
     "say": 7677.75,
     "resources": [
       {
+        "code": "1913",
+        "desc": "Vitreous china lipped front urinal",
+        "unit": "each",
+        "qty": 2.0,
+        "rate": 460.0
+      },
+      {
+        "code": "7359",
+        "desc": "P.V.C. automatic flushing cistern 5 lts capacity",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 470.0
+      },
+      {
+        "code": "7376",
+        "desc": "G.I. flush pipe and C.P. brass spreader including C.P. connecting pipe Range of two lipped urinals",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 765.0
+      },
+      {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
         "unit": "L.S.",
@@ -428,6 +624,27 @@
     "basis": 1.0,
     "say": 10605.3,
     "resources": [
+      {
+        "code": "1913",
+        "desc": "Vitreous china lipped front urinal",
+        "unit": "each",
+        "qty": 3.0,
+        "rate": 460.0
+      },
+      {
+        "code": "7361",
+        "desc": "P.V.C. automatic flushing cistern 10 lts capacity",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 510.0
+      },
+      {
+        "code": "7377",
+        "desc": "G.I. flush pipe and C.P. brass spreader including C.P. connecting pipe Range of three lipped urinals",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1050.0
+      },
       {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
@@ -494,6 +711,27 @@
     "say": 14648.5,
     "resources": [
       {
+        "code": "1913",
+        "desc": "Vitreous china lipped front urinal",
+        "unit": "each",
+        "qty": 4.0,
+        "rate": 460.0
+      },
+      {
+        "code": "7361",
+        "desc": "P.V.C. automatic flushing cistern 10 lts capacity",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 510.0
+      },
+      {
+        "code": "7378",
+        "desc": "G.I. flush pipe and C.P. brass spreader including C.P. connecting pipe Range of four lipped urinals",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1430.0
+      },
+      {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
         "unit": "L.S.",
@@ -559,6 +797,34 @@
     "say": 9360.6,
     "resources": [
       {
+        "code": "7379",
+        "desc": "White vitreous china clay half stall urinal flat back 580x380x350 mm or angle back 450x375x350 mm with waste fittings as per IS :",
+        "unit": "2556 each",
+        "qty": 1.0,
+        "rate": 865.0
+      },
+      {
+        "code": "7359",
+        "desc": "P.V.C. automatic flushing cistern 5 lts capacity",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 470.0
+      },
+      {
+        "code": "1532",
+        "desc": "Flush pipe with union spreaders and clamps all in C.P. brass for single stall",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 270.0
+      },
+      {
+        "code": "1891",
+        "desc": "C.I. trap for standard urinal with vent arm with operating and other couplings in C.P.brass: 50 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 170.0
+      },
+      {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
         "unit": "L.S.",
@@ -616,6 +882,34 @@
     "basis": 1.0,
     "say": 14020.75,
     "resources": [
+      {
+        "code": "7379",
+        "desc": "White vitreous china clay half stall urinal flat back 580x380x350 mm or angle back 450x375x350 mm with waste fittings as per IS :",
+        "unit": "2556 each",
+        "qty": 2.0,
+        "rate": 865.0
+      },
+      {
+        "code": "7359",
+        "desc": "P.V.C. automatic flushing cistern 5 lts capacity",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 470.0
+      },
+      {
+        "code": "1533",
+        "desc": "Flush pipe with union spreaders and clamps all in C.P. brass for double stall",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 400.0
+      },
+      {
+        "code": "1891",
+        "desc": "C.I. trap for standard urinal with vent arm with operating and other couplings in C.P.brass: 50 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 170.0
+      },
       {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
@@ -675,6 +969,34 @@
     "say": 17307.55,
     "resources": [
       {
+        "code": "7379",
+        "desc": "White vitreous china clay half stall urinal flat back 580x380x350 mm or angle back 450x375x350 mm with waste fittings as per IS :",
+        "unit": "2556 each",
+        "qty": 3.0,
+        "rate": 865.0
+      },
+      {
+        "code": "7361",
+        "desc": "P.V.C. automatic flushing cistern 10 lts capacity",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 510.0
+      },
+      {
+        "code": "1534",
+        "desc": "Flush pipe with union spreaders and clamps all in C.P. brass for range of three stall",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 520.0
+      },
+      {
+        "code": "1893",
+        "desc": "C.I. trap for standard urinal with vent arm with operating and other couplings in C.P.brass: 80 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 225.0
+      },
+      {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
         "unit": "L.S.",
@@ -732,6 +1054,34 @@
     "basis": 1.0,
     "say": 20448.85,
     "resources": [
+      {
+        "code": "7379",
+        "desc": "White vitreous china clay half stall urinal flat back 580x380x350 mm or angle back 450x375x350 mm with waste fittings as per IS :",
+        "unit": "2556 each",
+        "qty": 4.0,
+        "rate": 865.0
+      },
+      {
+        "code": "7361",
+        "desc": "P.V.C. automatic flushing cistern 10 lts capacity",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 510.0
+      },
+      {
+        "code": "1535",
+        "desc": "Flush pipe with union spreaders and clamps all in C.P. brass for range of four stall",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 600.0
+      },
+      {
+        "code": "1893",
+        "desc": "C.I. trap for standard urinal with vent arm with operating and other couplings in C.P.brass: 80 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 225.0
+      },
       {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
@@ -791,6 +1141,27 @@
     "say": 7240.55,
     "resources": [
       {
+        "code": "1915",
+        "desc": "Vitreous china squatting plate urinal",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1053.0
+      },
+      {
+        "code": "7359",
+        "desc": "P.V.C. automatic flushing cistern 5 lts capacity",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 470.0
+      },
+      {
+        "code": "1540",
+        "desc": "Flush pipe and spreaders G.I.for single set of one squatting plate urinal",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 175.0
+      },
+      {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
         "unit": "L.S.",
@@ -848,6 +1219,27 @@
     "basis": 1.0,
     "say": 10572.45,
     "resources": [
+      {
+        "code": "1915",
+        "desc": "Vitreous china squatting plate urinal",
+        "unit": "each",
+        "qty": 2.0,
+        "rate": 1053.0
+      },
+      {
+        "code": "7359",
+        "desc": "P.V.C. automatic flushing cistern 5 lts capacity",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 470.0
+      },
+      {
+        "code": "1541",
+        "desc": "Flush pipe and spreaders G.I.for range of two squatting plates urinal",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 250.0
+      },
       {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
@@ -907,6 +1299,27 @@
     "say": 13931.7,
     "resources": [
       {
+        "code": "1915",
+        "desc": "Vitreous china squatting plate urinal",
+        "unit": "each",
+        "qty": 3.0,
+        "rate": 1053.0
+      },
+      {
+        "code": "7361",
+        "desc": "P.V.C. automatic flushing cistern 10 lts capacity",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 510.0
+      },
+      {
+        "code": "1542",
+        "desc": "Flush pipe and spreaders G.I.for range of three squatting plates urinal",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 300.0
+      },
+      {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
         "unit": "L.S.",
@@ -964,6 +1377,27 @@
     "basis": 1.0,
     "say": 16718.8,
     "resources": [
+      {
+        "code": "1915",
+        "desc": "Vitreous china squatting plate urinal",
+        "unit": "each",
+        "qty": 4.0,
+        "rate": 1053.0
+      },
+      {
+        "code": "7361",
+        "desc": "P.V.C. automatic flushing cistern 10 lts capacity",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 510.0
+      },
+      {
+        "code": "1543",
+        "desc": "Flush pipe and spreaders G.I.for range of four squatting plates urinal",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 390.0
+      },
       {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
@@ -1023,6 +1457,34 @@
     "say": 3087.7,
     "resources": [
       {
+        "code": "1947",
+        "desc": "Vitreous china flat back wash basin 630x450 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 725.0
+      },
+      {
+        "code": "1885",
+        "desc": "15 mm C.P.brass tap",
+        "unit": "each",
+        "qty": 2.0,
+        "rate": 207.0
+      },
+      {
+        "code": "1951",
+        "desc": "C.P. brass waste 32 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 80.0
+      },
+      {
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 88.0
+      },
+      {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
         "unit": "L.S.",
@@ -1080,6 +1542,34 @@
     "basis": 1.0,
     "say": 2751.3,
     "resources": [
+      {
+        "code": "1947",
+        "desc": "Vitreous china flat back wash basin 630x450 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 725.0
+      },
+      {
+        "code": "1885",
+        "desc": "15 mm C.P.brass tap",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 207.0
+      },
+      {
+        "code": "1951",
+        "desc": "C.P. brass waste 32 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 80.0
+      },
+      {
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 88.0
+      },
       {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
@@ -1139,6 +1629,34 @@
     "say": 2846.9,
     "resources": [
       {
+        "code": "3229",
+        "desc": "Vitreous china flat back wash basin 550x400 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 545.0
+      },
+      {
+        "code": "1885",
+        "desc": "15 mm C.P.brass tap",
+        "unit": "each",
+        "qty": 2.0,
+        "rate": 207.0
+      },
+      {
+        "code": "1951",
+        "desc": "C.P. brass waste 32 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 80.0
+      },
+      {
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 88.0
+      },
+      {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
         "unit": "L.S.",
@@ -1196,6 +1714,34 @@
     "basis": 1.0,
     "say": 2510.45,
     "resources": [
+      {
+        "code": "3229",
+        "desc": "Vitreous china flat back wash basin 550x400 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 545.0
+      },
+      {
+        "code": "1885",
+        "desc": "15 mm C.P.brass tap",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 207.0
+      },
+      {
+        "code": "1951",
+        "desc": "C.P. brass waste 32 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 80.0
+      },
+      {
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 88.0
+      },
       {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
@@ -1255,6 +1801,34 @@
     "say": 2751.3,
     "resources": [
       {
+        "code": "1949",
+        "desc": "Vitreous china angle back wash basin 600x480 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 725.0
+      },
+      {
+        "code": "1885",
+        "desc": "15 mm C.P.brass tap",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 207.0
+      },
+      {
+        "code": "1951",
+        "desc": "C.P. brass waste 32 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 80.0
+      },
+      {
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 88.0
+      },
+      {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
         "unit": "L.S.",
@@ -1312,6 +1886,34 @@
     "basis": 1.0,
     "say": 2349.9,
     "resources": [
+      {
+        "code": "1950",
+        "desc": "Vitreous china angle back wash basin 400x400 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 425.0
+      },
+      {
+        "code": "1885",
+        "desc": "15 mm C.P.brass tap",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 207.0
+      },
+      {
+        "code": "1951",
+        "desc": "C.P. brass waste 32 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 80.0
+      },
+      {
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 88.0
+      },
       {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
@@ -1371,6 +1973,34 @@
     "say": 2196.05,
     "resources": [
       {
+        "code": "7004",
+        "desc": "Vitreous china flat back wash basin 450x300 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 310.0
+      },
+      {
+        "code": "1885",
+        "desc": "15 mm C.P.brass tap",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 207.0
+      },
+      {
+        "code": "1951",
+        "desc": "C.P. brass waste 32 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 80.0
+      },
+      {
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 88.0
+      },
+      {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
         "unit": "L.S.",
@@ -1428,6 +2058,34 @@
     "basis": 1.0,
     "say": 4052.35,
     "resources": [
+      {
+        "code": "3213",
+        "desc": "Vitreous china Surgeon type wash basin of size 660x460 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1000.0
+      },
+      {
+        "code": "7363",
+        "desc": "15 mm C.P. brass tap with elbow operation lever",
+        "unit": "each",
+        "qty": 2.0,
+        "rate": 430.0
+      },
+      {
+        "code": "1951",
+        "desc": "C.P. brass waste 32 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 80.0
+      },
+      {
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 88.0
+      },
       {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
@@ -1487,6 +2145,34 @@
     "say": 3417.55,
     "resources": [
       {
+        "code": "3213",
+        "desc": "Vitreous china Surgeon type wash basin of size 660x460 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1000.0
+      },
+      {
+        "code": "7363",
+        "desc": "15 mm C.P. brass tap with elbow operation lever",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 430.0
+      },
+      {
+        "code": "1951",
+        "desc": "C.P. brass waste 32 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 80.0
+      },
+      {
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 88.0
+      },
+      {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
         "unit": "L.S.",
@@ -1544,6 +2230,34 @@
     "basis": 1.0,
     "say": 3788.2,
     "resources": [
+      {
+        "code": "7806",
+        "desc": "Salem Stainless steel AISI - 304 (18/8) Round basin 405mm X 355mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1500.0
+      },
+      {
+        "code": "1885",
+        "desc": "15 mm C.P.brass tap",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 207.0
+      },
+      {
+        "code": "1951",
+        "desc": "C.P. brass waste 32 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 80.0
+      },
+      {
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 88.0
+      },
       {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
@@ -1603,6 +2317,34 @@
     "say": 4457.15,
     "resources": [
       {
+        "code": "7807",
+        "desc": "Salem Stainless steel AISI - 304 (18/8) Wash basin 530mm X 345mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 2000.0
+      },
+      {
+        "code": "1885",
+        "desc": "15 mm C.P.brass tap",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 207.0
+      },
+      {
+        "code": "1951",
+        "desc": "C.P. brass waste 32 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 80.0
+      },
+      {
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 88.0
+      },
+      {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
         "unit": "L.S.",
@@ -1652,6 +2394,34 @@
         "rate": 558.0
       },
       {
+        "code": "3229",
+        "desc": "Vitreous china flat back wash basin 550x400 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 545.0
+      },
+      {
+        "code": "9001",
+        "desc": "C.P. Brass Centre Hole Basin Mixer With Cast Spout ( Kigston/Marc/Prima/ Parko/Hindware)",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1600.0
+      },
+      {
+        "code": "1951",
+        "desc": "C.P. brass waste 32 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 80.0
+      },
+      {
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 88.0
+      },
+      {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
         "unit": "L.S.",
@@ -1699,6 +2469,34 @@
         "unit": "day",
         "qty": 0.63,
         "rate": 558.0
+      },
+      {
+        "code": "3229",
+        "desc": "Vitreous china flat back wash basin 550x400 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 545.0
+      },
+      {
+        "code": "7406",
+        "desc": "PTMT pillar cock",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 125.0
+      },
+      {
+        "code": "7491",
+        "desc": "PTMT - Waste Coupling 31/32 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 34.0
+      },
+      {
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 88.0
       },
       {
         "code": "9999",
@@ -1759,6 +2557,13 @@
     "say": 1420.15,
     "resources": [
       {
+        "code": "1396",
+        "desc": "Vitrous china pedestal for wash basin",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 900.0
+      },
+      {
         "code": "9999",
         "desc": "White cement mortar",
         "unit": "L.S.",
@@ -1781,6 +2586,34 @@
     "basis": 1.0,
     "say": 3163.25,
     "resources": [
+      {
+        "code": "1863",
+        "desc": "Fire clay kitchen sink: 600x450x250 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1283.0
+      },
+      {
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 88.0
+      },
+      {
+        "code": "1315",
+        "desc": "C.P.brass chain with 40 mm dia rubber plug",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 40.0
+      },
+      {
+        "code": "1952",
+        "desc": "C.P. brass waste 40 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 95.0
+      },
       {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
@@ -1833,53 +2666,25 @@
     ]
   },
   {
-    "code": "17.10.1",
-    "desc": "Kitchen sink with drain board 17.10.1.1 510x1040 mm bowl depth 250 mm",
+    "code": "17.10.1.1",
+    "desc": "510x1040 mm bowl depth 250 mm",
     "unit": "nos",
     "basis": 1.0,
     "say": 5155.95,
     "resources": [
       {
-        "code": "9999",
-        "desc": "Cement, sand and grit etc.",
-        "unit": "L.S.",
-        "qty": 27.04,
-        "rate": 2.0
+        "code": "7095",
+        "desc": "Stainless steel kitchen sink - with drain board bowl depth 250 mm.",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 2480.0
       },
       {
-        "code": "9999",
-        "desc": "Painting of brackets etc.",
-        "unit": "L.S.",
-        "qty": 26.91,
-        "rate": 2.0
-      },
-      {
-        "code": "9977",
-        "desc": "Carriage of materials",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
-      },
-      {
-        "code": "0116",
-        "desc": "Fitter (grade 1)",
-        "unit": "day",
-        "qty": 0.22,
-        "rate": 738.0
-      },
-      {
-        "code": "0123",
-        "desc": "Mason (brick layer) 1st class",
-        "unit": "day",
-        "qty": 0.6,
-        "rate": 738.0
-      },
-      {
-        "code": "0114",
-        "desc": "Beldar",
-        "unit": "day",
-        "qty": 0.82,
-        "rate": 558.0
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 2.0,
+        "rate": 88.0
       },
       {
         "code": "9999",
@@ -1922,6 +2727,29 @@
         "unit": "day",
         "qty": 0.82,
         "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.10.1.2",
+    "desc": "510x1040 mm bowl depth 225 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 5851.7,
+    "resources": [
+      {
+        "code": "7096",
+        "desc": "Stainlees steel kitchen sink - with drain board 510 x 1040mm bowl depth 225 mm.",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 3000.0
+      },
+      {
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 2.0,
+        "rate": 88.0
       },
       {
         "code": "9999",
@@ -1964,6 +2792,94 @@
         "unit": "day",
         "qty": 0.82,
         "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.10.1.3",
+    "desc": "510x1040 mm bowl depth 200 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 5584.1,
+    "resources": [
+      {
+        "code": "7097",
+        "desc": "Stainlees steel kitchen sink - with drain board 510 x 1040mm bowl depth 200 mm.",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 2800.0
+      },
+      {
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 2.0,
+        "rate": 88.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 27.04,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting of brackets etc.",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.22,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.82,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.10.1.4",
+    "desc": "510x1040 mm bowl depth 178 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 5182.7,
+    "resources": [
+      {
+        "code": "7098",
+        "desc": "Stainless steel kitchen sink - with drain board 510x1040mm bowl depth 178 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 2500.0
+      },
+      {
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 2.0,
+        "rate": 88.0
       },
       {
         "code": "9999",
@@ -2010,53 +2926,25 @@
     ]
   },
   {
-    "code": "17.10.2",
-    "desc": "Kitchen sink without drain board 17.10.2.1 610x510 mm bowl depth 200 mm",
+    "code": "17.10.2.1",
+    "desc": "610x510 mm bowl depth 200 mm",
     "unit": "nos",
     "basis": 1.0,
     "say": 3631.55,
     "resources": [
       {
-        "code": "9999",
-        "desc": "Cement, sand and grit etc.",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
+        "code": "7101",
+        "desc": "Stainless steel kitchen sink - without drain board 610x510mm bowl depth 200 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1800.0
       },
       {
-        "code": "9999",
-        "desc": "Painting brackets",
-        "unit": "L.S.",
-        "qty": 26.91,
-        "rate": 2.0
-      },
-      {
-        "code": "9977",
-        "desc": "Carriage of materials",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
-      },
-      {
-        "code": "0116",
-        "desc": "Fitter (grade 1)",
-        "unit": "day",
-        "qty": 0.22,
-        "rate": 738.0
-      },
-      {
-        "code": "0123",
-        "desc": "Mason (brick layer) 1st class",
-        "unit": "day",
-        "qty": 0.33,
-        "rate": 738.0
-      },
-      {
-        "code": "0114",
-        "desc": "Beldar",
-        "unit": "day",
-        "qty": 0.56,
-        "rate": 558.0
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 88.0
       },
       {
         "code": "9999",
@@ -2099,6 +2987,94 @@
         "unit": "day",
         "qty": 0.56,
         "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.10.2.2",
+    "desc": "610x460 mm bowl depth 200 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2828.75,
+    "resources": [
+      {
+        "code": "7102",
+        "desc": "Stainless steel kitchen sink - without drain board 610x460mm bowl depth 200 mm.",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1200.0
+      },
+      {
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 88.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting brackets",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.22,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.56,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.10.2.3",
+    "desc": "470x420 mm bowl depth 178 mm",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2628.1,
+    "resources": [
+      {
+        "code": "7103",
+        "desc": "Stainless steel kitchen sink - without drain board 470x420mm bowl depth 178 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1050.0
+      },
+      {
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 88.0
       },
       {
         "code": "9999",
@@ -2151,6 +3127,48 @@
     "basis": 1.0,
     "say": 4122.55,
     "resources": [
+      {
+        "code": "1871",
+        "desc": "White vitreous china laboratry sink 450x300x150 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1500.0
+      },
+      {
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 88.0
+      },
+      {
+        "code": "1315",
+        "desc": "C.P.brass chain with 40 mm dia rubber plug",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 40.0
+      },
+      {
+        "code": "1952",
+        "desc": "C.P. brass waste 40 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 95.0
+      },
+      {
+        "code": "1895",
+        "desc": "C.P.brass trap40 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 300.0
+      },
+      {
+        "code": "3617",
+        "desc": "C.P.brass union 40 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 200.0
+      },
       {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
@@ -2210,6 +3228,48 @@
     "say": 5460.45,
     "resources": [
       {
+        "code": "1872",
+        "desc": "White vitreous china laboratry sink 600x450x200 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 2500.0
+      },
+      {
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 88.0
+      },
+      {
+        "code": "1315",
+        "desc": "C.P.brass chain with 40 mm dia rubber plug",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 40.0
+      },
+      {
+        "code": "1952",
+        "desc": "C.P. brass waste 40 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 95.0
+      },
+      {
+        "code": "1895",
+        "desc": "C.P.brass trap40 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 300.0
+      },
+      {
+        "code": "3617",
+        "desc": "C.P.brass union 40 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 200.0
+      },
+      {
         "code": "9999",
         "desc": "Red lead, white lead and gaskit",
         "unit": "L.S.",
@@ -2268,6 +3328,20 @@
     "say": 1337.8,
     "resources": [
       {
+        "code": "7364",
+        "desc": "White glazed fire clay draining board 600x450x25 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 525.0
+      },
+      {
+        "code": "1309",
+        "desc": "C.I. bracket for wash basin and sinks",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 88.0
+      },
+      {
         "code": "9999",
         "desc": "Cement, sand and grit etc.",
         "unit": "L.S.",
@@ -2319,6 +3393,13 @@
     "say": 1541.05,
     "resources": [
       {
+        "code": "1953",
+        "desc": "Vitreous china indian type w.c. pan size 580 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 450.0
+      },
+      {
         "code": "9999",
         "desc": "Cement, sand and grit etc.",
         "unit": "L.S.",
@@ -2356,6 +3437,13 @@
     "say": 2544.5,
     "resources": [
       {
+        "code": "1954",
+        "desc": "Vitreous china orrisa type w.c. pan size 580 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1200.0
+      },
+      {
         "code": "9999",
         "desc": "Cement, sand and grit etc.",
         "unit": "L.S.",
@@ -2391,7 +3479,15 @@
     "unit": "nos",
     "basis": 1.0,
     "say": 842.9,
-    "resources": []
+    "resources": [
+      {
+        "code": "7104",
+        "desc": "Coloured Orissa pattern W.C. pan 580x440 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1830.0
+      }
+    ]
   },
   {
     "code": "17.15",
@@ -2400,6 +3496,13 @@
     "basis": 1.0,
     "say": 2276.95,
     "resources": [
+      {
+        "code": "1955",
+        "desc": "Vitreous china pedestal type water closet",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1000.0
+      },
       {
         "code": "9999",
         "desc": "Cement, sand and grit etc.",
@@ -2438,6 +3541,27 @@
     "say": 260.9,
     "resources": [
       {
+        "code": "7105",
+        "desc": "Coloured Pedestal type W.C. pan 580x440 mm (European type)",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 860.0
+      },
+      {
+        "code": "7106",
+        "desc": "Coloured Vitreous china 10 lit. low level cistern",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1050.0
+      },
+      {
+        "code": "1313",
+        "desc": "8 mm dia C.P. Brass/ S.S. Jet with flexible tube upto 1 metre long with S.S. tringular plate for Eureopean type W.C.(Hindware/Kingston/Prima/Parko/ Marc)",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 200.0
+      },
+      {
         "code": "9999",
         "desc": "Carriage of material and fixing charges",
         "unit": "L.S.",
@@ -2453,6 +3577,13 @@
     "basis": 1.0,
     "say": 214.6,
     "resources": [
+      {
+        "code": "1363",
+        "desc": "Vitreous china foot rests 250x130x30 mm",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 100.0
+      },
       {
         "code": "0123",
         "desc": "Mason (brick layer) 1st class",
@@ -2470,6 +3601,20 @@
     "say": 214.6,
     "resources": [
       {
+        "code": "1970",
+        "desc": "Vitreous china foot rests 250x125x25 mm",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 100.0
+      },
+      {
+        "code": "9988",
+        "desc": "Cement, sand including carriage of materials",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
         "code": "0123",
         "desc": "Mason (brick layer) 1st class",
         "unit": "day",
@@ -2485,6 +3630,13 @@
     "basis": 1.0,
     "say": 999.95,
     "resources": [
+      {
+        "code": "7358",
+        "desc": "Flushing Cistern P.V.C. 10 lts capacity (low level) (White) (with fittings, accessories and flush pipe)",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 575.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of materials",
@@ -2516,6 +3668,13 @@
     "say": 971.4,
     "resources": [
       {
+        "code": "7123",
+        "desc": "Coloured High density polythylene/ poly propylene 10 lit. (full flush) capacity controlled low level flushing cistern with fittings",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 550.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of materials",
         "unit": "L.S.",
@@ -2545,6 +3704,13 @@
     "basis": 1.0,
     "say": 1839.7,
     "resources": [
+      {
+        "code": "7126",
+        "desc": "White Vitreous china 10 lit. (full flush) capacity controlled low level flushing cistern with all fittings",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 700.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of materials",
@@ -2576,6 +3742,13 @@
     "say": 2441.8,
     "resources": [
       {
+        "code": "7127",
+        "desc": "Coloured Vitreous china 10 lit. (full flush) capacity controlled low level flushing cistern with all fittings",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1150.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of materials",
         "unit": "L.S.",
@@ -2606,6 +3779,13 @@
     "say": 571.0,
     "resources": [
       {
+        "code": "1875",
+        "desc": "White plastic seat (solid)with lid C.P.brass hinges and rubber buffers",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 400.0
+      },
+      {
         "code": "9988",
         "desc": "Carriage of materials and fixing charges",
         "unit": "L.S.",
@@ -2621,6 +3801,13 @@
     "basis": 1.0,
     "say": 450.6,
     "resources": [
+      {
+        "code": "1876",
+        "desc": "Black plastic seat (solid) with lid C.P.brass hinges and rubber buffers",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 310.0
+      },
       {
         "code": "9988",
         "desc": "Carriage of materials and fixing charges",
@@ -2638,6 +3825,13 @@
     "say": 557.65,
     "resources": [
       {
+        "code": "7107",
+        "desc": "Coloured (other than black) solid P.V.C. seat in European W.C. pan",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 390.0
+      },
+      {
         "code": "9988",
         "desc": "Carriage of materials and fixing charges",
         "unit": "L.S.",
@@ -2654,6 +3848,13 @@
     "say": 116.1,
     "resources": [
       {
+        "code": "1614",
+        "desc": "G.I. inlet connection",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 60.0
+      },
+      {
         "code": "9988",
         "desc": "Carriage of materials and fixing charges",
         "unit": "L.S.",
@@ -2661,11 +3862,25 @@
         "rate": 2.0
       },
       {
+        "code": "7121",
+        "desc": "Bottle Trap",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 620.0
+      },
+      {
         "code": "9988",
         "desc": "Carriage and sundries",
         "unit": "L.S.",
         "qty": 20.0,
         "rate": 2.0
+      },
+      {
+        "code": "7122",
+        "desc": "CP Brass Single lever telephonic wall mixer of approved make",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 4500.0
       },
       {
         "code": "9977",
@@ -2683,6 +3898,13 @@
     "basis": 1.0,
     "say": 1299.75,
     "resources": [
+      {
+        "code": "1913",
+        "desc": "Vitreous china lipped front urinal",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 460.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of materials",
@@ -2713,6 +3935,13 @@
     "basis": 1.0,
     "say": 3207.5,
     "resources": [
+      {
+        "code": "1915",
+        "desc": "Vitreous china squatting plate urinal",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1053.0
+      },
       {
         "code": "9999",
         "desc": "Cement, sand and grit etc.",
@@ -2758,6 +3987,13 @@
     "say": 1139.4,
     "resources": [
       {
+        "code": "1947",
+        "desc": "Vitreous china flat back wash basin 630x450 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 725.0
+      },
+      {
         "code": "9999",
         "desc": "Fixing charges",
         "unit": "L.S.",
@@ -2781,6 +4017,13 @@
     "say": 898.6,
     "resources": [
       {
+        "code": "3229",
+        "desc": "Vitreous china flat back wash basin 550x400 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 545.0
+      },
+      {
         "code": "9999",
         "desc": "Fixing charges",
         "unit": "L.S.",
@@ -2804,6 +4047,13 @@
     "say": 1139.4,
     "resources": [
       {
+        "code": "1949",
+        "desc": "Vitreous china angle back wash basin 600x480 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 725.0
+      },
+      {
         "code": "9999",
         "desc": "Fixing charges",
         "unit": "L.S.",
@@ -2826,6 +4076,13 @@
     "basis": 1.0,
     "say": 1139.4,
     "resources": [
+      {
+        "code": "1949",
+        "desc": "Vitreous china angle back wash basin 600x480 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 725.0
+      },
       {
         "code": "9999",
         "desc": "Fixing charges",
@@ -2850,6 +4107,13 @@
     "say": 738.05,
     "resources": [
       {
+        "code": "1950",
+        "desc": "Vitreous china angle back wash basin 400x400 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 425.0
+      },
+      {
         "code": "9999",
         "desc": "Fixing charges",
         "unit": "L.S.",
@@ -2872,6 +4136,13 @@
     "basis": 1.0,
     "say": 584.15,
     "resources": [
+      {
+        "code": "7004",
+        "desc": "Vitreous china flat back wash basin 450x300 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 310.0
+      },
       {
         "code": "9999",
         "desc": "Fixing charges",
@@ -2896,6 +4167,13 @@
     "say": 1507.35,
     "resources": [
       {
+        "code": "3213",
+        "desc": "Vitreous china Surgeon type wash basin of size 660x460 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1000.0
+      },
+      {
         "code": "9999",
         "desc": "Fixing charges",
         "unit": "L.S.",
@@ -2918,6 +4196,13 @@
     "basis": 1.0,
     "say": 1853.65,
     "resources": [
+      {
+        "code": "1863",
+        "desc": "Fire clay kitchen sink: 600x450x250 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1283.0
+      },
       {
         "code": "9999",
         "desc": "Fixing charges",
@@ -2942,6 +4227,13 @@
     "say": 2143.95,
     "resources": [
       {
+        "code": "1871",
+        "desc": "White vitreous china laboratry sink 450x300x150 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1500.0
+      },
+      {
         "code": "9999",
         "desc": "Fixing charges",
         "unit": "L.S.",
@@ -2965,6 +4257,13 @@
     "say": 3481.9,
     "resources": [
       {
+        "code": "1872",
+        "desc": "White vitreous china laboratry sink 600x450x200 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 2500.0
+      },
+      {
         "code": "9999",
         "desc": "Fixing charges",
         "unit": "L.S.",
@@ -2981,18 +4280,18 @@
     ]
   },
   {
-    "code": "17.28.1",
-    "desc": "Semi rigid pipe 17.28.1.1 32 mm dia",
+    "code": "17.28.1.1",
+    "desc": "32 mm dia",
     "unit": "nos",
     "basis": 1.0,
     "say": 87.7,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 20.28,
-        "rate": 2.0
+        "code": "7117",
+        "desc": "Semi Rigid PVC waste pipe for sink and wash basin 32 mm dia with length not less than 700 mm i/c PVC waste fittings",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 25.0
       },
       {
         "code": "9988",
@@ -3004,18 +4303,64 @@
     ]
   },
   {
-    "code": "17.28.2",
-    "desc": "Flexible pipe 17.28.2.1 32 mm dia",
+    "code": "17.28.1.2",
+    "desc": "40 mm dia",
     "unit": "nos",
     "basis": 1.0,
-    "say": 101.1,
+    "say": 98.4,
     "resources": [
+      {
+        "code": "7118",
+        "desc": "Semi Rigid PVC waste pipe for sink and wash basin 40 mm dia with length not less than 700 mm i/c PVC waste fittings",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 33.0
+      },
       {
         "code": "9988",
         "desc": "Carriage of materials and fixing charges",
         "unit": "L.S.",
         "qty": 20.28,
         "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.28.2.1",
+    "desc": "32 mm dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 101.1,
+    "resources": [
+      {
+        "code": "7119",
+        "desc": "Flexible (coil shaped) PVC waste pipe for sink and wash basin 32 mm dia with length not less than 700 mm i/c PVC waste fittings",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 35.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 20.28,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.28.2.2",
+    "desc": "40 mm dia",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 101.1,
+    "resources": [
+      {
+        "code": "7120",
+        "desc": "Flexible (coil shaped) PVC waste pipe for sink and wash basin 40 mm dia with length not less than 700 mm i/c PVC waste fittings",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 35.0
       },
       {
         "code": "9988",
@@ -3034,6 +4379,13 @@
     "say": 44.6,
     "resources": [
       {
+        "code": "1369",
+        "desc": "S.C.I. gully or nahani grating 100 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 25.0
+      },
+      {
         "code": "9988",
         "desc": "Carriage of materials and fixing charges",
         "unit": "L.S.",
@@ -3050,6 +4402,13 @@
     "say": 45.0,
     "resources": [
       {
+        "code": "1350",
+        "desc": "Mosquito proof coupling of approved design",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 30.0
+      },
+      {
         "code": "9988",
         "desc": "Carriage of materials and fixing charges",
         "unit": "L.S.",
@@ -3065,6 +4424,34 @@
     "basis": 1.0,
     "say": 1283.05,
     "resources": [
+      {
+        "code": "8.23",
+        "desc": "Rate as per SH: 8.23",
+        "unit": "each",
+        "qty": 4.0,
+        "rate": 33.9
+      },
+      {
+        "code": "1392",
+        "desc": "Mirror of superior make glass 60x45 cm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 400.0
+      },
+      {
+        "code": "7116",
+        "desc": "Hard board 6 mm thick",
+        "unit": "sqm",
+        "qty": 0.27,
+        "rate": 115.0
+      },
+      {
+        "code": "0588",
+        "desc": "Chromium plated Brass screws 25 mm",
+        "unit": "100 Nos",
+        "qty": 0.04,
+        "rate": 180.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of materials",
@@ -3098,10 +4485,38 @@
   {
     "code": "17.32.1",
     "desc": "Circular shape 450 mm dia",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 0.2025,
     "say": 1242.0,
     "resources": [
+      {
+        "code": "7112",
+        "desc": "Circular shape 450 mm dia Mirror with Plastic moulded frame",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 430.0
+      },
+      {
+        "code": "7116",
+        "desc": "Hard board 6 mm thick",
+        "unit": "sqm",
+        "qty": 0.22,
+        "rate": 115.0
+      },
+      {
+        "code": "7048",
+        "desc": "Rawl plug 50 mm (designation 10 no.)",
+        "unit": "each",
+        "qty": 2.0,
+        "rate": 25.0
+      },
+      {
+        "code": "0588",
+        "desc": "Chromium plated Brass screws 25 mm",
+        "unit": "100 Nos",
+        "qty": 0.02,
+        "rate": 180.0
+      },
       {
         "code": "9999",
         "desc": "Sundries",
@@ -3135,10 +4550,38 @@
   {
     "code": "17.32.2",
     "desc": "Rectangular shape 453x357 mm",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 0.1617,
     "say": 1120.25,
     "resources": [
+      {
+        "code": "7113",
+        "desc": "Rectangular shape 453x357 mm Mirror with Plastic moulded frame",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 290.0
+      },
+      {
+        "code": "7116",
+        "desc": "Hard board 6 mm thick",
+        "unit": "sqm",
+        "qty": 0.18,
+        "rate": 115.0
+      },
+      {
+        "code": "7048",
+        "desc": "Rawl plug 50 mm (designation 10 no.)",
+        "unit": "each",
+        "qty": 4.0,
+        "rate": 25.0
+      },
+      {
+        "code": "0588",
+        "desc": "Chromium plated Brass screws 25 mm",
+        "unit": "100 Nos",
+        "qty": 0.04,
+        "rate": 180.0
+      },
       {
         "code": "9999",
         "desc": "Sundries",
@@ -3172,10 +4615,38 @@
   {
     "code": "17.32.3",
     "desc": "Oval shape 450x350 mm (outer dimensions)",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "5",
+    "basis": 0.157,
     "say": 1185.6,
     "resources": [
+      {
+        "code": "7114",
+        "desc": "Ovel shape 450x350 mm (outer dimensions) Mirror with Plastic moulded frame",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 340.0
+      },
+      {
+        "code": "7116",
+        "desc": "Hard board 6 mm thick",
+        "unit": "sqm",
+        "qty": 0.17,
+        "rate": 115.0
+      },
+      {
+        "code": "7048",
+        "desc": "Rawl plug 50 mm (designation 10 no.)",
+        "unit": "each",
+        "qty": 4.0,
+        "rate": 25.0
+      },
+      {
+        "code": "0588",
+        "desc": "Chromium plated Brass screws 25 mm",
+        "unit": "100 Nos",
+        "qty": 0.04,
+        "rate": 180.0
+      },
       {
         "code": "9999",
         "desc": "Sundries",
@@ -3209,10 +4680,38 @@
   {
     "code": "17.32.4",
     "desc": "Rectangular shape 1500x450 mm",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 0.675,
     "say": 1786.55,
     "resources": [
+      {
+        "code": "7115",
+        "desc": "Rectangular shape 1500x450 mm Mirror with Plastic moulded frame",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 670.0
+      },
+      {
+        "code": "7116",
+        "desc": "Hard board 6 mm thick",
+        "unit": "sqm",
+        "qty": 0.74,
+        "rate": 115.0
+      },
+      {
+        "code": "7048",
+        "desc": "Rawl plug 50 mm (designation 10 no.)",
+        "unit": "each",
+        "qty": 6.0,
+        "rate": 25.0
+      },
+      {
+        "code": "0588",
+        "desc": "Chromium plated Brass screws 25 mm",
+        "unit": "100 Nos",
+        "qty": 0.06,
+        "rate": 180.0
+      },
       {
         "code": "9999",
         "desc": "Sundries",
@@ -3251,6 +4750,27 @@
     "say": 841.8,
     "resources": [
       {
+        "code": "3228",
+        "desc": "600x120 mm glass shelf with anodised aluminium angle frame, C.P. brass brackets and guard rail of standard size",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 250.0
+      },
+      {
+        "code": "7048",
+        "desc": "Rawl plug 50 mm (designation 10 no.)",
+        "unit": "each",
+        "qty": 2.0,
+        "rate": 25.0
+      },
+      {
+        "code": "0586",
+        "desc": "Chromium plated Brass screws 40 mm",
+        "unit": "100 Nos",
+        "qty": 0.04,
+        "rate": 290.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of materials",
         "unit": "L.S.",
@@ -3280,6 +4800,27 @@
     "basis": 1.0,
     "say": 583.75,
     "resources": [
+      {
+        "code": "8.23",
+        "desc": "Rate as per SH: 8.23",
+        "unit": "each",
+        "qty": 2.0,
+        "rate": 33.9
+      },
+      {
+        "code": "1889",
+        "desc": "C.P.brass toilet paper holder of standard size",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 225.0
+      },
+      {
+        "code": "0588",
+        "desc": "Chromium plated Brass screws 25 mm",
+        "unit": "100 Nos",
+        "qty": 0.02,
+        "rate": 180.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of materials",
@@ -3311,6 +4852,27 @@
     "say": 426.15,
     "resources": [
       {
+        "code": "8.23",
+        "desc": "Rate as per SH: 8.23",
+        "unit": "each",
+        "qty": 2.0,
+        "rate": 33.9
+      },
+      {
+        "code": "3749",
+        "desc": "Vitreous china toilet paper holder of standard size",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 100.0
+      },
+      {
+        "code": "0588",
+        "desc": "Chromium plated Brass screws 25 mm",
+        "unit": "100 Nos",
+        "qty": 0.06,
+        "rate": 180.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of materials",
         "unit": "L.S.",
@@ -3334,81 +4896,18 @@
     ]
   },
   {
-    "code": "17.35.1",
-    "desc": "100 mm dia 17.35.1.1 Sand cast iron S&S pipe as per IS: 1729",
+    "code": "17.35.1.1",
+    "desc": "Sand cast iron S&S pipe as per IS: 1729",
     "unit": "m",
-    "basis": 18.0,
+    "basis": 17.37,
     "say": 1008.2,
     "resources": [
       {
-        "code": "9999",
-        "desc": "Scaffolding",
-        "unit": "L.S.",
-        "qty": 80.73,
-        "rate": 2.0
-      },
-      {
-        "code": "9977",
-        "desc": "Carriage of materials",
-        "unit": "L.S.",
-        "qty": 53.82,
-        "rate": 2.0
-      },
-      {
-        "code": "0116",
-        "desc": "Fitter (grade 1)",
-        "unit": "day",
-        "qty": 0.42,
-        "rate": 738.0
-      },
-      {
-        "code": "0100",
-        "desc": "Bandhani",
-        "unit": "day",
-        "qty": 0.21,
-        "rate": 617.0
-      },
-      {
-        "code": "0114",
-        "desc": "Beldar",
-        "unit": "day",
-        "qty": 0.83,
-        "rate": 558.0
-      },
-      {
-        "code": "9999",
-        "desc": "Scaffolding",
-        "unit": "L.S.",
-        "qty": 80.73,
-        "rate": 2.0
-      },
-      {
-        "code": "9977",
-        "desc": "Carriage of materials",
-        "unit": "L.S.",
-        "qty": 53.82,
-        "rate": 2.0
-      },
-      {
-        "code": "0116",
-        "desc": "Fitter (grade 1)",
-        "unit": "day",
-        "qty": 0.42,
-        "rate": 738.0
-      },
-      {
-        "code": "0100",
-        "desc": "Bandhani",
-        "unit": "day",
-        "qty": 0.21,
-        "rate": 617.0
-      },
-      {
-        "code": "0114",
-        "desc": "Beldar",
-        "unit": "day",
-        "qty": 0.83,
-        "rate": 558.0
+        "code": "1617",
+        "desc": "S.C.I. soil, waste and vent single socketed pipe 1.80 metres long: 100mm dia",
+        "unit": "each",
+        "qty": 10.5,
+        "rate": 1135.0
       },
       {
         "code": "9999",
@@ -3448,46 +4947,120 @@
     ]
   },
   {
-    "code": "17.35.2",
-    "desc": "75 mm diameter : 17.35.2.1 Sand cast iron S&S pipe as per IS: 1729",
+    "code": "17.35.1.2",
+    "desc": "Centrifugally cast (spun) iron socket & spigot (S&S) pipe as per IS: 3989",
+    "unit": "m",
+    "basis": 16.87,
+    "say": 1092.2,
+    "resources": [
+      {
+        "code": "3620",
+        "desc": "C.C.I.(spun) socketed soil, waste and vent pipe 1.80 metres long:100mm dia",
+        "unit": "each",
+        "qty": 10.5,
+        "rate": 1200.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 80.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.42,
+        "rate": 738.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.21,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.83,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.35.1.3",
+    "desc": "Hubless centrifugally cast (spun) iron pipes epoxy coated inside & outside IS:15905",
     "unit": "m",
     "basis": 18.0,
+    "say": 1051.75,
+    "resources": [
+      {
+        "code": "7621",
+        "desc": "Hubless centrifugally cast (spun) iron pipes as per IS 15905 - 100 mm dia (3000 mm length pipe)",
+        "unit": "metre",
+        "qty": 18.54,
+        "rate": 700.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 80.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.42,
+        "rate": 738.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.21,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.83,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.35.2.1",
+    "desc": "Sand cast iron S&S pipe as per IS: 1729",
+    "unit": "m",
+    "basis": 17.42,
     "say": 923.25,
     "resources": [
       {
-        "code": "9999",
-        "desc": "Scaffolding",
-        "unit": "L.S.",
-        "qty": 80.73,
-        "rate": 2.0
-      },
-      {
-        "code": "9977",
-        "desc": "Carriage of materials",
-        "unit": "L.S.",
-        "qty": 40.38,
-        "rate": 2.0
-      },
-      {
-        "code": "0116",
-        "desc": "Fitter (grade 1)",
-        "unit": "day",
-        "qty": 0.35,
-        "rate": 738.0
-      },
-      {
-        "code": "0100",
-        "desc": "Bandhani",
-        "unit": "day",
-        "qty": 0.17,
-        "rate": 617.0
-      },
-      {
-        "code": "0114",
-        "desc": "Beldar",
-        "unit": "day",
-        "qty": 0.7,
-        "rate": 558.0
+        "code": "1616",
+        "desc": "S.C.I. soil, waste and vent single socketed pipe 1.80 metres long: 75mm dia",
+        "unit": "each",
+        "qty": 10.5,
+        "rate": 1050.0
       },
       {
         "code": "9999",
@@ -3523,6 +5096,73 @@
         "unit": "day",
         "qty": 0.7,
         "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.35.2.2",
+    "desc": "Centrifugally cast (spun) iron socketed pipe as per IS: 3989",
+    "unit": "m",
+    "basis": 16.92,
+    "say": 992.05,
+    "resources": [
+      {
+        "code": "3621",
+        "desc": "C.C.I.(spun) socketed soil, waste and vent pipe 1.80 metres long:75mm dia",
+        "unit": "each",
+        "qty": 10.5,
+        "rate": 1100.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 80.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 40.38,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.35,
+        "rate": 738.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.35.2.3",
+    "desc": "Hubless centrifugally cast (spun) iron pipes epoxy coated inside & outside IS:15905",
+    "unit": "m",
+    "basis": 18.0,
+    "say": 859.55,
+    "resources": [
+      {
+        "code": "7622",
+        "desc": "Hubless centrifugally cast (spun) iron pipes as per IS 15905 - 75 mm dia (3000 mm length pipe)",
+        "unit": "metre",
+        "qty": 18.54,
+        "rate": 570.0
       },
       {
         "code": "9999",
@@ -3564,8 +5204,8 @@
   {
     "code": "17.36.1",
     "desc": "75 mm dia pipe",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "joints",
+    "basis": 4.0,
     "say": 126.0,
     "resources": [
       {
@@ -3594,8 +5234,8 @@
   {
     "code": "17.36.2",
     "desc": "100 mm dia pipe",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "joints",
+    "basis": 4.0,
     "say": 148.45,
     "resources": [
       {
@@ -3625,9 +5265,16 @@
     "code": "17.37.1",
     "desc": "For 100 mm dia pipe",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 5.0,
     "say": 287.45,
     "resources": [
+      {
+        "code": "1331",
+        "desc": "M.S.Holder bat clamp of approved design for 100 mm S.C.I. pipe",
+        "unit": "each",
+        "qty": 5.0,
+        "rate": 30.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of bat clamps",
@@ -3664,6 +5311,27 @@
         "rate": 2.0
       },
       {
+        "code": "0295",
+        "desc": "Stone Aggregate (Single size) : 20 mm nominal size",
+        "unit": "cum",
+        "qty": 0.0033,
+        "rate": 1350.0
+      },
+      {
+        "code": "0297",
+        "desc": "Stone Aggregate (Single size) : 10 mm nominal size",
+        "unit": "cum",
+        "qty": 0.0011,
+        "rate": 1350.0
+      },
+      {
+        "code": "2202",
+        "desc": "Carriage of Stone aggregate below 40 mm nominal size",
+        "unit": "cum",
+        "qty": 0.0044,
+        "rate": 103.77
+      },
+      {
         "code": "0982",
         "desc": "Coarse sand (zone III)",
         "unit": "cum",
@@ -3671,11 +5339,25 @@
         "rate": 1350.0
       },
       {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 0.0022,
+        "rate": 103.77
+      },
+      {
         "code": "0367",
         "desc": "Portland Cement (OPC-43 grade)",
         "unit": "tonne",
         "qty": 0.0016,
         "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.0016,
+        "rate": 92.24
       },
       {
         "code": "0114",
@@ -3746,9 +5428,16 @@
     "code": "17.37.2",
     "desc": "For 75 mm dia pipe",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 5.0,
     "say": 283.4,
     "resources": [
+      {
+        "code": "1332",
+        "desc": "M.S.Holder bat clamp of approved design for75 mm S.C.I. pipe",
+        "unit": "each",
+        "qty": 5.0,
+        "rate": 27.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of bat clamps",
@@ -3785,6 +5474,27 @@
         "rate": 2.0
       },
       {
+        "code": "0295",
+        "desc": "Stone Aggregate (Single size) : 20 mm nominal size",
+        "unit": "cum",
+        "qty": 0.0033,
+        "rate": 1350.0
+      },
+      {
+        "code": "0297",
+        "desc": "Stone Aggregate (Single size) : 10 mm nominal size",
+        "unit": "cum",
+        "qty": 0.0011,
+        "rate": 1350.0
+      },
+      {
+        "code": "2202",
+        "desc": "Carriage of Stone aggregate below 40 mm nominal size",
+        "unit": "cum",
+        "qty": 0.0044,
+        "rate": 103.77
+      },
+      {
         "code": "0982",
         "desc": "Coarse sand (zone III)",
         "unit": "cum",
@@ -3792,11 +5502,25 @@
         "rate": 1350.0
       },
       {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 0.0022,
+        "rate": 103.77
+      },
+      {
         "code": "0367",
         "desc": "Portland Cement (OPC-43 grade)",
         "unit": "tonne",
         "qty": 0.0016,
         "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.0016,
+        "rate": 92.24
       },
       {
         "code": "0114",
@@ -3864,18 +5588,25 @@
     ]
   },
   {
-    "code": "17.38.1",
-    "desc": "100 mm dia 17.38.1.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.38.1.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
     "unit": "nos",
     "basis": 1.0,
     "say": 461.65,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
+        "code": "1625",
+        "desc": "S.C.I. bend with access door 100mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 300.0
+      },
+      {
+        "code": "1374",
+        "desc": "Rubber insertions for 100 mm dia pipe joints",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 18.0
       },
       {
         "code": "9988",
@@ -3883,6 +5614,59 @@
         "unit": "L.S.",
         "qty": 13.52,
         "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.38.1.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 461.65,
+    "resources": [
+      {
+        "code": "3624",
+        "desc": "S.C.I. S&S bends with access door 100mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 300.0
+      },
+      {
+        "code": "1374",
+        "desc": "Rubber insertions for 100 mm dia pipe joints",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 18.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.38.1.3",
+    "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 548.6,
+    "resources": [
+      {
+        "code": "7639",
+        "desc": "Hubless centrifugally cast (spun) iron bend with access door - 100 mm dia as per IS IS:15905",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 365.0
+      },
+      {
+        "code": "1374",
+        "desc": "Rubber insertions for 100 mm dia pipe joints",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 18.0
       },
       {
         "code": "9977",
@@ -3894,18 +5678,25 @@
     ]
   },
   {
-    "code": "17.38.2",
-    "desc": "75 mm dia 17.38.2.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.38.2.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
     "unit": "nos",
     "basis": 1.0,
     "say": 371.4,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 10.79,
-        "rate": 2.0
+        "code": "1624",
+        "desc": "S.C.I. bend with access door 75mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 240.0
+      },
+      {
+        "code": "1373",
+        "desc": "Rubber insertions for 80 mm dia pipe joints",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 16.0
       },
       {
         "code": "9988",
@@ -3913,6 +5704,59 @@
         "unit": "L.S.",
         "qty": 10.79,
         "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.38.2.2",
+    "desc": "Sand cast iron S&S as per IS- 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 384.75,
+    "resources": [
+      {
+        "code": "3625",
+        "desc": "S.C.I. S&S bends with access door 75mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 250.0
+      },
+      {
+        "code": "1373",
+        "desc": "Rubber insertions for 80 mm dia pipe joints",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 16.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.38.2.3",
+    "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 438.3,
+    "resources": [
+      {
+        "code": "7640",
+        "desc": "Hubless centrifugally cast (spun) iron bend with access door - 75 mm dia as per IS 15905 including cost of bolts & nuts.",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 290.0
+      },
+      {
+        "code": "1373",
+        "desc": "Rubber insertions for 80 mm dia pipe joints",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 16.0
       },
       {
         "code": "9977",
@@ -3924,18 +5768,18 @@
     ]
   },
   {
-    "code": "17.39.1",
-    "desc": "100 mm dia 17.39.1.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.39.1.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
     "unit": "nos",
     "basis": 1.0,
     "say": 381.35,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
+        "code": "1621",
+        "desc": "S.C.I. plain bend 100 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 258.0
       },
       {
         "code": "9988",
@@ -3943,6 +5787,45 @@
         "unit": "L.S.",
         "qty": 13.52,
         "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.39.1.2",
+    "desc": "Sand cast iron S&S as per IS : 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 390.75,
+    "resources": [
+      {
+        "code": "3628",
+        "desc": "S.C.I. S&S bend100mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 265.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.39.1.3",
+    "desc": "Hubless centrifugally cast (spun) iron pipes epoxy coated inside & outside IS:15905",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 343.9,
+    "resources": [
+      {
+        "code": "7623",
+        "desc": "Hubless centrifugally cast (spun) iron plain bend as per IS 15905- 100 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 230.0
       },
       {
         "code": "9977",
@@ -3954,18 +5837,18 @@
     ]
   },
   {
-    "code": "17.39.2",
-    "desc": "75 mm dia 17.39.2.1 Sand cast iron S&S as per IS -1729",
+    "code": "17.39.2.1",
+    "desc": "Sand cast iron S&S as per IS -1729",
     "unit": "nos",
     "basis": 1.0,
     "say": 309.85,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 10.79,
-        "rate": 2.0
+        "code": "1620",
+        "desc": "S.C.I. plain bend 75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 210.0
       },
       {
         "code": "9988",
@@ -3973,6 +5856,45 @@
         "unit": "L.S.",
         "qty": 10.79,
         "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.39.2.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 289.75,
+    "resources": [
+      {
+        "code": "3629",
+        "desc": "S.C.I. S&S bend75mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 195.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.39.2.3",
+    "desc": "Hubless centrifugally cast (spun) iron pipes epoxy coated inside & outside IS:15905",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 242.95,
+    "resources": [
+      {
+        "code": "7624",
+        "desc": "Hubless centrifugally cast (spun) iron plain bend as per IS 15905 - 75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 160.0
       },
       {
         "code": "9977",
@@ -3984,18 +5906,18 @@
     ]
   },
   {
-    "code": "17.40.1",
-    "desc": "100 mm dia 17.40.1.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.40.1.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
     "unit": "nos",
     "basis": 1.0,
     "say": 500.45,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
+        "code": "1667",
+        "desc": "Sand cast iron heel rest bend 100mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 347.0
       },
       {
         "code": "9988",
@@ -4007,18 +5929,41 @@
     ]
   },
   {
-    "code": "17.40.2",
-    "desc": "75 mm dia 17.40.2.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.40.1.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 432.2,
+    "resources": [
+      {
+        "code": "3634",
+        "desc": "S.C.I. S&S heel rest sanitary bend 100mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 296.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.40.2.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
     "unit": "nos",
     "basis": 1.0,
     "say": 395.45,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 10.79,
-        "rate": 2.0
+        "code": "1666",
+        "desc": "Sand cast iron heel rest bend75mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 274.0
       },
       {
         "code": "9988",
@@ -4030,18 +5975,48 @@
     ]
   },
   {
-    "code": "17.41.1",
-    "desc": "100x100x100x100 mm 17.41.1.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.40.2.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 363.35,
+    "resources": [
+      {
+        "code": "3635",
+        "desc": "S.C.I. S&S heel rest sanitary bend 75mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 250.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.41.1.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
     "unit": "nos",
     "basis": 1.0,
     "say": 1016.55,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.39,
-        "rate": 2.0
+        "code": "1637",
+        "desc": "S.C.I. double equal junctions 100x100x100x100 mm dia with access door.",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 715.0
+      },
+      {
+        "code": "1374",
+        "desc": "Rubber insertions for 100 mm dia pipe joints",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 18.0
       },
       {
         "code": "9988",
@@ -4053,18 +6028,55 @@
     ]
   },
   {
-    "code": "17.41.2",
-    "desc": "75x75x75x75 mm 17.41.2.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.41.1.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 882.75,
+    "resources": [
+      {
+        "code": "3654",
+        "desc": "S.C.I. S&S double equal junctions with access door 100x100x100x100 mm.",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 615.0
+      },
+      {
+        "code": "1374",
+        "desc": "Rubber insertions for 100 mm dia pipe joints",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 18.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.41.2.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
     "unit": "nos",
     "basis": 1.0,
     "say": 719.25,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 10.79,
-        "rate": 2.0
+        "code": "1636",
+        "desc": "S.C.I. double equal junctions 75x75x75x75 mm dia with access door.",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 500.0
+      },
+      {
+        "code": "1373",
+        "desc": "Rubber insertions for 80 mm dia pipe joints",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 16.0
       },
       {
         "code": "9988",
@@ -4076,18 +6088,48 @@
     ]
   },
   {
-    "code": "17.42.1",
-    "desc": "100x100x100x100 mm 17.42.1.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.41.2.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 692.5,
+    "resources": [
+      {
+        "code": "3655",
+        "desc": "S.C.I. S&S double equal junctions with access door 75x75x75x75 mm.",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 480.0
+      },
+      {
+        "code": "1373",
+        "desc": "Rubber insertions for 80 mm dia pipe joints",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 16.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.42.1.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
     "unit": "nos",
     "basis": 1.0,
     "say": 825.55,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
+        "code": "1634",
+        "desc": "S.C.I. plain double equal junctions 100x100x100x100 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 590.0
       },
       {
         "code": "9988",
@@ -4095,6 +6137,45 @@
         "unit": "L.S.",
         "qty": 13.52,
         "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.42.1.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 865.7,
+    "resources": [
+      {
+        "code": "3650",
+        "desc": "S.C.I. S&S double equal junctions 100x100x100x100 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 620.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.42.1.3",
+    "desc": "Hubless centrifugally cast (spun) iron pipes epoxy coated inside & outside IS:15905",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 718.55,
+    "resources": [
+      {
+        "code": "7625",
+        "desc": "Hubless centrifugally cast (spun) iron double equal plain junction as per IS 15905 - 100x100x100x100 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 510.0
       },
       {
         "code": "9977",
@@ -4106,18 +6187,18 @@
     ]
   },
   {
-    "code": "17.42.2",
-    "desc": "75x75x75x75 mm 17.42.2.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.42.2.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
     "unit": "nos",
     "basis": 1.0,
     "say": 539.95,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 10.79,
-        "rate": 2.0
+        "code": "1633",
+        "desc": "S.C.I. plain double equal junctions 75x75x75x75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 382.0
       },
       {
         "code": "9988",
@@ -4125,6 +6206,45 @@
         "unit": "L.S.",
         "qty": 10.79,
         "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.42.2.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 647.0,
+    "resources": [
+      {
+        "code": "3651",
+        "desc": "S.C.I. S&S double equal junctions 75x75x75x75 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 462.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.42.2.3",
+    "desc": "Hubless centrifugally cast (spun) iron pipes epoxy coated inside & outside IS:15905",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 396.8,
+    "resources": [
+      {
+        "code": "7626",
+        "desc": "Hubless centrifugally cast (spun) iron double equal plain junction as per IS 15905 - 75x75x75x75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 275.0
       },
       {
         "code": "9977",
@@ -4136,18 +6256,25 @@
     ]
   },
   {
-    "code": "17.43.1",
-    "desc": "100x100x100 mm 17.43.1.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.43.1.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
     "unit": "nos",
     "basis": 1.0,
     "say": 602.15,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
+        "code": "1631",
+        "desc": "S.C.I. single equal junctions 100x100x100 mm dia with access door.",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 405.0
+      },
+      {
+        "code": "1374",
+        "desc": "Rubber insertions for 100 mm dia pipe joints",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 18.0
       },
       {
         "code": "9988",
@@ -4159,18 +6286,55 @@
     ]
   },
   {
-    "code": "17.43.2",
-    "desc": "75x75x75 mm 17.43.2.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.43.1.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 722.55,
+    "resources": [
+      {
+        "code": "3644",
+        "desc": "S.C.I. S&S single equal junctions with access door 100x100x100 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 495.0
+      },
+      {
+        "code": "1374",
+        "desc": "Rubber insertions for 100 mm dia pipe joints",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 18.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.43.2.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
     "unit": "nos",
     "basis": 1.0,
     "say": 478.4,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 10.79,
-        "rate": 2.0
+        "code": "1630",
+        "desc": "S.C.I. single equal junctions75x75x 75 mm dia with access door.",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 320.0
+      },
+      {
+        "code": "1373",
+        "desc": "Rubber insertions for 80 mm dia pipe joints",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 16.0
       },
       {
         "code": "9988",
@@ -4182,18 +6346,48 @@
     ]
   },
   {
-    "code": "17.44.1",
-    "desc": "100x100x100 mm 17.44.1.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.43.2.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 549.35,
+    "resources": [
+      {
+        "code": "3645",
+        "desc": "S.C.I. S&S single equal junctions with access door 75x75x75 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 373.0
+      },
+      {
+        "code": "1373",
+        "desc": "Rubber insertions for 80 mm dia pipe joints",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 16.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.44.1.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
     "unit": "nos",
     "basis": 1.0,
     "say": 517.85,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
+        "code": "1628",
+        "desc": "S.C.I. plain single equal junctions 100x100x100 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 360.0
       },
       {
         "code": "9988",
@@ -4201,6 +6395,45 @@
         "unit": "L.S.",
         "qty": 13.52,
         "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.44.1.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 667.7,
+    "resources": [
+      {
+        "code": "3640",
+        "desc": "S.C.I. S&S single equal junctions 100x100x100 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 472.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.44.1.3",
+    "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 571.35,
+    "resources": [
+      {
+        "code": "7627",
+        "desc": "Hubless centrifugally cast (spun) iron single equal plain junction as per IS 15905 - 100x100x100 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 400.0
       },
       {
         "code": "9977",
@@ -4212,18 +6445,18 @@
     ]
   },
   {
-    "code": "17.44.2",
-    "desc": "75x75x75 mm 17.44.2.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.44.2.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
     "unit": "nos",
     "basis": 1.0,
     "say": 400.8,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 10.79,
-        "rate": 2.0
+        "code": "1627",
+        "desc": "S.C.I. plain single equal junctions 75x75x75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 278.0
       },
       {
         "code": "9988",
@@ -4231,6 +6464,45 @@
         "unit": "L.S.",
         "qty": 10.79,
         "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.44.2.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 470.4,
+    "resources": [
+      {
+        "code": "3641",
+        "desc": "S.C.I. S&S single equal junctions 75x75x75 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 330.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.44.2.3",
+    "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 316.55,
+    "resources": [
+      {
+        "code": "7628",
+        "desc": "Hubless centrifugally cast (spun) iron single equal plain junction as per IS 15905 - 75x75x75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 215.0
       },
       {
         "code": "9977",
@@ -4242,18 +6514,25 @@
     ]
   },
   {
-    "code": "17.45.1",
-    "desc": "100x100x75x75 mm 17.45.1.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.45.1.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
     "unit": "nos",
     "basis": 1.0,
     "say": 996.8,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
+        "code": "1662",
+        "desc": "Sand cast iron S&S double unequal junctions: 100x100x75x75 mm dia with access door.",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 700.0
+      },
+      {
+        "code": "1374",
+        "desc": "Rubber insertions for 100 mm dia pipe joints",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 18.0
       },
       {
         "code": "9988",
@@ -4265,18 +6544,48 @@
     ]
   },
   {
-    "code": "17.46.1",
-    "desc": "100x100x75x75 mm 17.46.1.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.45.1.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1197.5,
+    "resources": [
+      {
+        "code": "3674",
+        "desc": "S.C.I. S&S double unequal junctions with access door 100x100x75x75 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 850.0
+      },
+      {
+        "code": "1374",
+        "desc": "Rubber insertions for 100 mm dia pipe joints",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 18.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.46.1.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
     "unit": "nos",
     "basis": 1.0,
     "say": 859.0,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
+        "code": "1659",
+        "desc": "Sand cast iron S&S plain double unequal junctions : 100x100x75x 75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 615.0
       },
       {
         "code": "9988",
@@ -4284,6 +6593,45 @@
         "unit": "L.S.",
         "qty": 13.52,
         "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.46.1.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1106.55,
+    "resources": [
+      {
+        "code": "3670",
+        "desc": "S.C.I. S&S double unequal junctions 100x100x75x75 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 800.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.46.1.3",
+    "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 571.35,
+    "resources": [
+      {
+        "code": "7629",
+        "desc": "Hubless centrifugally cast (spun) iron double unequal plain junction as per IS 15905 - 100x100x75x75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 400.0
       },
       {
         "code": "9977",
@@ -4295,18 +6643,25 @@
     ]
   },
   {
-    "code": "17.47.1",
-    "desc": "100x100x75 mm 17.47.1.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.47.1.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
     "unit": "nos",
     "basis": 1.0,
     "say": 796.15,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
+        "code": "1656",
+        "desc": "Sand cast iron S&S single unequal junctions: 100x100x75 mm dia with access door.",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 550.0
+      },
+      {
+        "code": "1374",
+        "desc": "Rubber insertions for 100 mm dia pipe joints",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 18.0
       },
       {
         "code": "9988",
@@ -4318,28 +6673,51 @@
     ]
   },
   {
-    "code": "17.48.1",
-    "desc": "100x100x75 mm 17.48.1.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.47.1.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 916.55,
+    "resources": [
+      {
+        "code": "3664",
+        "desc": "S.C.I. S&S single unequal junctions with access door 100x100x75 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 640.0
+      },
+      {
+        "code": "1374",
+        "desc": "Rubber insertions for 100 mm dia pipe joints",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 18.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.48.1.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
     "unit": "nos",
     "basis": 1.0,
     "say": 697.1,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
+        "code": "1653",
+        "desc": "Sand cast iron S&S plain single unequal junctions : 100x100x75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 494.0
       },
       {
         "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
-      },
-      {
-        "code": "9977",
         "desc": "Carriage of materials and fixing charges",
         "unit": "L.S.",
         "qty": 13.52,
@@ -4348,131 +6726,18 @@
     ]
   },
   {
-    "code": "17.49.1",
-    "desc": "100x100x100x100 mm 17.49.1.1 Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 772.05,
-    "resources": [
-      {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
-      },
-      {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
-      },
-      {
-        "code": "9977",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
-      }
-    ]
-  },
-  {
-    "code": "17.49.2",
-    "desc": "75x75x75x75 mm 17.49.2.1 Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 577.45,
-    "resources": [
-      {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 10.79,
-        "rate": 2.0
-      },
-      {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 10.79,
-        "rate": 2.0
-      }
-    ]
-  },
-  {
-    "code": "17.50.1",
-    "desc": "100x100x100 mm 17.50.1.1 Sand cast iron S&S as per iron 1729",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 584.75,
-    "resources": [
-      {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
-      },
-      {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
-      },
-      {
-        "code": "9977",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
-      }
-    ]
-  },
-  {
-    "code": "17.50.2",
-    "desc": "75x75x75 mm 17.50.2.1 Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 453.1,
-    "resources": [
-      {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 10.79,
-        "rate": 2.0
-      },
-      {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 10.79,
-        "rate": 2.0
-      },
-      {
-        "code": "9977",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 10.79,
-        "rate": 2.0
-      }
-    ]
-  },
-  {
-    "code": "17.51.1",
-    "desc": "100x100x75x75 mm 17.51.1.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.48.1.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
     "unit": "nos",
     "basis": 1.0,
     "say": 798.8,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
+        "code": "3660",
+        "desc": "S.C.I. S&S single unequal junctions 100x100x75 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 570.0
       },
       {
         "code": "9988",
@@ -4484,18 +6749,340 @@
     ]
   },
   {
-    "code": "17.52.1",
-    "desc": "100x100x75 mm 17.52.1.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.48.1.3",
+    "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 537.9,
+    "resources": [
+      {
+        "code": "7630",
+        "desc": "Hubless centrifugally cast (spun) iron single unequal plain junction as per IS 15905 - 100x100x75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 375.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.49.1.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 772.05,
+    "resources": [
+      {
+        "code": "1673",
+        "desc": "S.C.I. double equal invert branch of required degree 100x100x100x 100 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 550.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.49.1.2",
+    "desc": "Sand cast iron S&S as per IS 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 745.3,
+    "resources": [
+      {
+        "code": "3685",
+        "desc": "S.C.I. S&S double equal invert branch of required degree100x100x100x 100 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 530.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.49.1.3",
+    "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 872.4,
+    "resources": [
+      {
+        "code": "7631",
+        "desc": "Hubless centrifugally cast (spun) iron double equal plain invert branch as per IS 15905 - 100x100x100x100 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 625.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.49.2.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 577.45,
+    "resources": [
+      {
+        "code": "1672",
+        "desc": "S.C.I. double equal invert branch of required degree 75x75x75x75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 410.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.49.2.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 597.5,
+    "resources": [
+      {
+        "code": "3686",
+        "desc": "S.C.I. S&S double equal invert branch of required degree 75x75x75x75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 425.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.50.1.1",
+    "desc": "Sand cast iron S&S as per iron 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 584.75,
+    "resources": [
+      {
+        "code": "1670",
+        "desc": "S.C.I. single equal invert branch of required degree 100x100x100 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 410.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.50.1.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 604.8,
+    "resources": [
+      {
+        "code": "3681",
+        "desc": "S.C.I. S&S single equal invert branch of required degree 100x100x100 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 425.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.50.1.3",
+    "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 557.95,
+    "resources": [
+      {
+        "code": "7632",
+        "desc": "Hubless centrifugally cast (spun) iron single equal plain invert branch as per IS 15905 - 100x100x100 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 390.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.50.2.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 453.1,
+    "resources": [
+      {
+        "code": "1669",
+        "desc": "S.C.I. single equal invert branch of required degree75x75x75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 320.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.50.2.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 461.05,
+    "resources": [
+      {
+        "code": "3682",
+        "desc": "S.C.I. S&S single equal invert branch of required degree 75x75x75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 323.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.50.2.3",
+    "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 376.75,
+    "resources": [
+      {
+        "code": "7633",
+        "desc": "Hubless centrifugally cast (spun) iron single equal plain invert branch as per IS 15905 - 75x75x75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 260.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.51.1.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 798.8,
+    "resources": [
+      {
+        "code": "1677",
+        "desc": "S.C.I. double unequal invert branch of required degree 100x100x75x 75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 570.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.51.1.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1006.2,
+    "resources": [
+      {
+        "code": "3695",
+        "desc": "S.C.I. S&S double unequal invert branch of required degree100x100x75x75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 725.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.52.1.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
     "unit": "nos",
     "basis": 1.0,
     "say": 698.45,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
+        "code": "1674",
+        "desc": "S.C.I. single unequal invert branch of required degree100x100x75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 495.0
       },
       {
         "code": "9988",
@@ -4503,6 +7090,45 @@
         "unit": "L.S.",
         "qty": 13.52,
         "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.52.1.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 765.35,
+    "resources": [
+      {
+        "code": "3690",
+        "desc": "S.C.I. S&S single unequal invert branch of required degree100x100x 75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 545.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.52.1.3",
+    "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 611.5,
+    "resources": [
+      {
+        "code": "7634",
+        "desc": "Hubless centrifugally cast (spun) iron single unequal plain invert branch 45 degree as per IS 15905 - 100x100x 75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 430.0
       },
       {
         "code": "9977",
@@ -4514,18 +7140,18 @@
     ]
   },
   {
-    "code": "17.53.1",
-    "desc": "76 mm off sets 17.53.1.1 With 75 mm dia pipe",
+    "code": "17.53.1.1",
+    "desc": "With 75 mm dia pipe",
     "unit": "nos",
     "basis": 1.0,
     "say": 320.55,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 10.79,
-        "rate": 2.0
+        "code": "3746",
+        "desc": "S.C.I. S&S, 75 mm offset for 75 mm dia pipe",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 218.0
       },
       {
         "code": "9988",
@@ -4537,18 +7163,41 @@
     ]
   },
   {
-    "code": "17.53.2",
-    "desc": "114 mm off sets 17.53.2.1 With 75 mm dia pipe",
+    "code": "17.53.1.2",
+    "desc": "With 100 mm dia pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 514.55,
+    "resources": [
+      {
+        "code": "3747",
+        "desc": "S.C.I. S&S, 75 mm offset for 100 mm dia pipe",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 363.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.53.2.1",
+    "desc": "With 75 mm dia pipe",
     "unit": "nos",
     "basis": 1.0,
     "say": 437.55,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
+        "code": "3712",
+        "desc": "S.C.I. S&S, 114 mm offset for 75 mm dia pipe",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 300.0
       },
       {
         "code": "9988",
@@ -4560,18 +7209,41 @@
     ]
   },
   {
-    "code": "17.53.3",
-    "desc": "152 mm off sets 17.53.3.1 With 75 mm dia pipe",
+    "code": "17.53.2.2",
+    "desc": "With 100 mm dia pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 548.6,
+    "resources": [
+      {
+        "code": "3713",
+        "desc": "S.C.I. S&S, 114 mm offset for 100 mm dia pipe",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 383.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.53.3.1",
+    "desc": "With 75 mm dia pipe",
     "unit": "nos",
     "basis": 1.0,
     "say": 527.0,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 17.94,
-        "rate": 2.0
+        "code": "3716",
+        "desc": "S.C.I. S&S, 152 mm offset for 75 mm dia pipe",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 358.0
       },
       {
         "code": "9988",
@@ -4579,6 +7251,36 @@
         "unit": "L.S.",
         "qty": 17.94,
         "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.53.3.2",
+    "desc": "With 100 mm dia pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 656.75,
+    "resources": [
+      {
+        "code": "3717",
+        "desc": "S.C.I. S&S, 152 mm offset for 100 mm dia pipe",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 455.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 17.94,
+        "rate": 2.0
+      },
+      {
+        "code": "7635",
+        "desc": "Hubless centrifugally cast (spun) iron 65 mm offset with 100 mm dia pipe as per IS",
+        "unit": "15905 each",
+        "qty": 1.0,
+        "rate": 360.0
       },
       {
         "code": "9977",
@@ -4586,6 +7288,13 @@
         "unit": "L.S.",
         "qty": 10.79,
         "rate": 2.0
+      },
+      {
+        "code": "7636",
+        "desc": "Hubless centrifugally cast (spun) iron 65 mm offset with 75 mm dia pipe as per IS",
+        "unit": "15905 each",
+        "qty": 1.0,
+        "rate": 295.0
       },
       {
         "code": "9977",
@@ -4597,13 +7306,20 @@
     ]
   },
   {
-    "code": "17.54.1",
-    "desc": "75 mm off sets 17.54.1.1 With 75 mm dia pipe",
+    "code": "17.54.1.1",
+    "desc": "With 75 mm dia pipe",
     "unit": "nos",
     "basis": 1.0,
     "say": 329.9,
     "resources": [
       {
+        "code": "3699",
+        "desc": "S.C.I. S&S, 75 mm offset for 75 mm dia pipe",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 225.0
+      },
+      {
         "code": "9988",
         "desc": "Carriage of materials and fixing charges",
         "unit": "L.S.",
@@ -4613,12 +7329,42 @@
     ]
   },
   {
-    "code": "17.54.2",
-    "desc": "150 mm off sets 17.54.2.1 With 75 mm dia pipe",
+    "code": "17.54.2.1",
+    "desc": "With 75 mm dia pipe",
     "unit": "nos",
     "basis": 1.0,
     "say": 424.45,
     "resources": [
+      {
+        "code": "3707",
+        "desc": "S.C.I. S&S, 150 mm offset for 75 mm dia pipe",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 285.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.54.2.2",
+    "desc": "With 100 mm dia pipe",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 564.95,
+    "resources": [
+      {
+        "code": "3708",
+        "desc": "S.C.I. S&S, 150 mm offset for 100 mm dia pipe",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 390.0
+      },
       {
         "code": "9988",
         "desc": "Carriage of materials and fixing charges",
@@ -4627,11 +7373,11 @@
         "rate": 2.0
       },
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 16.12,
-        "rate": 2.0
+        "code": "7637",
+        "desc": "Hubless centrifugally cast (spun) iron 130 mm offset with 100 mm dia pipe as per IS",
+        "unit": "15905 each",
+        "qty": 1.0,
+        "rate": 440.0
       },
       {
         "code": "9977",
@@ -4639,6 +7385,13 @@
         "unit": "L.S.",
         "qty": 13.52,
         "rate": 2.0
+      },
+      {
+        "code": "7638",
+        "desc": "Hubless centrifugally cast (spun) iron 130 mm offset with 75 mm dia pipe as per IS",
+        "unit": "15905 each",
+        "qty": 1.0,
+        "rate": 310.0
       },
       {
         "code": "9999",
@@ -4650,18 +7403,25 @@
     ]
   },
   {
-    "code": "17.55.1",
-    "desc": "100 mm 17.55.1.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.55.1.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
     "unit": "nos",
     "basis": 1.0,
     "say": 695.8,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
+        "code": "1683",
+        "desc": "S.C.I. door pieces 100 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 475.0
+      },
+      {
+        "code": "1374",
+        "desc": "Rubber insertions for 100 mm dia pipe joints",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 18.0
       },
       {
         "code": "9988",
@@ -4673,18 +7433,55 @@
     ]
   },
   {
-    "code": "17.55.2",
-    "desc": "75 mm 17.55.2.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.55.1.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 595.45,
+    "resources": [
+      {
+        "code": "3728",
+        "desc": "S.C.I. S&S door pieces 100 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 400.0
+      },
+      {
+        "code": "1374",
+        "desc": "Rubber insertions for 100 mm dia pipe joints",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 18.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.55.2.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
     "unit": "nos",
     "basis": 1.0,
     "say": 428.9,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 10.79,
-        "rate": 2.0
+        "code": "1682",
+        "desc": "S.C.I. door pieces 75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 283.0
+      },
+      {
+        "code": "1373",
+        "desc": "Rubber insertions for 80 mm dia pipe joints",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 16.0
       },
       {
         "code": "9988",
@@ -4696,18 +7493,48 @@
     ]
   },
   {
-    "code": "17.56.1",
-    "desc": "100 mm 17.56.1.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.55.2.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 444.95,
+    "resources": [
+      {
+        "code": "3729",
+        "desc": "S.C.I. S&S door pieces 75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 295.0
+      },
+      {
+        "code": "1373",
+        "desc": "Rubber insertions for 80 mm dia pipe joints",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 16.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.56.1.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
     "unit": "nos",
     "basis": 1.0,
     "say": 355.95,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
+        "code": "1640",
+        "desc": "Slotted cowl (terminal guard ) 100 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 239.0
       },
       {
         "code": "9988",
@@ -4719,41 +7546,18 @@
     ]
   },
   {
-    "code": "17.56.2",
-    "desc": "75 mm 17.56.2.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.56.1.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
     "unit": "nos",
     "basis": 1.0,
-    "say": 284.4,
+    "say": 389.4,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 10.79,
-        "rate": 2.0
-      },
-      {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 10.79,
-        "rate": 2.0
-      }
-    ]
-  },
-  {
-    "code": "17.57.1",
-    "desc": "100 mm 17.57.1.1 Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 365.3,
-    "resources": [
-      {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
+        "code": "3733",
+        "desc": "S.C.I. S&S, Slotted Cowl (Terminal Guard) 100 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 264.0
       },
       {
         "code": "9988",
@@ -4765,25 +7569,18 @@
     ]
   },
   {
-    "code": "17.57.2",
-    "desc": "75 mm 17.57.2.1 Sand cast iron S&S as per IS - 1729",
+    "code": "17.56.1.3",
+    "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
     "unit": "nos",
     "basis": 1.0,
-    "say": 265.7,
+    "say": 397.4,
     "resources": [
       {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 10.79,
-        "rate": 2.0
-      },
-      {
-        "code": "9988",
-        "desc": "Carriage of materials and fixing charges",
-        "unit": "L.S.",
-        "qty": 10.79,
-        "rate": 2.0
+        "code": "7641",
+        "desc": "Hubless centrifugally cast (spun) iron terminal guard (slotted cowl) - 100 mm dia as per IS",
+        "unit": "15905 each",
+        "qty": 1.0,
+        "rate": 270.0
       },
       {
         "code": "9977",
@@ -4791,6 +7588,165 @@
         "unit": "L.S.",
         "qty": 13.52,
         "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.56.2.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 284.4,
+    "resources": [
+      {
+        "code": "1639",
+        "desc": "Slotted cowl (terminal guard )75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 191.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.56.2.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 309.85,
+    "resources": [
+      {
+        "code": "3734",
+        "desc": "S.C.I. S&S, Slotted Cowl (Terminal Guard) 75 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 210.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.57.1.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 365.3,
+    "resources": [
+      {
+        "code": "1686",
+        "desc": "S.C.I. collar 100 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 246.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.57.1.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 409.45,
+    "resources": [
+      {
+        "code": "3738",
+        "desc": "S.C.I. S&S, collars 100 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 279.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.57.2.1",
+    "desc": "Sand cast iron S&S as per IS - 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 265.7,
+    "resources": [
+      {
+        "code": "1685",
+        "desc": "S.C.I. collar 75 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 177.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "17.57.2.2",
+    "desc": "Sand cast iron S&S as per IS - 3989",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 256.3,
+    "resources": [
+      {
+        "code": "3739",
+        "desc": "S.C.I. S&S, collars 75 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 170.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      },
+      {
+        "code": "7644",
+        "desc": "SS 304 grade shielded coupling with EPDM rubber gasket for 100 mm dia Hubless centrifugally cast (spun) iron",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 275.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials and fixing charges",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "7645",
+        "desc": "SS 304 grade shielded coupling with EPDM rubber gasket for 75 mm dia Hubless centrifugally cast (spun) iron",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 250.0
       },
       {
         "code": "9977",
@@ -4808,6 +7764,20 @@
     "basis": 1.0,
     "say": 481.45,
     "resources": [
+      {
+        "code": "1397",
+        "desc": "Pig lead",
+        "unit": "kilogram",
+        "qty": 0.98,
+        "rate": 176.0
+      },
+      {
+        "code": "1881",
+        "desc": "Spun yarn",
+        "unit": "kilogram",
+        "qty": 0.11,
+        "rate": 50.0
+      },
       {
         "code": "9999",
         "desc": "Kerosene oil, fuel and other sundries",
@@ -4853,6 +7823,20 @@
     "say": 407.9,
     "resources": [
       {
+        "code": "1397",
+        "desc": "Pig lead",
+        "unit": "kilogram",
+        "qty": 0.88,
+        "rate": 176.0
+      },
+      {
+        "code": "1881",
+        "desc": "Spun yarn",
+        "unit": "kilogram",
+        "qty": 0.09,
+        "rate": 50.0
+      },
+      {
         "code": "9999",
         "desc": "Kerosene oil, fuel and other sundries",
         "unit": "L.S.",
@@ -4896,6 +7880,20 @@
     "basis": 1.0,
     "say": 329.5,
     "resources": [
+      {
+        "code": "1397",
+        "desc": "Pig lead",
+        "unit": "kilogram",
+        "qty": 0.77,
+        "rate": 176.0
+      },
+      {
+        "code": "1881",
+        "desc": "Spun yarn",
+        "unit": "kilogram",
+        "qty": 0.06,
+        "rate": 50.0
+      },
       {
         "code": "9999",
         "desc": "Kerosene oil, fuel and other sundries",
@@ -4941,6 +7939,13 @@
     "say": 126.5,
     "resources": [
       {
+        "code": "1330",
+        "desc": "Clamps and M.S. stays including bolts and nuts for 100 mm pipe",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 67.5
+      },
+      {
         "code": "9988",
         "desc": "Carriage of materials and fixing charges",
         "unit": "L.S.",
@@ -4956,6 +7961,13 @@
     "basis": 1.0,
     "say": 78.4,
     "resources": [
+      {
+        "code": "1335",
+        "desc": "Clamps and M.S. stays including bolts and nuts for 75 mm pipe",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 37.0
+      },
       {
         "code": "9988",
         "desc": "Carriage of materials and fixing charges",
@@ -4973,6 +7985,13 @@
     "say": 72.2,
     "resources": [
       {
+        "code": "1334",
+        "desc": "Clamps and M.S. stays including bolts and nuts for 50 mm pipe",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 35.0
+      },
+      {
         "code": "9988",
         "desc": "Carriage of materials and fixing charges",
         "unit": "L.S.",
@@ -4982,39 +8001,18 @@
     ]
   },
   {
-    "code": "17.60.1",
-    "desc": "100 mm inlet and 100 mm outlet 17.60.1.1 Sand cast iron S&S as per IS: 3989",
+    "code": "17.60.1.1",
+    "desc": "Sand cast iron S&S as per IS: 3989",
     "unit": "nos",
     "basis": 1.0,
     "say": 1512.55,
     "resources": [
       {
-        "code": "9999",
-        "desc": "Cement, sand and grit etc.",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
-      },
-      {
-        "code": "9977",
-        "desc": "Carriage of materials",
-        "unit": "L.S.",
-        "qty": 2.73,
-        "rate": 2.0
-      },
-      {
-        "code": "0123",
-        "desc": "Mason (brick layer) 1st class",
-        "unit": "day",
-        "qty": 0.5,
-        "rate": 738.0
-      },
-      {
-        "code": "0114",
-        "desc": "Beldar",
-        "unit": "day",
-        "qty": 0.5,
-        "rate": 558.0
+        "code": "7808",
+        "desc": "Centrifugally cast (spun) iron S&S 100 mm inlet and 100 mm outlet",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 450.0
       },
       {
         "code": "9999",
@@ -5043,6 +8041,66 @@
         "unit": "day",
         "qty": 0.5,
         "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.60.1.2",
+    "desc": "Sand Cast Iron S&S as per IS: 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1273.05,
+    "resources": [
+      {
+        "code": "1897",
+        "desc": "100 mm S.C.I. trap with 100 mm inlet and 100 mm outlet",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 271.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.60.1.3",
+    "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 758.65,
+    "resources": [
+      {
+        "code": "7642",
+        "desc": "Hubless centrifugally cast (spun) iron trap with 100 mm inlet and 100 mm outlet as per IS",
+        "unit": "15905 each",
+        "qty": 1.0,
+        "rate": 540.0
       },
       {
         "code": "9977",
@@ -5054,39 +8112,18 @@
     ]
   },
   {
-    "code": "17.60.2",
-    "desc": "100 mm inlet and 75 mm outlet 17.60.2.1 Sand cast iron S&S as per IS - 3989",
+    "code": "17.60.2.1",
+    "desc": "Sand cast iron S&S as per IS - 3989",
     "unit": "nos",
     "basis": 1.0,
     "say": 1579.45,
     "resources": [
       {
-        "code": "9999",
-        "desc": "Cement, sand and grit etc.",
-        "unit": "L.S.",
-        "qty": 13.52,
-        "rate": 2.0
-      },
-      {
-        "code": "9977",
-        "desc": "Carriage of materials",
-        "unit": "L.S.",
-        "qty": 2.73,
-        "rate": 2.0
-      },
-      {
-        "code": "0123",
-        "desc": "Mason (brick layer) 1st class",
-        "unit": "day",
-        "qty": 0.5,
-        "rate": 738.0
-      },
-      {
-        "code": "0114",
-        "desc": "Beldar",
-        "unit": "day",
-        "qty": 0.5,
-        "rate": 558.0
+        "code": "7809",
+        "desc": "Centrifugally cast (spun) iron S&S 100 mm inlet and 75 mm outlet",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 500.0
       },
       {
         "code": "9999",
@@ -5115,6 +8152,66 @@
         "unit": "day",
         "qty": 0.5,
         "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.60.2.2",
+    "desc": "Sand Cast Iron S&S as per IS- 1729",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 1202.15,
+    "resources": [
+      {
+        "code": "1898",
+        "desc": "100 mm S.C.I. trap with 100 mm inlet and 75 mm outlet",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 218.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement, sand and grit etc.",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "17.60.2.3",
+    "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 551.3,
+    "resources": [
+      {
+        "code": "7643",
+        "desc": "Hubless centrifugally cast (spun) iron trap with 100 mm inlet and 75 mm outlet as per IS",
+        "unit": "15905 each",
+        "qty": 1.0,
+        "rate": 385.0
       },
       {
         "code": "9977",
@@ -5132,6 +8229,13 @@
     "basis": 1.0,
     "say": 555.3,
     "resources": [
+      {
+        "code": "4.2.5",
+        "desc": "Rate as per SH: 4.2.5",
+        "unit": "cum",
+        "qty": 0.022,
+        "rate": 8025.0
+      },
       {
         "code": "9999",
         "desc": "Plastering in cement mortar 1:4",
@@ -5170,6 +8274,13 @@
     "say": 398.7,
     "resources": [
       {
+        "code": "4.2.5",
+        "desc": "Rate as per SH: 4.2.5",
+        "unit": "cum",
+        "qty": 0.015,
+        "rate": 8025.0
+      },
+      {
         "code": "9999",
         "desc": "Plastering in cement mortar 1:4",
         "unit": "L.S.",
@@ -5206,6 +8317,13 @@
     "basis": 1.0,
     "say": 259.05,
     "resources": [
+      {
+        "code": "4.2.5",
+        "desc": "Rate as per SH: 4.2.5",
+        "unit": "cum",
+        "qty": 0.008,
+        "rate": 8025.0
+      },
       {
         "code": "9999",
         "desc": "Plastering in cement mortar 1:4",
@@ -5249,6 +8367,20 @@
         "unit": "litre",
         "qty": 0.23,
         "rate": 100.0
+      },
+      {
+        "code": "4202",
+        "desc": "Red oxide Zinc chromate primer",
+        "unit": "litre",
+        "qty": 0.2,
+        "rate": 110.0
+      },
+      {
+        "code": "0834",
+        "desc": "Synthetic enamel paint in all shades except black or chocolate shade",
+        "unit": "litre",
+        "qty": 0.4,
+        "rate": 160.0
       },
       {
         "code": "9977",
@@ -5295,6 +8427,20 @@
         "rate": 100.0
       },
       {
+        "code": "0834",
+        "desc": "Synthetic enamel paint in all shades except black or chocolate shade",
+        "unit": "litre",
+        "qty": 0.2,
+        "rate": 160.0
+      },
+      {
+        "code": "9999",
+        "desc": "Polishing of wooden seat and cleaning of W.C. pan with acid",
+        "unit": "L.S.",
+        "qty": 20.67,
+        "rate": 2.0
+      },
+      {
         "code": "9988",
         "desc": "Sundries and carriage of materials",
         "unit": "L.S.",
@@ -5325,6 +8471,13 @@
     "say": 223.9,
     "resources": [
       {
+        "code": "0834",
+        "desc": "Synthetic enamel paint in all shades except black or chocolate shade",
+        "unit": "litre",
+        "qty": 0.2,
+        "rate": 160.0
+      },
+      {
         "code": "9988",
         "desc": "Sundries and carriage of materials",
         "unit": "L.S.",
@@ -5350,10 +8503,24 @@
   {
     "code": "17.65.1",
     "desc": "100 mm diameter pipe",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "metres",
+    "basis": 10.0,
     "say": 64.2,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 3.46,
+        "rate": 50.7
+      },
+      {
+        "code": "13.61.1",
+        "desc": "Rate as per SH: 13.61.1",
+        "unit": "sqm",
+        "qty": 3.46,
+        "rate": 121.55
+      },
       {
         "code": "9999",
         "desc": "Add for delay",
@@ -5366,10 +8533,24 @@
   {
     "code": "17.65.2",
     "desc": "75 mm diameter pipe",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "metres",
+    "basis": 10.0,
     "say": 48.85,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 2.6,
+        "rate": 50.7
+      },
+      {
+        "code": "13.61.1",
+        "desc": "Rate as per SH: 13.61.1",
+        "unit": "sqm",
+        "qty": 2.6,
+        "rate": 121.55
+      },
       {
         "code": "9999",
         "desc": "Add for delay",
@@ -5382,10 +8563,17 @@
   {
     "code": "17.66.1",
     "desc": "100 mm diameter pipe",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "metres",
+    "basis": 10.0,
     "say": 30.95,
     "resources": [
+      {
+        "code": "13.99.1",
+        "desc": "Rate as per SH: 13.99.1",
+        "unit": "sqm",
+        "qty": 3.46,
+        "rate": 79.95
+      },
       {
         "code": "9999",
         "desc": "Add for delay",
@@ -5398,10 +8586,17 @@
   {
     "code": "17.66.2",
     "desc": "75 mm diameter pipe",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "metres",
+    "basis": 10.0,
     "say": 23.15,
     "resources": [
+      {
+        "code": "13.99.1",
+        "desc": "Rate as per SH: 13.99.1",
+        "unit": "sqm",
+        "qty": 2.577,
+        "rate": 79.95
+      },
       {
         "code": "9999",
         "desc": "Add for delay",
@@ -5455,6 +8650,41 @@
     "basis": 1.0,
     "say": 10023.9,
     "resources": [
+      {
+        "code": "1875",
+        "desc": "White plastic seat (solid)with lid C.P.brass hinges and rubber buffers",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 400.0
+      },
+      {
+        "code": "1965",
+        "desc": "White vitreous china dual purpose closet (Anglo Indian W.C.) suitable for use as sequatting pan or European type water closet as per manufacturer's specifications",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 2500.0
+      },
+      {
+        "code": "7006",
+        "desc": "Vitreous china 10 litres low level cistern with fittings",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1240.0
+      },
+      {
+        "code": "9999",
+        "desc": "20 mm G.I.over flow pipe and specials for over flow pipe",
+        "unit": "L.S.",
+        "qty": 276.25,
+        "rate": 2.0
+      },
+      {
+        "code": "1350",
+        "desc": "Mosquito proof coupling of approved design",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 30.0
+      },
       {
         "code": "9999",
         "desc": "Plugs, screws etc.",
@@ -5514,6 +8744,13 @@
     "say": 99.75,
     "resources": [
       {
+        "code": "7491",
+        "desc": "PTMT Waste Coupling 31/32MM",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 34.0
+      },
+      {
         "code": "9988",
         "desc": "Carriage of materials and fixing charges",
         "unit": "L.S.",
@@ -5529,6 +8766,13 @@
     "basis": 1.0,
     "say": 118.5,
     "resources": [
+      {
+        "code": "7492",
+        "desc": "PTMT Waste Coupling 38/40MM",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 48.0
+      },
       {
         "code": "9988",
         "desc": "Carriage of materials and fixing charges",
@@ -5546,6 +8790,13 @@
     "say": 335.25,
     "resources": [
       {
+        "code": "7493",
+        "desc": "PTMT Bottle Trap 31/32MM",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 210.0
+      },
+      {
         "code": "9988",
         "desc": "Carriage of materials and fixing charges",
         "unit": "L.S.",
@@ -5561,6 +8812,13 @@
     "basis": 1.0,
     "say": 348.6,
     "resources": [
+      {
+        "code": "7494",
+        "desc": "PTMT Bottle Trap 38/40MM",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 220.0
+      },
       {
         "code": "9988",
         "desc": "Carriage of materials and fixing charges",
@@ -5578,6 +8836,13 @@
     "say": 158.55,
     "resources": [
       {
+        "code": "7503",
+        "desc": "PTMT Liquid Soap Container of 400ml capacity",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 105.0
+      },
+      {
         "code": "9988",
         "desc": "Carriage of materials and fixing charges",
         "unit": "L.S.",
@@ -5594,6 +8859,13 @@
     "say": 228.2,
     "resources": [
       {
+        "code": "7504",
+        "desc": "PTMT - Towel Ring 215x200x37mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 130.0
+      },
+      {
         "code": "9988",
         "desc": "Carriage of materials and fixing charges",
         "unit": "L.S.",
@@ -5609,6 +8881,27 @@
     "basis": 1.0,
     "say": 555.35,
     "resources": [
+      {
+        "code": "8.23",
+        "desc": "Rate as per SH: 8.23",
+        "unit": "each",
+        "qty": 2.0,
+        "rate": 33.9
+      },
+      {
+        "code": "7505",
+        "desc": "PTMT Towel Rail (450mm)",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 135.0
+      },
+      {
+        "code": "0588",
+        "desc": "Chromium plated Brass screws 25 mm",
+        "unit": "100 Nos",
+        "qty": 6.0,
+        "rate": 180.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of materials",
@@ -5640,6 +8933,27 @@
     "say": 595.5,
     "resources": [
       {
+        "code": "8.23",
+        "desc": "Rate as per SH: 8.23",
+        "unit": "each",
+        "qty": 2.0,
+        "rate": 33.9
+      },
+      {
+        "code": "7506",
+        "desc": "PTMT Towel Rail (600mm)",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 165.0
+      },
+      {
+        "code": "0588",
+        "desc": "Chromium plated Brass screws 25 mm",
+        "unit": "100 Nos",
+        "qty": 6.0,
+        "rate": 180.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of materials",
         "unit": "L.S.",
@@ -5669,6 +8983,27 @@
     "basis": 1.0,
     "say": 642.3,
     "resources": [
+      {
+        "code": "8.23",
+        "desc": "Rate as per SH: 8.23",
+        "unit": "each",
+        "qty": 2.0,
+        "rate": 33.9
+      },
+      {
+        "code": "7507",
+        "desc": "PTMT Shelf 450x124x36mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 200.0
+      },
+      {
+        "code": "0588",
+        "desc": "Chromium plated Brass screws 25 mm",
+        "unit": "100 Nos",
+        "qty": 6.0,
+        "rate": 180.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of materials",
@@ -5700,6 +9035,13 @@
     "say": 119.75,
     "resources": [
       {
+        "code": "7508",
+        "desc": "PTMT Urinal Spreader 15mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 76.0
+      },
+      {
         "code": "9988",
         "desc": "Carriage of materials and fixing charges",
         "unit": "L.S.",
@@ -5711,10 +9053,17 @@
   {
     "code": "17.76.1",
     "desc": "15 mm nominal bore, 80 mm long, 42 mm high and 30mm wide with BSP female threads weighing not less than 48 gms",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 164.05,
     "resources": [
+      {
+        "code": "7858",
+        "desc": "P.T.M.T. Urinal cock 15mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 106.5
+      },
       {
         "code": "9988",
         "desc": "Carriage of materials and fixing charges",
@@ -5728,9 +9077,23 @@
     "code": "17.77.1",
     "desc": "Total bracket length 580 mm of approved shape and design (for single 100 mm dia pipe)",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 5.0,
     "say": 247.8,
     "resources": [
+      {
+        "code": "13.50.1",
+        "desc": "Rate as per SH: 13.50.1",
+        "unit": "sqm",
+        "qty": 0.45,
+        "rate": 57.05
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.0068,
+        "rate": 92.24
+      },
       {
         "code": "0116",
         "desc": "Fitter (grade 1)",
@@ -5765,9 +9128,23 @@
     "code": "17.77.2",
     "desc": "Total bracket length 810 mm of approved shape and design (for two 100 mm dia pipes)",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 5.0,
     "say": 302.35,
     "resources": [
+      {
+        "code": "13.50.1",
+        "desc": "Rate as per SH: 13.50.1",
+        "unit": "sqm",
+        "qty": 0.71,
+        "rate": 57.05
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.01006,
+        "rate": 92.24
+      },
       {
         "code": "0116",
         "desc": "Fitter (grade 1)",
@@ -5802,9 +9179,23 @@
     "code": "17.77.3",
     "desc": "Total bracket length 1040 mm of approved shape and design (for three 100 mm dia pipes)",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 5.0,
     "say": 356.7,
     "resources": [
+      {
+        "code": "13.50.1",
+        "desc": "Rate as per SH: 13.50.1",
+        "unit": "sqm",
+        "qty": 0.97,
+        "rate": 57.05
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.01326,
+        "rate": 92.24
+      },
       {
         "code": "0116",
         "desc": "Fitter (grade 1)",
@@ -5843,6 +9234,27 @@
     "say": 13852.45,
     "resources": [
       {
+        "code": "7072",
+        "desc": "Wall mounted water closet",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 6000.0
+      },
+      {
+        "code": "7073",
+        "desc": "Adjustable Vetrious China Cistern with fittings",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1900.0
+      },
+      {
+        "code": "1875",
+        "desc": "White plastic seat (solid)with lid C.P.brass hinges and rubber buffers",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 400.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of materials",
         "unit": "L.S.",
@@ -5880,6 +9292,20 @@
     "say": 16868.15,
     "resources": [
       {
+        "code": "7074",
+        "desc": "White Vetrious China Waterless Urinal",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 9650.0
+      },
+      {
+        "code": "7075",
+        "desc": "Cistern with fittings for Waterless Urinal",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 2290.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of materials",
         "unit": "L.S.",
@@ -5910,6 +9336,13 @@
     "say": 6913.9,
     "resources": [
       {
+        "code": "7076",
+        "desc": "White Vetrious Urinal",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 4500.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of materials",
         "unit": "L.S.",
@@ -5935,10 +9368,17 @@
   {
     "code": "17.81",
     "desc": "Providing and fixing floor mounted, white vitreous china single piece, double traps syphonic water closet of approved brand/make, shape, siz",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 15457.95,
     "resources": [
+      {
+        "code": "1966",
+        "desc": "Floor mounted, white vitreous china single piece, double traps syphonic water closet of approved brand/make, shape, size and pattern including integrated white vitreous china cistern of capacity 10 litres with dual flushing system including all fittings and fixtures with seat cover, cistern fittings, nuts, bolts and gasket etc.",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 9500.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",

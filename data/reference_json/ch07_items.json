@@ -1,10 +1,18 @@
 [
   {
     "code": "7.1.1",
+    "desc": "Cement mortar 1:6 (1 cement : 6 coarse sand)",
     "unit": "cum",
     "basis": 1.0,
     "say": 6120.8,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.33,
+        "rate": 3356.15
+      },
       {
         "code": "1157",
         "desc": "Stone for masonry work",
@@ -25,13 +33,6 @@
         "unit": "cum",
         "qty": 1.16,
         "rate": 122.08
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.33,
-        "rate": 3356.15
       },
       {
         "code": "0125",
@@ -79,10 +80,18 @@
   },
   {
     "code": "7.2.1",
+    "desc": "Cement mortar 1:6 (1 cement : 6 coarse sand)",
     "unit": "cum",
     "basis": 1.0,
     "say": 7489.95,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.33,
+        "rate": 3356.15
+      },
       {
         "code": "1157",
         "desc": "Stone for masonry work",
@@ -103,13 +112,6 @@
         "unit": "cum",
         "qty": 1.16,
         "rate": 122.08
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.33,
-        "rate": 3356.15
       },
       {
         "code": "0125",
@@ -164,6 +166,7 @@
   },
   {
     "code": "7.4.1",
+    "desc": "Square or rectangular pillars",
     "unit": "cum",
     "basis": 1.0,
     "say": 728.5,
@@ -186,6 +189,7 @@
   },
   {
     "code": "7.4.2",
+    "desc": "Circular pillars",
     "unit": "cum",
     "basis": 1.0,
     "say": 2025.5,
@@ -222,8 +226,9 @@
   },
   {
     "code": "7.5",
-    "unit": "m",
-    "basis": 6.0,
+    "desc": "Extra for random rubble masonry with hard stone curved on plan for a mean radius not exceeding 6 m.",
+    "unit": "cum",
+    "basis": 1.0,
     "say": 804.45,
     "resources": [
       {
@@ -258,13 +263,14 @@
   },
   {
     "code": "7.6.1",
+    "desc": "Cement mortar 1:6 (1 cement : 6 coarse sand)",
     "unit": "cum",
     "basis": 1.0,
     "say": 7312.15,
     "resources": [
       {
         "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "desc": "Rate as per SH: 3.11",
         "unit": "cum",
         "qty": 0.3,
         "rate": 3356.15
@@ -329,13 +335,14 @@
   },
   {
     "code": "7.7.1",
+    "desc": "Cement mortar 1:6 (1 cement : 6 coarse sand)",
     "unit": "cum",
     "basis": 1.0,
     "say": 6805.25,
     "resources": [
       {
         "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "desc": "Rate as per SH: 3.11",
         "unit": "cum",
         "qty": 0.3,
         "rate": 3356.15
@@ -400,13 +407,14 @@
   },
   {
     "code": "7.8.1",
+    "desc": "Masonry work (first sort), in cement mortar 1:6 (1 cement : 6 coarse sand)",
     "unit": "cum",
     "basis": 1.0,
     "say": 8718.0,
     "resources": [
       {
         "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "desc": "Rate as per SH: 3.11",
         "unit": "cum",
         "qty": 0.3,
         "rate": 3356.15
@@ -478,13 +486,14 @@
   },
   {
     "code": "7.8.2",
+    "desc": "Masonry work (second sort), in cement mortar 1:6 (1 cement: 6 coarse sand)",
     "unit": "cum",
     "basis": 1.0,
     "say": 8211.1,
     "resources": [
       {
         "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "desc": "Rate as per SH: 3.11",
         "unit": "cum",
         "qty": 0.3,
         "rate": 3356.15
@@ -556,6 +565,7 @@
   },
   {
     "code": "7.10.1",
+    "desc": "Square or rectangular pillars",
     "unit": "cum",
     "basis": 1.0,
     "say": 603.15,
@@ -578,6 +588,7 @@
   },
   {
     "code": "7.10.2",
+    "desc": "Circular pillars",
     "unit": "cum",
     "basis": 1.0,
     "say": 2301.65,
@@ -614,8 +625,9 @@
   },
   {
     "code": "7.11",
-    "unit": "m",
-    "basis": 6.0,
+    "desc": "Extra for coursed rubble masonry with hard stone (first or second sort) curved on plan for a mean radius not exceeding 6 m.",
+    "unit": "cum",
+    "basis": 1.0,
     "say": 875.35,
     "resources": [
       {
@@ -650,17 +662,11 @@
   },
   {
     "code": "7.12.1.1",
-    "unit": "nos",
-    "basis": 1.0,
+    "desc": "Red sand stone",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 47132.0,
     "resources": [
-      {
-        "code": "1160",
-        "desc": "Red sand stone block",
-        "unit": "10 cudm",
-        "qty": 1.333,
-        "rate": 79.0
-      },
       {
         "code": "2216",
         "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
@@ -770,17 +776,11 @@
   },
   {
     "code": "7.12.1.2",
-    "unit": "nos",
-    "basis": 1.0,
+    "desc": "White sand stone",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 69604.0,
     "resources": [
-      {
-        "code": "1161",
-        "desc": "White sand stone block",
-        "unit": "10 cudm",
-        "qty": 1.333,
-        "rate": 205.0
-      },
       {
         "code": "2216",
         "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
@@ -890,17 +890,11 @@
   },
   {
     "code": "7.12.2.1",
-    "unit": "nos",
-    "basis": 1.0,
+    "desc": "Red sand stone",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 64279.0,
     "resources": [
-      {
-        "code": "1160",
-        "desc": "Red sand stone block",
-        "unit": "10 cudm",
-        "qty": 1.333,
-        "rate": 79.0
-      },
       {
         "code": "2216",
         "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
@@ -1010,17 +1004,11 @@
   },
   {
     "code": "7.12.2.2",
-    "unit": "cum",
-    "basis": 0.01,
+    "desc": "White sand stone",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 86751.0,
     "resources": [
-      {
-        "code": "1161",
-        "desc": "White sand stone block",
-        "unit": "10 cudm",
-        "qty": 1.333,
-        "rate": 205.0
-      },
       {
         "code": "2216",
         "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab @ 2.30kg/cudm = 13.33x2.30 = 30.659 kg = 0.03065 tonne say 0.031 t.",
@@ -1130,17 +1118,11 @@
   },
   {
     "code": "7.13.1.1",
-    "unit": "cum",
-    "basis": 0.01,
+    "desc": "Red sand stone",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 52907.0,
     "resources": [
-      {
-        "code": "1160",
-        "desc": "Red sand stone block",
-        "unit": "10 cudm",
-        "qty": 1.333,
-        "rate": 79.0
-      },
       {
         "code": "2216",
         "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
@@ -1264,17 +1246,11 @@
   },
   {
     "code": "7.13.1.2",
-    "unit": "cum",
-    "basis": 0.01,
+    "desc": "White sand stone",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 75379.0,
     "resources": [
-      {
-        "code": "1161",
-        "desc": "White sand stone block",
-        "unit": "10 cudm",
-        "qty": 1.333,
-        "rate": 205.0
-      },
       {
         "code": "2216",
         "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
@@ -1398,17 +1374,11 @@
   },
   {
     "code": "7.13.2.1",
-    "unit": "cum",
-    "basis": 0.01,
+    "desc": "Red sand stone",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 70053.0,
     "resources": [
-      {
-        "code": "1160",
-        "desc": "Red sand stone block",
-        "unit": "10 cudm",
-        "qty": 1.333,
-        "rate": 79.0
-      },
       {
         "code": "2216",
         "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
@@ -1532,17 +1502,11 @@
   },
   {
     "code": "7.13.2.2",
-    "unit": "cum",
-    "basis": 0.01,
+    "desc": "White sand stone",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 92525.0,
     "resources": [
-      {
-        "code": "1161",
-        "desc": "White sand stone block",
-        "unit": "10 cudm",
-        "qty": 1.333,
-        "rate": 205.0
-      },
       {
         "code": "2216",
         "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
@@ -1666,17 +1630,11 @@
   },
   {
     "code": "7.14.1.1",
-    "unit": "cum",
-    "basis": 0.01,
+    "desc": "Red sand stone",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 83532.0,
     "resources": [
-      {
-        "code": "1160",
-        "desc": "Red sand stone block",
-        "unit": "10 cudm",
-        "qty": 1.333,
-        "rate": 79.0
-      },
       {
         "code": "2216",
         "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
@@ -1807,17 +1765,11 @@
   },
   {
     "code": "7.14.1.2",
-    "unit": "cum",
-    "basis": 0.01,
+    "desc": "White sand stone",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 106004.0,
     "resources": [
-      {
-        "code": "1161",
-        "desc": "White sand stone block",
-        "unit": "10 cudm",
-        "qty": 1.333,
-        "rate": 205.0
-      },
       {
         "code": "2216",
         "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
@@ -1948,17 +1900,11 @@
   },
   {
     "code": "7.14.2.1",
-    "unit": "nos",
-    "basis": 1.0,
+    "desc": "Red sand stone",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 126051.0,
     "resources": [
-      {
-        "code": "1160",
-        "desc": "Red sand stone block",
-        "unit": "10 cudm",
-        "qty": 1.333,
-        "rate": 79.0
-      },
       {
         "code": "2216",
         "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
@@ -2089,17 +2035,11 @@
   },
   {
     "code": "7.14.2.2",
-    "unit": "cum",
-    "basis": 0.01,
+    "desc": "White sand stone",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 148523.0,
     "resources": [
-      {
-        "code": "1161",
-        "desc": "White sand stone block",
-        "unit": "10 cudm",
-        "qty": 1.333,
-        "rate": 205.0
-      },
       {
         "code": "2216",
         "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
@@ -2230,17 +2170,11 @@
   },
   {
     "code": "7.15.1.1",
-    "unit": "cum",
-    "basis": 0.01,
+    "desc": "Red sand stone",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 44498.0,
     "resources": [
-      {
-        "code": "1160",
-        "desc": "Red sand stone block",
-        "unit": "10 cudm",
-        "qty": 1.333,
-        "rate": 79.0
-      },
       {
         "code": "2216",
         "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
@@ -2350,17 +2284,11 @@
   },
   {
     "code": "7.15.1.2",
-    "unit": "cum",
-    "basis": 0.01,
+    "desc": "White sand stone",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 66970.0,
     "resources": [
-      {
-        "code": "1161",
-        "desc": "White sand stone block",
-        "unit": "10 cudm",
-        "qty": 1.333,
-        "rate": 205.0
-      },
       {
         "code": "2216",
         "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
@@ -2470,17 +2398,11 @@
   },
   {
     "code": "7.15.2.1",
-    "unit": "cum",
-    "basis": 0.01,
+    "desc": "Red sand stone",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 59010.0,
     "resources": [
-      {
-        "code": "1160",
-        "desc": "Red sand stone block",
-        "unit": "10 cudm",
-        "qty": 1.333,
-        "rate": 79.0
-      },
       {
         "code": "2216",
         "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
@@ -2590,17 +2512,11 @@
   },
   {
     "code": "7.15.2.2",
-    "unit": "cum",
-    "basis": 0.01,
+    "desc": "White sand stone",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 81482.0,
     "resources": [
-      {
-        "code": "1161",
-        "desc": "White sand stone block",
-        "unit": "10 cudm",
-        "qty": 1.333,
-        "rate": 205.0
-      },
       {
         "code": "2216",
         "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
@@ -2710,8 +2626,9 @@
   },
   {
     "code": "7.16",
-    "unit": "cum",
-    "basis": 0.01,
+    "desc": "Extra for stone work, random rubble / coursed rubble masonry / ashlar masonry above floor V level for every four floors or part thereof.",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 1493.0,
     "resources": [
       {
@@ -2725,8 +2642,9 @@
   },
   {
     "code": "7.17.1",
-    "unit": "cum",
-    "basis": 0.01,
+    "desc": "Square or rectangular pillars",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 2400.0,
     "resources": [
       {
@@ -2740,8 +2658,9 @@
   },
   {
     "code": "7.18",
-    "unit": "m",
-    "basis": 6.0,
+    "desc": "Extra for stone work; plain ashlar or ashlar punched curved on plan with a mean radius not exceeding 6 m.",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 1670.0,
     "resources": [
       {
@@ -2754,18 +2673,12 @@
     ]
   },
   {
-    "code": "1.296",
-    "unit": "cum",
-    "basis": 7.103,
-    "say": null,
+    "code": "7.19",
+    "desc": "Extra for additional cost of centering for arches exceeding 6m span including all strutting, bolting, wedging etc. and removal (area of soff",
+    "unit": "sqm",
+    "basis": 33.31,
+    "say": 560.65,
     "resources": [
-      {
-        "code": "1197",
-        "desc": "Second class kail wood in scantling",
-        "unit": "10 cudm",
-        "qty": 88.79,
-        "rate": 260.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -2818,33 +2731,12 @@
     ]
   },
   {
-    "code": "5.9.9",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 560.65,
-    "resources": [
-      {
-        "code": "SH : Reinforced cement concrete work",
-        "desc": "sqm",
-        "unit": "-33.31",
-        "qty": 1713.2,
-        "rate": -57066.69
-      }
-    ]
-  },
-  {
     "code": "7.20.1",
-    "unit": "cum",
-    "basis": 0.01,
+    "desc": "Red sand stone",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 67731.0,
     "resources": [
-      {
-        "code": "1160",
-        "desc": "Red sand stone block",
-        "unit": "10 cudm",
-        "qty": 1.333,
-        "rate": 79.0
-      },
       {
         "code": "2216",
         "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
@@ -2961,17 +2853,11 @@
   },
   {
     "code": "7.20.2",
-    "unit": "cum",
-    "basis": 0.01,
+    "desc": "White sand stone",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 90203.0,
     "resources": [
-      {
-        "code": "1161",
-        "desc": "White sand stone block",
-        "unit": "10 cudm",
-        "qty": 1.333,
-        "rate": 205.0
-      },
       {
         "code": "2216",
         "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
@@ -3088,8 +2974,9 @@
   },
   {
     "code": "7.21.1",
-    "unit": "cum",
-    "basis": 0.01,
+    "desc": "Triangular or Square or rectangular pillars",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 3131.0,
     "resources": [
       {
@@ -3103,8 +2990,9 @@
   },
   {
     "code": "7.21.2",
-    "unit": "cum",
-    "basis": 0.01,
+    "desc": "Circular or polygonal pillars",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 8871.0,
     "resources": [
       {
@@ -3118,6 +3006,7 @@
   },
   {
     "code": "7.22",
+    "desc": "Extra for stone work ashlar sunk or moulded in cornices.",
     "unit": "nos",
     "basis": 1.0,
     "say": 225.35,
@@ -3140,8 +3029,9 @@
   },
   {
     "code": "7.24",
-    "unit": "m",
-    "basis": 6.0,
+    "desc": "Extra for stone work (veneer work) curved on plan with a mean radius not exceeding 6 m.",
+    "unit": "cudm",
+    "basis": 10.0,
     "say": 2400.0,
     "resources": [
       {
@@ -3155,10 +3045,18 @@
   },
   {
     "code": "7.26",
+    "desc": "Providing and fixing stone dowels 10x5x2.50 cm cut to double wedge shape as per design in cement mortar 1:2 (1 cement : 2 coarse sand), incl",
     "unit": "nos",
     "basis": 1.0,
     "say": 45.75,
     "resources": [
+      {
+        "code": "3.7",
+        "desc": "Rate as per SH: 3.7",
+        "unit": "cum",
+        "qty": 0.001,
+        "rate": 5345.55
+      },
       {
         "code": "9999",
         "desc": "Cost of stone including carriage",
@@ -3172,22 +3070,30 @@
         "unit": "L.S.",
         "qty": 5.33,
         "rate": 2.0
-      },
-      {
-        "code": "3.7",
-        "desc": "Rate as per Item Number 3.7 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.001,
-        "rate": 5345.55
       }
     ]
   },
   {
     "code": "7.28.1.1",
-    "unit": "sqm",
-    "basis": 2.0,
-    "say": null,
+    "desc": "With common burnt clay F.P.S.(non modular) bricks of class designation 7.5",
+    "unit": "xl",
+    "basis": 2.5,
+    "say": 2081.2,
     "resources": [
+      {
+        "code": "3.12",
+        "desc": "Rate as per SH: 3.12",
+        "unit": "cum",
+        "qty": 0.009,
+        "rate": 5108.05
+      },
+      {
+        "code": "6.4.1",
+        "desc": "Rate as per SH: 6.4.1",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 7809.25
+      },
       {
         "code": "1164",
         "desc": "Red sand stone slab 40 mmthick (un-dressed)",
@@ -3222,13 +3128,6 @@
         "unit": "L.S.",
         "qty": 67.34,
         "rate": 2.0
-      },
-      {
-        "code": "3.12",
-        "desc": "Rate as per Item Number 3.12 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.009,
-        "rate": 5108.05
       },
       {
         "code": "9999",
@@ -3275,26 +3174,26 @@
     ]
   },
   {
-    "code": "6.4.1",
-    "unit": "nos",
-    "basis": 1.0,
+    "code": "7.28.2.1",
+    "desc": "With common burnt clay F.P.S.(non modular) bricks of class designation 7.5",
+    "unit": "x1",
+    "basis": 2.5,
     "say": 2081.2,
     "resources": [
       {
-        "code": "SH :- Brick work.",
-        "desc": "cum",
-        "unit": "0.018",
-        "qty": 7809.25,
-        "rate": 140.57
-      }
-    ]
-  },
-  {
-    "code": "7.28.2.1",
-    "unit": "sqm",
-    "basis": 2.0,
-    "say": null,
-    "resources": [
+        "code": "3.12",
+        "desc": "Rate as per SH: 3.12",
+        "unit": "cum",
+        "qty": 0.009,
+        "rate": 5108.05
+      },
+      {
+        "code": "6.4.1",
+        "desc": "Rate as per SH: 6.4.1",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 7809.25
+      },
       {
         "code": "1165",
         "desc": "White sand stone slab 40 mm thick (un-dressed)",
@@ -3329,13 +3228,6 @@
         "unit": "L.S.",
         "qty": 67.34,
         "rate": 2.0
-      },
-      {
-        "code": "3.12",
-        "desc": "Rate as per Item Number 3.12 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.009,
-        "rate": 5108.05
       },
       {
         "code": "9999",
@@ -3382,24 +3274,10 @@
     ]
   },
   {
-    "code": "6.4.1",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 2081.2,
-    "resources": [
-      {
-        "code": "SH :- Brick work.",
-        "desc": "cum",
-        "unit": "0.018",
-        "qty": 7809.25,
-        "rate": 140.57
-      }
-    ]
-  },
-  {
     "code": "7.29.1",
-    "unit": "m",
-    "basis": 0.75,
+    "desc": "Red sand stone",
+    "unit": "x0",
+    "basis": 2.5,
     "say": 1306.75,
     "resources": [
       {
@@ -3469,8 +3347,9 @@
   },
   {
     "code": "7.29.2",
-    "unit": "m",
-    "basis": 0.75,
+    "desc": "White sand stone",
+    "unit": "x0",
+    "basis": 2.5,
     "say": 1306.75,
     "resources": [
       {
@@ -3540,8 +3419,9 @@
   },
   {
     "code": "7.30",
-    "unit": "m",
-    "basis": 1.6,
+    "desc": "30 mm red sand stone sun-shade (chisel-dressed) supported on red sand stone brackets, fixed in walls with cement mortar 1:4 (1 cement : 4 co",
+    "unit": "sqm",
+    "basis": 1.12,
     "say": 1556.4,
     "resources": [
       {
@@ -3583,17 +3463,11 @@
   },
   {
     "code": "7.31",
-    "unit": "nos",
-    "basis": 4.0,
+    "desc": "Providing and fixing red sand stone brackets 55x22.5x45 cm sunk and moulded including providing and fixing with 4 Nos gun metal cramp 25x6 m",
+    "unit": "bracket",
+    "basis": 1.0,
     "say": 5032.85,
     "resources": [
-      {
-        "code": "1160",
-        "desc": "Red sand stone block",
-        "unit": "10 cudm",
-        "qty": 6.16,
-        "rate": 79.0
-      },
       {
         "code": "2216",
         "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab @ 2.3kg/ cudm.",
@@ -3709,17 +3583,18 @@
     ]
   },
   {
-    "code": "7.12.1.1",
-    "unit": "nos",
-    "basis": 1.0,
+    "code": "7.32.1",
+    "desc": "Red sand stone",
+    "unit": "cudm",
+    "basis": 6.75,
     "say": 66408.9,
     "resources": [
       {
-        "code": "SH : Stone Work",
-        "desc": "cum",
-        "unit": "0.00675",
-        "qty": 47132.0,
-        "rate": 318.14
+        "code": "7.12.1.1",
+        "desc": "Rate as per SH: 7.12.1.1",
+        "unit": "cum",
+        "qty": 0.00675,
+        "rate": 47132.0
       },
       {
         "code": "9999",
@@ -3745,17 +3620,18 @@
     ]
   },
   {
-    "code": "7.12.1.2",
-    "unit": "nos",
-    "basis": 1.0,
+    "code": "7.32.2",
+    "desc": "White sand stone",
+    "unit": "cudm",
+    "basis": 6.75,
     "say": 88880.0,
     "resources": [
       {
-        "code": "SH : Stone Work",
-        "desc": "cum",
-        "unit": "0.00675",
-        "qty": 69604.0,
-        "rate": 469.83
+        "code": "7.12.1.2",
+        "desc": "Rate as per SH: 7.12.1.2",
+        "unit": "cum",
+        "qty": 0.00675,
+        "rate": 69604.0
       },
       {
         "code": "9999",
@@ -3782,6 +3658,7 @@
   },
   {
     "code": "7.33.1",
+    "desc": "Red sand stone",
     "unit": "sqm",
     "basis": 1.0,
     "say": 11230.4,
@@ -3825,6 +3702,7 @@
   },
   {
     "code": "7.33.2",
+    "desc": "White sand stone",
     "unit": "sqm",
     "basis": 1.0,
     "say": 11230.4,
@@ -3868,13 +3746,14 @@
   },
   {
     "code": "7.34",
-    "unit": "m",
-    "basis": 0.1,
+    "desc": "Extra for laying stone work in or under water and/or liquid mud including cost of pumping or bailing out water and removing slush etc. compl",
+    "unit": "cum",
+    "basis": 14.0,
     "say": 794.65,
     "resources": [
       {
-        "code": "0011",
-        "desc": "Hire charges of Pumpset of capacity 4000 litres/hour.",
+        "code": "4000",
+        "desc": "litres/hour.",
         "unit": "day",
         "qty": 0.375,
         "rate": 700.0
@@ -3890,6 +3769,7 @@
   },
   {
     "code": "7.35",
+    "desc": "Extra for laying stone work in or under foul position.",
     "unit": "cum",
     "basis": 1.0,
     "say": 336.55,
@@ -3926,10 +3806,18 @@
   },
   {
     "code": "7.38.1.1",
+    "desc": "Granite stone of any colour and shade",
     "unit": "sqm",
     "basis": 10.0,
     "say": 2537.4,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.14,
+        "rate": 4664.55
+      },
       {
         "code": "2750",
         "desc": "8 mm thick granite stone tiles (mirror polished of all shades)",
@@ -3943,13 +3831,6 @@
         "unit": "L.S.",
         "qty": 40.04,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.14,
-        "rate": 4664.55
       },
       {
         "code": "0367",
@@ -3997,10 +3878,18 @@
   },
   {
     "code": "7.38.1.2",
+    "desc": "Raj Nagar plain white marble/ Udaipur green marble/ Zebra black marble",
     "unit": "sqm",
     "basis": 10.0,
     "say": 2263.1,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.14,
+        "rate": 4664.55
+      },
       {
         "code": "7439",
         "desc": "8mm thick (mirror polished tiles machine cut edge) Raj Nagar white",
@@ -4014,13 +3903,6 @@
         "unit": "L.S.",
         "qty": 40.04,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.14,
-        "rate": 4664.55
       },
       {
         "code": "0367",

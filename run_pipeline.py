@@ -12,13 +12,17 @@ Usage:
 Steps
 -----
  1  extract_rates       PDF → rates_master_clean.json
- 2  extract_norms       Converted XLSX → labour_productivity.json, sundries_reference.json
- 3  vol1_extract        Converted XLSX → ch03-12_items.json   (Vol 1 chapter JSONs)
+ 2  vol1_extract        Vol 1 PDF → ch01,03-12_items.json     (Vol 1 chapter JSONs)
+ 3  extract_norms       ch01,03-12_items.json + Ch02 ITEMS → labour_productivity.json, sundries_reference.json
  4  vol2_extract        Vol 2 PDF → ch13-26_items.json        (Vol 2 chapter JSONs)
  5  registry_vol1       ch02-12 sources → gang/productivity_registry_vol1.txt/.ini
  6  registry_vol2       ch13-26_items.json → gang/productivity_registry_vol2.txt/.ini
  7  workbook_vol1       all sources → CPWD_DAR_2019_Vol1_Workbook.xlsx
  8  workbook_vol2       ch13-26_items.json → CPWD_DAR_2019_Vol2_Workbook.xlsx
+
+Note: extract_norms (step 3) now reads vol1_extract's (step 2) output JSONs
+directly, so vol1_extract must run first -- this is the opposite order from
+before 2026-09-18, when both independently read the same converted XLSX.
 """
 
 from __future__ import annotations
@@ -28,6 +32,10 @@ import importlib
 import sys
 import time
 from pathlib import Path
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
 
 BASE = Path(__file__).resolve().parent
 sys.path.insert(0, str(BASE))
@@ -44,13 +52,13 @@ def _step_extract_norms():
 
 
 def _step_vol1_extract():
-    import scripts.vol1_chapter_extractor as m
-    m.main()
+    import scripts.vol1_chapter_extractor_pdf as m
+    m.main(["--all"])
 
 
 def _step_vol2_extract():
     import scripts.vol2_chapter_extractor as m
-    m.main()
+    m.main(["--all"])
 
 
 def _step_registry_vol1():
@@ -70,13 +78,13 @@ def _step_workbook_vol1():
 
 def _step_workbook_vol2():
     import scripts.generate_vol2_workbook as m
-    m.main()
+    m.generate_vol2_workbook()
 
 
 STEPS: list[tuple[str, str, callable]] = [
     ("extract_rates",  "PDF → rates_master_clean.json",                     _step_extract_rates),
-    ("extract_norms",  "Converted XLSX → labour/sundries JSON",             _step_extract_norms),
-    ("vol1_extract",   "Converted XLSX → ch03-12_items.json",               _step_vol1_extract),
+    ("vol1_extract",   "Vol 1 PDF → ch01,03-12_items.json",                 _step_vol1_extract),
+    ("extract_norms",  "ch01,03-12_items.json + Ch02 ITEMS → labour/sundries JSON", _step_extract_norms),
     ("vol2_extract",   "Vol 2 PDF → ch13-26_items.json",                    _step_vol2_extract),
     ("registry_vol1",  "ch02-12 → gang/productivity_registry_vol1.*",       _step_registry_vol1),
     ("registry_vol2",  "ch13-26 → gang/productivity_registry_vol2.*",       _step_registry_vol2),

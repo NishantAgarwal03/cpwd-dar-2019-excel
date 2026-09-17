@@ -76,7 +76,7 @@ ITEMS = [
 # ─── 2.1 SURFACE DRESSING ────────────────────────────────────────────────────
 {
  "id":"2.1.1","desc":"Earth work in surface excavation not exceeding 30 cm in depth but exceeding 1.5 m in width as well as 10 sqm on plan including getting out and disposal of excavated earth upto 50 m and lift upto 1.5 m, as directed by Engineer-in- Charge: All kinds of soil",
- "unit":"sqm","base_qty":100,"dsr_rate":107.00,
+ "unit":"sqm","base_qty":100,"dsr_rate":92.55,
  "sections":[
   ("LABOUR",[
    ("0114","Beldar","day",6.80,558.00),
@@ -84,6 +84,11 @@ ITEMS = [
   ]),
  ],
 },
+# UNVERIFIABLE (investigated 2026-09-18): this "Hard soil" variant does not exist in
+# CivilDAR_2019_Vol_1.pdf (searched all 904 pages, zero "hard soil" hits) nor in
+# DSR_Vol1_UPDATED_DEC_2021.pdf / DSR_Vol2_UPDATED_DEC_2021.pdf. dsr_rate and the
+# resource coefficients below cannot be traced to any source document in this repo.
+# Kept as-is per explicit user decision; do not treat as PDF-verified.
 {
  "id":"2.1.2","desc":"Earth work in surface excavation not exceeding 30 cm in depth but exceeding 1.5 m in width as well as 10 sqm on plan including getting out and disposal of excavated earth upto 50 m and lift upto 1.5 m, as directed by Engineer-in- Charge:",
  "unit":"sqm","base_qty":100,"dsr_rate":134.55,
@@ -98,7 +103,7 @@ ITEMS = [
 # ─── 2.2 EARTHWORK IN EXCAVATION (ORDINARY SOIL, LEAD ≤50m) ─────────────────
 {
  "id":"2.2.1","desc":"Earth work in rough excavation, banking excavated earth in layers not exceeding 20cm in depth, breaking clods, watering, rolling each layer with ½ tonne roller or wooden or steel rammers, and rolling every 3rd and top-most layer with power roller of minimum 8 tonnes and dressing up in embankments for roads, flood banks, marginal banks and guide banks or filling up ground depressions, lead upto 50 m and lift upto 1.5 m : All kinds of soil",
- "unit":"cum","base_qty":10,"dsr_rate":862.70,
+ "unit":"cum","base_qty":10,"dsr_rate":746.80,
  "sections":[
   ("MACHINERY",[
    ("0003","Diesel Road Roller 8-10t (for compaction)","day",0.008,3000.00),
@@ -114,6 +119,7 @@ ITEMS = [
   ]),
  ],
 },
+# UNVERIFIABLE Hard-soil variant - see note above 2.1.2. Kept as-is per user decision.
 {
  "id":"2.2.2","desc":"Earth work in rough excavation, banking excavated earth in layers not exceeding 20cm in depth, breaking clods, watering, rolling each layer with ½ tonne roller or wooden or steel rammers, and rolling every 3rd and top-most layer with power roller of minimum 8 tonnes and dressing up in embankments for roads, flood banks, marginal banks and guide banks or filling up ground depressions, lead upto 50 m and lift upto 1.5 m : Hard soil",
  "unit":"cum","base_qty":10,"dsr_rate":1049.65,
@@ -136,7 +142,7 @@ ITEMS = [
 # ─── 2.3 EARTHWORK IN EXCAVATION (ORDINARY SOIL, LEAD ≤50m, shallow) ────────
 {
  "id":"2.3.1","desc":"Banking excavated earth in layers not exceeding 20 cm in depth, breaking clods, watering, rolling each layer with ½ tonne roller, or wooden or steel rammers, and rolling every 3rd and top-most layer with power roller of minimum 8 tonnes and dressing up, in embankments for roads, flood banks, marginal banks, and guide banks etc., lead upto 50 m and lift upto 1.5 m : All kinds of soil",
- "unit":"cum","base_qty":10,"dsr_rate":543.40,
+ "unit":"cum","base_qty":10,"dsr_rate":470.55,
  "sections":[
   ("MACHINERY",[
    ("0003","Diesel Road Roller 8-10t","day",0.008,3000.00),
@@ -152,6 +158,7 @@ ITEMS = [
   ]),
  ],
 },
+# UNVERIFIABLE Hard-soil variant - see note above 2.1.2. Kept as-is per user decision.
 {
  "id":"2.3.2","desc":"Banking excavated earth in layers not exceeding 20 cm in depth, breaking clods, watering, rolling each layer with ½ tonne roller, or wooden or steel rammers, and rolling every 3rd and top-most layer with power roller of minimum 8 tonnes and dressing up, in embankments for roads, flood banks, marginal banks, and guide banks etc., lead upto 50 m and lift upto 1.5 m : Hard soil",
  "unit":"cum","base_qty":10,"dsr_rate":661.60,
@@ -174,7 +181,7 @@ ITEMS = [
 # ─── 2.4 DEDUCT – Roller & Chowkidar ─────────────────────────────────────────
 {
  "id":"2.4","desc":"Deduct for not rolling with power roller of minimum 8 tonnes for banking excavated earth in layers not exceeding 20 cm in depth.",
- "unit":"cum","base_qty":10,"dsr_rate":4.40,
+ "unit":"cum","base_qty":10,"dsr_rate":4.30,
  "sections":[
   ("MACHINERY",[
    ("0003","Diesel Road Roller 8-10t","day",0.008,3000.00),
@@ -192,7 +199,7 @@ ITEMS = [
 # ─── 2.5 DEDUCT – Bhisti ─────────────────────────────────────────────────────
 {
  "id":"2.5","desc":"Deduct for not watering the excavated earth for banking",
- "unit":"cum","base_qty":10,"dsr_rate":38.20,
+ "unit":"cum","base_qty":10,"dsr_rate":33.00,
  "sections":[
   ("LABOUR",[
    ("0101","Bhisti","day",0.40,617.00),
@@ -204,7 +211,7 @@ ITEMS = [
 # ─── 2.6 HYDRAULIC EXCAVATION ─────────────────────────────────────────────────
 {
  "id":"2.6.1","desc":"Earth work in excavation by mechanical means (Hydraulic excavator)/manual means over areas (exceeding 30 cm in depth, 1.5 m in width as well as 10 sqm on plan) including getting out and disposal of excavated earth lead upto 50 m and lift upto 1.5 m, as directed by Engineer-in-charge. - All kinds of soil",
- "unit":"cum","base_qty":10,"dsr_rate":205.45,
+ "unit":"cum","base_qty":10,"dsr_rate":181.85,
  "sections":[
   ("MACHINERY",[
    ("0020","Hydraulic Excavator 0.9 cum","day",0.041,7000.00),
@@ -216,6 +223,7 @@ ITEMS = [
   ]),
  ],
 },
+# UNVERIFIABLE Hard-soil variant - see note above 2.1.2. Kept as-is per user decision.
 {
  "id":"2.6.2","desc":"Earth work in excavation by mechanical means (Hydraulic excavator)/manual means over areas (exceeding 30 cm in depth, 1.5 m in width as well as 10 sqm on plan) including getting out and disposal of excavated earth lead upto 50 m and lift upto 1.5 m, as directed by Engineer-in-charge. - Hard soil",
  "unit":"cum","base_qty":10,"dsr_rate":261.10,
@@ -234,7 +242,7 @@ ITEMS = [
 # ─── 2.7 ROCK EXCAVATION ─────────────────────────────────────────────────────
 {
  "id":"2.7.1","desc":"Earth work in excavation by mechanical means (Hydraulic excavator)/manual means over areas (exceeding 30 cm in depth, 1.5 m in width as well as 10 sqm on plan) including getting out and disposal of excavated earth lead upto 50 m and lift upto 1.5 m, as directed by Engineer-in-charge. - Ordinary rock",
- "unit":"cum","base_qty":10,"dsr_rate":412.95,
+ "unit":"cum","base_qty":10,"dsr_rate":352.45,
  "sections":[
   ("MACHINERY",[
    ("0020","Hydraulic Excavator 0.9 cum","day",0.063,7000.00),
@@ -254,7 +262,7 @@ ITEMS = [
 },
 {
  "id":"2.7.2","desc":"Earth work in excavation by mechanical means (Hydraulic excavator)/manual means over areas (exceeding 30 cm in depth, 1.5 m in width as well as 10 sqm on plan) including getting out and disposal of excavated earth lead upto 50 m and lift upto 1.5 m, as directed by Engineer-in-charge. - Hard rock (requiring blasting)",
- "unit":"cum","base_qty":10,"dsr_rate":711.35,
+ "unit":"cum","base_qty":10,"dsr_rate":609.65,
  "sections":[
   ("MACHINERY",[
    ("0020","Hydraulic Excavator 0.9 cum","day",0.125,7000.00),
@@ -276,7 +284,7 @@ ITEMS = [
 },
 {
  "id":"2.7.3","desc":"Earth work in excavation by mechanical means (Hydraulic excavator)/manual means over areas (exceeding 30 cm in depth, 1.5 m in width as well as 10 sqm on plan) including getting out and disposal of excavated earth lead upto 50 m and lift upto 1.5 m, as directed by Engineer-in-charge. - Hard rock (blasting prohibited)",
- "unit":"cum","base_qty":10,"dsr_rate":1184.30,
+ "unit":"cum","base_qty":10,"dsr_rate":1016.20,
  "sections":[
   ("MACHINERY",[
    ("0020","Hydraulic Excavator 0.9 cum","day",0.125,7000.00),
@@ -299,7 +307,7 @@ ITEMS = [
 # ─── 2.8 EARTHWORK IN EXCAVATION FOR PIPE TRENCHES ───────────────────────────
 {
  "id":"2.8.1","desc":"Earth work in excavation by mechanical means (Hydraulic excavator) / manual means in foundation trenches or drains (not exceeding 1.5 m in width or 10 sqm on plan), including dressing of sides and ramming of bottoms, lift upto 1.5 m, including getting out the excavated soil and disposal of surplus excavated soil as directed, within a lead of 50 m. - All kinds of soil.",
- "unit":"cum","base_qty":10,"dsr_rate":286.85,
+ "unit":"cum","base_qty":10,"dsr_rate":252.30,
  "sections":[
   ("MACHINERY",[
    ("0020","Hydraulic Excavator 0.9 cum","day",0.04125,7000.00),
@@ -311,6 +319,7 @@ ITEMS = [
   ]),
  ],
 },
+# UNVERIFIABLE Hard-soil variant - see note above 2.1.2. Kept as-is per user decision.
 {
  "id":"2.8.2","desc":"Earth work in excavation by mechanical means (Hydraulic excavator) / manual means in foundation trenches or drains (not exceeding 1.5 m in width or 10 sqm on plan), including dressing of sides and ramming of bottoms, lift upto 1.5 m, including getting out the excavated soil and disposal of surplus excavated soil as directed, within a lead of 50 m. - Hard soil",
  "unit":"cum","base_qty":10,"dsr_rate":347.10,
@@ -329,7 +338,7 @@ ITEMS = [
 # ─── 2.9 PIPE TRENCHES IN ROCK ───────────────────────────────────────────────
 {
  "id":"2.9.1","desc":"Excavation work by mechanical means (Hydraulic excavator)/ manual means in foundation trenches or drains (not exceeding 1.5m in width or 10 sqm on plan), including dressing of sides and ramming of bottoms, lift upto 1.5 m, including getting out the excavated soil and disposal of surplus excavated soils as directed, within a lead of 50 m. - Ordinary rock",
- "unit":"cum","base_qty":10,"dsr_rate":523.50,
+ "unit":"cum","base_qty":10,"dsr_rate":448.15,
  "sections":[
   ("MACHINERY",[
    ("0020","Hydraulic Excavator 0.9 cum","day",0.0625,7000.00),
@@ -349,7 +358,7 @@ ITEMS = [
 },
 {
  "id":"2.9.2","desc":"Excavation work by mechanical means (Hydraulic excavator)/ manual means in foundation trenches or drains (not exceeding 1.5m in width or 10 sqm on plan), including dressing of sides and ramming of bottoms, lift upto 1.5 m, including getting out the excavated soil and disposal of surplus excavated soils as directed, within a lead of 50 m. - Hard rock (requiring blasting)",
- "unit":"cum","base_qty":10,"dsr_rate":846.25,
+ "unit":"cum","base_qty":10,"dsr_rate":729.00,
  "sections":[
   ("MACHINERY",[
    ("0020","Hydraulic Excavator 0.9 cum","day",0.125,7000.00),
@@ -371,7 +380,7 @@ ITEMS = [
 },
 {
  "id":"2.9.3","desc":"Excavation work by mechanical means (Hydraulic excavator)/ manual means in foundation trenches or drains (not exceeding 1.5m in width or 10 sqm on plan), including dressing of sides and ramming of bottoms, lift upto 1.5 m, including getting out the excavated soil and disposal of surplus excavated soils as directed, within a lead of 50 m. - Hard rock (blasting prohibited)",
- "unit":"cum","base_qty":10,"dsr_rate":1258.60,
+ "unit":"cum","base_qty":10,"dsr_rate":624.70,
  "sections":[
   ("MACHINERY",[
    ("0020","Hydraulic Excavator 0.9 cum","day",0.125,7000.00),
@@ -395,7 +404,7 @@ ITEMS = [
 # W-A pattern: REF sub-items are excluded from Water/GST/CPOH/Cess chain
 {
  "id":"2.10.1.1","desc":"Excavating trenches of required width for pipes, cables, etc including excavation for sockets, and dressing of sides, ramming of bottoms, depth upto 1.5 m, including getting out the excavated soil, and then returning the soil as required, in layers not exceeding 20 cm in depth, including consolidating each deposited layer by ramming, watering, etc. and disposing of surplus excavated soil as directed, within a lead of 50 m : - All kinds of soil - Pipes, cables etc, not exceeding 80 mm dia.",
- "unit":"metre","base_qty":180,"dsr_rate":255.55,
+ "unit":"metre","base_qty":180,"dsr_rate":223.00,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (excluded from multiplier chain)",[
@@ -407,7 +416,7 @@ ITEMS = [
 },
 {
  "id":"2.10.1.2","desc":"Excavating trenches of required width for pipes, cables, etc including excavation for sockets, and dressing of sides, ramming of bottoms, depth upto 1.5 m, including getting out the excavated soil, and then returning the soil as required, in layers not exceeding 20 cm in depth, including consolidating each deposited layer by ramming, watering, etc. and disposing of surplus excavated soil as directed, within a lead of 50 m : - All kinds of soil - Pipes, cables etc. exceeding 80 mm dia. but not exceeding 300 mm dia",
- "unit":"metre","base_qty":110,"dsr_rate":417.35,
+ "unit":"metre","base_qty":110,"dsr_rate":315.05,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS",[
@@ -418,7 +427,7 @@ ITEMS = [
 },
 {
  "id":"2.10.1.3","desc":"Excavating trenches of required width for pipes, cables, etc including excavation for sockets, and dressing of sides, ramming of bottoms, depth upto 1.5 m, including getting out the excavated soil, and then returning the soil as required, in layers not exceeding 20 cm in depth, including consolidating each deposited layer by ramming, watering, etc. and disposing of surplus excavated soil as directed, within a lead of 50 m : - All kinds of soil - Pipes, cables etc. exceeding 300 mm dia but not exceeding 600 mm",
- "unit":"metre","base_qty":60,"dsr_rate":651.55,
+ "unit":"metre","base_qty":60,"dsr_rate":568.60,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS",[
@@ -447,7 +456,7 @@ ITEMS = [
 # ─── 2.13 ROCK PIPE TRENCHES (COMPOSITE) ─────────────────────────────────────
 {
  "id":"2.13.1.1","desc":"Excavating trenches of required width for pipes, cables, etc, including excavation for sockets, depth upto 1.5 m, including getting out the excavated materials, returning the soil as required in layers not exceeding 20 cm in depth, including consolidating each deposited layers by ramming, watering etc., stacking serviceable material for measurements and disposal of unserviceable material as directed, within a lead of 50 m : - Ordinary rock : - Pipes, cables etc. not exceeding 80 mm dia",
- "unit":"metre","base_qty":180,"dsr_rate":376.95,
+ "unit":"metre","base_qty":180,"dsr_rate":323.85,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (A - excluded from multipliers)",[
@@ -461,7 +470,7 @@ ITEMS = [
 },
 {
  "id":"2.13.1.2","desc":"Excavating trenches of required width for pipes, cables, etc, including excavation for sockets, depth upto 1.5 m, including getting out the excavated materials, returning the soil as required in layers not exceeding 20 cm in depth, including consolidating each deposited layers by ramming, watering etc., stacking serviceable material for measurements and disposal of unserviceable material as directed, within a lead of 50 m : - Ordinary rock : - Pipes, cables etc. exceeding 80 mm dia but not exceeding 300 mm dia",
- "unit":"metre","base_qty":80,"dsr_rate":933.35,
+ "unit":"metre","base_qty":80,"dsr_rate":801.85,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (A)",[
@@ -475,7 +484,7 @@ ITEMS = [
 },
 {
  "id":"2.13.1.3","desc":"Excavating trenches of required width for pipes, cables, etc, including excavation for sockets, depth upto 1.5 m, including getting out the excavated materials, returning the soil as required in layers not exceeding 20 cm in depth, including consolidating each deposited layers by ramming, watering etc., stacking serviceable material for measurements and disposal of unserviceable material as directed, within a lead of 50 m : - Ordinary rock : - Pipes, cables exceeding 300 mm dia but not exceeding 600 mm dia",
- "unit":"metre","base_qty":30,"dsr_rate":1074.00,
+ "unit":"metre","base_qty":30,"dsr_rate":922.65,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (A)",[
@@ -489,7 +498,7 @@ ITEMS = [
 },
 {
  "id":"2.13.2.1","desc":"Excavating trenches of required width for pipes, cables, etc, including excavation for sockets, depth upto 1.5 m, including getting out the excavated materials, returning the soil as required in layers not exceeding 20 cm in depth, including consolidating each deposited layers by ramming, watering etc., stacking serviceable material for measurements and disposal of unserviceable material as directed, within a lead of 50 m : - Hard rock (requiring blasting) - Pipes, cables etc. not exceeding 80 mm dia",
- "unit":"metre","base_qty":180,"dsr_rate":531.85,
+ "unit":"metre","base_qty":180,"dsr_rate":458.60,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (A)",[
@@ -503,7 +512,7 @@ ITEMS = [
 },
 {
  "id":"2.13.2.2","desc":"Excavating trenches of required width for pipes, cables, etc, including excavation for sockets, depth upto 1.5 m, including getting out the excavated materials, returning the soil as required in layers not exceeding 20 cm in depth, including consolidating each deposited layers by ramming, watering etc., stacking serviceable material for measurements and disposal of unserviceable material as directed, within a lead of 50 m : - Hard rock (requiring blasting) - Pipes, cables etc. exceeding 80 mm dia but not exceeding 300 mm dia",
- "unit":"metre","base_qty":80,"dsr_rate":1316.90,
+ "unit":"metre","base_qty":80,"dsr_rate":255.60,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (A)",[
@@ -517,7 +526,7 @@ ITEMS = [
 },
 {
  "id":"2.13.2.3","desc":"Excavating trenches of required width for pipes, cables, etc, including excavation for sockets, depth upto 1.5 m, including getting out the excavated materials, returning the soil as required in layers not exceeding 20 cm in depth, including consolidating each deposited layers by ramming, watering etc., stacking serviceable material for measurements and disposal of unserviceable material as directed, within a lead of 50 m : - Hard rock (requiring blasting) - Pipes, cables etc. exceeding 300 mm dia but not exceeding 600 mm dia",
- "unit":"metre","base_qty":30,"dsr_rate":1515.20,
+ "unit":"metre","base_qty":30,"dsr_rate":1306.60,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (A)",[
@@ -545,7 +554,7 @@ ITEMS = [
 },
 {
  "id":"2.13.3.2","desc":"Excavating trenches of required width for pipes, cables, etc, including excavation for sockets, depth upto 1.5 m, including getting out the excavated materials, returning the soil as required in layers not exceeding 20 cm in depth, including consolidating each deposited layers by ramming, watering etc., stacking serviceable material for measurements and disposal of unserviceable material as directed, within a lead of 50 m : - Hard rock (blasting prohibited) - Pipes, cables etc. exceeding 80 mm dia but not exceeding 300 mm dia",
- "unit":"metre","base_qty":80,"dsr_rate":1799.35,
+ "unit":"metre","base_qty":80,"dsr_rate":1546.90,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (A)",[
@@ -559,7 +568,7 @@ ITEMS = [
 },
 {
  "id":"2.13.3.3","desc":"Excavating trenches of required width for pipes, cables, etc, including excavation for sockets, depth upto 1.5 m, including getting out the excavated materials, returning the soil as required in layers not exceeding 20 cm in depth, including consolidating each deposited layers by ramming, watering etc., stacking serviceable material for measurements and disposal of unserviceable material as directed, within a lead of 50 m : - Hard rock (blasting prohibited) - Pipes, cables etc. exceeding 300 mm dia but not exceeding 600 mm dia",
- "unit":"metre","base_qty":30,"dsr_rate":2070.50,
+ "unit":"metre","base_qty":30,"dsr_rate":1780.00,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (A)",[
@@ -589,58 +598,58 @@ ITEMS = [
 # ─── 2.16 CLOSE TIMBERING IN TRENCHES ────────────────────────────────────────
 {
  "id":"2.16.1","desc":"Close timbering in trenches including strutting, shoring and packing cavities (wherever required) complete. (Measurements to be taken of the face area timbered). - Depth not exceeding 1.5 m",
- "unit":"sqm","base_qty":90,"dsr_rate":132.90,
+ "unit":"sqm","base_qty":90,"dsr_rate":129.95,
  "sections":[
   ("MATERIAL",[
-   ("1198","Kail/Deodar planks 38 mm thick","cum",0.1050,12000.00),
-   ("1197","Kail/Deodar scantlings","cum",0.0358,12000.00),
-   ("0302","Safeda poles/Ballies 3–4 m","each",0.9000,40.00),
+   ("1198","Second class kail wood in planks","10 cudm",21.375,260.00),
+   ("1197","Second class kail wood in scantling","10 cudm",7.50,260.00),
+   ("0302","Safeda ballies 125 mm diameter and 1.5m long","metre",3.1875,40.00),
   ]),
   ("CARRIAGE",[
-   ("2204","Carriage of timber by road","cum",0.1408,118.59),
+   ("2204","Carriage of Timber","cum",1.3125,118.59),
   ]),
   ("LABOUR",[
-   ("0112","Carpenter 2nd class","day",1.500,679.00),
-   ("0114","Beldar","day",0.750,558.00),
-   ("9999","Sundries","LS",13.52,2.00),
+   ("0112","Carpenter 2nd class","day",0.50,679.00),
+   ("0114","Beldar","day",1.00,558.00),
+   ("9999","Sundries","LS",26.91,2.00),
   ]),
  ],
 },
 {
  "id":"2.16.2","desc":"Close timbering in trenches including strutting, shoring and packing cavities (wherever required) complete. (Measurements to be taken of the face area timbered). - Depth exceeding 1.5 m but not exceeding 3 m",
- "unit":"sqm","base_qty":90,"dsr_rate":145.55,
+ "unit":"sqm","base_qty":90,"dsr_rate":141.20,
  "sections":[
   ("MATERIAL",[
-   ("1198","Kail/Deodar planks 38 mm thick","cum",0.1250,12000.00),
-   ("1197","Kail/Deodar scantlings","cum",0.0420,12000.00),
-   ("0302","Safeda poles/Ballies 3–4 m","each",0.9000,40.00),
+   ("1198","Second class kail wood in planks","10 cudm",21.375,260.00),
+   ("1197","Second class kail wood in scantling","10 cudm",7.50,260.00),
+   ("0302","Safeda ballies 125 mm diameter and 1.5m long","metre",3.1875,40.00),
   ]),
   ("CARRIAGE",[
-   ("2204","Carriage of timber by road","cum",0.1670,118.59),
+   ("2204","Carriage of Timber","cum",1.3125,118.59),
   ]),
   ("LABOUR",[
-   ("0112","Carpenter 2nd class","day",1.750,679.00),
-   ("0114","Beldar","day",0.875,558.00),
-   ("9999","Sundries","LS",17.94,2.00),
+   ("0112","Carpenter 2nd class","day",0.75,679.00),
+   ("0114","Beldar","day",2.00,558.00),
+   ("9999","Sundries","LS",40.43,2.00),
   ]),
  ],
 },
 {
  "id":"2.16.3","desc":"Close timbering in trenches including strutting, shoring and packing cavities (wherever required) complete. (Measurements to be taken of the face area timbered). - Depth exceeding 3 m but not exceeding 4.5 m",
- "unit":"sqm","base_qty":90,"dsr_rate":174.00,
+ "unit":"sqm","base_qty":90,"dsr_rate":166.55,
  "sections":[
   ("MATERIAL",[
-   ("1198","Kail/Deodar planks 38 mm thick","cum",0.1600,12000.00),
-   ("1197","Kail/Deodar scantlings","cum",0.0580,12000.00),
-   ("0302","Safeda poles/Ballies 3–4 m","each",0.9000,40.00),
+   ("1198","Second class kail wood in planks","10 cudm",21.375,260.00),
+   ("1197","Second class kail wood in scantling","10 cudm",7.50,260.00),
+   ("0302","Safeda ballies 125 mm diameter and 1.5m long","metre",3.1875,40.00),
   ]),
   ("CARRIAGE",[
-   ("2204","Carriage of timber by road","cum",0.2180,118.59),
+   ("2204","Carriage of Timber","cum",1.3125,118.59),
   ]),
   ("LABOUR",[
-   ("0112","Carpenter 2nd class","day",2.250,679.00),
-   ("0114","Beldar","day",1.125,558.00),
-   ("9999","Sundries","LS",26.91,2.00),
+   ("0112","Carpenter 2nd class","day",1.50,679.00),
+   ("0114","Beldar","day",4.00,558.00),
+   ("9999","Sundries","LS",80.73,2.00),
   ]),
  ],
 },
@@ -648,7 +657,7 @@ ITEMS = [
 # ─── 2.17 CLOSE TIMBERING IN SHAFTS ──────────────────────────────────────────
 {
  "id":"2.17.1","desc":"Close timbering in case of shafts, wells, cesspits, manholes and the like including strutting, shoring and packing cavities (wherever required) etc. complete. (Measurements to be taken of the face area timbered). - Depth not exceeding 1.5 m",
- "unit":"sqm","base_qty":6.6,"dsr_rate":142.50,
+ "unit":"sqm","base_qty":6.6,"dsr_rate":138.45,
  "sections":[
   ("MATERIAL",[
    ("1198","Kail/Deodar planks 38 mm thick","cum",0.00990,12000.00),
@@ -667,7 +676,7 @@ ITEMS = [
 },
 {
  "id":"2.17.2","desc":"Close timbering in case of shafts, wells, cesspits, manholes and the like including strutting, shoring and packing cavities (wherever required) etc. complete. (Measurements to be taken of the face area timbered). - Depth exceeding 1.5 m but not exceeding 3 m",
- "unit":"sqm","base_qty":6.6,"dsr_rate":169.35,
+ "unit":"sqm","base_qty":6.6,"dsr_rate":162.55,
  "sections":[
   ("MATERIAL",[
    ("1198","Kail/Deodar planks 38 mm thick","cum",0.01300,12000.00),
@@ -686,7 +695,7 @@ ITEMS = [
 },
 {
  "id":"2.17.3","desc":"Close timbering in case of shafts, wells, cesspits, manholes and the like including strutting, shoring and packing cavities (wherever required) etc. complete. (Measurements to be taken of the face area timbered). - Depth exceeding 3 m but not exceeding 4.5 m",
- "unit":"sqm","base_qty":6.6,"dsr_rate":197.60,
+ "unit":"sqm","base_qty":6.6,"dsr_rate":187.95,
  "sections":[
   ("MATERIAL",[
    ("1198","Kail/Deodar planks 38 mm thick","cum",0.01560,12000.00),
@@ -707,7 +716,7 @@ ITEMS = [
 # ─── 2.18 CLOSE TIMBERING OVER AREAS ─────────────────────────────────────────
 {
  "id":"2.18.1","desc":"Close timbering over areas including strutting, shoring and packing cavities (wherever required) etc. complete. (Measurements to be taken of the face area timbered): Depth not exceeding 1.5 m",
- "unit":"sqm","base_qty":45,"dsr_rate":119.10,
+ "unit":"sqm","base_qty":45,"dsr_rate":116.25,
  "sections":[
   ("MATERIAL",[
    ("1198","Kail/Deodar planks 38 mm thick","cum",0.0560,12000.00),
@@ -726,7 +735,7 @@ ITEMS = [
 },
 {
  "id":"2.18.2","desc":"Close timbering over areas including strutting, shoring and packing cavities (wherever required) etc. complete. (Measurements to be taken of the face area timbered): Depth exceeding 1.5 m but not exceeding 3 m",
- "unit":"sqm","base_qty":45,"dsr_rate":134.20,
+ "unit":"sqm","base_qty":45,"dsr_rate":129.75,
  "sections":[
   ("MATERIAL",[
    ("1198","Kail/Deodar planks 38 mm thick","cum",0.0680,12000.00),
@@ -745,7 +754,7 @@ ITEMS = [
 },
 {
  "id":"2.18.3","desc":"Close timbering over areas including strutting, shoring and packing cavities (wherever required) etc. complete. (Measurements to be taken of the face area timbered): Depth exceeding 3 m but not exceeding 4.5 m",
- "unit":"sqm","base_qty":45,"dsr_rate":149.95,
+ "unit":"sqm","base_qty":45,"dsr_rate":143.90,
  "sections":[
   ("MATERIAL",[
    ("1198","Kail/Deodar planks 38 mm thick","cum",0.0830,12000.00),
@@ -782,7 +791,7 @@ ITEMS = [
 # ─── 2.20 OPEN TIMBERING IN TRENCHES ─────────────────────────────────────────
 {
  "id":"2.20.1","desc":"Open timbering in trenches including strutting and shoring complete (measurements to be taken of the face area timbered): Depth not exceeding 1.5 m",
- "unit":"sqm","base_qty":90,"dsr_rate":68.55,
+ "unit":"sqm","base_qty":90,"dsr_rate":67.00,
  "sections":[
   ("MATERIAL",[
    ("1198","Kail/Deodar planks 38 mm","cum",0.0540,12000.00),
@@ -801,7 +810,7 @@ ITEMS = [
 },
 {
  "id":"2.20.2","desc":"Open timbering in trenches including strutting and shoring complete (measurements to be taken of the face area timbered): Depth exceeding 1.5 m but not exceeding 3 m",
- "unit":"sqm","base_qty":90,"dsr_rate":76.40,
+ "unit":"sqm","base_qty":90,"dsr_rate":74.05,
  "sections":[
   ("MATERIAL",[
    ("1198","Kail/Deodar planks 38 mm","cum",0.0640,12000.00),
@@ -820,7 +829,7 @@ ITEMS = [
 },
 {
  "id":"2.20.3","desc":"Open timbering in trenches including strutting and shoring complete (measurements to be taken of the face area timbered): Depth exceeding 3 m but not exceeding 4.5 m",
- "unit":"sqm","base_qty":90,"dsr_rate":89.35,
+ "unit":"sqm","base_qty":90,"dsr_rate":85.70,
  "sections":[
   ("MATERIAL",[
    ("1198","Kail/Deodar planks 38 mm","cum",0.0840,12000.00),
@@ -841,7 +850,7 @@ ITEMS = [
 # ─── 2.21 OPEN TIMBERING IN SHAFTS ───────────────────────────────────────────
 {
  "id":"2.21.1","desc":"Open timbering in case of shafts, wells, cesspits, manholes and the like including strutting and shoring complete (Measurements to be taken of the face area timbered): Depth not exceeding 1.5 m",
- "unit":"sqm","base_qty":6.6,"dsr_rate":62.35,
+ "unit":"sqm","base_qty":6.6,"dsr_rate":60.30,
  "sections":[
   ("MATERIAL",[
    ("1198","Kail/Deodar planks","cum",0.00495,12000.00),
@@ -860,7 +869,7 @@ ITEMS = [
 },
 {
  "id":"2.21.2","desc":"Open timbering in case of shafts, wells, cesspits, manholes and the like including strutting and shoring complete (Measurements to be taken of the face area timbered): Depth exceeding 1.5 m but not exceeding 3 m",
- "unit":"sqm","base_qty":6.6,"dsr_rate":74.95,
+ "unit":"sqm","base_qty":6.6,"dsr_rate":71.60,
  "sections":[
   ("MATERIAL",[
    ("1198","Kail/Deodar planks","cum",0.00594,12000.00),
@@ -879,7 +888,7 @@ ITEMS = [
 },
 {
  "id":"2.21.3","desc":"Open timbering in case of shafts, wells, cesspits, manholes and the like including strutting and shoring complete (Measurements to be taken of the face area timbered): Depth exceeding 3 m but not exceeding 4.5 m",
- "unit":"sqm","base_qty":6.6,"dsr_rate":91.60,
+ "unit":"sqm","base_qty":6.6,"dsr_rate":86.50,
  "sections":[
   ("MATERIAL",[
    ("1198","Kail/Deodar planks","cum",0.00770,12000.00),
@@ -900,7 +909,7 @@ ITEMS = [
 # ─── 2.22 OPEN TIMBERING OVER AREAS ──────────────────────────────────────────
 {
  "id":"2.22.1","desc":"Open timbering over areas including strutting, shoring etc. complete. (Measurements to be taken of the face area timbered): Depth not exceeding 1.5 m",
- "unit":"sqm","base_qty":45,"dsr_rate":42.40,
+ "unit":"sqm","base_qty":45,"dsr_rate":40.90,
  "sections":[
   ("MATERIAL",[
    ("1198","Kail/Deodar planks","cum",0.0270,12000.00),
@@ -919,7 +928,7 @@ ITEMS = [
 },
 {
  "id":"2.22.2","desc":"Open timbering over areas including strutting, shoring etc. complete. (Measurements to be taken of the face area timbered): Depth exceeding 1.5 m but not exceeding 3 m",
- "unit":"sqm","base_qty":45,"dsr_rate":50.80,
+ "unit":"sqm","base_qty":45,"dsr_rate":48.45,
  "sections":[
   ("MATERIAL",[
    ("1198","Kail/Deodar planks","cum",0.0330,12000.00),
@@ -938,7 +947,7 @@ ITEMS = [
 },
 {
  "id":"2.22.3","desc":"Open timbering over areas including strutting, shoring etc. complete. (Measurements to be taken of the face area timbered): Depth exceeding 3 m but not exceeding 4.5 m",
- "unit":"sqm","base_qty":45,"dsr_rate":64.30,
+ "unit":"sqm","base_qty":45,"dsr_rate":60.70,
  "sections":[
   ("MATERIAL",[
    ("1198","Kail/Deodar planks","cum",0.0450,12000.00),
@@ -959,7 +968,7 @@ ITEMS = [
 # ─── 2.23 EXTRA PERMANENT OPEN TIMBERING ─────────────────────────────────────
 {
  "id":"2.23","desc":"Extra for planking and strutting in open timbering if required to be left permanently in position. (Face area of the timber permanently left to be measured).",
- "unit":"sqm","base_qty":90,"dsr_rate":822.05,
+ "unit":"sqm","base_qty":90,"dsr_rate":820.55,
  "sections":[
   ("MATERIAL",[
    ("1198","Kail/Deodar planks (permanent)","cum",1.7100,12000.00),
@@ -993,7 +1002,7 @@ ITEMS = [
 # ─── 2.25 FILLING IN TRENCHES ────────────────────────────────────────────────
 {
  "id":"2.25","desc":"Filling available excavated earth (excluding rock) in trenches, plinth, sides of foundations etc. in layers not exceeding 20cm in depth, consolidating each deposited layer by ramming and watering, lead up to 50 m and lift upto 1.5 m.",
- "unit":"cum","base_qty":10,"dsr_rate":253.95,
+ "unit":"cum","base_qty":10,"dsr_rate":219.65,
  "sections":[
   ("LABOUR",[
    ("0128","Mate","day",0.20,617.00),
@@ -1006,7 +1015,7 @@ ITEMS = [
 # ─── 2.25(a) FILLING WITH EXCAVATED EARTH (MACHINE) ─────────────────────────
 {
  "id":"2.25(a)","desc":"Excavating, supplying and filling of local earth (including royalty) by mechanical transport upto a lead of 5km also including ramming and watering of the earth in layers not exceeding 20 cm in trenches, plinth, sides of foundation etc. complete.",
- "unit":"cum","base_qty":10,"dsr_rate":368.65,
+ "unit":"cum","base_qty":10,"dsr_rate":323.90,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (A - excluded from multipliers)",[
@@ -1025,7 +1034,7 @@ ITEMS = [
 # ─── 2.26 EXTRA LIFT ──────────────────────────────────────────────────────────
 {
  "id":"2.26.1","desc":"Extra for every additional lift of 1.5 m or part thereof in excavation / banking excavated or stacked materials. - All kinds of soil",
- "unit":"cum","base_qty":10,"dsr_rate":104.50,
+ "unit":"cum","base_qty":10,"dsr_rate":90.40,
  "sections":[
   ("LABOUR",[
    ("0128","Mate","day",0.10,617.00),
@@ -1035,7 +1044,7 @@ ITEMS = [
 },
 {
  "id":"2.26.2","desc":"Extra for every additional lift of 1.5 m or part thereof in excavation / banking excavated or stacked materials. - Ordinary or hard rock",
- "unit":"cum","base_qty":10,"dsr_rate":187.40,
+ "unit":"cum","base_qty":10,"dsr_rate":162.10,
  "sections":[
   ("LABOUR",[
    ("0128","Mate","day",0.20,617.00),
@@ -1047,7 +1056,7 @@ ITEMS = [
 # ─── 2.27 FILLING WITH SAND ───────────────────────────────────────────────────
 {
  "id":"2.27","desc":"Supplying and filling in plinth with sand under floors, including watering, ramming, consolidating and dressing complete.",
- "unit":"cum","base_qty":10,"dsr_rate":2161.20,
+ "unit":"cum","base_qty":10,"dsr_rate":1953.05,
  "sections":[
   ("MATERIAL",[
    ("6501","Sand Zone V","cum",10.00,1225.00),
@@ -1066,7 +1075,7 @@ ITEMS = [
 # ─── 2.28 DRESSING OF SLOPES ──────────────────────────────────────────────────
 {
  "id":"2.28.1","desc":"Surface dressing of the ground including removing vegetation and in-equalities not exceeding 15 cm deep and disposal of rubbish, lead up to 50 m and lift up to 1.5 m. - All kinds of soil",
- "unit":"sqm","base_qty":100,"dsr_rate":28.15,
+ "unit":"sqm","base_qty":100,"dsr_rate":24.35,
  "sections":[
   ("LABOUR",[
    ("0114","Beldar","day",1.97,558.00),
@@ -1088,7 +1097,7 @@ ITEMS = [
 # ─── 2.29 RAMMING & WATERING ──────────────────────────────────────────────────
 {
  "id":"2.29.1","desc":"Ploughing the existing ground to a depth of 15 cm to 25 cm and watering the same. - All kinds of soil",
- "unit":"sqm","base_qty":100,"dsr_rate":28.50,
+ "unit":"sqm","base_qty":100,"dsr_rate":24.65,
  "sections":[
   ("LABOUR",[
    ("0114","Beldar","day",2.75,558.00),
@@ -1110,7 +1119,7 @@ ITEMS = [
 # ─── 2.30 BORING HOLES IN ROCK ───────────────────────────────────────────────
 {
  "id":"2.30.1","desc":"Excavating holes more than 0.10 cum & upto 0.5 cum including getting out the excavated soil, then returning the soil as required in layers not exceeding 20cm in depth, including consolidating each deposited layer by ramming, watering etc, disposing of surplus excavated soil, as directed within a lead of 50 m and lift upto 1.5 m. - All kinds of soil",
- "unit":"each","base_qty":10,"dsr_rate":89.90,
+ "unit":"each","base_qty":10,"dsr_rate":79.30,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (A)",[
@@ -1123,7 +1132,7 @@ ITEMS = [
 },
 {
  "id":"2.30.2","desc":"Excavating holes more than 0.10 cum & upto 0.5 cum including getting out the excavated soil, then returning the soil as required in layers not exceeding 20cm in depth, including consolidating each deposited layer by ramming, watering etc, disposing of surplus excavated soil, as directed within a lead of 50 m and lift upto 1.5 m. - Ordinary rock",
- "unit":"each","base_qty":10,"dsr_rate":160.90,
+ "unit":"each","base_qty":10,"dsr_rate":138.05,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (A)",[
@@ -1136,7 +1145,7 @@ ITEMS = [
 },
 {
  "id":"2.30.3","desc":"Excavating holes more than 0.10 cum & upto 0.5 cum including getting out the excavated soil, then returning the soil as required in layers not exceeding 20cm in depth, including consolidating each deposited layer by ramming, watering etc, disposing of surplus excavated soil, as directed within a lead of 50 m and lift upto 1.5 m. - Hard rock (requiring blasting)",
- "unit":"each","base_qty":10,"dsr_rate":257.70,
+ "unit":"each","base_qty":10,"dsr_rate":222.30,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (A)",[
@@ -1149,7 +1158,7 @@ ITEMS = [
 },
 {
  "id":"2.30.4","desc":"Excavating holes more than 0.10 cum & upto 0.5 cum including getting out the excavated soil, then returning the soil as required in layers not exceeding 20cm in depth, including consolidating each deposited layer by ramming, watering etc, disposing of surplus excavated soil, as directed within a lead of 50 m and lift upto 1.5 m. - Hard rock (blasting prohibited)",
- "unit":"each","base_qty":10,"dsr_rate":381.40,
+ "unit":"each","base_qty":10,"dsr_rate":327.80,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (A)",[
@@ -1164,7 +1173,7 @@ ITEMS = [
 # ─── 2.31 SCARIFYING ──────────────────────────────────────────────────────────
 {
  "id":"2.31","desc":"Clearing jungle including uprooting of rank vegetation, grass, brush wood, trees and saplings of girth up to 30 cm measured at a height of 1 m above ground level and removal of rubbish up to a distance of 50 m outside the periphery of the area cleared.",
- "unit":"sqm","base_qty":100,"dsr_rate":14.50,
+ "unit":"sqm","base_qty":100,"dsr_rate":12.55,
  "sections":[
   ("LABOUR",[
    ("0114","Beldar","day",1.08,558.00),
@@ -1176,7 +1185,7 @@ ITEMS = [
 # ─── 2.32 GRADING BORROW PITS ────────────────────────────────────────────────
 {
  "id":"2.32","desc":"Clearing grass and removal of the rubbish up to a distance of 50 m outside the periphery of the area cleared.",
- "unit":"sqm","base_qty":100,"dsr_rate":7.40,
+ "unit":"sqm","base_qty":100,"dsr_rate":6.40,
  "sections":[
   ("LABOUR",[
    ("0114","Beldar","day",0.60,558.00),
@@ -1189,7 +1198,7 @@ ITEMS = [
 # ─── 2.33 TREE FELLING ────────────────────────────────────────────────────────
 {
  "id":"2.33.1","desc":"Felling trees of the girth (measured at a height of 1 m above ground level), including cutting of trunks and branches, removing the roots and stacking of serviceable material and disposal of unserviceable material. - Beyond 30 cm girth upto and including 60 cm girth",
- "unit":"each","base_qty":1,"dsr_rate":439.25,
+ "unit":"each","base_qty":1,"dsr_rate":380.60,
  "sections":[
   ("LABOUR",[
    ("0114","Beldar","day",0.33,558.00),
@@ -1200,7 +1209,7 @@ ITEMS = [
 },
 {
  "id":"2.33.2","desc":"Felling trees of the girth (measured at a height of 1 m above ground level), including cutting of trunks and branches, removing the roots and stacking of serviceable material and disposal of unserviceable material. - Beyond 60 cm girth upto and including 120 cm girth",
- "unit":"each","base_qty":1,"dsr_rate":1957.15,
+ "unit":"each","base_qty":1,"dsr_rate":1694.40,
  "sections":[
   ("LABOUR",[
    ("0114","Beldar","day",1.50,558.00),
@@ -1211,7 +1220,7 @@ ITEMS = [
 },
 {
  "id":"2.33.3","desc":"Felling trees of the girth (measured at a height of 1 m above ground level), including cutting of trunks and branches, removing the roots and stacking of serviceable material and disposal of unserviceable material. - Beyond 120 cm girth upto and including 240 cm girth",
- "unit":"each","base_qty":1,"dsr_rate":9084.05,
+ "unit":"each","base_qty":1,"dsr_rate":7860.55,
  "sections":[
   ("LABOUR",[
    ("0114","Beldar","day",7.00,558.00),
@@ -1222,7 +1231,7 @@ ITEMS = [
 },
 {
  "id":"2.33.4","desc":"Felling trees of the girth (measured at a height of 1 m above ground level), including cutting of trunks and branches, removing the roots and stacking of serviceable material and disposal of unserviceable material. - Above 240 cm girth",
- "unit":"each","base_qty":1,"dsr_rate":18198.70,
+ "unit":"each","base_qty":1,"dsr_rate":15749.95,
  "sections":[
   ("LABOUR",[
    ("0114","Beldar","day",14.00,558.00),
@@ -1235,7 +1244,7 @@ ITEMS = [
 # ─── 2.34 ANTI-TERMITE CHEMICAL ──────────────────────────────────────────────
 {
  "id":"2.34.1","desc":"Supplying chemical emulsion in sealed containers including delivery as specified. - Chlorpyriphos/ Lindane emulsifiable concentrate of 20%",
- "unit":"litre","base_qty":100,"dsr_rate":200.90,
+ "unit":"litre","base_qty":100,"dsr_rate":200.85,
  "sections":[
   ("MATERIAL",[
    ("7022","Chlorpyriphos 20% EC concentrate","litre",100.00,150.00),
@@ -1249,7 +1258,7 @@ ITEMS = [
 # ─── 2.35 POST-CONSTRUCTIONAL ANTI-TERMITE ───────────────────────────────────
 {
  "id":"2.35.1.1","desc":"Diluting and injecting chemical emulsion for POST-CONSTRUCTIONAL anti- termite treatment (excluding the cost of chemical emulsion) : - Along external wall where the apron is not provided using chemical emulsion @ 7.5 litres / sqm of the vertical surface of the substructure to a depth of 300mm including excavation channel along the wall & rodding etc. complete: - With Chlorpyriphos/ Lindane E.C. 20% with 1% concentration",
- "unit":"metre","base_qty":1,"dsr_rate":32.30,
+ "unit":"metre","base_qty":1,"dsr_rate":28.25,
  "sections":[
   ("LABOUR",[
    ("0114","Beldar","day",0.33,558.00),
@@ -1259,7 +1268,7 @@ ITEMS = [
 },
 {
  "id":"2.35.2.1","desc":"Diluting and injecting chemical emulsion for POST-CONSTRUCTIONAL anti- termite treatment (excluding the cost of chemical emulsion) : - Along the external wall below concrete or masonry apron using chemical emulsion @ 2.25 litres per linear metre including drilling and plugging holes etc.: - With Chlorpyriphos/ Lindane E.C. 20% with 1% concentration",
- "unit":"metre","base_qty":1,"dsr_rate":44.70,
+ "unit":"metre","base_qty":1,"dsr_rate":39.45,
  "sections":[
   ("LABOUR",[
    ("0114","Beldar","day",0.40,558.00),
@@ -1269,7 +1278,7 @@ ITEMS = [
 },
 {
  "id":"2.35.3.1","desc":"Diluting and injecting chemical emulsion for POST-CONSTRUCTIONAL anti- termite treatment (excluding the cost of chemical emulsion) : - Treatment of soil under existing floors using chemical emulsion @ one litre per hole, 300 mm apart including drilling 12 mm diameter holes and plugging with cement mortar 1 :2 (1 cement : 2 Coarse sand) to match the existing floor: - With Chlorpyriphos/Lindane E.C. 20% with 1% concentration",
- "unit":"sqm","base_qty":1,"dsr_rate":256.15,
+ "unit":"sqm","base_qty":1,"dsr_rate":227.05,
  "sections":[
   ("LABOUR",[
    ("0114","Beldar","day",2.00,558.00),
@@ -1280,7 +1289,7 @@ ITEMS = [
 },
 {
  "id":"2.35.4.1","desc":"Diluting and injecting chemical emulsion for POST-CONSTRUCTIONAL anti- termite treatment (excluding the cost of chemical emulsion) : - Treatment of existing masonry using chemical emulsion @ one litre per hole at 300 mm interval including drilling holes at 45 degree and plugging them with cement mortar 1:2 (1 cement : 2 coarse sand) to the full depth of the hole : - With Chlorpyriphos/Lindane E.C. 20% with 1% concentration",
- "unit":"metre","base_qty":1,"dsr_rate":35.75,
+ "unit":"metre","base_qty":1,"dsr_rate":31.75,
  "sections":[
   ("LABOUR",[
    ("0114","Beldar","day",0.30,558.00),
@@ -1291,7 +1300,7 @@ ITEMS = [
 },
 {
  "id":"2.35.5","desc":"Diluting and injecting chemical emulsion for POST-CONSTRUCTIONAL anti- termite treatment (excluding the cost of chemical emulsion) : Treatment at points of contact of wood work by chemical emulsion Chlorpyriphos/ Lindane (in oil or kerosene based solution) @ 0.5 litres per hole by drilling 6 mm dia holes at downward angle of 45 degree at 150 mm centre to centre and sealing the same.",
- "unit":"metre","base_qty":1,"dsr_rate":257.55,
+ "unit":"metre","base_qty":1,"dsr_rate":254.00,
  "sections":[
   ("MATERIAL",[
    ("","Kerosene oil","litre",32.30,50.00),
@@ -1307,7 +1316,7 @@ ITEMS = [
 # ─── 2.36 COMPACTION BY SHEEP-FOOT ROLLER ────────────────────────────────────
 {
  "id":"2.36","desc":"Extra for levelling & neatly dressing of disposed soil completely as directed by Engineer-in-charge.",
- "unit":"cum","base_qty":10,"dsr_rate":76.70,
+ "unit":"cum","base_qty":10,"dsr_rate":66.35,
  "sections":[
   ("LABOUR",[
    ("0128","Mate","day",0.08,617.00),
@@ -1319,7 +1328,7 @@ ITEMS = [
 # ─── 2.37 FILLING WITH FLY ASH ───────────────────────────────────────────────
 {
  "id":"2.37","desc":"Supply and stacking of Fly ash conforming to IRC- 58 at site, including carriage, loading , unloading & stacking up to any lead (measured stacks will be reduced by 20% for payment).",
- "unit":"cum","base_qty":1,"dsr_rate":234.05,
+ "unit":"cum","base_qty":1,"dsr_rate":152.20,
  "sections":[
   ("MATERIAL",[
    ("1980","Fly ash","cum",1.00,10.00),
@@ -1333,7 +1342,7 @@ ITEMS = [
 # ─── 2.38 FILLING – IMPORTED EARTH ───────────────────────────────────────────
 {
  "id":"2.38","desc":"Filling with available fly ash and earth (excluding rock) in trenches or embankment in layers (each layer should not exceed 15 cm), with intermediate layer of compacted earth (Soil density of 98%) after every four layers of compacted depth of fly ash, sides & top layer of filling shall be done with earth having total minimum compacted thickness 30 cm or as decided by Engineer - in-charge, including compacting each layer by rolling/ ramming and watering, all complete as per drawing and direction of Engineer -in - charge.",
- "unit":"cum","base_qty":10,"dsr_rate":253.95,
+ "unit":"cum","base_qty":10,"dsr_rate":219.65,
  "sections":[
   ("LABOUR",[
    ("0128","Mate","day",0.20,617.00),
@@ -1375,7 +1384,6 @@ def set_cell(ws, row, col, value, font=None, fill_obj=None, align=None, num_form
 
 from pathlib import Path
 import json
-import earthwork_teaching_knowledge
 
 _SPECS_PATH = Path(__file__).resolve().parents[1] / "data" / "reference_json" / "earthwork_pdf_specs.json"
 if _SPECS_PATH.exists():

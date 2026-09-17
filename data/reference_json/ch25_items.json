@@ -2,18 +2,131 @@
   {
     "code": "25.1",
     "desc": "Providing and supplying aluminium extruded tubular and other aluminium sections as per the architectural drawings and approved shop drawings",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "kg",
+    "basis": 6.5,
     "say": 370.45,
-    "resources": []
+    "resources": [
+      {
+        "code": "7306",
+        "desc": "Aluminium T or L sections",
+        "unit": "kilogram",
+        "qty": 7.17,
+        "rate": 190.0
+      },
+      {
+        "code": "7392",
+        "desc": "Powder coating 50 microns on aluminium sections",
+        "unit": "kilogram",
+        "qty": 7.17,
+        "rate": 61.0
+      }
+    ]
   },
   {
     "code": "25.2",
     "desc": "Designing, fabricating, testing, protection, installing and fixing in position semi (grid) unitized system of structural glazing (with open ",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 6.72,
     "say": 2949.3,
     "resources": [
+      {
+        "code": "2605",
+        "desc": "Structural sealant - 6 mm x 12 mm",
+        "unit": "metre",
+        "qty": 17.02,
+        "rate": 30.0
+      },
+      {
+        "code": "2606",
+        "desc": "Spacer tape 6.4 mm thick x 6 mm wide",
+        "unit": "metre",
+        "qty": 20.11,
+        "rate": 20.0
+      },
+      {
+        "code": "2607",
+        "desc": "Weather Sealant - Non Staining (600 ml)",
+        "unit": "each",
+        "qty": 1.96,
+        "rate": 325.0
+      },
+      {
+        "code": "2608",
+        "desc": "Weather Sealant - Normal (300 ml)",
+        "unit": "each",
+        "qty": 2.55,
+        "rate": 98.0
+      },
+      {
+        "code": "2609",
+        "desc": "MS Brackets/Aluminium Alloy Brackets",
+        "unit": "kg",
+        "qty": 9.78,
+        "rate": 100.0
+      },
+      {
+        "code": "2610",
+        "desc": "Silicon Gasket in Kg (Above 50 g / m)",
+        "unit": "kg",
+        "qty": 0.78,
+        "rate": 465.0
+      },
+      {
+        "code": "2611",
+        "desc": "EPDM Gasket in Kg (Above 60 g / m)",
+        "unit": "kg",
+        "qty": 0.7,
+        "rate": 150.0
+      },
+      {
+        "code": "2612",
+        "desc": "Anchor Fastner - M10",
+        "unit": "each",
+        "qty": 2.0,
+        "rate": 10.0
+      },
+      {
+        "code": "2613",
+        "desc": "SS Bolt with washer of sizes for structural glazing / ACP Cladding",
+        "unit": "each",
+        "qty": 2.0,
+        "rate": 35.0
+      },
+      {
+        "code": "2630",
+        "desc": "Baker rod",
+        "unit": "metre",
+        "qty": 5.04,
+        "rate": 5.0
+      },
+      {
+        "code": "2614",
+        "desc": "SS Screws of sizes for structural glazing /ACP Cladding",
+        "unit": "each",
+        "qty": 52.0,
+        "rate": 3.0
+      },
+      {
+        "code": "2632",
+        "desc": "Fire Stop",
+        "unit": "metre",
+        "qty": 1.6,
+        "rate": 480.0
+      },
+      {
+        "code": "2615",
+        "desc": "Protective Tape",
+        "unit": "metre",
+        "qty": 6.72,
+        "rate": 20.0
+      },
+      {
+        "code": "2616",
+        "desc": "GI flashing - 1.2 mm Thick",
+        "unit": "kg",
+        "qty": 3.96,
+        "rate": 59.0
+      },
       {
         "code": "8654",
         "desc": "Masking tape",
@@ -51,6 +164,13 @@
       },
       {
         "code": "9999",
+        "desc": "Sundries (Scaffolding / Loading / Unloading)",
+        "unit": "L.S.",
+        "qty": 573.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
         "desc": "Sundries (Designing charges etc.)",
         "unit": "L.S.",
         "qty": 216.18,
@@ -61,13 +181,41 @@
   {
     "code": "25.3",
     "desc": "Providing, assembling and supplying vision glass panels (IGUs) comprising of hermetically-sealed 6-12- 6 mm insulated glass (double glazed) ",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 6.72,
     "say": 3250.95,
     "resources": [
       {
+        "code": "2617",
+        "desc": "6 mm thick High performance glass",
+        "unit": "sqm",
+        "qty": 7.02,
+        "rate": 1000.0
+      },
+      {
+        "code": "2618",
+        "desc": "6 mm thick clear heat strengthened glass",
+        "unit": "sqm",
+        "qty": 7.02,
+        "rate": 650.0
+      },
+      {
         "code": "9999",
         "desc": "Sundries (for insurance Charges)",
+        "unit": "L.S.",
+        "qty": 126.27,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries ( Fabrication charges including silicon sealant, baker rod, desecant etc.",
+        "unit": "L.S.",
+        "qty": 2120.13,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Transporation including loading and unloading",
         "unit": "L.S.",
         "qty": 126.27,
         "rate": 2.0
@@ -77,10 +225,80 @@
   {
     "code": "25.4",
     "desc": "Extra for openable side / top hung vision glass panels (IGUs) including providing and supplying at site all accessories and hardwares for th",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 1.76,
     "say": 3163.1,
     "resources": [
+      {
+        "code": "2619",
+        "desc": "6 mm thick clear heat strengthened glass",
+        "unit": "each",
+        "qty": 3.0,
+        "rate": 128.0
+      },
+      {
+        "code": "2611",
+        "desc": "EPDM Gasket in Kg (Above 60 g / m)",
+        "unit": "kg",
+        "qty": 0.8,
+        "rate": 150.0
+      },
+      {
+        "code": "2614",
+        "desc": "SS Screws of sizes for structural glazing / ACP Cladding",
+        "unit": "each",
+        "qty": 49.0,
+        "rate": 3.0
+      },
+      {
+        "code": "2615",
+        "desc": "Protective Tape",
+        "unit": "metre",
+        "qty": 1.76,
+        "rate": 20.0
+      },
+      {
+        "code": "2620",
+        "desc": "ARMS GS HD -TOP HUNG -20\"- TYPE P-COUPLE",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 1350.0
+      },
+      {
+        "code": "2621",
+        "desc": "Connection Block",
+        "unit": "each",
+        "qty": 2.0,
+        "rate": 35.0
+      },
+      {
+        "code": "2622",
+        "desc": "Curtain wall striker",
+        "unit": "each",
+        "qty": 4.0,
+        "rate": 85.0
+      },
+      {
+        "code": "2623",
+        "desc": "Adjustable Fastening Pawl",
+        "unit": "each",
+        "qty": 4.0,
+        "rate": 35.0
+      },
+      {
+        "code": "2624",
+        "desc": "Corner drive",
+        "unit": "each",
+        "qty": 2.0,
+        "rate": 255.0
+      },
+      {
+        "code": "2625",
+        "desc": "Top wedge Block",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 120.0
+      },
       {
         "code": "9999",
         "desc": "Sundries",
@@ -100,10 +318,38 @@
   {
     "code": "25.5",
     "desc": "Providing, fabricating and supplying shadow box of required size and shape, for fixing in the spandrel portion of the structural glazing, in",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 3.23,
     "say": 1883.55,
     "resources": [
+      {
+        "code": "2626",
+        "desc": "Glass wool Denisity 48 Kg / m3 with Black Glass Tissue (BGT)",
+        "unit": "sqm",
+        "qty": 3.39,
+        "rate": 250.0
+      },
+      {
+        "code": "2634",
+        "desc": "GI/Aluminium Sheet (0.8 mm thick)",
+        "unit": "kg",
+        "qty": 21.3,
+        "rate": 55.0
+      },
+      {
+        "code": "2627",
+        "desc": "SS Screws - # 8 x",
+        "unit": "19 each",
+        "qty": 32.0,
+        "rate": 6.0
+      },
+      {
+        "code": "2629",
+        "desc": "Cement Board",
+        "unit": "sqm",
+        "qty": 3.39,
+        "rate": 235.0
+      },
       {
         "code": "9999",
         "desc": "Sundries with clips & adhesives",
@@ -130,15 +376,36 @@
   {
     "code": "25.6",
     "desc": "Providing and supplying Spandrel Glass Panels comprising of 6 mm thick heat strengthened monolithic float glass of approved colour and shade",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 3.23,
     "say": 2127.95,
     "resources": [
+      {
+        "code": "2617",
+        "desc": "6 mm thick High performance glass",
+        "unit": "sqm",
+        "qty": 3.39,
+        "rate": 1000.0
+      },
       {
         "code": "9999",
         "desc": "Sundries (Insurance charges)",
         "unit": "L.S.",
         "qty": 43.46,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries (Fabrication charges including silicon sealant, baker rod, desecant etc.)",
+        "unit": "L.S.",
+        "qty": 682.55,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries (transporation including loading & unloading)",
+        "unit": "L.S.",
+        "qty": 147.59,
         "rate": 2.0
       }
     ]
@@ -146,16 +413,65 @@
   {
     "code": "25.8",
     "desc": "Design supply & installation of suspended Spider Glazing system designed to withstand the wind pressure as per IS 875 (Part-III). The Suspen",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Sqm",
+    "basis": 35.28,
     "say": 8130.45,
     "resources": [
+      {
+        "code": "8945",
+        "desc": "4 Point spider fittings of SS-316 grade with fin but without flat head bolt(c/c routel distance 200mm)",
+        "unit": "each",
+        "qty": 5.0,
+        "rate": 3318.0
+      },
+      {
+        "code": "8947",
+        "desc": "1 Point wall mounted spider fitting of SS-316 grade without flat head bolt and anchor fastener (c/c routel distance 200mm)",
+        "unit": "each",
+        "qty": 12.0,
+        "rate": 1300.0
+      },
+      {
+        "code": "8948",
+        "desc": "Flate head bolt",
+        "unit": "Nos",
+        "qty": 36.0,
+        "rate": 651.0
+      },
       {
         "code": "8949",
         "desc": "400 mm long fin plate without fastners",
         "unit": "pair",
         "qty": 5.0,
         "rate": 5931.0
+      },
+      {
+        "code": "2612",
+        "desc": "Anchor Fastner - M10 For one point spider fitting =12x2=24 nos For two point spider fitting =2x2= 4 nos For 400mm fin plates =5x6=30 nosTotal= 58 nos",
+        "unit": "each",
+        "qty": 58.0,
+        "rate": 10.0
+      },
+      {
+        "code": "8560",
+        "desc": "Non staining water resistant Clear silicon filling in gap",
+        "unit": "metre",
+        "qty": 49.28,
+        "rate": 65.0
+      },
+      {
+        "code": "8559",
+        "desc": "Stainless steel U Channel of size (50x25x2mm)",
+        "unit": "metre",
+        "qty": 7.0,
+        "rate": 160.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries(Baker Road, Screw & Accessories)",
+        "unit": "L.S.",
+        "qty": 1000.0,
+        "rate": 2.0
       },
       {
         "code": "9999",
@@ -177,6 +493,13 @@
         "unit": "sqm",
         "qty": 37.04,
         "rate": 1747.0
+      },
+      {
+        "code": "2415",
+        "desc": "21mm thick clear toughened Laminated glass for fins with holes",
+        "unit": "sqm",
+        "qty": 4.83,
+        "rate": 6000.0
       }
     ]
   }

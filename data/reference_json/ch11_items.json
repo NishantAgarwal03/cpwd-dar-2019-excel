@@ -1,10 +1,18 @@
 [
   {
     "code": "11.1.1",
+    "desc": "1:4 (1 cement : 4 coarse sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 867.45,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.434,
+        "rate": 4010.35
+      },
       {
         "code": "2602",
         "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
@@ -18,13 +26,6 @@
         "unit": "1000 Nos",
         "qty": 0.565,
         "rate": 276.72
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.434,
-        "rate": 4010.35
       },
       {
         "code": "0367",
@@ -72,10 +73,18 @@
   },
   {
     "code": "11.1.2",
+    "desc": "1:6 (1cement : 6 coarse sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 829.45,
     "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per SH: 3.11",
+        "unit": "cum",
+        "qty": 0.434,
+        "rate": 3356.15
+      },
       {
         "code": "2602",
         "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
@@ -89,13 +98,6 @@
         "unit": "1000 Nos",
         "qty": 0.565,
         "rate": 276.72
-      },
-      {
-        "code": "3.11",
-        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.434,
-        "rate": 3356.15
       },
       {
         "code": "0367",
@@ -143,10 +145,18 @@
   },
   {
     "code": "11.2",
+    "desc": "Dry brick on edge flooring in required pattern with bricks of class designation 7.5 on a bed of 12 mm mud mortar, including filling joints w",
     "unit": "sqm",
     "basis": 10.0,
     "say": 680.85,
     "resources": [
+      {
+        "code": "3.18",
+        "desc": "Rate as per SH: 3.18",
+        "unit": "cum",
+        "qty": 0.15,
+        "rate": 737.0
+      },
       {
         "code": "2602",
         "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
@@ -176,13 +186,6 @@
         "rate": 103.77
       },
       {
-        "code": "3.18",
-        "desc": "Rate as per Item Number 3.18 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.15,
-        "rate": 737.0
-      },
-      {
         "code": "0124",
         "desc": "Mason (brick layer) 2nd class",
         "unit": "day",
@@ -207,6 +210,7 @@
   },
   {
     "code": "11.3.1",
+    "desc": "40 mm thick with 20 mm nominal size stone aggregate",
     "unit": "sqm",
     "basis": 10.0,
     "say": 498.35,
@@ -306,8 +310,9 @@
   },
   {
     "code": "11.4",
-    "unit": "litre",
-    "basis": 2.0,
+    "desc": "52 mm thick cement concrete flooring with concrete hardener topping, under layer 40 mm thick cement concrete 1:2:4 (1 cement : 2 coarse sand",
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 787.5,
     "resources": [
       {
@@ -433,8 +438,9 @@
   },
   {
     "code": "11.5",
-    "unit": "litre",
-    "basis": 2.0,
+    "desc": "62 mm thick cement concrete flooring with concrete hardener topping, under layer 50 mm thick cement concrete 1:2:4 (1 cement : 2 coarse sand",
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 854.3,
     "resources": [
       {
@@ -560,13 +566,14 @@
   },
   {
     "code": "11.6.1",
+    "desc": "18 mm thick",
     "unit": "sqm",
     "basis": 10.0,
     "say": 521.15,
     "resources": [
       {
         "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
+        "desc": "Rate as per SH: 3.8",
         "unit": "cum",
         "qty": 0.235,
         "rate": 4664.55
@@ -617,13 +624,14 @@
   },
   {
     "code": "11.7",
+    "desc": "Cement concrete pavement with 1:2:4 (1 cement : 2 coarse sand : 4 graded stone aggregate 20 mm nominal size), including finishing complete.",
     "unit": "nos",
     "basis": 1.0,
     "say": 7335.1,
     "resources": [
       {
         "code": "4.1.3",
-        "desc": "Rate as per item No.4.1.3 of S.H.Concrete Work",
+        "desc": "Rate as per SH: 4.1.3",
         "unit": "cum",
         "qty": 1.0,
         "rate": 6788.6
@@ -660,6 +668,7 @@
   },
   {
     "code": "11.8",
+    "desc": "Extra for making chequers of approved pattern on cement concrete floors, steps, landing, pavements etc.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 63.2,
@@ -689,6 +698,7 @@
   },
   {
     "code": "11.9.1",
+    "desc": "Dark shade pigment with ordinary cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 847.0,
@@ -748,6 +758,13 @@
         "unit": "tonne",
         "qty": 0.129,
         "rate": 92.24
+      },
+      {
+        "code": "0785",
+        "desc": "Marble chips upto 4mm and downsize White & black",
+        "unit": "quintal",
+        "qty": 0.872,
+        "rate": 189.0
       },
       {
         "code": "2268",
@@ -851,13 +868,14 @@
   },
   {
     "code": "11.9.2",
+    "desc": "Light shade pigment with white cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 877.1,
     "resources": [
       {
         "code": "11.9.1",
-        "desc": "Rate as per item no 11.9.1 of SH: Flooring",
+        "desc": "Rate as per SH: 11.9.1",
         "unit": "sqm",
         "qty": 10.0,
         "rate": 847.0
@@ -870,37 +888,24 @@
         "rate": 60.0
       },
       {
-        "code": "0874",
-        "desc": "Black colour dark shade pigment",
-        "unit": "kilogram",
-        "qty": -2.84,
-        "rate": 70.0
-      },
-      {
         "code": "0368",
         "desc": "White Cement",
         "unit": "tonne",
         "qty": 0.0405,
         "rate": 11200.0
-      },
-      {
-        "code": "0367",
-        "desc": "Portland Cement",
-        "unit": "tonne",
-        "qty": -0.0405,
-        "rate": 4940.0
       }
     ]
   },
   {
     "code": "11.9.3",
+    "desc": "Medium shade pigment with 50% white cement and 50% ordinary cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 858.7,
     "resources": [
       {
         "code": "11.9.1",
-        "desc": "Rate as per item no 11.9.1 of SH: Flooring",
+        "desc": "Rate as per SH: 11.9.1",
         "unit": "sqm",
         "qty": 10.0,
         "rate": 847.0
@@ -913,30 +918,17 @@
         "rate": 56.0
       },
       {
-        "code": "0874",
-        "desc": "Black colour dark shade pigment",
-        "unit": "kilogram",
-        "qty": -2.84,
-        "rate": 70.0
-      },
-      {
         "code": "0368",
         "desc": "White Cement",
         "unit": "tonne",
         "qty": 0.0203,
         "rate": 11200.0
-      },
-      {
-        "code": "0367",
-        "desc": "Portland Cement",
-        "unit": "tonne",
-        "qty": -0.0203,
-        "rate": 4940.0
       }
     ]
   },
   {
     "code": "11.9.4",
+    "desc": "White cement without any pigment",
     "unit": "sqm",
     "basis": 10.0,
     "say": 855.6,
@@ -996,6 +988,13 @@
         "unit": "tonne",
         "qty": 0.129,
         "rate": 92.24
+      },
+      {
+        "code": "0785",
+        "desc": "Marble chips upto 4mm and downsize White & black",
+        "unit": "quintal",
+        "qty": 0.958,
+        "rate": 189.0
       },
       {
         "code": "2268",
@@ -1085,13 +1084,14 @@
   },
   {
     "code": "11.9.5",
+    "desc": "Light shade pigment with ordinary cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 843.2,
     "resources": [
       {
         "code": "11.9.1",
-        "desc": "Rate as per item no 11.9.1 of SH: Flooring",
+        "desc": "Rate as per SH: 11.9.1",
         "unit": "sqm",
         "qty": 10.0,
         "rate": 847.0
@@ -1102,47 +1102,28 @@
         "unit": "kilogram",
         "qty": 2.84,
         "rate": 60.0
-      },
-      {
-        "code": "0874",
-        "desc": "Black colour dark shade pigment",
-        "unit": "kilogram",
-        "qty": -2.84,
-        "rate": 70.0
       }
     ]
   },
   {
     "code": "11.9.6",
+    "desc": "Ordinary cement without any pigment",
     "unit": "sqm",
     "basis": 10.0,
     "say": 818.45,
     "resources": [
       {
         "code": "11.9.1",
-        "desc": "Rate as per item no 11.9.1 of SH: Flooring",
+        "desc": "Rate as per SH: 11.9.1",
         "unit": "sqm",
         "qty": 10.0,
         "rate": 847.0
-      },
-      {
-        "code": "0874",
-        "desc": "Black colour dark shade pigment",
-        "unit": "kilogram",
-        "qty": -2.84,
-        "rate": 70.0
-      },
-      {
-        "code": "9999",
-        "desc": "Deduct for carriage of pigment",
-        "unit": "L.S.",
-        "qty": -7.38,
-        "rate": 2.0
       }
     ]
   },
   {
     "code": "11.10.1",
+    "desc": "Dark shade pigment with Ordinary cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 876.9,
@@ -1312,13 +1293,14 @@
   },
   {
     "code": "11.10.2",
+    "desc": "Light shade pigment with white cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 919.9,
     "resources": [
       {
         "code": "11.10.1",
-        "desc": "Rate as per item no 11.10.1 of SH: Flooring",
+        "desc": "Rate as per SH: 11.10.1",
         "unit": "sqm",
         "qty": 10.0,
         "rate": 876.9
@@ -1331,37 +1313,24 @@
         "rate": 60.0
       },
       {
-        "code": "0874",
-        "desc": "Black colour dark shade pigment",
-        "unit": "kilogram",
-        "qty": -4.05,
-        "rate": 70.0
-      },
-      {
         "code": "0368",
         "desc": "White Cement",
         "unit": "tonne",
         "qty": 0.0578,
         "rate": 11200.0
-      },
-      {
-        "code": "0367",
-        "desc": "Portland Cement",
-        "unit": "tonne",
-        "qty": -0.0578,
-        "rate": 4940.0
       }
     ]
   },
   {
     "code": "11.10.3",
+    "desc": "Medium shade pigment with 50% white cement and 50% ordinary cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 893.5,
     "resources": [
       {
         "code": "11.10.1",
-        "desc": "Rate as per item no 11.10.1 of SH: Flooring",
+        "desc": "Rate as per SH: 11.10.1",
         "unit": "sqm",
         "qty": 10.0,
         "rate": 876.9
@@ -1374,30 +1343,17 @@
         "rate": 56.0
       },
       {
-        "code": "0874",
-        "desc": "Black colour dark shade pigment",
-        "unit": "kilogram",
-        "qty": -4.05,
-        "rate": 70.0
-      },
-      {
         "code": "0368",
         "desc": "White Cement",
         "unit": "tonne",
         "qty": 0.0289,
         "rate": 11200.0
-      },
-      {
-        "code": "0367",
-        "desc": "Portland Cement",
-        "unit": "tonne",
-        "qty": -0.0289,
-        "rate": 4940.0
       }
     ]
   },
   {
     "code": "11.10.4",
+    "desc": "White cement without any pigment",
     "unit": "sqm",
     "basis": 10.0,
     "say": 893.1,
@@ -1553,13 +1509,14 @@
   },
   {
     "code": "11.10.5",
+    "desc": "Light shade pigment with ordinary cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 873.1,
     "resources": [
       {
         "code": "11.10.1",
-        "desc": "Rate as per item no 11.10.1 of SH: Flooring",
+        "desc": "Rate as per SH: 11.10.1",
         "unit": "sqm",
         "qty": 10.0,
         "rate": 876.9
@@ -1570,18 +1527,12 @@
         "unit": "kilogram",
         "qty": 2.84,
         "rate": 60.0
-      },
-      {
-        "code": "0874",
-        "desc": "Black colour dark shade pigment",
-        "unit": "kilogram",
-        "qty": -2.84,
-        "rate": 70.0
       }
     ]
   },
   {
     "code": "11.10.6",
+    "desc": "Ordinary cement without any pigment",
     "unit": "sqm",
     "basis": 10.0,
     "say": 837.5,
@@ -1737,6 +1688,7 @@
   },
   {
     "code": "11.11.1",
+    "desc": "Dark shade pigment with ordinary cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 909.85,
@@ -1906,13 +1858,14 @@
   },
   {
     "code": "11.11.2",
+    "desc": "Light shade pigment with white cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 970.1,
     "resources": [
       {
         "code": "11.11.1",
-        "desc": "Rate as per Item Number 11.11.1 of SH: Flooring",
+        "desc": "Rate as per SH: 11.11.1",
         "unit": "sqm",
         "qty": 10.0,
         "rate": 909.85
@@ -1925,37 +1878,24 @@
         "rate": 60.0
       },
       {
-        "code": "0874",
-        "desc": "Black colour dark shade pigment",
-        "unit": "kilogram",
-        "qty": -5.67,
-        "rate": 70.0
-      },
-      {
         "code": "0368",
         "desc": "White Cement",
         "unit": "tonne",
         "qty": 0.081,
         "rate": 11200.0
-      },
-      {
-        "code": "0367",
-        "desc": "Portland Cement",
-        "unit": "tonne",
-        "qty": -0.081,
-        "rate": 4940.0
       }
     ]
   },
   {
     "code": "11.11.3",
+    "desc": "Medium shade pigment with 50% white cement and 50% ordinary cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 933.15,
     "resources": [
       {
         "code": "11.11.1",
-        "desc": "Rate as per Item Number 11.11.1 of SH: Flooring",
+        "desc": "Rate as per SH: 11.11.1",
         "unit": "sqm",
         "qty": 10.0,
         "rate": 909.85
@@ -1968,30 +1908,17 @@
         "rate": 56.0
       },
       {
-        "code": "0874",
-        "desc": "Black colour dark shade pigment",
-        "unit": "kilogram",
-        "qty": -5.67,
-        "rate": 70.0
-      },
-      {
         "code": "0368",
         "desc": "White Cement",
         "unit": "tonne",
         "qty": 0.0405,
         "rate": 11200.0
-      },
-      {
-        "code": "0367",
-        "desc": "Portland Cement",
-        "unit": "tonne",
-        "qty": -0.0405,
-        "rate": 4940.0
       }
     ]
   },
   {
     "code": "11.11.4",
+    "desc": "White cement without any pigment",
     "unit": "sqm",
     "basis": 10.0,
     "say": 923.4,
@@ -2147,13 +2074,14 @@
   },
   {
     "code": "11.11.5",
+    "desc": "Light shade pigment with ordinary cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 902.25,
     "resources": [
       {
         "code": "11.11.1",
-        "desc": "Rate as per Item Number 11.11.1 of SH:Flooring",
+        "desc": "Rate as per SH: 11.11.1",
         "unit": "sqm",
         "qty": 10.0,
         "rate": 909.85
@@ -2164,18 +2092,12 @@
         "unit": "kilogram",
         "qty": 5.67,
         "rate": 60.0
-      },
-      {
-        "code": "0874",
-        "desc": "Black colour dark shade pigment",
-        "unit": "kilogram",
-        "qty": -5.67,
-        "rate": 70.0
       }
     ]
   },
   {
     "code": "11.11.6",
+    "desc": "Ordinary cement without any pigment",
     "unit": "sqm",
     "basis": 10.0,
     "say": 855.55,
@@ -2331,16 +2253,24 @@
   },
   {
     "code": "11.12.1.1",
+    "desc": "Dark shade pigment with ordinary cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1398.2,
     "resources": [
       {
         "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
+        "desc": "Rate as per SH: 3.8",
         "unit": "cum",
         "qty": 0.174,
         "rate": 4664.55
+      },
+      {
+        "code": "0785",
+        "desc": "Marble chips upto 4mm and downsize White & black",
+        "unit": "quintal",
+        "qty": 0.872,
+        "rate": 189.0
       },
       {
         "code": "2268",
@@ -2423,13 +2353,14 @@
   },
   {
     "code": "11.12.1.2",
+    "desc": "Light shade pigment with white cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1428.3,
     "resources": [
       {
         "code": "11.12.1.1",
-        "desc": "Rate as per Item Number 11.12.1.1 of SH: Flooring",
+        "desc": "Rate as per SH: 11.12.1.1",
         "unit": "sqm",
         "qty": 10.0,
         "rate": 1398.2
@@ -2442,37 +2373,24 @@
         "rate": 60.0
       },
       {
-        "code": "0874",
-        "desc": "Black colour dark shade pigment",
-        "unit": "kilogram",
-        "qty": -2.84,
-        "rate": 70.0
-      },
-      {
         "code": "0368",
         "desc": "White Cement",
         "unit": "tonne",
         "qty": 0.0405,
         "rate": 11200.0
-      },
-      {
-        "code": "0367",
-        "desc": "Portland Cement",
-        "unit": "tonne",
-        "qty": -0.0405,
-        "rate": 4940.0
       }
     ]
   },
   {
     "code": "11.12.1.3",
+    "desc": "Medium shade pigment with 50% white cement and 50% ordinary cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1409.9,
     "resources": [
       {
         "code": "11.12.1.1",
-        "desc": "Rate as per Item Number 11.12.1.1 of SH:Flooring",
+        "desc": "Rate as per SH: 11.12.1.1",
         "unit": "sqm",
         "qty": 10.0,
         "rate": 1398.2
@@ -2485,40 +2403,34 @@
         "rate": 56.0
       },
       {
-        "code": "0874",
-        "desc": "Black colour dark shade pigment",
-        "unit": "kilogram",
-        "qty": -2.84,
-        "rate": 70.0
-      },
-      {
         "code": "0368",
         "desc": "White Cement",
         "unit": "tonne",
         "qty": 0.0203,
         "rate": 11200.0
-      },
-      {
-        "code": "0367",
-        "desc": "Portland Cement",
-        "unit": "tonne",
-        "qty": -0.0203,
-        "rate": 4940.0
       }
     ]
   },
   {
     "code": "11.12.1.4",
+    "desc": "White cement without any pigment",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1406.8,
     "resources": [
       {
         "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
+        "desc": "Rate as per SH: 3.8",
         "unit": "cum",
         "qty": 0.174,
         "rate": 4664.55
+      },
+      {
+        "code": "0785",
+        "desc": "Marble chips upto 4mm and downsize White & black",
+        "unit": "quintal",
+        "qty": 0.958,
+        "rate": 189.0
       },
       {
         "code": "2268",
@@ -2587,13 +2499,14 @@
   },
   {
     "code": "11.12.1.5",
+    "desc": "Light shade pigment with ordinary cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1394.4,
     "resources": [
       {
         "code": "11.12.1.1",
-        "desc": "Rate as per Item Number 11.12.1.1 of SH: Flooring",
+        "desc": "Rate as per SH: 11.12.1.1",
         "unit": "sqm",
         "qty": 10.0,
         "rate": 1398.2
@@ -2604,42 +2517,22 @@
         "unit": "kilogram",
         "qty": 2.84,
         "rate": 60.0
-      },
-      {
-        "code": "0874",
-        "desc": "Black colour dark shade pigment",
-        "unit": "kilogram",
-        "qty": -2.84,
-        "rate": 70.0
       }
     ]
   },
   {
     "code": "11.12.1.6",
+    "desc": "Ordinary cement without any pigment",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1370.7,
     "resources": [
       {
         "code": "11.12.1.1",
-        "desc": "Rate as per Item Number 11.12.1.1 of SH: Flooring",
+        "desc": "Rate as per SH: 11.12.1.1",
         "unit": "sqm",
         "qty": 10.0,
         "rate": 1398.2
-      },
-      {
-        "code": "0874",
-        "desc": "Black colour dark shade pigment",
-        "unit": "kilogram",
-        "qty": -2.84,
-        "rate": 70.0
-      },
-      {
-        "code": "9999",
-        "desc": "Deduct for Carriage of pigment",
-        "unit": "L.S.",
-        "qty": -3.64,
-        "rate": 2.0
       },
       {
         "code": "2268",
@@ -2652,6 +2545,7 @@
   },
   {
     "code": "11.13.1",
+    "desc": "40 mm wide and 4 mm thick",
     "unit": "metre",
     "basis": 10.0,
     "say": 75.15,
@@ -2695,6 +2589,7 @@
   },
   {
     "code": "11.14",
+    "desc": "Extra for laying terrazo flooring on staircase treads not exceeding 30 cm in width, including cost of forming, nosing etc.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 72.05,
@@ -2724,13 +2619,14 @@
   },
   {
     "code": "11.15.1",
+    "desc": "18 mm thick crazy marble stone white, black or as specified",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1329.25,
     "resources": [
       {
         "code": "11.7",
-        "desc": "Rate as per Item Number 11.7 of SH: Flooring",
+        "desc": "Rate as per SH: 11.7",
         "unit": "cum",
         "qty": 0.25,
         "rate": 7335.1
@@ -2783,6 +2679,13 @@
         "unit": "kilogram",
         "qty": 2.84,
         "rate": 60.0
+      },
+      {
+        "code": "0785",
+        "desc": "Marble chips upto 4mm and downsize White & black",
+        "unit": "quintal",
+        "qty": 0.872,
+        "rate": 189.0
       },
       {
         "code": "2268",
@@ -2865,10 +2768,18 @@
   },
   {
     "code": "11.16.1",
+    "desc": "Light shade pigment using white cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1238.6,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 4010.35
+      },
       {
         "code": "1201",
         "desc": "Precast terrazo tiles 22 mm thick (light shade) including 10% wastage",
@@ -2882,13 +2793,6 @@
         "unit": "L.S.",
         "qty": 40.43,
         "rate": 2.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.224,
-        "rate": 4010.35
       },
       {
         "code": "0367",
@@ -2964,10 +2868,18 @@
   },
   {
     "code": "11.16.2",
+    "desc": "Medium shade pigment using 50% white cement and 50% ordinary cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1189.1,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 4010.35
+      },
       {
         "code": "1202",
         "desc": "Precast terrazo tiles 22 mm thick (medium shade) including 10% wastage",
@@ -2981,13 +2893,6 @@
         "unit": "L.S.",
         "qty": 40.43,
         "rate": 2.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.224,
-        "rate": 4010.35
       },
       {
         "code": "0367",
@@ -3063,10 +2968,18 @@
   },
   {
     "code": "11.16.3",
+    "desc": "Dark shade pigment using ordinary cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1147.0,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 4010.35
+      },
       {
         "code": "1203",
         "desc": "Precast terrazo tiles 22 mm thick (dark shade) including 10% wastage",
@@ -3080,13 +2993,6 @@
         "unit": "L.S.",
         "qty": 40.43,
         "rate": 2.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.224,
-        "rate": 4010.35
       },
       {
         "code": "0367",
@@ -3155,10 +3061,18 @@
   },
   {
     "code": "11.16.4",
+    "desc": "Ordinary cement without any pigment",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1091.55,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 4010.35
+      },
       {
         "code": "1203",
         "desc": "Precast terrazo tiles 22 mm thick (dark shade) including 10% wastage",
@@ -3172,13 +3086,6 @@
         "unit": "L.S.",
         "qty": 40.43,
         "rate": 2.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.224,
-        "rate": 4010.35
       },
       {
         "code": "0367",
@@ -3242,18 +3149,12 @@
         "unit": "L.S.",
         "qty": 161.98,
         "rate": 2.0
-      },
-      {
-        "code": "0874",
-        "desc": "Black colour dark shade pigment",
-        "unit": "kilogram",
-        "qty": -5.92,
-        "rate": 70.0
       }
     ]
   },
   {
     "code": "11.17",
+    "desc": "Extra if terrazo tiles are laid in treads of steps not exceeding 30 cm in width.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 90.05,
@@ -3283,10 +3184,18 @@
   },
   {
     "code": "11.18.1",
+    "desc": "Light shade pigment using white cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1865.4,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.144,
+        "rate": 4664.55
+      },
       {
         "code": "1201",
         "desc": "Precast terrazo tiles 22 mm thick (light shade) including 10% wastage",
@@ -3300,13 +3209,6 @@
         "unit": "L.S.",
         "qty": 40.43,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.144,
-        "rate": 4664.55
       },
       {
         "code": "0368",
@@ -3361,10 +3263,18 @@
   },
   {
     "code": "11.18.2",
+    "desc": "Medium shades pigment using 50% white cement and 50% ordinary cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1805.85,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.144,
+        "rate": 4664.55
+      },
       {
         "code": "1202",
         "desc": "Precast terrazo tiles 22 mm thick (medium shade) including wastage & breakage",
@@ -3378,13 +3288,6 @@
         "unit": "L.S.",
         "qty": 40.43,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.144,
-        "rate": 4664.55
       },
       {
         "code": "0368",
@@ -3446,10 +3349,18 @@
   },
   {
     "code": "11.18.3",
+    "desc": "Dark shade pigment using ordinary cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1757.45,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.144,
+        "rate": 4664.55
+      },
       {
         "code": "1203",
         "desc": "Precast terrazo tiles 22 mm thick (dark shade) including wastage & breakage",
@@ -3463,13 +3374,6 @@
         "unit": "L.S.",
         "qty": 40.43,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.144,
-        "rate": 4664.55
       },
       {
         "code": "0367",
@@ -3524,10 +3428,18 @@
   },
   {
     "code": "11.18.4",
+    "desc": "Ordinary cement without any pigment",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1687.55,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.144,
+        "rate": 4664.55
+      },
       {
         "code": "1203",
         "desc": "Precast terrazo tiles 22 mm thick (dark shade) including wastage & breakage",
@@ -3541,13 +3453,6 @@
         "unit": "L.S.",
         "qty": 40.43,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.144,
-        "rate": 4664.55
       },
       {
         "code": "0367",
@@ -3597,22 +3502,23 @@
         "unit": "L.S.",
         "qty": 161.46,
         "rate": 2.0
-      },
-      {
-        "code": "0874",
-        "desc": "Black colour dark shade pigment",
-        "unit": "kilogram",
-        "qty": -7.46,
-        "rate": 70.0
       }
     ]
   },
   {
     "code": "11.19.1",
+    "desc": "Light shade pigment using white cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1223.9,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 4010.35
+      },
       {
         "code": "1227",
         "desc": "Chequered terrazo tiles 22 mm thick (light shade) including 10% wastage",
@@ -3626,13 +3532,6 @@
         "unit": "L.S.",
         "qty": 40.43,
         "rate": 2.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.224,
-        "rate": 4010.35
       },
       {
         "code": "0367",
@@ -3708,10 +3607,18 @@
   },
   {
     "code": "11.19.2",
+    "desc": "Medium shade pigment using 50% white cement, 50% ordinary cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1240.6,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 4010.35
+      },
       {
         "code": "1228",
         "desc": "Chequered terrazo tiles 22 mm thick (medium shade) including 10% wastage",
@@ -3725,13 +3632,6 @@
         "unit": "L.S.",
         "qty": 40.43,
         "rate": 2.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.224,
-        "rate": 4010.35
       },
       {
         "code": "0367",
@@ -3807,10 +3707,18 @@
   },
   {
     "code": "11.19.3",
+    "desc": "Dark shade pigment using ordinary cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1169.1,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 4010.35
+      },
       {
         "code": "1229",
         "desc": "Chequered terrazo tiles 22 mm thick (dark shade) including 10% wastage",
@@ -3824,13 +3732,6 @@
         "unit": "L.S.",
         "qty": 40.43,
         "rate": 2.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.224,
-        "rate": 4010.35
       },
       {
         "code": "0367",
@@ -3899,10 +3800,18 @@
   },
   {
     "code": "11.19.4",
+    "desc": "Ordinary cement without any pigment",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1113.8,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 4010.35
+      },
       {
         "code": "1229",
         "desc": "Chequered terrazo tiles 22 mm thick (dark shade) including 10% wastage",
@@ -3916,13 +3825,6 @@
         "unit": "L.S.",
         "qty": 40.43,
         "rate": 2.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.224,
-        "rate": 4010.35
       },
       {
         "code": "0367",
@@ -3986,22 +3888,23 @@
         "unit": "L.S.",
         "qty": 162.59,
         "rate": 2.0
-      },
-      {
-        "code": "0874",
-        "desc": "Black colour dark shade pigment",
-        "unit": "kilogram",
-        "qty": -5.92,
-        "rate": 70.0
       }
     ]
   },
   {
     "code": "11.20.1",
+    "desc": "Light shade pigment using white cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1221.65,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 4010.35
+      },
       {
         "code": "7070",
         "desc": "Chequered precast cement concrete tiles 22mm thick using marble chips of size 6mm - Light shade using white cement including 10% wastage",
@@ -4015,13 +3918,6 @@
         "unit": "L.S.",
         "qty": 40.43,
         "rate": 2.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.22,
-        "rate": 4010.35
       },
       {
         "code": "0367",
@@ -4076,10 +3972,18 @@
   },
   {
     "code": "11.20.2",
+    "desc": "Medium shade pigment using 50% white cement 50% Grey cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1104.25,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 4010.35
+      },
       {
         "code": "7237",
         "desc": "Precast chequered cement tiles 22 mm thick medium shade using 50% white cement, 50% ordinary cement including 10% wastage",
@@ -4093,13 +3997,6 @@
         "unit": "L.S.",
         "qty": 40.43,
         "rate": 2.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.22,
-        "rate": 4010.35
       },
       {
         "code": "0367",
@@ -4154,10 +4051,18 @@
   },
   {
     "code": "11.20.3",
+    "desc": "Dark shade pigment using ordinary cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 928.0,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 4010.35
+      },
       {
         "code": "7236",
         "desc": "Precast chequered cement tiles 22 mm thick Dark shade using ordinary cement including 10% wastage",
@@ -4171,13 +4076,6 @@
         "unit": "L.S.",
         "qty": 40.43,
         "rate": 2.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.22,
-        "rate": 4010.35
       },
       {
         "code": "0367",
@@ -4225,10 +4123,18 @@
   },
   {
     "code": "11.20.4",
+    "desc": "Ordinary cement without any pigment",
     "unit": "sqm",
     "basis": 10.0,
     "say": 872.55,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 4010.35
+      },
       {
         "code": "7236",
         "desc": "Precast chequered cement tiles 22 mm thick Dark shade using ordinary cement including 10% wastage",
@@ -4242,13 +4148,6 @@
         "unit": "L.S.",
         "qty": 40.43,
         "rate": 2.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.22,
-        "rate": 4010.35
       },
       {
         "code": "0367",
@@ -4291,22 +4190,23 @@
         "unit": "day",
         "qty": 1.0,
         "rate": 617.0
-      },
-      {
-        "code": "0874",
-        "desc": "Black colour dark shade pigment",
-        "unit": "kilogram",
-        "qty": -5.92,
-        "rate": 70.0
       }
     ]
   },
   {
     "code": "11.21.1.1",
+    "desc": "Acid and alkali resistant tile",
     "unit": "sqm",
     "basis": 1.0,
     "say": 1495.0,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.012,
+        "rate": 4010.35
+      },
       {
         "code": "7077",
         "desc": "Acid and alkali resistant tiles 300x300 mm size, 10 mm thick",
@@ -4320,13 +4220,6 @@
         "unit": "L.S.",
         "qty": 6.24,
         "rate": 2.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.012,
-        "rate": 4010.35
       },
       {
         "code": "9999",
@@ -4348,13 +4241,6 @@
         "unit": "tonne",
         "qty": 0.0079,
         "rate": 7800.0
-      },
-      {
-        "code": "0367",
-        "desc": "Portland Cement",
-        "unit": "tonne",
-        "qty": -0.0079,
-        "rate": 4940.0
       },
       {
         "code": "0123",
@@ -4381,10 +4267,18 @@
   },
   {
     "code": "11.21.2.1",
+    "desc": "Acid and alkali resistant tile",
     "unit": "sqm",
     "basis": 1.0,
     "say": 1607.7,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.014,
+        "rate": 4010.35
+      },
       {
         "code": "7077",
         "desc": "Acid and alkali resistant tiles 300x300 mm size, 10 mm thick",
@@ -4400,25 +4294,11 @@
         "rate": 2.0
       },
       {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.014,
-        "rate": 4010.35
-      },
-      {
         "code": "7024",
         "desc": "Acid Proof cement",
         "unit": "tonne",
         "qty": 0.0086,
         "rate": 7800.0
-      },
-      {
-        "code": "0367",
-        "desc": "Portland Cement",
-        "unit": "tonne",
-        "qty": -0.0086,
-        "rate": 4940.0
       },
       {
         "code": "9999",
@@ -4459,10 +4339,18 @@
   },
   {
     "code": "11.22.1.1",
+    "desc": "8 mm thick",
     "unit": "sqm",
     "basis": 1.0,
     "say": 1239.55,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.014,
+        "rate": 4664.55
+      },
       {
         "code": "2751",
         "desc": "8 mm thick marble tiles (polished) Raj Nagar",
@@ -4476,13 +4364,6 @@
         "unit": "L.S.",
         "qty": 3.9,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.014,
-        "rate": 4664.55
       },
       {
         "code": "9999",
@@ -4530,23 +4411,24 @@
   },
   {
     "code": "11.23.1",
+    "desc": "Makrana white second quality",
     "unit": "sqm",
     "basis": 10.0,
     "say": 3237.8,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 4010.35
+      },
       {
         "code": "6001",
         "desc": "White marble slab Makrana second quality plain veined 18 mm thick",
         "unit": "sqm",
         "qty": 11.5,
         "rate": 1430.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.224,
-        "rate": 4010.35
       },
       {
         "code": "0367",
@@ -4608,23 +4490,24 @@
   },
   {
     "code": "11.23.2",
+    "desc": "Raj Nagar plain",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1960.75,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 4010.35
+      },
       {
         "code": "7071",
         "desc": "White marble Raj Nagar plain 18 mm thick upto 0.50 sqm area",
         "unit": "sqm",
         "qty": 11.5,
         "rate": 600.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.224,
-        "rate": 4010.35
       },
       {
         "code": "0367",
@@ -4686,23 +4569,24 @@
   },
   {
     "code": "11.23.3",
+    "desc": "Agaria White",
     "unit": "sqm",
     "basis": 10.0,
     "say": 2730.05,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 4010.35
+      },
       {
         "code": "7850",
         "desc": "Agaria White marble slab plain 18mm thick",
         "unit": "sqm",
         "qty": 11.5,
         "rate": 1100.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.224,
-        "rate": 4010.35
       },
       {
         "code": "0367",
@@ -4764,23 +4648,24 @@
   },
   {
     "code": "11.23.4",
+    "desc": "Black Zebra",
     "unit": "sqm",
     "basis": 10.0,
     "say": 2422.3,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 4010.35
+      },
       {
         "code": "6019",
         "desc": "Black Zebra marble slab plain 18mm thick",
         "unit": "sqm",
         "qty": 11.5,
         "rate": 900.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.224,
-        "rate": 4010.35
       },
       {
         "code": "0367",
@@ -4842,23 +4727,24 @@
   },
   {
     "code": "11.23.5",
+    "desc": "Udaipur green marble",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1991.5,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 4010.35
+      },
       {
         "code": "6010",
         "desc": "Udaypur green marble slab plain 18mm thick",
         "unit": "sqm",
         "qty": 11.5,
         "rate": 620.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.224,
-        "rate": 4010.35
       },
       {
         "code": "0367",
@@ -4920,23 +4806,24 @@
   },
   {
     "code": "11.23.6",
+    "desc": "Pink plain marble",
     "unit": "sqm",
     "basis": 10.0,
     "say": 2029.95,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 4010.35
+      },
       {
         "code": "6007",
         "desc": "Pink marble slab plain 18mm thick",
         "unit": "sqm",
         "qty": 11.5,
         "rate": 645.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.224,
-        "rate": 4010.35
       },
       {
         "code": "0367",
@@ -4998,6 +4885,7 @@
   },
   {
     "code": "11.24",
+    "desc": "Extra for pre finished nosing to treads of steps of marble stone.",
     "unit": "metre",
     "basis": 10.0,
     "say": 530.25,
@@ -5034,8 +4922,9 @@
   },
   {
     "code": "11.25",
-    "unit": "metre",
-    "basis": 2.0,
+    "desc": "Extra for marble stone flooring in treads of steps and risers using single length up to 2.00 metre.",
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 622.75,
     "resources": [
       {
@@ -5077,10 +4966,18 @@
   },
   {
     "code": "11.26.1",
+    "desc": "25 mm thick",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1531.85,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 4010.35
+      },
       {
         "code": "1168",
         "desc": "Kota stone slab 20 mm to 25 mm thick (semi-polished) including 15% wastage",
@@ -5094,13 +4991,6 @@
         "unit": "tonne",
         "qty": 0.67,
         "rate": 92.24
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.224,
-        "rate": 4010.35
       },
       {
         "code": "0367",
@@ -5169,10 +5059,18 @@
   },
   {
     "code": "11.27",
+    "desc": "Kota stone slabs 20 mm thick in risers of steps, skirting, dado and pillars laid on 12 mm (average) thick cement mortar 1:3 (1 cement: 3 coa",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1810.05,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.144,
+        "rate": 4664.55
+      },
       {
         "code": "1168",
         "desc": "Kota stone slab 20 mm to 25 mm thick (semi-polished) including 15% wastage",
@@ -5186,13 +5084,6 @@
         "unit": "tonne",
         "qty": 0.67,
         "rate": 92.24
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.144,
-        "rate": 4664.55
       },
       {
         "code": "0367",
@@ -5254,10 +5145,18 @@
   },
   {
     "code": "11.28.1",
+    "desc": "Red sand stone",
     "unit": "sqm",
     "basis": 10.0,
     "say": 888.95,
     "resources": [
+      {
+        "code": "3.10",
+        "desc": "Rate as per SH: 3.10",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3658.1
+      },
       {
         "code": "1164",
         "desc": "Red sand stone slab 40 mmthick (un-dressed)",
@@ -5271,13 +5170,6 @@
         "unit": "L.S.",
         "qty": 34.06,
         "rate": 2.0
-      },
-      {
-        "code": "3.10",
-        "desc": "Rate as per Item Number 3.10 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.25,
-        "rate": 3658.1
       },
       {
         "code": "0123",
@@ -5318,10 +5210,18 @@
   },
   {
     "code": "11.28.2",
+    "desc": "White sand stone",
     "unit": "sqm",
     "basis": 10.0,
     "say": 888.95,
     "resources": [
+      {
+        "code": "3.10",
+        "desc": "Rate as per SH: 3.10",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3658.1
+      },
       {
         "code": "1165",
         "desc": "White sand stone slab 40 mm thick (un-dressed)",
@@ -5335,13 +5235,6 @@
         "unit": "L.S.",
         "qty": 34.06,
         "rate": 2.0
-      },
-      {
-        "code": "3.10",
-        "desc": "Rate as per Item Number 3.10 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.25,
-        "rate": 3658.1
       },
       {
         "code": "0123",
@@ -5382,10 +5275,25 @@
   },
   {
     "code": "11.29.1",
+    "desc": "Red sand stone",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1074.55,
     "resources": [
+      {
+        "code": "3.10",
+        "desc": "Rate as per SH: 3.10",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3658.1
+      },
+      {
+        "code": "3.12",
+        "desc": "Rate as per SH: 3.12",
+        "unit": "cum",
+        "qty": 0.023,
+        "rate": 5108.05
+      },
       {
         "code": "1164",
         "desc": "Red sand stone slab 40 mmthick (un-dressed)",
@@ -5399,20 +5307,6 @@
         "unit": "L.S.",
         "qty": 34.06,
         "rate": 2.0
-      },
-      {
-        "code": "3.10",
-        "desc": "Rate as per Item Number 3.10 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.25,
-        "rate": 3658.1
-      },
-      {
-        "code": "3.12",
-        "desc": "Rate as per Item Number 3.12 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.023,
-        "rate": 5108.05
       },
       {
         "code": "0123",
@@ -5453,10 +5347,25 @@
   },
   {
     "code": "11.29.2",
+    "desc": "White sand stone",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1074.55,
     "resources": [
+      {
+        "code": "3.10",
+        "desc": "Rate as per SH: 3.10",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3658.1
+      },
+      {
+        "code": "3.12",
+        "desc": "Rate as per SH: 3.12",
+        "unit": "cum",
+        "qty": 0.023,
+        "rate": 5108.05
+      },
       {
         "code": "1165",
         "desc": "White sand stone slab 40 mm thick (un-dressed)",
@@ -5470,20 +5379,6 @@
         "unit": "L.S.",
         "qty": 34.06,
         "rate": 2.0
-      },
-      {
-        "code": "3.10",
-        "desc": "Rate as per Item Number 3.10 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.25,
-        "rate": 3658.1
-      },
-      {
-        "code": "3.12",
-        "desc": "Rate as per Item Number 3.12 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.023,
-        "rate": 5108.05
       },
       {
         "code": "0123",
@@ -5524,10 +5419,25 @@
   },
   {
     "code": "11.30.1",
+    "desc": "Red sand stone",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1165.2,
     "resources": [
+      {
+        "code": "3.10",
+        "desc": "Rate as per SH: 3.10",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3658.1
+      },
+      {
+        "code": "3.12",
+        "desc": "Rate as per SH: 3.12",
+        "unit": "cum",
+        "qty": 0.023,
+        "rate": 5108.05
+      },
       {
         "code": "1164",
         "desc": "Red sand stone slab 40 mmthick (un-dressed)",
@@ -5541,20 +5451,6 @@
         "unit": "L.S.",
         "qty": 34.06,
         "rate": 2.0
-      },
-      {
-        "code": "3.10",
-        "desc": "Rate as per Item Number 3.10 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.25,
-        "rate": 3658.1
-      },
-      {
-        "code": "3.12",
-        "desc": "Rate as per Item Number 3.12 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.023,
-        "rate": 5108.05
       },
       {
         "code": "0123",
@@ -5609,10 +5505,25 @@
   },
   {
     "code": "11.30.2",
+    "desc": "White sand stone",
     "unit": "sqm",
     "basis": 10.0,
     "say": 1165.2,
     "resources": [
+      {
+        "code": "3.10",
+        "desc": "Rate as per SH: 3.10",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3658.1
+      },
+      {
+        "code": "3.12",
+        "desc": "Rate as per SH: 3.12",
+        "unit": "cum",
+        "qty": 0.023,
+        "rate": 5108.05
+      },
       {
         "code": "1165",
         "desc": "White sand stone slab 40 mm thick (un-dressed)",
@@ -5626,20 +5537,6 @@
         "unit": "L.S.",
         "qty": 34.06,
         "rate": 2.0
-      },
-      {
-        "code": "3.10",
-        "desc": "Rate as per Item Number 3.10 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.25,
-        "rate": 3658.1
-      },
-      {
-        "code": "3.12",
-        "desc": "Rate as per Item Number 3.12 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.023,
-        "rate": 5108.05
       },
       {
         "code": "0123",
@@ -5694,6 +5591,7 @@
   },
   {
     "code": "11.31",
+    "desc": "Extra for pre finished nosing in treads of steps of Kota stone/ sand stone slab.",
     "unit": "metre",
     "basis": 10.0,
     "say": 148.1,
@@ -5709,8 +5607,9 @@
   },
   {
     "code": "11.32",
-    "unit": "metre",
-    "basis": 1.05,
+    "desc": "Extra for Kota stone/ sand stone in treads of steps and risers using single length up to 1.05 metre.",
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 33.1,
     "resources": [
       {
@@ -5731,24 +5630,11 @@
   },
   {
     "code": "11.33.1",
-    "unit": "sqm",
-    "basis": 10.0,
+    "desc": "Second class teak wood",
+    "unit": "x4",
+    "basis": 2.5,
     "say": 4152.45,
     "resources": [
-      {
-        "code": "1190",
-        "desc": "Second class teak wood in planks",
-        "unit": "10 cudm",
-        "qty": 29.81,
-        "rate": 791.0
-      },
-      {
-        "code": "1231",
-        "desc": "Extra for selected planks of second class teakwood",
-        "unit": "10 cudm",
-        "qty": 29.81,
-        "rate": 150.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -5788,24 +5674,11 @@
   },
   {
     "code": "11.33.2",
-    "unit": "sqm",
-    "basis": 10.0,
+    "desc": "Second class deodar wood",
+    "unit": "x4",
+    "basis": 2.5,
     "say": 2759.1,
     "resources": [
-      {
-        "code": "1194",
-        "desc": "Second class deodar wood in planks",
-        "unit": "10 cudm",
-        "qty": 29.81,
-        "rate": 500.0
-      },
-      {
-        "code": "2500",
-        "desc": "Extra for selected planks of second class deodar wood",
-        "unit": "10 cudm",
-        "qty": 29.81,
-        "rate": 110.0
-      },
       {
         "code": "2204",
         "desc": "Carriage of Timber",
@@ -5845,8 +5718,9 @@
   },
   {
     "code": "11.34",
-    "unit": "kg",
-    "basis": 2.45,
+    "desc": "38 mm thick wood block flooring of first class teak wood laid over 25 mm thick leveling layer of cement concrete 1:2:4 (1 cement : 2 coarse ",
+    "unit": "sqm",
+    "basis": 1.0,
     "say": 9971.2,
     "resources": [
       {
@@ -5862,13 +5736,6 @@
         "unit": "tonne",
         "qty": 0.0044,
         "rate": 103.77
-      },
-      {
-        "code": "1187",
-        "desc": "First class teak wood in scantling",
-        "unit": "10 cudm",
-        "qty": 4.18,
-        "rate": 880.0
       },
       {
         "code": "2204",
@@ -5916,10 +5783,18 @@
   },
   {
     "code": "11.35",
+    "desc": "Providing and fixing M.S. angle 50x50x5 mm to act as nosing with lugs of M.S. flat 10x5 mm, 10 cm long, forked at end 60cm apart (minimum th",
     "unit": "m",
     "basis": 3.0,
     "say": 132.25,
     "resources": [
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 0.6,
+        "rate": 50.7
+      },
       {
         "code": "1007",
         "desc": "Structurals such as tees,angles channels and R.S. joists",
@@ -5975,22 +5850,23 @@
         "unit": "day",
         "qty": 0.25,
         "rate": 558.0
-      },
-      {
-        "code": "13.50.3",
-        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
-        "unit": "sqm",
-        "qty": 0.6,
-        "rate": 50.7
       }
     ]
   },
   {
     "code": "11.37",
-    "unit": "kg",
-    "basis": 3.3,
-    "say": 927.9,
+    "desc": "Providing and laying Ceramic glazed floor tiles of size 300x300 mm (thickness to be specified by the manufacturer) of 1st quality conforming",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 926.9,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.024,
+        "rate": 4010.35
+      },
       {
         "code": "7801",
         "desc": "Ceramic Glazed Tiles Ist quality 300 x 300mm in all shades and designs of White, Ivory, grey, Fuem Red brown etc.",
@@ -6004,13 +5880,6 @@
         "unit": "L.S.",
         "qty": 6.24,
         "rate": 2.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.024,
-        "rate": 4010.35
       },
       {
         "code": "9999",
@@ -6046,7 +5915,16 @@
         "unit": "L.S.",
         "qty": 26.91,
         "rate": 2.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "11.37A",
+    "desc": "Providing and fixing 1st quality ceramic glazed floor tiles conforming to IS :",
+    "unit": "Sqm",
+    "basis": 1.0,
+    "say": 927.9,
+    "resources": [
       {
         "code": "7801",
         "desc": "Glazed Ceramic Floor Tile = 1.00 Sqm+ Add for wastage and breakage @2.5% = 0.025 Sqm =1.025 Sqm",
@@ -6060,13 +5938,6 @@
         "unit": "L.S.",
         "qty": 6.24,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Cement mortar 1:3 (1 Cement: 3 Coarse Sand)",
-        "unit": "cum",
-        "qty": 0.014,
-        "rate": 4664.55
       },
       {
         "code": "9999",
@@ -6107,16 +5978,17 @@
   },
   {
     "code": "11.38",
-    "unit": "kg",
-    "basis": 3.3,
+    "desc": "Providing and laying Ceramic glazed floor tiles of size 300x300 mm (thickness to be specified by the manufacturer), of 1st quality conformin",
+    "unit": "sqm",
+    "basis": 1.0,
     "say": 996.7,
     "resources": [
       {
-        "code": "7802",
-        "desc": "Ceramic Glazed Tiles Ist quality 300 x 300 in all shades designs except White, Ivory, Grey, Fuem Red Brown etc.",
-        "unit": "sq.m.",
-        "qty": 1.025,
-        "rate": 260.0
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.024,
+        "rate": 4010.35
       },
       {
         "code": "9977",
@@ -6124,13 +5996,6 @@
         "unit": "L.S.",
         "qty": 6.24,
         "rate": 2.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.024,
-        "rate": 4010.35
       },
       {
         "code": "9999",
@@ -6171,16 +6036,17 @@
   },
   {
     "code": "11.39",
-    "unit": "kg",
-    "basis": 3.3,
+    "desc": "Providing and laying rectified Glazed Ceramic floor tiles of size 300x300 mm or more (thickness to be specified by the manufacturer), of 1st",
+    "unit": "sqm",
+    "basis": 1.0,
     "say": 1088.4,
     "resources": [
       {
-        "code": "7803",
-        "desc": "Rectified Ceramic Glazed Tiles Ist quality 300x300mm or more in all shades designs White, Ivory, Grey, Fuem Red Brown etc.",
-        "unit": "sq.m.",
-        "qty": 1.025,
-        "rate": 340.0
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.024,
+        "rate": 4010.35
       },
       {
         "code": "9977",
@@ -6188,13 +6054,6 @@
         "unit": "L.S.",
         "qty": 6.24,
         "rate": 2.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.024,
-        "rate": 4010.35
       },
       {
         "code": "9999",
@@ -6235,16 +6094,17 @@
   },
   {
     "code": "11.40",
-    "unit": "kg",
-    "basis": 3.3,
+    "desc": "Providing and laying rectified Glazed Ceramic floor tiles of size 300x300 mm or more (thickness to be specified by the manufacturer), of 1st",
+    "unit": "sqm",
+    "basis": 1.0,
     "say": 1170.7,
     "resources": [
       {
-        "code": "7804",
-        "desc": "Rectified Ceramic Glazed Tiles Ist quality 300x300mm or more in all shades designs except White, Ivory, Grey, Fuem Red Brown etc.",
-        "unit": "sq.m.",
-        "qty": 1.025,
-        "rate": 400.0
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.024,
+        "rate": 4010.35
       },
       {
         "code": "9977",
@@ -6252,13 +6112,6 @@
         "unit": "L.S.",
         "qty": 6.24,
         "rate": 2.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.024,
-        "rate": 4010.35
       },
       {
         "code": "9999",
@@ -6299,10 +6152,18 @@
   },
   {
     "code": "11.41.1",
+    "desc": "Size of Tile 500x500 mm",
     "unit": "sqm",
     "basis": 1.0,
     "say": 1267.8,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.024,
+        "rate": 4010.35
+      },
       {
         "code": "8620",
         "desc": "Vitrified floor tile 50x50 cm",
@@ -6316,13 +6177,6 @@
         "unit": "L.S.",
         "qty": 6.24,
         "rate": 2.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.024,
-        "rate": 4010.35
       },
       {
         "code": "9999",
@@ -6363,10 +6217,18 @@
   },
   {
     "code": "11.41.2",
+    "desc": "Size of Tile 600x600 mm",
     "unit": "sqm",
     "basis": 1.0,
     "say": 1500.55,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.024,
+        "rate": 4010.35
+      },
       {
         "code": "8621",
         "desc": "Vitrified floor tile 60x60 cm",
@@ -6380,13 +6242,6 @@
         "unit": "L.S.",
         "qty": 6.24,
         "rate": 2.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.024,
-        "rate": 4010.35
       },
       {
         "code": "9999",
@@ -6427,10 +6282,18 @@
   },
   {
     "code": "11.41.3",
+    "desc": "Size of Tile 800x800 mm",
     "unit": "sqm",
     "basis": 1.0,
     "say": 1758.7,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.024,
+        "rate": 4010.35
+      },
       {
         "code": "8622",
         "desc": "Vitrified floor tile 80x80 cm",
@@ -6444,13 +6307,6 @@
         "unit": "L.S.",
         "qty": 6.24,
         "rate": 2.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.024,
-        "rate": 4010.35
       },
       {
         "code": "9999",
@@ -6491,10 +6347,18 @@
   },
   {
     "code": "11.41.4",
+    "desc": "Size of Tile 1000x1000 mm",
     "unit": "sqm",
     "basis": 1.0,
     "say": 2499.25,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.024,
+        "rate": 4010.35
+      },
       {
         "code": "8623",
         "desc": "Vitrified floor tile 100x100 cm",
@@ -6508,13 +6372,6 @@
         "unit": "L.S.",
         "qty": 6.24,
         "rate": 2.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
-        "unit": "cum",
-        "qty": 0.024,
-        "rate": 4010.35
       },
       {
         "code": "9999",
@@ -6555,13 +6412,14 @@
   },
   {
     "code": "11.42",
-    "unit": "kg",
-    "basis": 3.3,
+    "desc": "Deduct for not using 20 mm thick cement mortar 1:4 (1 cement : 4 coarse sand) bedding in laying of floor tiles and jointing with grey cement",
+    "unit": "sqm",
+    "basis": 1.0,
     "say": 677.55,
     "resources": [
       {
         "code": "3.9",
-        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
+        "desc": "Rate as per SH: 3.9",
         "unit": "cum",
         "qty": 0.024,
         "rate": 4010.35
@@ -6605,14 +6463,15 @@
   },
   {
     "code": "11.43",
+    "desc": "Fixing glazed/ Ceramic/ Vitrified floor tiles with cement based high polymer modified quick-set tile adhesive (Water based) conforming to IS",
     "unit": "sqm",
     "basis": 1.0,
     "say": 587.2,
     "resources": [
       {
         "code": "8731",
-        "desc": "High polymer modified quickset tile adhesive.",
-        "unit": "per kg",
+        "desc": "High polymer modified quickset tile adhesive. per",
+        "unit": "kg",
         "qty": 5.0,
         "rate": 9.0
       },
@@ -6648,16 +6507,31 @@
   },
   {
     "code": "11.44",
-    "unit": "kg",
-    "basis": 50.0,
+    "desc": "Crazy ceramic tile flooring, with under layer 12 mm thick cement mortar 1:4 (1 cement: 4 coarse sand), with joints not exceeding 5 mm, inclu",
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 735.65,
     "resources": [
       {
         "code": "3.9",
-        "desc": "Rate as per Item No.3.9 of SH:Mortar",
+        "desc": "Rate as per SH: 3.9",
         "unit": "cum",
         "qty": 0.14,
         "rate": 4010.35
+      },
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.03,
+        "rate": 4010.35
+      },
+      {
+        "code": "4.18",
+        "desc": "Rate as per SH: 4.18",
+        "unit": "day",
+        "qty": 1.2,
+        "rate": 738.0
       },
       {
         "code": "0124",
@@ -6723,13 +6597,6 @@
         "rate": 2.0
       },
       {
-        "code": "3.9",
-        "desc": "Rate as per Item No.3.9 of SH:Mortar",
-        "unit": "cum",
-        "qty": 0.03,
-        "rate": 4010.35
-      },
-      {
         "code": "0123",
         "desc": "Mason (brick layer) 1st class",
         "unit": "day",
@@ -6768,10 +6635,18 @@
   },
   {
     "code": "11.45",
+    "desc": "Providing and laying 500x500x40 mm thick Turf paver (Turfpave XD) on 150 mm thick sub grade of compacted bed of 20 mm thick nominal size sto",
     "unit": "sqm",
     "basis": 10.0,
-    "say": null,
+    "say": 1511.9,
     "resources": [
+      {
+        "code": "2.27",
+        "desc": "Rate as per SH: 2.27",
+        "unit": "cum",
+        "qty": 1.5,
+        "rate": 1953.05
+      },
       {
         "code": "0295",
         "desc": "Stone Aggregate (Single size) : 20 mm nominal size",
@@ -6806,21 +6681,6 @@
         "unit": "day",
         "qty": 0.36,
         "rate": 617.0
-      }
-    ]
-  },
-  {
-    "code": "2.27",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 1511.9,
-    "resources": [
-      {
-        "code": "SH: EARTH",
-        "desc": "WORK",
-        "unit": "cum",
-        "qty": 1.5,
-        "rate": 1953.05
       },
       {
         "code": "2708",
@@ -6854,10 +6714,18 @@
   },
   {
     "code": "11.46.1",
+    "desc": "Size of Tile 500x500 mm",
     "unit": "sqm",
     "basis": 1.0,
     "say": 1313.1,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.014,
+        "rate": 4664.55
+      },
       {
         "code": "8620",
         "desc": "Vitrified floor tile 50x50 cm",
@@ -6871,13 +6739,6 @@
         "unit": "L.S.",
         "qty": 6.24,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item No.3.8 of SH:Mortars",
-        "unit": "cum",
-        "qty": 0.014,
-        "rate": 4664.55
       },
       {
         "code": "9999",
@@ -6918,10 +6779,18 @@
   },
   {
     "code": "11.46.2",
+    "desc": "Size of Tile 600x600 mm",
     "unit": "sqm",
     "basis": 1.0,
     "say": 1545.85,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.014,
+        "rate": 4664.55
+      },
       {
         "code": "8621",
         "desc": "Vitrified floor tile 60x60 cm",
@@ -6935,13 +6804,6 @@
         "unit": "L.S.",
         "qty": 6.24,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item No.3.8 of SH:Mortars",
-        "unit": "cum",
-        "qty": 0.014,
-        "rate": 4664.55
       },
       {
         "code": "9999",
@@ -6982,10 +6844,18 @@
   },
   {
     "code": "11.46.3",
+    "desc": "Size of Tile 800x800 mm",
     "unit": "sqm",
     "basis": 1.0,
     "say": 1806.8,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.014,
+        "rate": 4664.55
+      },
       {
         "code": "8622",
         "desc": "Vitrified floor tile 80x80 cm",
@@ -6999,13 +6869,6 @@
         "unit": "L.S.",
         "qty": 6.24,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item No.3.8 of SH:Mortars",
-        "unit": "cum",
-        "qty": 0.014,
-        "rate": 4664.55
       },
       {
         "code": "9999",
@@ -7046,10 +6909,18 @@
   },
   {
     "code": "11.46.4",
+    "desc": "Size of Tile 1000x1000 mm",
     "unit": "sqm",
     "basis": 1.0,
-    "say": 164.65,
+    "say": 2547.35,
     "resources": [
+      {
+        "code": "3.8",
+        "desc": "Rate as per SH: 3.8",
+        "unit": "cum",
+        "qty": 0.014,
+        "rate": 4664.55
+      },
       {
         "code": "8623",
         "desc": "Vitrified floor tile 100x100 cm",
@@ -7063,13 +6934,6 @@
         "unit": "L.S.",
         "qty": 6.24,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Rate as per Item No.3.8 of SH: MORTARS",
-        "unit": "cum",
-        "qty": 0.014,
-        "rate": 4664.55
       },
       {
         "code": "9999",
@@ -7105,7 +6969,16 @@
         "unit": "L.S.",
         "qty": 26.91,
         "rate": 2.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "11.46A",
+    "desc": "Providing and fixing glazed screen printed border tile 75mm wide having thickness 5mm, of approved quality & make, in all shades, design and",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 164.65,
+    "resources": [
       {
         "code": "8624",
         "desc": "Border tiles 200x75mm size 5mm thick",
@@ -7119,13 +6992,6 @@
         "unit": "L.S.",
         "qty": 6.24,
         "rate": 2.0
-      },
-      {
-        "code": "3.8",
-        "desc": "Cement mortar 1:3 for 12mm base",
-        "unit": "cum",
-        "qty": 0.014,
-        "rate": 4664.55
       },
       {
         "code": "9999",
@@ -7166,6 +7032,7 @@
   },
   {
     "code": "11.47.1",
+    "desc": "Size of Tile 500x500 mm",
     "unit": "sqm",
     "basis": 1.0,
     "say": 1501.25,
@@ -7186,8 +7053,8 @@
       },
       {
         "code": "8731",
-        "desc": "High polymer modified quickset tile adhesive.",
-        "unit": "per kg",
+        "desc": "High polymer modified quickset tile adhesive. per",
+        "unit": "kg",
         "qty": 10.0,
         "rate": 9.0
       },
@@ -7216,6 +7083,7 @@
   },
   {
     "code": "11.47.2",
+    "desc": "Size of Tile 600x600 mm",
     "unit": "sqm",
     "basis": 1.0,
     "say": 1734.0,
@@ -7236,8 +7104,8 @@
       },
       {
         "code": "8731",
-        "desc": "High polymer modified quickset tile adhesive.",
-        "unit": "per kg",
+        "desc": "High polymer modified quickset tile adhesive. per",
+        "unit": "kg",
         "qty": 10.0,
         "rate": 9.0
       },
@@ -7266,6 +7134,7 @@
   },
   {
     "code": "11.47.3",
+    "desc": "Size of Tile 800x800 mm",
     "unit": "sqm",
     "basis": 1.0,
     "say": 1994.95,
@@ -7286,8 +7155,8 @@
       },
       {
         "code": "8731",
-        "desc": "High polymer modified quickset tile adhesive.",
-        "unit": "per kg",
+        "desc": "High polymer modified quickset tile adhesive. per",
+        "unit": "kg",
         "qty": 10.0,
         "rate": 9.0
       },
@@ -7316,6 +7185,7 @@
   },
   {
     "code": "11.47.4",
+    "desc": "Size of Tile 1000x1000 mm",
     "unit": "sqm",
     "basis": 1.0,
     "say": 2735.5,
@@ -7336,8 +7206,8 @@
       },
       {
         "code": "8731",
-        "desc": "High polymer modified quickset tile adhesive.",
-        "unit": "per kg",
+        "desc": "High polymer modified quickset tile adhesive. per",
+        "unit": "kg",
         "qty": 10.0,
         "rate": 9.0
       },
@@ -7366,6 +7236,7 @@
   },
   {
     "code": "11.48.1",
+    "desc": "Size of Tile 500x500 mm",
     "unit": "sqm",
     "basis": 1.0,
     "say": 291.0,
@@ -7402,6 +7273,7 @@
   },
   {
     "code": "11.48.2",
+    "desc": "Size of Tile 600x600 mm",
     "unit": "sqm",
     "basis": 1.0,
     "say": 241.45,
@@ -7438,6 +7310,7 @@
   },
   {
     "code": "11.48.3",
+    "desc": "Size of Tile 800x800 mm",
     "unit": "sqm",
     "basis": 1.0,
     "say": 191.85,
@@ -7474,6 +7347,7 @@
   },
   {
     "code": "11.48.4",
+    "desc": "Size of Tile 1000x1000 mm",
     "unit": "sqm",
     "basis": 1.0,
     "say": 137.35,
@@ -7510,6 +7384,7 @@
   },
   {
     "code": "11.49.1",
+    "desc": "Size of Tile 500x500 mm",
     "unit": "sqm",
     "basis": 1.0,
     "say": 1377.2,
@@ -7530,8 +7405,8 @@
       },
       {
         "code": "8731",
-        "desc": "High polymer modified quickset tile adhesive.",
-        "unit": "per kg",
+        "desc": "High polymer modified quickset tile adhesive. per",
+        "unit": "kg",
         "qty": 10.0,
         "rate": 9.0
       },
@@ -7560,6 +7435,7 @@
   },
   {
     "code": "11.49.2",
+    "desc": "Size of Tile 600x600 mm",
     "unit": "sqm",
     "basis": 1.0,
     "say": 1609.95,
@@ -7580,8 +7456,8 @@
       },
       {
         "code": "8731",
-        "desc": "High polymer modified quickset tile adhesive.",
-        "unit": "per kg",
+        "desc": "High polymer modified quickset tile adhesive. per",
+        "unit": "kg",
         "qty": 10.0,
         "rate": 9.0
       },
@@ -7610,6 +7486,7 @@
   },
   {
     "code": "11.49.3",
+    "desc": "Size of Tile 800x800 mm",
     "unit": "sqm",
     "basis": 1.0,
     "say": 1870.9,
@@ -7630,8 +7507,8 @@
       },
       {
         "code": "8731",
-        "desc": "High polymer modified quickset tile adhesive.",
-        "unit": "per kg",
+        "desc": "High polymer modified quickset tile adhesive. per",
+        "unit": "kg",
         "qty": 10.0,
         "rate": 9.0
       },
@@ -7660,6 +7537,7 @@
   },
   {
     "code": "11.49.4",
+    "desc": "Size of Tile 1000x1000 mm",
     "unit": "sqm",
     "basis": 1.0,
     "say": 2611.45,
@@ -7680,8 +7558,8 @@
       },
       {
         "code": "8731",
-        "desc": "High polymer modified quickset tile adhesive.",
-        "unit": "per kg",
+        "desc": "High polymer modified quickset tile adhesive. per",
+        "unit": "kg",
         "qty": 10.0,
         "rate": 9.0
       },
@@ -7710,6 +7588,7 @@
   },
   {
     "code": "11.50",
+    "desc": "Deduct for not grouting the joints with white cement and matching pigment in the items of fixing of vitrified tiles.",
     "unit": "sqm",
     "basis": 1.0,
     "say": 11.0,
@@ -7732,23 +7611,24 @@
   },
   {
     "code": "11.51.1",
-    "unit": "sqm",
-    "basis": 10.0,
+    "desc": "18 mm thick Italian Marble stone slab, Perlato, Rosso verona, Fire Red or Dark Emperadore etc.",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 5986.2,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 4010.35
+      },
       {
         "code": "1240",
         "desc": "18 mm thick Italian Marble stone slab, Base mortar1:4 (1 cement : 4 coarse sand)",
         "unit": "sqm",
         "qty": 11.5,
         "rate": 3209.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item No.3.9 of SH: MORTARS Cemnt for slurry@, 4.4 kg/sqm (i) for bedding=44 kg+ (ii) for jointing= 6 kg Total=50 kg",
-        "unit": "cum",
-        "qty": 0.224,
-        "rate": 4010.35
       },
       {
         "code": "0368",
@@ -7817,23 +7697,24 @@
   },
   {
     "code": "11.52.1",
-    "unit": "sqm",
-    "basis": 10.0,
+    "desc": "18 mm thick Italian Marble stone slab, Perlato, Rosso verona, Fire Red or Dark Emperadore etc.",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 6276.05,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 4010.35
+      },
       {
         "code": "1240",
         "desc": "18 mm thick Italian Marble stone slab, Base mortar1:4 (1 cement :4 coarse sand)",
         "unit": "sqm",
         "qty": 12.0,
         "rate": 3209.0
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item No.3.9 of SH: MORTARS Cemnt for slurry@, 4.4 kg/sqm (i) for bedding=44 kg+ (ii) for jointing= 6 kg Total=50 kg",
-        "unit": "cum",
-        "qty": 0.224,
-        "rate": 4010.35
       },
       {
         "code": "0368",
@@ -7902,8 +7783,9 @@
   },
   {
     "code": "11.53",
-    "unit": "kg",
-    "basis": 2.5,
+    "desc": "Providing and fixing Glass mossaic tiles on finished plain wall surface of size 20 mm x 20 mm x 4 mm in all colour, design , fixing in custo",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 3250.35,
     "resources": [
       {
@@ -7966,8 +7848,9 @@
   },
   {
     "code": "11.54.1",
-    "unit": "sqm",
-    "basis": 100.0,
+    "desc": "300 mm Finished Floor Height (FFH)",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 5075.3,
     "resources": [
       {
@@ -8037,8 +7920,9 @@
   },
   {
     "code": "11.54.2",
-    "unit": "sqm",
-    "basis": 100.0,
+    "desc": "450 mm Finished Floor Height (FFH).",
+    "unit": "nos",
+    "basis": 1.0,
     "say": 5364.3,
     "resources": [
       {
@@ -8108,10 +7992,18 @@
   },
   {
     "code": "11.55.1",
+    "desc": "Flamed finish granite stone slab Jet Black, Cherry Red, Elite Brown, Cat Eye or equivalent.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 2476.45,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 4010.35
+      },
       {
         "code": "1239",
         "desc": "18 mm thick Flamed finish granite stone slab",
@@ -8125,13 +8017,6 @@
         "unit": "tonne",
         "qty": 0.67,
         "rate": 92.24
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item No.3.9 of SH: MORTARS",
-        "unit": "cum",
-        "qty": 0.224,
-        "rate": 4010.35
       },
       {
         "code": "0367",
@@ -8200,10 +8085,18 @@
   },
   {
     "code": "11.56.1",
+    "desc": "Polished Granite stone slab jet Black, Cherry Red, Elite Brown, Cat Eye or equivalent.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 3526.6,
     "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per SH: 3.9",
+        "unit": "cum",
+        "qty": 0.224,
+        "rate": 4010.35
+      },
       {
         "code": "7297",
         "desc": "Granite of any colour, 18 mm thick (slab area above 0.50 sqm)",
@@ -8217,13 +8110,6 @@
         "unit": "tonne",
         "qty": 0.67,
         "rate": 92.24
-      },
-      {
-        "code": "3.9",
-        "desc": "Rate as per Item No.3.9 of SH: MORTARS",
-        "unit": "cum",
-        "qty": 0.224,
-        "rate": 4010.35
       },
       {
         "code": "0367",

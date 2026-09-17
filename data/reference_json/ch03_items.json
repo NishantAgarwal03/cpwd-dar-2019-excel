@@ -1,6 +1,7 @@
 [
   {
     "code": "3.1",
+    "desc": "Cement mortar 1:1 (1 cement : 1 fine sand)",
     "unit": "cum",
     "basis": 1.0,
     "say": 6390.6,
@@ -65,6 +66,7 @@
   },
   {
     "code": "3.2",
+    "desc": "Cement mortar 1:2 (1 cement : 2 fine sand).",
     "unit": "cum",
     "basis": 1.0,
     "say": 4918.05,
@@ -129,6 +131,7 @@
   },
   {
     "code": "3.3",
+    "desc": "Cement mortar 1:3 (1 cement : 3 fine sand).",
     "unit": "cum",
     "basis": 1.0,
     "say": 4183.05,
@@ -193,6 +196,7 @@
   },
   {
     "code": "3.4",
+    "desc": "Cement mortar 1:4 (1 cement : 4 fine sand).",
     "unit": "cum",
     "basis": 1.0,
     "say": 3528.85,
@@ -257,6 +261,7 @@
   },
   {
     "code": "3.5",
+    "desc": "Cement mortar 1:5 (1 cement : 5 fine sand).",
     "unit": "cum",
     "basis": 1.0,
     "say": 3176.6,
@@ -321,6 +326,7 @@
   },
   {
     "code": "3.6",
+    "desc": "Cement mortar 1:6 (1 cement : 6 fine sand).",
     "unit": "cum",
     "basis": 1.0,
     "say": 2874.65,
@@ -385,6 +391,7 @@
   },
   {
     "code": "3.7",
+    "desc": "Cement mortar 1:2 (1 cement : 2 coarse sand).",
     "unit": "cum",
     "basis": 1.0,
     "say": 5345.55,
@@ -449,6 +456,7 @@
   },
   {
     "code": "3.8",
+    "desc": "Cement mortar 1:3 (1 cement : 3 coarse sand).",
     "unit": "cum",
     "basis": 1.0,
     "say": 4664.55,
@@ -513,6 +521,7 @@
   },
   {
     "code": "3.9",
+    "desc": "Cement mortar 1:4 (1 cement : 4 coarse sand).",
     "unit": "cum",
     "basis": 1.0,
     "say": 4010.35,
@@ -577,6 +586,7 @@
   },
   {
     "code": "3.10",
+    "desc": "Cement mortar 1:5 (1 cement : 5 coarse sand).",
     "unit": "cum",
     "basis": 1.0,
     "say": 3658.1,
@@ -641,6 +651,7 @@
   },
   {
     "code": "3.11",
+    "desc": "Cement mortar 1:6 (1 cement : 6 coarse sand).",
     "unit": "cum",
     "basis": 1.0,
     "say": 3356.15,
@@ -705,6 +716,7 @@
   },
   {
     "code": "3.12",
+    "desc": "Cement mortar 1:2 (1 cement : 2 stone dust).",
     "unit": "cum",
     "basis": 1.0,
     "say": 5108.05,
@@ -769,6 +781,7 @@
   },
   {
     "code": "3.13",
+    "desc": "Cement mortar 1:2 (1 cement : 2 marble dust).",
     "unit": "cum",
     "basis": 1.0,
     "say": 5136.55,
@@ -833,6 +846,7 @@
   },
   {
     "code": "3.14",
+    "desc": "Cement mortar 1:5 (1 cement : 5 marble dust).",
     "unit": "cum",
     "basis": 1.0,
     "say": 3422.7,
@@ -897,6 +911,7 @@
   },
   {
     "code": "3.15",
+    "desc": "White cement mortar 1:2 (1 white cement : 2 marble dust).",
     "unit": "cum",
     "basis": 1.0,
     "say": 9393.35,
@@ -961,6 +976,7 @@
   },
   {
     "code": "3.16",
+    "desc": "White cement mortar 1:3 (1 white cement : 3 marble dust).",
     "unit": "cum",
     "basis": 1.0,
     "say": 7621.75,
@@ -1025,6 +1041,7 @@
   },
   {
     "code": "3.17",
+    "desc": "White cement mortar 1:5 (1 white cement : 5 marble dust).",
     "unit": "cum",
     "basis": 1.0,
     "say": 5363.3,
@@ -1089,9 +1106,10 @@
   },
   {
     "code": "3.18",
+    "desc": "Mud mortar",
     "unit": "nos",
     "basis": 1.0,
-    "say": 2821.15,
+    "say": 737.0,
     "resources": [
       {
         "code": "0811",
@@ -1120,7 +1138,16 @@
         "unit": "L.S.",
         "qty": 6.45,
         "rate": 2.0
-      },
+      }
+    ]
+  },
+  {
+    "code": "3.19",
+    "desc": "Mortar in lime, surkhi (50% red and 50% light yellow) and marble dust 1:1.5:0.5",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 2821.15,
+    "resources": [
       {
         "code": "1182",
         "desc": "Surkhi",

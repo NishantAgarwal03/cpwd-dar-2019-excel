@@ -116,6 +116,27 @@
         "rate": 2874.65
       },
       {
+        "code": "0295",
+        "desc": "Stone Aggregate (Single size) : 20 mm nominal size",
+        "unit": "cum",
+        "qty": 0.021,
+        "rate": 1350.0
+      },
+      {
+        "code": "0297",
+        "desc": "Stone Aggregate (Single size) : 10 mm nominal size",
+        "unit": "cum",
+        "qty": 0.0072,
+        "rate": 1350.0
+      },
+      {
+        "code": "2202",
+        "desc": "Carriage of Stone aggregate below 40 mm nominal size",
+        "unit": "cum",
+        "qty": 0.0282,
+        "rate": 103.77
+      },
+      {
         "code": "0982",
         "desc": "Coarse sand (zone III)",
         "unit": "cum",
@@ -123,11 +144,25 @@
         "rate": 1350.0
       },
       {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 0.0141,
+        "rate": 103.77
+      },
+      {
         "code": "0367",
         "desc": "Portland Cement (OPC-43 grade)",
         "unit": "tonne",
         "qty": 0.0066,
         "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.0066,
+        "rate": 92.24
       },
       {
         "code": "0114",
@@ -180,9 +215,23 @@
       },
       {
         "code": "9999",
+        "desc": "Hire and running charges of mechanical mixer",
+        "unit": "L.S.",
+        "qty": 0.78,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
         "qty": 0.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement concrete 1:2:4 filled in chase cut",
+        "unit": "L.S.",
+        "qty": 24.18,
         "rate": 2.0
       },
       {
@@ -237,6 +286,27 @@
         "rate": 2874.65
       },
       {
+        "code": "0295",
+        "desc": "Stone Aggregate (Single size) : 20 mm nominal size",
+        "unit": "cum",
+        "qty": 0.014,
+        "rate": 1350.0
+      },
+      {
+        "code": "0297",
+        "desc": "Stone Aggregate (Single size) : 10 mm nominal size",
+        "unit": "cum",
+        "qty": 0.0048,
+        "rate": 1350.0
+      },
+      {
+        "code": "2202",
+        "desc": "Carriage of Stone aggregate below 40 mm nominal size",
+        "unit": "cum",
+        "qty": 0.0188,
+        "rate": 103.77
+      },
+      {
         "code": "0982",
         "desc": "Coarse sand (zone III)",
         "unit": "cum",
@@ -244,11 +314,25 @@
         "rate": 1350.0
       },
       {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 0.0094,
+        "rate": 103.77
+      },
+      {
         "code": "0367",
         "desc": "Portland Cement (OPC-43 grade)",
         "unit": "tonne",
         "qty": 0.0044,
         "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.0044,
+        "rate": 92.24
       },
       {
         "code": "0114",
@@ -297,6 +381,13 @@
         "desc": "Scaffolding and sundries",
         "unit": "L.S.",
         "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mechanical mixer",
+        "unit": "L.S.",
+        "qty": 0.52,
         "rate": 2.0
       },
       {
@@ -351,6 +442,27 @@
         "rate": 2874.65
       },
       {
+        "code": "0295",
+        "desc": "Stone Aggregate (Single size) : 20 mm nominal size",
+        "unit": "cum",
+        "qty": 0.007,
+        "rate": 1350.0
+      },
+      {
+        "code": "0297",
+        "desc": "Stone Aggregate (Single size) : 10 mm nominal size",
+        "unit": "cum",
+        "qty": 0.0024,
+        "rate": 1350.0
+      },
+      {
+        "code": "2202",
+        "desc": "Carriage of Stone aggregate below 40 mm nominal size",
+        "unit": "cum",
+        "qty": 0.0094,
+        "rate": 103.77
+      },
+      {
         "code": "0982",
         "desc": "Coarse sand (zone III)",
         "unit": "cum",
@@ -358,11 +470,25 @@
         "rate": 1350.0
       },
       {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 0.0047,
+        "rate": 103.77
+      },
+      {
         "code": "0367",
         "desc": "Portland Cement (OPC-43 grade)",
         "unit": "tonne",
         "qty": 0.0022,
         "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.0022,
+        "rate": 92.24
       },
       {
         "code": "0114",
@@ -415,9 +541,23 @@
       },
       {
         "code": "9999",
+        "desc": "Hire and running charges of mechanical mixer",
+        "unit": "L.S.",
+        "qty": 0.26,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
         "qty": 0.13,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement concrete 1:2:4 filled in chase cut",
+        "unit": "L.S.",
+        "qty": 8.06,
         "rate": 2.0
       },
       {
@@ -453,7 +593,7 @@
   {
     "code": "14.3",
     "desc": "Fixing chowkhat in existing opening in brick/ RCC wall with dash fasteners/ Chemical fasteners of appropriate size (3 nos on each vertical m",
-    "unit": "nos",
+    "unit": "chowkhat",
     "basis": 1.0,
     "say": 193.95,
     "resources": [
@@ -491,14 +631,28 @@
         "unit": "L.S.",
         "qty": 1.82,
         "rate": 2.0
+      },
+      {
+        "code": "7019",
+        "desc": "Dash fastner/ chemical fastener",
+        "unit": "each",
+        "qty": 6.0,
+        "rate": 14.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire charges of drill machine hire charges, Scaffolding and Sundries",
+        "unit": "L.S.",
+        "qty": 12.22,
+        "rate": 2.0
       }
     ]
   },
   {
     "code": "14.4.1",
     "desc": "For door/ window/ clerestory window",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 1.89,
     "say": 932.45,
     "resources": [
       {
@@ -507,6 +661,13 @@
         "unit": "cum",
         "qty": 0.01,
         "rate": 2874.65
+      },
+      {
+        "code": "9999",
+        "desc": "Cement concrete 1:2:4 filled in chase cut",
+        "unit": "L.S.",
+        "qty": 24.57,
+        "rate": 2.0
       },
       {
         "code": "0124",
@@ -546,11 +707,25 @@
     "say": 890.5,
     "resources": [
       {
+        "code": "2406",
+        "desc": "Float glass panes of nominal thickness 4 mm (weight not less than 10kg/sqm).",
+        "unit": "sqm",
+        "qty": 1.1,
+        "rate": 300.0
+      },
+      {
         "code": "9988",
         "desc": "Carriage including sundries",
         "unit": "L.S.",
         "qty": 1.82,
         "rate": 2.0
+      },
+      {
+        "code": "0863",
+        "desc": "Putty for wood work",
+        "unit": "kilogram",
+        "qty": 0.68,
+        "rate": 30.0
       },
       {
         "code": "9999",
@@ -597,11 +772,25 @@
     "say": 1184.85,
     "resources": [
       {
+        "code": "2407",
+        "desc": "Float glass panes of nominal thickness 5 mm (weight not less than 12.5kg/ sqm)",
+        "unit": "sqm",
+        "qty": 1.1,
+        "rate": 500.0
+      },
+      {
         "code": "9988",
         "desc": "Carriage including sundries",
         "unit": "L.S.",
         "qty": 1.82,
         "rate": 2.0
+      },
+      {
+        "code": "0863",
+        "desc": "Putty for wood work",
+        "unit": "kilogram",
+        "qty": 0.68,
+        "rate": 30.0
       },
       {
         "code": "9999",
@@ -647,6 +836,13 @@
     "basis": 10.0,
     "say": 1263.0,
     "resources": [
+      {
+        "code": "2406",
+        "desc": "Float glass panes of nominal thickness 4 mm (weight not less than 10kg/sqm).",
+        "unit": "sqm",
+        "qty": 1.1,
+        "rate": 300.0
+      },
       {
         "code": "9999",
         "desc": "Painting or varnishing or beewaxing",
@@ -699,6 +895,13 @@
     "say": 1557.35,
     "resources": [
       {
+        "code": "2407",
+        "desc": "Float glass sheet of nominal thickness Float glass panes of nominal thickness 5 mm (weight not less than 12.5kg/ sqm)",
+        "unit": "sqm",
+        "qty": 1.1,
+        "rate": 500.0
+      },
+      {
         "code": "9999",
         "desc": "Painting or varnishing or beewaxing",
         "unit": "L.S.",
@@ -750,6 +953,13 @@
     "say": 989.85,
     "resources": [
       {
+        "code": "2406",
+        "desc": "Float glass sheet of nominal thickness 4 mm (weight not less than 10kg/sqm).",
+        "unit": "sqm",
+        "qty": 1.1,
+        "rate": 300.0
+      },
+      {
         "code": "9999",
         "desc": "Sundries Nails etc.",
         "unit": "L.S.",
@@ -794,6 +1004,13 @@
     "say": 1284.2,
     "resources": [
       {
+        "code": "2407",
+        "desc": "Float glass panes of nominal thickness 5 mm (weight not less than 12.5kg/ sqm)",
+        "unit": "sqm",
+        "qty": 1.1,
+        "rate": 500.0
+      },
+      {
         "code": "9999",
         "desc": "Sundries Nails etc.",
         "unit": "L.S.",
@@ -833,8 +1050,8 @@
   {
     "code": "14.8.1",
     "desc": "2nd class teak wood fillets",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "metres",
+    "basis": 10.0,
     "say": 61.5,
     "resources": [
       {
@@ -870,8 +1087,8 @@
   {
     "code": "14.8.2",
     "desc": "Hollock wood fillets",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "metres",
+    "basis": 10.0,
     "say": 54.7,
     "resources": [
       {
@@ -907,10 +1124,17 @@
   {
     "code": "14.9",
     "desc": "Renewal of old putty of glass panes (length)",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "metres",
+    "basis": 13.0,
     "say": 42.6,
     "resources": [
+      {
+        "code": "0863",
+        "desc": "Putty for wood work",
+        "unit": "kilogram",
+        "qty": 0.68,
+        "rate": 30.0
+      },
       {
         "code": "9999",
         "desc": "Nails",
@@ -951,10 +1175,17 @@
   {
     "code": "14.10",
     "desc": "Refixing old glass panes with putty and nails",
-    "unit": "nos",
+    "unit": "sqm",
     "basis": 1.0,
     "say": 554.05,
     "resources": [
+      {
+        "code": "0863",
+        "desc": "Putty for wood work",
+        "unit": "kilogram",
+        "qty": 0.68,
+        "rate": 30.0
+      },
       {
         "code": "9999",
         "desc": "Spirit",
@@ -1032,10 +1263,24 @@
   {
     "code": "14.12",
     "desc": "Providing and fixing 16 mm M.S. Fan clamps of standard shape and size in existing R.C.C. slab, including cutting chase, anchoring clamp to r",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cm",
+    "basis": 40.0,
     "say": 425.1,
     "resources": [
+      {
+        "code": "9999",
+        "desc": "Cement concrete 1:2:4 (1 Cement : 2 Coarse sand : 4 graded stone aggregate 20mm nominal size) mortar for rendering or plastering",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting two or more coats to exposed portion of the clamp including priming coat",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
       {
         "code": "0102",
         "desc": "Blacksmith 1st class",
@@ -1086,6 +1331,13 @@
         "unit": "cum",
         "qty": 0.12,
         "rate": 737.0
+      },
+      {
+        "code": "3.3",
+        "desc": "Rate as per SH: 3.3",
+        "unit": "cum",
+        "qty": 0.061,
+        "rate": 4183.05
       },
       {
         "code": "0155",
@@ -1195,6 +1447,27 @@
         "rate": 2.0
       },
       {
+        "code": "9999",
+        "desc": "Cleaning the surface including necessary repairs",
+        "unit": "L.S.",
+        "qty": 40.43,
+        "rate": 2.0
+      },
+      {
+        "code": "1174",
+        "desc": "Red sand stone slab 45 mm and 50 mm thick (un-dressed)",
+        "unit": "sqm",
+        "qty": 11.0,
+        "rate": 225.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
+        "unit": "tonne",
+        "qty": 1.41,
+        "rate": 92.24
+      },
+      {
         "code": "0155",
         "desc": "Mason (average)",
         "unit": "day",
@@ -1228,16 +1501,30 @@
         "unit": "L.S.",
         "qty": 16.12,
         "rate": 2.0
+      },
+      {
+        "code": "2264",
+        "desc": "Carriage of Rubbish",
+        "unit": "cum",
+        "qty": 0.5,
+        "rate": 103.77
       }
     ]
   },
   {
     "code": "14.15.1",
     "desc": "Sal wood battens",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "battens",
+    "basis": 10.0,
     "say": 91114.45,
     "resources": [
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.306,
+        "rate": 118.59
+      },
       {
         "code": "0112",
         "desc": "Carpenter 2nd class",
@@ -1257,6 +1544,13 @@
         "desc": "Disposal of mulba",
         "unit": "L.S.",
         "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Making good the holes including sundries",
+        "unit": "L.S.",
+        "qty": 80.73,
         "rate": 2.0
       },
       {
@@ -1304,130 +1598,18 @@
     ]
   },
   {
-    "code": "14.16.1",
-    "desc": "Not exceeding 4.00 metres in length. SUB HEAD : 14- REPAIRS TO BUILDING 1011 14.16.1.1 Sal wood beams",
-    "unit": "nos",
-    "basis": 1.0,
+    "code": "14.16.1.1",
+    "desc": "Sal wood beams",
+    "unit": "cudm",
+    "basis": 300.0,
     "say": 95325.8,
     "resources": [
       {
-        "code": "0112",
-        "desc": "Carpenter 2nd class",
-        "unit": "day",
-        "qty": 0.25,
-        "rate": 679.0
-      },
-      {
-        "code": "0114",
-        "desc": "Beldar",
-        "unit": "day",
-        "qty": 0.25,
-        "rate": 558.0
-      },
-      {
-        "code": "0155",
-        "desc": "Mason (average)",
-        "unit": "day",
-        "qty": 0.13,
-        "rate": 709.0
-      },
-      {
-        "code": "0100",
-        "desc": "Bandhani",
-        "unit": "day",
-        "qty": 0.5,
-        "rate": 617.0
-      },
-      {
-        "code": "0114",
-        "desc": "Beldar",
-        "unit": "day",
-        "qty": 0.33,
-        "rate": 558.0
-      },
-      {
-        "code": "0112",
-        "desc": "Carpenter 2nd class",
-        "unit": "day",
-        "qty": 1.0,
-        "rate": 679.0
-      },
-      {
-        "code": "0100",
-        "desc": "Bandhani",
-        "unit": "day",
-        "qty": 0.5,
-        "rate": 617.0
-      },
-      {
-        "code": "0114",
-        "desc": "Beldar",
-        "unit": "day",
-        "qty": 1.0,
-        "rate": 558.0
-      },
-      {
-        "code": "0859",
-        "desc": "Oil type wood preservative",
-        "unit": "litre",
-        "qty": 0.455,
-        "rate": 130.0
-      },
-      {
-        "code": "0131",
-        "desc": "Painter",
-        "unit": "day",
-        "qty": 0.07,
-        "rate": 679.0
-      },
-      {
-        "code": "0115",
-        "desc": "Coolie",
-        "unit": "day",
-        "qty": 0.07,
-        "rate": 558.0
-      },
-      {
-        "code": "9999",
-        "desc": "Sundries",
-        "unit": "L.S.",
-        "qty": 0.13,
-        "rate": 2.0
-      },
-      {
-        "code": "9977",
-        "desc": "Carriage",
-        "unit": "L.S.",
-        "qty": 1.82,
-        "rate": 2.0
-      },
-      {
-        "code": "9999",
-        "desc": "Brushes",
-        "unit": "L.S.",
-        "qty": 1.82,
-        "rate": 2.0
-      },
-      {
-        "code": "9999",
-        "desc": "Making good the holes",
-        "unit": "L.S.",
-        "qty": 20.67,
-        "rate": 2.0
-      },
-      {
-        "code": "9999",
-        "desc": "Sundries",
-        "unit": "L.S.",
-        "qty": 26.91,
-        "rate": 2.0
-      },
-      {
-        "code": "0302",
-        "desc": "Safeda ballies 125 mm diameter",
-        "unit": "metre",
-        "qty": 2.5,
-        "rate": 40.0
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.0228,
+        "rate": 118.59
       },
       {
         "code": "0112",
@@ -1463,6 +1645,13 @@
         "unit": "day",
         "qty": 0.33,
         "rate": 558.0
+      },
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.306,
+        "rate": 118.59
       },
       {
         "code": "0112",
@@ -1551,12 +1740,161 @@
     ]
   },
   {
-    "code": "14.16.2",
-    "desc": "Above 4.00 metres and upto 5.00 metres length. 14.16.2.1 Sal wood beams",
-    "unit": "nos",
-    "basis": 1.0,
+    "code": "14.16.1.2",
+    "desc": "Hollock wood beams",
+    "unit": "cudm",
+    "basis": 300.0,
+    "say": 60859.95,
+    "resources": [
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.0228,
+        "rate": 118.59
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.13,
+        "rate": 709.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 558.0
+      },
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.306,
+        "rate": 118.59
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0859",
+        "desc": "Oil type wood preservative",
+        "unit": "litre",
+        "qty": 0.455,
+        "rate": 130.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.13,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Making good the holes",
+        "unit": "L.S.",
+        "qty": 20.67,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0302",
+        "desc": "Safeda ballies 125 mm diameter",
+        "unit": "metre",
+        "qty": 2.5,
+        "rate": 40.0
+      }
+    ]
+  },
+  {
+    "code": "14.16.2.1",
+    "desc": "Sal wood beams",
+    "unit": "cudm",
+    "basis": 375.0,
     "say": 97267.0,
     "resources": [
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.0498,
+        "rate": 118.59
+      },
       {
         "code": "0112",
         "desc": "Carpenter 2nd class",
@@ -1591,6 +1929,13 @@
         "unit": "day",
         "qty": 0.5,
         "rate": 558.0
+      },
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.383,
+        "rate": 118.59
       },
       {
         "code": "0112",
@@ -1675,6 +2020,22 @@
         "unit": "metre",
         "qty": 3.75,
         "rate": 40.0
+      }
+    ]
+  },
+  {
+    "code": "14.16.2.2",
+    "desc": "Hollock wood beams",
+    "unit": "cudm",
+    "basis": 375.0,
+    "say": 62765.35,
+    "resources": [
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.0375,
+        "rate": 118.59
       },
       {
         "code": "0112",
@@ -1710,6 +2071,13 @@
         "unit": "day",
         "qty": 0.5,
         "rate": 558.0
+      },
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.383,
+        "rate": 118.59
       },
       {
         "code": "0112",
@@ -1849,6 +2217,13 @@
         "rate": 4183.05
       },
       {
+        "code": "1213",
+        "desc": "Water proofing materials",
+        "unit": "kilogram",
+        "qty": 0.153,
+        "rate": 35.0
+      },
+      {
         "code": "0115",
         "desc": "Coolie",
         "unit": "day",
@@ -1893,6 +2268,13 @@
         "rate": 4183.05
       },
       {
+        "code": "1213",
+        "desc": "Water proofing materials",
+        "unit": "kilogram",
+        "qty": 0.173,
+        "rate": 35.0
+      },
+      {
         "code": "0115",
         "desc": "Coolie",
         "unit": "day",
@@ -1925,8 +2307,8 @@
   {
     "code": "14.19",
     "desc": "Taking out wind ties from roof including cutting out rusted bolts, nuts etc. and removing materials to any distance within compound and stac",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "mtrs",
+    "basis": 30.0,
     "say": 63.0,
     "resources": [
       {
@@ -1960,6 +2342,41 @@
     "say": 102.6,
     "resources": [
       {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 1.86,
+        "rate": 50.7
+      },
+      {
+        "code": "13.65.1",
+        "desc": "Rate as per SH: 13.65.1",
+        "unit": "sqm",
+        "qty": 1.86,
+        "rate": 106.05
+      },
+      {
+        "code": "1023",
+        "desc": "Galvanised steel J or L hooks 8 mm dia",
+        "unit": "10 Nos",
+        "qty": 6.8,
+        "rate": 120.0
+      },
+      {
+        "code": "1208",
+        "desc": "Bitumen washer",
+        "unit": "100 Nos",
+        "qty": 0.68,
+        "rate": 30.0
+      },
+      {
+        "code": "1209",
+        "desc": "G.I. plain washer thick",
+        "unit": "100 Nos",
+        "qty": 0.68,
+        "rate": 35.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of bolts, nuts and washers etc.",
         "unit": "L.S.",
@@ -1992,10 +2409,45 @@
   {
     "code": "14.21",
     "desc": "Renewing bottom rail and/or top runner of collapsible gate including making good all damages and applying priming coat of zinc chromate yell",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 1.725,
     "say": 224.6,
     "resources": [
+      {
+        "code": "15.12.2",
+        "desc": "Rate as per SH: 15.12.2",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 375.65
+      },
+      {
+        "code": "4.2.5",
+        "desc": "Rate as per SH: 4.2.5",
+        "unit": "cum",
+        "qty": 0.03,
+        "rate": 8025.0
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 0.53,
+        "rate": 50.7
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.013,
+        "rate": 92.24
+      },
+      {
+        "code": "9999",
+        "desc": "Cement concrete 1:2:4 filled in chase cut",
+        "unit": "L.S.",
+        "qty": 24.18,
+        "rate": 2.0
+      },
       {
         "code": "9999",
         "desc": "Disposal of mulba",
@@ -2034,6 +2486,13 @@
     "say": 146.75,
     "resources": [
       {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 0.165,
+        "rate": 50.7
+      },
+      {
         "code": "0103",
         "desc": "Blacksmith 2nd class",
         "unit": "day",
@@ -2059,6 +2518,20 @@
         "desc": "Sundries",
         "unit": "L.S.",
         "qty": 0.39,
+        "rate": 2.0
+      },
+      {
+        "code": "7442",
+        "desc": "Wheel 75 mm dia. 40 mm wide",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 62.0
+      },
+      {
+        "code": "1215",
+        "desc": "Welding by electric plant",
+        "unit": "cm",
+        "qty": 80.0,
         "rate": 2.0
       },
       {
@@ -2099,6 +2572,13 @@
     "say": 240.45,
     "resources": [
       {
+        "code": "13.50.3",
+        "desc": "Rate as per SH: 13.50.3",
+        "unit": "sqm",
+        "qty": 0.34,
+        "rate": 50.7
+      },
+      {
         "code": "0103",
         "desc": "Blacksmith 2nd class",
         "unit": "day",
@@ -2124,6 +2604,20 @@
         "desc": "Sundries",
         "unit": "L.S.",
         "qty": 1.04,
+        "rate": 2.0
+      },
+      {
+        "code": "7442",
+        "desc": "Wheel 75 mm dia. 40 mm wide",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 62.0
+      },
+      {
+        "code": "1215",
+        "desc": "Welding by electric plant",
+        "unit": "cm",
+        "qty": 120.0,
         "rate": 2.0
       },
       {
@@ -2163,6 +2657,13 @@
     "basis": 1.0,
     "say": 169.05,
     "resources": [
+      {
+        "code": "4000",
+        "desc": "litres/hour.",
+        "unit": "day",
+        "qty": 0.375,
+        "rate": 700.0
+      },
       {
         "code": "0114",
         "desc": "Beldar",
@@ -2212,7 +2713,7 @@
   {
     "code": "14.25",
     "desc": "Brick work with common burnt clay bricks of class designation 7.5 in mud mortar",
-    "unit": "nos",
+    "unit": "cum",
     "basis": 1.0,
     "say": 5281.35,
     "resources": [
@@ -2222,6 +2723,20 @@
         "unit": "cum",
         "qty": 0.25,
         "rate": 737.0
+      },
+      {
+        "code": "2602",
+        "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 4500.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 276.72
       },
       {
         "code": "9999",
@@ -2261,39 +2776,39 @@
     ]
   },
   {
-    "code": "14.26.1",
-    "desc": "Panelled or panelled & glazed shutters : 14.26.1.1 Superior class teak wood including nickel plated bright finished M.S. piano hinges with n",
-    "unit": "nos",
-    "basis": 1.0,
+    "code": "14.26.1.1",
+    "desc": "Superior class teak wood including nickel plated bright finished M.S. piano hinges with necessary screws.",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 4456.6,
     "resources": [
       {
-        "code": "0111",
-        "desc": "Carpenter 1st class",
-        "unit": "day",
-        "qty": 2.4,
-        "rate": 738.0
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.04,
+        "rate": 118.59
       },
       {
-        "code": "0119",
-        "desc": "Glazier",
-        "unit": "day",
-        "qty": 0.18,
-        "rate": 679.0
+        "code": "2406",
+        "desc": "Float glass sheet of nominal thickness 4 mm (weight not less than 10kg/sqm).",
+        "unit": "sqm",
+        "qty": 0.99,
+        "rate": 300.0
       },
       {
-        "code": "0114",
-        "desc": "Beldar",
-        "unit": "day",
-        "qty": 0.77,
-        "rate": 558.0
+        "code": "0608",
+        "desc": "Nickel plated mild steel piono hinges 1 mm thick 25 mm wide",
+        "unit": "metre",
+        "qty": 4.0,
+        "rate": 39.0
       },
       {
-        "code": "9999",
-        "desc": "Sundries",
-        "unit": "L.S.",
-        "qty": 40.43,
-        "rate": 2.0
+        "code": "0639",
+        "desc": "Bright finished or black enamelled mild steel screws 25 mm",
+        "unit": "100 Nos",
+        "qty": 1.2,
+        "rate": 36.0
       },
       {
         "code": "0111",
@@ -2326,12 +2841,119 @@
     ]
   },
   {
-    "code": "14.26.2",
-    "desc": "Glazed shutters : 14.26.2.1 Superior class teak wood including nickel plated bright finished M.S. piano hinges with necessary screws.",
-    "unit": "nos",
-    "basis": 1.0,
+    "code": "14.26.1.2",
+    "desc": "Ist class teak wood including nickel plated bright finished M.S. piano hinges with necessary screws.",
+    "unit": "sqm",
+    "basis": 2.16,
+    "say": 3852.7,
+    "resources": [
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.04,
+        "rate": 118.59
+      },
+      {
+        "code": "2406",
+        "desc": "Float glass sheet of nominal thickness 4 mm (weight not less than 10kg/sqm).",
+        "unit": "sqm",
+        "qty": 0.99,
+        "rate": 300.0
+      },
+      {
+        "code": "0608",
+        "desc": "Nickel plated mild steel piono hinges 1 mm thick 25 mm wide",
+        "unit": "metre",
+        "qty": 4.0,
+        "rate": 39.0
+      },
+      {
+        "code": "0639",
+        "desc": "Bright finished or black enamelled mild steel screws 25 mm",
+        "unit": "100 Nos",
+        "qty": 1.2,
+        "rate": 36.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "day",
+        "qty": 2.4,
+        "rate": 738.0
+      },
+      {
+        "code": "0119",
+        "desc": "Glazier",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.77,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 40.43,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.26.2.1",
+    "desc": "Superior class teak wood including nickel plated bright finished M.S. piano hinges with necessary screws.",
+    "unit": "sqm",
+    "basis": 2.16,
     "say": 4448.45,
     "resources": [
+      {
+        "code": "2406",
+        "desc": "Float glass sheet of nominal thickness 4 mm (weight not less than 10kg/sqm).",
+        "unit": "sqm",
+        "qty": 1.27,
+        "rate": 300.0
+      },
+      {
+        "code": "0608",
+        "desc": "Nickel plated mild steel piono hinges 1 mm thick 25 mm wide",
+        "unit": "metre",
+        "qty": 4.0,
+        "rate": 39.0
+      },
+      {
+        "code": "0639",
+        "desc": "Bright finished or black enamelled mild steel screws 25 mm",
+        "unit": "100 Nos",
+        "qty": 1.2,
+        "rate": 36.0
+      },
+      {
+        "code": "0597",
+        "desc": "Bright finished or black enamelled mild steel butt hinges50x37x1.50 mm",
+        "unit": "10 Nos",
+        "qty": 0.2,
+        "rate": 49.0
+      },
+      {
+        "code": "0640",
+        "desc": "Bright finished or black enamelled mild steel screws 20 mm",
+        "unit": "100 Nos",
+        "qty": 0.08,
+        "rate": 30.0
+      },
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.043,
+        "rate": 118.59
+      },
       {
         "code": "0156",
         "desc": "Carpenter (average)",
@@ -2359,6 +2981,57 @@
         "unit": "L.S.",
         "qty": 40.43,
         "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "14.26.2.2",
+    "desc": "Ist class teak wood including nickel plated bright finished M.S. piano hinges with necessary screws.",
+    "unit": "sqm",
+    "basis": 2.16,
+    "say": 3798.05,
+    "resources": [
+      {
+        "code": "2406",
+        "desc": "Float glass sheet of nominal thickness 4 mm (weight not less than 10kg/sqm).",
+        "unit": "sqm",
+        "qty": 1.27,
+        "rate": 300.0
+      },
+      {
+        "code": "0608",
+        "desc": "Nickel plated mild steel piono hinges 1 mm thick 25 mm wide",
+        "unit": "metre",
+        "qty": 4.0,
+        "rate": 39.0
+      },
+      {
+        "code": "0639",
+        "desc": "Bright finished or black enamelled mild steel screws 25 mm",
+        "unit": "100 Nos",
+        "qty": 1.2,
+        "rate": 36.0
+      },
+      {
+        "code": "0597",
+        "desc": "Bright finished or black enamelled mild steel butt hinges50x37x1.50 mm",
+        "unit": "10 Nos",
+        "qty": 0.2,
+        "rate": 49.0
+      },
+      {
+        "code": "0640",
+        "desc": "Bright finished or black enamelled mild steel screws 20 mm",
+        "unit": "100 Nos",
+        "qty": 0.08,
+        "rate": 30.0
+      },
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.043,
+        "rate": 118.59
       },
       {
         "code": "0156",
@@ -2398,11 +3071,46 @@
     "say": 18.0,
     "resources": [
       {
-        "code": "41.1",
-        "desc": "Rate as per SH: 41.1",
+        "code": "9.41.1",
+        "desc": "Rate as per SH: 9.41.1",
         "unit": "sqm",
         "qty": 1.51,
         "rate": 2546.9
+      },
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.018,
+        "rate": 118.59
+      },
+      {
+        "code": "0595",
+        "desc": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
+        "unit": "10 Nos",
+        "qty": 0.6,
+        "rate": 80.0
+      },
+      {
+        "code": "0597",
+        "desc": "Bright finished or black enamelled mild steel butt hinges50x37x1.50 mm",
+        "unit": "10 Nos",
+        "qty": 0.2,
+        "rate": 49.0
+      },
+      {
+        "code": "0637",
+        "desc": "Bright finished or black enamelled mild steel screws 40 mm",
+        "unit": "100 Nos",
+        "qty": 0.48,
+        "rate": 60.0
+      },
+      {
+        "code": "0640",
+        "desc": "Bright finished or black enamelled mild steel screws 20 mm",
+        "unit": "100 Nos",
+        "qty": 0.08,
+        "rate": 30.0
       },
       {
         "code": "0112",
@@ -2420,6 +3128,20 @@
     "basis": 2.0,
     "say": 292.9,
     "resources": [
+      {
+        "code": "8.23",
+        "desc": "Rate as per SH: 8.23",
+        "unit": "each",
+        "qty": 2.0,
+        "rate": 33.9
+      },
+      {
+        "code": "0444",
+        "desc": "Brass curtain rod 20 mm dia 1.25 mm thick",
+        "unit": "metre",
+        "qty": 2.0,
+        "rate": 140.0
+      },
       {
         "code": "0446",
         "desc": "Brass brackets (curtain rods) 20 mm",
@@ -2465,6 +3187,20 @@
     "say": 359.8,
     "resources": [
       {
+        "code": "8.23",
+        "desc": "Rate as per SH: 8.23",
+        "unit": "each",
+        "qty": 2.0,
+        "rate": 33.9
+      },
+      {
+        "code": "0445",
+        "desc": "Brass curtain rod 25 mm dia 1.25 mm thick",
+        "unit": "metre",
+        "qty": 2.0,
+        "rate": 190.0
+      },
+      {
         "code": "0446",
         "desc": "Brass brackets (curtain rods) 20 mm",
         "unit": "each",
@@ -2504,10 +3240,17 @@
   {
     "code": "14.29",
     "desc": "Providing and fixing M.S. round or square bars with M.S. flats at required spacing in wooden frames of windows and clerestory windows.",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "kg",
+    "basis": 33.67,
     "say": 0.063,
     "resources": [
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.037,
+        "rate": 92.24
+      },
       {
         "code": "9999",
         "desc": "Sundries",
@@ -2541,10 +3284,24 @@
   {
     "code": "14.30.1",
     "desc": "Sal wood",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cudm",
+    "basis": 300.0,
     "say": 90056.65,
     "resources": [
+      {
+        "code": "13.57.1",
+        "desc": "Rate as per SH: 13.57.1",
+        "unit": "sqm",
+        "qty": 0.8,
+        "rate": 44.5
+      },
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.306,
+        "rate": 118.59
+      },
       {
         "code": "0112",
         "desc": "Carpenter 2nd class",
@@ -2578,10 +3335,24 @@
   {
     "code": "14.30.2",
     "desc": "Hollock wood",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cudm",
+    "basis": 300.0,
     "say": 55939.25,
     "resources": [
+      {
+        "code": "13.57.1",
+        "desc": "Rate as per SH: 13.57.1",
+        "unit": "sqm",
+        "qty": 0.8,
+        "rate": 44.5
+      },
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.306,
+        "rate": 118.59
+      },
       {
         "code": "0112",
         "desc": "Carpenter 2nd class",
@@ -2616,9 +3387,23 @@
     "code": "14.31.1",
     "desc": "150 mm",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 647.55,
     "resources": [
+      {
+        "code": "0389",
+        "desc": "Brass single acting spring hinges 150 mm",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 425.0
+      },
+      {
+        "code": "0449",
+        "desc": "Brass screws 50 mm",
+        "unit": "100 Nos",
+        "qty": 0.8,
+        "rate": 220.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of materials",
@@ -2646,9 +3431,23 @@
     "code": "14.31.2",
     "desc": "125 mm",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 460.25,
     "resources": [
+      {
+        "code": "0390",
+        "desc": "Brass single acting spring hinges 125 mm",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 285.0
+      },
+      {
+        "code": "0449",
+        "desc": "Brass screws 50 mm",
+        "unit": "100 Nos",
+        "qty": 0.8,
+        "rate": 220.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of materials",
@@ -2676,9 +3475,23 @@
     "code": "14.31.3",
     "desc": "100 mm",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 408.1,
     "resources": [
+      {
+        "code": "0391",
+        "desc": "Brass single acting spring hinges 100 mm",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 250.0
+      },
+      {
+        "code": "0450",
+        "desc": "Brass screws 40 mm",
+        "unit": "100 Nos",
+        "qty": 0.8,
+        "rate": 170.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of materials",
@@ -2706,9 +3519,23 @@
     "code": "14.32.1",
     "desc": "150 mm",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 721.15,
     "resources": [
+      {
+        "code": "0392",
+        "desc": "Brass double acting spring hinges 150 mm",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 480.0
+      },
+      {
+        "code": "0449",
+        "desc": "Brass screws 50 mm",
+        "unit": "100 Nos",
+        "qty": 0.8,
+        "rate": 220.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of materials",
@@ -2736,9 +3563,23 @@
     "code": "14.32.2",
     "desc": "125 mm",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 614.1,
     "resources": [
+      {
+        "code": "0393",
+        "desc": "Brass double acting spring hinges 125 mm",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 400.0
+      },
+      {
+        "code": "0449",
+        "desc": "Brass screws 50 mm",
+        "unit": "100 Nos",
+        "qty": 0.8,
+        "rate": 220.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of materials",
@@ -2766,9 +3607,23 @@
     "code": "14.32.3",
     "desc": "100 mm",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 595.4,
     "resources": [
+      {
+        "code": "0394",
+        "desc": "Brass double acting spring hinges 100 mm",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 390.0
+      },
+      {
+        "code": "0450",
+        "desc": "Brass screws 40 mm",
+        "unit": "100 Nos",
+        "qty": 0.8,
+        "rate": 170.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of materials",
@@ -2796,7 +3651,7 @@
     "code": "14.33.1",
     "desc": "250 mm",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 229.45,
     "resources": [
       {
@@ -2807,11 +3662,25 @@
         "rate": 150.0
       },
       {
+        "code": "0452",
+        "desc": "Brass screws 25 mm",
+        "unit": "100 Nos",
+        "qty": 0.6,
+        "rate": 100.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of materials",
         "unit": "L.S.",
         "qty": 3.64,
         "rate": 2.0
+      },
+      {
+        "code": "0111",
+        "desc": "Carpenter 1st class",
+        "unit": "Day",
+        "qty": 0.2,
+        "rate": 738.0
       }
     ]
   },
@@ -2819,7 +3688,7 @@
     "code": "14.33.2",
     "desc": "150 mm",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 199.5,
     "resources": [
       {
@@ -2828,6 +3697,13 @@
         "unit": "each",
         "qty": 10.0,
         "rate": 130.0
+      },
+      {
+        "code": "0452",
+        "desc": "Brass screws 25 mm",
+        "unit": "100 Nos",
+        "qty": 0.6,
+        "rate": 100.0
       },
       {
         "code": "9977",
@@ -2849,7 +3725,7 @@
     "code": "14.33.3",
     "desc": "100 mm",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 145.95,
     "resources": [
       {
@@ -2858,6 +3734,13 @@
         "unit": "each",
         "qty": 10.0,
         "rate": 90.0
+      },
+      {
+        "code": "0452",
+        "desc": "Brass screws 25 mm",
+        "unit": "100 Nos",
+        "qty": 0.6,
+        "rate": 100.0
       },
       {
         "code": "9977",
@@ -2879,9 +3762,23 @@
     "code": "14.34",
     "desc": "Providing and fixing 150 mm bright finished floor brass door stopper with rubber cushion, necessary brass screws etc. to suit shutter thickn",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 232.5,
     "resources": [
+      {
+        "code": "0417",
+        "desc": "Brass 150 mm floor door stopper (0.357kg)",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 160.0
+      },
+      {
+        "code": "0450",
+        "desc": "Brass screws 40 mm",
+        "unit": "100 Nos",
+        "qty": 0.4,
+        "rate": 170.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",
@@ -2895,6 +3792,13 @@
         "unit": "day",
         "qty": 0.07,
         "rate": 738.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries (wooden plugs including fixing in the floor)",
+        "unit": "L.S.",
+        "qty": 6.37,
+        "rate": 2.0
       }
     ]
   },
@@ -2902,9 +3806,16 @@
     "code": "14.35.1",
     "desc": "300 mm",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 86.45,
     "resources": [
+      {
+        "code": "0418",
+        "desc": "Brass hard drawn hooks and eyes 300 mm",
+        "unit": "10 Nos",
+        "qty": 1.0,
+        "rate": 600.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",
@@ -2925,9 +3836,16 @@
     "code": "14.35.2",
     "desc": "250 mm",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 82.95,
     "resources": [
+      {
+        "code": "0419",
+        "desc": "Brass hard drawn hooks and eyes 250 mm",
+        "unit": "10 Nos",
+        "qty": 1.0,
+        "rate": 574.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",
@@ -2948,9 +3866,16 @@
     "code": "14.35.3",
     "desc": "200 mm",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 74.4,
     "resources": [
+      {
+        "code": "0420",
+        "desc": "Brass hard drawn hooks and eyes 200 mm",
+        "unit": "10 Nos",
+        "qty": 1.0,
+        "rate": 510.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",
@@ -2971,9 +3896,16 @@
     "code": "14.35.4",
     "desc": "150 mm",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 59.7,
     "resources": [
+      {
+        "code": "0421",
+        "desc": "Brass hard drawn hooks and eyes 150 mm",
+        "unit": "10 Nos",
+        "qty": 1.0,
+        "rate": 400.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",
@@ -2994,9 +3926,16 @@
     "code": "14.35.5",
     "desc": "100 mm",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 52.35,
     "resources": [
+      {
+        "code": "0422",
+        "desc": "Brass hard drawn hooks and eyes 100 mm",
+        "unit": "10 Nos",
+        "qty": 1.0,
+        "rate": 345.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",
@@ -3017,9 +3956,23 @@
     "code": "14.36",
     "desc": "Providing and fixing bright finished brass fan light pivot with necessary brass screws etc. complete.",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 39.7,
     "resources": [
+      {
+        "code": "0429",
+        "desc": "Brass fanlight pivot",
+        "unit": "10 Nos",
+        "qty": 1.0,
+        "rate": 168.0
+      },
+      {
+        "code": "0450",
+        "desc": "Brass screws 40 mm",
+        "unit": "100 Nos",
+        "qty": 0.4,
+        "rate": 170.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",
@@ -3040,7 +3993,7 @@
     "code": "14.37",
     "desc": "Providing and fixing 300 mm long bright finished brass chain with hook for fan light including necessary brass screws etc. complete.",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 63.65,
     "resources": [
       {
@@ -3049,6 +4002,13 @@
         "unit": "each",
         "qty": 10.0,
         "rate": 36.0
+      },
+      {
+        "code": "0452",
+        "desc": "Brass screws 25 mm",
+        "unit": "100 Nos",
+        "qty": 0.4,
+        "rate": 100.0
       },
       {
         "code": "9977",
@@ -3070,7 +4030,7 @@
     "code": "14.38",
     "desc": "Providing and fixing bright finished brass quadrant stay 300 mm long with necessary brass screws etc. complete.",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 162.65,
     "resources": [
       {
@@ -3079,6 +4039,13 @@
         "unit": "each",
         "qty": 10.0,
         "rate": 110.0
+      },
+      {
+        "code": "0452",
+        "desc": "Brass screws 25 mm",
+        "unit": "100 Nos",
+        "qty": 0.4,
+        "rate": 100.0
       },
       {
         "code": "9977",
@@ -3100,7 +4067,7 @@
     "code": "14.39",
     "desc": "Providing and fixing bright finished brass helical door spring (superior quality).",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 457.9,
     "resources": [
       {
@@ -3109,6 +4076,20 @@
         "unit": "each",
         "qty": 10.0,
         "rate": 290.0
+      },
+      {
+        "code": "0449",
+        "desc": "Brass screws 50 mm",
+        "unit": "100 Nos",
+        "qty": 0.4,
+        "rate": 220.0
+      },
+      {
+        "code": "0452",
+        "desc": "Brass screws 25 mm",
+        "unit": "100 Nos",
+        "qty": 0.2,
+        "rate": 100.0
       },
       {
         "code": "9977",
@@ -3137,9 +4118,23 @@
     "code": "14.40.1",
     "desc": "125x70x4 mm (ordinary type)",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 170.1,
     "resources": [
+      {
+        "code": "0525",
+        "desc": "Chromium plated Brass butt hinges (light/ordinary) type 125x70x4 mm",
+        "unit": "10 Nos",
+        "qty": 1.0,
+        "rate": 805.0
+      },
+      {
+        "code": "0585",
+        "desc": "Chromium plated Brass screws 50 mm",
+        "unit": "100 Nos",
+        "qty": 1.0,
+        "rate": 300.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",
@@ -3167,9 +4162,23 @@
     "code": "14.40.2",
     "desc": "100x70x4 mm (ordinary type)",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 145.6,
     "resources": [
+      {
+        "code": "0526",
+        "desc": "Chromium plated Brass butt hinges (light/ordinary) type 100x70x4 mm",
+        "unit": "10 Nos",
+        "qty": 1.0,
+        "rate": 690.0
+      },
+      {
+        "code": "0586",
+        "desc": "Chromium plated Brass screws 40 mm",
+        "unit": "100 Nos",
+        "qty": 0.8,
+        "rate": 290.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",
@@ -3197,9 +4206,23 @@
     "code": "14.40.3",
     "desc": "75x65x4 mm (heavy type)",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 162.15,
     "resources": [
+      {
+        "code": "0524",
+        "desc": "Chromium plated Brass butt hinges (heavy) type 75x65x4 .0 mm (200gms)",
+        "unit": "10 Nos",
+        "qty": 1.0,
+        "rate": 905.0
+      },
+      {
+        "code": "0587",
+        "desc": "Chromium plated Brass screws 30 mm",
+        "unit": "100 Nos",
+        "qty": 0.6,
+        "rate": 240.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",
@@ -3227,9 +4250,23 @@
     "code": "14.40.4",
     "desc": "75x40x2.5 mm (ordinary type)",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 97.35,
     "resources": [
+      {
+        "code": "0527",
+        "desc": "Chromium plated Brass butt hinges (light/ordinary) type 75x40x2.5 mm",
+        "unit": "10 Nos",
+        "qty": 1.0,
+        "rate": 421.0
+      },
+      {
+        "code": "0587",
+        "desc": "Chromium plated Brass screws 30 mm",
+        "unit": "100 Nos",
+        "qty": 0.6,
+        "rate": 240.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",
@@ -3257,9 +4294,23 @@
     "code": "14.40.5",
     "desc": "50x40x2.5 mm (ordinary type)",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 40.8,
     "resources": [
+      {
+        "code": "0528",
+        "desc": "Chromium plated Brass butt hinges (light/ordinary) type 50x40x2.5 mm",
+        "unit": "10 Nos",
+        "qty": 1.0,
+        "rate": 180.0
+      },
+      {
+        "code": "0589",
+        "desc": "Chromium plated Brass screws 20 mm",
+        "unit": "100 Nos",
+        "qty": 0.4,
+        "rate": 160.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",
@@ -3279,10 +4330,17 @@
   {
     "code": "14.41",
     "desc": "Providing and fixing 85x42 mm chromium plated brass pull bolt lock with necessary chromium plated brass screws, nuts, bolts and washers etc.",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Nos",
+    "basis": 10.0,
     "say": 245.2,
     "resources": [
+      {
+        "code": "2467",
+        "desc": "Chromium plated Brass pull bolt lock (locking bolt) of size 85 mmx42 mm with screws,bolts,nuts and washers complete",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 165.0
+      },
       {
         "code": "9988",
         "desc": "Carriage of materials & sundries",
@@ -3302,10 +4360,24 @@
   {
     "code": "14.72",
     "desc": "Providing and fixing double scaffolding system (cup lock type) on the exterior side, up to seven story height made with 40 mm dia M.S. tube ",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 202.5,
     "say": 257.95,
     "resources": [
+      {
+        "code": "14.72X",
+        "desc": "Rate as per SH: 14.72X",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 7676.5
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 6.054,
+        "rate": 92.24
+      },
       {
         "code": "0116",
         "desc": "Fitter (grade 1)",
@@ -3326,6 +4398,48 @@
         "unit": "L.S.",
         "qty": 1035.0,
         "rate": 2.0
+      },
+      {
+        "code": "7397",
+        "desc": "Base jack",
+        "unit": "each",
+        "qty": 14.0,
+        "rate": 145.0
+      },
+      {
+        "code": "4009",
+        "desc": "Mild steel tubes hot finished welded type",
+        "unit": "kilogram",
+        "qty": 3765.42,
+        "rate": 57.0
+      },
+      {
+        "code": "7387",
+        "desc": "Spigot for standard jointing",
+        "unit": "kg",
+        "qty": 123.98,
+        "rate": 43.0
+      },
+      {
+        "code": "7346",
+        "desc": "Double coupler",
+        "unit": "each",
+        "qty": 120.0,
+        "rate": 46.0
+      },
+      {
+        "code": "7398",
+        "desc": "Challies",
+        "unit": "each",
+        "qty": 90.0,
+        "rate": 765.0
+      },
+      {
+        "code": "7399",
+        "desc": "Cup lock",
+        "unit": "each",
+        "qty": 1314.0,
+        "rate": 48.0
       }
     ]
   },
@@ -3333,7 +4447,7 @@
     "code": "14.73",
     "desc": "Providing and fixing bright finished brass casement window fasteners or peg stays to windows/ ventilators with necessary welding and machine",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 473.9,
     "resources": [
       {
@@ -3356,9 +4470,23 @@
     "code": "14.74",
     "desc": "Providing and fixing 14 mm bright finished brass spring catch to steel centre hung ventilators with necessary welding and machine screws etc",
     "unit": "nos",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 57.3,
     "resources": [
+      {
+        "code": "0428",
+        "desc": "Brass fanlight catch",
+        "unit": "10 Nos",
+        "qty": 1.0,
+        "rate": 170.0
+      },
+      {
+        "code": "9999",
+        "desc": "Fixing charges including welding and materials etc.",
+        "unit": "L.S.",
+        "qty": 125.58,
+        "rate": 2.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of materials",
@@ -3371,10 +4499,24 @@
   {
     "code": "14.75",
     "desc": "Repair to plaster of thickness 12mm to 20 mm in patches of area 2.5 sqm and under, including cutting the patch in proper shape, raking out j",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 512.0,
     "resources": [
+      {
+        "code": "0772",
+        "desc": "White cement based polymer modified self curing compound in powder form",
+        "unit": "kg",
+        "qty": 125.0,
+        "rate": 15.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of white cement based polymer modified self curing compound in powder form",
+        "unit": "L.S.",
+        "qty": 21.1,
+        "rate": 2.0
+      },
       {
         "code": "0155",
         "desc": "Mason (average)",
@@ -3404,6 +4546,20 @@
         "rate": 2.0
       },
       {
+        "code": "2264",
+        "desc": "Carriage of Rubbish",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 103.77
+      },
+      {
+        "code": "9999",
+        "desc": "Marking with paint i/c removal of existing markings",
+        "unit": "L.S.",
+        "qty": 30.0,
+        "rate": 2.0
+      },
+      {
         "code": "0117",
         "desc": "Assistant Fitter or 2nd class Fitter",
         "unit": "day",
@@ -3422,8 +4578,8 @@
   {
     "code": "14.76",
     "desc": "Cleaning and desilting of gully trap chamber, including removal of rubbish mixed with earth etc. and disposal of same, all as per the direct",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "Nos",
+    "basis": 10.0,
     "say": 77.65,
     "resources": [
       {
@@ -3432,14 +4588,21 @@
         "unit": "day",
         "qty": 1.0,
         "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "T & P Bamboo, bucket, whell barrow etc.",
+        "unit": "L.S.",
+        "qty": 11.2,
+        "rate": 2.0
       }
     ]
   },
   {
     "code": "14.77",
     "desc": "Cleaning of chocked sewer line by diesel running vehicle mounting hydraulic operated high pressure suction cum jetting sewer cleaning machin",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "metres",
+    "basis": 208.0,
     "say": 256.9,
     "resources": [
       {
@@ -3451,10 +4614,17 @@
       },
       {
         "code": "8500",
-        "desc": "Water for jetting / blowback 1000",
-        "unit": "litre",
+        "desc": "Water for jetting / blowback",
+        "unit": "1000 litre",
         "qty": 0.002,
         "rate": 1500.0
+      },
+      {
+        "code": "0087",
+        "desc": "Hire Charges of Suction Jeting machine 2200 PSI machine i/c POL and operator",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 36000.0
       },
       {
         "code": "0139",
@@ -3479,6 +4649,13 @@
     "basis": 1.0,
     "say": 63.7,
     "resources": [
+      {
+        "code": "4000",
+        "desc": "litres/hour",
+        "unit": "day",
+        "qty": 1.7,
+        "rate": 700.0
+      },
       {
         "code": "0114",
         "desc": "Beldar",
@@ -3515,6 +4692,13 @@
         "rate": 2.0
       },
       {
+        "code": "0006",
+        "desc": "Hire charges of Spraying machine including electric charges",
+        "unit": "day",
+        "qty": 14.25,
+        "rate": 250.0
+      },
+      {
         "code": "0138",
         "desc": "Sprayer (for bitumen, tar etc.)",
         "unit": "day",
@@ -3540,7 +4724,7 @@
   {
     "code": "14.79",
     "desc": "Disconnecting damaged overhead/terrace PVC water storage tank of any size from water supply line and removing from the terrace including shi",
-    "unit": "nos",
+    "unit": "No",
     "basis": 1.0,
     "say": 317.75,
     "resources": [
@@ -3577,10 +4761,31 @@
   {
     "code": "14.80.1",
     "desc": "Long pattern W.C Pan of size 580x440 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 2724.1,
     "resources": [
+      {
+        "code": "1953",
+        "desc": "Vitreous china Indian type W.C. pan size 580 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 450.0
+      },
+      {
+        "code": "1970",
+        "desc": "Vitreous china foot rests 250x125x25 mm",
+        "unit": "pair",
+        "qty": 1.0,
+        "rate": 100.0
+      },
+      {
+        "code": "1890",
+        "desc": "Centrifugally sand cast (spun) S&S \"P\" or \"S\" trap",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 300.0
+      },
       {
         "code": "9999",
         "desc": "Cement sand & grit etc.",
@@ -3628,10 +4833,24 @@
   {
     "code": "14.80.2",
     "desc": "Orissa pattern W.C Pan of size 580x440 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 3537.8,
     "resources": [
+      {
+        "code": "1954",
+        "desc": "Vitreous china orrisa type W.C. pan size 580 mm",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 1200.0
+      },
+      {
+        "code": "1890",
+        "desc": "Centrifugally sand cast (spun) S&S \"P\" or \"S\" trap",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 300.0
+      },
       {
         "code": "9999",
         "desc": "Cement sand & grit etc.",
@@ -3679,10 +4898,24 @@
   {
     "code": "14.81",
     "desc": "Cutting holes of required size in brick masonry wall for fixing of exhaust fan including providing and fixing 300 mm dia PVC pipe conforming",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "holes",
+    "basis": 10.0,
     "say": 220.4,
     "resources": [
+      {
+        "code": "13.4.1",
+        "desc": "Rate as per SH: 13.4.1",
+        "unit": "sqm",
+        "qty": 3.0,
+        "rate": 276.15
+      },
+      {
+        "code": "7752",
+        "desc": "PVC slotted pipe 200 mm dia as per IS:",
+        "unit": "12818 metre",
+        "qty": 0.25,
+        "rate": 840.0
+      },
       {
         "code": "9999",
         "desc": "Sundries",
@@ -3723,7 +4956,7 @@
   {
     "code": "14.82",
     "desc": "Dismantling W.C. Pan of all sizes including disposal of dismantled materials i/c malba all complete as per directions of Engineer-in-Charge.",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 96.0,
     "resources": [
@@ -3746,8 +4979,8 @@
   {
     "code": "14.83",
     "desc": "Hacking of CC flooring including cleaning for surface etc. complete as per direction of the Engineer-in-Charge.",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 2.5,
     "resources": [
       {
@@ -3769,18 +5002,33 @@
   {
     "code": "14.84",
     "desc": "Dismantling 15 to 40 mm dia G.I. pipe including stacking of dismantled pipes (within 50 metres lead) as per direction of Engineer-in-Charge.",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "metre",
+    "basis": 10.0,
     "say": 2.7,
-    "resources": []
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Dismantling of G.I. Pipe and stacking etc.",
+        "unit": "L.S.",
+        "qty": 10.0,
+        "rate": 2.0
+      }
+    ]
   },
   {
     "code": "14.85",
     "desc": "Taking out existing wooden door shutter, repair by cutting, painting etc. and refixing of repaired door shutters to existing door frames, in",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 2.02,
     "say": 297.85,
     "resources": [
+      {
+        "code": "0637",
+        "desc": "Bright finished or black enameled mild steel screws 40 mm",
+        "unit": "100 Nos",
+        "qty": 0.24,
+        "rate": 60.0
+      },
       {
         "code": "0156",
         "desc": "Carpenter (average)",
@@ -3800,15 +5048,57 @@
   {
     "code": "14.86",
     "desc": "Providing and laying in situ seven course water proofing treatment with APP (Atactic poly-propylene) modified Polymeric memberane over roof ",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 30.0,
     "say": 592.65,
     "resources": [
+      {
+        "code": "8200",
+        "desc": "A.P.P. modified polymeric felt (two layers) 1.5 mm thick",
+        "unit": "sqm",
+        "qty": 66.0,
+        "rate": 80.0
+      },
+      {
+        "code": "0316",
+        "desc": "Bitumen solution primer of approved quality",
+        "unit": "litre",
+        "qty": 12.0,
+        "rate": 45.0
+      },
+      {
+        "code": "0313",
+        "desc": "Blown type petroleum bitumen of penetration 85/25 of approved quality",
+        "unit": "tonne",
+        "qty": 0.108,
+        "rate": 34000.0
+      },
+      {
+        "code": "2211",
+        "desc": "Carriage of Tar bitumen",
+        "unit": "tonne",
+        "qty": 0.12,
+        "rate": 103.77
+      },
       {
         "code": "9977",
         "desc": "Carriage of polymeric felt",
         "unit": "L.S.",
         "qty": 7.8,
+        "rate": 2.0
+      },
+      {
+        "code": "2200",
+        "desc": "Carriage of steam coal",
+        "unit": "tonne",
+        "qty": 0.0174,
+        "rate": 120.0
+      },
+      {
+        "code": "9999",
+        "desc": "Preparing roof surface, cutting grooves and making good the same",
+        "unit": "L.S.",
+        "qty": 134.55,
         "rate": 2.0
       },
       {
@@ -3844,15 +5134,57 @@
   {
     "code": "14.87",
     "desc": "Providing and laying in situ five course water proofing treatment with APP (Atactic Polypropylene) modified Polymeric memberane over roof co",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 30.0,
     "say": 408.75,
     "resources": [
+      {
+        "code": "8201",
+        "desc": "A.P.P. modified polymeric felt (two layers) 2 mm thick",
+        "unit": "sqm",
+        "qty": 33.0,
+        "rate": 100.0
+      },
+      {
+        "code": "0316",
+        "desc": "Bitumen solution primer of approved quality",
+        "unit": "litre",
+        "qty": 12.0,
+        "rate": 45.0
+      },
+      {
+        "code": "0313",
+        "desc": "Blown type petroleum bitumen of penetration 85/25 of approved quality",
+        "unit": "tonne",
+        "qty": 0.072,
+        "rate": 34000.0
+      },
+      {
+        "code": "2211",
+        "desc": "Carriage of Tar bitumen",
+        "unit": "tonne",
+        "qty": 0.084,
+        "rate": 103.77
+      },
       {
         "code": "9977",
         "desc": "Carriage of polymeric felt",
         "unit": "L.S.",
         "qty": 7.8,
+        "rate": 2.0
+      },
+      {
+        "code": "2200",
+        "desc": "Carriage of steam coal",
+        "unit": "tonne",
+        "qty": 0.0174,
+        "rate": 120.0
+      },
+      {
+        "code": "9999",
+        "desc": "Preparing roof surface, cutting grooves and making good the same",
+        "unit": "L.S.",
+        "qty": 134.55,
         "rate": 2.0
       },
       {
@@ -3888,15 +5220,57 @@
   {
     "code": "14.88",
     "desc": "Providing and laying in situ seven course water proofing treatment with APP (Atactic Polypropylene) modified Polymeric memberane over roof c",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 30.0,
     "say": 651.5,
     "resources": [
+      {
+        "code": "8201",
+        "desc": "A.P.P. modified polymeric felt (two layers) 2 mm thick",
+        "unit": "sqm",
+        "qty": 66.0,
+        "rate": 100.0
+      },
+      {
+        "code": "0316",
+        "desc": "Bitumen solution primer of approved quality",
+        "unit": "litre",
+        "qty": 12.0,
+        "rate": 45.0
+      },
+      {
+        "code": "0313",
+        "desc": "Blown type petroleum bitumen of penetration 85/25 of approved quality",
+        "unit": "tonne",
+        "qty": 0.108,
+        "rate": 34000.0
+      },
+      {
+        "code": "2211",
+        "desc": "Carriage of Tar bitumen",
+        "unit": "tonne",
+        "qty": 0.12,
+        "rate": 103.77
+      },
       {
         "code": "9977",
         "desc": "Carriage of polymeric felt",
         "unit": "L.S.",
         "qty": 7.8,
+        "rate": 2.0
+      },
+      {
+        "code": "2200",
+        "desc": "Carriage of steam coal",
+        "unit": "tonne",
+        "qty": 0.0174,
+        "rate": 120.0
+      },
+      {
+        "code": "9999",
+        "desc": "Preparing roof surface, cutting grooves and making good the same",
+        "unit": "L.S.",
+        "qty": 134.55,
         "rate": 2.0
       },
       {
@@ -3937,6 +5311,13 @@
     "say": 419.75,
     "resources": [
       {
+        "code": "8203",
+        "desc": "A.P.P. modified 2 mm thick membrance reinforced with glass fibre matt",
+        "unit": "sqm",
+        "qty": 33.0,
+        "rate": 126.67
+      },
+      {
         "code": "8206",
         "desc": "Bitumen primer for bitumen membrance",
         "unit": "litre",
@@ -3944,11 +5325,25 @@
         "rate": 80.0
       },
       {
+        "code": "2211",
+        "desc": "Carriage of Tar bitumen",
+        "unit": "tonne",
+        "qty": 0.012,
+        "rate": 103.77
+      },
+      {
         "code": "9977",
         "desc": "Carriage of bitumen membrance",
         "unit": "L.S.",
         "qty": 7.8,
         "rate": 2.0
+      },
+      {
+        "code": "1241",
+        "desc": "Commercial LPG in cylinder",
+        "unit": "kg",
+        "qty": 7.0,
+        "rate": 82.0
       },
       {
         "code": "9999",
@@ -3995,6 +5390,13 @@
     "say": 512.95,
     "resources": [
       {
+        "code": "8204",
+        "desc": "A.P.P. modified 3 mm thick membrance reinforced with glass fibre matt",
+        "unit": "sqm",
+        "qty": 33.0,
+        "rate": 190.0
+      },
+      {
         "code": "8206",
         "desc": "Bitumen primer for bitumen membrance",
         "unit": "litre",
@@ -4002,11 +5404,25 @@
         "rate": 80.0
       },
       {
+        "code": "2211",
+        "desc": "Carriage of Tar bitumen",
+        "unit": "tonne",
+        "qty": 0.012,
+        "rate": 103.77
+      },
+      {
         "code": "9977",
         "desc": "Carriage of bitumen membrance",
         "unit": "L.S.",
         "qty": 7.8,
         "rate": 2.0
+      },
+      {
+        "code": "1241",
+        "desc": "Commercial LPG in cylinder",
+        "unit": "kg",
+        "qty": 7.0,
+        "rate": 82.0
       },
       {
         "code": "9999",
@@ -4053,6 +5469,13 @@
     "say": 535.0,
     "resources": [
       {
+        "code": "8205",
+        "desc": "A.P.P. modified 3 mm thick membrance reinforced with polyster matt",
+        "unit": "sqm",
+        "qty": 33.0,
+        "rate": 205.0
+      },
+      {
         "code": "8206",
         "desc": "Bitumen primer for bitumen membrance",
         "unit": "litre",
@@ -4060,11 +5483,25 @@
         "rate": 80.0
       },
       {
+        "code": "2211",
+        "desc": "Carriage of Tar bitumen",
+        "unit": "tonne",
+        "qty": 0.012,
+        "rate": 103.77
+      },
+      {
         "code": "9977",
         "desc": "Carriage of bitumen membrance",
         "unit": "L.S.",
         "qty": 7.8,
         "rate": 2.0
+      },
+      {
+        "code": "1241",
+        "desc": "Commercial LPG in cylinder",
+        "unit": "kg",
+        "qty": 7.0,
+        "rate": 82.0
       },
       {
         "code": "9999",
@@ -4208,7 +5645,7 @@
   {
     "code": "14.93",
     "desc": "Providing round the clock security guard without gun for watch & ward of Government premises and its all belongings by deploying neatly dres",
-    "unit": "nos",
+    "unit": "job",
     "basis": 1.0,
     "say": 732.55,
     "resources": [
@@ -4231,7 +5668,7 @@
   {
     "code": "14.94",
     "desc": "Providing round the clock security guard with gun for watch & ward of Government premises and its all belongings by deploying neatly dressed",
-    "unit": "nos",
+    "unit": "job",
     "basis": 1.0,
     "say": 803.85,
     "resources": [
@@ -4241,6 +5678,13 @@
         "unit": "day",
         "qty": 1.0,
         "rate": 679.0
+      },
+      {
+        "code": "9999",
+        "desc": "Lathi,torch,uniform,wooden stick & other miscellaneous items",
+        "unit": "L.S.",
+        "qty": 10.0,
+        "rate": 2.0
       }
     ]
   }

@@ -34,11 +34,16 @@ def resolve_path(filename: str, subfolder: str = "") -> str:
         candidates.append(os.path.join(PROJECT_ROOT, subfolder, filename))
     candidates.append(os.path.join(PROJECT_ROOT, filename))
     candidates.append(os.path.join(DATA_DIR, filename))
-    
-    for c in candidates:
+
+    for i, c in enumerate(candidates):
         if os.path.exists(c):
+            if i > 0:
+                print(f"[paths.py] WARNING: '{filename}' resolved to non-canonical "
+                      f"location '{c}' (canonical would be '{candidates[0]}'). "
+                      f"A stale duplicate may be shadowing the current file.",
+                      file=sys.stderr)
             return c
-            
+
     # Default to preferred organized location
     if subfolder:
         return os.path.join(DATA_DIR, subfolder, filename)

@@ -2,16 +2,44 @@
   {
     "code": "20.1.1",
     "desc": "400 mm dia piles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 20.0,
     "say": 2244.1,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 2.51,
+        "rate": 7997.3
+      },
       {
         "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
         "qty": 521.08,
         "rate": 2.0
+      },
+      {
+        "code": "7181",
+        "desc": "C.I. pile shoe of 80 kg per pile",
+        "unit": "kilogram",
+        "qty": 80.0,
+        "rate": 48.0
+      },
+      {
+        "code": "7182",
+        "desc": "M.S. clamps for pile shoe of 35 kg per pile",
+        "unit": "kilogram",
+        "qty": 35.0,
+        "rate": 43.0
+      },
+      {
+        "code": "0024",
+        "desc": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 30000.0
       },
       {
         "code": "0025",
@@ -39,16 +67,44 @@
   {
     "code": "20.1.2",
     "desc": "450 mm dia piles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 20.0,
     "say": 2735.65,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 3.18,
+        "rate": 7997.3
+      },
       {
         "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
         "qty": 392.7,
         "rate": 2.0
+      },
+      {
+        "code": "7181",
+        "desc": "C.I. pile shoe of 80 kg per pile",
+        "unit": "kilogram",
+        "qty": 80.0,
+        "rate": 48.0
+      },
+      {
+        "code": "7182",
+        "desc": "M.S. clamps for pile shoe of 35 kg per pile",
+        "unit": "kilogram",
+        "qty": 35.0,
+        "rate": 43.0
+      },
+      {
+        "code": "0024",
+        "desc": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+        "unit": "day",
+        "qty": 0.48,
+        "rate": 30000.0
       },
       {
         "code": "0025",
@@ -76,16 +132,44 @@
   {
     "code": "20.1.3",
     "desc": "500 mm dia piles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 20.0,
     "say": 3292.75,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 3.925,
+        "rate": 7997.3
+      },
       {
         "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
         "qty": 530.0,
         "rate": 2.0
+      },
+      {
+        "code": "7181",
+        "desc": "C.I. pile shoe of 80 kg per pile",
+        "unit": "kilogram",
+        "qty": 80.0,
+        "rate": 48.0
+      },
+      {
+        "code": "7182",
+        "desc": "M.S. clamps for pile shoe of 35 kg per pile",
+        "unit": "kilogram",
+        "qty": 35.0,
+        "rate": 43.0
+      },
+      {
+        "code": "0024",
+        "desc": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 30000.0
       },
       {
         "code": "0025",
@@ -113,16 +197,44 @@
   {
     "code": "20.1.4",
     "desc": "550 mm dia piles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 20.0,
     "say": 3601.45,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 4.75,
+        "rate": 7997.3
+      },
       {
         "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
         "qty": 371.88,
         "rate": 2.0
+      },
+      {
+        "code": "7181",
+        "desc": "C.I. pile shoe of 80 kg per pile",
+        "unit": "kilogram",
+        "qty": 80.0,
+        "rate": 48.0
+      },
+      {
+        "code": "7182",
+        "desc": "M.S. clamps for pile shoe of 35 kg per pile",
+        "unit": "kilogram",
+        "qty": 35.0,
+        "rate": 43.0
+      },
+      {
+        "code": "0024",
+        "desc": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 30000.0
       },
       {
         "code": "0025",
@@ -150,16 +262,44 @@
   {
     "code": "20.1.5",
     "desc": "750 mm dia piles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 15.0,
     "say": 6181.15,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 6.62,
+        "rate": 7997.3
+      },
       {
         "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
         "qty": 573.57,
         "rate": 2.0
+      },
+      {
+        "code": "7181",
+        "desc": "C.I. pile shoe of 80 kg per pile",
+        "unit": "kilogram",
+        "qty": 80.0,
+        "rate": 48.0
+      },
+      {
+        "code": "7182",
+        "desc": "M.S. clamps for pile shoe of 35 kg per pile",
+        "unit": "kilogram",
+        "qty": 35.0,
+        "rate": 43.0
+      },
+      {
+        "code": "0024",
+        "desc": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 30000.0
       },
       {
         "code": "0025",
@@ -187,16 +327,44 @@
   {
     "code": "20.1.6",
     "desc": "1000 mm dia piles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 10.0,
     "say": 10301.15,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 7.85,
+        "rate": 7997.3
+      },
       {
         "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
         "qty": 897.89,
         "rate": 2.0
+      },
+      {
+        "code": "7181",
+        "desc": "C.I. pile shoe of 80 kg per pile",
+        "unit": "kilogram",
+        "qty": 80.0,
+        "rate": 48.0
+      },
+      {
+        "code": "7182",
+        "desc": "M.S. clamps for pile shoe of 35 kg per pile",
+        "unit": "kilogram",
+        "qty": 35.0,
+        "rate": 43.0
+      },
+      {
+        "code": "0024",
+        "desc": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+        "unit": "day",
+        "qty": 0.68,
+        "rate": 30000.0
       },
       {
         "code": "0025",
@@ -224,16 +392,44 @@
   {
     "code": "20.1.7",
     "desc": "1200 mm dia piles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 9.0,
     "say": 13457.45,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 10.17,
+        "rate": 7997.3
+      },
       {
         "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
         "qty": 733.37,
         "rate": 2.0
+      },
+      {
+        "code": "7181",
+        "desc": "C.I. pile shoe of 80 kg per pile",
+        "unit": "kilogram",
+        "qty": 80.0,
+        "rate": 48.0
+      },
+      {
+        "code": "7182",
+        "desc": "M.S. clamps for pile shoe of 35 kg per pile",
+        "unit": "kilogram",
+        "qty": 35.0,
+        "rate": 43.0
+      },
+      {
+        "code": "0024",
+        "desc": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 30000.0
       },
       {
         "code": "0025",
@@ -261,16 +457,44 @@
   {
     "code": "20.1.8",
     "desc": "1500 mm dia piles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 9.0,
     "say": 19169.55,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 15.9,
+        "rate": 7997.3
+      },
       {
         "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
         "qty": 1113.48,
         "rate": 2.0
+      },
+      {
+        "code": "7181",
+        "desc": "C.I. pile shoe of 80 kg per pile",
+        "unit": "kilogram",
+        "qty": 80.0,
+        "rate": 48.0
+      },
+      {
+        "code": "7182",
+        "desc": "M.S. clamps for pile shoe of 35 kg per pile",
+        "unit": "kilogram",
+        "qty": 35.0,
+        "rate": 43.0
+      },
+      {
+        "code": "0024",
+        "desc": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+        "unit": "day",
+        "qty": 0.77,
+        "rate": 30000.0
       },
       {
         "code": "0025",
@@ -298,10 +522,24 @@
   {
     "code": "20.2.1",
     "desc": "450 mm dia piles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 20.0,
     "say": 1806.15,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 3.18,
+        "rate": 7997.3
+      },
+      {
+        "code": "7183",
+        "desc": "Bentonite",
+        "unit": "tonne",
+        "qty": 0.25,
+        "rate": 2960.0
+      },
       {
         "code": "9999",
         "desc": "Sundries",
@@ -310,11 +548,25 @@
         "rate": 2.0
       },
       {
+        "code": "0015",
+        "desc": "Hire and running charges of Tripod and Mechanical Winch machine complete with power unit and accessories",
+        "unit": "day",
+        "qty": 0.94,
+        "rate": 1900.0
+      },
+      {
         "code": "0025",
         "desc": "Hire and running charges of light crane.",
         "unit": "day",
         "qty": 0.06,
         "rate": 3000.0
+      },
+      {
+        "code": "0026",
+        "desc": "Hire and running charges of bentonite pump.",
+        "unit": "day",
+        "qty": 0.38,
+        "rate": 3500.0
       },
       {
         "code": "0018",
@@ -349,10 +601,24 @@
   {
     "code": "20.2.2",
     "desc": "500 mm dia piles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 20.0,
     "say": 2123.95,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 3.925,
+        "rate": 7997.3
+      },
+      {
+        "code": "7183",
+        "desc": "Bentonite",
+        "unit": "tonne",
+        "qty": 0.28,
+        "rate": 2960.0
+      },
       {
         "code": "9999",
         "desc": "Sundries",
@@ -361,11 +627,25 @@
         "rate": 2.0
       },
       {
+        "code": "0015",
+        "desc": "Hire and running charges of Tripod and Mechanical Winch machine complete with power unit and accessories",
+        "unit": "day",
+        "qty": 1.2,
+        "rate": 1900.0
+      },
+      {
         "code": "0025",
         "desc": "Hire and running charges of light crane.",
         "unit": "day",
         "qty": 0.06,
         "rate": 3000.0
+      },
+      {
+        "code": "0026",
+        "desc": "Hire and running charges of bentonite pump.",
+        "unit": "day",
+        "qty": 0.38,
+        "rate": 3500.0
       },
       {
         "code": "0017",
@@ -400,10 +680,24 @@
   {
     "code": "20.2.3",
     "desc": "600 mm dia piles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 20.0,
     "say": 2911.1,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 5.65,
+        "rate": 7997.3
+      },
+      {
+        "code": "7183",
+        "desc": "Bentonite",
+        "unit": "tonne",
+        "qty": 0.33,
+        "rate": 2960.0
+      },
       {
         "code": "9999",
         "desc": "Sundries",
@@ -412,11 +706,25 @@
         "rate": 2.0
       },
       {
+        "code": "0015",
+        "desc": "Hire and running charges of Tripod and Mechanical Winch machine complete with power unit and accessories",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 1900.0
+      },
+      {
         "code": "0025",
         "desc": "Hire and running charges of light crane.",
         "unit": "day",
         "qty": 0.06,
         "rate": 3000.0
+      },
+      {
+        "code": "0026",
+        "desc": "Hire and running charges of bentonite pump.",
+        "unit": "day",
+        "qty": 0.38,
+        "rate": 3500.0
       },
       {
         "code": "0017",
@@ -451,10 +759,59 @@
   {
     "code": "20.2.4",
     "desc": "750 mm dia piles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 15.0,
     "say": 4482.3,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 6.62,
+        "rate": 7997.3
+      },
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 5.65,
+        "rate": 7997.3
+      },
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 6.62,
+        "rate": 7997.3
+      },
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 7.85,
+        "rate": 7997.3
+      },
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 10.17,
+        "rate": 7997.3
+      },
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 15.9,
+        "rate": 7997.3
+      },
+      {
+        "code": "7183",
+        "desc": "Bentonite",
+        "unit": "tonne",
+        "qty": 0.3,
+        "rate": 2960.0
+      },
       {
         "code": "9999",
         "desc": "Sundries",
@@ -463,11 +820,25 @@
         "rate": 2.0
       },
       {
+        "code": "0015",
+        "desc": "Hire and running charges of Tripod and Mechanical Winch machine complete with power unit and accessories",
+        "unit": "day",
+        "qty": 1.4,
+        "rate": 1900.0
+      },
+      {
         "code": "0025",
         "desc": "Hire and running charges of light crane.",
         "unit": "day",
         "qty": 0.06,
         "rate": 3000.0
+      },
+      {
+        "code": "0026",
+        "desc": "Hire and running charges of bentonite pump.",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 3500.0
       },
       {
         "code": "0017",
@@ -498,6 +869,13 @@
         "rate": 558.0
       },
       {
+        "code": "7183",
+        "desc": "Bentonite",
+        "unit": "tonne",
+        "qty": 0.33,
+        "rate": 2960.0
+      },
+      {
         "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
@@ -505,11 +883,25 @@
         "rate": 2.0
       },
       {
+        "code": "0024",
+        "desc": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 30000.0
+      },
+      {
         "code": "0025",
         "desc": "Hire and running charges of light crane.",
         "unit": "day",
         "qty": 0.06,
         "rate": 3000.0
+      },
+      {
+        "code": "0026",
+        "desc": "Hire and running charges of bentonite pump.",
+        "unit": "day",
+        "qty": 0.38,
+        "rate": 3500.0
       },
       {
         "code": "0018",
@@ -540,6 +932,13 @@
         "rate": 558.0
       },
       {
+        "code": "7183",
+        "desc": "Bentonite",
+        "unit": "tonne",
+        "qty": 0.3,
+        "rate": 2960.0
+      },
+      {
         "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
@@ -547,11 +946,25 @@
         "rate": 2.0
       },
       {
+        "code": "0024",
+        "desc": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 30000.0
+      },
+      {
         "code": "0025",
         "desc": "Hire and running charges of light crane.",
         "unit": "day",
         "qty": 0.06,
         "rate": 3000.0
+      },
+      {
+        "code": "0026",
+        "desc": "Hire and running charges of bentonite pump.",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 3500.0
       },
       {
         "code": "0018",
@@ -582,6 +995,13 @@
         "rate": 558.0
       },
       {
+        "code": "7183",
+        "desc": "Bentonite",
+        "unit": "tonne",
+        "qty": 0.35,
+        "rate": 2960.0
+      },
+      {
         "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
@@ -589,11 +1009,25 @@
         "rate": 2.0
       },
       {
+        "code": "0024",
+        "desc": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+        "unit": "day",
+        "qty": 0.69,
+        "rate": 30000.0
+      },
+      {
         "code": "0025",
         "desc": "Hire and running charges of light crane.",
         "unit": "day",
         "qty": 0.06,
         "rate": 3000.0
+      },
+      {
+        "code": "0026",
+        "desc": "Hire and running charges of bentonite pump.",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 3500.0
       },
       {
         "code": "0018",
@@ -624,6 +1058,13 @@
         "rate": 558.0
       },
       {
+        "code": "7183",
+        "desc": "Bentonite",
+        "unit": "tonne",
+        "qty": 0.385,
+        "rate": 2960.0
+      },
+      {
         "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
@@ -631,11 +1072,25 @@
         "rate": 2.0
       },
       {
+        "code": "0024",
+        "desc": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 30000.0
+      },
+      {
         "code": "0025",
         "desc": "Hire and running charges of light crane.",
         "unit": "day",
         "qty": 0.06,
         "rate": 3000.0
+      },
+      {
+        "code": "0026",
+        "desc": "Hire and running charges of bentonite pump.",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 3500.0
       },
       {
         "code": "0018",
@@ -666,6 +1121,13 @@
         "rate": 558.0
       },
       {
+        "code": "7183",
+        "desc": "Bentonite",
+        "unit": "tonne",
+        "qty": 0.45,
+        "rate": 2960.0
+      },
+      {
         "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
@@ -673,11 +1135,25 @@
         "rate": 2.0
       },
       {
+        "code": "0024",
+        "desc": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+        "unit": "day",
+        "qty": 0.77,
+        "rate": 30000.0
+      },
+      {
         "code": "0025",
         "desc": "Hire and running charges of light crane.",
         "unit": "day",
         "qty": 0.1,
         "rate": 3000.0
+      },
+      {
+        "code": "0026",
+        "desc": "Hire and running charges of bentonite pump.",
+        "unit": "day",
+        "qty": 0.96,
+        "rate": 3500.0
       },
       {
         "code": "0018",
@@ -712,10 +1188,24 @@
   {
     "code": "20.3.1",
     "desc": "300 mm dia piles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "metres",
+    "basis": 10.0,
     "say": 2387.4,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 0.778,
+        "rate": 7997.3
+      },
+      {
+        "code": "7183",
+        "desc": "Bentonite",
+        "unit": "tonne",
+        "qty": 0.08,
+        "rate": 2960.0
+      },
       {
         "code": "9999",
         "desc": "Sundries",
@@ -724,11 +1214,25 @@
         "rate": 2.0
       },
       {
+        "code": "0024",
+        "desc": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 30000.0
+      },
+      {
         "code": "0025",
         "desc": "Hire and running charges of light crane.",
         "unit": "day",
         "qty": 0.03,
         "rate": 3000.0
+      },
+      {
+        "code": "0026",
+        "desc": "Hire and running charges of bentonite pump.",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 3500.0
       },
       {
         "code": "0130",
@@ -749,10 +1253,24 @@
   {
     "code": "20.3.2",
     "desc": "400 mm dia piles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "metres",
+    "basis": 10.0,
     "say": 2951.1,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 1.478,
+        "rate": 7997.3
+      },
+      {
+        "code": "7183",
+        "desc": "Bentonite",
+        "unit": "tonne",
+        "qty": 0.15,
+        "rate": 2960.0
+      },
       {
         "code": "9999",
         "desc": "Sundries",
@@ -761,11 +1279,25 @@
         "rate": 2.0
       },
       {
+        "code": "0024",
+        "desc": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 30000.0
+      },
+      {
         "code": "0025",
         "desc": "Hire and running charges of light crane.",
         "unit": "day",
         "qty": 0.06,
         "rate": 3000.0
+      },
+      {
+        "code": "0026",
+        "desc": "Hire and running charges of bentonite pump.",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 3500.0
       },
       {
         "code": "0130",
@@ -786,10 +1318,24 @@
   {
     "code": "20.3.3",
     "desc": "450 mm dia piles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "metres",
+    "basis": 10.0,
     "say": 3287.3,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 1.906,
+        "rate": 7997.3
+      },
+      {
+        "code": "7183",
+        "desc": "Bentonite",
+        "unit": "tonne",
+        "qty": 0.19,
+        "rate": 2960.0
+      },
       {
         "code": "9999",
         "desc": "Sundries",
@@ -798,11 +1344,25 @@
         "rate": 2.0
       },
       {
+        "code": "0024",
+        "desc": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 30000.0
+      },
+      {
         "code": "0025",
         "desc": "Hire and running charges of light crane.",
         "unit": "day",
         "qty": 0.06,
         "rate": 3000.0
+      },
+      {
+        "code": "0026",
+        "desc": "Hire and running charges of bentonite pump.",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 3500.0
       },
       {
         "code": "0130",
@@ -823,10 +1383,24 @@
   {
     "code": "20.3.4",
     "desc": "550 mm dia piles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "metres",
+    "basis": 10.0,
     "say": 3689.9,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 2.4,
+        "rate": 7997.3
+      },
+      {
+        "code": "7183",
+        "desc": "Bentonite",
+        "unit": "tonne",
+        "qty": 0.2,
+        "rate": 2960.0
+      },
       {
         "code": "9999",
         "desc": "Sundries",
@@ -835,11 +1409,25 @@
         "rate": 2.0
       },
       {
+        "code": "0024",
+        "desc": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 30000.0
+      },
+      {
         "code": "0025",
         "desc": "Hire and running charges of light crane.",
         "unit": "day",
         "qty": 0.06,
         "rate": 3000.0
+      },
+      {
+        "code": "0026",
+        "desc": "Hire and running charges of bentonite pump.",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 3500.0
       },
       {
         "code": "0130",
@@ -860,16 +1448,44 @@
   {
     "code": "20.4.1",
     "desc": "300 mm dia piles",
-    "unit": "nos",
+    "unit": "bulb",
     "basis": 1.0,
     "say": 1931.85,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 0.033,
+        "rate": 7997.3
+      },
+      {
+        "code": "7183",
+        "desc": "Bentonite",
+        "unit": "tonne",
+        "qty": 0.003,
+        "rate": 2960.0
+      },
+      {
+        "code": "0024",
+        "desc": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 30000.0
+      },
       {
         "code": "0025",
         "desc": "Hire and running charges of light crane.",
         "unit": "day",
         "qty": 0.01,
         "rate": 3000.0
+      },
+      {
+        "code": "0026",
+        "desc": "Hire and running charges of bentonite pump.",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 3500.0
       },
       {
         "code": "0130",
@@ -890,16 +1506,44 @@
   {
     "code": "20.4.2",
     "desc": "400 mm dia piles",
-    "unit": "nos",
+    "unit": "bulb",
     "basis": 1.0,
     "say": 2183.65,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 0.063,
+        "rate": 7997.3
+      },
+      {
+        "code": "7183",
+        "desc": "Bentonite",
+        "unit": "tonne",
+        "qty": 0.006,
+        "rate": 2960.0
+      },
+      {
+        "code": "0024",
+        "desc": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 30000.0
+      },
       {
         "code": "0025",
         "desc": "Hire and running charges of light crane.",
         "unit": "day",
         "qty": 0.01,
         "rate": 3000.0
+      },
+      {
+        "code": "0026",
+        "desc": "Hire and running charges of bentonite pump.",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 3500.0
       },
       {
         "code": "0130",
@@ -920,16 +1564,44 @@
   {
     "code": "20.4.3",
     "desc": "450 mm dia piles",
-    "unit": "nos",
+    "unit": "bulb",
     "basis": 1.0,
     "say": 2335.5,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 0.081,
+        "rate": 7997.3
+      },
+      {
+        "code": "7183",
+        "desc": "Bentonite",
+        "unit": "tonne",
+        "qty": 0.008,
+        "rate": 2960.0
+      },
+      {
+        "code": "0024",
+        "desc": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 30000.0
+      },
       {
         "code": "0025",
         "desc": "Hire and running charges of light crane.",
         "unit": "day",
         "qty": 0.01,
         "rate": 3000.0
+      },
+      {
+        "code": "0026",
+        "desc": "Hire and running charges of bentonite pump.",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 3500.0
       },
       {
         "code": "0130",
@@ -950,16 +1622,44 @@
   {
     "code": "20.4.4",
     "desc": "550 mm dia piles",
-    "unit": "nos",
+    "unit": "bulb",
     "basis": 1.0,
     "say": 2558.2,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 0.102,
+        "rate": 7997.3
+      },
+      {
+        "code": "7183",
+        "desc": "Bentonite",
+        "unit": "tonne",
+        "qty": 0.01,
+        "rate": 2960.0
+      },
+      {
+        "code": "0024",
+        "desc": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 30000.0
+      },
       {
         "code": "0025",
         "desc": "Hire and running charges of light crane.",
         "unit": "day",
         "qty": 0.01,
         "rate": 3000.0
+      },
+      {
+        "code": "0026",
+        "desc": "Hire and running charges of bentonite pump.",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 3500.0
       },
       {
         "code": "0130",
@@ -980,10 +1680,17 @@
   {
     "code": "20.5.1",
     "desc": "400 mm dia piles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 20.0,
     "say": 3056.3,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 2.51,
+        "rate": 7997.3
+      },
       {
         "code": "3.7",
         "desc": "Rate as per SH: 3.7",
@@ -997,6 +1704,34 @@
         "unit": "L.S.",
         "qty": 442.0,
         "rate": 2.0
+      },
+      {
+        "code": "7181",
+        "desc": "C.I. pile shoe of 80 kg per pile",
+        "unit": "kilogram",
+        "qty": 80.0,
+        "rate": 48.0
+      },
+      {
+        "code": "7182",
+        "desc": "M.S. clamps for pile shoe of 35 kg per pile",
+        "unit": "kilogram",
+        "qty": 35.0,
+        "rate": 43.0
+      },
+      {
+        "code": "0027",
+        "desc": "Hire and running charges of vibrating pile driving hammer complete with power unit and accessories .",
+        "unit": "day",
+        "qty": 0.38,
+        "rate": 30000.0
+      },
+      {
+        "code": "0028",
+        "desc": "Hire and running charges of crane 20 tonne capacity.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 7000.0
       },
       {
         "code": "0130",
@@ -1017,10 +1752,17 @@
   {
     "code": "20.5.2",
     "desc": "450 mm dia piles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 20.0,
     "say": 3853.8,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 3.18,
+        "rate": 7997.3
+      },
       {
         "code": "3.7",
         "desc": "Rate as per SH: 3.7",
@@ -1034,6 +1776,34 @@
         "unit": "L.S.",
         "qty": 442.0,
         "rate": 2.0
+      },
+      {
+        "code": "7181",
+        "desc": "C.I. pile shoe of 80 kg per pile",
+        "unit": "kilogram",
+        "qty": 80.0,
+        "rate": 48.0
+      },
+      {
+        "code": "7182",
+        "desc": "M.S. clamps for pile shoe of 35 kg per pile",
+        "unit": "kilogram",
+        "qty": 35.0,
+        "rate": 43.0
+      },
+      {
+        "code": "0027",
+        "desc": "Hire and running charges of vibrating pile driving hammer complete with power unit and accessories .",
+        "unit": "day",
+        "qty": 0.38,
+        "rate": 30000.0
+      },
+      {
+        "code": "0028",
+        "desc": "Hire and running charges of crane 20 tonne capacity.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 7000.0
       },
       {
         "code": "0130",
@@ -1054,16 +1824,51 @@
   {
     "code": "20.5.3",
     "desc": "500 mm dia piles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 20.0,
     "say": 4027.1,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 3.925,
+        "rate": 7997.3
+      },
       {
         "code": "9999",
         "desc": "Wooden block @ 1 block per two piles",
         "unit": "L.S.",
         "qty": 442.0,
         "rate": 2.0
+      },
+      {
+        "code": "7181",
+        "desc": "C.I. pile shoe of 80 kg per pile",
+        "unit": "kilogram",
+        "qty": 80.0,
+        "rate": 48.0
+      },
+      {
+        "code": "7182",
+        "desc": "M.S. clamps for pile shoe",
+        "unit": "kilogram",
+        "qty": 35.0,
+        "rate": 43.0
+      },
+      {
+        "code": "0027",
+        "desc": "Hire and running charges of vibrating pile driving hammer complete with power unit and accessories .",
+        "unit": "day",
+        "qty": 0.38,
+        "rate": 30000.0
+      },
+      {
+        "code": "0028",
+        "desc": "Hire and running charges of crane 20 tonne capacity.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 7000.0
       },
       {
         "code": "0130",
@@ -1084,10 +1889,17 @@
   {
     "code": "20.5.4",
     "desc": "550 mm dia piles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 20.0,
     "say": 4593.1,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 4.75,
+        "rate": 7997.3
+      },
       {
         "code": "3.7",
         "desc": "Rate as per SH: 3.7",
@@ -1101,6 +1913,34 @@
         "unit": "L.S.",
         "qty": 442.0,
         "rate": 2.0
+      },
+      {
+        "code": "7181",
+        "desc": "C.I. pile shoe of 80 kg per pile",
+        "unit": "kilogram",
+        "qty": 80.0,
+        "rate": 48.0
+      },
+      {
+        "code": "7182",
+        "desc": "M.S. clamps for pile shoe",
+        "unit": "kilogram",
+        "qty": 35.0,
+        "rate": 43.0
+      },
+      {
+        "code": "0027",
+        "desc": "Hire and running charges of vibrating pile driving hammer complete with power unit and accessories .",
+        "unit": "day",
+        "qty": 0.38,
+        "rate": 30000.0
+      },
+      {
+        "code": "0028",
+        "desc": "Hire and running charges of crane 20 tonne capacity.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 7000.0
       },
       {
         "code": "0130",
@@ -1121,10 +1961,17 @@
   {
     "code": "20.5.5",
     "desc": "750 mm dia piles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 20.0,
     "say": 8798.75,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 10.88,
+        "rate": 7997.3
+      },
       {
         "code": "3.7",
         "desc": "Rate as per SH: 3.7",
@@ -1138,6 +1985,34 @@
         "unit": "L.S.",
         "qty": 442.0,
         "rate": 2.0
+      },
+      {
+        "code": "7181",
+        "desc": "C.I. pile shoe of 80 kg per pile",
+        "unit": "kilogram",
+        "qty": 80.0,
+        "rate": 48.0
+      },
+      {
+        "code": "7182",
+        "desc": "M.S. clamps for pile shoe of 35 kg per pile",
+        "unit": "kilogram",
+        "qty": 35.0,
+        "rate": 43.0
+      },
+      {
+        "code": "0027",
+        "desc": "Hire and running charges of vibrating pile driving hammer complete with power unit and accessories .",
+        "unit": "day",
+        "qty": 0.38,
+        "rate": 30000.0
+      },
+      {
+        "code": "0028",
+        "desc": "Hire and running charges of crane 20 tonne capacity.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 7000.0
       },
       {
         "code": "0130",
@@ -1158,10 +2033,17 @@
   {
     "code": "20.5.6",
     "desc": "1000 mm dia piles",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "m",
+    "basis": 20.0,
     "say": 12105.6,
     "resources": [
+      {
+        "code": "5.33.1",
+        "desc": "Rate as per SH: 5.33.1",
+        "unit": "cum",
+        "qty": 15.7,
+        "rate": 7997.3
+      },
       {
         "code": "3.7",
         "desc": "Rate as per SH: 3.7",
@@ -1175,6 +2057,34 @@
         "unit": "L.S.",
         "qty": 442.0,
         "rate": 2.0
+      },
+      {
+        "code": "7181",
+        "desc": "C.I. pile shoe of 80 kg per pile",
+        "unit": "kilogram",
+        "qty": 80.0,
+        "rate": 48.0
+      },
+      {
+        "code": "7182",
+        "desc": "M.S. clamps for pile shoe of 35 kg per pile",
+        "unit": "kilogram",
+        "qty": 35.0,
+        "rate": 43.0
+      },
+      {
+        "code": "0027",
+        "desc": "Hire and running charges of vibrating pile driving hammer complete with power unit and accessories .",
+        "unit": "day",
+        "qty": 0.38,
+        "rate": 30000.0
+      },
+      {
+        "code": "0028",
+        "desc": "Hire and running charges of crane 20 tonne capacity.",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 7000.0
       },
       {
         "code": "0130",
@@ -1193,60 +2103,180 @@
     ]
   },
   {
-    "code": "20.6.1",
-    "desc": "Single pile upto 50 tonne Safe capacity 20.6.1.1 Initial test (Test Load 2.5 times the Safe capacity)",
-    "unit": "nos",
+    "code": "20.6.1.1",
+    "desc": "Initial test (Test Load 2.5 times the Safe capacity)",
+    "unit": "test",
     "basis": 1.0,
     "say": 53517.5,
-    "resources": []
+    "resources": [
+      {
+        "code": "7246",
+        "desc": "Verticle load testing (INITIAL) of piles in accordance with IS : 2911 (Part-IV) including installation of loading platform and prepration of pile head or construction of test cap and dismantling of test cap after test etc. complete as per specification and upto 50MT capacity pile. per",
+        "unit": "test",
+        "qty": 1.0,
+        "rate": 40000.0
+      }
+    ]
   },
   {
-    "code": "20.6.2",
-    "desc": "Single pile above 50 tonne and upto 100 tonne Safe capacity 20.6.2.1 Initial test (Test Load 2.5 times the Safe capacity)",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 60207.2,
-    "resources": []
-  },
-  {
-    "code": "20.6.3",
-    "desc": "Group of two or more piles upto 50 tonne Safe capacity 20.6.3.1 Initial test (Test Load 2.5 times the Safe capacity)",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 66896.9,
-    "resources": []
-  },
-  {
-    "code": "20.7.1",
-    "desc": "Single pile 20.7.1.1 Upto 50 tonne Safe capacity pile",
-    "unit": "nos",
+    "code": "20.6.1.2",
+    "desc": "Routine test (Test Load 1.5 times the Safe capacity)",
+    "unit": "test",
     "basis": 1.0,
     "say": 20069.05,
-    "resources": []
+    "resources": [
+      {
+        "code": "7249",
+        "desc": "Cyclic verticle load testing of piles in accordance with IS : 2911 (Part-IV) including prepration of pile head etc. for Single pile upto 50 tonne capacity per",
+        "unit": "test",
+        "qty": 1.0,
+        "rate": 15000.0
+      }
+    ]
   },
   {
-    "code": "20.7.2",
-    "desc": "Group of two or more piles 20.7.2.1 Upto 400 tonne Safe capacity of group",
-    "unit": "nos",
+    "code": "20.6.2.1",
+    "desc": "Initial test (Test Load 2.5 times the Safe capacity)",
+    "unit": "test",
+    "basis": 1.0,
+    "say": 60207.2,
+    "resources": [
+      {
+        "code": "7247",
+        "desc": "Verticle load testing (INITIAL) of piles in accordance with IS : 2911 (Part-IV) including installation of loading platform and prepration of pile head or construction of test cap and dismantling of test cap after test etc. complete as per specification & above 50MT and upto 100MT. per",
+        "unit": "test",
+        "qty": 1.0,
+        "rate": 45000.0
+      }
+    ]
+  },
+  {
+    "code": "20.6.2.2",
+    "desc": "Routine test (Test Load 1.5 times the Safe capacity)",
+    "unit": "test",
+    "basis": 1.0,
+    "say": 30772.55,
+    "resources": [
+      {
+        "code": "7250",
+        "desc": "Cyclic verticle load testing of piles in accordance with IS : 2911 (Part-IV) including prepration of pile head etc. for Single pile above 50 tonne capacity pile and upto 100 tonne capacity pile per",
+        "unit": "test",
+        "qty": 1.0,
+        "rate": 23000.0
+      }
+    ]
+  },
+  {
+    "code": "20.6.3.1",
+    "desc": "Initial test (Test Load 2.5 times the Safe capacity)",
+    "unit": "test",
+    "basis": 1.0,
+    "say": 66896.9,
+    "resources": [
+      {
+        "code": "7248",
+        "desc": "Verticle load testing (INITIAL) of piles in accordance with IS : 2911 (Part-IV) including installation of loading platform and prepration of pile head or construction of test cap and dismantling of test cap after test etc. complete as per specification & group of two or more upto 50MT. per",
+        "unit": "test",
+        "qty": 1.0,
+        "rate": 50000.0
+      }
+    ]
+  },
+  {
+    "code": "20.6.3.2",
+    "desc": "Routine test (Test Load 1.5 times the Safe capacity)",
+    "unit": "test",
     "basis": 1.0,
     "say": 39469.15,
-    "resources": []
+    "resources": [
+      {
+        "code": "7251",
+        "desc": "Cyclic verticle load testing of piles in accordance with IS : 2911 (Part-IV) including prepration of pile head etc. for Group of two piles upto 50 tonne capacity each per",
+        "unit": "test",
+        "qty": 1.0,
+        "rate": 29500.0
+      }
+    ]
+  },
+  {
+    "code": "20.7.1.1",
+    "desc": "Upto 50 tonne Safe capacity pile",
+    "unit": "test",
+    "basis": 1.0,
+    "say": 20069.05,
+    "resources": [
+      {
+        "code": "7249",
+        "desc": "Cyclic verticle load testing of piles in accordance with IS : 2911 (Part-IV) including prepration of pile head etc. for Single pile upto 50 tonne capacity per",
+        "unit": "test",
+        "qty": 1.0,
+        "rate": 15000.0
+      }
+    ]
+  },
+  {
+    "code": "20.7.1.2",
+    "desc": "Above 50 tonne and upto 100 tonne Safe capacity pile",
+    "unit": "test",
+    "basis": 1.0,
+    "say": 30772.55,
+    "resources": [
+      {
+        "code": "7250",
+        "desc": "Cyclic verticle load testing of piles in accordance with IS : 2911 (Part-IV) including prepration of pile head etc. for Single pile above 50 tonne capacity pile and upto 100 tonne capacity pile per",
+        "unit": "test",
+        "qty": 1.0,
+        "rate": 23000.0
+      }
+    ]
+  },
+  {
+    "code": "20.7.2.1",
+    "desc": "Upto 400 tonne Safe capacity of group",
+    "unit": "test",
+    "basis": 1.0,
+    "say": 39469.15,
+    "resources": [
+      {
+        "code": "7251",
+        "desc": "Cyclic verticle load testing of piles in accordance with IS : 2911 (Part-IV) including prepration of pile head etc. for Group of two piles upto 50 tonne capacity each per",
+        "unit": "test",
+        "qty": 1.0,
+        "rate": 29500.0
+      }
+    ]
   },
   {
     "code": "20.8.1",
     "desc": "Upto 50 tonne capacity pile",
-    "unit": "nos",
+    "unit": "test",
     "basis": 1.0,
     "say": 20069.05,
-    "resources": []
+    "resources": [
+      {
+        "code": "7252",
+        "desc": "Lateral load testing of single pile in accordance with IS : 2911 part -IV for determining safe allowable lateral load on pile. Upto 50 tonne capacity per",
+        "unit": "test",
+        "qty": 1.0,
+        "rate": 15000.0
+      }
+    ]
   },
   {
     "code": "20.8.2",
     "desc": "Above 50 tonne and upto 100 tonne capacity pile",
-    "unit": "nos",
+    "unit": "test",
     "basis": 1.0,
     "say": 31575.35,
-    "resources": []
+    "resources": [
+      {
+        "code": "7253",
+        "desc": "Lateral load testing of single pile in accordance with IS : 2911 part -IV for determining safe allowable lateral load on pile. Above 50 tonne capacity per",
+        "unit": "test",
+        "qty": 1.0,
+        "rate": 23600.0
+      }
+    ]
   },
   {
     "code": "20.9",

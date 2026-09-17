@@ -1,11 +1,20 @@
 """
-vol2_chapter_extractor.py
-Extract all items + SAY rates + resource rows from a chapter of
-CivilDAR_2019_Vol_2.pdf and save to data/reference_json/ch{NN}_items.json.
+vol1_chapter_extractor_pdf.py
+Extract all items + SAY rates + resource rows for Ch.01, 03-12 directly from
+CivilDAR_2019_Vol_1.pdf and save to data/reference_json/ch{NN}_items.json.
+(Ch01 "Carriage of Materials" also contains large lead-vs-distance lookup
+tables with no per-item "Say" line -- those are correctly skipped; only its
+genuine priced cost-buildup items, e.g. 1.3, 1.4.1-1.4.3, are extracted.)
+
+Replaces vol1_chapter_extractor.py's old path (Converted XLSX -> JSON), which
+depended on data/converted_xlsx/CivilDAR_2019_Vol_1_Converted.xlsx: a file with
+no in-repo provenance that was never verified against the source PDF (see
+reports/audit_architecture_process_2026-09-17.md, finding D2). This mirrors
+vol2_chapter_extractor.py's already-verified direct-PDF approach.
 
 Usage:
-    python scripts/vol2_chapter_extractor.py --chapter 14
-    python scripts/vol2_chapter_extractor.py --all
+    python scripts/vol1_chapter_extractor_pdf.py --chapter 5
+    python scripts/vol1_chapter_extractor_pdf.py --all
 """
 
 import sys, re, json, argparse
@@ -13,37 +22,44 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import pdfplumber
-from scripts.paths import PDF_CIVIL_DAR_VOL2
+from scripts.paths import PDF_CIVIL_DAR_VOL1
 
 # Chapter -> (pdf_start_page_0indexed, pdf_end_page_exclusive)
+# Boundaries verified against each chapter's "SUB HEAD : N.0" page.
 CHAPTER_PAGES = {
-    13: (9,   109),
-    14: (109, 179),
-    15: (179, 227),
-    16: (227, 371),
-    17: (371, 485),
-    18: (485, 753),
-    19: (753, 855),
-    20: (855, 887),
-    21: (887, 919),
-    22: (919, 945),
-    23: (945, 971),
-    24: (971, 979),
-    25: (979, 991),
-    26: (991, 1110),
+    1:  (73, 85),
+    3:  (141, 151),
+    4:  (151, 187),
+    5:  (187, 279),
+    6:  (279, 321),
+    7:  (321, 365),
+    8:  (365, 425),
+    9:  (425, 673),
+    10: (673, 719),
+    11: (719, 811),
+    12: (811, 904),
 }
 
 OUT_DIR = Path(__file__).resolve().parent.parent / "data" / "reference_json"
 
+# One item-code segment: digits with an optional trailing letter (e.g. "22A",
+# "48X"), repeated across dot levels (e.g. "5.22A.1", "9.147A", "12.52.1").
+_CODE_SEG = r"\d+[A-Z]?"
+
 # A line matching \d+\.\d+ that is actually a cross-reference back to another
-# item's rate ("18.24 Rate as per Item Number 18.24 Of SH: ...") rather than a
-# genuine new item header.
-_CROSS_REF_DESC = re.compile(r"^\s*\(?\s*rate\s+(?:same\s+)?as\s+per\s+item", re.I)
+# item's rate ("2.25 Rate as per item No.2.25 of ...") rather than a genuine
+# new item header.
+_CROSS_REF_DESC = re.compile(
+    r"^\s*\(?\s*(rate\s+(?:same\s+)?as\s+per\s+item|sub\s+analysis\s+no\.?\s+\S+\s*\(annexure\))",
+    re.I,
+)
 
 # Resource-row continuation-line boundary: a line starting one of these should
 # never be merged into the previous resource row's wrapped description.
 _BOUNDARY_PAT = re.compile(
-    r"^(MATERIAL|LABOUR|MACHINERY|TOTAL|Add\b|Deduct\b|GRAND|SAY\b|Say\b|Code\b|Detail|\d+(?:\.\d+)+\s+\(?\s*Rate\s+(?:same\s+)?as\s+per)",
+    r"^(MATERIAL|LABOUR|MACHINERY|CARRIAGE|TOTAL|Add\b|Deduct\b|GRAND|SAY\b|Say\b|Code\b|Detail|"
+    rf"{_CODE_SEG}(?:\.{_CODE_SEG})*\s+\(?\s*Rate\s+(?:same\s+)?as\s+per|"
+    rf"{_CODE_SEG}(?:\.{_CODE_SEG})*\s+Sub\s+Analysis\s+no)",
     re.I,
 )
 _CODE_LINE_PAT = re.compile(r"^\d{4}\b")
@@ -56,20 +72,30 @@ _PAGE_BOILERPLATE_PAT = re.compile(
     re.I,
 )
 
-# Standard 4-digit DSR resource row (code, desc, unit, qty, rate), applied to a
-# single (already line-joined) entry.
+_UNITS = (
+    r"day|cum|kg|kilogram|cm|nos|litre|ltr|tonne|L\.S\.|Qtl|metre|m|sqm|Rmt|"
+    r"no|set|pair|each|job|month|hr|test|bag|quintal|door\s+area|shutter\s+area"
+)
+
+# Standard 4-digit DSR resource row (code, desc, unit, qty, rate), applied to
+# a single (already line-joined) entry.
 _RES_PAT = re.compile(
-    r"^(\d{4})\s+(.+?)\s+"
-    r"((?:\d+\s+)?(?:day|cum|kg|kilogram|cm|nos|litre|ltr|tonne|L\.S\.|Qtl|metre|m|sqm|Rmt|no|set|pair|each|job|month|hr|test))\s+"
-    r"([\d\.]+)\s+([\d,\.]+)",
+    rf"^(\d{{4}})\s+(.+?)\s+((?:\d+\s+)?(?:{_UNITS}))\s+([\d\.]+)\s+([\d,\.]+)",
     re.I,
 )
 
-# Cross-references embedded in a cost buildup: "3.4 Rate as per Item Number ... unit qty rate amount"
+# Cross-references embedded in a cost buildup: "2.6.1 Rate as per item no 2.6.1 ... unit qty rate amount"
 _REF_PAT = re.compile(
-    r"(\d+(?:\.\d+)+[A-Z]?)\s+\(?\s*Rate\s+(?:same\s+)?as\s+per\s+[Ii]tem\s+(?:Number|No\.?)\s*.+?"
-    r"(cum|kg|kilogram|cm|m|nos|tonne|litre|ltr|Qtl|Rmt|sqm|L\.S\.|no|set|pair|each|test)\s+"
-    r"([\d\.]+)\s+([\d,\.]+)\s+([\d,\.]+)",
+    rf"({_CODE_SEG}(?:\.{_CODE_SEG})*)\s+\(?\s*Rate\s+(?:same\s+)?as\s+per\s+[Ii]tem\s+(?:Number|No\.?)\s*.+?"
+    rf"({_UNITS})\s+([\d\.]+)\s+([\d,\.]+)\s+([\d,\.]+)",
+    re.S | re.I,
+)
+
+# Sub-analysis annexure references embedded in a cost buildup, e.g.
+# "5.48X Sub Analysis no 5.48X (Annexure) for item 5.48.1 each 1.00 592482.20 592482.20"
+_REF_PAT_SUBANALYSIS = re.compile(
+    rf"({_CODE_SEG}(?:\.{_CODE_SEG})*)\s+Sub\s+Analysis\s+no\.?\s+.+?"
+    rf"({_UNITS})\s+([\d\.]+)\s+([\d,\.]+)\s+([\d,\.]+)",
     re.S | re.I,
 )
 
@@ -91,7 +117,7 @@ def _join_wrapped_lines(block: str) -> list[str]:
 
 
 def _parse_basis(block: str) -> tuple[float, str]:
-    m = re.search(r"Details?\s+of\s+costs?\s+for", block, re.I)
+    m = re.search(r"Details?\s+of\s+costs?\s+(?:of|for)", block, re.I)
     if not m:
         return 1.0, "nos"
     window = block[m.end():m.end() + 150]
@@ -114,12 +140,26 @@ def extract_chapter(ch: int, pdf_path: Path) -> list:
     )
 
     ch_s = str(ch)
-    seg_pat = re.compile(rf"(?m)^({re.escape(ch_s)}\.\d+(?:\.\d+)*)\s+(.+?)$")
+    seg_pat = re.compile(rf"(?m)^({re.escape(ch_s)}\.{_CODE_SEG}(?:\.{_CODE_SEG})*)\s+(.+?)$")
 
-    segments = [
-        m for m in seg_pat.finditer(full)
-        if not _CROSS_REF_DESC.match(m.group(2))
-    ]
+    # A genuine item header's description usually starts with an upper-case
+    # word (DAR phrasing convention: "Providing...", "Extra for...", etc.), and
+    # a line that merely *starts* with a chapter-shaped number by coincidence
+    # (a wrapped dimension calculation like "7.00 x 24 cm x24 cm...") is always
+    # lower-case and must be rejected, or it corrupts real item boundaries
+    # around it. But a handful of genuine items ARE lower-case in the source
+    # (e.g. "6.12.2 cement mortar 1:4...") - for those, require the item's own
+    # "Details of cost..." line to appear shortly after, which a stray
+    # mid-sentence fragment never has.
+    def _accept(m: re.Match) -> bool:
+        if _CROSS_REF_DESC.match(m.group(2)):
+            return False
+        if not m.group(2).lstrip("( ")[:1].islower():
+            return True
+        lookahead = full[m.end():m.end() + 200]
+        return bool(re.search(r"Details?\s+of\s+costs?\s+(?:of|for)", lookahead, re.I))
+
+    segments = [m for m in seg_pat.finditer(full) if _accept(m)]
 
     results = []
     for idx, m in enumerate(segments):
@@ -129,10 +169,10 @@ def extract_chapter(ch: int, pdf_path: Path) -> list:
         end_pos = segments[idx + 1].start() if idx + 1 < len(segments) else len(full)
         block = full[start_pos:end_pos]
 
-        say_m = re.search(r"\bSay\s+([\d,]+\.?\d*)", block)
-        if not say_m:
+        say_ms = list(re.finditer(r"\bSay\s+([\d,]+\.?\d*)", block))
+        if not say_ms:
             continue
-        say = float(say_m.group(1).replace(",", ""))
+        say = float(say_ms[-1].group(1).replace(",", ""))
 
         basis, unit = _parse_basis(block)
 
@@ -142,6 +182,15 @@ def extract_chapter(ch: int, pdf_path: Path) -> list:
             resources.append({
                 "code": rm.group(1),
                 "desc": f"Rate as per SH: {rm.group(1)}",
+                "unit": rm.group(2),
+                "qty": float(rm.group(3)),
+                "rate": float(rm.group(4).replace(",", "")),
+            })
+
+        for rm in _REF_PAT_SUBANALYSIS.finditer(block):
+            resources.append({
+                "code": rm.group(1),
+                "desc": f"Sub-analysis annexure: {rm.group(1)}",
                 "unit": rm.group(2),
                 "qty": float(rm.group(3)),
                 "rate": float(rm.group(4).replace(",", "")),
@@ -158,8 +207,6 @@ def extract_chapter(ch: int, pdf_path: Path) -> list:
                     "rate": float(rm.group(5).replace(",", "")),
                 })
 
-        # Continuation line: description spanned previous page (code already captured)
-        # Build full desc from lines before MATERIAL/LABOUR/Code headers
         desc_extra = []
         for ln in block.splitlines()[:5]:
             ln = ln.strip()
@@ -189,12 +236,12 @@ def save(ch: int, items: list):
 
 def main(argv=None):
     ap = argparse.ArgumentParser()
-    ap.add_argument("--chapter", type=int, help="Single chapter number (13-26)")
-    ap.add_argument("--all", action="store_true", help="Extract all chapters 13-26")
+    ap.add_argument("--chapter", type=int, help="Single chapter number (1, 3-12)")
+    ap.add_argument("--all", action="store_true", help="Extract all chapters (1, 3-12)")
     args = ap.parse_args(argv)
 
-    pdf = Path(PDF_CIVIL_DAR_VOL2)
-    chapters = list(range(13, 27)) if args.all else ([args.chapter] if args.chapter else [])
+    pdf = Path(PDF_CIVIL_DAR_VOL1)
+    chapters = ([1] + list(range(3, 13))) if args.all else ([args.chapter] if args.chapter else [])
     if not chapters:
         ap.print_help(); sys.exit(1)
 

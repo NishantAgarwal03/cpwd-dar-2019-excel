@@ -1,6 +1,7 @@
 [
   {
     "code": "13.1.1",
+    "desc": "1:4 (1 cement: 4 fine sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 266.85,
@@ -44,6 +45,7 @@
   },
   {
     "code": "13.1.2",
+    "desc": "1:6 (1 cement: 6 fine sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 254.25,
@@ -87,6 +89,7 @@
   },
   {
     "code": "13.2.1",
+    "desc": "1:4 (1 cement: 4 fine sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 307.9,
@@ -130,6 +133,7 @@
   },
   {
     "code": "13.2.2",
+    "desc": "1:6 (1 cement: 6 fine sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 292.85,
@@ -173,6 +177,7 @@
   },
   {
     "code": "13.3.1",
+    "desc": "1:4 (1 cement: 4 fine sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 365.25,
@@ -216,6 +221,7 @@
   },
   {
     "code": "13.3.2",
+    "desc": "1:6 (1 cement: 6 fine sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 345.65,
@@ -259,6 +265,7 @@
   },
   {
     "code": "13.4.1",
+    "desc": "1:4 (1 cement: 4 coarse sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 276.15,
@@ -302,6 +309,7 @@
   },
   {
     "code": "13.4.2",
+    "desc": "1:6 (1 cement: 6 coarse sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 263.55,
@@ -345,6 +353,7 @@
   },
   {
     "code": "13.5.1",
+    "desc": "1:4 (1 cement: 4 coarse sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 318.95,
@@ -388,6 +397,7 @@
   },
   {
     "code": "13.5.2",
+    "desc": "1:6 (1 cement: 6 coarse sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 303.9,
@@ -431,6 +441,7 @@
   },
   {
     "code": "13.6.1",
+    "desc": "1:4 (1 cement: 4 coarse sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 379.7,
@@ -474,6 +485,7 @@
   },
   {
     "code": "13.6.2",
+    "desc": "1:6 (1 cement: 6 coarse sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 360.1,
@@ -517,6 +529,7 @@
   },
   {
     "code": "13.7.1",
+    "desc": "1:3 (1 cement: 3 fine sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 340.85,
@@ -564,6 +577,13 @@
         "rate": 4940.0
       },
       {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.02,
+        "rate": 92.24
+      },
+      {
         "code": "0155",
         "desc": "Mason (average)",
         "unit": "day",
@@ -588,6 +608,7 @@
   },
   {
     "code": "13.7.2",
+    "desc": "1:4 (1 cement: 4 fine sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 328.25,
@@ -635,6 +656,13 @@
         "rate": 4940.0
       },
       {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.02,
+        "rate": 92.24
+      },
+      {
         "code": "0155",
         "desc": "Mason (average)",
         "unit": "day",
@@ -659,6 +687,7 @@
   },
   {
     "code": "13.8.1",
+    "desc": "1:3 (1 cement: 3 fine sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 384.35,
@@ -706,6 +735,13 @@
         "rate": 4940.0
       },
       {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.02,
+        "rate": 92.24
+      },
+      {
         "code": "0155",
         "desc": "Mason (average)",
         "unit": "day",
@@ -730,6 +766,7 @@
   },
   {
     "code": "13.8.2",
+    "desc": "1:4 (1 cement: 4 fine sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 369.3,
@@ -777,6 +814,13 @@
         "rate": 4940.0
       },
       {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.02,
+        "rate": 92.24
+      },
+      {
         "code": "0155",
         "desc": "Mason (average)",
         "unit": "day",
@@ -801,6 +845,7 @@
   },
   {
     "code": "13.9.1",
+    "desc": "12 mm cement plaster",
     "unit": "sqm",
     "basis": 10.0,
     "say": 350.15,
@@ -848,6 +893,13 @@
         "rate": 4940.0
       },
       {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.02,
+        "rate": 92.24
+      },
+      {
         "code": "0155",
         "desc": "Mason (average)",
         "unit": "day",
@@ -872,6 +924,7 @@
   },
   {
     "code": "13.9.2",
+    "desc": "20 mm cement plaster",
     "unit": "sqm",
     "basis": 10.0,
     "say": 460.7,
@@ -919,6 +972,13 @@
         "rate": 4940.0
       },
       {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.02,
+        "rate": 92.24
+      },
+      {
         "code": "0155",
         "desc": "Mason (average)",
         "unit": "day",
@@ -943,6 +1003,7 @@
   },
   {
     "code": "13.10",
+    "desc": "15 mm cement plaster 1:3 (1 cement: 3 coarse sand) finished with a floating coat of neat cement on the rough side of single or half brick wa",
     "unit": "sqm",
     "basis": 10.0,
     "say": 395.4,
@@ -990,6 +1051,13 @@
         "rate": 4940.0
       },
       {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.02,
+        "rate": 92.24
+      },
+      {
         "code": "0155",
         "desc": "Mason (average)",
         "unit": "day",
@@ -1014,6 +1082,7 @@
   },
   {
     "code": "13.11",
+    "desc": "18 mm cement plaster in two coats under layer 12 mm thick cement plaster 1:5 (1 cement : 5 coarse sand) finished with a top layer 6 mm thick",
     "unit": "sqm",
     "basis": 10.0,
     "say": 399.3,
@@ -1064,6 +1133,7 @@
   },
   {
     "code": "13.12",
+    "desc": "18 mm cement plaster in two coats under layer 12 mm thick cement plaster 1:5 (1 cement : 5 coarse sand) and a top layer 6 mm thick cement pl",
     "unit": "sqm",
     "basis": 10.0,
     "say": 416.55,
@@ -1114,6 +1184,7 @@
   },
   {
     "code": "13.13",
+    "desc": "12 mm cement plaster 1:2 (1 cement : 2 stone dust).",
     "unit": "sqm",
     "basis": 10.0,
     "say": 297.3,
@@ -1157,6 +1228,7 @@
   },
   {
     "code": "13.14",
+    "desc": "15 mm cement plaster 1:2 (1 cement : 2 stone dust) on the rough side of single or half brick wall.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 344.25,
@@ -1200,6 +1272,7 @@
   },
   {
     "code": "13.15",
+    "desc": "20 mm cement plaster 1:2 (1 cement : 2 stone dust).",
     "unit": "sqm",
     "basis": 10.0,
     "say": 412.6,
@@ -1243,6 +1316,7 @@
   },
   {
     "code": "13.16.1",
+    "desc": "1:3 (1 cement : 3 fine sand)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 227.35,
@@ -1277,6 +1351,13 @@
       },
       {
         "code": "9999",
+        "desc": "Extra for removing burrs, cleaning with wire brushes, pock making with pointed tool etc. complete.",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
         "desc": "Scaffolding and sundries",
         "unit": "L.S.",
         "qty": 11.7,
@@ -1286,6 +1367,7 @@
   },
   {
     "code": "13.17",
+    "desc": "6 mm cement plaster 1:3 (1 cement : 3 fine sand) finished with a floating coat of neat cement and thick coat of Lime wash on top of walls wh",
     "unit": "sqm",
     "basis": 10.0,
     "say": 301.65,
@@ -1320,6 +1402,13 @@
       },
       {
         "code": "9999",
+        "desc": "Extra for removing burrs, cleaning with wire brushes, pock making with pointed tool etc. complete.",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
         "desc": "Scaffolding and sundries",
         "unit": "L.S.",
         "qty": 11.7,
@@ -1331,6 +1420,13 @@
         "unit": "tonne",
         "qty": 0.02,
         "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.02,
+        "rate": 92.24
       },
       {
         "code": "0155",
@@ -1392,6 +1488,7 @@
   },
   {
     "code": "13.18",
+    "desc": "Neat cement punning.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 62.75,
@@ -1402,6 +1499,13 @@
         "unit": "tonne",
         "qty": 0.022,
         "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.022,
+        "rate": 92.24
       },
       {
         "code": "0155",
@@ -1428,6 +1532,7 @@
   },
   {
     "code": "13.19.1",
+    "desc": "Ordinary cement finish using ordinary cement",
     "unit": "sqm",
     "basis": 10.0,
     "say": 681.1,
@@ -1503,6 +1608,13 @@
         "rate": 2.0
       },
       {
+        "code": "1179",
+        "desc": "Crushed stone 2.36 mm to 12.5 mm size",
+        "unit": "cum",
+        "qty": 0.1,
+        "rate": 900.0
+      },
+      {
         "code": "0101",
         "desc": "Bhisti",
         "unit": "day",
@@ -1562,6 +1674,7 @@
   },
   {
     "code": "13.20",
+    "desc": "Pebble dash plaster upto 10 m height above ground level with a mixture of washed pebble or crushed stone 6 mm to 12.5 mm nominal size, dashe",
     "unit": "sqm",
     "basis": 10.0,
     "say": 638.95,
@@ -1637,6 +1750,13 @@
         "rate": 2.0
       },
       {
+        "code": "1179",
+        "desc": "Crushed stone 2.36 mm to 12.5 mm size",
+        "unit": "cum",
+        "qty": 0.1,
+        "rate": 900.0
+      },
+      {
         "code": "0101",
         "desc": "Bhisti",
         "unit": "day",
@@ -1689,10 +1809,18 @@
   },
   {
     "code": "13.21",
-    "unit": "sqm",
-    "basis": 1.0,
+    "desc": "Extra for providing and mixing water proofing material in cement plaster work in proportion recommended by the manufacturers.",
+    "unit": "mm",
+    "basis": 12.0,
     "say": 59.75,
     "resources": [
+      {
+        "code": "1213",
+        "desc": "Water proofing materials",
+        "unit": "kilogram",
+        "qty": 1.48,
+        "rate": 35.0
+      },
       {
         "code": "9999",
         "desc": "Sundries",
@@ -1704,6 +1832,7 @@
   },
   {
     "code": "13.22",
+    "desc": "Extra for plastering exterior walls of height more than 10 m from ground level for every additional height of 3 m or part thereof.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 65.95,
@@ -1747,6 +1876,7 @@
   },
   {
     "code": "13.23.1",
+    "desc": "In one coat",
     "unit": "sqm",
     "basis": 10.0,
     "say": 35.8,
@@ -1776,6 +1906,7 @@
   },
   {
     "code": "13.23.2",
+    "desc": "In two coats",
     "unit": "sqm",
     "basis": 10.0,
     "say": 54.45,
@@ -1805,6 +1936,7 @@
   },
   {
     "code": "13.24.1",
+    "desc": "In one coat",
     "unit": "sqm",
     "basis": 10.0,
     "say": 532.75,
@@ -1848,6 +1980,7 @@
   },
   {
     "code": "13.24.2",
+    "desc": "In two coats",
     "unit": "sqm",
     "basis": 10.0,
     "say": 878.4,
@@ -1891,6 +2024,7 @@
   },
   {
     "code": "13.25.1",
+    "desc": "Spherical ceiling",
     "unit": "sqm",
     "basis": 10.0,
     "say": 133.6,
@@ -1920,6 +2054,7 @@
   },
   {
     "code": "13.25.2",
+    "desc": "Groined ceiling",
     "unit": "sqm",
     "basis": 10.0,
     "say": 144.75,
@@ -1949,6 +2084,7 @@
   },
   {
     "code": "13.25.3",
+    "desc": "Flewing soffits",
     "unit": "sqm",
     "basis": 10.0,
     "say": 88.35,
@@ -1978,16 +2114,31 @@
   },
   {
     "code": "13.26",
+    "desc": "Providing and applying plaster of paris putty of 2 mm thickness over plastered surface to prepare the surface even and smooth complete.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 196.7,
     "resources": [
+      {
+        "code": "0869",
+        "desc": "Plaster of Paris",
+        "unit": "kilogram",
+        "qty": 23.0,
+        "rate": 5.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of plaster of paris",
         "unit": "L.S.",
         "qty": 3.9,
         "rate": 2.0
+      },
+      {
+        "code": "0122",
+        "desc": "Mason (for plaster of paris work) 1st class",
+        "unit": "day",
+        "qty": 0.91,
+        "rate": 738.0
       },
       {
         "code": "0114",
@@ -2007,6 +2158,7 @@
   },
   {
     "code": "13.27",
+    "desc": "Extra for lining out plaster to imitate stone or concrete blocks walling.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 85.25,
@@ -2036,6 +2188,7 @@
   },
   {
     "code": "13.28.1",
+    "desc": "Flush Band",
     "unit": "metre",
     "basis": 10.0,
     "say": 5.7,
@@ -2079,6 +2232,7 @@
   },
   {
     "code": "13.28.2",
+    "desc": "Sunk Band",
     "unit": "metre",
     "basis": 10.0,
     "say": 6.2,
@@ -2122,6 +2276,7 @@
   },
   {
     "code": "13.28.3",
+    "desc": "Raised Band",
     "unit": "metre",
     "basis": 10.0,
     "say": 7.1,
@@ -2165,6 +2320,7 @@
   },
   {
     "code": "13.28.4",
+    "desc": "Moulded Band",
     "unit": "metre",
     "basis": 10.0,
     "say": 12.15,
@@ -2208,6 +2364,7 @@
   },
   {
     "code": "13.29.1",
+    "desc": "Flush Band",
     "unit": "metre",
     "basis": 10.0,
     "say": 6.9,
@@ -2251,6 +2408,7 @@
   },
   {
     "code": "13.29.2",
+    "desc": "Sunk Band",
     "unit": "metre",
     "basis": 10.0,
     "say": 7.6,
@@ -2294,6 +2452,7 @@
   },
   {
     "code": "13.29.3",
+    "desc": "Raised Band",
     "unit": "metre",
     "basis": 10.0,
     "say": 8.7,
@@ -2337,6 +2496,7 @@
   },
   {
     "code": "13.29.3",
+    "desc": "Raised Band",
     "unit": "metre",
     "basis": 10.0,
     "say": 8.7,
@@ -2380,6 +2540,7 @@
   },
   {
     "code": "13.29.4",
+    "desc": "Moulded Band",
     "unit": "metre",
     "basis": 10.0,
     "say": 16.25,
@@ -2423,6 +2584,7 @@
   },
   {
     "code": "13.30",
+    "desc": "18 mm thick moulded cement mortar band in two coats under layer 12 mm thick with cement mortar 1:5 (1 cement : 5 coarse sand) top layer 6 mm",
     "unit": "metre",
     "basis": 10.0,
     "say": 16.2,
@@ -2473,6 +2635,7 @@
   },
   {
     "code": "13.31.1",
+    "desc": "Flush / Ruled/ Struck or weathered pointing",
     "unit": "sqm",
     "basis": 10.0,
     "say": 191.55,
@@ -2511,11 +2674,19 @@
         "unit": "L.S.",
         "qty": 7.15,
         "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and racking out joints including sundries",
+        "unit": "L.S.",
+        "qty": 14.3,
+        "rate": 2.0
       }
     ]
   },
   {
     "code": "13.31.2",
+    "desc": "Raised and cut pointing",
     "unit": "sqm",
     "basis": 10.0,
     "say": 313.8,
@@ -2554,11 +2725,19 @@
         "unit": "L.S.",
         "qty": 7.15,
         "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and racking out joints including sundries",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
       }
     ]
   },
   {
     "code": "13.32.1",
+    "desc": "Flush/ Ruled/ Struck or weathered pointing",
     "unit": "sqm",
     "basis": 10.0,
     "say": 260.9,
@@ -2597,11 +2776,19 @@
         "unit": "day",
         "qty": 1.28,
         "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and racking out joints including sundries",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
       }
     ]
   },
   {
     "code": "13.33.1",
+    "desc": "Flush/ Ruled pointing",
     "unit": "sqm",
     "basis": 10.0,
     "say": 285.4,
@@ -2640,11 +2827,19 @@
         "unit": "day",
         "qty": 0.93,
         "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and racking out joints including sundries",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
       }
     ]
   },
   {
     "code": "13.33.2",
+    "desc": "Raised and cut pointing",
     "unit": "sqm",
     "basis": 10.0,
     "say": 520.75,
@@ -2683,11 +2878,19 @@
         "unit": "day",
         "qty": 1.0,
         "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and racking out joints including sundries",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
       }
     ]
   },
   {
     "code": "13.34",
+    "desc": "Raised and cut pointing on stone work in white cement mortar 1:3 (1 white cement : 3 marble dust).",
     "unit": "sqm",
     "basis": 10.0,
     "say": 538.25,
@@ -2726,11 +2929,19 @@
         "unit": "day",
         "qty": 1.0,
         "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and racking out joints including sundries",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
       }
     ]
   },
   {
     "code": "13.35.1",
+    "desc": "Flush/ Ruled pointing",
     "unit": "sqm",
     "basis": 10.0,
     "say": 159.0,
@@ -2762,11 +2973,19 @@
         "unit": "day",
         "qty": 0.59,
         "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and racking out joints including sundries",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
       }
     ]
   },
   {
     "code": "13.36",
+    "desc": "Extra for pointing on walls on the outside at height more than 10 m from ground level for every additional height of 3 m or part there of.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 7.15,
@@ -2789,6 +3008,7 @@
   },
   {
     "code": "13.37.1",
+    "desc": "New work (three or more coats)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 28.55,
@@ -2832,6 +3052,7 @@
   },
   {
     "code": "13.38",
+    "desc": "Satna lime wash on walls with one coat.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 11.5,
@@ -2875,6 +3096,7 @@
   },
   {
     "code": "13.39.1",
+    "desc": "New work (two or more coats) with a base coat of white washing with lime",
     "unit": "sqm",
     "basis": 10.0,
     "say": 38.95,
@@ -2925,6 +3147,7 @@
   },
   {
     "code": "13.39.2",
+    "desc": "New work (two or more coats) with a base coat of whiting",
     "unit": "sqm",
     "basis": 10.0,
     "say": 38.5,
@@ -2975,16 +3198,31 @@
   },
   {
     "code": "13.40",
+    "desc": "Distempering with dry distemper of approved brand and manufacture (two or more coats) of required shade on new work, over and including wate",
     "unit": "sqm",
     "basis": 10.0,
     "say": 117.75,
     "resources": [
+      {
+        "code": "0808",
+        "desc": "Water thinnable cement primer for interior wall surface, having VOC content less than 50 gms/lit.",
+        "unit": "litre",
+        "qty": 0.7,
+        "rate": 50.0
+      },
       {
         "code": "9999",
         "desc": "Putty, glue etc",
         "unit": "L.S.",
         "qty": 2.73,
         "rate": 2.0
+      },
+      {
+        "code": "0815",
+        "desc": "Dry distemper",
+        "unit": "kilogram",
+        "qty": 1.5,
+        "rate": 30.0
       },
       {
         "code": "9977",
@@ -3025,10 +3263,18 @@
   },
   {
     "code": "13.41.1",
+    "desc": "New work (two or more coats) over and including water thinnable priming coat with cement primer",
     "unit": "sqm",
     "basis": 10.0,
     "say": 153.45,
     "resources": [
+      {
+        "code": "0808",
+        "desc": "Water thinnable cement primer for interior wall surface, having VOC content less than 50 gms/lit.",
+        "unit": "litre",
+        "qty": 0.7,
+        "rate": 50.0
+      },
       {
         "code": "9999",
         "desc": "Brushes, putty etc",
@@ -3044,10 +3290,24 @@
         "rate": 2.0
       },
       {
+        "code": "0816",
+        "desc": "Ist quality Acrylic distemper(Ready mix) having VOC content less than 50 grams/ litre",
+        "unit": "kilogram",
+        "qty": 1.5,
+        "rate": 50.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of material",
         "unit": "L.S.",
         "qty": 4.42,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper and putty for filling holes",
+        "unit": "L.S.",
+        "qty": 11.7,
         "rate": 2.0
       },
       {
@@ -3075,15 +3335,30 @@
   },
   {
     "code": "13.42.1",
+    "desc": "Two or more coats on new work",
     "unit": "sqm",
     "basis": 10.0,
     "say": 87.15,
     "resources": [
       {
+        "code": "0816",
+        "desc": "Oil bound washable distemper/ Acrylic distemper",
+        "unit": "kilogram",
+        "qty": 1.5,
+        "rate": 50.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of material",
         "unit": "L.S.",
         "qty": 4.42,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Brushes, sand paper and putty for filling holes",
+        "unit": "L.S.",
+        "qty": 11.57,
         "rate": 2.0
       },
       {
@@ -3111,10 +3386,18 @@
   },
   {
     "code": "13.43.1",
+    "desc": "Water thinnable cement primer",
     "unit": "sqm",
     "basis": 10.0,
     "say": 60.0,
     "resources": [
+      {
+        "code": "0808",
+        "desc": "Water thinnable cement primer for interior wall surface, having VOC content less than 50 gms/lit.",
+        "unit": "litre",
+        "qty": 0.7,
+        "rate": 50.0
+      },
       {
         "code": "9999",
         "desc": "Brushes, putty etc",
@@ -3147,10 +3430,18 @@
   },
   {
     "code": "13.44.1",
+    "desc": "New work (Two or more coats applied @ 3.84 kg/10 sqm)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 91.25,
     "resources": [
+      {
+        "code": "0851",
+        "desc": "Water proofing cement paint",
+        "unit": "kilogram",
+        "qty": 3.84,
+        "rate": 38.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",
@@ -3197,6 +3488,7 @@
   },
   {
     "code": "13.45.1",
+    "desc": "New work (Two or more coats applied @ 3.28 ltr/10 sqm) over and including priming coat of exterior primer applied @ 2.20kg/10 sqm",
     "unit": "sqm",
     "basis": 10.0,
     "say": 232.0,
@@ -3207,6 +3499,13 @@
         "unit": "litre",
         "qty": 3.28,
         "rate": 240.0
+      },
+      {
+        "code": "0809",
+        "desc": "Exterior primer",
+        "unit": "kilogram",
+        "qty": 2.2,
+        "rate": 140.0
       },
       {
         "code": "9977",
@@ -3254,6 +3553,7 @@
   },
   {
     "code": "13.46.1",
+    "desc": "New work (Two or more coat applied @ 1.67 ltr/10 sqm over and including priming coat of exterior primer applied @ 2.20 kg/10 sqm)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 164.7,
@@ -3264,6 +3564,13 @@
         "unit": "litre",
         "qty": 1.67,
         "rate": 170.0
+      },
+      {
+        "code": "0809",
+        "desc": "Exterior Primer",
+        "unit": "Kg",
+        "qty": 2.2,
+        "rate": 140.0
       },
       {
         "code": "9977",
@@ -3311,6 +3618,7 @@
   },
   {
     "code": "13.47.1",
+    "desc": "New work (Two or more coats applied @ 1.43 ltr/10 sqm over and including priming coat of exterior primer applied @ 2.20 kg/10 sqm)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 161.15,
@@ -3321,6 +3629,13 @@
         "unit": "litre",
         "qty": 1.43,
         "rate": 180.0
+      },
+      {
+        "code": "0809",
+        "desc": "Exterior primer",
+        "unit": "kilogram",
+        "qty": 2.2,
+        "rate": 140.0
       },
       {
         "code": "9977",
@@ -3368,6 +3683,7 @@
   },
   {
     "code": "13.48.1",
+    "desc": "Two or more coats applied on walls @ 1.25 ltr/10 sqm over and including one coat of Special primer applied @ 0.75 ltr /10 sqm",
     "unit": "sqm",
     "basis": 10.0,
     "say": 142.2,
@@ -3432,6 +3748,7 @@
   },
   {
     "code": "13.48.2",
+    "desc": "Painting wood work with Deluxe Multi Surface Paint of required shade. Two or more coat applied @ 0.90 ltr/10 sqm over an under coat of prime",
     "unit": "sqm",
     "basis": 10.0,
     "say": 130.25,
@@ -3496,6 +3813,7 @@
   },
   {
     "code": "13.48.3",
+    "desc": "Painting Steel work with Deluxe Multi Surface Paint to give an even shade. Two or more coat applied @ 0.90 ltr/10 sqm over an under coat of ",
     "unit": "sqm",
     "basis": 10.0,
     "say": 125.8,
@@ -3557,6 +3875,13 @@
         "rate": 2.0
       },
       {
+        "code": "0836",
+        "desc": "100% Premium acrylic dirt resistance, Silicone additives exterior paint",
+        "unit": "litre",
+        "qty": 1.43,
+        "rate": 270.0
+      },
+      {
         "code": "0837",
         "desc": "Acrylic Exterior Primer",
         "unit": "litre",
@@ -3597,18 +3922,12 @@
         "unit": "L.S.",
         "qty": 8.06,
         "rate": 2.0
-      },
-      {
-        "code": "ITEM",
-        "desc": "Silicone additives exterior paint",
-        "unit": "litre",
-        "qty": 1.43,
-        "rate": 270.0
       }
     ]
   },
   {
     "code": "13.50.1",
+    "desc": "With ready mixed pink or Grey primer of approved brand and manufacture on wood work (hard and soft wood)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 57.05,
@@ -3666,10 +3985,18 @@
   },
   {
     "code": "13.50.2",
+    "desc": "With ready mixed aluminium primer of approved brand and manufacture on resinous wood and plywood",
     "unit": "sqm",
     "basis": 10.0,
     "say": 57.55,
     "resources": [
+      {
+        "code": "4201",
+        "desc": "Aluminium primer",
+        "unit": "litre",
+        "qty": 0.75,
+        "rate": 110.0
+      },
       {
         "code": "9999",
         "desc": "Putty",
@@ -3716,10 +4043,18 @@
   },
   {
     "code": "13.50.3",
+    "desc": "With ready mixed red oxide zinc chromate primer of approved brand and manufacture on steel galvanised iron/ steel works",
     "unit": "sqm",
     "basis": 10.0,
     "say": 50.7,
     "resources": [
+      {
+        "code": "4202",
+        "desc": "Red oxide Zinc chromate primer",
+        "unit": "litre",
+        "qty": 0.54,
+        "rate": 110.0
+      },
       {
         "code": "9977",
         "desc": "Carriage",
@@ -3752,10 +4087,18 @@
   },
   {
     "code": "13.50.4",
+    "desc": "With ready mixed red oxide zinc chromate primer of approved brand and manufacture on steel work (second coat)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 27.2,
     "resources": [
+      {
+        "code": "4202",
+        "desc": "Red oxide Zinc chromate primer",
+        "unit": "litre",
+        "qty": 0.36,
+        "rate": 110.0
+      },
       {
         "code": "9977",
         "desc": "Carriage",
@@ -3788,6 +4131,7 @@
   },
   {
     "code": "13.51.1",
+    "desc": "One coat",
     "unit": "sqm",
     "basis": 10.0,
     "say": 81.2,
@@ -3845,6 +4189,7 @@
   },
   {
     "code": "13.51.2",
+    "desc": "Two coats",
     "unit": "sqm",
     "basis": 10.0,
     "say": 129.05,
@@ -3902,10 +4247,18 @@
   },
   {
     "code": "13.52.1",
+    "desc": "On steel work",
     "unit": "sqm",
     "basis": 10.0,
     "say": 189.75,
     "resources": [
+      {
+        "code": "4202",
+        "desc": "Red oxide Zinc chromate primer",
+        "unit": "litre",
+        "qty": 0.75,
+        "rate": 110.0
+      },
       {
         "code": "9999",
         "desc": "Putty",
@@ -3949,6 +4302,13 @@
         "rate": 2.0
       },
       {
+        "code": "7239",
+        "desc": "Epoxy paint",
+        "unit": "litre",
+        "qty": 1.25,
+        "rate": 230.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of material",
         "unit": "L.S.",
@@ -3987,6 +4347,7 @@
   },
   {
     "code": "13.52.2",
+    "desc": "On concrete work",
     "unit": "sqm",
     "basis": 10.0,
     "say": 189.4,
@@ -4041,6 +4402,13 @@
         "rate": 2.0
       },
       {
+        "code": "7239",
+        "desc": "Epoxy paint",
+        "unit": "litre",
+        "qty": 1.21,
+        "rate": 230.0
+      },
+      {
         "code": "9999",
         "desc": "Materials for filling in holes and cracks",
         "unit": "L.S.",
@@ -4086,10 +4454,18 @@
   },
   {
     "code": "13.53.1",
+    "desc": "New work (two or more coats) including a coat of approved steel primer but excluding a coat of mordant solution",
     "unit": "sqm",
     "basis": 10.0,
     "say": 138.0,
     "resources": [
+      {
+        "code": "4202",
+        "desc": "Red oxide Zinc chromate primer",
+        "unit": "litre",
+        "qty": 0.36,
+        "rate": 110.0
+      },
       {
         "code": "9977",
         "desc": "Carriage",
@@ -4117,6 +4493,13 @@
         "unit": "L.S.",
         "qty": 7.15,
         "rate": 2.0
+      },
+      {
+        "code": "0834",
+        "desc": "Synthetic enamel paint in all shades except black or chocolate shade",
+        "unit": "litre",
+        "qty": 0.8,
+        "rate": 160.0
       },
       {
         "code": "9977",
@@ -4157,10 +4540,18 @@
   },
   {
     "code": "13.54.1",
+    "desc": "With a solution of 38 gms of copper acetate in a litre of soft water",
     "unit": "sqm",
     "basis": 25.0,
     "say": 48.25,
     "resources": [
+      {
+        "code": "4203",
+        "desc": "Copper acetate",
+        "unit": "kilogram",
+        "qty": 0.038,
+        "rate": 285.0
+      },
       {
         "code": "9999",
         "desc": "Soft Water",
@@ -4207,10 +4598,39 @@
   },
   {
     "code": "13.54.2",
+    "desc": "With a solution made of 13 gms of hydrochloric acid in a solution of 13 gms each of copper chloride, copper nitrate and ammonium chloride di",
     "unit": "sqm",
     "basis": 25.0,
     "say": 48.05,
     "resources": [
+      {
+        "code": "4204",
+        "desc": "Hydrochloric acid",
+        "unit": "kilogram",
+        "qty": 0.013,
+        "rate": 33.0
+      },
+      {
+        "code": "4205",
+        "desc": "Copper chloride",
+        "unit": "kilogram",
+        "qty": 0.013,
+        "rate": 270.0
+      },
+      {
+        "code": "4206",
+        "desc": "Copper nitrate",
+        "unit": "kilogram",
+        "qty": 0.013,
+        "rate": 210.0
+      },
+      {
+        "code": "4207",
+        "desc": "Ammonium chloride",
+        "unit": "kilogram",
+        "qty": 0.013,
+        "rate": 20.0
+      },
       {
         "code": "9999",
         "desc": "Soft Water",
@@ -4257,10 +4677,18 @@
   },
   {
     "code": "13.55.1",
+    "desc": "100 mm diameter pipes",
     "unit": "mtrs",
     "basis": 30.0,
     "say": 58.15,
     "resources": [
+      {
+        "code": "4202",
+        "desc": "Red oxide Zinc chromate primer",
+        "unit": "litre",
+        "qty": 0.54,
+        "rate": 110.0
+      },
       {
         "code": "9977",
         "desc": "Carriage",
@@ -4349,10 +4777,18 @@
   },
   {
     "code": "13.55.2",
+    "desc": "150 mm diameter pipes",
     "unit": "mtrs",
     "basis": 30.0,
     "say": 86.7,
     "resources": [
+      {
+        "code": "4202",
+        "desc": "Red oxide Zinc chromate primer",
+        "unit": "litre",
+        "qty": 0.8,
+        "rate": 110.0
+      },
       {
         "code": "0131",
         "desc": "Painter",
@@ -4441,10 +4877,18 @@
   },
   {
     "code": "13.56.1",
+    "desc": "100 mm diameter pipes",
     "unit": "mtrs",
     "basis": 30.0,
     "say": 63.7,
     "resources": [
+      {
+        "code": "4202",
+        "desc": "Red oxide Zinc chromate primer",
+        "unit": "litre",
+        "qty": 0.54,
+        "rate": 110.0
+      },
       {
         "code": "9977",
         "desc": "Carriage",
@@ -4472,6 +4916,13 @@
         "unit": "L.S.",
         "qty": 10.79,
         "rate": 2.0
+      },
+      {
+        "code": "0833",
+        "desc": "Synthetic enamel paint in black or chocolate shade",
+        "unit": "litre",
+        "qty": 1.16,
+        "rate": 170.0
       },
       {
         "code": "9977",
@@ -4526,10 +4977,18 @@
   },
   {
     "code": "13.56.2",
+    "desc": "150 mm diameter pipes",
     "unit": "mtrs",
     "basis": 30.0,
     "say": 94.85,
     "resources": [
+      {
+        "code": "4202",
+        "desc": "Red oxide Zinc chromate primer",
+        "unit": "litre",
+        "qty": 0.8,
+        "rate": 110.0
+      },
       {
         "code": "9977",
         "desc": "Carriage",
@@ -4557,6 +5016,13 @@
         "unit": "L.S.",
         "qty": 15.99,
         "rate": 2.0
+      },
+      {
+        "code": "0833",
+        "desc": "Synthetic enamel paint in black or chocolate shade",
+        "unit": "litre",
+        "qty": 1.72,
+        "rate": 170.0
       },
       {
         "code": "9977",
@@ -4611,6 +5077,7 @@
   },
   {
     "code": "13.57.1",
+    "desc": "New work (two or more coats)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 44.5,
@@ -4661,10 +5128,18 @@
   },
   {
     "code": "13.58",
+    "desc": "Providing and applying two coats of fire retardant paint on cleaned wood / ply surface @ 3.5 sqm per litre per coat including preparation of",
     "unit": "sqm",
     "basis": 10.0,
     "say": 292.0,
     "resources": [
+      {
+        "code": "7240",
+        "desc": "Fire retardant paint",
+        "unit": "litre",
+        "qty": 5.7,
+        "rate": 260.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",
@@ -4704,6 +5179,7 @@
   },
   {
     "code": "13.59",
+    "desc": "Coal tarring two coats on new work using 0.16 Litre and 0.12 litre coal tar per sqm in the first coat and second coat respectively.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 50.3,
@@ -4761,6 +5237,7 @@
   },
   {
     "code": "13.60.1",
+    "desc": "Two or more coats on new work",
     "unit": "sqm",
     "basis": 10.0,
     "say": 128.65,
@@ -4771,6 +5248,13 @@
         "unit": "litre",
         "qty": 1.21,
         "rate": 200.0
+      },
+      {
+        "code": "9999",
+        "desc": "For filling holes and cracks with putty etc",
+        "unit": "L.S.",
+        "qty": 6.76,
+        "rate": 2.0
       },
       {
         "code": "9977",
@@ -4811,10 +5295,18 @@
   },
   {
     "code": "13.61.1",
+    "desc": "Two or more coats on new work",
     "unit": "sqm",
     "basis": 10.0,
     "say": 121.55,
     "resources": [
+      {
+        "code": "0833",
+        "desc": "Synthetic enamel paint in black or chocolate shade",
+        "unit": "litre",
+        "qty": 1.16,
+        "rate": 170.0
+      },
       {
         "code": "9999",
         "desc": "For filling holes and cracks with putty etc",
@@ -4861,6 +5353,7 @@
   },
   {
     "code": "13.62.1",
+    "desc": "Two or more coats on new work over an under coat of suitable shade with ordinary paint of approved brand and manufacture",
     "unit": "sqm",
     "basis": 10.0,
     "say": 177.15,
@@ -4915,6 +5408,13 @@
         "rate": 2.0
       },
       {
+        "code": "0833",
+        "desc": "Synthetic enamel paint in black or chocolate shade",
+        "unit": "litre",
+        "qty": 1.16,
+        "rate": 170.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of paint and material",
         "unit": "L.S.",
@@ -4953,6 +5453,7 @@
   },
   {
     "code": "13.63.1",
+    "desc": "Two or more coats on new work",
     "unit": "sqm",
     "basis": 10.0,
     "say": 112.25,
@@ -5010,6 +5511,7 @@
   },
   {
     "code": "13.64.1",
+    "desc": "Two or more coats on new work",
     "unit": "sqm",
     "basis": 10.0,
     "say": 130.05,
@@ -5067,6 +5569,7 @@
   },
   {
     "code": "13.65.1",
+    "desc": "Two or more coats on new work",
     "unit": "sqm",
     "basis": 10.0,
     "say": 106.05,
@@ -5117,10 +5620,18 @@
   },
   {
     "code": "13.66.1",
+    "desc": "Two or more coats on new work",
     "unit": "sqm",
     "basis": 10.0,
     "say": 144.65,
     "resources": [
+      {
+        "code": "0831",
+        "desc": "Floor enamel paint in all shades except green",
+        "unit": "litre",
+        "qty": 1.48,
+        "rate": 250.0
+      },
       {
         "code": "9977",
         "desc": "Carriage",
@@ -5167,6 +5678,7 @@
   },
   {
     "code": "13.67.1",
+    "desc": "Two or more coats of glue sizing with copal varnish over an under coat of flatting varnish",
     "unit": "sqm",
     "basis": 10.0,
     "say": 182.4,
@@ -5177,6 +5689,13 @@
         "unit": "litre",
         "qty": 0.7,
         "rate": 100.0
+      },
+      {
+        "code": "0763",
+        "desc": "Glue",
+        "unit": "kilogram",
+        "qty": 0.07,
+        "rate": 75.0
       },
       {
         "code": "0857",
@@ -5231,6 +5750,7 @@
   },
   {
     "code": "13.67.2",
+    "desc": "Two or more coats glue sizing with spar varnish or an under coat of flatting varnish",
     "unit": "sqm",
     "basis": 10.0,
     "say": 183.25,
@@ -5241,6 +5761,13 @@
         "unit": "litre",
         "qty": 0.7,
         "rate": 100.0
+      },
+      {
+        "code": "0763",
+        "desc": "Glue",
+        "unit": "kilogram",
+        "qty": 0.07,
+        "rate": 75.0
       },
       {
         "code": "0858",
@@ -5295,16 +5822,31 @@
   },
   {
     "code": "13.68.1",
+    "desc": "Two or more coats on new works including a coat of wood filler",
     "unit": "sqm",
     "basis": 10.0,
     "say": 351.15,
     "resources": [
+      {
+        "code": "1000",
+        "desc": "Spirit",
+        "unit": "litre",
+        "qty": 1.63,
+        "rate": 48.0
+      },
       {
         "code": "9999",
         "desc": "Pigment",
         "unit": "L.S.",
         "qty": 7.15,
         "rate": 2.0
+      },
+      {
+        "code": "0999",
+        "desc": "Shellac",
+        "unit": "kilogram",
+        "qty": 0.24,
+        "rate": 300.0
       },
       {
         "code": "9977",
@@ -5352,10 +5894,18 @@
   },
   {
     "code": "13.69.1",
+    "desc": "New work",
     "unit": "sqm",
     "basis": 10.0,
     "say": 150.9,
     "resources": [
+      {
+        "code": "0855",
+        "desc": "Wax polish (ready made)",
+        "unit": "kilogram",
+        "qty": 0.5,
+        "rate": 230.0
+      },
       {
         "code": "9977",
         "desc": "Carriage",
@@ -5395,10 +5945,18 @@
   },
   {
     "code": "13.70",
+    "desc": "Floor polishing on masonry or concrete floors with wax polish of approved brand and manufacture.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 72.85,
     "resources": [
+      {
+        "code": "0855",
+        "desc": "Wax polish (ready made)",
+        "unit": "kilogram",
+        "qty": 0.1,
+        "rate": 230.0
+      },
       {
         "code": "0131",
         "desc": "Painter",
@@ -5431,6 +5989,7 @@
   },
   {
     "code": "13.71",
+    "desc": "Lettering with black Japan paint of approved brand and manufacture",
     "unit": "letters",
     "basis": 100.0,
     "say": 4.7,
@@ -5481,6 +6040,7 @@
   },
   {
     "code": "13.72",
+    "desc": "Washed stone grit plaster on exterior walls height upto 10 metre above ground level, in two layers, under layer 12 mm cement plaster 1:4 (1 ",
     "unit": "sqm",
     "basis": 10.0,
     "say": 896.75,
@@ -5528,11 +6088,32 @@
         "rate": 4940.0
       },
       {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.02,
+        "rate": 92.24
+      },
+      {
         "code": "0114",
         "desc": "Beldar",
         "unit": "day",
         "qty": 0.25,
         "rate": 558.0
+      },
+      {
+        "code": "2911",
+        "desc": "Stone chippings/ screenings 10/ 11.2 mm nominal size",
+        "unit": "cum",
+        "qty": 0.14,
+        "rate": 1150.0
+      },
+      {
+        "code": "2202",
+        "desc": "Carriage of Stone aggregate below 40 mm nominal size",
+        "unit": "cum",
+        "qty": 0.14,
+        "rate": 103.77
       },
       {
         "code": "0982",
@@ -5542,11 +6123,25 @@
         "rate": 1350.0
       },
       {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 0.04,
+        "rate": 103.77
+      },
+      {
         "code": "0367",
         "desc": "Portland Cement (OPC-43 grade)",
         "unit": "tonne",
         "qty": 0.1,
         "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.1,
+        "rate": 92.24
       },
       {
         "code": "0114",
@@ -5564,10 +6159,38 @@
       },
       {
         "code": "9999",
+        "desc": "Hire and running charges of mechanical mixer",
+        "unit": "L.S.",
+        "qty": 4.29,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
         "desc": "Sundries",
         "unit": "L.S.",
         "qty": 2.08,
         "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "Day",
+        "qty": 1.75,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "Day",
+        "qty": 1.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "Day",
+        "qty": 0.3,
+        "rate": 617.0
       },
       {
         "code": "9999",
@@ -5575,6 +6198,20 @@
         "unit": "L.S.",
         "qty": 24.44,
         "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "Day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "Day",
+        "qty": 0.5,
+        "rate": 558.0
       },
       {
         "code": "9999",
@@ -5587,6 +6224,7 @@
   },
   {
     "code": "13.73.1",
+    "desc": "15 mm wide and 15 mm deep groove",
     "unit": "mtrs",
     "basis": 30.0,
     "say": 57.15,
@@ -5644,6 +6282,7 @@
   },
   {
     "code": "13.73.2",
+    "desc": "20 mm wide and 15 mm deep groove",
     "unit": "mtrs",
     "basis": 30.0,
     "say": 57.75,
@@ -5701,6 +6340,7 @@
   },
   {
     "code": "13.74",
+    "desc": "Extra for washed grit plaster on exterior walls of height more than 10 m from ground level for every additional height of 3 m or part thereo",
     "unit": "sqm",
     "basis": 10.0,
     "say": 129.65,
@@ -5744,6 +6384,7 @@
   },
   {
     "code": "13.75",
+    "desc": "Extra for washed stone grit plaster on circular work not exceeding 6 m in radius (in two coats).",
     "unit": "sqm",
     "basis": 10.0,
     "say": 101.1,
@@ -5773,10 +6414,18 @@
   },
   {
     "code": "13.76",
+    "desc": "Forming groove of uniform size from 12x12 mm and upto 25x15 mm in the top layer of washed stone grit plastered surface as per approved patte",
     "unit": "mtrs",
     "basis": 30.0,
     "say": 86.75,
     "resources": [
+      {
+        "code": "7306",
+        "desc": "Aluminium T or L sections",
+        "unit": "kilogram",
+        "qty": 6.96,
+        "rate": 190.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of timber",
@@ -5816,6 +6465,7 @@
   },
   {
     "code": "13.77",
+    "desc": "Extra for using white cement in place of ordinary cement in the top layer of the item of washed stone grit plaster.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 83.75,
@@ -5831,6 +6481,7 @@
   },
   {
     "code": "13.78",
+    "desc": "Providing and applying 12 mm thick (average) premixed formulated one coat gypsum lightweight plaster having additives and light weight aggre",
     "unit": "sqm",
     "basis": 10.0,
     "say": 342.85,
@@ -5867,13 +6518,23 @@
   },
   {
     "code": "13.79",
-    "unit": "sqm",
+    "desc": "Extra for addition of synthetic Polyester triangular fibre of length 6 mm, effective diameter 10-40 microns and specific gravity of 1.34 to ",
+    "unit": "nos",
     "basis": 1.0,
     "say": 66.9,
-    "resources": []
+    "resources": [
+      {
+        "code": "8733",
+        "desc": "Synthetic ployster triangular fibre of length 6 mm, effective diameter 10-40 microns and specific gravity of 1.34 to 1.40 including labour for mixing",
+        "unit": "kg",
+        "qty": 0.125,
+        "rate": 400.0
+      }
+    ]
   },
   {
     "code": "13.80",
+    "desc": "Providing and applying white cement based putty of average thickness 1 mm, of approved brand and manufacturer, over the plastered wall surfa",
     "unit": "sqm",
     "basis": 10.0,
     "say": 14.58,
@@ -5893,6 +6554,13 @@
         "rate": 2.0
       },
       {
+        "code": "0122",
+        "desc": "Mason (for plaster of paris work) 1st class",
+        "unit": "day",
+        "qty": 0.45,
+        "rate": 738.0
+      },
+      {
         "code": "0114",
         "desc": "Beldar",
         "unit": "day",
@@ -5910,10 +6578,18 @@
   },
   {
     "code": "13.81.1",
+    "desc": "One coat",
     "unit": "sqm",
     "basis": 10.0,
     "say": 50.6,
     "resources": [
+      {
+        "code": "0802",
+        "desc": "Acrylic distemper 1st quality, having VOC content less than 50 gm/kg",
+        "unit": "Kg",
+        "qty": 0.62,
+        "rate": 36.0
+      },
       {
         "code": "9999",
         "desc": "Brushes, putty etc.",
@@ -5953,10 +6629,18 @@
   },
   {
     "code": "13.81.2",
+    "desc": "Two coats",
     "unit": "sqm",
     "basis": 10.0,
     "say": 81.9,
     "resources": [
+      {
+        "code": "0802",
+        "desc": "Acrylic distemper 1st quality, having VOC content less than 50 gm/kg",
+        "unit": "Kg",
+        "qty": 0.99,
+        "rate": 36.0
+      },
       {
         "code": "9999",
         "desc": "Brushes, putty etc.",
@@ -5996,10 +6680,18 @@
   },
   {
     "code": "13.82.1",
+    "desc": "One coat",
     "unit": "sqm",
     "basis": 10.0,
     "say": 71.8,
     "resources": [
+      {
+        "code": "0803",
+        "desc": "Acrylic emulsion , having VOC content less than 50 gm/ltr",
+        "unit": "litre",
+        "qty": 0.53,
+        "rate": 94.0
+      },
       {
         "code": "9999",
         "desc": "For filling holes and cracks with putty etc",
@@ -6046,10 +6738,18 @@
   },
   {
     "code": "13.82.2",
+    "desc": "Two coats",
     "unit": "sqm",
     "basis": 10.0,
     "say": 106.8,
     "resources": [
+      {
+        "code": "0803",
+        "desc": "Acrylic emulsion , having VOC content less than 50 gm/ltr",
+        "unit": "litre",
+        "qty": 0.84,
+        "rate": 94.0
+      },
       {
         "code": "9999",
         "desc": "For filling holes and cracks with putty etc",
@@ -6096,10 +6796,25 @@
   },
   {
     "code": "13.83.1",
+    "desc": "One coat",
     "unit": "sqm",
     "basis": 10.0,
     "say": 75.1,
     "resources": [
+      {
+        "code": "0804",
+        "desc": "Premium acrylic emulsion of interior grade, having VOC content less than 50 gm/ltr.",
+        "unit": "litre",
+        "qty": 0.38,
+        "rate": 220.0
+      },
+      {
+        "code": "9999",
+        "desc": "For filling holes and cracks with putty etc",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",
@@ -6139,10 +6854,25 @@
   },
   {
     "code": "13.83.2",
+    "desc": "Two coats",
     "unit": "sqm",
     "basis": 10.0,
     "say": 113.9,
     "resources": [
+      {
+        "code": "0804",
+        "desc": "Premium acrylic emulsion of interior grade, having VOC content less than 50 gm/ltr.",
+        "unit": "litre",
+        "qty": 0.6,
+        "rate": 220.0
+      },
+      {
+        "code": "9999",
+        "desc": "For filling holes and cracks with putty etc",
+        "unit": "L.S.",
+        "qty": 1.43,
+        "rate": 2.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",
@@ -6182,10 +6912,18 @@
   },
   {
     "code": "13.85.1",
+    "desc": "With ready mixed pink or grey primer on wood work (hard and soft wood) having VOC content less than 50 grams/ litre",
     "unit": "sqm",
     "basis": 10.0,
     "say": 57.05,
     "resources": [
+      {
+        "code": "0806",
+        "desc": "Ready mixed pink or grey primer on wood work (hard and soft wood) having VOC content less than 50 gms/lit.",
+        "unit": "litre",
+        "qty": 0.75,
+        "rate": 105.0
+      },
       {
         "code": "9999",
         "desc": "Putty",
@@ -6232,10 +6970,18 @@
   },
   {
     "code": "13.85.3",
+    "desc": "With water thinnable cement primer on wall surface having VOC content less than 50 grams/litre",
     "unit": "sqm",
     "basis": 10.0,
     "say": 60.0,
     "resources": [
+      {
+        "code": "0808",
+        "desc": "Water thinnable cement primer for interior wall surface, having VOC content less than 50 gms/lit.",
+        "unit": "litre",
+        "qty": 0.7,
+        "rate": 50.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",
@@ -6268,10 +7014,25 @@
   },
   {
     "code": "13.86",
+    "desc": "6 mm plaster on cement concrete or reinforced cement concrete work with white cement based polymer modified self curing mortar of approved m",
     "unit": "sqm",
     "basis": 10.0,
     "say": 205.5,
     "resources": [
+      {
+        "code": "0772",
+        "desc": "White cement based polymer modified self curing compound in powder form",
+        "unit": "kg",
+        "qty": 46.0,
+        "rate": 15.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of white cement based polymer modified self curing compound in powder form",
+        "unit": "L.S.",
+        "qty": 7.8,
+        "rate": 2.0
+      },
       {
         "code": "0155",
         "desc": "Mason (average)",
@@ -6288,6 +7049,13 @@
       },
       {
         "code": "9999",
+        "desc": "Extra for removing burrs, cleaning with wire brushes and pock making with pointed tools etc.",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
         "desc": "Scaffolding and sunderies",
         "unit": "L.S.",
         "qty": 11.7,
@@ -6297,6 +7065,7 @@
   },
   {
     "code": "13.87.1",
+    "desc": "Old work (two or more coats)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 16.75,
@@ -6340,6 +7109,7 @@
   },
   {
     "code": "13.87.2",
+    "desc": "Old work (one or more coats)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 10.25,
@@ -6383,8 +7153,9 @@
   },
   {
     "code": "13.88",
+    "desc": "Removing white or colour wash by scrapping and sand papering and preparing the surface smooth including necessary repairs to scratches etc. ",
     "unit": "sqm",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 14.2,
     "resources": [
       {
@@ -6410,6 +7181,13 @@
       },
       {
         "code": "9999",
+        "desc": "Sundries such as sand paper and scrapper",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
         "desc": "Repair to scraches",
         "unit": "L.S.",
         "qty": 1.82,
@@ -6419,10 +7197,18 @@
   },
   {
     "code": "13.89",
+    "desc": "Distempering with dry distemper of approved brand and manufacture (one or more coats) and of required shade on old work to give an even shad",
     "unit": "sqm",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 49.55,
     "resources": [
+      {
+        "code": "0815",
+        "desc": "Dry distemper",
+        "unit": "kilogram",
+        "qty": 1.0,
+        "rate": 30.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of distemper",
@@ -6462,10 +7248,18 @@
   },
   {
     "code": "13.90.1",
+    "desc": "Old work (one or more coats)",
     "unit": "sqm",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 54.3,
     "resources": [
+      {
+        "code": "0816",
+        "desc": "Ist quality Acrylic distemper (Ready mix) having VOC content less than 50 grams/ litre",
+        "unit": "kilogram",
+        "qty": 1.0,
+        "rate": 50.0
+      },
       {
         "code": "9999",
         "desc": "Brushes, putty etc.",
@@ -6505,8 +7299,9 @@
   },
   {
     "code": "13.91",
+    "desc": "Removing dry or oil bound distemper, water proofing cement paint and the like by scrapping, sand papering and preparing the surface smooth i",
     "unit": "sqm",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 18.25,
     "resources": [
       {
@@ -6536,13 +7331,21 @@
         "unit": "L.S.",
         "qty": 6.24,
         "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries including mortar to repair the surface",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
       }
     ]
   },
   {
     "code": "13.92.1",
+    "desc": "Old work (one or more coats)",
     "unit": "sqm",
-    "basis": 1.0,
+    "basis": 10.0,
     "say": 71.05,
     "resources": [
       {
@@ -6591,10 +7394,18 @@
   },
   {
     "code": "13.93.1",
+    "desc": "75 mm diameter pipes",
     "unit": "metres",
     "basis": 30.0,
     "say": 43.6,
     "resources": [
+      {
+        "code": "4202",
+        "desc": "Red oxide Zinc chromate primer",
+        "unit": "litre",
+        "qty": 0.41,
+        "rate": 110.0
+      },
       {
         "code": "9977",
         "desc": "Carraige",
@@ -6683,6 +7494,7 @@
   },
   {
     "code": "13.94.1",
+    "desc": "75 mm diameter pipes",
     "unit": "metres",
     "basis": 30.0,
     "say": 20.55,
@@ -6747,8 +7559,9 @@
   },
   {
     "code": "13.94.2",
-    "unit": "sqm",
-    "basis": 1.0,
+    "desc": "100 mm diameter pipes",
+    "unit": "metres",
+    "basis": 30.0,
     "say": 27.15,
     "resources": [
       {
@@ -6811,8 +7624,9 @@
   },
   {
     "code": "13.94.3",
-    "unit": "sqm",
-    "basis": 1.0,
+    "desc": "150 mm diameter pipes",
+    "unit": "metres",
+    "basis": 30.0,
     "say": 39.1,
     "resources": [
       {
@@ -6875,10 +7689,18 @@
   },
   {
     "code": "13.95.1",
+    "desc": "75 mm diameter pipes",
     "unit": "metres",
     "basis": 30.0,
     "say": 45.15,
     "resources": [
+      {
+        "code": "4202",
+        "desc": "Red oxide Zinc chromate primer",
+        "unit": "litre",
+        "qty": 0.41,
+        "rate": 110.0
+      },
       {
         "code": "9977",
         "desc": "Carriage",
@@ -6967,10 +7789,18 @@
   },
   {
     "code": "13.95.2",
+    "desc": "100 mm diameter pipes",
     "unit": "metres",
     "basis": 30.0,
     "say": 62.65,
     "resources": [
+      {
+        "code": "4202",
+        "desc": "Red oxide Zinc chromate primer",
+        "unit": "litre",
+        "qty": 0.54,
+        "rate": 110.0
+      },
       {
         "code": "9977",
         "desc": "Carriage",
@@ -7059,16 +7889,38 @@
   },
   {
     "code": "13.95.3",
+    "desc": "150 mm diameter pipes",
     "unit": "metres",
     "basis": 30.0,
     "say": 93.35,
     "resources": [
+      {
+        "code": "4202",
+        "desc": "Red oxide Zinc chromate primer",
+        "unit": "litre",
+        "qty": 0.8,
+        "rate": 110.0
+      },
       {
         "code": "9977",
         "desc": "Carriage",
         "unit": "L.S.",
         "qty": 0.65,
         "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "Day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "Day",
+        "qty": 0.36,
+        "rate": 558.0
       },
       {
         "code": "9999",
@@ -7137,8 +7989,9 @@
   },
   {
     "code": "13.96.1",
-    "unit": "sqm",
-    "basis": 1.0,
+    "desc": "75 mm diameter pipes",
+    "unit": "metres",
+    "basis": 30.0,
     "say": 21.75,
     "resources": [
       {
@@ -7208,8 +8061,9 @@
   },
   {
     "code": "13.96.2",
-    "unit": "sqm",
-    "basis": 1.0,
+    "desc": "100 mm diameter pipes",
+    "unit": "metres",
+    "basis": 30.0,
     "say": 27.95,
     "resources": [
       {
@@ -7279,8 +8133,9 @@
   },
   {
     "code": "13.96.3",
-    "unit": "sqm",
-    "basis": 1.0,
+    "desc": "150 mm diameter pipes",
+    "unit": "metres",
+    "basis": 30.0,
     "say": 40.2,
     "resources": [
       {
@@ -7350,6 +8205,7 @@
   },
   {
     "code": "13.97.1",
+    "desc": "Old work (one or more coats)",
     "unit": "sqm",
     "basis": 10.0,
     "say": 33.9,
@@ -7400,6 +8256,7 @@
   },
   {
     "code": "13.98.1",
+    "desc": "One or more coats on old work",
     "unit": "sqm",
     "basis": 10.0,
     "say": 84.65,
@@ -7410,6 +8267,13 @@
         "unit": "litre",
         "qty": 0.73,
         "rate": 200.0
+      },
+      {
+        "code": "9999",
+        "desc": "Material for filling holes and cracks (putty etc.)",
+        "unit": "L.S.",
+        "qty": 0.52,
+        "rate": 2.0
       },
       {
         "code": "9977",
@@ -7450,10 +8314,18 @@
   },
   {
     "code": "13.99.1",
+    "desc": "One or more coats on old work",
     "unit": "sqm",
     "basis": 10.0,
     "say": 79.95,
     "resources": [
+      {
+        "code": "0833",
+        "desc": "Synthetic enamel paint in black or chocolate shade",
+        "unit": "litre",
+        "qty": 0.7,
+        "rate": 170.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of paint and materials",
@@ -7500,6 +8372,7 @@
   },
   {
     "code": "13.100.1",
+    "desc": "One or more coats on old work",
     "unit": "sqm",
     "basis": 10.0,
     "say": 73.25,
@@ -7557,6 +8430,7 @@
   },
   {
     "code": "13.101.1",
+    "desc": "One or more coats on old work",
     "unit": "sqm",
     "basis": 10.0,
     "say": 85.1,
@@ -7614,6 +8488,7 @@
   },
   {
     "code": "13.102.1",
+    "desc": "One or more coats on old work",
     "unit": "sqm",
     "basis": 10.0,
     "say": 70.95,
@@ -7664,15 +8539,37 @@
   },
   {
     "code": "13.103.1",
+    "desc": "One or more coats on old work",
     "unit": "sqm",
     "basis": 10.0,
     "say": 176.85,
     "resources": [
       {
+        "code": "1000",
+        "desc": "Spirit",
+        "unit": "litre",
+        "qty": 0.98,
+        "rate": 48.0
+      },
+      {
+        "code": "0999",
+        "desc": "Shellac",
+        "unit": "kilogram",
+        "qty": 0.13,
+        "rate": 300.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of materials",
         "unit": "L.S.",
         "qty": 0.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Turpentine oil sand paper cotton/woolen cloth putty etc.",
+        "unit": "L.S.",
+        "qty": 10.79,
         "rate": 2.0
       },
       {
@@ -7700,10 +8597,18 @@
   },
   {
     "code": "13.104.1",
+    "desc": "Old work",
     "unit": "sqm",
     "basis": 10.0,
     "say": 76.3,
     "resources": [
+      {
+        "code": "0855",
+        "desc": "Wax polish (ready made)",
+        "unit": "kilogram",
+        "qty": 0.25,
+        "rate": 230.0
+      },
       {
         "code": "9977",
         "desc": "Caariage",
@@ -7743,6 +8648,7 @@
   },
   {
     "code": "13.105",
+    "desc": "Re-lettering with black Japan paint of approved brand and manufacture.",
     "unit": "letters",
     "basis": 100.0,
     "say": 3.0,
@@ -7793,6 +8699,7 @@
   },
   {
     "code": "13.106",
+    "desc": "Painting (one or more coats) with black Japan paint of approved brand and manufacture to give an even shade.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 72.45,
@@ -7850,10 +8757,18 @@
   },
   {
     "code": "13.107.1",
+    "desc": "32 mm dia",
     "unit": "no",
     "basis": 1.0,
     "say": 75.1,
     "resources": [
+      {
+        "code": "1314",
+        "desc": "C.P.brass chain with 32 mm dia rubber plug",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 40.0
+      },
       {
         "code": "9988",
         "desc": "Carriage of materials and fixing charges",
@@ -7865,10 +8780,18 @@
   },
   {
     "code": "13.107.2",
+    "desc": "40 mm dia",
     "unit": "no",
     "basis": 1.0,
     "say": 75.1,
     "resources": [
+      {
+        "code": "1315",
+        "desc": "C.P.brass chain with 40 mm dia rubber plug",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 40.0
+      },
       {
         "code": "9988",
         "desc": "Carriage of materials and fixing charges",
@@ -7880,10 +8803,18 @@
   },
   {
     "code": "13.108.1",
+    "desc": "One or more coats on old work",
     "unit": "sqm",
     "basis": 10.0,
     "say": 48.05,
     "resources": [
+      {
+        "code": "0816",
+        "desc": "Ist quality Acrylic distemper(Ready mix) having VOC content less than 50 grams/ litre distemper",
+        "unit": "kilogram",
+        "qty": 1.0,
+        "rate": 50.0
+      },
       {
         "code": "9999",
         "desc": "Brushes, putty etc",
@@ -7923,10 +8854,18 @@
   },
   {
     "code": "13.109.1",
+    "desc": "Old work (one or more coats applied @ 2.20 kg/10 sqm) over priming coat of primer applied @ 0.80 litrs/10 sqm complete including cost of Pri",
     "unit": "sqm",
     "basis": 10.0,
     "say": 87.2,
     "resources": [
+      {
+        "code": "0851",
+        "desc": "Water proofing cement paint",
+        "unit": "kilogram",
+        "qty": 2.2,
+        "rate": 38.0
+      },
       {
         "code": "8508",
         "desc": "Primer for cement paint",
@@ -7980,10 +8919,18 @@
   },
   {
     "code": "13.109.2",
+    "desc": "Old work (one or more coats @ 2.20 kg/10 sqm) complete.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 59.35,
     "resources": [
+      {
+        "code": "0851",
+        "desc": "Water proofing cement paint",
+        "unit": "kilogram",
+        "qty": 2.2,
+        "rate": 38.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of material",
@@ -8030,6 +8977,7 @@
   },
   {
     "code": "13.110.1",
+    "desc": "Old work (Two or more coats on existing cement paint surface applied @ 3.28 ltr/10 sqm.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 168.75,
@@ -8080,6 +9028,7 @@
   },
   {
     "code": "13.110.2",
+    "desc": "Old work (One or more coats) applied @ 1.82 ltr/10 sqm.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 105.3,
@@ -8130,6 +9079,7 @@
   },
   {
     "code": "13.111.1",
+    "desc": "Old work (Two or more coat applied @ 1.67 ltr/ 10 sqm) on existing cement paint surface",
     "unit": "sqm",
     "basis": 10.0,
     "say": 99.9,
@@ -8180,6 +9130,7 @@
   },
   {
     "code": "13.111.2",
+    "desc": "Old work (One or more coat applied @ 0.90 ltr/10 sqm).",
     "unit": "sqm",
     "basis": 10.0,
     "say": 67.35,
@@ -8230,6 +9181,7 @@
   },
   {
     "code": "13.112.1",
+    "desc": "Old work (Two or more coats applied @ 1.43 ltr/ 10 sqm) over existing cement paint surface",
     "unit": "sqm",
     "basis": 10.0,
     "say": 97.75,
@@ -8280,6 +9232,7 @@
   },
   {
     "code": "13.112.2",
+    "desc": "Old work (one or more coats applied @ 0.83 ltr/10 sqm).",
     "unit": "sqm",
     "basis": 10.0,
     "say": 66.95,
@@ -8330,6 +9283,7 @@
   },
   {
     "code": "13.113.1",
+    "desc": "One or more coats with copal varnish",
     "unit": "sqm",
     "basis": 10.0,
     "say": 73.4,
@@ -8387,6 +9341,7 @@
   },
   {
     "code": "13.113.2",
+    "desc": "One or more coats with spar varnish",
     "unit": "sqm",
     "basis": 10.0,
     "say": 73.85,
@@ -8444,10 +9399,25 @@
   },
   {
     "code": "13.114",
+    "desc": "Melamine polishing on wood work (one or more coat).",
     "unit": "sqm",
     "basis": 10.0,
     "say": 110.75,
     "resources": [
+      {
+        "code": "7241",
+        "desc": "Melamine polish",
+        "unit": "litre",
+        "qty": 0.65,
+        "rate": 280.0
+      },
+      {
+        "code": "0006",
+        "desc": "Hire charges of Spraying machine including electric charges",
+        "unit": "day",
+        "qty": 0.78,
+        "rate": 250.0
+      },
       {
         "code": "9988",
         "desc": "Carriage charge of Machine & Marerial",
@@ -8480,6 +9450,7 @@
   },
   {
     "code": "13.115",
+    "desc": "Varnishing with flatting varnish of approved brand and manufacture one or more coats on old work.",
     "unit": "sqm",
     "basis": 10.0,
     "say": 76.65,
