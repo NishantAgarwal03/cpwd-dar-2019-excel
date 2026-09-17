@@ -53,6 +53,7 @@ SUNDRIES_REFERENCE_JSON = resolve_path("sundries_reference.json", "reference_jso
 VOL1_CONVERTED_XLSX = resolve_path("CivilDAR_2019_Vol_1_Converted.xlsx", "converted_xlsx")
 VOL2_CONVERTED_XLSX = resolve_path("CivilDAR_2019_Vol_2_Converted.xlsx", "converted_xlsx")
 AUDIT_TEST_CASES_XLSX = resolve_path("CPWD_DAR_2019_Audit_Test_Cases.xlsx", "converted_xlsx")
+DSR_VOL1_SCHEDULE_XLSX = resolve_path("DSR_Vol1_Schedule.xlsx", "converted_xlsx")
 
 # Raw PDFs
 PDF_CIVIL_DAR_VOL1 = resolve_path("CivilDAR_2019_Vol_1.pdf", "raw_pdf")
@@ -66,3 +67,8 @@ WB_VOL1_LATEST_FILE = resolve_path("CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_
 WB_VOL1_TEMPLATE_FILE = resolve_path("CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1.xltx")
 WB_VOL2_FILE = resolve_path("CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_2.xlsx")
 WB_VOL2_TEMPLATE_FILE = resolve_path("CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_2.xltx")
+
+# Keyword Engine & Analysis Artifacts
+KEYWORD_LOOKUP_JSON = resolve_path("dsr_keyword_lookup.json", "reference_json")
+KEYWORD_ANALYSIS_XLSX = os.path.join(OUTPUT_DIR, "CPWD_DSR_Vol1_Keyword_Analysis.xlsx")
+

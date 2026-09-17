@@ -1,37 +1,22 @@
 """
 support_builder_earth_v2.py
-Rebuilds 02_support_earth_work sheet with FULL CPWD rate analysis format.
-Each item mirrors CivilDAR_2019_Vol_1.pdf exactly:
-  Code | Description | Unit | Quantity | Rate | Amount(=D*E)
-  Sections: MACHINERY / LABOUR / MATERIAL / CARRIAGE
-  Chain: W → Water(1%) → X → GST(14.05%) → Y → CP&OH(15%) → Z → Cess(1%) → Total → Per unit
-
-Formula constraint: only SUM, +, -, *, / (no VLOOKUP/INDEX/MATCH)
+Rebuilds 02_support_earth_work sheet with First-Principles Teaching Format:
+  Item Code | Labour / Machine / Material | Work done | Condition / When used | Category | Productivity | Quantity
 """
 
 import openpyxl
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
-import os, sys, shutil
+from pathlib import Path
+import os, sys, shutil, json, re
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir)))
 from scripts.paths import WB_VOL1_LATEST_FILE
+import scripts.earthwork_teaching_knowledge as earthwork_teaching_knowledge
 
-# ── Colours ──────────────────────────────────────────────────────────────────
-C_ITEM_HDR   = "1F4E79"   # dark blue  – item heading
-C_SEC_HDR    = "2E75B6"   # mid blue   – MACHINERY/LABOUR/MATERIAL/CARRIAGE
-C_CHAIN_LBL  = "FFF2CC"   # pale yellow – W / X / Y / Z labels
-C_CHAIN_VAL  = "FFFACD"   # lighter yellow
-C_REF_ROW    = "E2EFDA"   # pale green  – referenced sub-item rows
-C_FINAL      = "F4B942"   # amber       – per-unit rate row
-C_DSR        = "D9D9D9"   # grey        – DSR cross-ref
+# Colours
+C_ITEM_HDR   = "1F4E79"   # dark blue
+C_SEC_HDR    = "2E75B6"   # mid blue
 C_WHITE      = "FFFFFF"
-C_BLANK      = None
-
-FT_HDR  = Font(bold=True, color="FFFFFF", size=10)
-FT_SEC  = Font(bold=True, color="FFFFFF", size=9)
-FT_BODY = Font(size=9)
-FT_BOLD = Font(bold=True, size=9)
-FT_CHAIN= Font(bold=True, size=9, italic=True)
 
 def fill(hex_col):
     if hex_col is None:
@@ -46,23 +31,51 @@ AL_C = Alignment(horizontal="center", vertical="center")
 AL_L = Alignment(horizontal="left",   vertical="center", wrap_text=True)
 AL_R = Alignment(horizontal="right",  vertical="center")
 
-# ── Item data ─────────────────────────────────────────────────────────────────
-# Structure per item:
-#   "id"       : "2.1.1"
-#   "desc"     : full description
-#   "unit"     : "sqm" / "cum" etc.
-#   "base_qty" : numeric base for the analysis (e.g. 100, 10, 1)
-#   "dsr_rate" : DSR 2021 final rate (for cross-reference)
-#   "sections" : list of (section_name, rows)
-#              : each row = (code, description, unit, qty, rate)  — amount = qty*rate
-#              : code="" for direct resource rows; code="REF" for cross-ref rows (marked A)
-#   "notes"    : optional string appended after the chain
+_SPECS_PATH = Path(__file__).resolve().parents[1] / "data" / "reference_json" / "earthwork_pdf_specs.json"
+if _SPECS_PATH.exists():
+    with open(_SPECS_PATH, encoding="utf-8") as _f:
+        PDF_SPECS = json.load(_f)
+else:
+    PDF_SPECS = {}
+
+def get_item_headers(code: str) -> list[str]:
+    parts = code.split(".")
+    standalone = [
+        "2.4", "2.5", "2.11", "2.12", "2.14", "2.15", "2.19", "2.23",
+        "2.25", "2.25(a)", "2.27", "2.31", "2.32", "2.36", "2.37", "2.38"
+    ]
+    if code in standalone:
+        full_desc = PDF_SPECS.get(code, "")
+        return [f"{code} {full_desc}".strip()]
+    if len(parts) == 3:
+        p_code = f"{parts[0]}.{parts[1]}"
+        p_desc = PDF_SPECS.get(p_code, "")
+        c_desc = PDF_SPECS.get(code, "")
+        lines = []
+        if p_desc:
+            lines.append(f"{p_code} {p_desc}".strip())
+        lines.append(f"{code} {c_desc}".strip() if c_desc else code)
+        return lines
+    if len(parts) >= 4:
+        p2_code = f"{parts[0]}.{parts[1]}"
+        p3_code = f"{parts[0]}.{parts[1]}.{parts[2]}"
+        p2_desc = PDF_SPECS.get(p2_code, "")
+        p3_desc = PDF_SPECS.get(p3_code, "")
+        c_desc = PDF_SPECS.get(code, "")
+        lines = []
+        if p2_desc:
+            lines.append(f"{p2_code} {p2_desc}".strip())
+        sub_desc = f"{p3_desc} - {c_desc}".strip(" -")
+        lines.append(f"{code} {sub_desc}".strip())
+        return lines
+    return [f"{code} {PDF_SPECS.get(code, '')}".strip()]
+
 
 ITEMS = [
 
 # ─── 2.1 SURFACE DRESSING ────────────────────────────────────────────────────
 {
- "id":"2.1.1","desc":"Surface dressing of ground including removing of vegetation, grass, bushes, shrubs, rank weeds, etc., and disposal of the same upto 50 metres lead - in ordinary soil",
+ "id":"2.1.1","desc":"Earth work in surface excavation not exceeding 30 cm in depth but exceeding 1.5 m in width as well as 10 sqm on plan including getting out and disposal of excavated earth upto 50 m and lift upto 1.5 m, as directed by Engineer-in- Charge: All kinds of soil",
  "unit":"sqm","base_qty":100,"dsr_rate":107.00,
  "sections":[
   ("LABOUR",[
@@ -72,7 +85,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.1.2","desc":"Surface dressing of ground including removing of vegetation, grass, bushes, shrubs, rank weeds, etc., and disposal of the same upto 50 metres lead - in hard soil",
+ "id":"2.1.2","desc":"Earth work in surface excavation not exceeding 30 cm in depth but exceeding 1.5 m in width as well as 10 sqm on plan including getting out and disposal of excavated earth upto 50 m and lift upto 1.5 m, as directed by Engineer-in- Charge:",
  "unit":"sqm","base_qty":100,"dsr_rate":134.55,
  "sections":[
   ("LABOUR",[
@@ -84,7 +97,7 @@ ITEMS = [
 
 # ─── 2.2 EARTHWORK IN EXCAVATION (ORDINARY SOIL, LEAD ≤50m) ─────────────────
 {
- "id":"2.2.1","desc":"Earthwork in excavation by mechanical means (Hydraulic excavator)/manual means in foundation trenches or drains (not exceeding 1.5 m in width or 10 sqm on plan) including dressing of sides and ramming of bottoms, lift upto 1.5 m, including getting out the excavated soil and disposal of surplus excavated soil as directed, within a lead of 50 m - in ordinary soil",
+ "id":"2.2.1","desc":"Earth work in rough excavation, banking excavated earth in layers not exceeding 20cm in depth, breaking clods, watering, rolling each layer with ½ tonne roller or wooden or steel rammers, and rolling every 3rd and top-most layer with power roller of minimum 8 tonnes and dressing up in embankments for roads, flood banks, marginal banks and guide banks or filling up ground depressions, lead upto 50 m and lift upto 1.5 m : All kinds of soil",
  "unit":"cum","base_qty":10,"dsr_rate":862.70,
  "sections":[
   ("MACHINERY",[
@@ -102,7 +115,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.2.2","desc":"Earthwork in excavation in hard soil",
+ "id":"2.2.2","desc":"Earth work in rough excavation, banking excavated earth in layers not exceeding 20cm in depth, breaking clods, watering, rolling each layer with ½ tonne roller or wooden or steel rammers, and rolling every 3rd and top-most layer with power roller of minimum 8 tonnes and dressing up in embankments for roads, flood banks, marginal banks and guide banks or filling up ground depressions, lead upto 50 m and lift upto 1.5 m : Hard soil",
  "unit":"cum","base_qty":10,"dsr_rate":1049.65,
  "sections":[
   ("MACHINERY",[
@@ -122,7 +135,7 @@ ITEMS = [
 
 # ─── 2.3 EARTHWORK IN EXCAVATION (ORDINARY SOIL, LEAD ≤50m, shallow) ────────
 {
- "id":"2.3.1","desc":"Earthwork in excavation by mechanical means/manual means over areas (exceeding 30 cm in depth, 1.5 m in width and 10 sqm on plan) including dressing of sides and ramming of bottoms, lift upto 1.5 m, disposal of surplus within 50 m lead - in ordinary soil",
+ "id":"2.3.1","desc":"Banking excavated earth in layers not exceeding 20 cm in depth, breaking clods, watering, rolling each layer with ½ tonne roller, or wooden or steel rammers, and rolling every 3rd and top-most layer with power roller of minimum 8 tonnes and dressing up, in embankments for roads, flood banks, marginal banks, and guide banks etc., lead upto 50 m and lift upto 1.5 m : All kinds of soil",
  "unit":"cum","base_qty":10,"dsr_rate":543.40,
  "sections":[
   ("MACHINERY",[
@@ -140,7 +153,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.3.2","desc":"Earthwork in excavation over areas - in hard soil",
+ "id":"2.3.2","desc":"Banking excavated earth in layers not exceeding 20 cm in depth, breaking clods, watering, rolling each layer with ½ tonne roller, or wooden or steel rammers, and rolling every 3rd and top-most layer with power roller of minimum 8 tonnes and dressing up, in embankments for roads, flood banks, marginal banks, and guide banks etc., lead upto 50 m and lift upto 1.5 m : Hard soil",
  "unit":"cum","base_qty":10,"dsr_rate":661.60,
  "sections":[
   ("MACHINERY",[
@@ -160,7 +173,7 @@ ITEMS = [
 
 # ─── 2.4 DEDUCT – Roller & Chowkidar ─────────────────────────────────────────
 {
- "id":"2.4","desc":"Deduct for not using road roller and not providing Chowkidar when excavation is done manually",
+ "id":"2.4","desc":"Deduct for not rolling with power roller of minimum 8 tonnes for banking excavated earth in layers not exceeding 20 cm in depth.",
  "unit":"cum","base_qty":10,"dsr_rate":4.40,
  "sections":[
   ("MACHINERY",[
@@ -178,7 +191,7 @@ ITEMS = [
 
 # ─── 2.5 DEDUCT – Bhisti ─────────────────────────────────────────────────────
 {
- "id":"2.5","desc":"Deduct for not providing Bhisti in dry weather",
+ "id":"2.5","desc":"Deduct for not watering the excavated earth for banking",
  "unit":"cum","base_qty":10,"dsr_rate":38.20,
  "sections":[
   ("LABOUR",[
@@ -190,7 +203,7 @@ ITEMS = [
 
 # ─── 2.6 HYDRAULIC EXCAVATION ─────────────────────────────────────────────────
 {
- "id":"2.6.1","desc":"Excavation for foundation in trenches/drains by hydraulic excavator, lead up to 50 m, lift up to 1.5 m - in ordinary soil",
+ "id":"2.6.1","desc":"Earth work in excavation by mechanical means (Hydraulic excavator)/manual means over areas (exceeding 30 cm in depth, 1.5 m in width as well as 10 sqm on plan) including getting out and disposal of excavated earth lead upto 50 m and lift upto 1.5 m, as directed by Engineer-in-charge. - All kinds of soil",
  "unit":"cum","base_qty":10,"dsr_rate":205.45,
  "sections":[
   ("MACHINERY",[
@@ -204,7 +217,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.6.2","desc":"Excavation for foundation in trenches/drains by hydraulic excavator - in hard soil",
+ "id":"2.6.2","desc":"Earth work in excavation by mechanical means (Hydraulic excavator)/manual means over areas (exceeding 30 cm in depth, 1.5 m in width as well as 10 sqm on plan) including getting out and disposal of excavated earth lead upto 50 m and lift upto 1.5 m, as directed by Engineer-in-charge. - Hard soil",
  "unit":"cum","base_qty":10,"dsr_rate":261.10,
  "sections":[
   ("MACHINERY",[
@@ -220,7 +233,7 @@ ITEMS = [
 
 # ─── 2.7 ROCK EXCAVATION ─────────────────────────────────────────────────────
 {
- "id":"2.7.1","desc":"Excavation for foundation in trenches/drains in ordinary rock by blasting - all lifts",
+ "id":"2.7.1","desc":"Earth work in excavation by mechanical means (Hydraulic excavator)/manual means over areas (exceeding 30 cm in depth, 1.5 m in width as well as 10 sqm on plan) including getting out and disposal of excavated earth lead upto 50 m and lift upto 1.5 m, as directed by Engineer-in-charge. - Ordinary rock",
  "unit":"cum","base_qty":10,"dsr_rate":412.95,
  "sections":[
   ("MACHINERY",[
@@ -240,7 +253,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.7.2","desc":"Excavation for foundation in hard rock by blasting",
+ "id":"2.7.2","desc":"Earth work in excavation by mechanical means (Hydraulic excavator)/manual means over areas (exceeding 30 cm in depth, 1.5 m in width as well as 10 sqm on plan) including getting out and disposal of excavated earth lead upto 50 m and lift upto 1.5 m, as directed by Engineer-in-charge. - Hard rock (requiring blasting)",
  "unit":"cum","base_qty":10,"dsr_rate":711.35,
  "sections":[
   ("MACHINERY",[
@@ -262,7 +275,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.7.3","desc":"Excavation for foundation in hard rock where blasting is prohibited - by chiselling",
+ "id":"2.7.3","desc":"Earth work in excavation by mechanical means (Hydraulic excavator)/manual means over areas (exceeding 30 cm in depth, 1.5 m in width as well as 10 sqm on plan) including getting out and disposal of excavated earth lead upto 50 m and lift upto 1.5 m, as directed by Engineer-in-charge. - Hard rock (blasting prohibited)",
  "unit":"cum","base_qty":10,"dsr_rate":1184.30,
  "sections":[
   ("MACHINERY",[
@@ -285,7 +298,7 @@ ITEMS = [
 
 # ─── 2.8 EARTHWORK IN EXCAVATION FOR PIPE TRENCHES ───────────────────────────
 {
- "id":"2.8.1","desc":"Earthwork in excavation by mechanical means/manual means in pipe trenches including dressing of sides and ramming of bottom, lift upto 1.5 m, disposal of surplus within 50 m - in ordinary soil",
+ "id":"2.8.1","desc":"Earth work in excavation by mechanical means (Hydraulic excavator) / manual means in foundation trenches or drains (not exceeding 1.5 m in width or 10 sqm on plan), including dressing of sides and ramming of bottoms, lift upto 1.5 m, including getting out the excavated soil and disposal of surplus excavated soil as directed, within a lead of 50 m. - All kinds of soil.",
  "unit":"cum","base_qty":10,"dsr_rate":286.85,
  "sections":[
   ("MACHINERY",[
@@ -299,7 +312,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.8.2","desc":"Earthwork in excavation in pipe trenches - in hard soil",
+ "id":"2.8.2","desc":"Earth work in excavation by mechanical means (Hydraulic excavator) / manual means in foundation trenches or drains (not exceeding 1.5 m in width or 10 sqm on plan), including dressing of sides and ramming of bottoms, lift upto 1.5 m, including getting out the excavated soil and disposal of surplus excavated soil as directed, within a lead of 50 m. - Hard soil",
  "unit":"cum","base_qty":10,"dsr_rate":347.10,
  "sections":[
   ("MACHINERY",[
@@ -315,7 +328,7 @@ ITEMS = [
 
 # ─── 2.9 PIPE TRENCHES IN ROCK ───────────────────────────────────────────────
 {
- "id":"2.9.1","desc":"Earthwork in excavation in pipe trenches in ordinary rock by blasting",
+ "id":"2.9.1","desc":"Excavation work by mechanical means (Hydraulic excavator)/ manual means in foundation trenches or drains (not exceeding 1.5m in width or 10 sqm on plan), including dressing of sides and ramming of bottoms, lift upto 1.5 m, including getting out the excavated soil and disposal of surplus excavated soils as directed, within a lead of 50 m. - Ordinary rock",
  "unit":"cum","base_qty":10,"dsr_rate":523.50,
  "sections":[
   ("MACHINERY",[
@@ -335,7 +348,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.9.2","desc":"Earthwork in excavation in pipe trenches in hard rock by blasting",
+ "id":"2.9.2","desc":"Excavation work by mechanical means (Hydraulic excavator)/ manual means in foundation trenches or drains (not exceeding 1.5m in width or 10 sqm on plan), including dressing of sides and ramming of bottoms, lift upto 1.5 m, including getting out the excavated soil and disposal of surplus excavated soils as directed, within a lead of 50 m. - Hard rock (requiring blasting)",
  "unit":"cum","base_qty":10,"dsr_rate":846.25,
  "sections":[
   ("MACHINERY",[
@@ -357,7 +370,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.9.3","desc":"Earthwork in excavation in pipe trenches in hard rock where blasting is prohibited",
+ "id":"2.9.3","desc":"Excavation work by mechanical means (Hydraulic excavator)/ manual means in foundation trenches or drains (not exceeding 1.5m in width or 10 sqm on plan), including dressing of sides and ramming of bottoms, lift upto 1.5 m, including getting out the excavated soil and disposal of surplus excavated soils as directed, within a lead of 50 m. - Hard rock (blasting prohibited)",
  "unit":"cum","base_qty":10,"dsr_rate":1258.60,
  "sections":[
   ("MACHINERY",[
@@ -381,50 +394,50 @@ ITEMS = [
 # ─── 2.10 PIPE TRENCHES COMPOSITE (EXCAV + FILLING) ─────────────────────────
 # W-A pattern: REF sub-items are excluded from Water/GST/CPOH/Cess chain
 {
- "id":"2.10.1.1","desc":"Earthwork in excavation in pipe trenches, dia 150 mm, depth up to 1.5 m - ordinary soil (composite: excav 2.8.1 + filling 2.25)",
+ "id":"2.10.1.1","desc":"Excavating trenches of required width for pipes, cables, etc including excavation for sockets, and dressing of sides, ramming of bottoms, depth upto 1.5 m, including getting out the excavated soil, and then returning the soil as required, in layers not exceeding 20 cm in depth, including consolidating each deposited layer by ramming, watering, etc. and disposing of surplus excavated soil as directed, within a lead of 50 m : - All kinds of soil - Pipes, cables etc, not exceeding 80 mm dia.",
  "unit":"metre","base_qty":180,"dsr_rate":255.55,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (excluded from multiplier chain)",[
-   ("REF 2.8.1","Excavation pipe trench ordinary soil (85.05 cum)","cum",85.05,252.30),
-   ("REF 2.25","Filling in trenches (85.05 cum)","cum",85.05,219.65),
+   ("REF#2.8.1","Excavation pipe trench ordinary soil (85.05 cum)","cum",85.05,252.30),
+   ("REF#2.25","Filling in trenches (85.05 cum)","cum",85.05,219.65),
   ]),
  ],
  "notes":"W-A pattern: entire cost = sum of referenced items × base qty. No separate Water/GST/CPOH applied on top.",
 },
 {
- "id":"2.10.1.2","desc":"Pipe trench dia 150 mm, depth 1.5–3 m - ordinary soil",
+ "id":"2.10.1.2","desc":"Excavating trenches of required width for pipes, cables, etc including excavation for sockets, and dressing of sides, ramming of bottoms, depth upto 1.5 m, including getting out the excavated soil, and then returning the soil as required, in layers not exceeding 20 cm in depth, including consolidating each deposited layer by ramming, watering, etc. and disposing of surplus excavated soil as directed, within a lead of 50 m : - All kinds of soil - Pipes, cables etc. exceeding 80 mm dia. but not exceeding 300 mm dia",
  "unit":"metre","base_qty":110,"dsr_rate":417.35,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS",[
-   ("REF 2.8.1","Excavation pipe trench ordinary soil (84.89 cum)","cum",84.89,252.30),
-   ("REF 2.25","Filling in trenches (84.89 cum)","cum",84.89,219.65),
+   ("REF#2.8.1","Excavation pipe trench ordinary soil (84.89 cum)","cum",84.89,252.30),
+   ("REF#2.25","Filling in trenches (84.89 cum)","cum",84.89,219.65),
   ]),
  ],
 },
 {
- "id":"2.10.1.3","desc":"Pipe trench dia 150 mm, depth 3–4.5 m - ordinary soil",
+ "id":"2.10.1.3","desc":"Excavating trenches of required width for pipes, cables, etc including excavation for sockets, and dressing of sides, ramming of bottoms, depth upto 1.5 m, including getting out the excavated soil, and then returning the soil as required, in layers not exceeding 20 cm in depth, including consolidating each deposited layer by ramming, watering, etc. and disposing of surplus excavated soil as directed, within a lead of 50 m : - All kinds of soil - Pipes, cables etc. exceeding 300 mm dia but not exceeding 600 mm",
  "unit":"metre","base_qty":60,"dsr_rate":651.55,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS",[
-   ("REF 2.8.1","Excavation pipe trench ordinary soil (72.29 cum)","cum",72.29,252.30),
-   ("REF 2.25","Filling in trenches (72.29 cum)","cum",72.29,219.65),
+   ("REF#2.8.1","Excavation pipe trench ordinary soil (72.29 cum)","cum",72.29,252.30),
+   ("REF#2.25","Filling in trenches (72.29 cum)","cum",72.29,219.65),
   ]),
  ],
 },
 
 # ─── 2.11 EXTRA DEPTH (%) ─────────────────────────────────────────────────────
 {
- "id":"2.11","desc":"Extra over item 2.10 for excavation and filling in pipe trenches for additional depth beyond 1.5 m upto 3 m - % of item 2.10",
+ "id":"2.11","desc":"Extra for excavating trenches for pipes, cables etc. in all kinds of soil for depth exceeding 1.5 m, but not exceeding 3 m. (Rate is over corresponding basic item for depth upto 1.5 metre).",
  "unit":"%","base_qty":1,"dsr_rate":127.00,
  "pct_item":True,
  "sections":[],
  "notes":"Percentage-based extra: 127% over base rate of Item 2.10. No resource rows. DAR computed value = 127.00%.",
 },
 {
- "id":"2.12","desc":"Extra over item 2.10 for additional depth beyond 3 m - % of item 2.10",
+ "id":"2.12","desc":"Extra for excavating trenches for pipes, cables, etc, in all kinds of soil for depth exceeding 3 m in depth, but not exceeding 4.5 m. (Rate is over corresponding basic item for depth upto 1.5 metre.)",
  "unit":"%","base_qty":1,"dsr_rate":314.95,
  "pct_item":True,
  "sections":[],
@@ -433,13 +446,13 @@ ITEMS = [
 
 # ─── 2.13 ROCK PIPE TRENCHES (COMPOSITE) ─────────────────────────────────────
 {
- "id":"2.13.1.1","desc":"Pipe trench in ordinary rock, dia 150 mm, depth up to 1.5 m",
+ "id":"2.13.1.1","desc":"Excavating trenches of required width for pipes, cables, etc, including excavation for sockets, depth upto 1.5 m, including getting out the excavated materials, returning the soil as required in layers not exceeding 20 cm in depth, including consolidating each deposited layers by ramming, watering etc., stacking serviceable material for measurements and disposal of unserviceable material as directed, within a lead of 50 m : - Ordinary rock : - Pipes, cables etc. not exceeding 80 mm dia",
  "unit":"metre","base_qty":180,"dsr_rate":376.95,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (A - excluded from multipliers)",[
-   ("REF 2.9.1","Excavation ordinary rock (85.05 cum)","cum",85.05,448.15),
-   ("REF 2.25","Filling (85.05 cum)","cum",85.05,219.65),
+   ("REF#2.9.1","Excavation ordinary rock (85.05 cum)","cum",85.05,448.15),
+   ("REF#2.25","Filling in trenches (85.05 cum)","cum",85.05,219.65),
   ]),
   ("LABOUR (subject to Water/GST/CPOH/Cess)",[
    ("0114","Beldar (extra for rock dressing)","day",1.80,558.00),
@@ -447,13 +460,13 @@ ITEMS = [
  ],
 },
 {
- "id":"2.13.1.2","desc":"Pipe trench in hard rock by blasting, dia 150 mm, depth up to 1.5 m",
- "unit":"metre","base_qty":180,"dsr_rate":933.35,
+ "id":"2.13.1.2","desc":"Excavating trenches of required width for pipes, cables, etc, including excavation for sockets, depth upto 1.5 m, including getting out the excavated materials, returning the soil as required in layers not exceeding 20 cm in depth, including consolidating each deposited layers by ramming, watering etc., stacking serviceable material for measurements and disposal of unserviceable material as directed, within a lead of 50 m : - Ordinary rock : - Pipes, cables etc. exceeding 80 mm dia but not exceeding 300 mm dia",
+ "unit":"metre","base_qty":80,"dsr_rate":933.35,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (A)",[
-   ("REF 2.9.2","Excavation hard rock blasting (85.05 cum)","cum",85.05,729.00),
-   ("REF 2.25","Filling (85.05 cum)","cum",85.05,219.65),
+   ("REF#2.9.1","Excavation ordinary rock (93.60 cum)","cum",93.60,448.15),
+   ("REF#2.25","Filling in trenches (93.60 cum)","cum",93.60,219.65),
   ]),
   ("LABOUR",[
    ("0114","Beldar (extra dressing)","day",1.80,558.00),
@@ -461,113 +474,113 @@ ITEMS = [
  ],
 },
 {
- "id":"2.13.1.3","desc":"Pipe trench in hard rock blasting prohibited, dia 150 mm, depth up to 1.5 m",
- "unit":"metre","base_qty":180,"dsr_rate":1074.00,
+ "id":"2.13.1.3","desc":"Excavating trenches of required width for pipes, cables, etc, including excavation for sockets, depth upto 1.5 m, including getting out the excavated materials, returning the soil as required in layers not exceeding 20 cm in depth, including consolidating each deposited layers by ramming, watering etc., stacking serviceable material for measurements and disposal of unserviceable material as directed, within a lead of 50 m : - Ordinary rock : - Pipes, cables exceeding 300 mm dia but not exceeding 600 mm dia",
+ "unit":"metre","base_qty":30,"dsr_rate":1074.00,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (A)",[
-   ("REF 2.9.3","Excavation hard rock no blasting (85.05 cum)","cum",85.05,1080.55),
-   ("REF 2.25","Filling (85.05 cum)","cum",85.05,219.65),
+   ("REF#2.9.1","Excavation ordinary rock (40.399 cum)","cum",40.399,448.15),
+   ("REF#2.25","Filling in trenches (40.399 cum)","cum",40.399,219.65),
   ]),
   ("LABOUR",[
-   ("0114","Beldar (extra dressing)","day",1.80,558.00),
+   ("0114","Beldar (extra dressing)","day",0.94,558.00),
   ]),
  ],
 },
 {
- "id":"2.13.2.1","desc":"Pipe trench ordinary rock, dia 150 mm, depth 1.5–3 m",
- "unit":"metre","base_qty":110,"dsr_rate":531.85,
+ "id":"2.13.2.1","desc":"Excavating trenches of required width for pipes, cables, etc, including excavation for sockets, depth upto 1.5 m, including getting out the excavated materials, returning the soil as required in layers not exceeding 20 cm in depth, including consolidating each deposited layers by ramming, watering etc., stacking serviceable material for measurements and disposal of unserviceable material as directed, within a lead of 50 m : - Hard rock (requiring blasting) - Pipes, cables etc. not exceeding 80 mm dia",
+ "unit":"metre","base_qty":180,"dsr_rate":531.85,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (A)",[
-   ("REF 2.9.1","Excavation ordinary rock (84.89 cum)","cum",84.89,448.15),
-   ("REF 2.25","Filling (84.89 cum)","cum",84.89,219.65),
+   ("REF#2.9.2","Excavation hard rock blasting (85.05 cum)","cum",85.05,729.00),
+   ("REF#2.25","Filling in trenches (85.05 cum)","cum",85.05,219.65),
   ]),
   ("LABOUR",[
-   ("0114","Beldar","day",2.20,558.00),
+   ("0114","Beldar (rock ramming)","day",1.80,558.00),
   ]),
  ],
 },
 {
- "id":"2.13.2.2","desc":"Pipe trench hard rock blasting, dia 150 mm, depth 1.5–3 m",
- "unit":"metre","base_qty":110,"dsr_rate":1316.90,
+ "id":"2.13.2.2","desc":"Excavating trenches of required width for pipes, cables, etc, including excavation for sockets, depth upto 1.5 m, including getting out the excavated materials, returning the soil as required in layers not exceeding 20 cm in depth, including consolidating each deposited layers by ramming, watering etc., stacking serviceable material for measurements and disposal of unserviceable material as directed, within a lead of 50 m : - Hard rock (requiring blasting) - Pipes, cables etc. exceeding 80 mm dia but not exceeding 300 mm dia",
+ "unit":"metre","base_qty":80,"dsr_rate":1316.90,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (A)",[
-   ("REF 2.9.2","Excavation hard rock (84.89 cum)","cum",84.89,729.00),
-   ("REF 2.25","Filling (84.89 cum)","cum",84.89,219.65),
+   ("REF#2.9.2","Excavation hard rock blasting (93.60 cum)","cum",93.60,729.00),
+   ("REF#2.25","Filling in trenches (93.60 cum)","cum",93.60,219.65),
   ]),
   ("LABOUR",[
-   ("0114","Beldar","day",2.20,558.00),
+   ("0114","Beldar (rock ramming)","day",1.80,558.00),
   ]),
  ],
 },
 {
- "id":"2.13.2.3","desc":"Pipe trench hard rock no blasting, dia 150 mm, depth 1.5–3 m",
- "unit":"metre","base_qty":110,"dsr_rate":1515.20,
+ "id":"2.13.2.3","desc":"Excavating trenches of required width for pipes, cables, etc, including excavation for sockets, depth upto 1.5 m, including getting out the excavated materials, returning the soil as required in layers not exceeding 20 cm in depth, including consolidating each deposited layers by ramming, watering etc., stacking serviceable material for measurements and disposal of unserviceable material as directed, within a lead of 50 m : - Hard rock (requiring blasting) - Pipes, cables etc. exceeding 300 mm dia but not exceeding 600 mm dia",
+ "unit":"metre","base_qty":30,"dsr_rate":1515.20,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (A)",[
-   ("REF 2.9.3","Excavation hard rock no blasting (84.89 cum)","cum",84.89,1080.55),
-   ("REF 2.25","Filling (84.89 cum)","cum",84.89,219.65),
+   ("REF#2.9.2","Excavation hard rock blasting (40.399 cum)","cum",40.399,729.00),
+   ("REF#2.25","Filling in trenches (40.399 cum)","cum",40.399,219.65),
   ]),
   ("LABOUR",[
-   ("0114","Beldar","day",2.20,558.00),
+   ("0114","Beldar (rock ramming)","day",1.17,558.00),
   ]),
  ],
 },
 {
- "id":"2.13.3.1","desc":"Pipe trench ordinary rock, dia 150 mm, depth 3–4.5 m",
- "unit":"metre","base_qty":60,"dsr_rate":726.65,
+ "id":"2.13.3.1","desc":"Excavating trenches of required width for pipes, cables, etc, including excavation for sockets, depth upto 1.5 m, including getting out the excavated materials, returning the soil as required in layers not exceeding 20 cm in depth, including consolidating each deposited layers by ramming, watering etc., stacking serviceable material for measurements and disposal of unserviceable material as directed, within a lead of 50 m : - Hard rock (blasting prohibited) - Pipes, cables etc. not exceeding 80 mm dia",
+ "unit":"metre","base_qty":180,"dsr_rate":726.65,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (A)",[
-   ("REF 2.9.1","Excavation ordinary rock (72.29 cum)","cum",72.29,448.15),
-   ("REF 2.25","Filling (72.29 cum)","cum",72.29,219.65),
+   ("REF#2.9.3","Excavation hard rock no blasting (85.05 cum)","cum",85.05,1080.55),
+   ("REF#2.25","Filling in trenches (85.05 cum)","cum",85.05,219.65),
   ]),
   ("LABOUR",[
-   ("0114","Beldar","day",1.80,558.00),
+   ("0114","Beldar (rock ramming)","day",2.50,558.00),
   ]),
  ],
 },
 {
- "id":"2.13.3.2","desc":"Pipe trench hard rock blasting, dia 150 mm, depth 3–4.5 m",
- "unit":"metre","base_qty":60,"dsr_rate":1799.35,
+ "id":"2.13.3.2","desc":"Excavating trenches of required width for pipes, cables, etc, including excavation for sockets, depth upto 1.5 m, including getting out the excavated materials, returning the soil as required in layers not exceeding 20 cm in depth, including consolidating each deposited layers by ramming, watering etc., stacking serviceable material for measurements and disposal of unserviceable material as directed, within a lead of 50 m : - Hard rock (blasting prohibited) - Pipes, cables etc. exceeding 80 mm dia but not exceeding 300 mm dia",
+ "unit":"metre","base_qty":80,"dsr_rate":1799.35,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (A)",[
-   ("REF 2.9.2","Excavation hard rock (72.29 cum)","cum",72.29,729.00),
-   ("REF 2.25","Filling (72.29 cum)","cum",72.29,219.65),
+   ("REF#2.9.3","Excavation hard rock no blasting (93.60 cum)","cum",93.60,1080.55),
+   ("REF#2.25","Filling in trenches (93.60 cum)","cum",93.60,219.65),
   ]),
   ("LABOUR",[
-   ("0114","Beldar","day",1.80,558.00),
+   ("0114","Beldar (rock ramming)","day",2.50,558.00),
   ]),
  ],
 },
 {
- "id":"2.13.3.3","desc":"Pipe trench hard rock no blasting, dia 150 mm, depth 3–4.5 m",
- "unit":"metre","base_qty":60,"dsr_rate":2070.50,
+ "id":"2.13.3.3","desc":"Excavating trenches of required width for pipes, cables, etc, including excavation for sockets, depth upto 1.5 m, including getting out the excavated materials, returning the soil as required in layers not exceeding 20 cm in depth, including consolidating each deposited layers by ramming, watering etc., stacking serviceable material for measurements and disposal of unserviceable material as directed, within a lead of 50 m : - Hard rock (blasting prohibited) - Pipes, cables etc. exceeding 300 mm dia but not exceeding 600 mm dia",
+ "unit":"metre","base_qty":30,"dsr_rate":2070.50,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS (A)",[
-   ("REF 2.9.3","Excavation hard rock no blasting (72.29 cum)","cum",72.29,1080.55),
-   ("REF 2.25","Filling (72.29 cum)","cum",72.29,219.65),
+   ("REF#2.9.3","Excavation hard rock no blasting (40.399 cum)","cum",40.399,1080.55),
+   ("REF#2.25","Filling in trenches (40.399 cum)","cum",40.399,219.65),
   ]),
   ("LABOUR",[
-   ("0114","Beldar","day",1.80,558.00),
+   ("0114","Beldar (rock ramming)","day",2.50,558.00),
   ]),
  ],
 },
 
 # ─── 2.14, 2.15 EXTRA DEPTH ROCK (%) ─────────────────────────────────────────
 {
- "id":"2.14","desc":"Extra over item 2.13 for depth beyond 1.5 m upto 3 m in rock (percentage extra)",
+ "id":"2.14","desc":"Extra for excavating trenches for pipes, cables, etc. in ordinary/hard rock exceeding 1.5 m in depth but not exceeding 3 m. (Rate is over corresponding basic item for depth upto 1.5 metre)",
  "unit":"%","base_qty":1,"dsr_rate":103.75,
  "pct_item":True,"sections":[],
  "notes":"DAR computed 103.60% (DSR 2021: 103.75%).",
 },
 {
- "id":"2.15","desc":"Extra over item 2.13 for depth beyond 3 m in rock (percentage extra)",
+ "id":"2.15","desc":"Extra for excavating trenches for pipes, cables, etc. in ordinary/hard rock exceeding 3m in depth but not exceeding 4.5 m. (Rate is over correspondingbasic item for depth upto 1.5 metre)",
  "unit":"%","base_qty":1,"dsr_rate":256.15,
  "pct_item":True,"sections":[],
  "notes":"DAR computed 255.60% (DSR 2021: 256.15%).",
@@ -575,7 +588,7 @@ ITEMS = [
 
 # ─── 2.16 CLOSE TIMBERING IN TRENCHES ────────────────────────────────────────
 {
- "id":"2.16.1","desc":"Close timbering in trenches including strutting and bracing etc. and removing the same after the work is done - depth up to 2 m",
+ "id":"2.16.1","desc":"Close timbering in trenches including strutting, shoring and packing cavities (wherever required) complete. (Measurements to be taken of the face area timbered). - Depth not exceeding 1.5 m",
  "unit":"sqm","base_qty":90,"dsr_rate":132.90,
  "sections":[
   ("MATERIAL",[
@@ -594,7 +607,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.16.2","desc":"Close timbering in trenches - depth 2–4 m",
+ "id":"2.16.2","desc":"Close timbering in trenches including strutting, shoring and packing cavities (wherever required) complete. (Measurements to be taken of the face area timbered). - Depth exceeding 1.5 m but not exceeding 3 m",
  "unit":"sqm","base_qty":90,"dsr_rate":145.55,
  "sections":[
   ("MATERIAL",[
@@ -613,7 +626,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.16.3","desc":"Close timbering in trenches - depth 4–6 m",
+ "id":"2.16.3","desc":"Close timbering in trenches including strutting, shoring and packing cavities (wherever required) complete. (Measurements to be taken of the face area timbered). - Depth exceeding 3 m but not exceeding 4.5 m",
  "unit":"sqm","base_qty":90,"dsr_rate":174.00,
  "sections":[
   ("MATERIAL",[
@@ -634,7 +647,7 @@ ITEMS = [
 
 # ─── 2.17 CLOSE TIMBERING IN SHAFTS ──────────────────────────────────────────
 {
- "id":"2.17.1","desc":"Close timbering in shafts - depth up to 2 m",
+ "id":"2.17.1","desc":"Close timbering in case of shafts, wells, cesspits, manholes and the like including strutting, shoring and packing cavities (wherever required) etc. complete. (Measurements to be taken of the face area timbered). - Depth not exceeding 1.5 m",
  "unit":"sqm","base_qty":6.6,"dsr_rate":142.50,
  "sections":[
   ("MATERIAL",[
@@ -653,7 +666,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.17.2","desc":"Close timbering in shafts - depth 2–4 m",
+ "id":"2.17.2","desc":"Close timbering in case of shafts, wells, cesspits, manholes and the like including strutting, shoring and packing cavities (wherever required) etc. complete. (Measurements to be taken of the face area timbered). - Depth exceeding 1.5 m but not exceeding 3 m",
  "unit":"sqm","base_qty":6.6,"dsr_rate":169.35,
  "sections":[
   ("MATERIAL",[
@@ -672,7 +685,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.17.3","desc":"Close timbering in shafts - depth 4–6 m",
+ "id":"2.17.3","desc":"Close timbering in case of shafts, wells, cesspits, manholes and the like including strutting, shoring and packing cavities (wherever required) etc. complete. (Measurements to be taken of the face area timbered). - Depth exceeding 3 m but not exceeding 4.5 m",
  "unit":"sqm","base_qty":6.6,"dsr_rate":197.60,
  "sections":[
   ("MATERIAL",[
@@ -693,7 +706,7 @@ ITEMS = [
 
 # ─── 2.18 CLOSE TIMBERING OVER AREAS ─────────────────────────────────────────
 {
- "id":"2.18.1","desc":"Close timbering over areas - depth up to 2 m",
+ "id":"2.18.1","desc":"Close timbering over areas including strutting, shoring and packing cavities (wherever required) etc. complete. (Measurements to be taken of the face area timbered): Depth not exceeding 1.5 m",
  "unit":"sqm","base_qty":45,"dsr_rate":119.10,
  "sections":[
   ("MATERIAL",[
@@ -712,7 +725,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.18.2","desc":"Close timbering over areas - depth 2–4 m",
+ "id":"2.18.2","desc":"Close timbering over areas including strutting, shoring and packing cavities (wherever required) etc. complete. (Measurements to be taken of the face area timbered): Depth exceeding 1.5 m but not exceeding 3 m",
  "unit":"sqm","base_qty":45,"dsr_rate":134.20,
  "sections":[
   ("MATERIAL",[
@@ -731,7 +744,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.18.3","desc":"Close timbering over areas - depth 4–6 m",
+ "id":"2.18.3","desc":"Close timbering over areas including strutting, shoring and packing cavities (wherever required) etc. complete. (Measurements to be taken of the face area timbered): Depth exceeding 3 m but not exceeding 4.5 m",
  "unit":"sqm","base_qty":45,"dsr_rate":149.95,
  "sections":[
   ("MATERIAL",[
@@ -752,7 +765,7 @@ ITEMS = [
 
 # ─── 2.19 EXTRA PERMANENT CLOSE TIMBERING ────────────────────────────────────
 {
- "id":"2.19","desc":"Extra for permanent close timbering (timber left in) over item 2.16",
+ "id":"2.19","desc":"Extra for planking, strutting and packing materials for cavities (in close timbering) if required to be left permanently in position. (Face area of timber permanently left to be measured).",
  "unit":"sqm","base_qty":90,"dsr_rate":1596.50,
  "sections":[
   ("MATERIAL",[
@@ -768,7 +781,7 @@ ITEMS = [
 
 # ─── 2.20 OPEN TIMBERING IN TRENCHES ─────────────────────────────────────────
 {
- "id":"2.20.1","desc":"Open timbering in trenches - depth up to 2 m",
+ "id":"2.20.1","desc":"Open timbering in trenches including strutting and shoring complete (measurements to be taken of the face area timbered): Depth not exceeding 1.5 m",
  "unit":"sqm","base_qty":90,"dsr_rate":68.55,
  "sections":[
   ("MATERIAL",[
@@ -787,7 +800,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.20.2","desc":"Open timbering in trenches - depth 2–4 m",
+ "id":"2.20.2","desc":"Open timbering in trenches including strutting and shoring complete (measurements to be taken of the face area timbered): Depth exceeding 1.5 m but not exceeding 3 m",
  "unit":"sqm","base_qty":90,"dsr_rate":76.40,
  "sections":[
   ("MATERIAL",[
@@ -806,7 +819,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.20.3","desc":"Open timbering in trenches - depth 4–6 m",
+ "id":"2.20.3","desc":"Open timbering in trenches including strutting and shoring complete (measurements to be taken of the face area timbered): Depth exceeding 3 m but not exceeding 4.5 m",
  "unit":"sqm","base_qty":90,"dsr_rate":89.35,
  "sections":[
   ("MATERIAL",[
@@ -827,7 +840,7 @@ ITEMS = [
 
 # ─── 2.21 OPEN TIMBERING IN SHAFTS ───────────────────────────────────────────
 {
- "id":"2.21.1","desc":"Open timbering in shafts - depth up to 2 m",
+ "id":"2.21.1","desc":"Open timbering in case of shafts, wells, cesspits, manholes and the like including strutting and shoring complete (Measurements to be taken of the face area timbered): Depth not exceeding 1.5 m",
  "unit":"sqm","base_qty":6.6,"dsr_rate":62.35,
  "sections":[
   ("MATERIAL",[
@@ -846,7 +859,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.21.2","desc":"Open timbering in shafts - depth 2–4 m",
+ "id":"2.21.2","desc":"Open timbering in case of shafts, wells, cesspits, manholes and the like including strutting and shoring complete (Measurements to be taken of the face area timbered): Depth exceeding 1.5 m but not exceeding 3 m",
  "unit":"sqm","base_qty":6.6,"dsr_rate":74.95,
  "sections":[
   ("MATERIAL",[
@@ -865,7 +878,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.21.3","desc":"Open timbering in shafts - depth 4–6 m",
+ "id":"2.21.3","desc":"Open timbering in case of shafts, wells, cesspits, manholes and the like including strutting and shoring complete (Measurements to be taken of the face area timbered): Depth exceeding 3 m but not exceeding 4.5 m",
  "unit":"sqm","base_qty":6.6,"dsr_rate":91.60,
  "sections":[
   ("MATERIAL",[
@@ -886,7 +899,7 @@ ITEMS = [
 
 # ─── 2.22 OPEN TIMBERING OVER AREAS ──────────────────────────────────────────
 {
- "id":"2.22.1","desc":"Open timbering over areas - depth up to 2 m",
+ "id":"2.22.1","desc":"Open timbering over areas including strutting, shoring etc. complete. (Measurements to be taken of the face area timbered): Depth not exceeding 1.5 m",
  "unit":"sqm","base_qty":45,"dsr_rate":42.40,
  "sections":[
   ("MATERIAL",[
@@ -905,7 +918,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.22.2","desc":"Open timbering over areas - depth 2–4 m",
+ "id":"2.22.2","desc":"Open timbering over areas including strutting, shoring etc. complete. (Measurements to be taken of the face area timbered): Depth exceeding 1.5 m but not exceeding 3 m",
  "unit":"sqm","base_qty":45,"dsr_rate":50.80,
  "sections":[
   ("MATERIAL",[
@@ -924,7 +937,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.22.3","desc":"Open timbering over areas - depth 4–6 m",
+ "id":"2.22.3","desc":"Open timbering over areas including strutting, shoring etc. complete. (Measurements to be taken of the face area timbered): Depth exceeding 3 m but not exceeding 4.5 m",
  "unit":"sqm","base_qty":45,"dsr_rate":64.30,
  "sections":[
   ("MATERIAL",[
@@ -945,7 +958,7 @@ ITEMS = [
 
 # ─── 2.23 EXTRA PERMANENT OPEN TIMBERING ─────────────────────────────────────
 {
- "id":"2.23","desc":"Extra for permanent open timbering (timber left in) over item 2.20",
+ "id":"2.23","desc":"Extra for planking and strutting in open timbering if required to be left permanently in position. (Face area of the timber permanently left to be measured).",
  "unit":"sqm","base_qty":90,"dsr_rate":822.05,
  "sections":[
   ("MATERIAL",[
@@ -961,7 +974,7 @@ ITEMS = [
 
 # ─── 2.24 PERCENTAGE EXTRAS ───────────────────────────────────────────────────
 {
- "id":"2.24.1","desc":"Extra rates for quantities of work executed in or under water and/or liquid mud, including pumping out water as required - 20% over each applicable item; apply only to qualifying quantity measured by metre depth from sub-soil water level to centre of gravity",
+ "id":"2.24.1","desc":"Extra rates for quantities of works, executed: In or under water and/or liquid mud, including pumping out water as required",
  "unit":"%","base_qty":1,"dsr_rate":None,
  "pct_item":True,"conditional_extra":True,"percent":20,
  "conditional_rule":"20% of qualifying selected base rate",
@@ -969,7 +982,7 @@ ITEMS = [
  "notes":"Conditional 20% extra over each applicable earthwork item, limited to qualifying work. Measure depth from sub-soil water level to centre of gravity. No resource rows.",
 },
 {
- "id":"2.24.2","desc":"Extra rates for quantities of work executed in or under foul position, including pumping out water as required - 25% over each applicable item; apply only to qualifying quantity measured by metre depth from sub-soil water level to centre of gravity",
+ "id":"2.24.2","desc":"Extra rates for quantities of works, executed: In or under foul position, including pumping out water as required",
  "unit":"%","base_qty":1,"dsr_rate":None,
  "pct_item":True,"conditional_extra":True,"percent":25,
  "conditional_rule":"25% of qualifying selected base rate",
@@ -979,7 +992,7 @@ ITEMS = [
 
 # ─── 2.25 FILLING IN TRENCHES ────────────────────────────────────────────────
 {
- "id":"2.25","desc":"Filling in trenches, plinth, sides of foundations, etc., with available excavated earth, in layers not exceeding 20 cm in depth, consolidated each layer by ramming and watering",
+ "id":"2.25","desc":"Filling available excavated earth (excluding rock) in trenches, plinth, sides of foundations etc. in layers not exceeding 20cm in depth, consolidating each deposited layer by ramming and watering, lead up to 50 m and lift upto 1.5 m.",
  "unit":"cum","base_qty":10,"dsr_rate":253.95,
  "sections":[
   ("LABOUR",[
@@ -992,7 +1005,7 @@ ITEMS = [
 
 # ─── 2.25(a) FILLING WITH EXCAVATED EARTH (MACHINE) ─────────────────────────
 {
- "id":"2.25(a)","desc":"Filling in trenches/plinth with sand under plinth by mechanical means using excavated earth from borrow pits with all leads and lifts",
+ "id":"2.25(a)","desc":"Excavating, supplying and filling of local earth (including royalty) by mechanical transport upto a lead of 5km also including ramming and watering of the earth in layers not exceeding 20 cm in trenches, plinth, sides of foundation etc. complete.",
  "unit":"cum","base_qty":10,"dsr_rate":368.65,
  "ref_pattern":True,
  "sections":[
@@ -1011,7 +1024,7 @@ ITEMS = [
 
 # ─── 2.26 EXTRA LIFT ──────────────────────────────────────────────────────────
 {
- "id":"2.26.1","desc":"Extra over item 2.3 for lift above 1.5 m upto 3 m",
+ "id":"2.26.1","desc":"Extra for every additional lift of 1.5 m or part thereof in excavation / banking excavated or stacked materials. - All kinds of soil",
  "unit":"cum","base_qty":10,"dsr_rate":104.50,
  "sections":[
   ("LABOUR",[
@@ -1021,7 +1034,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.26.2","desc":"Extra over item 2.3 for lift above 3 m upto 4.5 m",
+ "id":"2.26.2","desc":"Extra for every additional lift of 1.5 m or part thereof in excavation / banking excavated or stacked materials. - Ordinary or hard rock",
  "unit":"cum","base_qty":10,"dsr_rate":187.40,
  "sections":[
   ("LABOUR",[
@@ -1033,7 +1046,7 @@ ITEMS = [
 
 # ─── 2.27 FILLING WITH SAND ───────────────────────────────────────────────────
 {
- "id":"2.27","desc":"Filling in trenches/plinth with sand under floors including watering and compaction",
+ "id":"2.27","desc":"Supplying and filling in plinth with sand under floors, including watering, ramming, consolidating and dressing complete.",
  "unit":"cum","base_qty":10,"dsr_rate":2161.20,
  "sections":[
   ("MATERIAL",[
@@ -1052,7 +1065,7 @@ ITEMS = [
 
 # ─── 2.28 DRESSING OF SLOPES ──────────────────────────────────────────────────
 {
- "id":"2.28.1","desc":"Dressing of slopes (cut or fill) in ordinary soil including trimming to required slope",
+ "id":"2.28.1","desc":"Surface dressing of the ground including removing vegetation and in-equalities not exceeding 15 cm deep and disposal of rubbish, lead up to 50 m and lift up to 1.5 m. - All kinds of soil",
  "unit":"sqm","base_qty":100,"dsr_rate":28.15,
  "sections":[
   ("LABOUR",[
@@ -1062,7 +1075,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.28.2","desc":"Dressing of slopes in hard soil",
+ "id":"2.28.2","desc":"Surface dressing of the ground including removing vegetation and in-equalities not exceeding 15 cm deep and disposal of rubbish, lead up to 50 m and lift up to 1.5 m. - Hard soil",
  "unit":"sqm","base_qty":100,"dsr_rate":35.15,
  "sections":[
   ("LABOUR",[
@@ -1074,7 +1087,7 @@ ITEMS = [
 
 # ─── 2.29 RAMMING & WATERING ──────────────────────────────────────────────────
 {
- "id":"2.29.1","desc":"Ramming and watering the bottoms of excavations or tops of fillings including Bhisti charges",
+ "id":"2.29.1","desc":"Ploughing the existing ground to a depth of 15 cm to 25 cm and watering the same. - All kinds of soil",
  "unit":"sqm","base_qty":100,"dsr_rate":28.50,
  "sections":[
   ("LABOUR",[
@@ -1084,7 +1097,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.29.2","desc":"Ramming and watering (for hard soil)",
+ "id":"2.29.2","desc":"Ploughing the existing ground to a depth of 15 cm to 25 cm and watering the same. - Hard soil",
  "unit":"sqm","base_qty":100,"dsr_rate":34.70,
  "sections":[
   ("LABOUR",[
@@ -1096,7 +1109,7 @@ ITEMS = [
 
 # ─── 2.30 BORING HOLES IN ROCK ───────────────────────────────────────────────
 {
- "id":"2.30.1","desc":"Boring holes for fence posts in ordinary soil (avg 0.30 cum each), base 10 holes",
+ "id":"2.30.1","desc":"Excavating holes more than 0.10 cum & upto 0.5 cum including getting out the excavated soil, then returning the soil as required in layers not exceeding 20cm in depth, including consolidating each deposited layer by ramming, watering etc, disposing of surplus excavated soil, as directed within a lead of 50 m and lift upto 1.5 m. - All kinds of soil",
  "unit":"each","base_qty":10,"dsr_rate":89.90,
  "ref_pattern":True,
  "sections":[
@@ -1109,7 +1122,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.30.2","desc":"Boring holes in ordinary rock",
+ "id":"2.30.2","desc":"Excavating holes more than 0.10 cum & upto 0.5 cum including getting out the excavated soil, then returning the soil as required in layers not exceeding 20cm in depth, including consolidating each deposited layer by ramming, watering etc, disposing of surplus excavated soil, as directed within a lead of 50 m and lift upto 1.5 m. - Ordinary rock",
  "unit":"each","base_qty":10,"dsr_rate":160.90,
  "ref_pattern":True,
  "sections":[
@@ -1122,7 +1135,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.30.3","desc":"Boring holes in hard rock by blasting",
+ "id":"2.30.3","desc":"Excavating holes more than 0.10 cum & upto 0.5 cum including getting out the excavated soil, then returning the soil as required in layers not exceeding 20cm in depth, including consolidating each deposited layer by ramming, watering etc, disposing of surplus excavated soil, as directed within a lead of 50 m and lift upto 1.5 m. - Hard rock (requiring blasting)",
  "unit":"each","base_qty":10,"dsr_rate":257.70,
  "ref_pattern":True,
  "sections":[
@@ -1135,7 +1148,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.30.4","desc":"Boring holes in hard rock blasting prohibited",
+ "id":"2.30.4","desc":"Excavating holes more than 0.10 cum & upto 0.5 cum including getting out the excavated soil, then returning the soil as required in layers not exceeding 20cm in depth, including consolidating each deposited layer by ramming, watering etc, disposing of surplus excavated soil, as directed within a lead of 50 m and lift upto 1.5 m. - Hard rock (blasting prohibited)",
  "unit":"each","base_qty":10,"dsr_rate":381.40,
  "ref_pattern":True,
  "sections":[
@@ -1150,7 +1163,7 @@ ITEMS = [
 
 # ─── 2.31 SCARIFYING ──────────────────────────────────────────────────────────
 {
- "id":"2.31","desc":"Scarifying existing road surface 50 mm deep by means of a grader with ripper attachment",
+ "id":"2.31","desc":"Clearing jungle including uprooting of rank vegetation, grass, brush wood, trees and saplings of girth up to 30 cm measured at a height of 1 m above ground level and removal of rubbish up to a distance of 50 m outside the periphery of the area cleared.",
  "unit":"sqm","base_qty":100,"dsr_rate":14.50,
  "sections":[
   ("LABOUR",[
@@ -1162,7 +1175,7 @@ ITEMS = [
 
 # ─── 2.32 GRADING BORROW PITS ────────────────────────────────────────────────
 {
- "id":"2.32","desc":"Grading around borrow pits after earthwork is done",
+ "id":"2.32","desc":"Clearing grass and removal of the rubbish up to a distance of 50 m outside the periphery of the area cleared.",
  "unit":"sqm","base_qty":100,"dsr_rate":7.40,
  "sections":[
   ("LABOUR",[
@@ -1175,7 +1188,7 @@ ITEMS = [
 
 # ─── 2.33 TREE FELLING ────────────────────────────────────────────────────────
 {
- "id":"2.33.1","desc":"Felling and removal of trees including cutting of branches and roots - girth up to 0.30 m",
+ "id":"2.33.1","desc":"Felling trees of the girth (measured at a height of 1 m above ground level), including cutting of trunks and branches, removing the roots and stacking of serviceable material and disposal of unserviceable material. - Beyond 30 cm girth upto and including 60 cm girth",
  "unit":"each","base_qty":1,"dsr_rate":439.25,
  "sections":[
   ("LABOUR",[
@@ -1186,7 +1199,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.33.2","desc":"Felling and removal of trees - girth 0.30–0.60 m",
+ "id":"2.33.2","desc":"Felling trees of the girth (measured at a height of 1 m above ground level), including cutting of trunks and branches, removing the roots and stacking of serviceable material and disposal of unserviceable material. - Beyond 60 cm girth upto and including 120 cm girth",
  "unit":"each","base_qty":1,"dsr_rate":1957.15,
  "sections":[
   ("LABOUR",[
@@ -1197,7 +1210,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.33.3","desc":"Felling and removal of trees - girth 0.60–0.90 m",
+ "id":"2.33.3","desc":"Felling trees of the girth (measured at a height of 1 m above ground level), including cutting of trunks and branches, removing the roots and stacking of serviceable material and disposal of unserviceable material. - Beyond 120 cm girth upto and including 240 cm girth",
  "unit":"each","base_qty":1,"dsr_rate":9084.05,
  "sections":[
   ("LABOUR",[
@@ -1208,7 +1221,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.33.4","desc":"Felling and removal of trees - girth 0.90–1.20 m",
+ "id":"2.33.4","desc":"Felling trees of the girth (measured at a height of 1 m above ground level), including cutting of trunks and branches, removing the roots and stacking of serviceable material and disposal of unserviceable material. - Above 240 cm girth",
  "unit":"each","base_qty":1,"dsr_rate":18198.70,
  "sections":[
   ("LABOUR",[
@@ -1221,7 +1234,7 @@ ITEMS = [
 
 # ─── 2.34 ANTI-TERMITE CHEMICAL ──────────────────────────────────────────────
 {
- "id":"2.34.1","desc":"Pre-constructional anti-termite treatment: applying Chlorpyriphos 1% emulsion in water @ 5 litres per sqm",
+ "id":"2.34.1","desc":"Supplying chemical emulsion in sealed containers including delivery as specified. - Chlorpyriphos/ Lindane emulsifiable concentrate of 20%",
  "unit":"litre","base_qty":100,"dsr_rate":200.90,
  "sections":[
   ("MATERIAL",[
@@ -1235,7 +1248,7 @@ ITEMS = [
 
 # ─── 2.35 POST-CONSTRUCTIONAL ANTI-TERMITE ───────────────────────────────────
 {
- "id":"2.35.1.1","desc":"Post-constructional anti-termite: drilling holes 12 mm dia at 300 mm c/c in brick/RCC columns at ground level and injecting chemical - per metre depth of drilling",
+ "id":"2.35.1.1","desc":"Diluting and injecting chemical emulsion for POST-CONSTRUCTIONAL anti- termite treatment (excluding the cost of chemical emulsion) : - Along external wall where the apron is not provided using chemical emulsion @ 7.5 litres / sqm of the vertical surface of the substructure to a depth of 300mm including excavation channel along the wall & rodding etc. complete: - With Chlorpyriphos/ Lindane E.C. 20% with 1% concentration",
  "unit":"metre","base_qty":1,"dsr_rate":32.30,
  "sections":[
   ("LABOUR",[
@@ -1245,7 +1258,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.35.2.1","desc":"Post-constructional anti-termite: drilling and injecting chemical in wall at 450 mm c/c both faces - per metre run of wall",
+ "id":"2.35.2.1","desc":"Diluting and injecting chemical emulsion for POST-CONSTRUCTIONAL anti- termite treatment (excluding the cost of chemical emulsion) : - Along the external wall below concrete or masonry apron using chemical emulsion @ 2.25 litres per linear metre including drilling and plugging holes etc.: - With Chlorpyriphos/ Lindane E.C. 20% with 1% concentration",
  "unit":"metre","base_qty":1,"dsr_rate":44.70,
  "sections":[
   ("LABOUR",[
@@ -1255,7 +1268,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.35.3.1","desc":"Post-constructional anti-termite: rodding in floor junction with wall and injecting chemical - per sqm",
+ "id":"2.35.3.1","desc":"Diluting and injecting chemical emulsion for POST-CONSTRUCTIONAL anti- termite treatment (excluding the cost of chemical emulsion) : - Treatment of soil under existing floors using chemical emulsion @ one litre per hole, 300 mm apart including drilling 12 mm diameter holes and plugging with cement mortar 1 :2 (1 cement : 2 Coarse sand) to match the existing floor: - With Chlorpyriphos/Lindane E.C. 20% with 1% concentration",
  "unit":"sqm","base_qty":1,"dsr_rate":256.15,
  "sections":[
   ("LABOUR",[
@@ -1266,7 +1279,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.35.4.1","desc":"Post-constructional anti-termite: treatment on external perimeter of building - per metre run",
+ "id":"2.35.4.1","desc":"Diluting and injecting chemical emulsion for POST-CONSTRUCTIONAL anti- termite treatment (excluding the cost of chemical emulsion) : - Treatment of existing masonry using chemical emulsion @ one litre per hole at 300 mm interval including drilling holes at 45 degree and plugging them with cement mortar 1:2 (1 cement : 2 coarse sand) to the full depth of the hole : - With Chlorpyriphos/Lindane E.C. 20% with 1% concentration",
  "unit":"metre","base_qty":1,"dsr_rate":35.75,
  "sections":[
   ("LABOUR",[
@@ -1277,7 +1290,7 @@ ITEMS = [
  ],
 },
 {
- "id":"2.35.5","desc":"Treatment of timber against white ants using kerosene solution - per metre of sill/frame/chowkat",
+ "id":"2.35.5","desc":"Diluting and injecting chemical emulsion for POST-CONSTRUCTIONAL anti- termite treatment (excluding the cost of chemical emulsion) : Treatment at points of contact of wood work by chemical emulsion Chlorpyriphos/ Lindane (in oil or kerosene based solution) @ 0.5 litres per hole by drilling 6 mm dia holes at downward angle of 45 degree at 150 mm centre to centre and sealing the same.",
  "unit":"metre","base_qty":1,"dsr_rate":257.55,
  "sections":[
   ("MATERIAL",[
@@ -1293,7 +1306,7 @@ ITEMS = [
 
 # ─── 2.36 COMPACTION BY SHEEP-FOOT ROLLER ────────────────────────────────────
 {
- "id":"2.36","desc":"Compaction of earth fill by mechanical sheep-foot roller, lift not exceeding 300 mm",
+ "id":"2.36","desc":"Extra for levelling & neatly dressing of disposed soil completely as directed by Engineer-in-charge.",
  "unit":"cum","base_qty":10,"dsr_rate":76.70,
  "sections":[
   ("LABOUR",[
@@ -1305,7 +1318,7 @@ ITEMS = [
 
 # ─── 2.37 FILLING WITH FLY ASH ───────────────────────────────────────────────
 {
- "id":"2.37","desc":"Filling in plinth/trenches with fly ash obtained from thermal power plant",
+ "id":"2.37","desc":"Supply and stacking of Fly ash conforming to IRC- 58 at site, including carriage, loading , unloading & stacking up to any lead (measured stacks will be reduced by 20% for payment).",
  "unit":"cum","base_qty":1,"dsr_rate":234.05,
  "sections":[
   ("MATERIAL",[
@@ -1319,7 +1332,7 @@ ITEMS = [
 
 # ─── 2.38 FILLING – IMPORTED EARTH ───────────────────────────────────────────
 {
- "id":"2.38","desc":"Filling in plinth/trenches with earth obtained from approved borrow pits including all leads/lifts, watering and compaction",
+ "id":"2.38","desc":"Filling with available fly ash and earth (excluding rock) in trenches or embankment in layers (each layer should not exceed 15 cm), with intermediate layer of compacted earth (Soil density of 98%) after every four layers of compacted depth of fly ash, sides & top layer of filling shall be done with earth having total minimum compacted thickness 30 cm or as decided by Engineer - in-charge, including compacting each layer by rolling/ ramming and watering, all complete as per drawing and direction of Engineer -in - charge.",
  "unit":"cum","base_qty":10,"dsr_rate":253.95,
  "sections":[
   ("LABOUR",[
@@ -1360,321 +1373,1112 @@ def set_cell(ws, row, col, value, font=None, fill_obj=None, align=None, num_form
     return c
 
 
+from pathlib import Path
+import json
+import earthwork_teaching_knowledge
+
+_SPECS_PATH = Path(__file__).resolve().parents[1] / "data" / "reference_json" / "earthwork_pdf_specs.json"
+if _SPECS_PATH.exists():
+    with open(_SPECS_PATH, encoding="utf-8") as _f:
+        PDF_SPECS = json.load(_f)
+else:
+    PDF_SPECS = {}
+
+
+
 def write_item(ws, item, start_row):
-    """Write one complete item analysis block. Returns next free row."""
+    """Write one complete first-principles item table with 7 columns:
+    Item Code | Labour / Machine / Material | Work done | Condition / When used | Category | Productivity | Quantity
+    """
     r = start_row
-    base = item["base_qty"]
-    unit = item["unit"]
-    is_pct   = item.get("pct_item", False)
-    is_conditional_extra = item.get("conditional_extra", False)
-    is_ref   = item.get("ref_pattern", False)
-    notes    = item.get("notes", "")
+    item_code = item["id"]
+    base_qty = float(item.get("base_qty", 10.0))
+    unit = item.get("unit", "cum")
 
-    # ── Item header ──
-    ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=8)
-    hdr_txt = f"Item {item['id']}  |  {item['desc']}"
-    c = ws.cell(row=r, column=1, value=hdr_txt)
-    c.font  = FT_HDR
-    c.fill  = fill(C_ITEM_HDR)
-    c.alignment = AL_L
-    r += 1
-
-    # Base quantity header
-    ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=6)
-    if is_conditional_extra:
-        base_txt = (
-            f"Conditional percentage extra: {item['conditional_rule']} (not a flat Rs rate). "
-            "Apply only to the qualifying quantity/depth."
-        )
-    else:
-        base_txt = f"Details of cost for {base} {unit}" + (f"  [DSR 2021 Rate: {item['dsr_rate']:.2f}/{unit}]")
-    c = ws.cell(row=r, column=1, value=base_txt)
-    c.font  = Font(bold=True, italic=True, size=9)
-    c.fill  = fill("D6E4F0")
-    c.alignment = AL_L
-    r += 1
-
-    # Column headers
-    for ci, h in enumerate(HEADERS, 1):
-        c = ws.cell(row=r, column=ci, value=h)
-        c.font  = Font(bold=True, size=9, color="FFFFFF")
-        c.fill  = fill("4472C4")
-        c.alignment = AL_C
-        c.border = thin_border()
-    r += 1
-
-    # ── Percentage-only items ──
-    if is_pct:
-        ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=6)
-        txt = notes if notes else f"Percentage extra: {item.get('percent', item['dsr_rate']):.2f}%"
-        c = ws.cell(row=r, column=1, value=txt)
-        c.font  = FT_BODY
-        c.fill  = fill(C_CHAIN_LBL)
-        c.alignment = AL_L
+    # 1. Header rows (Parent description & Sub-item description spanning A:G)
+    hdr_lines = get_item_headers(item_code)
+    for idx, line in enumerate(hdr_lines):
+        ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=7)
+        cell = ws.cell(row=r, column=1, value=line)
+        cell.font = Font(name="Calibri", size=10, bold=True, color="FFFFFF")
+        cell.fill = fill("1F4E79" if idx == 0 else "2E75B6")
+        cell.alignment = AL_L
+        ws.row_dimensions[r].height = max(24, min(100, (len(line) // 80 + 1) * 16))
+        for col in range(2, 8):
+            ws.cell(row=r, column=col).border = thin_border()
+        cell.border = thin_border()
         r += 1
-        # per-unit row
-        ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=5)
-        if is_conditional_extra:
-            ws.cell(row=r, column=1, value="Conditional composer rule (not a flat Rs rate)").font = FT_BOLD
-            set_cell(ws, r, 6, item["conditional_rule"], font=FT_BOLD, fill_obj=fill(C_FINAL), align=AL_L)
-        else:
-            ws.cell(row=r, column=1, value="DAR 2019 Rate (CivilDAR computed)").font = FT_BOLD
-            set_cell(ws, r, 6, item["dsr_rate"], font=FT_BOLD, fill_obj=fill(C_FINAL), num_format=NUM_FMT)
-        ws.cell(row=r, column=6).alignment = AL_R
-        r += 2
-        return r
 
-    # ── Resource sections ──
-    # Collect rows for W calculation (exclude REF rows if ref_pattern)
-    resource_rows = []  # list of (sheet_row, is_ref_A)
-    ref_total = 0.0     # sum of ref amounts (not in W chain)
-    w_rows    = []      # (qty_cell_ref, rate_cell_ref, amount_cell_ref)
+    # 2. Blank spacing row
+    ws.row_dimensions[r].height = 6
+    r += 1
 
-    for sec_name, rows in item["sections"]:
-        if not rows:
+    # 3. Table Column Header (7 Columns):
+    headers = [
+        "Item Code",
+        "Labour / Machine / Material",
+        "Work done",
+        "Condition / When used",
+        "Category",
+        "Productivity",
+        "Quantity",
+    ]
+    ws.row_dimensions[r].height = 22
+    for col_idx, h_text in enumerate(headers, start=1):
+        cell = ws.cell(row=r, column=col_idx, value=h_text)
+        cell.font = Font(name="Calibri", size=9, bold=True, color="FFFFFF")
+        cell.fill = fill("2E75B6")
+        cell.alignment = AL_C if col_idx in (1, 5, 7) else (AL_R if col_idx == 6 else AL_L)
+        cell.border = thin_border()
+    r += 1
+
+    # 4. Extract resources
+    labour_rows = []
+    machine_rows = []
+    material_rows = []
+    reference_rows = []
+
+    has_power_roller = False
+    for sec_name, rows in item.get("sections", []):
+        if "REFERENCE" in sec_name:
+            # Process referenced base items
+            for row in rows:
+                ref_id = str(row[0]).strip()
+                ref_desc = str(row[1]).strip()
+                ref_unit = str(row[2]).strip()
+                ref_qty = float(row[3])
+                unit_factor = ref_qty / base_qty if base_qty > 0 else 0
+                if ref_id.isdigit():
+                    ref_label = ref_desc
+                    spec_desc = f"Direct direct cost/material scope executed as per CPWD {ref_id} specification"
+                    cat_name = "Material"
+                else:
+                    ref_label = f"{ref_id} ({ref_desc})"
+                    spec_desc = f"Sub-item scope executed as per CPWD {ref_id} specification"
+                    cat_name = "Reference"
+                ref_data = (
+                    ref_label,
+                    f"Referenced base execution: {ref_desc}",
+                    spec_desc,
+                    cat_name,
+                    f"{ref_qty:g} {ref_unit} ({unit_factor:.3f} {ref_unit}/{unit})",
+                    f"{int(base_qty) if base_qty == int(base_qty) else base_qty} {unit}",
+                )
+                if cat_name == "Material":
+                    material_rows.append(ref_data)
+                else:
+                    reference_rows.append(ref_data)
             continue
-        # Section header
-        ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=8)
-        c = ws.cell(row=r, column=1, value=sec_name)
-        c.font  = FT_SEC
-        c.fill  = fill(C_SEC_HDR)
-        c.alignment = AL_L
-        r += 1
 
-        is_ref_section = ("(A" in sec_name or "REFERENCE" in sec_name.upper())
+        for row in rows:
+            res_code = str(row[0]).strip()
+            res_name = str(row[1]).strip()
+            res_unit = str(row[2]).strip()
+            coeff = float(row[3])
 
-        for code, desc, u, qty, rate in rows:
-            is_ref_row = (code == "REF" or is_ref_section)
-            f_bg = C_REF_ROW if is_ref_row else C_WHITE
+            if res_code == "9999" or "sundries" in res_name.lower():
+                continue
 
-            set_cell(ws, r, COL_CODE, code,  font=FT_BODY, fill_obj=fill(f_bg), align=AL_C)
-            set_cell(ws, r, COL_DESC, desc,  font=FT_BODY, fill_obj=fill(f_bg), align=AL_L)
-            set_cell(ws, r, COL_UNIT, u,     font=FT_BODY, fill_obj=fill(f_bg), align=AL_C)
-            qc = set_cell(ws, r, COL_QTY,  qty,  font=FT_BODY, fill_obj=fill(f_bg), num_format=NUM_FMT)
-            rc = set_cell(ws, r, COL_RATE, rate, font=FT_BODY, fill_obj=fill(f_bg), num_format=NUM_FMT)
+            sec_upper = sec_name.upper()
+            sec_type = "LABOUR" if "LABOUR" in sec_upper else ("MACHINERY" if "MACHINERY" in sec_upper else ("MATERIAL" if "MATERIAL" in sec_upper else "CARRIAGE"))
 
-            # Amount formula: =D_r * E_r
-            qty_ref  = f"D{r}"
-            rate_ref = f"E{r}"
-            amt_ref  = f"F{r}"
-            ac = ws.cell(row=r, column=COL_AMT)
-            ac.value  = f"={qty_ref}*{rate_ref}"
-            ac.font   = FT_BODY
-            ac.fill   = fill(f_bg)
-            ac.number_format = NUM_FMT
-            ac.border = thin_border()
+            data = earthwork_teaching_knowledge.get_teaching_row_data(
+                item_code=item_code,
+                res_code=res_code,
+                raw_name=res_name,
+                section_name=sec_type,
+                coeff=coeff,
+                unit=res_unit,
+                batch_qty=base_qty,
+                batch_unit=unit,
+            )
+            if res_code == "0003":
+                has_power_roller = True
 
-            if is_ref_row:
-                ref_total += qty * rate
+            cat = data[3]
+            if cat == "Labour":
+                labour_rows.append(data)
+            elif cat in ("Machine", "Equipment"):
+                machine_rows.append(data)
+            elif cat == "Material":
+                material_rows.append(data)
             else:
-                w_rows.append(amt_ref)
+                reference_rows.append(data)
 
-            r += 1
+    # Add 1/2-t roller for rolling items 2.2.1, 2.2.2, 2.3.1, 2.3.2
+    if has_power_roller and item_code in ("2.2.1", "2.2.2", "2.3.1", "2.3.2"):
+        roller_05_data = (
+            "½-ton roller / wooden or steel rammers",
+            "Initial compaction of each earth layer (<=20 cm depth)",
+            "Compacting loose layers 1 and 2 of each 3-layer cycle; manual/light compaction; output = 1.14 cum/hr",
+            "Equipment",
+            "8.8 machine-hrs (1.14 cum/hr)",
+            f"{int(base_qty) if base_qty == int(base_qty) else base_qty} {unit}",
+        )
+        machine_rows.insert(0, roller_05_data)
 
-    # ── Calculation chain ──
-    chain_fill = fill(C_CHAIN_LBL)
-    chain_font = FT_CHAIN
+    # Add durmats for trench/plinth filling 2.25
+    if item_code == "2.25":
+        durmat_data = (
+            "Wooden or steel rammers (durmats)",
+            "Compacting backfilled earth layers in confined foundation trenches and plinth floors",
+            "Each layer <= 20 cm; confined areas inaccessible to power rollers; output = 1.56 cum/hr",
+            "Equipment",
+            "6.4 machine-hrs (1.56 cum/hr)",
+            f"{int(base_qty) if base_qty == int(base_qty) else base_qty} {unit}",
+        )
+        machine_rows.insert(0, durmat_data)
 
-    # TOTAL W
-    if w_rows:
-        w_formula = "=SUM(" + ",".join(w_rows) + ")"
-    else:
-        w_formula = 0
+    # Composite Pipe Trench Items (2.10.1.1, 2.10.1.2, 2.10.1.3)
+    if item_code in ("2.10.1.1", "2.10.1.2", "2.10.1.3"):
+        trench_notes = {
+            "2.10.1.1": "180 m pipe run (180m × 0.45m × 1.05m = 85.05 cum, 0.4725 cum/m)",
+            "2.10.1.2": "110 m pipe run (110m × 0.60m × 1.225m + 5% = 84.89 cum, 0.7717 cum/m)",
+            "2.10.1.3": "60 m pipe run (60m × 0.75m × 1.45m + 10% = 72.29 cum, 1.2048 cum/m)",
+        }[item_code]
 
-    # For ref_pattern items: show ref total separately, then add W for chain
-    if is_ref and not w_rows:
-        # Pure ref item (e.g. 2.10.1.x) — chain on the ref total
-        set_cell(ws, r, 1, "Sub-total of Referenced Items (A)", font=chain_font, fill_obj=fill("C6EFCE"), align=AL_L)
-        ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=5)
-        ref_sum_cell = f"F{r}"
-        # sum all F rows in the section block — just use literal
-        all_f = [f"F{rr}" for rr in range(start_row+3, r) if True]
-        # simpler: just put the computed ref_total as value
-        set_cell(ws, r, 6, ref_total, font=chain_font, fill_obj=fill("C6EFCE"), num_format=NUM_FMT)
-        ref_sum_row = r
+        # Standard uniform batch of 10 cum:
+        # REF#2.8.1 (per 10 cum): Mate = 0.40 day (3.20 h), Coolie = 2.05 day (16.40 h), Excavator = 0.04125 day (0.33 h), Loader = 0.04125 day (0.33 h)
+        # REF#2.25 (per 10 cum): Mate = 0.20 day (1.60 h), Coolie = 2.50 day (20.00 h), Bhisti = 0.20 day (1.60 h)
+        # Combined: Mate = 0.60 day (4.80 h), Coolie = 4.55 day (36.40 h), Bhisti = 0.20 day (1.60 h)
+        labour_rows = [
+            (
+                "Mate",
+                "Supervising trench excavation alignment, socket pits, and backfill layer compaction (REF#2.8.1 + REF#2.25)",
+                f"Combined REF#2.8.1 (0.40 day) + REF#2.25 (0.20 day) = 0.60 day/10 cum. Derived from {trench_notes}. Standardized to uniform 10 cum batch.",
+                "Labour",
+                "4.80 man-hrs (2.08 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Coolie",
+                "Shifting/carrying excavated soil, disposing within 50 m lead, and returning backfill soil (REF#2.8.1 + REF#2.25)",
+                f"Combined REF#2.8.1 (2.05 day) + REF#2.25 (2.50 day) = 4.55 day/10 cum. Spoil disposal & 20 cm layer backfill. Derived from {trench_notes}.",
+                "Labour",
+                "36.40 man-hrs (0.27 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Bhisti",
+                "Watering backfilled soil layers to optimum moisture content for consolidation (REF#2.25)",
+                f"0.20 day/10 cum (1.60 man-hrs/10 cum). Applied in layers not exceeding 20 cm depth around pipe. Derived from {trench_notes}.",
+                "Labour",
+                "1.60 man-hrs (6.25 cum/man-hr)",
+                "10 cum",
+            ),
+        ]
+        machine_rows = [
+            (
+                "Hydraulic Excavator 0.9 cum",
+                "Mechanical trench cutting to required depth and profile (REF#2.8.1)",
+                f"0.04125 day/10 cum (0.33 machine-hr/10 cum); bucket capacity 0.9 cum; output = 30.30 cum/hr. Derived from {trench_notes}.",
+                "Machine",
+                "0.33 machine-hrs (30.30 cum/hr)",
+                "10 cum",
+            ),
+            (
+                "Front End Loader 1.0 cum",
+                "Loading surplus excavated trench soil into tippers for disposal (REF#2.8.1)",
+                f"0.04125 day/10 cum (0.33 machine-hr/10 cum); bucket capacity 1.0 cum; output = 30.30 cum/hr. Derived from {trench_notes}.",
+                "Machine",
+                "0.33 machine-hrs (30.30 cum/hr)",
+                "10 cum",
+            ),
+        ]
+        reference_rows = [
+            (
+                "REF#2.8.1 (Pipe trench excavation in ordinary soil)",
+                "Referenced base execution: Excavation pipe trench ordinary soil",
+                f"Trench cut volume: 10 cum base scope executed as per CPWD REF#2.8.1 specification. Derived from {trench_notes}.",
+                "Reference",
+                "10.00 cum (1.000 cum/cum)",
+                "10 cum",
+            ),
+            (
+                "REF#2.25 (Filling plinth/trenches in 20cm layers, watering & ramming)",
+                "Referenced base execution: Filling in trenches",
+                f"Backfill volume: 10 cum base scope executed as per CPWD REF#2.25 specification. Derived from {trench_notes}.",
+                "Reference",
+                "10.00 cum (1.000 cum/cum)",
+                "10 cum",
+            ),
+        ]
+
+    # Extra Depth Pipe Trench Items in Soil (2.11 & 2.12)
+    if item_code in ("2.11", "2.12"):
+        trench_info = (
+            "300 m pipe trench depth >1.5m to 3.0m in soil (+127.00% extra)"
+            if item_code == "2.11"
+            else "100 m pipe trench depth >3.0m to 4.5m in soil (+315.05% extra)"
+        )
+        labour_rows = [
+            (
+                "Mate",
+                "Supervising deep trench excavation alignment, safety staging, and backfill compaction",
+                f"Combined REF#2.8.1 + REF#2.6.1 + REF#2.25 + REF#2.26.1. Derived from {trench_info}. Standardized to uniform 10 cum batch.",
+                "Labour",
+                "5.20 man-hrs (1.92 cum/man-hr)" if item_code == "2.11" else "5.60 man-hrs (1.79 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Coolie",
+                "Staging spoil removal from deep trench, disposal within 50m lead, and shifting backfill soil",
+                f"Multi-stage vertical handling & 20 cm layer backfill. Derived from {trench_info}.",
+                "Labour",
+                "40.40 man-hrs (0.25 cum/man-hr)" if item_code == "2.11" else "48.40 man-hrs (0.21 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Bhisti",
+                "Watering backfilled soil layers in deep trench to optimum moisture content (REF#2.25)",
+                f"0.20 day/10 cum (1.60 man-hrs/10 cum). Applied in layers not exceeding 20 cm depth. Derived from {trench_info}.",
+                "Labour",
+                "1.60 man-hrs (6.25 cum/man-hr)",
+                "10 cum",
+            ),
+        ]
+        machine_rows = [
+            (
+                "Hydraulic Excavator 0.9 cum",
+                "Mechanical deep trench cutting and bulk excavation (REF#2.8.1 + REF#2.6.1)",
+                f"0.04125 day/10 cum (0.33 machine-hr/10 cum); bucket capacity 0.9 cum; output = 30.30 cum/hr. Derived from {trench_info}.",
+                "Machine",
+                "0.33 machine-hrs (30.30 cum/hr)",
+                "10 cum",
+            ),
+            (
+                "Front End Loader 1.0 cum",
+                "Loading surplus excavated deep trench soil into tippers (REF#2.8.1)",
+                f"0.04125 day/10 cum (0.33 machine-hr/10 cum); bucket capacity 1.0 cum; output = 30.30 cum/hr. Derived from {trench_info}.",
+                "Machine",
+                "0.33 machine-hrs (30.30 cum/hr)",
+                "10 cum",
+            ),
+        ]
+        if item_code == "2.11":
+            reference_rows = [
+                (
+                    "REF#2.8.1 (Trench excavation in all kinds of soil)",
+                    "Referenced base execution: Excavation volume 362.25 cum for 300 m pipe trench",
+                    "Base trench excavation cut scope executed as per CPWD REF#2.8.1 specification",
+                    "Reference",
+                    "10.00 cum (1.000 cum/cum)",
+                    "10 cum",
+                ),
+                (
+                    "REF#2.6.1 (Bulk excavation over area/depth)",
+                    "Referenced base execution: Bulk extra depth excavation 160.00 cum",
+                    "Deep trench extra width/depth cut scope executed as per CPWD REF#2.6.1 specification",
+                    "Reference",
+                    "4.417 cum (0.442 cum/cum)",
+                    "10 cum",
+                ),
+                (
+                    "REF#2.25 (Trench backfilling, watering and ramming)",
+                    "Referenced base execution: Trench backfill 522.25 cum in 20 cm layers",
+                    "Backfill and consolidation scope executed as per CPWD REF#2.25 specification",
+                    "Reference",
+                    "14.417 cum (1.442 cum/cum)",
+                    "10 cum",
+                ),
+                (
+                    "REF#2.26.1 (Extra vertical lift >1.5 m to 3.0 m)",
+                    "Referenced base execution: Additional lift 141.75 cum for spoil >1.5 m depth",
+                    "Vertical stage lift scope executed as per CPWD REF#2.26.1 specification",
+                    "Reference",
+                    "3.913 cum (0.391 cum/cum)",
+                    "10 cum",
+                ),
+                (
+                    "DEDUCT: REF#2.10.1.2 (Basic pipe trench depth <= 1.5 m)",
+                    "Deduction of basic 1.5 m trench cost already paid: 300 m @ basic rate",
+                    "Basic 1.5 m depth rate deduction to arrive at net extra rate",
+                    "Reference",
+                    "-8.281 m (-0.828 m/cum)",
+                    "10 cum",
+                ),
+                (
+                    "Depth Extra Rule (+127.00% over Item 2.10.1.2)",
+                    "Net extra cost calculated as +127.00% over basic pipe trench rate 2.10.1.2",
+                    "Applies to qualifying pipe trench length exceeding 1.5 m but <= 3.0 m depth in all soils",
+                    "Reference",
+                    "+127.00% over basic",
+                    "10 cum",
+                ),
+            ]
+        else:
+            reference_rows = [
+                (
+                    "REF#2.8.1 (Trench excavation in all kinds of soil)",
+                    "Referenced base execution: Excavation volume 126.00 cum for 100 m pipe trench",
+                    "Base trench cut scope executed as per CPWD REF#2.8.1 specification",
+                    "Reference",
+                    "10.00 cum (1.000 cum/cum)",
+                    "10 cum",
+                ),
+                (
+                    "REF#2.6.1 (Bulk excavation over area/depth)",
+                    "Referenced base execution: Bulk deep cut excavation 200.00 cum",
+                    "Deep trench extra cut scope executed as per CPWD REF#2.6.1 specification",
+                    "Reference",
+                    "15.873 cum (1.587 cum/cum)",
+                    "10 cum",
+                ),
+                (
+                    "REF#2.25 (Trench backfilling, watering and ramming)",
+                    "Referenced base execution: Trench backfilling 326.00 cum in 20 cm layers",
+                    "Backfill and consolidation scope executed as per CPWD REF#2.25 specification",
+                    "Reference",
+                    "25.873 cum (2.587 cum/cum)",
+                    "10 cum",
+                ),
+                (
+                    "REF#2.26.1 (Extra vertical lift >1.5 m to 3.0 m)",
+                    "Referenced base execution: Additional lift 126.00 cum for spoil from depth > 1.5 m",
+                    "Vertical stage lift scope executed as per CPWD REF#2.26.1 specification",
+                    "Reference",
+                    "10.000 cum (1.000 cum/cum)",
+                    "10 cum",
+                ),
+                (
+                    "DEDUCT: REF#2.10.1.2 (Basic pipe trench depth <= 1.5 m)",
+                    "Deduction of basic 1.5 m trench cost already paid: 100 m @ basic rate",
+                    "Basic 1.5 m depth rate deduction to arrive at net extra rate",
+                    "Reference",
+                    "-7.937 m (-0.794 m/cum)",
+                    "10 cum",
+                ),
+                (
+                    "Depth Extra Rule (+315.05% over Item 2.10.1.2)",
+                    "Net extra cost calculated as +315.05% over basic pipe trench rate 2.10.1.2",
+                    "Applies to qualifying pipe trench length exceeding 3.0 m but <= 4.5 m depth in all soils",
+                    "Reference",
+                    "+315.05% over basic",
+                    "10 cum",
+                ),
+            ]
+
+    # Ordinary Rock Pipe Trenches (2.13.1.1, 2.13.1.2, 2.13.1.3)
+    if item_code in ("2.13.1.1", "2.13.1.2", "2.13.1.3"):
+        trench_notes = {
+            "2.13.1.1": "180 m pipe run <=80 mm dia (180m × 0.45m × 1.05m = 85.05 cum, 0.4725 cum/m)",
+            "2.13.1.2": "80 m pipe run 80-300 mm dia (80m × 0.90m × 1.30m = 93.60 cum, 1.1700 cum/m)",
+            "2.13.1.3": "30 m pipe run 300-600 mm dia (30m × 0.90m × 1.425m + 5% = 40.399 cum, 1.3466 cum/m)",
+        }[item_code]
+        labour_rows = [
+            (
+                "Mate",
+                "Supervising ordinary rock trench excavation, socket cutting, and backfill consolidation (REF#2.25)",
+                f"0.20 day/10 cum (1.60 man-hrs/10 cum). Gang supervision & safety monitoring. Derived from {trench_notes}. Standardized to uniform 10 cum batch.",
+                "Labour",
+                "1.60 man-hrs (6.25 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Rock Excavator",
+                "Manual extraction and pickaxe excavation of ordinary rock strata in trench bed (REF#2.9.1)",
+                f"0.885 day/10 cum (7.08 man-hrs/10 cum). Pickaxe breaking and extraction in rock trenches. Derived from {trench_notes}.",
+                "Labour",
+                "7.08 man-hrs (1.41 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Rock Breaker",
+                "Sledgehammer splitting and sizing excavated rock masses into manageable rubble (REF#2.9.1)",
+                f"1.765 day/10 cum (14.12 man-hrs/10 cum). Heavy hammer breaking in trench line. Derived from {trench_notes}.",
+                "Labour",
+                "14.12 man-hrs (0.71 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Rock Hole Driller",
+                "Crowbar jumper drilling and splitting of ordinary rock bedding planes (REF#2.9.1)",
+                f"0.53 day/10 cum (4.24 man-hrs/10 cum). Manual jumper drilling and wedging. Derived from {trench_notes}.",
+                "Labour",
+                "4.24 man-hrs (2.36 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Coolie",
+                "Handling excavated rock rubble, disposal within 50m lead, and shifting backfill soil (REF#2.9.1 + REF#2.25)",
+                f"Combined REF#2.9.1 (1.30 day) + REF#2.25 (2.50 day) = 3.80 day/10 cum. Derived from {trench_notes}.",
+                "Labour",
+                "30.40 man-hrs (0.33 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Beldar",
+                "Trimming trench sides, squaring socket pits, and spreading backfill in 20cm layers (REF#2.9.1 + Extra dressing)",
+                f"Combined REF#2.9.1 (0.50 day) + extra dressing (0.21 day) = 0.71 day/10 cum. Derived from {trench_notes}.",
+                "Labour",
+                "5.68 man-hrs (1.76 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Bhisti",
+                "Watering backfilled earth layers around pipe to optimum moisture content for compaction (REF#2.25)",
+                f"0.20 day/10 cum (1.60 man-hrs/10 cum). Applied in layers not exceeding 20 cm depth. Derived from {trench_notes}.",
+                "Labour",
+                "1.60 man-hrs (6.25 cum/man-hr)",
+                "10 cum",
+            ),
+        ]
+        machine_rows = [
+            (
+                "Hydraulic Excavator 0.9 cum",
+                "Mechanical trench cutting in ordinary rock strata (REF#2.9.1)",
+                f"0.0625 day/10 cum (0.50 machine-hr/10 cum); output = 20.00 cum/hr. Derived from {trench_notes}.",
+                "Machine",
+                "0.50 machine-hrs (20.00 cum/hr)",
+                "10 cum",
+            ),
+            (
+                "Tipper 10 tonne",
+                "Hauling and disposing surplus unserviceable rock spoil within 50m lead (REF#2.9.1)",
+                f"0.0625 day/10 cum (0.50 machine-hr/10 cum); output = 20.00 cum/hr. Derived from {trench_notes}.",
+                "Machine",
+                "0.50 machine-hrs (20.00 cum/hr)",
+                "10 cum",
+            ),
+        ]
+        reference_rows = [
+            (
+                "REF#2.9.1 (Excavation ordinary rock in trenches)",
+                "Referenced base execution: Excavation ordinary rock in foundation trenches",
+                f"Trench cut volume: 10 cum base scope executed as per CPWD REF#2.9.1 specification. Derived from {trench_notes}.",
+                "Reference",
+                "10.00 cum (1.000 cum/cum)",
+                "10 cum",
+            ),
+            (
+                "REF#2.25 (Filling plinth/trenches in 20cm layers, watering & ramming)",
+                "Referenced base execution: Filling in trenches",
+                f"Backfill volume: 10 cum base scope executed as per CPWD REF#2.25 specification. Derived from {trench_notes}.",
+                "Reference",
+                "10.00 cum (1.000 cum/cum)",
+                "10 cum",
+            ),
+        ]
+
+    # Hard Rock Blasting Pipe Trenches (2.13.2.1, 2.13.2.2, 2.13.2.3)
+    if item_code in ("2.13.2.1", "2.13.2.2", "2.13.2.3"):
+        trench_notes = {
+            "2.13.2.1": "180 m pipe run <=80 mm dia (180m × 0.45m × 1.05m = 85.05 cum, 0.4725 cum/m)",
+            "2.13.2.2": "80 m pipe run 80-300 mm dia (80m × 0.90m × 1.30m = 93.60 cum, 1.1700 cum/m)",
+            "2.13.2.3": "30 m pipe run 300-600 mm dia (30m × 0.90m × 1.425m + 5% = 40.399 cum, 1.3466 cum/m)",
+        }[item_code]
+        labour_rows = [
+            (
+                "Mate",
+                "Supervising hard rock blasting trench safety, socket profiling, and backfill consolidation (REF#2.25)",
+                f"0.20 day/10 cum (1.60 man-hrs/10 cum). Safety supervision. Derived from {trench_notes}. Standardized to uniform 10 cum batch.",
+                "Labour",
+                "1.60 man-hrs (6.25 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Rock Excavator",
+                "Mucking and clearing blasted hard rock fragments from trench invert (REF#2.9.2)",
+                f"1.24 day/10 cum (9.92 man-hrs/10 cum). Shovel clearing of blasted rock. Derived from {trench_notes}.",
+                "Labour",
+                "9.92 man-hrs (1.01 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Rock Breaker",
+                "Secondary breaking of hard rock boulders by heavy sledgehammers in trench (REF#2.9.2)",
+                f"3.00 day/10 cum (24.00 man-hrs/10 cum). Sledgehammer secondary fracturing. Derived from {trench_notes}.",
+                "Labour",
+                "24.00 man-hrs (0.42 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Rock Hole Driller",
+                "Operating jackhammer/pneumatic rock drills for blast hole pattern in trench line (REF#2.9.2)",
+                f"0.90 day/10 cum (7.20 man-hrs/10 cum). Blast hole pattern drilling. Derived from {trench_notes}.",
+                "Labour",
+                "7.20 man-hrs (1.39 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Blaster",
+                "Charging blast holes with explosives, stemming, connecting detonators, and firing shots (REF#2.9.2)",
+                f"0.15 day/10 cum (1.20 man-hrs/10 cum). Licensed shot-firing operations. Derived from {trench_notes}.",
+                "Labour",
+                "1.20 man-hrs (8.33 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Coolie",
+                "Carrying rock fragments, loading disposal skips, and shifting backfill soil (REF#2.9.2 + REF#2.25)",
+                f"Combined REF#2.9.2 (1.50 day) + REF#2.25 (2.50 day) = 4.00 day/10 cum. Derived from {trench_notes}.",
+                "Labour",
+                "32.00 man-hrs (0.31 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Beldar",
+                "Trench side dressing, socket trimming, and extra ramming of rock backfill (REF#2.9.2 + Extra ramming)",
+                f"Combined REF#2.9.2 (0.60 day) + extra ramming (0.29 day) = 0.89 day/10 cum. Derived from {trench_notes}.",
+                "Labour",
+                "7.12 man-hrs (1.40 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Bhisti",
+                "Watering backfilled earth/soil layers around pipe to optimum moisture content for compaction (REF#2.25)",
+                f"0.20 day/10 cum (1.60 man-hrs/10 cum). Applied in layers not exceeding 20 cm depth. Derived from {trench_notes}.",
+                "Labour",
+                "1.60 man-hrs (6.25 cum/man-hr)",
+                "10 cum",
+            ),
+        ]
+        machine_rows = [
+            (
+                "Hydraulic Excavator 0.9 cum",
+                "Mucking and loading blasted hard rock trench debris (REF#2.9.2)",
+                f"0.125 day/10 cum (1.00 machine-hr/10 cum); output = 10.00 cum/hr. Derived from {trench_notes}.",
+                "Machine",
+                "1.00 machine-hrs (10.00 cum/hr)",
+                "10 cum",
+            ),
+            (
+                "Tipper 10 tonne",
+                "Hauling surplus blasted rock spoil to designated dumping ground within 50m lead (REF#2.9.2)",
+                f"0.125 day/10 cum (1.00 machine-hr/10 cum); output = 10.00 cum/hr. Derived from {trench_notes}.",
+                "Machine",
+                "1.00 machine-hrs (10.00 cum/hr)",
+                "10 cum",
+            ),
+        ]
+        reference_rows = [
+            (
+                "REF#2.9.2 (Excavation hard rock requiring blasting in trenches)",
+                "Referenced base execution: Excavation hard rock requiring blasting in foundation trenches",
+                f"Trench cut volume: 10 cum base scope executed as per CPWD REF#2.9.2 specification. Derived from {trench_notes}.",
+                "Reference",
+                "10.00 cum (1.000 cum/cum)",
+                "10 cum",
+            ),
+            (
+                "REF#2.25 (Filling plinth/trenches in 20cm layers, watering & ramming)",
+                "Referenced base execution: Filling in trenches",
+                f"Backfill volume: 10 cum base scope executed as per CPWD REF#2.25 specification. Derived from {trench_notes}.",
+                "Reference",
+                "10.00 cum (1.000 cum/cum)",
+                "10 cum",
+            ),
+        ]
+
+    # Hard Rock No Blasting Pipe Trenches (2.13.3.1, 2.13.3.2, 2.13.3.3)
+    if item_code in ("2.13.3.1", "2.13.3.2", "2.13.3.3"):
+        trench_notes = {
+            "2.13.3.1": "180 m pipe run <=80 mm dia (180m × 0.45m × 1.05m = 85.05 cum, 0.4725 cum/m)",
+            "2.13.3.2": "80 m pipe run 80-300 mm dia (80m × 0.90m × 1.30m = 93.60 cum, 1.1700 cum/m)",
+            "2.13.3.3": "30 m pipe run 300-600 mm dia (30m × 0.90m × 1.425m + 5% = 40.399 cum, 1.3466 cum/m)",
+        }[item_code]
+        labour_rows = [
+            (
+                "Mate",
+                "Supervising hard rock chiselling/splitting in built-up area, socket profiling, and backfill consolidation (REF#2.25)",
+                f"0.20 day/10 cum (1.60 man-hrs/10 cum). Alignment and safety supervision. Derived from {trench_notes}. Standardized to uniform 10 cum batch.",
+                "Labour",
+                "1.60 man-hrs (6.25 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Rock Excavator",
+                "Non-blast excavation, wedging and prying laminated hard rock in trench bed (REF#2.9.3)",
+                f"2.65 day/10 cum (21.20 man-hrs/10 cum). Heavy mechanical wedging and prying. Derived from {trench_notes}.",
+                "Labour",
+                "21.20 man-hrs (0.47 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Rock Breaker",
+                "Manual fracturing of hard rock using heavy moils, points and sledgehammers (REF#2.9.3)",
+                f"6.175 day/10 cum (49.40 man-hrs/10 cum). Intensive manual splitting without explosives. Derived from {trench_notes}.",
+                "Labour",
+                "49.40 man-hrs (0.20 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Stone Chiseller",
+                "Chiselling rock trench sides vertically and dressing bottom true to gradient (REF#2.9.3)",
+                f"1.06 day/10 cum (8.48 man-hrs/10 cum). Precision chiselling of rock trench walls. Derived from {trench_notes}.",
+                "Labour",
+                "8.48 man-hrs (1.18 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Blacksmith 2nd class",
+                "On-site sharpening, tempering and re-forging of chisels, moil points and crowbars (REF#2.9.3)",
+                f"0.175 day/10 cum (1.40 man-hrs/10 cum). Tool maintenance and bit re-sharpening. Derived from {trench_notes}.",
+                "Labour",
+                "1.40 man-hrs (7.14 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Coolie",
+                "Carrying rock chips, loading disposal tippers, and shifting backfill soil (REF#2.9.3 + REF#2.25)",
+                f"Combined REF#2.9.3 (1.50 day) + REF#2.25 (2.50 day) = 4.00 day/10 cum. Derived from {trench_notes}.",
+                "Labour",
+                "32.00 man-hrs (0.31 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Beldar",
+                "Trench side clearance, socket dressing, and extra ramming of rock backfill (REF#2.9.3 + Extra ramming)",
+                f"Combined REF#2.9.3 (0.75 day) + extra ramming (0.29 day) = 1.04 day/10 cum. Derived from {trench_notes}.",
+                "Labour",
+                "8.35 man-hrs (1.20 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Bhisti",
+                "Watering backfilled earth/soil layers around pipe to optimum moisture content for compaction (REF#2.25)",
+                f"0.20 day/10 cum (1.60 man-hrs/10 cum). Applied in layers not exceeding 20 cm depth. Derived from {trench_notes}.",
+                "Labour",
+                "1.60 man-hrs (6.25 cum/man-hr)",
+                "10 cum",
+            ),
+        ]
+        machine_rows = [
+            (
+                "Hydraulic Excavator 0.9 cum",
+                "Mechanical excavation assist and removal of fractured rock boulders (REF#2.9.3)",
+                f"0.125 day/10 cum (1.00 machine-hr/10 cum); output = 10.00 cum/hr. Derived from {trench_notes}.",
+                "Machine",
+                "1.00 machine-hrs (10.00 cum/hr)",
+                "10 cum",
+            ),
+            (
+                "Tipper 10 tonne",
+                "Hauling surplus rock rubble to designated disposal heaps within 50m lead (REF#2.9.3)",
+                f"0.125 day/10 cum (1.00 machine-hr/10 cum); output = 10.00 cum/hr. Derived from {trench_notes}.",
+                "Machine",
+                "1.00 machine-hrs (10.00 cum/hr)",
+                "10 cum",
+            ),
+        ]
+        reference_rows = [
+            (
+                "REF#2.9.3 (Excavation hard rock no blasting in trenches)",
+                "Referenced base execution: Excavation hard rock without blasting in foundation trenches",
+                f"Trench cut volume: 10 cum base scope executed as per CPWD REF#2.9.3 specification. Derived from {trench_notes}.",
+                "Reference",
+                "10.00 cum (1.000 cum/cum)",
+                "10 cum",
+            ),
+            (
+                "REF#2.25 (Filling plinth/trenches in 20cm layers, watering & ramming)",
+                "Referenced base execution: Filling in trenches",
+                f"Backfill volume: 10 cum base scope executed as per CPWD REF#2.25 specification. Derived from {trench_notes}.",
+                "Reference",
+                "10.00 cum (1.000 cum/cum)",
+                "10 cum",
+            ),
+        ]
+
+    # Rock Pipe Trench Depth Extras (2.14 & 2.15)
+    if item_code in ("2.14", "2.15"):
+        trench_info = (
+            "300 m pipe trench depth >1.5m to 3.0m in ordinary/hard rock (+103.60% extra)"
+            if item_code == "2.14"
+            else "100 m pipe trench depth >3.0m to 4.5m in ordinary/hard rock (+255.60% extra)"
+        )
+        labour_rows = [
+            (
+                "Mate",
+                "Supervising deep rock trench blasting, stage scaffolding safety, and backfill consolidation",
+                f"Combined REF#2.9.2 + REF#2.7.2 + REF#2.25 + REF#2.26.2. Derived from {trench_info}. Standardized to uniform 10 cum batch.",
+                "Labour",
+                "5.20 man-hrs (1.92 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Rock Excavator",
+                "Deep trench rock extraction and clearing blasted rock from lower bench (REF#2.9.2 + REF#2.7.2)",
+                f"Mucking and extraction in deep rock trench. Derived from {trench_info}.",
+                "Labour",
+                "9.92 man-hrs (1.01 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Rock Breaker",
+                "Secondary breaking of hard rock masses in deep trench confines (REF#2.9.2 + REF#2.7.2)",
+                f"Heavy sledgehammer fragmentation. Derived from {trench_info}.",
+                "Labour",
+                "24.00 man-hrs (0.42 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Rock Hole Driller",
+                "Drilling deep blast hole pattern in trench rock bed using crawler/pneumatic drills (REF#2.9.2)",
+                f"Blast hole drilling at depth > 1.5 m. Derived from {trench_info}.",
+                "Labour",
+                "7.20 man-hrs (1.39 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Coolie",
+                "Multi-stage vertical lifting of rock debris, disposal within 50m lead, and shifting backfill soil",
+                f"Staging rock debris from deep trench and layer backfill. Derived from {trench_info}.",
+                "Labour",
+                "44.00 man-hrs (0.23 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Beldar",
+                "Trench bottom leveling, socket pit excavation in rock, and ramming backfilled layers",
+                f"Deep rock bottom preparation and layer ramming. Derived from {trench_info}.",
+                "Labour",
+                "7.60 man-hrs (1.32 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Bhisti",
+                "Watering backfilled earth/soil layers in deep trench around pipe (REF#2.25)",
+                f"0.20 day/10 cum (1.60 man-hrs/10 cum). Applied in layers not exceeding 20 cm depth. Derived from {trench_info}.",
+                "Labour",
+                "1.60 man-hrs (6.25 cum/man-hr)",
+                "10 cum",
+            ),
+        ]
+        machine_rows = [
+            (
+                "Hydraulic Excavator 0.9 cum",
+                "Mechanical rock excavation and deep mucking (REF#2.9.2 + REF#2.7.2)",
+                f"0.125 day/10 cum (1.00 machine-hr/10 cum); output = 10.00 cum/hr. Derived from {trench_info}.",
+                "Machine",
+                "1.00 machine-hrs (10.00 cum/hr)",
+                "10 cum",
+            ),
+            (
+                "Tipper 10 tonne",
+                "Hauling surplus rock rubble from deep trench to dumping heaps (REF#2.9.2)",
+                f"0.125 day/10 cum (1.00 machine-hr/10 cum); output = 10.00 cum/hr. Derived from {trench_info}.",
+                "Machine",
+                "1.00 machine-hrs (10.00 cum/hr)",
+                "10 cum",
+            ),
+        ]
+        if item_code == "2.14":
+            reference_rows = [
+                (
+                    "REF#2.9.2 (Excavation hard rock requiring blasting in trenches)",
+                    "Referenced base execution: Excavation volume 517.50 cum for 300 m rock trench",
+                    "Base rock trench excavation scope executed as per CPWD REF#2.9.2 specification",
+                    "Reference",
+                    "10.00 cum (1.000 cum/cum)",
+                    "10 cum",
+                ),
+                (
+                    "REF#2.7.2 (Deep rock excavation over area)",
+                    "Referenced base execution: Extra width/depth rock excavation 190.00 cum",
+                    "Bulk deep rock cut scope executed as per CPWD REF#2.7.2 specification",
+                    "Reference",
+                    "3.671 cum (0.367 cum/cum)",
+                    "10 cum",
+                ),
+                (
+                    "REF#2.25 (Trench backfilling, watering and ramming)",
+                    "Referenced base execution: Trench backfill 707.50 cum in 20 cm layers",
+                    "Backfill and consolidation scope executed as per CPWD REF#2.25 specification",
+                    "Reference",
+                    "13.671 cum (1.367 cum/cum)",
+                    "10 cum",
+                ),
+                (
+                    "REF#2.26.2 (Extra vertical lift >1.5 m to 3.0 m in rock)",
+                    "Referenced base execution: Additional lift 202.50 cum for rock spoil >1.5 m depth",
+                    "Vertical stage lift scope executed as per CPWD REF#2.26.2 specification",
+                    "Reference",
+                    "3.913 cum (0.391 cum/cum)",
+                    "10 cum",
+                ),
+                (
+                    "DEDUCT: REF#2.13.2.2 (Basic rock pipe trench depth <= 1.5 m)",
+                    "Deduction of basic 1.5 m rock trench cost already paid: 300 m @ basic rate",
+                    "Basic 1.5 m depth rock rate deduction to arrive at net extra rate",
+                    "Reference",
+                    "-5.797 m (-0.580 m/cum)",
+                    "10 cum",
+                ),
+                (
+                    "Depth Extra Rule (+103.60% over Item 2.13 basic)",
+                    "Net extra cost calculated as +103.60% over basic rock pipe trench rate",
+                    "Applies to qualifying pipe trench length exceeding 1.5 m but <= 3.0 m depth in rock",
+                    "Reference",
+                    "+103.60% over basic",
+                    "10 cum",
+                ),
+            ]
+        else:
+            reference_rows = [
+                (
+                    "REF#2.9.2 (Excavation hard rock requiring blasting in trenches)",
+                    "Referenced base execution: Excavation volume 180.00 cum for 100 m rock trench",
+                    "Base rock trench excavation scope executed as per CPWD REF#2.9.2 specification",
+                    "Reference",
+                    "10.00 cum (1.000 cum/cum)",
+                    "10 cum",
+                ),
+                (
+                    "REF#2.7.2 (Deep rock excavation over area)",
+                    "Referenced base execution: Extra width/depth rock excavation 237.50 cum",
+                    "Bulk deep rock cut scope executed as per CPWD REF#2.7.2 specification",
+                    "Reference",
+                    "13.194 cum (1.319 cum/cum)",
+                    "10 cum",
+                ),
+                (
+                    "REF#2.25 (Trench backfilling, watering and ramming)",
+                    "Referenced base execution: Trench backfilling 417.50 cum in 20 cm layers",
+                    "Backfill and consolidation scope executed as per CPWD REF#2.25 specification",
+                    "Reference",
+                    "23.194 cum (2.319 cum/cum)",
+                    "10 cum",
+                ),
+                (
+                    "REF#2.26.2 (Extra vertical lift >3.0 m to 4.5 m in rock)",
+                    "Referenced base execution: Additional lift 180.00 cum for rock spoil >3.0 m depth",
+                    "Vertical stage lift scope executed as per CPWD REF#2.26.2 specification",
+                    "Reference",
+                    "10.000 cum (1.000 cum/cum)",
+                    "10 cum",
+                ),
+                (
+                    "DEDUCT: REF#2.13.2.2 (Basic rock pipe trench depth <= 1.5 m)",
+                    "Deduction of basic rock trench cost up to 1.5 m depth already accounted for: 100 m @ basic rate",
+                    "Basic 1.5 m depth rock rate deduction to arrive at net extra rate",
+                    "Reference",
+                    "-5.556 m (-0.556 m/cum)",
+                    "10 cum",
+                ),
+                (
+                    "Depth Extra Rule (+255.60% over Item 2.13 basic)",
+                    "Net extra cost calculated as +255.60% over basic rock pipe trench rate",
+                    "Applies to qualifying pipe trench length exceeding 3.0 m but <= 4.5 m depth in rock",
+                    "Reference",
+                    "+255.60% over basic",
+                    "10 cum",
+                ),
+            ]
+
+    # Mechanical Earth Filling (2.25(a))
+    if item_code == "2.25(a)":
+        labour_rows = [
+            (
+                "Beldar",
+                "Leveling mechanically dumped local earth in plinth/trenches into uniform layers not exceeding 20 cm depth",
+                "Spreading and dressing dumped earth into 20 cm layers in plinth, foundation sides and trenches",
+                "Labour",
+                "3.60 man-hrs (2.78 cum/man-hr)",
+                "10 cum",
+            ),
+            (
+                "Bhisti",
+                "Watering each layer of mechanically transported earth to optimum moisture content before ramming",
+                "Spraying water uniformly over 20 cm loose layers for compaction conditioning",
+                "Labour",
+                "2.80 man-hrs (3.57 cum/man-hr)",
+                "10 cum",
+            ),
+        ]
+        machine_rows = [
+            (
+                "Hydraulic Excavator 0.9 cum",
+                "Mechanical excavation of borrow earth at source pit (REF#2.6.1)",
+                "0.04125 day/10 cum (0.33 machine-hr/10 cum); output = 30.30 cum/hr",
+                "Machine",
+                "0.33 machine-hrs (30.30 cum/hr)",
+                "10 cum",
+            ),
+            (
+                "Front End Loader 1.0 cum",
+                "Loading excavated borrow earth into tippers for haulage (REF#2.6.1)",
+                "0.04125 day/10 cum (0.33 machine-hr/10 cum); output = 30.30 cum/hr",
+                "Machine",
+                "0.33 machine-hrs (30.30 cum/hr)",
+                "10 cum",
+            ),
+            (
+                "Tipper 10 tonne",
+                "Mechanical transport and carriage of local earth from borrow pit to site up to 5 km lead (REF#1.1.2)",
+                "Tipper haulage cycle over 5 km lead: 10 cum batch payload",
+                "Machine",
+                "10.00 cum (1.000 cum/cum)",
+                "10 cum",
+            ),
+            (
+                "Wooden or steel rammers (durmats)",
+                "Compacting spread earth layers in trenches, plinth and foundation sides",
+                "Consolidating 20 cm layers in confined plinth/trenches where power rollers cannot operate; output = 1.56 cum/hr",
+                "Equipment",
+                "6.40 machine-hrs (1.56 cum/hr)",
+                "10 cum",
+            ),
+        ]
+        material_rows = [
+            (
+                "Royalty on earth",
+                "Statutory royalty paid on excavated local borrow earth",
+                "Royalty rate per cum of borrow earth as per local state mining department norms",
+                "Material",
+                "10.00 cum (1.000 cum/cum)",
+                "10 cum",
+            ),
+        ]
+        reference_rows = [
+            (
+                "REF#2.6.1 (Hydraulic excavation ordinary soil)",
+                "Referenced base execution: Borrow pit mechanical excavation 10 cum",
+                "Excavation at borrow source executed as per CPWD REF#2.6.1 specification",
+                "Reference",
+                "10.00 cum (1.000 cum/cum)",
+                "10 cum",
+            ),
+            (
+                "REF#1.1.2 (Carriage of earth up to 5 km lead)",
+                "Referenced base execution: Mechanical carriage by tipper/truck over 5 km lead",
+                "Haulage scope executed as per CPWD Carriage Item 1.1.2 specification",
+                "Reference",
+                "10.00 cum (1.000 cum/cum)",
+                "10 cum",
+            ),
+            (
+                "DEDUCT: REF#1.2.2 (Dozing and spreading omitted)",
+                "Omission of mechanical dozer spreading at borrow pit since spreading is done manually on site",
+                "Rate deduction as per CPWD Sub-Head 1 specification",
+                "Reference",
+                "-10.00 cum (-1.000 cum/cum)",
+                "10 cum",
+            ),
+        ]
+
+    # Handle percentage extra items (like 2.24.1, 2.24.2)
+    if item.get("conditional_extra") or item_code in ("2.24.1", "2.24.2"):
+        pct_rule = item.get("conditional_rule", "+20% over base item rate")
+        cond_text = (
+            "Quantities of work executed in or under water and/or liquid mud; depth to C.G. (conditional % extra, not a flat Rs rate)"
+            if item_code == "2.24.1"
+            else "Quantities of work executed in or under foul position; depth to C.G. (conditional % extra, not a flat Rs rate)"
+        )
+        work_text = (
+            "Dewatering, extra handling, and difficulty allowance in wet/mud conditions"
+            if item_code == "2.24.1"
+            else "Extra handling and foul conditions execution allowance"
+        )
+        extra_row = (
+            "Pumping equipment & labour crew",
+            work_text,
+            cond_text,
+            "Equipment",
+            pct_rule,
+            f"Qualifying {unit}",
+        )
+        machine_rows.append(extra_row)
+
+    # Sequence: Labour first, then Machine/Equipment, then Material, then Reference
+    all_data_rows = labour_rows + machine_rows + material_rows + reference_rows
+
+    for row_idx, data_row in enumerate(all_data_rows):
+        disp_name, work_done, condition, category, prod_str, qty_str = data_row
+        row_fill = fill("F9FBFD" if row_idx % 2 == 1 else "FFFFFF")
+
+        max_len = max(len(work_done), len(condition))
+        ws.row_dimensions[r].height = max(20, min(85, (max_len // 45 + 1) * 14))
+
+        # Col A: Item Code
+        c1 = ws.cell(row=r, column=1, value=item_code)
+        c1.font = Font(name="Calibri", size=9, bold=True)
+        c1.alignment = AL_C
+        c1.fill = row_fill
+        c1.border = thin_border()
+
+        # Col B: Labour / Machine / Material
+        c2 = ws.cell(row=r, column=2, value=disp_name)
+        c2.font = Font(name="Calibri", size=9, bold=(category in ("Machine", "Equipment", "Material")))
+        c2.alignment = AL_L
+        c2.fill = row_fill
+        c2.border = thin_border()
+
+        # Col C: Work done
+        c3 = ws.cell(row=r, column=3, value=work_done)
+        c3.font = Font(name="Calibri", size=9)
+        c3.alignment = AL_L
+        c3.fill = row_fill
+        c3.border = thin_border()
+
+        # Col D: Condition / When used
+        c4 = ws.cell(row=r, column=4, value=condition)
+        c4.font = Font(name="Calibri", size=9)
+        c4.alignment = AL_L
+        c4.fill = row_fill
+        c4.border = thin_border()
+
+        # Col E: Category
+        c5 = ws.cell(row=r, column=5, value=category)
+        c5.font = Font(name="Calibri", size=9)
+        c5.alignment = AL_C
+        c5.fill = row_fill
+        c5.border = thin_border()
+
+        # Col F: Productivity
+        c6 = ws.cell(row=r, column=6, value=prod_str)
+        c6.font = Font(name="Calibri", size=9, bold=True)
+        c6.alignment = AL_R
+        c6.fill = row_fill
+        c6.border = thin_border()
+
+        # Col G: Quantity
+        c7 = ws.cell(row=r, column=7, value=qty_str)
+        c7.font = Font(name="Calibri", size=9)
+        c7.alignment = AL_C
+        c7.fill = row_fill
+        c7.border = thin_border()
+
         r += 1
 
-        # per-unit = ref_total / base
-        per_unit_dar = ref_total / base
-        ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=5)
-        ws.cell(row=r, column=1, value=f"DAR 2019 Rate per {unit} = Total / {base} {unit}").font = chain_font
-        set_cell(ws, r, 6, per_unit_dar, font=Font(bold=True,size=10), fill_obj=fill(C_FINAL), num_format=NUM_FMT)
-        r += 1
-
-        ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=5)
-        ws.cell(row=r, column=1, value=f"DSR 2021 Rate (cross-reference)").font = Font(italic=True,size=9)
-        set_cell(ws, r, 6, item["dsr_rate"], font=Font(italic=True,size=9), fill_obj=fill(C_DSR), num_format=NUM_FMT)
-        r += 2
-        return r
-
-    # Standard chain (or W-A where W rows exist alongside refs)
-    w_row_num = r
-    ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=5)
-    ws.cell(row=r, column=1, value="TOTAL W  (Direct cost of resources)").font = chain_font
-    ws.cell(row=r, column=1).fill = chain_fill
-    ws.merge_cells(start_row=r, start_column=2, end_row=r, end_column=5)
-    w_cell = f"F{r}"
-    ac = ws.cell(row=r, column=6)
-    ac.value = w_formula
-    ac.font  = chain_font
-    ac.fill  = chain_fill
-    ac.number_format = NUM_FMT
-    ac.border = thin_border()
+    # Blank row separating items
+    ws.row_dimensions[r].height = 12
     r += 1
-
-    # Water 1%
-    water_row = r
-    ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=5)
-    ws.cell(row=r, column=1, value=f"Add: Water charges @ 1% of W").font = chain_font
-    ws.cell(row=r, column=1).fill = chain_fill
-    set_cell(ws, r, 6, f"={w_cell}*0.01", font=chain_font, fill_obj=chain_fill, num_format=NUM_FMT)
-    water_cell = f"F{r}"
-    r += 1
-
-    # TOTAL X
-    x_row = r
-    ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=5)
-    ws.cell(row=r, column=1, value="TOTAL X  (W + Water)").font = chain_font
-    ws.cell(row=r, column=1).fill = chain_fill
-    x_cell = f"F{r}"
-    set_cell(ws, r, 6, f"={w_cell}+{water_cell}", font=chain_font, fill_obj=chain_fill, num_format=NUM_FMT)
-    r += 1
-
-    # GST 14.05%
-    gst_row = r
-    ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=5)
-    ws.cell(row=r, column=1, value="Add: GST @ 14.05% of X").font = chain_font
-    ws.cell(row=r, column=1).fill = chain_fill
-    gst_cell = f"F{r}"
-    set_cell(ws, r, 6, f"={x_cell}*0.1405", font=chain_font, fill_obj=chain_fill, num_format=NUM_FMT)
-    r += 1
-
-    # TOTAL Y
-    y_row = r
-    ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=5)
-    ws.cell(row=r, column=1, value="TOTAL Y  (X + GST)").font = chain_font
-    ws.cell(row=r, column=1).fill = chain_fill
-    y_cell = f"F{r}"
-    set_cell(ws, r, 6, f"={x_cell}+{gst_cell}", font=chain_font, fill_obj=chain_fill, num_format=NUM_FMT)
-    r += 1
-
-    # CP&OH 15%
-    cpoh_row = r
-    ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=5)
-    ws.cell(row=r, column=1, value="Add: Contractor's Profit & Overheads (CP&OH) @ 15% of Y").font = chain_font
-    ws.cell(row=r, column=1).fill = chain_fill
-    cpoh_cell = f"F{r}"
-    set_cell(ws, r, 6, f"={y_cell}*0.15", font=chain_font, fill_obj=chain_fill, num_format=NUM_FMT)
-    r += 1
-
-    # TOTAL Z
-    z_row = r
-    ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=5)
-    ws.cell(row=r, column=1, value="TOTAL Z  (Y + CP&OH)").font = chain_font
-    ws.cell(row=r, column=1).fill = chain_fill
-    z_cell = f"F{r}"
-    set_cell(ws, r, 6, f"={y_cell}+{cpoh_cell}", font=chain_font, fill_obj=chain_fill, num_format=NUM_FMT)
-    r += 1
-
-    # Cess 1%
-    cess_row = r
-    ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=5)
-    ws.cell(row=r, column=1, value="Add: Cess @ 1% of Z").font = chain_font
-    ws.cell(row=r, column=1).fill = chain_fill
-    cess_cell = f"F{r}"
-    set_cell(ws, r, 6, f"={z_cell}*0.01", font=chain_font, fill_obj=chain_fill, num_format=NUM_FMT)
-    r += 1
-
-    # Total for base qty
-    total_row = r
-    ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=5)
-    if is_ref:
-        ws.cell(row=r, column=1, value=f"Cost for {base} {unit} [Z + Cess + Referenced items {ref_total:.2f}]").font = chain_font
-        total_cell = f"F{r}"
-        set_cell(ws, r, 6, f"={z_cell}+{cess_cell}+{ref_total}", font=chain_font, fill_obj=fill("BDD7EE"), num_format=NUM_FMT)
-    else:
-        ws.cell(row=r, column=1, value=f"Total cost for {base} {unit}  (Z + Cess)").font = chain_font
-        total_cell = f"F{r}"
-        set_cell(ws, r, 6, f"={z_cell}+{cess_cell}", font=chain_font, fill_obj=fill("BDD7EE"), num_format=NUM_FMT)
-    ws.cell(row=r, column=1).fill = fill("BDD7EE")
-    r += 1
-
-    # Per-unit rate
-    rate_row = r
-    ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=5)
-    ws.cell(row=r, column=1, value=f"DAR 2019 Rate per {unit}  =  Total / {base}").font = Font(bold=True,size=10)
-    ws.cell(row=r, column=1).fill = fill(C_FINAL)
-    per_unit_cell = f"F{r}"
-    set_cell(ws, r, 6, f"={total_cell}/{base}", font=Font(bold=True,size=10), fill_obj=fill(C_FINAL), num_format=NUM_FMT)
-    r += 1
-
-    # Say rounded (informational)
-    ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=5)
-    ws.cell(row=r, column=1, value=f"Say (rounded)").font = Font(italic=True,size=9)
-    ws.cell(row=r, column=1).fill = fill(C_FINAL)
-    # ROUND formula
-    set_cell(ws, r, 6, f"=ROUND({per_unit_cell},2)", font=Font(italic=True,bold=True,size=9), fill_obj=fill(C_FINAL), num_format=NUM_FMT)
-    r += 1
-
-    # DSR 2021 cross-reference
-    ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=5)
-    ws.cell(row=r, column=1, value="DSR 2021 Rate (cross-reference only)").font = Font(italic=True,size=9)
-    ws.cell(row=r, column=1).fill = fill(C_DSR)
-    set_cell(ws, r, 6, item["dsr_rate"], font=Font(italic=True,size=9), fill_obj=fill(C_DSR), num_format=NUM_FMT)
-    r += 1
-
-    # Project columns — user fills G; H = G * per-unit
-    proj_hdr_row = rate_row  # we'll add project cols at rate row
-    # Set formulas at per-unit row
-    pu_row = rate_row
-    ws.cell(row=pu_row, column=COL_PROJ_Q).value = None   # user fills
-    ws.cell(row=pu_row, column=COL_PROJ_Q).fill  = fill("FFF2CC")
-    ws.cell(row=pu_row, column=COL_PROJ_Q).border = thin_border()
-    ws.cell(row=pu_row, column=COL_PROJ_A).value  = f"=G{pu_row}*F{pu_row}"
-    ws.cell(row=pu_row, column=COL_PROJ_A).number_format = NUM_FMT
-    ws.cell(row=pu_row, column=COL_PROJ_A).fill   = fill("FFF2CC")
-    ws.cell(row=pu_row, column=COL_PROJ_A).border = thin_border()
-
-    if notes:
-        ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=8)
-        ws.cell(row=r, column=1, value=f"Note: {notes}").font = Font(italic=True,size=8,color="666666")
-        r += 1
-
-    r += 1  # blank separator
     return r
 
 
 def build_sheet(ws):
-    # Sheet title
-    ws.merge_cells("A1:H1")
-    ws.cell(row=1, column=1, value="Sub-Head 2.0 — EARTH WORK  |  CPWD DAR 2019 Complete Rate Analysis")
-    ws.cell(row=1, column=1).font  = Font(bold=True, size=13, color="FFFFFF")
-    ws.cell(row=1, column=1).fill  = fill("1A1A2E")
-    ws.cell(row=1, column=1).alignment = AL_C
+    # Sheet title spanning A1:G1
+    ws.merge_cells("A1:G1")
+    t1 = ws.cell(row=1, column=1, value="Sub-Head 2.0 — EARTH WORK  |  First-Principles Resource, Work & Gang Analysis")
+    t1.font = Font(name="Calibri", size=13, bold=True, color="FFFFFF")
+    t1.fill = fill("1A1A2E")
+    t1.alignment = AL_C
+    ws.row_dimensions[1].height = 28
 
-    ws.merge_cells("A2:H2")
-    ws.cell(row=2, column=1, value="Source: CivilDAR_2019_Vol_1.pdf  |  Basic rates: 2018-based  |  Chain: W → Water(1%) → X → GST(14.05%) → Y → CP&OH(15%) → Z → Cess(1%) → Total → Per Unit Rate")
-    ws.cell(row=2, column=1).font  = Font(italic=True, size=8, color="333333")
-    ws.cell(row=2, column=1).fill  = fill("E8F4FD")
-    ws.cell(row=2, column=1).alignment = AL_L
+    # Subtitle spanning A2:G2
+    ws.merge_cells("A2:G2")
+    t2 = ws.cell(row=2, column=1, value="Evidence: CPWD DAR 2019 Vol 1  |  Format: Item Code • Labour / Machine / Material • Work done • Condition / When used • Category • Productivity • Standard Batch Quantity")
+    t2.font = Font(name="Calibri", size=9, italic=True, color="333333")
+    t2.fill = fill("E8F4FD")
+    t2.alignment = AL_L
+    ws.row_dimensions[2].height = 18
 
-    current_row = 3
+    current_row = 4
     for item in ITEMS:
         current_row = write_item(ws, item, current_row)
 
-    # Column widths
+    # Column widths for 7 columns (A to G)
     ws.column_dimensions["A"].width = 12
-    ws.column_dimensions["B"].width = 55
-    ws.column_dimensions["C"].width = 8
-    ws.column_dimensions["D"].width = 12
-    ws.column_dimensions["E"].width = 14
-    ws.column_dimensions["F"].width = 14
-    ws.column_dimensions["G"].width = 14
-    ws.column_dimensions["H"].width = 16
+    ws.column_dimensions["B"].width = 34
+    ws.column_dimensions["C"].width = 54
+    ws.column_dimensions["D"].width = 52
+    ws.column_dimensions["E"].width = 16
+    ws.column_dimensions["F"].width = 28
+    ws.column_dimensions["G"].width = 16
 
-    # Row heights: basic
     ws.sheet_view.showGridLines = True
-    ws.freeze_panes = "A3"
+    ws.freeze_panes = "A4"
 
 
 def main():
@@ -1703,7 +2507,7 @@ def main():
     wb.save(TMP_PATH)
     print("Saved temp. Replacing original …")
     os.replace(TMP_PATH, WB_PATH)
-    print(f"Done → {WB_PATH}")
+    print(f"Done -> {WB_PATH}")
     print(f"Items written: {len(ITEMS)}")
 
 

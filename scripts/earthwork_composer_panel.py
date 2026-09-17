@@ -18,6 +18,7 @@ from openpyxl.worksheet.datavalidation import DataValidation
 
 from earthwork_composer_catalogue import BASE_WORK_FAMILIES, apply_difficult_condition_reference
 from earthwork_composer_resolver import resolve_selected_keywords
+from cpwd_rate_engine import calculate_custom_rate
 from support_earth_learning_edit import export_ascii_formula_workbook
 
 
@@ -204,25 +205,39 @@ def _write_panel(sheet, selected_keywords: tuple[str, ...]) -> None:
     _output_row(sheet, 20, "Conditional extras", _conditional_text(result["conditional_extras"]), _LIGHT_GREEN)
     _output_row(sheet, 21, "Overlap / measurement warning", _warnings_text(result), _LIGHT_RED)
 
-    _merge(sheet, "A23:H23", "3. Rate position", _MID_BLUE, 10, True, "FFFFFF")
+    rate_result = calculate_custom_rate(result)
+    _merge(sheet, "A23:H23", "3. Rate position & Custom Calculation", _MID_BLUE, 10, True, "FFFFFF")
     _output_row(
         sheet,
         25,
         "CPWD benchmark",
-        "Use the selected base item as a benchmark only. It is not the custom rate when scope has been amended.",
+        f"Base Item {rate_result.benchmark_item_code}: published baseline rate is Rs {rate_result.benchmark_unit_rate:.2f} per {rate_result.batch_unit} ({rate_result.base_description[:65]}...). Use this as a benchmark only; it does not price amended work.",
         _LIGHT_BLUE,
     )
     _output_row(
         sheet,
         26,
         "Custom calculated rate",
-        "Not yet calculated here. The next step creates a resource schedule from the resolved scope, then calculates the custom unit rate from first principles.",
+        f"Custom Unit Rate: Rs {rate_result.final_unit_rate:.2f} per {rate_result.batch_unit} | Direct Cost W: Rs {rate_result.direct_cost_w:.2f} per {rate_result.batch_quantity} {rate_result.batch_unit} + Markups: Rs {rate_result.markups['total_cost'] - rate_result.direct_cost_w:.2f} (Water 1%, GST 14.05%, CPOH 15%, Cess 1%).",
         _INPUT_AMBER,
+    )
+    var_sign = "+" if rate_result.variance_amount >= 0 else ""
+    active_gang = ", ".join(f"{r.name} ({r.coefficient:.2f} {r.unit})" for r in rate_result.resource_lines)
+    _output_row(
+        sheet,
+        27,
+        "Variance & gang effect",
+        f"Variance vs benchmark: {var_sign}Rs {rate_result.variance_amount:.2f} per {rate_result.batch_unit} ({var_sign}{rate_result.variance_percent:.1f}%). {rate_result.variance_explanation}. Remaining active gang: {active_gang}.",
+        _LIGHT_GREEN if rate_result.variance_amount <= 0 else _LIGHT_RED,
+    )
+    teaching_msg = " | ".join(rate_result.teaching_notes) if rate_result.teaching_notes else (
+        "Item 2.24 is a percentage extra only on the qualifying quantity and measured depth. "
+        "It is not a flat resource item and must not be applied to the full work quantity by default."
     )
     _merge(
         sheet,
         "A28:H28",
-        "Teaching note: Item 2.24 is a percentage extra only on the qualifying quantity and measured depth. It is not a flat resource item and must not be applied to the full work quantity by default.",
+        f"Teaching rationale: {teaching_msg}",
         _GREY,
         8,
         False,
@@ -299,6 +314,6 @@ def _set_panel_dimensions(sheet) -> None:
     widths = {"A": 28, "B": 46, "C": 14, "D": 14, "E": 14, "F": 14, "G": 14, "H": 14}
     for column, width in widths.items():
         sheet.column_dimensions[column].width = max(sheet.column_dimensions[column].width or 0, width)
-    for row in (2, 5, 8, 17, 18, 19, 20, 21, 25, 26, 28):
+    for row in (2, 5, 8, 17, 18, 19, 20, 21, 25, 26, 27, 28):
         sheet.row_dimensions[row].height = 34
     sheet.row_dimensions[8].height = 82

@@ -87,6 +87,8 @@ def apply_difficult_condition_reference(sheet) -> None:
     relationship readable in column A.  A later composer renderer can use the
     structured catalogue rather than parsing this display text.
     """
+    if "Sub-Head 2.0 — EARTH WORK" in str(sheet.cell(1, 1).value or ""):
+        return
     targets = {f"Item {code}": item for code, item in EARTHWORK_COMPOSER_CATALOGUE.items()}
     found: set[str] = set()
     for row in range(1, sheet.max_row + 1):

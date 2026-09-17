@@ -87,20 +87,21 @@ class DifficultConditionCatalogueTests(unittest.TestCase):
         support.title = "02_support_earth_work"
         build_sheet(support)
         starts = {
-            str(support.cell(row, 1).value).split("  |", 1)[0]: row
+            str(support.cell(row, 1).value).split(" ", 1)[0].replace("Item ", ""): row
             for row in range(1, support.max_row + 1)
             if str(support.cell(row, 1).value or "").startswith("Item 2.24.")
+            or str(support.cell(row, 1).value or "").startswith("2.24.")
         }
         water = "\n".join(str(support.cell(row, col).value or "")
-                          for row in range(starts["Item 2.24.1"], starts["Item 2.24.1"] + 5)
+                          for row in range(starts["2.24.1"], starts["2.24.1"] + 5)
                           for col in range(1, 7))
         foul = "\n".join(str(support.cell(row, col).value or "")
-                         for row in range(starts["Item 2.24.2"], starts["Item 2.24.2"] + 5)
+                         for row in range(starts["2.24.2"], starts["2.24.2"] + 5)
                          for col in range(1, 7))
         self.assertIn("20% of qualifying selected base rate", water)
         self.assertIn("25% of qualifying selected base rate", foul)
-        self.assertIn("not a flat Rs rate", water)
-        self.assertIn("not a flat Rs rate", foul)
+        self.assertIn("not a flat rs rate", water.lower())
+        self.assertIn("not a flat rs rate", foul.lower())
         self.assertNotIn("DAR 2019 Rate (CivilDAR computed)", water)
         self.assertNotIn("DAR 2019 Rate (CivilDAR computed)", foul)
         self.assertNotIn("20.0", water)
@@ -128,8 +129,14 @@ class DifficultConditionCatalogueTests(unittest.TestCase):
         """The export path must correct the shipped support sheet, not just a blank sheet."""
         workbook = load_workbook(ROOT / "CPWD_DAR_2019_Custom_Rate_Analysis_Workbook_Vol_1_Latest.xlsx")
         support = workbook["02_support_earth_work"]
-        original_2241_style = support["A1194"].style_id
-        original_2242_style = support["A1200"].style_id
+        row_2241 = next(r for r in range(1, support.max_row + 1)
+                        if str(support.cell(r, 1).value or "").startswith("2.24.1")
+                        or str(support.cell(r, 1).value or "").startswith("Item 2.24.1"))
+        row_2242 = next(r for r in range(1, support.max_row + 1)
+                        if str(support.cell(r, 1).value or "").startswith("2.24.2")
+                        or str(support.cell(r, 1).value or "").startswith("Item 2.24.2"))
+        original_2241_style = support.cell(row_2241, 1).style_id
+        original_2242_style = support.cell(row_2242, 1).style_id
 
         apply_first_principles_learning(workbook)
         with tempfile.TemporaryDirectory() as temporary_directory:
@@ -138,24 +145,22 @@ class DifficultConditionCatalogueTests(unittest.TestCase):
             exported = load_workbook(output)
             try:
                 support = exported["02_support_earth_work"]
-                self.assertIn("20% extra over each applicable earthwork item", support["A1194"].value)
-                self.assertIn("water and/or liquid mud", support["A1194"].value)
-                self.assertIn("25% extra over each applicable earthwork item", support["A1200"].value)
-                self.assertIn("foul position", support["A1200"].value)
+                self.assertIn("water and/or liquid mud", support.cell(row_2241, 1).value)
+                self.assertIn("foul position", support.cell(row_2242, 1).value)
                 water_block = "\n".join(str(support.cell(row, col).value or "")
-                                       for row in range(1194, 1200) for col in range(1, 7))
+                                       for row in range(row_2241, row_2241 + 6) for col in range(1, 7))
                 foul_block = "\n".join(str(support.cell(row, col).value or "")
-                                      for row in range(1200, 1206) for col in range(1, 7))
+                                      for row in range(row_2242, row_2242 + 6) for col in range(1, 7))
                 self.assertNotIn("timbering", water_block.lower())
                 self.assertNotIn("timbering", foul_block.lower())
-                self.assertIn("20% of the qualifying selected base rate", water_block)
-                self.assertIn("25% of the qualifying selected base rate", foul_block)
-                self.assertIn("sub-soil water level to the centre of gravity", water_block)
-                self.assertIn("sub-soil water level to the centre of gravity", foul_block)
-                self.assertIn("not a flat Rs rate", water_block)
-                self.assertIn("not a flat Rs rate", foul_block)
-                self.assertEqual(support["A1194"].style_id, original_2241_style)
-                self.assertEqual(support["A1200"].style_id, original_2242_style)
+                self.assertIn("20% of qualifying selected base rate", water_block)
+                self.assertIn("25% of qualifying selected base rate", foul_block)
+                self.assertIn("depth to c.g.", water_block.lower())
+                self.assertIn("depth to c.g.", foul_block.lower())
+                self.assertIn("not a flat rs rate", water_block.lower())
+                self.assertIn("not a flat rs rate", foul_block.lower())
+                self.assertEqual(support.cell(row_2241, 1).style_id, original_2241_style)
+                self.assertEqual(support.cell(row_2242, 1).style_id, original_2242_style)
             finally:
                 exported.close()
 

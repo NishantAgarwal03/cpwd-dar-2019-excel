@@ -90,7 +90,11 @@ class EarthworkComposerPanelTests(unittest.TestCase):
         self.assertIn("2.5", sheet["B18"].value)
         self.assertIn("CPWD benchmark", sheet["A25"].value)
         self.assertIn("Custom calculated rate", sheet["A26"].value)
-        self.assertIn("not yet", sheet["B26"].value.casefold())
+        self.assertIn("470.57", sheet["B25"].value)
+        self.assertIn("Custom Unit Rate:", sheet["B26"].value)
+        self.assertIn("433.25", sheet["B26"].value)
+        self.assertIn("Variance & gang effect", sheet["A27"].value)
+        self.assertIn("-37.32", sheet["B27"].value)
 
     def test_saved_panel_reopens_with_merged_title_and_wrap_ready_rows(self):
         workbook, sheet = self._schedule_sheet()
@@ -121,7 +125,10 @@ class EarthworkComposerPanelTests(unittest.TestCase):
         panel = reopened["02_support_earth_work"]
         self.assertEqual(panel["A1"].value, "Custom Rate Composer — Earth Work")
         self.assertEqual(panel.cell(COMPOSER_FIRST_SCHEDULE_ROW, 1).value, original_title)
-        self.assertEqual(panel["F35"].value, "=D35*E35")
+        self.assertEqual(panel["A35"].value, "Item Code")
+        self.assertEqual(panel["B35"].value, "Labour / Machine / Material")
+        self.assertEqual(panel["A36"].value, "2.1.1")
+        self.assertEqual(panel["B36"].value, "Beldar")
         self.assertTrue(panel["B26"].alignment.wrap_text)
 
     def test_actual_support_sheet_preserves_every_formula_merge_and_row_group(self):

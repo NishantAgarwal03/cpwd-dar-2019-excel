@@ -125,3 +125,26 @@
 | :--- | :--- | :--- |
 | 2026-09-13 04:45 | Organize repo, perform housekeeping, and check health of git/repo | Completed |
 | 2026-09-13 04:51 | User selected Option B: full architectural data organization, centralized path manager, housekeeping, and git optimization | Completed |
+
+## Subject: DSR_Vol1_Progressive_Keyword_Identification_Engine
+- **Status**: 🟢 Completed
+- **Initial Score**: 8.0/10
+- **Final Score**: 10/10
+- **Satisfaction Level**: Complete
+
+### Remarks
+- Cleanly integrated progressive minimum keyword identification and diagnostic engine from `C:\Users\Admin\Downloads\files` into modular repository package `scripts/keywords/`.
+- Resolved naming collision with `scripts/main.py` by establishing dedicated CLI runner `scripts/run_keyword_analysis.py`.
+- Registered `DSR_VOL1_SCHEDULE_XLSX`, `KEYWORD_LOOKUP_JSON`, and `KEYWORD_ANALYSIS_XLSX` in centralized path manager `scripts/paths.py`.
+- Upgraded engine to compute Dual-Scope Identifiers: Global Unique across all 966 DSR items (902 items, 93.4%) and Chapter-Local Unique within trade sheets (917 items, 94.9%).
+- Added Windows terminal encoding guards (UTF-8 stream reconfiguration and ASCII tag fallbacks) resolving `cp1252` character map exceptions.
+- Enhanced tokenization: expanded stop-word dictionary (`and`) and added decimal mortar/concrete ratio support (`1:1.5:3`) in priority ranker.
+- Built comprehensive unit test suite in `tests/test_keyword_engine.py` (6/6 tests passing in Python 3.11).
+- Generated master analysis artifacts: `output/CPWD_DSR_Vol1_Keyword_Analysis.xlsx` (131.6 KB, 13 sheets with color fills and auto-filters) and `data/reference_json/dsr_keyword_lookup.json` (2.07 MB).
+- Verified zero regression on core workbook generator and test suites (`scripts/verify_carriage.py` passes 28/28 checks).
+
+| Timestamp | Instruction | Status |
+| :--- | :--- | :--- |
+| 2026-09-17 10:22 | Architectural analysis and incorporation strategy for downloaded keyword engine | Completed |
+| 2026-09-17 10:41 | User approved implementation: package into scripts/keywords/, register paths, build CLI, unit test suite, and generate artifacts | Completed |
+

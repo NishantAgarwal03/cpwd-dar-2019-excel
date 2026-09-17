@@ -1,0 +1,457 @@
+# -*- coding: utf-8 -*-
+"""
+scripts.keywords.engine
+=======================
+Progressive Minimum Keyword Identification Engine for CPWD DSR / DAR specifications.
+
+Algorithm (per item):
+1. Complete item = parent description + child qualifier.
+2. Extract keyword tokens and phrase slugs from complete description.
+3. Build inverted index: token -> frozenset of item codes.
+4. Progressively test 1-word, 2-word, ... n-word combinations:
+     matching = index[k1] & index[k2] & ... & index[kn]
+     unique <-> len(matching) == 1
+5. Among equally-sized winning combos -> rank by keyword priority hierarchy.
+6. Support dual scopes:
+     - Global: Uniquely discriminates item across all DSR chapters.
+     - Chapter-Local: Uniquely discriminates item within its specific Sub-Head.
+"""
+from __future__ import annotations
+
+import re
+import itertools
+from dataclasses import dataclass, field
+from collections import defaultdict
+from typing import Optional, Dict, List, Tuple, Set
+
+import openpyxl
+
+# ═══════════════════════════════════════════════════════════════════════════
+# 1. KEYWORD PRIORITY TABLES
+#    Lower number = better discriminator (1 = highest priority, 6 = stopword)
+# ═══════════════════════════════════════════════════════════════════════════
+
+P1: Set[str] = {
+    # Domain-specific strong discriminators
+    "chlorpyriphos", "timbering", "ploughing", "termite", "emulsion",
+    "prestressed", "precast", "mosaic", "marble", "granite", "terrazzo",
+    "waterproofing", "bitumen", "asphalt", "galvanized", "vitrified",
+    "ceramic", "polished", "honed", "glazed", "unglazed", "plywood",
+    "laminate", "veneer", "formwork", "grouting", "guniting", "shotcrete",
+    "welding", "riveting", "bolting", "caulking", "pointing", "plastering",
+    "whitewashing", "distempering", "varnishing", "anti-termite", "fly-ash",
+    "levelling", "apron", "blasting", "masonry", "injection",
+    "bamboo", "timber", "slate", "coping", "parapet", "ornamental",
+    "decorative", "textured", "rubble", "coursed", "ashlar", "random",
+    "flagstone", "cobblestone", "kota", "tandur", "shahabad", "cuddapah",
+    "treads", "risers", "nosing", "skirting", "dado", "travertine",
+    "onyx", "limestone", "sandstone", "quartzite", "depressions",
+}
+
+P2: Set[str] = {
+    # Meaningful distinguishing qualifiers
+    "external", "existing", "ordinary", "hard", "prohibited", "wood",
+    "floors", "foundation", "internal", "structural", "boundary",
+    "retaining", "basement", "underground", "heavy", "light",
+    "vertical", "horizontal", "plain", "nominal", "contact",
+    "joints", "panels", "frames", "sections", "requiring", "permitted",
+    "rough", "sub-base", "hollow", "solid", "perforated", "ribbed",
+    "cellular", "single", "double", "triple", "dry", "wet",
+    "hydraulic", "pneumatic", "mechanical", "manual", "machine", "hand", "power",
+    "white", "coloured", "natural", "synthetic", "special", "extra",
+    "coarse", "fine", "stone", "dust", "cement", "lime",
+    "deduct", "grass", "clearing", "jungle", "felling", "clods",
+    "watering", "rolling", "ploughing", "banking",
+    "trenches", "trench", "case", "shafts", "wells", "cesspits", "manholes",
+    "girth", "diameter", "above", "beyond", "below", "supply", "open", "close",
+    "unloading", "loading", "stacking", "carriage", "lead", "lift",
+}
+
+P4: Set[str] = {
+    # Technical / context action words
+    "excavation", "filling", "treatment", "laying", "fixing",
+    "providing", "supplying", "compacting", "consolidating", "ramming",
+    "dressing", "cutting", "breaking", "removal", "disposal",
+    "spreading", "uprooting", "drilling",
+    "plugging", "injecting", "diluting", "sealing",
+    "strutting", "shoring", "casting", "pouring", "vibrating",
+    "curing", "stripping", "erecting", "dismantling",
+}
+
+P6_HARD: Set[str] = {
+    # Absolute stop words – never useful discriminators
+    "work", "earth", "soil", "material", "description", "complete",
+    "required", "the", "for", "in", "of", "with", "or", "by", "at",
+    "as", "is", "are", "be", "to", "a", "an", "on", "not", "per", "etc",
+    "and", "all", "any", "each", "both", "from", "into", "over", "under",
+    "through", "along", "around", "shall", "should", "must", "may",
+    "can", "will", "would", "nos", "no", "item", "rate", "rates", "unit",
+    "units", "sqm", "cum", "metre", "mm", "cm", "kg", "tonne", "litre",
+    "charge", "direction", "engineer", "specification", "measurement",
+    "measurements", "taken", "given", "wherever", "whenever",
+    "however", "therefore", "which", "that", "this", "these", "those",
+    "such", "directed", "specified", "provided", "used", "done",
+    "made", "fixed", "laid", "suitable", "approved", "similar",
+    "m", "n", "s", "e", "w", "i", "ii", "iii", "iv", "v", "vi", "vii", "viii",
+}
+
+
+def keyword_priority(word: str) -> int:
+    """Lower = better discriminator. 1=best ... 6=worst."""
+    w = word.lower()
+    # Compound slugs generated by phrase patterns – highest priority
+    if (w.startswith("depth_") or w.startswith("mix_") or
+            w in ("fine-sand", "coarse-sand", "stone-dust", "marble-dust",
+                  "white-cement", "open-timbering", "close-timbering",
+                  "in-trenches", "case-of-shafts", "timbering-over-areas",
+                  "hard-rock-requiring", "hard-rock-prohibited",
+                  "fly-ash", "foundation-trench", "anti-termite",
+                  "open-timbering-in-trenches", "close-timbering-in-trenches")):
+        return 1
+    if w in P1:
+        return 1
+    if w in P2:
+        return 2
+    if re.match(r"^\d+(\.\d+)?(:\d+(\.\d+)?)+$", w):
+        return 3   # mortar/concrete ratio e.g. 1:2, 1:1.5:3, 1:2:4
+    if re.match(r"^\d+(\.\d+)?%$", w):
+        return 4   # percentage
+    if w in P4:
+        return 4
+    if re.match(r"^\d+(\.\d+)?$", w):
+        return 5   # plain number
+    if w in P6_HARD:
+        return 6
+    return 2   # unclassified meaningful word -> P2
+
+
+def combo_score(keywords: Tuple[str, ...]) -> Tuple[int, ...]:
+    """Rank score; lower = better. (sum, max, -min)."""
+    p = [keyword_priority(k) for k in keywords]
+    return (sum(p), max(p), -min(p))
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# 2. DATA MODEL
+# ═══════════════════════════════════════════════════════════════════════════
+
+@dataclass
+class ScheduleItem:
+    sheet:                     str
+    code:                      str
+    parent_code:               Optional[str]
+    parent_desc:               str
+    child_desc:                str
+    complete_desc:             str
+    unit:                      Optional[str]
+    rate:                      Optional[float]
+    keywords:                  List[str] = field(default_factory=list)
+    identifier:                Optional[Tuple[str, ...]] = None
+    identifier_status:         str = ""
+    chapter_identifier:        Optional[Tuple[str, ...]] = None
+    chapter_identifier_status: str = ""
+    best_partial:              Optional[Tuple[str, ...]] = None
+    partial_matches:           List[str] = field(default_factory=list)
+    ambiguous_with:            List[str] = field(default_factory=list)
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# 3. EXCEL PARSER
+# ═══════════════════════════════════════════════════════════════════════════
+
+def _parent_code(code: str) -> Optional[str]:
+    parts = code.rsplit(".", 1)
+    return parts[0] if len(parts) > 1 else None
+
+
+def parse_sheet(wb: openpyxl.Workbook, sheet_name: str) -> List[ScheduleItem]:
+    ws = wb[sheet_name]
+    items: List[ScheduleItem] = []
+    desc_map: Dict[str, str] = {}
+
+    for row in ws.iter_rows(values_only=True):
+        code = row[0] if len(row) > 0 else None
+        desc = row[1] if len(row) > 1 else None
+        unit = row[2] if len(row) > 2 else None
+        rate = row[3] if len(row) > 3 else None
+
+        if code is None and desc is None:
+            continue
+        code = str(code).strip() if code else ""
+        desc = str(desc).strip() if desc else ""
+        if not code or not re.match(r"^\d", code):
+            continue
+
+        desc_map[code] = desc
+
+        if rate is not None and str(rate).strip() not in ("", "None"):
+            try:
+                rate_val = float(rate)
+            except Exception:
+                rate_val = None
+
+            parts: List[str] = []
+            ancestor = _parent_code(code)
+            while ancestor:
+                if ancestor in desc_map and desc_map[ancestor]:
+                    parts.insert(0, desc_map[ancestor])
+                ancestor = _parent_code(ancestor)
+
+            parent_desc = " ".join(parts)
+            complete = (parent_desc + " " + desc).strip() if parent_desc else desc
+
+            items.append(ScheduleItem(
+                sheet=sheet_name,
+                code=code,
+                parent_code=_parent_code(code),
+                parent_desc=parent_desc,
+                child_desc=desc,
+                complete_desc=complete,
+                unit=str(unit).strip() if unit else None,
+                rate=rate_val,
+            ))
+    return items
+
+
+def load_all_sheets(xlsx_path: str, target_sheets: List[str]) -> List[ScheduleItem]:
+    wb = openpyxl.load_workbook(xlsx_path, read_only=True)
+    all_items: List[ScheduleItem] = []
+    for sheet in target_sheets:
+        if sheet in wb.sheetnames:
+            all_items.extend(parse_sheet(wb, sheet))
+        else:
+            print(f"  [WARN] Sheet not found: '{sheet}'")
+    wb.close()
+    return all_items
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# 4. KEYWORD EXTRACTOR
+# ═══════════════════════════════════════════════════════════════════════════
+
+PHRASE_PATTERNS: List[Tuple[re.Pattern, str]] = [
+    # Depth-range slugs (timbering child rows)
+    (re.compile(r"\bdepth not exceeding 1\.5\b"),              "depth_upto_1-5"),
+    (re.compile(r"\bdepth exceeding 1\.5[^\n]*but not exceeding 3\b"),
+                                                               "depth_1-5_to_3"),
+    (re.compile(r"\bdepth exceeding 3[^\n]*but not exceeding 4\.5\b"),
+                                                               "depth_3_to_4-5"),
+    # Timbering location slugs
+    (re.compile(r"\bclose timbering in trenches\b"),           "close-timbering-in-trenches"),
+    (re.compile(r"\bopen timbering in trenches\b"),            "open-timbering-in-trenches"),
+    (re.compile(r"\bclose timbering in case\b"),               "close-timbering-in-case"),
+    (re.compile(r"\bopen timbering in case\b"),                "open-timbering-in-case"),
+    (re.compile(r"\bclose timbering over areas\b"),            "close-timbering-over-areas"),
+    (re.compile(r"\bopen timbering over areas\b"),             "open-timbering-over-areas"),
+    (re.compile(r"\bclose timbering\b"),                       "close-timbering"),
+    (re.compile(r"\bopen timbering\b"),                        "open-timbering"),
+    # Rock type slugs
+    (re.compile(r"\bhard rock.*requir"),                       "hard-rock-requiring"),
+    (re.compile(r"\bhard rock.*prohibit"),                     "hard-rock-prohibited"),
+    (re.compile(r"\bordinary rock\b"),                         "ordinary-rock"),
+    # Foundation context
+    (re.compile(r"\bfoundation trench"),                       "foundation-trench"),
+    # Mortar / concrete mix slugs
+    (re.compile(r"\bfine sand\b"),                             "fine-sand"),
+    (re.compile(r"\bcoarse sand\b"),                           "coarse-sand"),
+    (re.compile(r"\bstone dust\b"),                            "stone-dust"),
+    (re.compile(r"\bmarble dust\b"),                           "marble-dust"),
+    (re.compile(r"\bwhite cement\b"),                          "white-cement"),
+    (re.compile(r"\bfly ash\b"),                               "fly-ash"),
+    (re.compile(r"\banti.termite\b"),                          "anti-termite"),
+    # Concrete mix proportions
+    (re.compile(r"\b1:1\.5:3\b"),   "mix_1-1-5-3"),
+    (re.compile(r"\b1:2:4\b"),      "mix_1-2-4"),
+    (re.compile(r"\b1:3:6\b"),      "mix_1-3-6"),
+    (re.compile(r"\b1:4:8\b"),      "mix_1-4-8"),
+    (re.compile(r"\b1:5:10\b"),     "mix_1-5-10"),
+]
+
+_PUNCT_ONLY = re.compile(r"^[^\w%:]+$")
+_EMBEDDED_CODE = re.compile(r"^\d+\.\d+(\.\d+)+\.?$")
+
+
+def _is_valid_token(t: str) -> bool:
+    if not t:
+        return False
+    if _PUNCT_ONLY.match(t):
+        return False
+    if _EMBEDDED_CODE.match(t):
+        return False
+    if len(t) == 1 and t not in {"½"}:
+        return False
+    if t.lower() in P6_HARD:
+        return False
+    return True
+
+
+def _normalise(text: str) -> str:
+    text = text.lower()
+    text = re.sub(r"\((\d[^\)]*)\)", r" \1 ", text)
+    text = re.sub(r"[^\w\s%:½/\-\.]", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def extract_keywords(complete_desc: str) -> List[str]:
+    """Tokenise a complete item description into prioritised candidate keywords."""
+    raw_lower = complete_desc.lower()
+
+    # Step 1 – phrase slugs
+    slugs: List[str] = []
+    for pattern, slug in PHRASE_PATTERNS:
+        if pattern.search(raw_lower):
+            slugs.append(slug)
+
+    # Step 2 – protect ratio tokens
+    norm = _normalise(complete_desc)
+    ratio_map: Dict[str, str] = {}
+
+    def _protect(m: re.Match) -> str:
+        s = f"__R{len(ratio_map)}__"
+        ratio_map[s] = m.group(0)
+        return s
+
+    norm = re.sub(r"\b\d+:\d+(:\d+)*\b", _protect, norm)
+
+    # Step 3 – split
+    raw_tokens = norm.split()
+
+    # Step 4 & 5 – restore, strip trailing dots, filter, dedup
+    seen: Set[str] = set()
+    base: List[str] = []
+    for t in raw_tokens:
+        t = ratio_map.get(t, t).strip(".")
+        if t not in seen and _is_valid_token(t):
+            seen.add(t)
+            base.append(t)
+
+    if not base:
+        base = [t.strip(".") for t in norm.split() if t]
+
+    # Step 6 – merge slugs (not already in base), sort
+    for slug in slugs:
+        if slug not in seen:
+            base.append(slug)
+            seen.add(slug)
+
+    base.sort(key=keyword_priority)
+    return base
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# 5. INVERTED INDEX
+# ═══════════════════════════════════════════════════════════════════════════
+
+InvertedIndex = Dict[str, frozenset[str]]
+
+
+def build_inverted_index(items: List[ScheduleItem]) -> InvertedIndex:
+    raw: Dict[str, Set[str]] = defaultdict(set)
+    for item in items:
+        for kw in item.keywords:
+            raw[kw].add(item.code)
+    return {k: frozenset(v) for k, v in raw.items()}
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# 6. PROGRESSIVE IDENTIFICATION
+# ═══════════════════════════════════════════════════════════════════════════
+
+def find_minimum_identifier(
+    target: ScheduleItem,
+    index: InvertedIndex,
+    max_words: int = 5,
+) -> Tuple[Optional[Tuple[str, ...]], str]:
+    """
+    Try 1-word, 2-word, ... combos until exactly one item in the corpus
+    matches all keywords. Returns (best_combo, status).
+    """
+    cand: List[Tuple[str, frozenset[str]]] = [
+        (kw, s) for kw in target.keywords
+        if (s := index.get(kw)) is not None
+    ]
+    if not cand:
+        return None, "NOT_UNIQUELY_IDENTIFIABLE"
+
+    target_code = target.code
+
+    for n in range(1, min(max_words + 1, len(cand) + 1)):
+        winning: List[Tuple[str, ...]] = []
+        for combo in itertools.combinations(cand, n):
+            keys, sets = zip(*combo)
+            matching = sets[0]
+            for s in sets[1:]:
+                matching = matching & s
+                if not matching:
+                    break
+            if len(matching) == 1 and target_code in matching:
+                winning.append(keys)
+        if winning:
+            winning.sort(key=combo_score)
+            return winning[0], "UNIQUE"
+
+    return None, "NOT_UNIQUELY_IDENTIFIABLE"
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# 7. PIPELINE ORCHESTRATOR
+# ═══════════════════════════════════════════════════════════════════════════
+
+def run_keyword_pipeline(
+    xlsx_path: str,
+    target_sheets: List[str],
+    max_words: int = 5,
+    scope: str = "dual",
+) -> List[ScheduleItem]:
+    """
+    Runs the progressive keyword identification pipeline.
+    scope:
+      - 'global': Computes unique identifier across all sheets.
+      - 'chapter': Computes unique identifier only within each sheet.
+      - 'dual': Computes both global and chapter-local identifiers.
+    """
+    print(f"  Loading workbook: {xlsx_path} ...")
+    items = load_all_sheets(xlsx_path, target_sheets)
+    print(f"  Loaded {len(items)} leaf schedule items.")
+
+    print("  Extracting keyword tokens & phrase slugs ...")
+    for item in items:
+        item.keywords = extract_keywords(item.complete_desc)
+
+    # 1. Global Identification
+    if scope in ("global", "dual"):
+        print("  Building global inverted index ...")
+        global_index = build_inverted_index(items)
+        print(f"  Global Index: {len(global_index):,} unique tokens.")
+
+        print(f"  Finding global minimum identifiers (max_words={max_words}) ...")
+        total = len(items)
+        unique_count = 0
+        for i, item in enumerate(items, 1):
+            combo, status = find_minimum_identifier(item, global_index, max_words)
+            item.identifier = combo
+            item.identifier_status = status
+            if status == "UNIQUE":
+                unique_count += 1
+            if i % 200 == 0 or i == total:
+                print(f"    Global: {i:>4}/{total} ({100*i//total}%) -> unique: {unique_count}")
+
+    # 2. Chapter-Local Identification
+    if scope in ("chapter", "dual"):
+        print("\n  Finding chapter-local minimum identifiers ...")
+        by_sheet: Dict[str, List[ScheduleItem]] = defaultdict(list)
+        for it in items:
+            by_sheet[it.sheet].append(it)
+
+        for sname, sitems in by_sheet.items():
+            s_index = build_inverted_index(sitems)
+            s_unique = 0
+            for it in sitems:
+                c_combo, c_status = find_minimum_identifier(it, s_index, max_words=min(3, max_words))
+                it.chapter_identifier = c_combo
+                it.chapter_identifier_status = c_status
+                if c_status == "UNIQUE":
+                    s_unique += 1
+            print(f"    {sname:<25}: {s_unique:>3}/{len(sitems):<3} ({100*s_unique//len(sitems)}%) unique within sheet")
+
+    return items

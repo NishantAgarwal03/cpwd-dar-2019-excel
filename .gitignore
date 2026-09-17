@@ -31,3 +31,9 @@ Desktop.ini
 # IDE / Editor
 .vscode/
 .idea/
+
+# Generated output artifacts (regenerable via scripts)
+output/
+outputs/
+scratch/
+data/reference_json/dsr_keyword_lookup.json
