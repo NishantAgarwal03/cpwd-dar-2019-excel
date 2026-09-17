@@ -1,0 +1,1189 @@
+[
+  {
+    "code": "3.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 6390.6,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 1.02,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 1.02,
+        "rate": 92.24
+      },
+      {
+        "code": "0983",
+        "desc": "Fine Sand (Zone IV)",
+        "unit": "cum",
+        "qty": 0.7125,
+        "rate": 900.0
+      },
+      {
+        "code": "2261",
+        "desc": "Carriage of Fine sand (1 part badarpur sand : 2 parts jamuna sand)",
+        "unit": "cum",
+        "qty": 0.7125,
+        "rate": 103.77
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mechanical mixer",
+        "unit": "L.S.",
+        "qty": 26.9,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "3.2",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 4918.05,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.68,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.68,
+        "rate": 92.24
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.95,
+        "rate": 900.0
+      },
+      {
+        "code": "2261",
+        "desc": "Carriage of Fine sand (1 part badarpur sand : 2 parts jamuna sand)",
+        "unit": "cum",
+        "qty": 0.95,
+        "rate": 103.77
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mechanical mixer",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "3.3",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 4183.05,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.51,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.51,
+        "rate": 92.24
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 1.07,
+        "rate": 900.0
+      },
+      {
+        "code": "2261",
+        "desc": "Carriage of Fine sand (1 part badarpur sand : 2 parts jamuna sand)",
+        "unit": "cum",
+        "qty": 1.07,
+        "rate": 103.77
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mechanical mixer",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "3.4",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 3528.85,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.38,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.38,
+        "rate": 92.24
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 1.07,
+        "rate": 900.0
+      },
+      {
+        "code": "2261",
+        "desc": "Carriage of Fine sand (1 part badarpur sand : 2 parts jamuna sand)",
+        "unit": "cum",
+        "qty": 1.07,
+        "rate": 103.77
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mechanical mixer",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "3.5",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 3176.6,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.31,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.31,
+        "rate": 92.24
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 1.07,
+        "rate": 900.0
+      },
+      {
+        "code": "2261",
+        "desc": "Carriage of Fine sand (1 part badarpur sand : 2 parts jamuna sand)",
+        "unit": "cum",
+        "qty": 1.07,
+        "rate": 103.77
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mechanical mixer",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "3.6",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 2874.65,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.25,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.25,
+        "rate": 92.24
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 1.07,
+        "rate": 900.0
+      },
+      {
+        "code": "2261",
+        "desc": "Carriage of Fine sand (1 part badarpur sand : 2 parts jamuna sand)",
+        "unit": "cum",
+        "qty": 1.07,
+        "rate": 103.77
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mechanical mixer",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "3.7",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 5345.55,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.68,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.68,
+        "rate": 92.24
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.95,
+        "rate": 1350.0
+      },
+      {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 0.95,
+        "rate": 103.77
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mechanical mixer",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "3.8",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 4664.55,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.51,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.51,
+        "rate": 92.24
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 1.07,
+        "rate": 1350.0
+      },
+      {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 1.07,
+        "rate": 103.77
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mechanical mixer",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "3.9",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 4010.35,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.38,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.38,
+        "rate": 92.24
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 1.07,
+        "rate": 1350.0
+      },
+      {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 1.07,
+        "rate": 103.77
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mechanical mixer",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "3.10",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 3658.1,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.31,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.31,
+        "rate": 92.24
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 1.07,
+        "rate": 1350.0
+      },
+      {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 1.07,
+        "rate": 103.77
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mechanical mixer",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "3.11",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 3356.15,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.25,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.25,
+        "rate": 92.24
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 1.07,
+        "rate": 1350.0
+      },
+      {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 1.07,
+        "rate": 103.77
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mechanical mixer",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "3.12",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 5108.05,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.68,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.68,
+        "rate": 92.24
+      },
+      {
+        "code": "1159",
+        "desc": "Stone dust",
+        "unit": "cum",
+        "qty": 0.95,
+        "rate": 1100.0
+      },
+      {
+        "code": "2267",
+        "desc": "Carriage of Stone dust",
+        "unit": "cum",
+        "qty": 0.95,
+        "rate": 103.77
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mechanical mixer",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "3.13",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 5136.55,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.68,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.68,
+        "rate": 92.24
+      },
+      {
+        "code": "0784",
+        "desc": "Marble dust/ powder",
+        "unit": "cum",
+        "qty": 0.95,
+        "rate": 1130.0
+      },
+      {
+        "code": "2268",
+        "desc": "Carriage of Marble dust and marble chips",
+        "unit": "cum",
+        "qty": 0.95,
+        "rate": 103.77
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mechanical mixer",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "3.14",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 3422.7,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.31,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.31,
+        "rate": 92.24
+      },
+      {
+        "code": "0784",
+        "desc": "Marble dust/ powder",
+        "unit": "cum",
+        "qty": 1.07,
+        "rate": 1130.0
+      },
+      {
+        "code": "2268",
+        "desc": "Carriage of Marble dust and marble chips",
+        "unit": "cum",
+        "qty": 1.07,
+        "rate": 103.77
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mechanical mixer",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "3.15",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 9393.35,
+    "resources": [
+      {
+        "code": "0368",
+        "desc": "White Cement",
+        "unit": "tonne",
+        "qty": 0.68,
+        "rate": 11200.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.68,
+        "rate": 92.24
+      },
+      {
+        "code": "0784",
+        "desc": "Marble dust/ powder",
+        "unit": "cum",
+        "qty": 0.95,
+        "rate": 1130.0
+      },
+      {
+        "code": "2268",
+        "desc": "Carriage of Marble dust and marble chips",
+        "unit": "cum",
+        "qty": 0.95,
+        "rate": 103.77
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mechanical mixer",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "3.16",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 7621.75,
+    "resources": [
+      {
+        "code": "0368",
+        "desc": "White Cement",
+        "unit": "tonne",
+        "qty": 0.51,
+        "rate": 11200.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.51,
+        "rate": 92.24
+      },
+      {
+        "code": "0784",
+        "desc": "Marble dust/ powder",
+        "unit": "cum",
+        "qty": 1.07,
+        "rate": 1130.0
+      },
+      {
+        "code": "2268",
+        "desc": "Carriage of Marble dust and marble chips",
+        "unit": "cum",
+        "qty": 1.07,
+        "rate": 103.77
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mechanical mixer",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "3.17",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 5363.3,
+    "resources": [
+      {
+        "code": "0368",
+        "desc": "White Cement",
+        "unit": "tonne",
+        "qty": 0.31,
+        "rate": 11200.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.31,
+        "rate": 92.24
+      },
+      {
+        "code": "0784",
+        "desc": "Marble dust/ powder",
+        "unit": "cum",
+        "qty": 1.07,
+        "rate": 1130.0
+      },
+      {
+        "code": "2268",
+        "desc": "Carriage of Marble dust and marble chips",
+        "unit": "cum",
+        "qty": 1.07,
+        "rate": 103.77
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire and running charges of mechanical mixer",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "3.18",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2821.15,
+    "resources": [
+      {
+        "code": "0811",
+        "desc": "Mud (dry)",
+        "unit": "cum",
+        "qty": 1.08,
+        "rate": 165.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.63,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.315,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.45,
+        "rate": 2.0
+      },
+      {
+        "code": "1182",
+        "desc": "Surkhi",
+        "unit": "cum",
+        "qty": 0.7125,
+        "rate": 700.0
+      },
+      {
+        "code": "0773",
+        "desc": "Unslaked lime",
+        "unit": "quintal",
+        "qty": 3.01,
+        "rate": 300.0
+      },
+      {
+        "code": "0784",
+        "desc": "Marble dust/ powder",
+        "unit": "cum",
+        "qty": 0.24,
+        "rate": 1130.0
+      },
+      {
+        "code": "2268",
+        "desc": "Marble dust and/or marble chips",
+        "unit": "cum",
+        "qty": 0.24,
+        "rate": 103.77
+      },
+      {
+        "code": "2208",
+        "desc": "Carriage of Lime",
+        "unit": "cum",
+        "qty": 3.01,
+        "rate": 103.77
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.45,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "As cost for running and upkeep of mortar mill",
+        "unit": "L.S.",
+        "qty": 10.35,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 5.2,
+        "rate": 2.0
+      }
+    ]
+  }
+]

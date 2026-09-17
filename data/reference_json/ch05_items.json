@@ -1,0 +1,7283 @@
+[
+  {
+    "code": "5.1.2",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 7718.25,
+    "resources": [
+      {
+        "code": "0295",
+        "desc": "Stone Aggregate (Single size) : 20 mm nominal size",
+        "unit": "cum",
+        "qty": 0.57,
+        "rate": 1350.0
+      },
+      {
+        "code": "0297",
+        "desc": "Stone Aggregate (Single size) : 10 mm nominal size",
+        "unit": "cum",
+        "qty": 0.28,
+        "rate": 1350.0
+      },
+      {
+        "code": "2202",
+        "desc": "Carriage of Stone aggregate below 40 mm nominal size",
+        "unit": "cum",
+        "qty": 0.85,
+        "rate": 103.77
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.425,
+        "rate": 1350.0
+      },
+      {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 0.425,
+        "rate": 103.77
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (0.2833 cum)",
+        "unit": "tonne",
+        "qty": 0.4,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.4,
+        "rate": 92.24
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 617.0
+      },
+      {
+        "code": "0002",
+        "desc": "Hire charges of Concrete Mixer 0.25 to 0.40 cum with hooper",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 800.0
+      },
+      {
+        "code": "0012",
+        "desc": "Vibrator(Needle type 40mm)",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 370.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 14.3,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.1.3",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 7296.35,
+    "resources": [
+      {
+        "code": "0295",
+        "desc": "Stone Aggregate (Single size) : 20 mm nominal size",
+        "unit": "cum",
+        "qty": 0.67,
+        "rate": 1350.0
+      },
+      {
+        "code": "0297",
+        "desc": "Stone Aggregate (Single size) : 10 mm nominal size",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 1350.0
+      },
+      {
+        "code": "2202",
+        "desc": "Carriage of Stone aggregate below 40 mm nominal size",
+        "unit": "cum",
+        "qty": 0.89,
+        "rate": 103.77
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.445,
+        "rate": 1350.0
+      },
+      {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 0.445,
+        "rate": 103.77
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (0.2225 cum)",
+        "unit": "tonne",
+        "qty": 0.32,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.32,
+        "rate": 92.24
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 617.0
+      },
+      {
+        "code": "0002",
+        "desc": "Hire charges of Concrete Mixer 0.25 to 0.40 cum with hooper",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 800.0
+      },
+      {
+        "code": "0012",
+        "desc": "Vibrator(Needle type 40mm)",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 370.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 14.3,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.2.2",
+    "unit": "cum",
+    "basis": 9.18,
+    "say": 9306.0,
+    "resources": [
+      {
+        "code": "0295",
+        "desc": "Stone Aggregate (Single size) : 20 mm nominal size",
+        "unit": "cum",
+        "qty": 5.2326,
+        "rate": 1350.0
+      },
+      {
+        "code": "0297",
+        "desc": "Stone Aggregate (Single size) : 10 mm nominal size",
+        "unit": "cum",
+        "qty": 2.5704,
+        "rate": 1350.0
+      },
+      {
+        "code": "2202",
+        "desc": "Carriage of Stone aggregate below 40 mm nominal size",
+        "unit": "cum",
+        "qty": 7.803,
+        "rate": 103.77
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 3.9015,
+        "rate": 1350.0
+      },
+      {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 3.9015,
+        "rate": 103.77
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (0.2833 cum)",
+        "unit": "tonne",
+        "qty": 3.672,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 3.672,
+        "rate": 92.24
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 11.29,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 7.53,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 8.26,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 679.0
+      },
+      {
+        "code": "0002",
+        "desc": "Hire charges of Concrete Mixer 0.25 to 0.40 cum with hooper",
+        "unit": "day",
+        "qty": 0.64,
+        "rate": 800.0
+      },
+      {
+        "code": "0012",
+        "desc": "Vibrator(Needle type 40mm)",
+        "unit": "day",
+        "qty": 0.64,
+        "rate": 370.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 131.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 420.03,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 17.21,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.3",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 9763.8,
+    "resources": [
+      {
+        "code": "0295",
+        "desc": "Stone Aggregate (Single size) : 20 mm nominal size",
+        "unit": "cum",
+        "qty": 0.57,
+        "rate": 1350.0
+      },
+      {
+        "code": "0297",
+        "desc": "Stone Aggregate (Single size) : 10 mm nominal size",
+        "unit": "cum",
+        "qty": 0.28,
+        "rate": 1350.0
+      },
+      {
+        "code": "2202",
+        "desc": "Carriage of Stone aggregate below 40 mm nominal size",
+        "unit": "cum",
+        "qty": 0.85,
+        "rate": 103.77
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.425,
+        "rate": 1350.0
+      },
+      {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 0.425,
+        "rate": 103.77
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (0.2833 cum)",
+        "unit": "tonne",
+        "qty": 0.4,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.4,
+        "rate": 92.24
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.24,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 617.0
+      },
+      {
+        "code": "0002",
+        "desc": "Hire charges of Concrete Mixer 0.25 to 0.40 cum with hooper",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 800.0
+      },
+      {
+        "code": "0012",
+        "desc": "Vibrator(Needle type 40mm)",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 370.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 14.3,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.88,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "4.4.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 8962.7,
+    "resources": [
+      {
+        "code": "work)",
+        "desc": "cum",
+        "unit": "1.00",
+        "qty": 7210.55,
+        "rate": 7210.55
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 679.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.88,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.5",
+    "unit": "cum",
+    "basis": 26.73,
+    "say": 10289.0,
+    "resources": [
+      {
+        "code": "0295",
+        "desc": "Stone Aggregate (Single size) : 20 mm nominal size",
+        "unit": "cum",
+        "qty": 15.236,
+        "rate": 1350.0
+      },
+      {
+        "code": "0297",
+        "desc": "Stone Aggregate (Single size) : 10 mm nominal size",
+        "unit": "cum",
+        "qty": 7.484,
+        "rate": 1350.0
+      },
+      {
+        "code": "2202",
+        "desc": "Carriage of Stone aggregate below 40 mm nominal size",
+        "unit": "cum",
+        "qty": 22.703,
+        "rate": 103.77
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 11.36,
+        "rate": 1350.0
+      },
+      {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 11.36,
+        "rate": 103.77
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (0.2833 cum)",
+        "unit": "tonne",
+        "qty": 10.692,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 10.692,
+        "rate": 92.24
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 6.42,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 73.51,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 24.06,
+        "rate": 617.0
+      },
+      {
+        "code": "0002",
+        "desc": "Hire charges of Concrete Mixer 0.25 to 0.40 cum with hooper",
+        "unit": "day",
+        "qty": 2.14,
+        "rate": 800.0
+      },
+      {
+        "code": "0012",
+        "desc": "Vibrator(Needle type 40mm)",
+        "unit": "day",
+        "qty": 2.14,
+        "rate": 370.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 401.89,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 4.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 50.12,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.2.2",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 9500.1,
+    "resources": [
+      {
+        "code": "CONCRETE",
+        "desc": "cum",
+        "unit": "1.00",
+        "qty": 9306.0,
+        "rate": 9306.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.26,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "4.1.2",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 7270.3,
+    "resources": [
+      {
+        "code": "SH: CONCRETE WORK",
+        "desc": "cum",
+        "unit": "1.00",
+        "qty": 7210.55,
+        "rate": 7210.55
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.8",
+    "unit": "m",
+    "basis": 4.0,
+    "say": 8550.25,
+    "resources": [
+      {
+        "code": "0295",
+        "desc": "Stone Aggregate (Single size) : 20 mm nominal size",
+        "unit": "cum",
+        "qty": 0.3762,
+        "rate": 1350.0
+      },
+      {
+        "code": "0297",
+        "desc": "Stone Aggregate (Single size) : 10 mm nominal size",
+        "unit": "cum",
+        "qty": 0.1848,
+        "rate": 1350.0
+      },
+      {
+        "code": ".",
+        "desc": "40 mm nominal size",
+        "unit": "cum",
+        "qty": 0.561,
+        "rate": 103.77
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.2805,
+        "rate": 1350.0
+      },
+      {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 0.2805,
+        "rate": 103.77
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement (0.2833 cum)",
+        "unit": "tonne",
+        "qty": 0.264,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.264,
+        "rate": 92.24
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.79,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.56,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 679.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scafolding",
+        "unit": "L.S.",
+        "qty": 30.16,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 9.49,
+        "rate": 2.0
+      },
+      {
+        "code": "0002",
+        "desc": "Hire charges of Concrete Mixer 0.25 to 0.40 cum with hooper",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 800.0
+      },
+      {
+        "code": "0012",
+        "desc": "Vibrator(Needle type 40mm)",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 370.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 558.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.1",
+    "unit": "m",
+    "basis": 1.0,
+    "say": 284.85,
+    "resources": [
+      {
+        "code": "7319",
+        "desc": "Wall form panel 1250x500 mm",
+        "unit": "each",
+        "qty": 0.34,
+        "rate": 860.0
+      },
+      {
+        "code": "7326",
+        "desc": "Corner angle 45x45x5 mm 1.50 m long",
+        "unit": "each",
+        "qty": 0.085,
+        "rate": 240.0
+      },
+      {
+        "code": "7327",
+        "desc": "100 mm channel shoulder 2.5 m long",
+        "unit": "each",
+        "qty": 0.17,
+        "rate": 910.0
+      },
+      {
+        "code": "7328",
+        "desc": "Double clip ( bridge clip)",
+        "unit": "each",
+        "qty": 0.34,
+        "rate": 76.0
+      },
+      {
+        "code": "7329",
+        "desc": "Single clip",
+        "unit": "each",
+        "qty": 0.17,
+        "rate": 59.0
+      },
+      {
+        "code": "7330",
+        "desc": "M.S. tube 40 mm dia",
+        "unit": "metre",
+        "qty": 0.2295,
+        "rate": 215.0
+      },
+      {
+        "code": "9999",
+        "desc": "Assembly nuts & bolts",
+        "unit": "L.S.",
+        "qty": 22.1,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 78.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Shuttering oil",
+        "unit": "L.S.",
+        "qty": 52.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.2",
+    "unit": "m",
+    "basis": 7.9,
+    "say": 609.3,
+    "resources": [
+      {
+        "code": "7319",
+        "desc": "Wall form panel 1250x500 mm",
+        "unit": "each",
+        "qty": 0.51,
+        "rate": 860.0
+      },
+      {
+        "code": "7327",
+        "desc": "100 mm channel shoulder 2.5 m long",
+        "unit": "each",
+        "qty": 0.17,
+        "rate": 910.0
+      },
+      {
+        "code": "7328",
+        "desc": "Double clip ( bridge clip)",
+        "unit": "each",
+        "qty": 0.51,
+        "rate": 76.0
+      },
+      {
+        "code": "7329",
+        "desc": "Single clip",
+        "unit": "each",
+        "qty": 0.255,
+        "rate": 59.0
+      },
+      {
+        "code": "7330",
+        "desc": "M.S. tube 40 mm dia",
+        "unit": "metre",
+        "qty": 0.68,
+        "rate": 215.0
+      },
+      {
+        "code": "9999",
+        "desc": "Nut & Bolts",
+        "unit": "L.S.",
+        "qty": 27.62,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 78.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 3.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Shuttering oil",
+        "unit": "L.S.",
+        "qty": 78.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 52.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 693.05,
+    "resources": [
+      {
+        "code": "S.H. steel work",
+        "desc": "kg",
+        "unit": "9.2055",
+        "qty": 86.05,
+        "rate": 792.13
+      },
+      {
+        "code": "7342",
+        "desc": "Adjustable span ESO+SI (2.35-3.40)",
+        "unit": "each",
+        "qty": 0.1063,
+        "rate": 1480.0
+      },
+      {
+        "code": "7343",
+        "desc": "Adjustable telescopic prop 3 m (2.02-3.75 m)",
+        "unit": "each",
+        "qty": 0.1275,
+        "rate": 955.0
+      },
+      {
+        "code": "9999",
+        "desc": "4. Assembly nut & bolts etc.",
+        "unit": "L.S.",
+        "qty": 22.1,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 130.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Shuttering oil",
+        "unit": "L.S.",
+        "qty": 78.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, paper tap etc.",
+        "unit": "L.S.",
+        "qty": 49.7,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 693.05,
+    "resources": [
+      {
+        "code": "S.H. steel work",
+        "desc": "kg",
+        "unit": "9.2055",
+        "qty": 86.05,
+        "rate": 792.13
+      },
+      {
+        "code": "7342",
+        "desc": "Adjustable span ESO+SI (2.35-3.40)",
+        "unit": "each",
+        "qty": 0.1063,
+        "rate": 1480.0
+      },
+      {
+        "code": "7343",
+        "desc": "Adjustable telescopic prop 3 m (2.02-3.75 m)",
+        "unit": "each",
+        "qty": 0.1275,
+        "rate": 955.0
+      },
+      {
+        "code": "9999",
+        "desc": "4. Assembly nut & bolts etc.",
+        "unit": "L.S.",
+        "qty": 22.1,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 130.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Shuttering oil",
+        "unit": "L.S.",
+        "qty": 78.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, paper tap etc.",
+        "unit": "L.S.",
+        "qty": 49.7,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 552.05,
+    "resources": [
+      {
+        "code": "S.H. steel work",
+        "desc": "kg",
+        "unit": "6.4356",
+        "qty": 86.05,
+        "rate": 553.78
+      },
+      {
+        "code": "7343",
+        "desc": "Adjustable telescopic prop 3 m (2.02-3.75 m)",
+        "unit": "each",
+        "qty": 0.1275,
+        "rate": 955.0
+      },
+      {
+        "code": "7344",
+        "desc": "Beam clamp 300-380 mm (450-1070 mm)",
+        "unit": "each set",
+        "qty": 0.1063,
+        "rate": 355.0
+      },
+      {
+        "code": "9999",
+        "desc": "(iv) Assembly nut & bolts etc.",
+        "unit": "L.S.",
+        "qty": 22.1,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 78.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 1.25,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Shuttering oil",
+        "unit": "L.S.",
+        "qty": 39.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, paper tape etc.",
+        "unit": "L.S.",
+        "qty": 24.61,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.6",
+    "unit": "sqm",
+    "basis": 4.5,
+    "say": 733.7,
+    "resources": [
+      {
+        "code": "7331",
+        "desc": "Wall form panel 1250x450 mm",
+        "unit": "each",
+        "qty": 0.17,
+        "rate": 860.0
+      },
+      {
+        "code": "7332",
+        "desc": "Corner angle 45x45x5 m 2.50 m long",
+        "unit": "each",
+        "qty": 0.085,
+        "rate": 255.0
+      },
+      {
+        "code": "7333",
+        "desc": "Column clamp 450x1070 m",
+        "unit": "each",
+        "qty": 0.1063,
+        "rate": 965.0
+      },
+      {
+        "code": "7334",
+        "desc": "Prop 2 m ( 2-3.5m)",
+        "unit": "each",
+        "qty": 0.085,
+        "rate": 635.0
+      },
+      {
+        "code": "9999",
+        "desc": "Assembly nut & bolt",
+        "unit": "L.S.",
+        "qty": 27.62,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 52.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Shuttering oil",
+        "unit": "L.S.",
+        "qty": 39.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.7",
+    "unit": "sqm",
+    "basis": 5.79,
+    "say": 622.35,
+    "resources": [
+      {
+        "code": "1198",
+        "desc": "Second class kail wood in planks",
+        "unit": "10 cudm",
+        "qty": 2.8875,
+        "rate": 260.0
+      },
+      {
+        "code": "1197",
+        "desc": "Second class kail wood in scantling",
+        "unit": "10 cudm",
+        "qty": 0.4875,
+        "rate": 260.0
+      },
+      {
+        "code": "0302",
+        "desc": "Safeda ballies 125 mm diameter",
+        "unit": "metre",
+        "qty": 0.8,
+        "rate": 40.0
+      },
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.04363,
+        "rate": 118.59
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 1.75,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.5",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 600.0,
+    "resources": [
+      {
+        "code": "SH:",
+        "desc": "RCC",
+        "unit": "sqm",
+        "qty": 1.4,
+        "rate": 552.05
+      },
+      {
+        "code": "5.9.2",
+        "desc": "Rate as per item no 5.9.2 of SH : RCC",
+        "unit": "sqm",
+        "qty": 3.22,
+        "rate": 609.3
+      },
+      {
+        "code": "5.9.7",
+        "desc": "Rate as per item no 5.9.7 of SH: RCC",
+        "unit": "sqm",
+        "qty": 1.66,
+        "rate": 622.35
+      }
+    ]
+  },
+  {
+    "code": "5.9.9",
+    "unit": "m",
+    "basis": 6.0,
+    "say": 1713.2,
+    "resources": [
+      {
+        "code": "1197",
+        "desc": "Second class kail wood in scantling",
+        "unit": "10 cudm",
+        "qty": 25.625,
+        "rate": 260.0
+      },
+      {
+        "code": "0302",
+        "desc": "Safeda ballies 125 mm diameter",
+        "unit": "metre",
+        "qty": 12.6,
+        "rate": 40.0
+      },
+      {
+        "code": "0992",
+        "desc": "Galvanised steel plain sheets",
+        "unit": "quintal",
+        "qty": 0.145,
+        "rate": 5000.0
+      },
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.4112,
+        "rate": 118.59
+      },
+      {
+        "code": "2302",
+        "desc": "Carriage of G.I.sheet and accessories",
+        "unit": "tonne",
+        "qty": 0.0145,
+        "rate": 92.24
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 16.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 13.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 11.7,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.10",
+    "unit": "m",
+    "basis": 6.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "1197",
+        "desc": "Second class kail wood in scantling",
+        "unit": "10 cudm",
+        "qty": 88.79,
+        "rate": 260.0
+      },
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.8879,
+        "rate": 118.59
+      },
+      {
+        "code": "1225",
+        "desc": "Mild steel flat strap fitting",
+        "unit": "quintal",
+        "qty": 0.0878,
+        "rate": 4120.0
+      },
+      {
+        "code": "1034",
+        "desc": "Bolts and nuts upto 300 mm in length",
+        "unit": "quintal",
+        "qty": 0.08,
+        "rate": 4800.0
+      },
+      {
+        "code": "2302",
+        "desc": "Carriage of G.I.sheet and accessories",
+        "unit": "tonne",
+        "qty": 0.0168,
+        "rate": 92.24
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 28.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 24.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 134.55,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.9",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 560.65,
+    "resources": [
+      {
+        "code": "SH : RCC",
+        "desc": "sqm",
+        "unit": "-33.31",
+        "qty": 1713.2,
+        "rate": -57066.69
+      }
+    ]
+  },
+  {
+    "code": "5.9.11",
+    "unit": "m",
+    "basis": 7.9,
+    "say": 609.3,
+    "resources": [
+      {
+        "code": "7319",
+        "desc": "Wall form panel 1250x500 mm",
+        "unit": "each",
+        "qty": 0.51,
+        "rate": 860.0
+      },
+      {
+        "code": "7327",
+        "desc": "100 mm channel shoulder 2.5 m long",
+        "unit": "each",
+        "qty": 0.17,
+        "rate": 910.0
+      },
+      {
+        "code": "7328",
+        "desc": "Double clip ( bridge clip)",
+        "unit": "each",
+        "qty": 0.51,
+        "rate": 76.0
+      },
+      {
+        "code": "7329",
+        "desc": "Single clip",
+        "unit": "each",
+        "qty": 0.255,
+        "rate": 59.0
+      },
+      {
+        "code": "7330",
+        "desc": "M.S. tube 40 mm dia",
+        "unit": "metre",
+        "qty": 0.68,
+        "rate": 215.0
+      },
+      {
+        "code": "9999",
+        "desc": "Nut & Bolts",
+        "unit": "L.S.",
+        "qty": 27.63,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 78.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 3.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Shuttering oil",
+        "unit": "L.S.",
+        "qty": 78.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 52.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.12",
+    "unit": "sqm",
+    "basis": 26.39,
+    "say": 246.4,
+    "resources": [
+      {
+        "code": "1198",
+        "desc": "Second class kail wood in planks",
+        "unit": "10 cudm",
+        "qty": 15.0,
+        "rate": 260.0
+      },
+      {
+        "code": "1197",
+        "desc": "Second class kail wood in scantling",
+        "unit": "10 cudm",
+        "qty": 0.00198,
+        "rate": 260.0
+      },
+      {
+        "code": "0302",
+        "desc": "Safeda ballies 125 mm diameter",
+        "unit": "metre",
+        "qty": 6.625,
+        "rate": 40.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.13",
+    "unit": "sqm",
+    "basis": 23.9,
+    "say": 1023.55,
+    "resources": [
+      {
+        "code": "1198",
+        "desc": "Second class kail wood in planks",
+        "unit": "10 cudm",
+        "qty": 11.925,
+        "rate": 260.0
+      },
+      {
+        "code": "1197",
+        "desc": "Second class kail wood in scantling",
+        "unit": "10 cudm",
+        "qty": 3.3625,
+        "rate": 260.0
+      },
+      {
+        "code": "0302",
+        "desc": "Safeda ballies 125 mm diameter",
+        "unit": "metre",
+        "qty": 12.6,
+        "rate": 40.0
+      },
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.3076,
+        "rate": 118.59
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 11.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 11.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 80.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.15",
+    "unit": "m",
+    "basis": 1.5,
+    "say": 284.85,
+    "resources": [
+      {
+        "code": "7319",
+        "desc": "Wall form panel 1250x500 mm",
+        "unit": "each",
+        "qty": 0.34,
+        "rate": 860.0
+      },
+      {
+        "code": "7326",
+        "desc": "Corner angle 45x45x5 mm 1.50 m long",
+        "unit": "each",
+        "qty": 0.085,
+        "rate": 240.0
+      },
+      {
+        "code": "7327",
+        "desc": "100 mm channel shoulder 2.5 m long",
+        "unit": "each",
+        "qty": 0.17,
+        "rate": 910.0
+      },
+      {
+        "code": "7328",
+        "desc": "Double clip ( bridge clip)",
+        "unit": "each",
+        "qty": 0.34,
+        "rate": 76.0
+      },
+      {
+        "code": "7329",
+        "desc": "Single clip",
+        "unit": "each",
+        "qty": 0.17,
+        "rate": 59.0
+      },
+      {
+        "code": "7330",
+        "desc": "M.S. tube 40 mm dia",
+        "unit": "metre",
+        "qty": 0.2295,
+        "rate": 215.0
+      },
+      {
+        "code": "9999",
+        "desc": "Assembly nuts & bolts",
+        "unit": "L.S.",
+        "qty": 22.1,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 78.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Shuttering oil",
+        "unit": "L.S.",
+        "qty": 52.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.16.1",
+    "unit": "m",
+    "basis": 3.0,
+    "say": 173.25,
+    "resources": [
+      {
+        "code": "1198",
+        "desc": "Second class kail wood in planks",
+        "unit": "10 cudm",
+        "qty": 0.7125,
+        "rate": 260.0
+      },
+      {
+        "code": "1197",
+        "desc": "Second class kail wood in scantling",
+        "unit": "10 cudm",
+        "qty": 1.9375,
+        "rate": 260.0
+      },
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.0265,
+        "rate": 118.59
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.81,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.54,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 5.2,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.16.2",
+    "unit": "metre",
+    "basis": 16.0,
+    "say": 737.3,
+    "resources": [
+      {
+        "code": "1198",
+        "desc": "Second class kail wood in planks",
+        "unit": "10 cudm",
+        "qty": 2.0,
+        "rate": 260.0
+      },
+      {
+        "code": "1197",
+        "desc": "Second class kail wood in scantling",
+        "unit": "10 cudm",
+        "qty": 2.188,
+        "rate": 260.0
+      },
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.0419,
+        "rate": 118.59
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.5,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.17",
+    "unit": "m",
+    "basis": 10.0,
+    "say": 740.25,
+    "resources": [
+      {
+        "code": "1198",
+        "desc": "Second class kail wood in planks",
+        "unit": "10 cudm",
+        "qty": 2.275,
+        "rate": 260.0
+      },
+      {
+        "code": "1197",
+        "desc": "Second class kail wood in scantling",
+        "unit": "10 cudm",
+        "qty": 2.725,
+        "rate": 260.0
+      },
+      {
+        "code": "2447",
+        "desc": "Hollock ballies 125 mm diameter",
+        "unit": "metre",
+        "qty": 3.15,
+        "rate": 35.0
+      },
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.0888,
+        "rate": 118.59
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.63,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.63,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.5,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.18",
+    "unit": "m",
+    "basis": 1.2,
+    "say": 773.7,
+    "resources": [
+      {
+        "code": "1198",
+        "desc": "Second class kail wood in planks",
+        "unit": "10 cudm",
+        "qty": 1.3375,
+        "rate": 260.0
+      },
+      {
+        "code": "1197",
+        "desc": "Second class kail wood in scantling",
+        "unit": "10 cudm",
+        "qty": 0.315,
+        "rate": 260.0
+      },
+      {
+        "code": "2447",
+        "desc": "Hollock ballies 125 mm diameter",
+        "unit": "metre",
+        "qty": 0.6763,
+        "rate": 35.0
+      },
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.0248,
+        "rate": 118.59
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.19",
+    "unit": "sqm",
+    "basis": 0.954,
+    "say": 766.75,
+    "resources": [
+      {
+        "code": "1198",
+        "desc": "Second class kail wood in planks",
+        "unit": "10 cudm",
+        "qty": 0.5125,
+        "rate": 260.0
+      },
+      {
+        "code": "1197",
+        "desc": "Second class kail wood in scantling",
+        "unit": "10 cudm",
+        "qty": 0.15,
+        "rate": 260.0
+      },
+      {
+        "code": "2447",
+        "desc": "Hollock ballies 125 mm diameter",
+        "unit": "metre",
+        "qty": 0.5513,
+        "rate": 35.0
+      },
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.01338,
+        "rate": 118.59
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 5.2,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 779.3,
+    "resources": [
+      {
+        "code": "SH:Steel Work",
+        "desc": "kg",
+        "unit": "5.425",
+        "qty": 86.05,
+        "rate": 466.82
+      },
+      {
+        "code": "1215",
+        "desc": "Welding by electric plant",
+        "unit": "cm",
+        "qty": 24.0,
+        "rate": 2.0
+      },
+      {
+        "code": "8659",
+        "desc": "Water proof ply 12mm thick.",
+        "unit": "sqm",
+        "qty": 1.77,
+        "rate": 517.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 558.0
+      },
+      {
+        "code": "1034",
+        "desc": "Bolts and nuts upto 300 mm in length",
+        "unit": "quintal",
+        "qty": 0.0021,
+        "rate": 4800.0
+      },
+      {
+        "code": "7342",
+        "desc": "Adjustable span ESO+SI (2.35-3.40)",
+        "unit": "each",
+        "qty": 0.1063,
+        "rate": 1480.0
+      },
+      {
+        "code": "7343",
+        "desc": "Adjustable telescopic prop 3 m (2.02-3.75 m)",
+        "unit": "each",
+        "qty": 0.1275,
+        "rate": 955.0
+      },
+      {
+        "code": "9999",
+        "desc": "Assembly nut & bolts etc.",
+        "unit": "L.S.",
+        "qty": 12.63,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 130.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Shuttering oil",
+        "unit": "L.S.",
+        "qty": 78.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 52.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 641.6,
+    "resources": [
+      {
+        "code": "SH:Steel Work",
+        "desc": "kg",
+        "unit": "3.72",
+        "qty": 86.05,
+        "rate": 320.11
+      },
+      {
+        "code": "1215",
+        "desc": "Welding by electric plant",
+        "unit": "cm",
+        "qty": 12.0,
+        "rate": 2.0
+      },
+      {
+        "code": "8659",
+        "desc": "Water proof ply 12mm thick.",
+        "unit": "sqm",
+        "qty": 1.02,
+        "rate": 517.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 558.0
+      },
+      {
+        "code": "1034",
+        "desc": "Bolts and nuts upto 300 mm in length",
+        "unit": "quintal",
+        "qty": 0.0021,
+        "rate": 4800.0
+      },
+      {
+        "code": "7343",
+        "desc": "Adjustable telescopic prop 3 m (2.02-3.75 m)",
+        "unit": "each",
+        "qty": 0.1275,
+        "rate": 955.0
+      },
+      {
+        "code": "7344",
+        "desc": "Beam clamp 300-380 mm (450-1070 mm)",
+        "unit": "each set",
+        "qty": 0.1063,
+        "rate": 355.0
+      },
+      {
+        "code": "9999",
+        "desc": "Assembly nut & bolts etc.",
+        "unit": "L.S.",
+        "qty": 11.05,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 78.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 1.25,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Shuttering oil",
+        "unit": "L.S.",
+        "qty": 39.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, paper tape etc.",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.10.1",
+    "unit": "m",
+    "basis": 1.0,
+    "say": 140.8,
+    "resources": [
+      {
+        "code": "7320",
+        "desc": "Tie bolt 12 mm dia 100 mm length",
+        "unit": "each",
+        "qty": 24.0,
+        "rate": 38.0
+      },
+      {
+        "code": "7324",
+        "desc": "Spring coil 12 mm",
+        "unit": "each",
+        "qty": 48.0,
+        "rate": 15.0
+      },
+      {
+        "code": "7325",
+        "desc": "Plastic cone 12 mm dia",
+        "unit": "each",
+        "qty": 48.0,
+        "rate": 17.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage:",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.10.2",
+    "unit": "m",
+    "basis": 1.0,
+    "say": 154.2,
+    "resources": [
+      {
+        "code": "7321",
+        "desc": "Tie bolt 12 mm dia 150 mm length",
+        "unit": "each",
+        "qty": 24.0,
+        "rate": 48.0
+      },
+      {
+        "code": "7324",
+        "desc": "Spring coil 12 mm",
+        "unit": "each",
+        "qty": 48.0,
+        "rate": 15.0
+      },
+      {
+        "code": "7325",
+        "desc": "Plastic cone 12 mm dia",
+        "unit": "each",
+        "qty": 48.0,
+        "rate": 17.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage:",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.10.3",
+    "unit": "m",
+    "basis": 1.0,
+    "say": 166.25,
+    "resources": [
+      {
+        "code": "7322",
+        "desc": "Tie bolt 20 mm dia 150 mm length",
+        "unit": "each",
+        "qty": 24.0,
+        "rate": 57.0
+      },
+      {
+        "code": "7324",
+        "desc": "Spring coil 12 mm",
+        "unit": "each",
+        "qty": 48.0,
+        "rate": 15.0
+      },
+      {
+        "code": "7325",
+        "desc": "Plastic cone 12 mm dia",
+        "unit": "each",
+        "qty": 48.0,
+        "rate": 17.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage:",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.10.4",
+    "unit": "m",
+    "basis": 1.0,
+    "say": 179.6,
+    "resources": [
+      {
+        "code": "7323",
+        "desc": "Tie bolt 20 mm dia 225 mm length",
+        "unit": "each",
+        "qty": 24.0,
+        "rate": 67.0
+      },
+      {
+        "code": "7324",
+        "desc": "Spring coil 12 mm",
+        "unit": "each",
+        "qty": 48.0,
+        "rate": 15.0
+      },
+      {
+        "code": "7325",
+        "desc": "Plastic cone 12 mm dia",
+        "unit": "each",
+        "qty": 48.0,
+        "rate": 17.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage:",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.11.1",
+    "unit": "m",
+    "basis": 4.8,
+    "say": 287.5,
+    "resources": [
+      {
+        "code": "7345",
+        "desc": "Prop 4 m",
+        "unit": "each",
+        "qty": 0.4463,
+        "rate": 910.0
+      },
+      {
+        "code": "7343",
+        "desc": "Adjustable telescopic prop 3 m (2.02-3.75 m)",
+        "unit": "each",
+        "qty": -0.4463,
+        "rate": 955.0
+      },
+      {
+        "code": "7330",
+        "desc": "M.S. tube 40 mm dia",
+        "unit": "metre",
+        "qty": 1.0965,
+        "rate": 215.0
+      },
+      {
+        "code": "7346",
+        "desc": "Double coupler (40x40)",
+        "unit": "each",
+        "qty": 0.4463,
+        "rate": 46.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 65.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 130.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "4.5.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 8886.35,
+    "resources": [
+      {
+        "code": "SH:CONCRETE WORK",
+        "desc": "cum",
+        "unit": "1.00",
+        "qty": 8537.75,
+        "rate": 8537.75
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 679.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "4.2.2",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "SH: Concrete Work",
+        "desc": "cum",
+        "unit": "0.054",
+        "qty": 8976.45,
+        "rate": 484.73
+      }
+    ]
+  },
+  {
+    "code": "4.3.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 12464.25,
+    "resources": [
+      {
+        "code": "SH: Concrete work",
+        "desc": "sqm",
+        "unit": "0.60",
+        "qty": 284.85,
+        "rate": 170.91
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.005,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.01,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.002,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.002,
+        "rate": 679.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.002,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "4.1.2",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "SH: Concrete Work",
+        "desc": "cum",
+        "unit": "0.03",
+        "qty": 7210.55,
+        "rate": 216.32
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.034,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar and labour for hoisting and for fixing",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "4.3.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 14479.55,
+    "resources": [
+      {
+        "code": "SH: Concrete Work",
+        "desc": "sqm",
+        "unit": "0.36",
+        "qty": 284.85,
+        "rate": 102.55
+      },
+      {
+        "code": "9999",
+        "desc": "Add for extra labour for hoisting",
+        "unit": "L.S.",
+        "qty": 1.61,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.0174,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.0174,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.045,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.0018,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.003,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.0012,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.0012,
+        "rate": 679.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.0012,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "4.1.2",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 11351.35,
+    "resources": [
+      {
+        "code": "SH: Concrete Work",
+        "desc": "cum",
+        "unit": "0.99",
+        "qty": 7210.55,
+        "rate": 7138.44
+      },
+      {
+        "code": "SH: Concrete work",
+        "desc": "sqm",
+        "unit": "6.90",
+        "qty": 284.85,
+        "rate": 1965.47
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.11,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.099,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.198,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.0396,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.0396,
+        "rate": 679.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.0396,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement mortar 1:3 for fixing",
+        "unit": "L.S.",
+        "qty": 89.7,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Labour for hoisting, Transporting and setting in position",
+        "unit": "L.S.",
+        "qty": 269.1,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "4.1.2",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "SH: Concrete Work",
+        "desc": "cum",
+        "unit": "0.0162",
+        "qty": 7210.55,
+        "rate": 116.81
+      }
+    ]
+  },
+  {
+    "code": "13.18",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "SH : Finishing",
+        "desc": "sqm",
+        "unit": "0.85",
+        "qty": 62.75,
+        "rate": 53.34
+      }
+    ]
+  },
+  {
+    "code": "4.3.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 17196.0,
+    "resources": [
+      {
+        "code": "SH : concrete work",
+        "desc": "sqm",
+        "unit": "0.108",
+        "qty": 284.85,
+        "rate": 30.76
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.018,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.016,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.0032,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.0006,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.0006,
+        "rate": 679.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.0006,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement mortar 1:3 for fixing",
+        "unit": "L.S.",
+        "qty": 4.42,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Labour for hoisting, Transporting and setting in position",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "4.1.2",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "SH: Concrete Work",
+        "desc": "cum",
+        "unit": "0.66",
+        "qty": 7210.55,
+        "rate": 4758.96
+      }
+    ]
+  },
+  {
+    "code": "4.3.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 9948.8,
+    "resources": [
+      {
+        "code": "SH: Concrete work",
+        "desc": "sqm",
+        "unit": "2.56",
+        "qty": 284.85,
+        "rate": 729.22
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.066,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.132,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.0264,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.0264,
+        "rate": 679.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.0264,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement mortar 1:3 for fixing",
+        "unit": "L.S.",
+        "qty": 17.94,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Labour for hoisting, Transporting and setting in position",
+        "unit": "L.S.",
+        "qty": 71.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 17.94,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.18.1",
+    "unit": "m",
+    "basis": 0.75,
+    "say": 1474.05,
+    "resources": [
+      {
+        "code": "0768",
+        "desc": "Cement Concrete Jali 50 mm thick",
+        "unit": "sqm",
+        "qty": 1.5,
+        "rate": 400.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for fixing",
+        "unit": "L.S.",
+        "qty": 6.24,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage and sundries",
+        "unit": "L.S.",
+        "qty": 6.2,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.3,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.08,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.18.2",
+    "unit": "m",
+    "basis": 0.6,
+    "say": 1329.75,
+    "resources": [
+      {
+        "code": "0769",
+        "desc": "Cement Concrete Jali 40 mm thick",
+        "unit": "sqm",
+        "qty": 0.72,
+        "rate": 350.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for fixing",
+        "unit": "L.S.",
+        "qty": 3.64,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage and sundries",
+        "unit": "L.S.",
+        "qty": 3.64,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.18.3",
+    "unit": "m",
+    "basis": 0.5,
+    "say": 1194.95,
+    "resources": [
+      {
+        "code": "0770",
+        "desc": "Cement Concrete Jali 25 mm thick",
+        "unit": "sqm",
+        "qty": 0.375,
+        "rate": 275.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for fixing",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage and sundries",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "4.1.2",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "SH: Concrete Work",
+        "desc": "cum",
+        "unit": "0.424",
+        "qty": 7210.55,
+        "rate": 3057.27
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.042,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.085,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.017,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.017,
+        "rate": 679.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.017,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.5",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 13020.5,
+    "resources": [
+      {
+        "code": "SH: Reinforced cement concrete work",
+        "desc": "sqm",
+        "unit": "4.09",
+        "qty": 552.05,
+        "rate": 2257.88
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and for lifting materials",
+        "unit": "L.S.",
+        "qty": 21.58,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "4.1.2",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "SH: Concrete Work",
+        "desc": "cum",
+        "unit": "12.25",
+        "qty": 7210.55,
+        "rate": 88329.24
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.225,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 2.45,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.49,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.49,
+        "rate": 679.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.49,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.5",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 8190.1,
+    "resources": [
+      {
+        "code": "SH: Reinforced cement concrete work",
+        "desc": "sqm",
+        "unit": "14.00",
+        "qty": 552.05,
+        "rate": 7728.7
+      }
+    ]
+  },
+  {
+    "code": "5.21",
+    "unit": "kg",
+    "basis": 3.64,
+    "say": 443.95,
+    "resources": [
+      {
+        "code": "1015",
+        "desc": "Mild steel expanded metal 20x60 mm strands",
+        "unit": "sqm",
+        "qty": 10.5,
+        "rate": 280.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of expended metal",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Wire for tieing",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.22.1",
+    "unit": "quintal",
+    "basis": 1.0,
+    "say": 82.1,
+    "resources": [
+      {
+        "code": "1004",
+        "desc": "Average rate of Mild steel round bars for reinforcements",
+        "unit": "quintal",
+        "qty": 1.05,
+        "rate": 4500.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel 1.05/10 = 0.105t",
+        "unit": "tonne",
+        "qty": 0.105,
+        "rate": 92.24
+      },
+      {
+        "code": "9999",
+        "desc": "Cover block",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and binding wire",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.22.2",
+    "unit": "quintal",
+    "basis": 1.0,
+    "say": 85.6,
+    "resources": [
+      {
+        "code": "1224",
+        "desc": "Hard drawn steel wire",
+        "unit": "quintal",
+        "qty": 1.05,
+        "rate": 4800.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel 1.05q = 0.105 tonne",
+        "unit": "tonne",
+        "qty": 0.105,
+        "rate": 92.24
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.22.3",
+    "unit": "quintal",
+    "basis": 1.0,
+    "say": 83.5,
+    "resources": [
+      {
+        "code": "1005",
+        "desc": "Twisted steel / deformed bars",
+        "unit": "quintal",
+        "qty": 1.05,
+        "rate": 4600.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel 1.05/10 = 0.105t",
+        "unit": "tonne",
+        "qty": 0.105,
+        "rate": 92.24
+      },
+      {
+        "code": "9999",
+        "desc": "Cover block",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and binding wire",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.22.4",
+    "unit": "quintal",
+    "basis": 1.0,
+    "say": 83.5,
+    "resources": [
+      {
+        "code": "1005",
+        "desc": "Twisted steel / deformed bars",
+        "unit": "quintal",
+        "qty": 1.05,
+        "rate": 4600.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel 1.05/10 = 0.105t",
+        "unit": "tonne",
+        "qty": 0.105,
+        "rate": 92.24
+      },
+      {
+        "code": "9999",
+        "desc": "Cover block",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and binding wire",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.22.5",
+    "unit": "quintal",
+    "basis": 1.0,
+    "say": 92.15,
+    "resources": [
+      {
+        "code": "1021",
+        "desc": "Hard drawn steel wire fabric",
+        "unit": "sqm",
+        "qty": 13.548,
+        "rate": 430.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage 1.05q = 0.105 tonne",
+        "unit": "tonne",
+        "qty": 0.105,
+        "rate": 92.24
+      },
+      {
+        "code": "9999",
+        "desc": "Cover block",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and binding wire",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.22.6",
+    "unit": "quintal",
+    "basis": 1.0,
+    "say": 77.65,
+    "resources": [
+      {
+        "code": "1005",
+        "desc": "Twisted steel / deformed bars",
+        "unit": "quintal",
+        "qty": 1.05,
+        "rate": 4600.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of steel 1.05/10 = 0.105t",
+        "unit": "tonne",
+        "qty": 0.105,
+        "rate": 92.24
+      },
+      {
+        "code": "9999",
+        "desc": "Cover block",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and binding wire",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "1004",
+        "desc": "Average rate of Mild steel round bars for reinforcements",
+        "unit": "quintal",
+        "qty": 1.05,
+        "rate": 4500.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel NOS/ 10 = 0.105 t",
+        "unit": "tonne",
+        "qty": 0.105,
+        "rate": 92.24
+      },
+      {
+        "code": "9999",
+        "desc": "Cover block",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and binding wire",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "1224",
+        "desc": "Hard drawn steel wire",
+        "unit": "quintal",
+        "qty": 1.05,
+        "rate": 4800.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.105,
+        "rate": 92.24
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "1005",
+        "desc": "Twisted steel / deformed bars",
+        "unit": "quintal",
+        "qty": 1.05,
+        "rate": 4600.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.105,
+        "rate": 92.24
+      },
+      {
+        "code": "9999",
+        "desc": "Cover block",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and binding wire",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "1005",
+        "desc": "Twisted steel / deformed bars",
+        "unit": "quintal",
+        "qty": 1.05,
+        "rate": 4600.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.105,
+        "rate": 92.24
+      },
+      {
+        "code": "9999",
+        "desc": "Cover block",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and binding wire",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "1021",
+        "desc": "Hard drawn steel wire fabric",
+        "unit": "sqm",
+        "qty": 13.548,
+        "rate": 430.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.105,
+        "rate": 92.24
+      },
+      {
+        "code": "9999",
+        "desc": "Cover block",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and binding wire",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "1005",
+        "desc": "Twisted steel / deformed bars",
+        "unit": "quintal",
+        "qty": 1.05,
+        "rate": 4600.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.105,
+        "rate": 92.24
+      },
+      {
+        "code": "9999",
+        "desc": "Cover block",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and binding wire",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "1005",
+        "desc": "Twisted steel / deformed bars",
+        "unit": "quintal",
+        "qty": 1.0,
+        "rate": 4600.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of steel 1.0/10 = 0.1t",
+        "unit": "tonne",
+        "qty": 0.1,
+        "rate": 92.24
+      },
+      {
+        "code": "9999",
+        "desc": "Cover block",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "For cut and bend",
+        "unit": "L.S.",
+        "qty": 156.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and binding wire",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "1005",
+        "desc": "Twisted steel / deformed bars",
+        "unit": "quintal",
+        "qty": 1.0,
+        "rate": 4600.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of steel 1.0/10 = 0.1t",
+        "unit": "tonne",
+        "qty": 0.1,
+        "rate": 92.24
+      },
+      {
+        "code": "9999",
+        "desc": "Cover block",
+        "unit": "L.S.",
+        "qty": 26.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "For cut and bend",
+        "unit": "L.S.",
+        "qty": 156.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and binding wire",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.23",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 227.35,
+    "resources": [
+      {
+        "code": "3.3",
+        "desc": "Rate as per item No 3.3 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.072,
+        "rate": 4183.05
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.51,
+        "rate": 709.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for removing burrs, cleaning with wire brushes pock marking with pointed tool etc. complete",
+        "unit": "L.S.",
+        "qty": 13.39,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and Sundries",
+        "unit": "L.S.",
+        "qty": 11.7,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.24",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 125.1,
+    "resources": [
+      {
+        "code": "3.7",
+        "desc": "Rate as per item No 3.7 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.03,
+        "rate": 5345.55
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.0213,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.0213,
+        "rate": 92.24
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Spreading earth on floor (7.5mm thick)",
+        "unit": "L.S.",
+        "qty": 35.49,
+        "rate": 2.0
+      },
+      {
+        "code": "0983",
+        "desc": "Fine sand (zone IV)",
+        "unit": "cum",
+        "qty": 0.15,
+        "rate": 900.0
+      },
+      {
+        "code": "2261",
+        "desc": "Carriage of Fine sand (1 part badarpur sand : 2 parts jamuna sand)",
+        "unit": "cum",
+        "qty": 0.15,
+        "rate": 103.77
+      },
+      {
+        "code": "9999",
+        "desc": "Disposal of earth spread over floor protectIron",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.24,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.25",
+    "unit": "kg",
+    "basis": 10.56,
+    "say": 728.2,
+    "resources": [
+      {
+        "code": "0967",
+        "desc": "Copper plate",
+        "unit": "kilogram",
+        "qty": 10.56,
+        "rate": 527.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 679.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 6.24,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.26",
+    "unit": "m",
+    "basis": 300.0,
+    "say": 61509.8,
+    "resources": [
+      {
+        "code": "0313",
+        "desc": "Blown type petroleum bitumen of penetration 85/25 of approved quality",
+        "unit": "tonne",
+        "qty": 1.24,
+        "rate": 34000.0
+      },
+      {
+        "code": "2211",
+        "desc": "Carriage of Tar/ bitumen",
+        "unit": "tonne",
+        "qty": 1.24,
+        "rate": 103.77
+      },
+      {
+        "code": "0370",
+        "desc": "Coal (steam)",
+        "unit": "quintal",
+        "qty": 2.48,
+        "rate": 440.0
+      },
+      {
+        "code": "2200",
+        "desc": "Carriage of steam coal",
+        "unit": "tonne",
+        "qty": 0.248,
+        "rate": 120.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 2.52,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 2.52,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 8.06,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 121.16,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.27",
+    "unit": "kg",
+    "basis": 80.0,
+    "say": 21054.5,
+    "resources": [
+      {
+        "code": "0309",
+        "desc": "Paving bitumen VG-10 of approved quality",
+        "unit": "tonne",
+        "qty": 0.303,
+        "rate": 25614.0
+      },
+      {
+        "code": "2211",
+        "desc": "Carriage of Tar bitumen",
+        "unit": "tonne",
+        "qty": 0.303,
+        "rate": 103.77
+      },
+      {
+        "code": "0370",
+        "desc": "Coal (steam)",
+        "unit": "quintal",
+        "qty": 0.606,
+        "rate": 440.0
+      },
+      {
+        "code": "2200",
+        "desc": "Carriage of steam coal",
+        "unit": "tonne",
+        "qty": 0.061,
+        "rate": 120.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.0036,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.0036,
+        "rate": 92.24
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.9,
+        "rate": 1350.0
+      },
+      {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 0.9,
+        "rate": 103.77
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 2.52,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 2.52,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 8.06,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 121.16,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.28",
+    "unit": "m",
+    "basis": 100.0,
+    "say": 557.65,
+    "resources": [
+      {
+        "code": "0339",
+        "desc": "Flame retardent face insulating, Impregnated fibre board 12 mm thick",
+        "unit": "sqm",
+        "qty": 7.5,
+        "rate": 375.0
+      },
+      {
+        "code": "0316",
+        "desc": "Bitumen solution primer of approved quality",
+        "unit": "litre",
+        "qty": 1.25,
+        "rate": 45.0
+      },
+      {
+        "code": "0314",
+        "desc": "Bitumen hot sealing compound : grade A",
+        "unit": "kilogram",
+        "qty": 31.5,
+        "rate": 28.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.29.1.1",
+    "unit": "m",
+    "basis": 3.0,
+    "say": 190.5,
+    "resources": [
+      {
+        "code": "0236",
+        "desc": "Non - Asbestos multi purpose fibre (high impact poly propelene reinforced) cement board 6mm thick.",
+        "unit": "sqm",
+        "qty": 0.47,
+        "rate": 210.0
+      },
+      {
+        "code": "2273",
+        "desc": "Carriage of A.C.sheet and accessories",
+        "unit": "tonne",
+        "qty": 0.0049,
+        "rate": 92.24
+      },
+      {
+        "code": "9999",
+        "desc": "50mm iron screws with washer and rawl plugs",
+        "unit": "L.S.",
+        "qty": 40.3,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.29.1.2",
+    "unit": "m",
+    "basis": 3.0,
+    "say": 256.25,
+    "resources": [
+      {
+        "code": "0236",
+        "desc": "Non - Asbestos multi purpose fibre (high impact poly propelene reinforced) cement board 6mm thick.",
+        "unit": "sqm",
+        "qty": 0.63,
+        "rate": 210.0
+      },
+      {
+        "code": "2273",
+        "desc": "Carriage of A.C.sheet and accessories",
+        "unit": "tonne",
+        "qty": 0.0065,
+        "rate": 92.24
+      },
+      {
+        "code": "9999",
+        "desc": "50mm iron screws with washer and rawl plugs",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.29.2.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 493.4,
+    "resources": [
+      {
+        "code": "2391",
+        "desc": "Strips-Aluminium fluted 3.15mm thick and 150mm wide",
+        "unit": "metre",
+        "qty": 1.0,
+        "rate": 278.0
+      },
+      {
+        "code": "0639",
+        "desc": "Bright finished or black enamelled mild steel screws 25 mm",
+        "unit": "100 Nos",
+        "qty": 0.06,
+        "rate": 36.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 1.04,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.067,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.067,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.29.2.2",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 654.95,
+    "resources": [
+      {
+        "code": "2392",
+        "desc": "Strips Aluminium fluted 3.15mm thick and 200mm wide metre",
+        "unit": "metre",
+        "qty": 1.0,
+        "rate": 370.0
+      },
+      {
+        "code": "0639",
+        "desc": "Bright finished or black enamelled mild steel screws 25 mm",
+        "unit": "100 Nos",
+        "qty": 0.06,
+        "rate": 36.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of materials",
+        "unit": "L.S.",
+        "qty": 1.3,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.089,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.089,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.34,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.29.3.1",
+    "unit": "metre",
+    "basis": 3.0,
+    "say": 187.35,
+    "resources": [
+      {
+        "code": "0242",
+        "desc": "Multi purpose cement bonded wood particle board 6 mm thick",
+        "unit": "sqm",
+        "qty": 0.47,
+        "rate": 195.0
+      },
+      {
+        "code": "2273",
+        "desc": "Carriage of board and accessories",
+        "unit": "tonne",
+        "qty": 0.005,
+        "rate": 92.24
+      },
+      {
+        "code": "9999",
+        "desc": "50mm iron screws with washer and rawl plugs",
+        "unit": "L.S",
+        "qty": 40.3,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.29.3.2",
+    "unit": "m",
+    "basis": 3.0,
+    "say": 252.0,
+    "resources": [
+      {
+        "code": "0242",
+        "desc": "Multi purpose cement bonded wood particle board 6 mm thick",
+        "unit": "sqm",
+        "qty": 0.63,
+        "rate": 195.0
+      },
+      {
+        "code": "2273",
+        "desc": "Carriage of board and accessories",
+        "unit": "tonne",
+        "qty": 0.0065,
+        "rate": 92.24
+      },
+      {
+        "code": "9999",
+        "desc": "50mm iron screws with washer and rawl plugs",
+        "unit": "L.S",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.30",
+    "unit": "metre",
+    "basis": 30.0,
+    "say": 58.9,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Add for materials (cement mortar etc.)",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.31",
+    "unit": "m",
+    "basis": 0.1,
+    "say": 794.65,
+    "resources": [
+      {
+        "code": "0011",
+        "desc": "Hire charges of Pumpset of capacity 4000 litres/hour. for cleaning slush",
+        "unit": "day",
+        "qty": 0.375,
+        "rate": 700.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.32",
+    "unit": "m",
+    "basis": 0.3,
+    "say": 336.55,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.33.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 7997.3,
+    "resources": [
+      {
+        "code": "0295",
+        "desc": "Stone Aggregate (Single size) : 20 mm nominal size",
+        "unit": "cum",
+        "qty": 0.57,
+        "rate": 1350.0
+      },
+      {
+        "code": "0297",
+        "desc": "Stone Aggregate (Single size) : 10 mm nominal size",
+        "unit": "cum",
+        "qty": 0.28,
+        "rate": 1350.0
+      },
+      {
+        "code": "2202",
+        "desc": "Carriage of Stone aggregate below 40 mm nominal size",
+        "unit": "cum",
+        "qty": 0.85,
+        "rate": 103.77
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.425,
+        "rate": 1350.0
+      },
+      {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 0.425,
+        "rate": 103.77
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.33,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.33,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer / super plasticizer",
+        "unit": "kilogram",
+        "qty": 1.65,
+        "rate": 36.0
+      },
+      {
+        "code": "0004",
+        "desc": "Production cost of concrete by batch mix plant.",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 350.0
+      },
+      {
+        "code": "0009",
+        "desc": "Pumping charges of concrete including Hire charges of pump, piping work & accessories etc.",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 210.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 617.0
+      },
+      {
+        "code": "0012",
+        "desc": "Vibrator(Needle type 40mm)",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 370.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.33.2",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 9400.85,
+    "resources": [
+      {
+        "code": "0295",
+        "desc": "Stone Aggregate (Single size) : 20 mm nominal size",
+        "unit": "cum",
+        "qty": 0.57,
+        "rate": 1350.0
+      },
+      {
+        "code": "0297",
+        "desc": "Stone Aggregate (Single size) : 10 mm nominal size",
+        "unit": "cum",
+        "qty": 0.28,
+        "rate": 1350.0
+      },
+      {
+        "code": "2202",
+        "desc": "Carriage of Stone aggregate below 40 mm nominal size",
+        "unit": "cum",
+        "qty": 0.85,
+        "rate": 103.77
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.425,
+        "rate": 1350.0
+      },
+      {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 0.425,
+        "rate": 103.77
+      },
+      {
+        "code": "0367",
+        "desc": "Portland cement",
+        "unit": "tonne",
+        "qty": 0.33,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.33,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer / super plasticizer",
+        "unit": "kilogram",
+        "qty": 1.65,
+        "rate": 36.0
+      },
+      {
+        "code": "0004",
+        "desc": "Production cost of concrete by batch mix plant.",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 350.0
+      },
+      {
+        "code": "0009",
+        "desc": "Pumping charges of concrete including Hire charges of pump, piping work & accessories etc.",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 210.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 617.0
+      },
+      {
+        "code": "0012",
+        "desc": "Vibrator(Needle type 40mm)",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 370.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.88,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.34.1",
+    "unit": "kg",
+    "basis": 340.0,
+    "say": 69.75,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.01,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.01,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer / super plasticizer",
+        "unit": "kilogram",
+        "qty": 0.05,
+        "rate": 36.0
+      }
+    ]
+  },
+  {
+    "code": "5.34.2",
+    "unit": "kg",
+    "basis": 350.0,
+    "say": 139.45,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.02,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.02,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer / super plasticizer",
+        "unit": "kilogram",
+        "qty": 0.1,
+        "rate": 36.0
+      }
+    ]
+  },
+  {
+    "code": "5.34.3",
+    "unit": "kg",
+    "basis": 360.0,
+    "say": 209.2,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.03,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.03,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer / super plasticizer",
+        "unit": "kilogram",
+        "qty": 0.15,
+        "rate": 36.0
+      }
+    ]
+  },
+  {
+    "code": "5.35",
+    "unit": "quintal",
+    "basis": 1.0,
+    "say": 673.3,
+    "resources": [
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.1,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.1,
+        "rate": 92.24
+      }
+    ]
+  },
+  {
+    "code": "5.2.2",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "SH : RCC",
+        "desc": "cum",
+        "unit": "1.38",
+        "qty": 9306.0,
+        "rate": 12842.28
+      }
+    ]
+  },
+  {
+    "code": "5.9.15",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "SH : RCC",
+        "desc": "sqm",
+        "unit": "45.86",
+        "qty": 284.85,
+        "rate": 13063.22
+      }
+    ]
+  },
+  {
+    "code": "10.2",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "SH : Steel work",
+        "desc": "kg",
+        "unit": "9.00",
+        "qty": 101.75,
+        "rate": 915.75
+      },
+      {
+        "code": "9988",
+        "desc": "(iii) 10mm dia. Bolts 60mm long with nuts and washers 2x2 = 4 Nos. including carriage of bolts",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 79.95,
+        "rate": 2.0
+      },
+      {
+        "code": "0126",
+        "desc": "Mason (for ornamental stone work) 1st class",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "13.35.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 25483.1,
+    "resources": [
+      {
+        "code": "SH : Finishing",
+        "desc": "sqm",
+        "unit": "16.54",
+        "qty": 159.0,
+        "rate": 2629.86
+      }
+    ]
+  },
+  {
+    "code": "5.37.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 8398.65,
+    "resources": [
+      {
+        "code": "0295",
+        "desc": "Stone Aggregate (Single size) : 20 mm nominal size",
+        "unit": "cum",
+        "qty": 0.57,
+        "rate": 1350.0
+      },
+      {
+        "code": "0297",
+        "desc": "Stone Aggregate (Single size) : 10 mm nominal size",
+        "unit": "cum",
+        "qty": 0.28,
+        "rate": 1350.0
+      },
+      {
+        "code": "2202",
+        "desc": "Carriage of Stone aggregate below 40 mm nominal size",
+        "unit": "cum",
+        "qty": 0.85,
+        "rate": 103.77
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.425,
+        "rate": 1350.0
+      },
+      {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 0.425,
+        "rate": 103.77
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.33,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.33,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer / super plasticizer",
+        "unit": "kilogram",
+        "qty": 1.65,
+        "rate": 36.0
+      },
+      {
+        "code": "0004",
+        "desc": "Production cost of concrete by batch mix plant.",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 350.0
+      },
+      {
+        "code": "0029",
+        "desc": "Carriage of concrete by transit mixer.",
+        "unit": "km/ cum",
+        "qty": 10.0,
+        "rate": 30.0
+      },
+      {
+        "code": "0009",
+        "desc": "Pumping charges of concrete including Hire charges of pump, piping work & accessories etc.",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 210.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 617.0
+      },
+      {
+        "code": "0012",
+        "desc": "Vibrator(Needle type 40mm)",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 370.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.37.2",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 9802.2,
+    "resources": [
+      {
+        "code": "0295",
+        "desc": "Stone Aggregate (Single size) : 20 mm nominal size",
+        "unit": "cum",
+        "qty": 0.57,
+        "rate": 1350.0
+      },
+      {
+        "code": "0297",
+        "desc": "Stone Aggregate (Single size) : 10 mm nominal size",
+        "unit": "cum",
+        "qty": 0.28,
+        "rate": 1350.0
+      },
+      {
+        "code": "2202",
+        "desc": "Carriage of Stone aggregate below 40 mm nominal size",
+        "unit": "cum",
+        "qty": 0.85,
+        "rate": 103.77
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.425,
+        "rate": 1350.0
+      },
+      {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 0.425,
+        "rate": 103.77
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.33,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.33,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer / super plasticizer",
+        "unit": "kilogram",
+        "qty": 1.65,
+        "rate": 36.0
+      },
+      {
+        "code": "0004",
+        "desc": "Production cost of concrete by batch mix plant.",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 350.0
+      },
+      {
+        "code": "0029",
+        "desc": "Carriage of concrete by transit mixer.",
+        "unit": "km/ cum",
+        "qty": 10.0,
+        "rate": 30.0
+      },
+      {
+        "code": "0009",
+        "desc": "Pumping charges of concrete including Hire charges of pump, piping work & accessories etc.",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 210.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 617.0
+      },
+      {
+        "code": "0012",
+        "desc": "Vibrator(Needle type 40mm)",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 370.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.88,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.38",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 280.95,
+    "resources": [
+      {
+        "code": "0009",
+        "desc": "Pumping charges of concrete including Hire charges of pump, piping work & accessories etc",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 210.0
+      }
+    ]
+  },
+  {
+    "code": "5.40.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 8365.8,
+    "resources": [
+      {
+        "code": "0293",
+        "desc": "Stone Aggregate (Single size) : 40 mm nominal size",
+        "unit": "cum",
+        "qty": 0.65,
+        "rate": 1300.0
+      },
+      {
+        "code": "0295",
+        "desc": "Stone Aggregate (Single size) : 20 mm nominal size",
+        "unit": "cum",
+        "qty": 0.24,
+        "rate": 1350.0
+      },
+      {
+        "code": "2206",
+        "desc": "Carriage of Stone aggregate 40 mm nominal size and above",
+        "unit": "cum",
+        "qty": 0.65,
+        "rate": 112.79
+      },
+      {
+        "code": "2202",
+        "desc": "Carriage of Stone aggregate below 40 mm nominal size",
+        "unit": "cum",
+        "qty": 0.24,
+        "rate": 103.77
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.37,
+        "rate": 1350.0
+      },
+      {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 0.37,
+        "rate": 103.77
+      },
+      {
+        "code": "1980",
+        "desc": "Flyash",
+        "unit": "cum",
+        "qty": 0.21,
+        "rate": 10.0
+      },
+      {
+        "code": "2262",
+        "desc": "Carriage of Flyash",
+        "unit": "cum",
+        "qty": 0.21,
+        "rate": 103.77
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.33,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.33,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer / super plasticizer",
+        "unit": "kilogram",
+        "qty": 1.65,
+        "rate": 36.0
+      },
+      {
+        "code": "0004",
+        "desc": "Production cost of concrete by batch mix plant.",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 350.0
+      },
+      {
+        "code": "0029",
+        "desc": "Carriage of concrete by transit mixer.",
+        "unit": "km/ cum",
+        "qty": 10.0,
+        "rate": 30.0
+      },
+      {
+        "code": "0009",
+        "desc": "Pumping charges of concrete including Hire charges of pump, piping work & accessories etc.",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 210.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 617.0
+      },
+      {
+        "code": "0012",
+        "desc": "Vibrator(Needle type 40mm)",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 370.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.40.2",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 9769.35,
+    "resources": [
+      {
+        "code": "0293",
+        "desc": "Stone Aggregate (Single size) : 40 mm nominal size",
+        "unit": "cum",
+        "qty": 0.65,
+        "rate": 1300.0
+      },
+      {
+        "code": "0295",
+        "desc": "Stone Aggregate (Single size) : 20 mm nominal size",
+        "unit": "cum",
+        "qty": 0.24,
+        "rate": 1350.0
+      },
+      {
+        "code": "2206",
+        "desc": "Carriage of Stone aggregate 40 mm nominal size and above",
+        "unit": "cum",
+        "qty": 0.65,
+        "rate": 112.79
+      },
+      {
+        "code": "2202",
+        "desc": "Carriage of Stone aggregate below 40 mm nominal size",
+        "unit": "cum",
+        "qty": 0.24,
+        "rate": 103.77
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 0.37,
+        "rate": 1350.0
+      },
+      {
+        "code": "2203",
+        "desc": "Carriage of Coarse sand",
+        "unit": "cum",
+        "qty": 0.37,
+        "rate": 103.77
+      },
+      {
+        "code": "1980",
+        "desc": "Flyash",
+        "unit": "cum",
+        "qty": 0.21,
+        "rate": 10.0
+      },
+      {
+        "code": "2262",
+        "desc": "Carriage of Flyash",
+        "unit": "cum",
+        "qty": 0.21,
+        "rate": 103.77
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.33,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 0.33,
+        "rate": 92.24
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer / super plasticizer",
+        "unit": "kilogram",
+        "qty": 1.65,
+        "rate": 36.0
+      },
+      {
+        "code": "0004",
+        "desc": "Production cost of concrete by batch mix plant.",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 350.0
+      },
+      {
+        "code": "0029",
+        "desc": "Carriage of concrete by transit mixer.",
+        "unit": "km/ cum",
+        "qty": 10.0,
+        "rate": 30.0
+      },
+      {
+        "code": "0009",
+        "desc": "Pumping charges of concrete including Hire charges of pump, piping work & accessories etc.",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 210.0
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 617.0
+      },
+      {
+        "code": "0012",
+        "desc": "Vibrator(Needle type 40mm)",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 370.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.88,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.41.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 53.9,
+    "resources": [
+      {
+        "code": "0349",
+        "desc": "Curing compound",
+        "unit": "litre",
+        "qty": 2.0,
+        "rate": 38.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 1.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0131",
+        "desc": "Painter",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, Brush",
+        "unit": "L.S.",
+        "qty": 3.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.42.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 97.8,
+    "resources": [
+      {
+        "code": "2394",
+        "desc": "Coupler 16 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 30.0
+      },
+      {
+        "code": "9999",
+        "desc": "For placing in position and fixing",
+        "unit": "L.S.",
+        "qty": 3.77,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Tapard/Parallel threading charges",
+        "unit": "L.S.",
+        "qty": 17.77,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.42.2",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 135.3,
+    "resources": [
+      {
+        "code": "2395",
+        "desc": "Coupler 20 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 39.0
+      },
+      {
+        "code": "9999",
+        "desc": "For placing in position and fixing",
+        "unit": "L.S.",
+        "qty": 5.9,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Tapard/Parallel threading charges",
+        "unit": "L.S.",
+        "qty": 25.17,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.42.3",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 195.45,
+    "resources": [
+      {
+        "code": "2396",
+        "desc": "Coupler 25 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 69.5
+      },
+      {
+        "code": "9999",
+        "desc": "For placing in position and fixing",
+        "unit": "L.S.",
+        "qty": 8.69,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Tapard/Parallel threading charges",
+        "unit": "L.S.",
+        "qty": 29.61,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.42.4",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 228.55,
+    "resources": [
+      {
+        "code": "2397",
+        "desc": "Coupler 28 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 80.0
+      },
+      {
+        "code": "9999",
+        "desc": "For placing in position and fixing",
+        "unit": "L.S.",
+        "qty": 12.84,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Tapard/Parallel threading charges",
+        "unit": "L.S.",
+        "qty": 32.57,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.42.5",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 275.75,
+    "resources": [
+      {
+        "code": "2398",
+        "desc": "Coupler 32 mm dia",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 110.0
+      },
+      {
+        "code": "9999",
+        "desc": "For placing in position and fixing",
+        "unit": "L.S.",
+        "qty": 15.48,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Tapard/Parallel threading charges",
+        "unit": "L.S.",
+        "qty": 32.57,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.43.1",
+    "unit": "metre",
+    "basis": 1.0,
+    "say": 711.9,
+    "resources": [
+      {
+        "code": "2393",
+        "desc": "1 mm thick Stainless Steel Cover plate grade 304",
+        "unit": "kg",
+        "qty": 1.6,
+        "rate": 275.0
+      },
+      {
+        "code": "8647",
+        "desc": "Stainless steal screws 30mm x4mm.",
+        "unit": "100 nos",
+        "qty": 0.06,
+        "rate": 32.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 1.3,
+        "rate": 2.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.067,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.067,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.34,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.43.2",
+    "unit": "metre",
+    "basis": 1.0,
+    "say": 1006.25,
+    "resources": [
+      {
+        "code": "2393",
+        "desc": "1 mm thick Stainless Steel Cover plate grade 304",
+        "unit": "kg",
+        "qty": 2.4,
+        "rate": 275.0
+      },
+      {
+        "code": "8647",
+        "desc": "Stainless steal screws 30mm x4mm.",
+        "unit": "100 nos",
+        "qty": 0.06,
+        "rate": 32.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 1.3,
+        "rate": 2.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.067,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.067,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.34,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.44.1",
+    "unit": "metre",
+    "basis": 1.0,
+    "say": 5594.85,
+    "resources": [
+      {
+        "code": "2403",
+        "desc": "Floor Joint of 100 mm",
+        "unit": "metre",
+        "qty": 1.0,
+        "rate": 3100.0
+      },
+      {
+        "code": "2402",
+        "desc": "Epoxy adhesive",
+        "unit": "kg",
+        "qty": 4.25,
+        "rate": 150.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 124.9,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.44.2",
+    "unit": "metre",
+    "basis": 1.0,
+    "say": 6849.15,
+    "resources": [
+      {
+        "code": "2404",
+        "desc": "Floor Joint of 150 mm",
+        "unit": "metre",
+        "qty": 1.0,
+        "rate": 4000.0
+      },
+      {
+        "code": "2402",
+        "desc": "Epoxy adhesive",
+        "unit": "kg",
+        "qty": 4.5,
+        "rate": 150.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 124.9,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.44.3",
+    "unit": "metre",
+    "basis": 1.0,
+    "say": 8772.45,
+    "resources": [
+      {
+        "code": "2405",
+        "desc": "Floor Joint of 200 mm",
+        "unit": "metre",
+        "qty": 1.0,
+        "rate": 5400.0
+      },
+      {
+        "code": "2402",
+        "desc": "Epoxy adhesive",
+        "unit": "kg",
+        "qty": 4.75,
+        "rate": 150.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 124.9,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.45.1",
+    "unit": "metre",
+    "basis": 1.0,
+    "say": 4658.3,
+    "resources": [
+      {
+        "code": "2409",
+        "desc": "Wall Joint of 100 mm",
+        "unit": "metre",
+        "qty": 1.0,
+        "rate": 2400.0
+      },
+      {
+        "code": "2402",
+        "desc": "Epoxy adhesive",
+        "unit": "kg",
+        "qty": 4.25,
+        "rate": 150.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 124.9,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.45.2",
+    "unit": "metre",
+    "basis": 1.0,
+    "say": 5243.65,
+    "resources": [
+      {
+        "code": "2410",
+        "desc": "Wall Joint of 150 mm",
+        "unit": "metre",
+        "qty": 1.0,
+        "rate": 2800.0
+      },
+      {
+        "code": "2402",
+        "desc": "Epoxy adhesive",
+        "unit": "kg",
+        "qty": 4.5,
+        "rate": 150.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 124.9,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.45.3",
+    "unit": "metre",
+    "basis": 1.0,
+    "say": 6096.6,
+    "resources": [
+      {
+        "code": "2411",
+        "desc": "Wall Joint of 200 mm",
+        "unit": "metre",
+        "qty": 1.0,
+        "rate": 3400.0
+      },
+      {
+        "code": "2402",
+        "desc": "Epoxy adhesive",
+        "unit": "kg",
+        "qty": 4.75,
+        "rate": 150.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 124.9,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.46.1",
+    "unit": "metre",
+    "basis": 1.0,
+    "say": 5193.45,
+    "resources": [
+      {
+        "code": "2399",
+        "desc": "Complete Roof Joint of 100 mm",
+        "unit": "metre",
+        "qty": 1.0,
+        "rate": 2800.0
+      },
+      {
+        "code": "2402",
+        "desc": "Epoxy adhesive",
+        "unit": "kg",
+        "qty": 4.25,
+        "rate": 150.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 124.9,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.46.2",
+    "unit": "metre",
+    "basis": 1.0,
+    "say": 5778.8,
+    "resources": [
+      {
+        "code": "2400",
+        "desc": "Complete Roof Joint of 150 mm",
+        "unit": "metre",
+        "qty": 1.0,
+        "rate": 3200.0
+      },
+      {
+        "code": "2402",
+        "desc": "Epoxy adhesive",
+        "unit": "kg",
+        "qty": 4.5,
+        "rate": 150.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 124.9,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.46.3",
+    "unit": "metre",
+    "basis": 1.0,
+    "say": 6854.2,
+    "resources": [
+      {
+        "code": "2401",
+        "desc": "Complete Roof Joint of 200 mm",
+        "unit": "metre",
+        "qty": 1.0,
+        "rate": 4000.0
+      },
+      {
+        "code": "2402",
+        "desc": "Epoxy adhesive",
+        "unit": "kg",
+        "qty": 4.75,
+        "rate": 150.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage",
+        "unit": "L.S.",
+        "qty": 124.9,
+        "rate": 1.73
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.05,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "5.33.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "CONCRETE",
+        "desc": "cum",
+        "unit": "0.039",
+        "qty": 7997.3,
+        "rate": 311.89
+      }
+    ]
+  },
+  {
+    "code": "5.34.3",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "CONCRETE",
+        "desc": "cum",
+        "unit": "0.039",
+        "qty": 209.2,
+        "rate": 8.16
+      }
+    ]
+  },
+  {
+    "code": "0.25",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "1005",
+        "desc": "Twisted steel/ deformed bars",
+        "unit": "quintal",
+        "qty": 0.0468,
+        "rate": 4600.0
+      },
+      {
+        "code": "0596",
+        "desc": "Bright finished or black enameled mild steel butt hinges 75x47x 1.70 mm",
+        "unit": "10 Nos",
+        "qty": 0.6,
+        "rate": 56.0
+      }
+    ]
+  },
+  {
+    "code": "4.3.3",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "SH: CONCRETE WORK",
+        "desc": "sqm",
+        "unit": "1.27",
+        "qty": 733.7,
+        "rate": 931.8
+      }
+    ]
+  },
+  {
+    "code": "14.2.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "SH: REPAIRS TO BUILDINGS",
+        "desc": "each",
+        "unit": "1.00",
+        "qty": 1366.85,
+        "rate": 1366.85
+      }
+    ]
+  },
+  {
+    "code": "13.48.2",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 666.65,
+    "resources": [
+      {
+        "code": "SH. FINISHING",
+        "desc": "sqm",
+        "unit": "1.27",
+        "qty": 130.25,
+        "rate": 165.42
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 100.67,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.33.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "CONCRETE",
+        "desc": "cum",
+        "unit": "0.031",
+        "qty": 7997.3,
+        "rate": 247.92
+      }
+    ]
+  },
+  {
+    "code": "5.34.3",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "CONCRETE",
+        "desc": "cum",
+        "unit": "0.031",
+        "qty": 209.2,
+        "rate": 6.49
+      },
+      {
+        "code": "1005",
+        "desc": "Twisted steel/ deformed bars",
+        "unit": "quintal",
+        "qty": 0.0372,
+        "rate": 4600.0
+      },
+      {
+        "code": "0596",
+        "desc": "Bright finished or black enameled mild steel butt hinges 75x47x1.70 mm",
+        "unit": "10 Nos",
+        "qty": 0.6,
+        "rate": 56.0
+      }
+    ]
+  },
+  {
+    "code": "4.3.3",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "SH: CONCRETE WORK",
+        "desc": "sqm",
+        "unit": "1.14",
+        "qty": 733.7,
+        "rate": 836.42
+      }
+    ]
+  },
+  {
+    "code": "14.2.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "SH: REPAIRS TO BUILDINGS",
+        "desc": "each",
+        "unit": "1.00",
+        "qty": 1366.85,
+        "rate": 1366.85
+      }
+    ]
+  },
+  {
+    "code": "13.48.2",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 617.9,
+    "resources": [
+      {
+        "code": "SH. FINISHING",
+        "desc": "sqm",
+        "unit": "1.14",
+        "qty": 130.25,
+        "rate": 148.49
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 100.67,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.33.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "CONCRETE",
+        "desc": "cum",
+        "unit": "0.027",
+        "qty": 7997.3,
+        "rate": 215.93
+      }
+    ]
+  },
+  {
+    "code": "5.34.2",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "CONCRETE",
+        "desc": "cum",
+        "unit": "0.027",
+        "qty": 139.45,
+        "rate": 3.77
+      },
+      {
+        "code": "1005",
+        "desc": "Twisted steel/ deformed bars",
+        "unit": "quintal",
+        "qty": 0.0324,
+        "rate": 4600.0
+      },
+      {
+        "code": "0596",
+        "desc": "Bright finished or black enameled mild steel butt hinges 75x47x 1.70 mm",
+        "unit": "10 Nos",
+        "qty": 0.6,
+        "rate": 56.0
+      }
+    ]
+  },
+  {
+    "code": "4.3.3",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "SH: CONCRETE WORK",
+        "desc": "sqm",
+        "unit": "1.07",
+        "qty": 733.7,
+        "rate": 785.06
+      }
+    ]
+  },
+  {
+    "code": "14.2.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "SH: REPAIRS TO BUILDINGS",
+        "desc": "each",
+        "unit": "1.00",
+        "qty": 1366.85,
+        "rate": 1366.85
+      }
+    ]
+  },
+  {
+    "code": "13.48.2",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 592.25,
+    "resources": [
+      {
+        "code": "SH. FINISHING",
+        "desc": "sqm",
+        "unit": "1.07",
+        "qty": 130.25,
+        "rate": 139.37
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 100.67,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.48.1",
+    "unit": "cum",
+    "basis": 120.0,
+    "say": 7425.0,
+    "resources": [
+      {
+        "code": "item 5.48.1",
+        "desc": "each",
+        "unit": "1.00",
+        "qty": 592482.2,
+        "rate": 592482.2
+      }
+    ]
+  },
+  {
+    "code": "5.48.2",
+    "unit": "cum",
+    "basis": 120.0,
+    "say": 752474.7,
+    "resources": [
+      {
+        "code": "for item 5.48.2",
+        "desc": "each",
+        "unit": "1.00",
+        "qty": 692740.4,
+        "rate": 692740.4
+      },
+      {
+        "code": "5.48.3",
+        "desc": "Extra for using M-50/ M-60 Grade Self-compacting Cement Concrete Detail of cost for 1 cum. MATERIAL 5.48X Sub Analysis no 5.48 (Annexure) for sub analysis 5.48.3X",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 9430.05
+      },
+      {
+        "code": "5.48.2",
+        "desc": "Rate as per Item No.5.48.2 of SH: REINFORCED CEMENT CONCRETE",
+        "unit": "cum",
+        "qty": -1.0,
+        "rate": 8681.45
+      },
+      {
+        "code": "sub analysis 5.48.3X",
+        "desc": "each",
+        "unit": "1.00",
+        "qty": 752474.7,
+        "rate": 752474.7
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 57.6,
+        "rate": 4940.0
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 54.0,
+        "rate": 1350.0
+      },
+      {
+        "code": "0295",
+        "desc": "Stone Aggregate (Single size) : 20 mm nominal size",
+        "unit": "cum",
+        "qty": 64.8,
+        "rate": 1350.0
+      },
+      {
+        "code": "0297",
+        "desc": "Stone Aggregate (Single size) : 10 mm nominal size",
+        "unit": "cum",
+        "qty": 43.2,
+        "rate": 1350.0
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer / super plasticizer",
+        "unit": "kilogram",
+        "qty": 223.2,
+        "rate": 36.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.94,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1 st class",
+        "unit": "day",
+        "qty": 3.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 20.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0066",
+        "desc": "Batching and Mixing Plant @ 75 cum per hour",
+        "unit": "hour",
+        "qty": 1.6,
+        "rate": 2400.0
+      },
+      {
+        "code": "0070",
+        "desc": "Generator 100 KVA/125 KVA",
+        "unit": "hour",
+        "qty": 1.6,
+        "rate": 250.0
+      },
+      {
+        "code": "0052",
+        "desc": "Front end loader 1 cum bucket capacity (incl POL)",
+        "unit": "hour",
+        "qty": 1.6,
+        "rate": 900.0
+      },
+      {
+        "code": "0029",
+        "desc": "Carriage of concrete by transit mixer",
+        "unit": "km/cum",
+        "qty": 1200.0,
+        "rate": 30.0
+      },
+      {
+        "code": "0009",
+        "desc": "Pumping charges of concrete including Hire charges of pump, piping work & accessories etc.",
+        "unit": "cum",
+        "qty": 120.0,
+        "rate": 210.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 57.6,
+        "rate": 4940.0
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 54.98,
+        "rate": 1350.0
+      },
+      {
+        "code": "0295",
+        "desc": "Stone Aggregate (Single size) : 20 mm nominal size",
+        "unit": "cum",
+        "qty": 57.54,
+        "rate": 1350.0
+      },
+      {
+        "code": "0297",
+        "desc": "Stone Aggregate (Single size) : 10 mm nominal size",
+        "unit": "cum",
+        "qty": 38.22,
+        "rate": 1350.0
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer / super plasticizer",
+        "unit": "kilogram",
+        "qty": 230.4,
+        "rate": 36.0
+      },
+      {
+        "code": "8953",
+        "desc": "Micro Silica",
+        "unit": "kg",
+        "qty": 3600.0,
+        "rate": 32.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.94,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1 st class",
+        "unit": "day",
+        "qty": 3.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 20.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0066",
+        "desc": "Batching and Mixing Plant @ 75 cum per hour",
+        "unit": "hour",
+        "qty": 1.6,
+        "rate": 2400.0
+      },
+      {
+        "code": "0070",
+        "desc": "Generator 100 KVA/125 KVA",
+        "unit": "hour",
+        "qty": 1.6,
+        "rate": 250.0
+      },
+      {
+        "code": "0052",
+        "desc": "Front end loader 1 cum bucket capacity (incl POL)",
+        "unit": "hour",
+        "qty": 1.6,
+        "rate": 900.0
+      },
+      {
+        "code": "0029",
+        "desc": "Carriage of concrete by transit mixer",
+        "unit": "km/cum",
+        "qty": 1200.0,
+        "rate": 30.0
+      },
+      {
+        "code": "0009",
+        "desc": "Pumping charges of concrete including Hire charges of pump, piping work & accessories etc.",
+        "unit": "cum",
+        "qty": 120.0,
+        "rate": 210.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 57.6,
+        "rate": 4940.0
+      },
+      {
+        "code": "0982",
+        "desc": "Coarse sand (zone III)",
+        "unit": "cum",
+        "qty": 54.0,
+        "rate": 1350.0
+      },
+      {
+        "code": "0295",
+        "desc": "Stone Aggregate (Single size) : 20 mm nominal size",
+        "unit": "cum",
+        "qty": 64.8,
+        "rate": 1350.0
+      },
+      {
+        "code": "0297",
+        "desc": "Stone Aggregate (Single size) : 10 mm nominal size",
+        "unit": "cum",
+        "qty": 43.2,
+        "rate": 1350.0
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer / super plasticizer",
+        "unit": "kilogram",
+        "qty": 230.4,
+        "rate": 36.0
+      },
+      {
+        "code": "8953",
+        "desc": "Micro Silica",
+        "unit": "kg",
+        "qty": 5040.0,
+        "rate": 32.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.84,
+        "rate": 617.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1 st class",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 18.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0066",
+        "desc": "Batching and Mixing Plant @ 75 cum per hour",
+        "unit": "hour",
+        "qty": 1.6,
+        "rate": 2400.0
+      },
+      {
+        "code": "0070",
+        "desc": "Generator 100 KVA/125 KVA",
+        "unit": "hour",
+        "qty": 1.6,
+        "rate": 250.0
+      },
+      {
+        "code": "0052",
+        "desc": "Front end loader 1 cum bucket capacity (incl POL)",
+        "unit": "hour",
+        "qty": 1.6,
+        "rate": 900.0
+      },
+      {
+        "code": "0029",
+        "desc": "Carriage of concrete by transit mixer",
+        "unit": "km/cum",
+        "qty": 1200.0,
+        "rate": 30.0
+      },
+      {
+        "code": "0009",
+        "desc": "Pumping charges of concrete including Hire charges of pump, piping work & accessories etc.",
+        "unit": "cum",
+        "qty": 120.0,
+        "rate": 210.0
+      }
+    ]
+  },
+  {
+    "code": "5.49",
+    "unit": "kg",
+    "basis": 400.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "0082",
+        "desc": "Excavation of Diaphragm wall by Mechanical Grab",
+        "unit": "sqm",
+        "qty": 240.0,
+        "rate": 1300.0
+      }
+    ]
+  },
+  {
+    "code": "5.1.3",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "CONCRETE",
+        "desc": "cum",
+        "unit": "11.70",
+        "qty": 7296.35,
+        "rate": 85367.3
+      }
+    ]
+  },
+  {
+    "code": "5.22.6",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "CONCRETE",
+        "desc": "kilogram",
+        "unit": "819.00",
+        "qty": 83.5,
+        "rate": 68386.5
+      }
+    ]
+  },
+  {
+    "code": "5.33.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "CONCRETE",
+        "desc": "cum",
+        "unit": "164.40",
+        "qty": 7997.3,
+        "rate": 1314756.12
+      }
+    ]
+  },
+  {
+    "code": "5.34.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "CONCRETE",
+        "desc": "cum",
+        "unit": "164.40",
+        "qty": 69.75,
+        "rate": 11466.9
+      },
+      {
+        "code": "7183",
+        "desc": "Bentonite",
+        "unit": "tonne",
+        "qty": 13.81,
+        "rate": 2960.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 6.9,
+        "rate": 4940.0
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 2.4,
+        "rate": 4940.0
+      },
+      {
+        "code": "2209",
+        "desc": "Carriage of Cement",
+        "unit": "tonne",
+        "qty": 2.4,
+        "rate": 92.24
+      },
+      {
+        "code": "0025",
+        "desc": "Hire and running charges of light crane",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 3000.0
+      },
+      {
+        "code": "1005",
+        "desc": "Twisted steel/ deformed bars",
+        "unit": "quintal",
+        "qty": 18.084,
+        "rate": 4600.0
+      }
+    ]
+  },
+  {
+    "code": "10.22",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "SH: STEEL WORK",
+        "desc": "cm",
+        "unit": "6161.00",
+        "qty": 3.35,
+        "rate": 20639.35
+      },
+      {
+        "code": "9999",
+        "desc": "Labour for grouting diaphragm wall under pressure i/c fixing nozzle etc",
+        "unit": "L.S.",
+        "qty": 23530.0,
+        "rate": 2.0
+      },
+      {
+        "code": "7318",
+        "desc": "Plasticizer / super plasticizer",
+        "unit": "kilogram",
+        "qty": 276.19,
+        "rate": 36.0
+      },
+      {
+        "code": "8954",
+        "desc": "Stop end tubes for diaphragmwall 600 mm dia.",
+        "unit": "sqm",
+        "qty": 240.0,
+        "rate": 4.5
+      },
+      {
+        "code": "8955",
+        "desc": "Driving end tubes for diaphragm wall 600 mm dia.",
+        "unit": "sqm",
+        "qty": 240.0,
+        "rate": 72.0
+      },
+      {
+        "code": "0026",
+        "desc": "Hire and running charges of bentonite pump",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 3500.0
+      }
+    ]
+  },
+  {
+    "code": "15.60",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "SH: DISMANTLING & DEMOLISHING",
+        "desc": "cum",
+        "unit": "193.32",
+        "qty": 138.85,
+        "rate": 26842.48
+      }
+    ]
+  },
+  {
+    "code": "15.3",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 16618.7,
+    "resources": [
+      {
+        "code": "SH: DISMANTLING & DEMOLISHING",
+        "desc": "cum",
+        "unit": "20.40",
+        "qty": 2534.7,
+        "rate": 51707.88
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries (Extra for concreting by Trimme)",
+        "unit": "L.S.",
+        "qty": 1177.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries ( Design Charges)",
+        "unit": "L.S.",
+        "qty": 19200.0,
+        "rate": 2.0
+      }
+    ]
+  }
+]

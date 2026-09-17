@@ -1,0 +1,4069 @@
+[
+  {
+    "code": "7.1.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 6120.8,
+    "resources": [
+      {
+        "code": "1157",
+        "desc": "Stone for masonry work",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 1100.0
+      },
+      {
+        "code": "1154",
+        "desc": "Through and bond stone size 24 x24 x39 cm",
+        "unit": "100 Nos",
+        "qty": 0.07,
+        "rate": 5000.0
+      },
+      {
+        "code": "2215",
+        "desc": "Carriage of Soling stone & masonry stone",
+        "unit": "cum",
+        "qty": 1.16,
+        "rate": 122.08
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.33,
+        "rate": 3356.15
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 1.07,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.07,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.71,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.09,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement concrete 1:6:12",
+        "unit": "L.S.",
+        "qty": 45.76,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 4.42,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "7.2.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 7489.95,
+    "resources": [
+      {
+        "code": "1157",
+        "desc": "Stone for masonry work",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 1100.0
+      },
+      {
+        "code": "1154",
+        "desc": "Through and bond stone size 24 x 24 x39 cm",
+        "unit": "100 Nos",
+        "qty": 0.07,
+        "rate": 5000.0
+      },
+      {
+        "code": "2215",
+        "desc": "Carriage of Soling stone & masonry stone",
+        "unit": "cum",
+        "qty": 1.16,
+        "rate": 122.08
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.33,
+        "rate": 3356.15
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 1.34,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.45,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.71,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.09,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cement concrete 1:6:12",
+        "unit": "L.S.",
+        "qty": 56.55,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 15.21,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "7.4.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 728.5,
+    "resources": [
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.58,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.4.2",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 2025.5,
+    "resources": [
+      {
+        "code": "1157",
+        "desc": "Stone for masonry work",
+        "unit": "cum",
+        "qty": 0.29,
+        "rate": 1100.0
+      },
+      {
+        "code": "2215",
+        "desc": "Carriage of Soling stone & masonry stone",
+        "unit": "cum",
+        "qty": 0.29,
+        "rate": 122.08
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 1.42,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.35,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.5",
+    "unit": "m",
+    "basis": 6.0,
+    "say": 804.45,
+    "resources": [
+      {
+        "code": "1157",
+        "desc": "Stone for masonry work",
+        "unit": "cum",
+        "qty": 0.1,
+        "rate": 1100.0
+      },
+      {
+        "code": "2215",
+        "desc": "Carriage of Soling stone & masonry stone",
+        "unit": "cum",
+        "qty": 0.1,
+        "rate": 122.08
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.53,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.6.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 7312.15,
+    "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.3,
+        "rate": 3356.15
+      },
+      {
+        "code": "1157",
+        "desc": "Stone for masonry work",
+        "unit": "cum",
+        "qty": 1.21,
+        "rate": 1100.0
+      },
+      {
+        "code": "1154",
+        "desc": "Through and bond stone size 24 x24 x39 cm",
+        "unit": "100 Nos",
+        "qty": 0.07,
+        "rate": 5000.0
+      },
+      {
+        "code": "2215",
+        "desc": "Carriage of Soling stone & masonry stone",
+        "unit": "cum",
+        "qty": 1.37,
+        "rate": 122.08
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 2.12,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.24,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.71,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.09,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "7.7.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 6805.25,
+    "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.3,
+        "rate": 3356.15
+      },
+      {
+        "code": "1157",
+        "desc": "Stone for masonry work",
+        "unit": "cum",
+        "qty": 1.1,
+        "rate": 1100.0
+      },
+      {
+        "code": "1154",
+        "desc": "Through and bond stone size 24 x 24 x39 cm",
+        "unit": "100 Nos",
+        "qty": 0.07,
+        "rate": 5000.0
+      },
+      {
+        "code": "2215",
+        "desc": "Carriage of Soling stone & masonry stone",
+        "unit": "cum",
+        "qty": 1.26,
+        "rate": 122.08
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 1.76,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.24,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.71,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.09,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "7.8.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 8718.0,
+    "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.3,
+        "rate": 3356.15
+      },
+      {
+        "code": "1157",
+        "desc": "Stone for masonry work",
+        "unit": "cum",
+        "qty": 1.21,
+        "rate": 1100.0
+      },
+      {
+        "code": "1154",
+        "desc": "Through and bond stone size 24 x 24 x39 cm",
+        "unit": "100 Nos",
+        "qty": 0.07,
+        "rate": 5000.0
+      },
+      {
+        "code": "2215",
+        "desc": "Carriage of Soling stone & masonry stone",
+        "unit": "cum",
+        "qty": 1.37,
+        "rate": 122.08
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 2.38,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.59,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.71,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.09,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, scaffolding etc.",
+        "unit": "L.S.",
+        "qty": 37.7,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "7.8.2",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 8211.1,
+    "resources": [
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.3,
+        "rate": 3356.15
+      },
+      {
+        "code": "1157",
+        "desc": "Stone for masonry work",
+        "unit": "cum",
+        "qty": 1.1,
+        "rate": 1100.0
+      },
+      {
+        "code": "1154",
+        "desc": "Through and bond stone size 24 x24 x39 cm",
+        "unit": "100 Nos",
+        "qty": 0.07,
+        "rate": 5000.0
+      },
+      {
+        "code": "2215",
+        "desc": "Carriage of Soling stone & masonry stone",
+        "unit": "cum",
+        "qty": 1.26,
+        "rate": 122.08
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 2.02,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.59,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.71,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.09,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, scaffolding etc.",
+        "unit": "L.S.",
+        "qty": 37.7,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "7.10.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 603.15,
+    "resources": [
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.67,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.27,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.10.2",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 2301.65,
+    "resources": [
+      {
+        "code": "1157",
+        "desc": "Stone for masonry work",
+        "unit": "cum",
+        "qty": 0.32,
+        "rate": 1100.0
+      },
+      {
+        "code": "2215",
+        "desc": "Carriage of Soling stone & masonry stone",
+        "unit": "cum",
+        "qty": 0.32,
+        "rate": 122.08
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 1.67,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.35,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.11",
+    "unit": "m",
+    "basis": 6.0,
+    "say": 875.35,
+    "resources": [
+      {
+        "code": "1157",
+        "desc": "Stone for masonry work",
+        "unit": "cum",
+        "qty": 0.11,
+        "rate": 1100.0
+      },
+      {
+        "code": "2215",
+        "desc": "Carriage of Soling stone & masonry stone",
+        "unit": "cum",
+        "qty": 0.11,
+        "rate": 122.08
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.53,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.12.1.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 47132.0,
+    "resources": [
+      {
+        "code": "1160",
+        "desc": "Red sand stone block",
+        "unit": "10 cudm",
+        "qty": 1.333,
+        "rate": 79.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
+        "unit": "tonne",
+        "qty": 0.031,
+        "rate": 92.24
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.015,
+        "rate": 558.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.088,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 617.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scafolding",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for laying and pointing",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "7.12.1.2",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 69604.0,
+    "resources": [
+      {
+        "code": "1161",
+        "desc": "White sand stone block",
+        "unit": "10 cudm",
+        "qty": 1.333,
+        "rate": 205.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
+        "unit": "tonne",
+        "qty": 0.031,
+        "rate": 92.24
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.015,
+        "rate": 558.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.088,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 617.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for laying and pointing",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "7.12.2.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 64279.0,
+    "resources": [
+      {
+        "code": "1160",
+        "desc": "Red sand stone block",
+        "unit": "10 cudm",
+        "qty": 1.333,
+        "rate": 79.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
+        "unit": "tonne",
+        "qty": 0.031,
+        "rate": 92.24
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.015,
+        "rate": 558.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.176,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.012,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.088,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.088,
+        "rate": 617.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scafolding",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for laying and pointing",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "7.12.2.2",
+    "unit": "cum",
+    "basis": 0.01,
+    "say": 86751.0,
+    "resources": [
+      {
+        "code": "1161",
+        "desc": "White sand stone block",
+        "unit": "10 cudm",
+        "qty": 1.333,
+        "rate": 205.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab @ 2.30kg/cudm = 13.33x2.30 = 30.659 kg = 0.03065 tonne say 0.031 t.",
+        "unit": "tonne",
+        "qty": 0.031,
+        "rate": 92.24
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.015,
+        "rate": 558.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.176,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.012,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.088,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.088,
+        "rate": 617.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for laying and pointing",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "7.13.1.1",
+    "unit": "cum",
+    "basis": 0.01,
+    "say": 52907.0,
+    "resources": [
+      {
+        "code": "1160",
+        "desc": "Red sand stone block",
+        "unit": "10 cudm",
+        "qty": 1.333,
+        "rate": 79.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
+        "unit": "tonne",
+        "qty": 0.031,
+        "rate": 92.24
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.088,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 617.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for laying and pointing",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Centering and shuttering",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for using white cement",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.015,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.13.1.2",
+    "unit": "cum",
+    "basis": 0.01,
+    "say": 75379.0,
+    "resources": [
+      {
+        "code": "1161",
+        "desc": "White sand stone block",
+        "unit": "10 cudm",
+        "qty": 1.333,
+        "rate": 205.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
+        "unit": "tonne",
+        "qty": 0.031,
+        "rate": 92.24
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.088,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 617.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for laying and pointing",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Centering and shuttering",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for using white cement",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.015,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.13.2.1",
+    "unit": "cum",
+    "basis": 0.01,
+    "say": 70053.0,
+    "resources": [
+      {
+        "code": "1160",
+        "desc": "Red sand stone block",
+        "unit": "10 cudm",
+        "qty": 1.333,
+        "rate": 79.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
+        "unit": "tonne",
+        "qty": 0.031,
+        "rate": 92.24
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.176,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.012,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.088,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.088,
+        "rate": 617.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for laying and pointing",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Centering and shuttering",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for using white cement",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.015,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.13.2.2",
+    "unit": "cum",
+    "basis": 0.01,
+    "say": 92525.0,
+    "resources": [
+      {
+        "code": "1161",
+        "desc": "White sand stone block",
+        "unit": "10 cudm",
+        "qty": 1.333,
+        "rate": 205.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
+        "unit": "tonne",
+        "qty": 0.031,
+        "rate": 92.24
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.176,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.012,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.088,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.088,
+        "rate": 617.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for laying and pointing",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Centering and shuttering",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for using white cement",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.015,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.14.1.1",
+    "unit": "cum",
+    "basis": 0.01,
+    "say": 83532.0,
+    "resources": [
+      {
+        "code": "1160",
+        "desc": "Red sand stone block",
+        "unit": "10 cudm",
+        "qty": 1.333,
+        "rate": 79.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
+        "unit": "tonne",
+        "qty": 0.031,
+        "rate": 92.24
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.176,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0126",
+        "desc": "Mason (for ornamental stone work) 1st class",
+        "unit": "day",
+        "qty": 0.176,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 617.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for laying and pointing",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Centring and shuttering",
+        "unit": "L.S.",
+        "qty": 33.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for using white cement",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.015,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.14.1.2",
+    "unit": "cum",
+    "basis": 0.01,
+    "say": 106004.0,
+    "resources": [
+      {
+        "code": "1161",
+        "desc": "White sand stone block",
+        "unit": "10 cudm",
+        "qty": 1.333,
+        "rate": 205.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
+        "unit": "tonne",
+        "qty": 0.031,
+        "rate": 92.24
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.176,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0126",
+        "desc": "Mason (for ornamental stone work) 1st class",
+        "unit": "day",
+        "qty": 0.176,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 617.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for laying and pointing",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Centring and shuttering",
+        "unit": "L.S.",
+        "qty": 33.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for using white cement",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.015,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.14.2.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 126051.0,
+    "resources": [
+      {
+        "code": "1160",
+        "desc": "Red sand stone block",
+        "unit": "10 cudm",
+        "qty": 1.333,
+        "rate": 79.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
+        "unit": "tonne",
+        "qty": 0.031,
+        "rate": 92.24
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.352,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.012,
+        "rate": 738.0
+      },
+      {
+        "code": "0126",
+        "desc": "Mason (for ornamental stone work) 1st class",
+        "unit": "day",
+        "qty": 0.352,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.088,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.088,
+        "rate": 617.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for laying and pointing",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Centring and shuttering",
+        "unit": "L.S.",
+        "qty": 33.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for using white cement",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.015,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.14.2.2",
+    "unit": "cum",
+    "basis": 0.01,
+    "say": 148523.0,
+    "resources": [
+      {
+        "code": "1161",
+        "desc": "White sand stone block",
+        "unit": "10 cudm",
+        "qty": 1.333,
+        "rate": 205.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
+        "unit": "tonne",
+        "qty": 0.031,
+        "rate": 92.24
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.352,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.012,
+        "rate": 738.0
+      },
+      {
+        "code": "0126",
+        "desc": "Mason (for ornamental stone work) 1st class",
+        "unit": "day",
+        "qty": 0.352,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.088,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.088,
+        "rate": 617.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for laying and pointing",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Centring and shuttering",
+        "unit": "L.S.",
+        "qty": 33.15,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for using white cement",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.015,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.15.1.1",
+    "unit": "cum",
+    "basis": 0.01,
+    "say": 44498.0,
+    "resources": [
+      {
+        "code": "1160",
+        "desc": "Red sand stone block",
+        "unit": "10 cudm",
+        "qty": 1.333,
+        "rate": 79.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
+        "unit": "tonne",
+        "qty": 0.031,
+        "rate": 92.24
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.059,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 617.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for laying and pointing",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.015,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.15.1.2",
+    "unit": "cum",
+    "basis": 0.01,
+    "say": 66970.0,
+    "resources": [
+      {
+        "code": "1161",
+        "desc": "White sand stone block",
+        "unit": "10 cudm",
+        "qty": 1.333,
+        "rate": 205.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
+        "unit": "tonne",
+        "qty": 0.031,
+        "rate": 92.24
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.059,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 617.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for laying and pointing",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.015,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.15.2.1",
+    "unit": "cum",
+    "basis": 0.01,
+    "say": 59010.0,
+    "resources": [
+      {
+        "code": "1160",
+        "desc": "Red sand stone block",
+        "unit": "10 cudm",
+        "qty": 1.333,
+        "rate": 79.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
+        "unit": "tonne",
+        "qty": 0.031,
+        "rate": 92.24
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.015,
+        "rate": 558.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.118,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.012,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.088,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.088,
+        "rate": 617.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scafolding",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for laying and pointing",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "7.15.2.2",
+    "unit": "cum",
+    "basis": 0.01,
+    "say": 81482.0,
+    "resources": [
+      {
+        "code": "1161",
+        "desc": "White sand stone block",
+        "unit": "10 cudm",
+        "qty": 1.333,
+        "rate": 205.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
+        "unit": "tonne",
+        "qty": 0.031,
+        "rate": 92.24
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.015,
+        "rate": 558.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.118,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.012,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.088,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.088,
+        "rate": 617.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for laying and pointing",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "7.16",
+    "unit": "cum",
+    "basis": 0.01,
+    "say": 1493.0,
+    "resources": [
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.17.1",
+    "unit": "cum",
+    "basis": 0.01,
+    "say": 2400.0,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Labour and materials",
+        "unit": "L.S.",
+        "qty": 8.97,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "7.18",
+    "unit": "m",
+    "basis": 6.0,
+    "say": 1670.0,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Labour and materials",
+        "unit": "L.S.",
+        "qty": 6.24,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "1.296",
+    "unit": "cum",
+    "basis": 7.103,
+    "say": null,
+    "resources": [
+      {
+        "code": "1197",
+        "desc": "Second class kail wood in scantling",
+        "unit": "10 cudm",
+        "qty": 88.79,
+        "rate": 260.0
+      },
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.8879,
+        "rate": 118.59
+      },
+      {
+        "code": "1225",
+        "desc": "Mild steel flat strap fitting",
+        "unit": "quintal",
+        "qty": 0.0878,
+        "rate": 4120.0
+      },
+      {
+        "code": "1034",
+        "desc": "Bolts and nuts upto 300 mm in length",
+        "unit": "quintal",
+        "qty": 0.08,
+        "rate": 4800.0
+      },
+      {
+        "code": "2302",
+        "desc": "Carriage of G.I.sheet and accessories",
+        "unit": "tonne",
+        "qty": 0.0168,
+        "rate": 92.24
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 28.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 24.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 134.55,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.9",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 560.65,
+    "resources": [
+      {
+        "code": "SH : Reinforced cement concrete work",
+        "desc": "sqm",
+        "unit": "-33.31",
+        "qty": 1713.2,
+        "rate": -57066.69
+      }
+    ]
+  },
+  {
+    "code": "7.20.1",
+    "unit": "cum",
+    "basis": 0.01,
+    "say": 67731.0,
+    "resources": [
+      {
+        "code": "1160",
+        "desc": "Red sand stone block",
+        "unit": "10 cudm",
+        "qty": 1.333,
+        "rate": 79.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
+        "unit": "tonne",
+        "qty": 0.031,
+        "rate": 92.24
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for using white cement",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.291,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 617.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for laying and pointing",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.015,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.20.2",
+    "unit": "cum",
+    "basis": 0.01,
+    "say": 90203.0,
+    "resources": [
+      {
+        "code": "1161",
+        "desc": "White sand stone block",
+        "unit": "10 cudm",
+        "qty": 1.333,
+        "rate": 205.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
+        "unit": "tonne",
+        "qty": 0.031,
+        "rate": 92.24
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for using white cement",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.291,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 617.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.044,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.006,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.022,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for laying and pointing",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.015,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.21.1",
+    "unit": "cum",
+    "basis": 0.01,
+    "say": 3131.0,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "LABOUR",
+        "unit": "L.S.",
+        "qty": 11.7,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "7.21.2",
+    "unit": "cum",
+    "basis": 0.01,
+    "say": 8871.0,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "LABOUR",
+        "unit": "L.S.",
+        "qty": 33.15,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "7.22",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 225.35,
+    "resources": [
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.24",
+    "unit": "m",
+    "basis": 6.0,
+    "say": 2400.0,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Labour and materials",
+        "unit": "L.S.",
+        "qty": 8.97,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "7.26",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 45.75,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Cost of stone including carriage",
+        "unit": "L.S.",
+        "qty": 9.1,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Labour for dressing dowel cutting chase and fixing etc.",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "3.7",
+        "desc": "Rate as per Item Number 3.7 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.001,
+        "rate": 5345.55
+      }
+    ]
+  },
+  {
+    "code": "7.28.1.1",
+    "unit": "sqm",
+    "basis": 2.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "1164",
+        "desc": "Red sand stone slab 40 mmthick (un-dressed)",
+        "unit": "sqm",
+        "qty": 2.75,
+        "rate": 200.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
+        "unit": "tonne",
+        "qty": 0.253,
+        "rate": 92.24
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "1002",
+        "desc": "Mild steel round bar 12 mm dia and below",
+        "unit": "quintal",
+        "qty": 0.02,
+        "rate": 4500.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cutting threads and cost of nuts, washers, etc.",
+        "unit": "L.S.",
+        "qty": 67.34,
+        "rate": 2.0
+      },
+      {
+        "code": "3.12",
+        "desc": "Rate as per Item Number 3.12 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.009,
+        "rate": 5108.05
+      },
+      {
+        "code": "9999",
+        "desc": "Pigment",
+        "unit": "L.S.",
+        "qty": 6.24,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra cost of white cement",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries etc.",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cost of Brick cover support.",
+        "unit": "L.S.",
+        "qty": 104.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "6.4.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2081.2,
+    "resources": [
+      {
+        "code": "SH :- Brick work.",
+        "desc": "cum",
+        "unit": "0.018",
+        "qty": 7809.25,
+        "rate": 140.57
+      }
+    ]
+  },
+  {
+    "code": "7.28.2.1",
+    "unit": "sqm",
+    "basis": 2.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "1165",
+        "desc": "White sand stone slab 40 mm thick (un-dressed)",
+        "unit": "sqm",
+        "qty": 2.75,
+        "rate": 200.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab @ 2.3kg/cudm.",
+        "unit": "tonne",
+        "qty": 0.253,
+        "rate": 92.24
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "1002",
+        "desc": "Mild steel round bar 12 mm dia and below",
+        "unit": "quintal",
+        "qty": 0.02,
+        "rate": 4500.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cutting threads and cost of nuts, washers, etc.",
+        "unit": "L.S.",
+        "qty": 67.34,
+        "rate": 2.0
+      },
+      {
+        "code": "3.12",
+        "desc": "Rate as per Item Number 3.12 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.009,
+        "rate": 5108.05
+      },
+      {
+        "code": "9999",
+        "desc": "Pigment",
+        "unit": "L.S.",
+        "qty": 6.24,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra cost of white cement",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries etc.",
+        "unit": "L.S.",
+        "qty": 16.12,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cost for Brick cover support .",
+        "unit": "L.S.",
+        "qty": 104.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "6.4.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 2081.2,
+    "resources": [
+      {
+        "code": "SH :- Brick work.",
+        "desc": "cum",
+        "unit": "0.018",
+        "qty": 7809.25,
+        "rate": 140.57
+      }
+    ]
+  },
+  {
+    "code": "7.29.1",
+    "unit": "m",
+    "basis": 0.75,
+    "say": 1306.75,
+    "resources": [
+      {
+        "code": "1164",
+        "desc": "Red sand stone slab 40 mmthick (un-dressed)",
+        "unit": "sqm",
+        "qty": 2.25,
+        "rate": 200.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab @ 2.3kg/cudm.",
+        "unit": "tonne",
+        "qty": 0.227,
+        "rate": 92.24
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.45,
+        "rate": 679.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for pointing 1:2",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Pigment",
+        "unit": "L.S.",
+        "qty": 6.24,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra cost of white cement",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries etc.",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "7.29.2",
+    "unit": "m",
+    "basis": 0.75,
+    "say": 1306.75,
+    "resources": [
+      {
+        "code": "1165",
+        "desc": "White sand stone slab 40 mm thick (un-dressed)",
+        "unit": "sqm",
+        "qty": 2.25,
+        "rate": 200.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab @ 2.3kg/cudm.",
+        "unit": "tonne",
+        "qty": 0.227,
+        "rate": 92.24
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.45,
+        "rate": 679.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for pointing 1:2",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Pigment",
+        "unit": "L.S.",
+        "qty": 6.24,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Extra cost of white cement",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.8,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding and sundries etc.",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "7.30",
+    "unit": "m",
+    "basis": 1.6,
+    "say": 1556.4,
+    "resources": [
+      {
+        "code": "1166",
+        "desc": "Red sand stone slab 30 mmthick (un-dressed)",
+        "unit": "sqm",
+        "qty": 2.0,
+        "rate": 200.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
+        "unit": "tonne",
+        "qty": 0.14,
+        "rate": 92.24
+      },
+      {
+        "code": "9999",
+        "desc": "Cement mortar 1 :4",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.86,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.31",
+    "unit": "nos",
+    "basis": 4.0,
+    "say": 5032.85,
+    "resources": [
+      {
+        "code": "1160",
+        "desc": "Red sand stone block",
+        "unit": "10 cudm",
+        "qty": 6.16,
+        "rate": 79.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab @ 2.3kg/ cudm.",
+        "unit": "tonne",
+        "qty": 0.14,
+        "rate": 92.24
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 1.7926,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.037,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.271,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.1355,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.271,
+        "rate": 617.0
+      },
+      {
+        "code": "0373",
+        "desc": "Cramp Gun metal 25x6x300 mm",
+        "unit": "each",
+        "qty": 4.0,
+        "rate": 80.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.2464,
+        "rate": 679.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.0336,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.1232,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.1232,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.1232,
+        "rate": 617.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.1232,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 15.29,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for laying and pointing",
+        "unit": "L.S.",
+        "qty": 45.14,
+        "rate": 2.0
+      },
+      {
+        "code": "0126",
+        "desc": "Mason (for ornamental stone work) 1st class",
+        "unit": "day",
+        "qty": 0.95,
+        "rate": 738.0
+      }
+    ]
+  },
+  {
+    "code": "7.12.1.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 66408.9,
+    "resources": [
+      {
+        "code": "SH : Stone Work",
+        "desc": "cum",
+        "unit": "0.00675",
+        "qty": 47132.0,
+        "rate": 318.14
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for using white cement",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.12.1.2",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 88880.0,
+    "resources": [
+      {
+        "code": "SH : Stone Work",
+        "desc": "cum",
+        "unit": "0.00675",
+        "qty": 69604.0,
+        "rate": 469.83
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for using white cement",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.07,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.33.1",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 11230.4,
+    "resources": [
+      {
+        "code": "1164",
+        "desc": "Red sand stone slab 40 mm thick (un-dressed)",
+        "unit": "sqm",
+        "qty": 1.1,
+        "rate": 200.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
+        "unit": "tonne",
+        "qty": 0.101,
+        "rate": 92.24
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 7.62,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 5.07,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar and Sundries",
+        "unit": "L.S.",
+        "qty": 80.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "7.33.2",
+    "unit": "sqm",
+    "basis": 1.0,
+    "say": 11230.4,
+    "resources": [
+      {
+        "code": "1165",
+        "desc": "White sand stone slab 40 mm thick (un-dressed)",
+        "unit": "sqm",
+        "qty": 1.1,
+        "rate": 200.0
+      },
+      {
+        "code": "2216",
+        "desc": "Carriage of Stone blocks white & red sand stone & kota stone slab",
+        "unit": "tonne",
+        "qty": 0.101,
+        "rate": 92.24
+      },
+      {
+        "code": "0125",
+        "desc": "Mason (for plain stone work) 2nd class)",
+        "unit": "day",
+        "qty": 7.62,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 5.07,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar and Sundries",
+        "unit": "L.S.",
+        "qty": 80.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "7.34",
+    "unit": "m",
+    "basis": 0.1,
+    "say": 794.65,
+    "resources": [
+      {
+        "code": "0011",
+        "desc": "Hire charges of Pumpset of capacity 4000 litres/hour.",
+        "unit": "day",
+        "qty": 0.375,
+        "rate": 700.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.35",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 336.55,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "7.38.1.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 2537.4,
+    "resources": [
+      {
+        "code": "2750",
+        "desc": "8 mm thick granite stone tiles (mirror polished of all shades)",
+        "unit": "sqm",
+        "qty": 10.25,
+        "rate": 700.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of granite tiles",
+        "unit": "L.S.",
+        "qty": 40.04,
+        "rate": 2.0
+      },
+      {
+        "code": "3.8",
+        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.14,
+        "rate": 4664.55
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.033,
+        "rate": 4940.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for pointing in white cement",
+        "unit": "L.S.",
+        "qty": 25.74,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 7.7,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 7.7,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Granular sand particles mixed with araldite to be pasted on each side to form interlocking arrangement with cement plaster",
+        "unit": "L.S.",
+        "qty": 260.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 171.6,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "7.38.1.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 2263.1,
+    "resources": [
+      {
+        "code": "7439",
+        "desc": "8mm thick (mirror polished tiles machine cut edge) Raj Nagar white",
+        "unit": "sqm",
+        "qty": 10.25,
+        "rate": 500.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of Raj Nagar white stone tiles",
+        "unit": "L.S.",
+        "qty": 40.04,
+        "rate": 2.0
+      },
+      {
+        "code": "3.8",
+        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.14,
+        "rate": 4664.55
+      },
+      {
+        "code": "0367",
+        "desc": "Portland Cement",
+        "unit": "tonne",
+        "qty": 0.033,
+        "rate": 4940.0
+      },
+      {
+        "code": "9999",
+        "desc": "Mortar for pointing in white cement",
+        "unit": "L.S.",
+        "qty": 25.74,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 7.7,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 7.7,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Granular sand particles mixed with araldite to be pasted on each side to form interlocking arrangement with cement plaster",
+        "unit": "L.S.",
+        "qty": 260.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 171.6,
+        "rate": 2.0
+      }
+    ]
+  }
+]

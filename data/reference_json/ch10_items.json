@@ -1,0 +1,3296 @@
+[
+  {
+    "code": "10.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 86.05,
+    "resources": [
+      {
+        "code": "1007",
+        "desc": "Structurals such as tees,angles channels and R.S. joists",
+        "unit": "quintal",
+        "qty": 1.05,
+        "rate": 4600.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.105,
+        "rate": 92.24
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per Item Number 13.50.3 of SH:Finishing",
+        "unit": "sqm",
+        "qty": 3.0,
+        "rate": 50.7
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 20.67,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.2",
+    "unit": "m",
+    "basis": 7.6,
+    "say": 101.75,
+    "resources": [
+      {
+        "code": "1007",
+        "desc": "Structurals such as tees,angles channels and R.S. joists",
+        "unit": "quintal",
+        "qty": 1.6,
+        "rate": 4600.0
+      },
+      {
+        "code": "1009",
+        "desc": "Flats exceeding 10 mm in thickness",
+        "unit": "quintal",
+        "qty": 0.53,
+        "rate": 4600.0
+      },
+      {
+        "code": "1010",
+        "desc": "Mild steel plates",
+        "unit": "quintal",
+        "qty": 1.9,
+        "rate": 4800.0
+      },
+      {
+        "code": "1020",
+        "desc": "Mild steel rivets",
+        "unit": "quintal",
+        "qty": 0.0684,
+        "rate": 5000.0
+      },
+      {
+        "code": "1221",
+        "desc": "20 mm dia holding down bolts",
+        "unit": "quintal",
+        "qty": 0.0529,
+        "rate": 6100.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.415,
+        "rate": 92.24
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 2.7,
+        "rate": 738.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 3.6,
+        "rate": 679.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 5.4,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 3.6,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.44,
+        "rate": 617.0
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
+        "unit": "sqm",
+        "qty": 5.68,
+        "rate": 50.7
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 80.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.3",
+    "unit": "m",
+    "basis": 1.5,
+    "say": 8670.5,
+    "resources": [
+      {
+        "code": "1007",
+        "desc": "Structurals such as tees,angles channels and R.S. joists",
+        "unit": "quintal",
+        "qty": 0.53,
+        "rate": 4600.0
+      },
+      {
+        "code": "1007",
+        "desc": "Structurals such as tees,angles channels and R.S. joists",
+        "unit": "quintal",
+        "qty": 0.13,
+        "rate": 4600.0
+      },
+      {
+        "code": "1008",
+        "desc": "Flats upto 10 mm in thickness",
+        "unit": "quintal",
+        "qty": 0.6,
+        "rate": 4500.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.126,
+        "rate": 92.24
+      },
+      {
+        "code": "9999",
+        "desc": "Cost of rivets fixing hooks and washers",
+        "unit": "L.S.",
+        "qty": 269.1,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Cost of locking arrangements and handles",
+        "unit": "L.S.",
+        "qty": 67.34,
+        "rate": 2.0
+      },
+      {
+        "code": "4013",
+        "desc": "Pully 40 mm dia",
+        "unit": "each",
+        "qty": 10.0,
+        "rate": 30.0
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
+        "unit": "sqm",
+        "qty": 10.5,
+        "rate": 50.7
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 8.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 161.46,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.4",
+    "unit": "m",
+    "basis": 2.4,
+    "say": 4992.05,
+    "resources": [
+      {
+        "code": "1013",
+        "desc": "Mild steel sheets for tanks",
+        "unit": "quintal",
+        "qty": 0.497,
+        "rate": 4600.0
+      },
+      {
+        "code": "1010",
+        "desc": "Mild steel plates",
+        "unit": "quintal",
+        "qty": 0.153,
+        "rate": 4800.0
+      },
+      {
+        "code": "1007",
+        "desc": "Structurals such as tees,angles channels and R.S. joists",
+        "unit": "quintal",
+        "qty": 1.39,
+        "rate": 4600.0
+      },
+      {
+        "code": "1007",
+        "desc": "Structurals such as tees,angles channels and R.S. joists",
+        "unit": "quintal",
+        "qty": 0.11,
+        "rate": 4600.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.216,
+        "rate": 92.24
+      },
+      {
+        "code": "9999",
+        "desc": "(iv) Pully guide blocks including drilling holes",
+        "unit": "L.S.",
+        "qty": 269.1,
+        "rate": 2.0
+      },
+      {
+        "code": "0969",
+        "desc": "Pully 25 mm dia",
+        "unit": "each",
+        "qty": 8.0,
+        "rate": 48.0
+      },
+      {
+        "code": "9999",
+        "desc": "(vi) Handles and locking arrangements",
+        "unit": "L.S.",
+        "qty": 167.75,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "(vii) Bolts and rivets",
+        "unit": "L.S.",
+        "qty": 269.1,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "(viii)Cement concrete",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
+        "unit": "sqm",
+        "qty": 18.0,
+        "rate": 50.7
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 679.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 161.46,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.5.1",
+    "unit": "m",
+    "basis": 2.4,
+    "say": 4428.15,
+    "resources": [
+      {
+        "code": "1013",
+        "desc": "Mild steel sheets for tanks",
+        "unit": "quintal",
+        "qty": 0.497,
+        "rate": 4600.0
+      },
+      {
+        "code": "1013",
+        "desc": "Mild steel sheets for tanks",
+        "unit": "quintal",
+        "qty": 0.153,
+        "rate": 4600.0
+      },
+      {
+        "code": "1007",
+        "desc": "Structurals such as tees,angles channels and R.S. joists",
+        "unit": "quintal",
+        "qty": 0.936,
+        "rate": 4600.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.1586,
+        "rate": 92.24
+      },
+      {
+        "code": "1036",
+        "desc": "Iron pintels including welded pin",
+        "unit": "each",
+        "qty": 4.0,
+        "rate": 37.0
+      },
+      {
+        "code": "1222",
+        "desc": "Mild steel sheets with bolts and nuts to rest on pintels",
+        "unit": "each",
+        "qty": 4.0,
+        "rate": 120.0
+      },
+      {
+        "code": "1019",
+        "desc": "Mild steel hooks",
+        "unit": "each",
+        "qty": 2.0,
+        "rate": 32.0
+      },
+      {
+        "code": "9999",
+        "desc": "Locking arrangements and handles",
+        "unit": "L.S.",
+        "qty": 167.7,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Rivets",
+        "unit": "L.S.",
+        "qty": 269.1,
+        "rate": 2.0
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
+        "unit": "sqm",
+        "qty": 15.41,
+        "rate": 50.7
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 161.46,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.5.2",
+    "unit": "m",
+    "basis": 2.4,
+    "say": 4278.15,
+    "resources": [
+      {
+        "code": "1013",
+        "desc": "Mild steel sheets for tanks",
+        "unit": "quintal",
+        "qty": 0.497,
+        "rate": 4600.0
+      },
+      {
+        "code": "1010",
+        "desc": "Mild steel plates",
+        "unit": "quintal",
+        "qty": 0.2078,
+        "rate": 4800.0
+      },
+      {
+        "code": "1007",
+        "desc": "Structurals such as tees, angles channels and R.S. joists",
+        "unit": "quintal",
+        "qty": 0.554,
+        "rate": 4600.0
+      },
+      {
+        "code": "1008",
+        "desc": "Flats upto 10 mm in thickness",
+        "unit": "quintal",
+        "qty": 0.188,
+        "rate": 4500.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.1447,
+        "rate": 92.24
+      },
+      {
+        "code": "1036",
+        "desc": "Iron pintels including welded pin",
+        "unit": "each",
+        "qty": 4.0,
+        "rate": 37.0
+      },
+      {
+        "code": "1222",
+        "desc": "Mild steel sheets with bolts and nuts to rest on pintels",
+        "unit": "each",
+        "qty": 4.0,
+        "rate": 120.0
+      },
+      {
+        "code": "1019",
+        "desc": "Mild steel hooks",
+        "unit": "each",
+        "qty": 2.0,
+        "rate": 32.0
+      },
+      {
+        "code": "9999",
+        "desc": "Locking arrangements and handles",
+        "unit": "L.S.",
+        "qty": 167.7,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Rivets",
+        "unit": "L.S.",
+        "qty": 269.1,
+        "rate": 2.0
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
+        "unit": "sqm",
+        "qty": 14.7,
+        "rate": 50.7
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 738.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 5.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 161.46,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.6.1",
+    "unit": "m",
+    "basis": 2.5,
+    "say": 2944.1,
+    "resources": [
+      {
+        "code": "0973",
+        "desc": "Rolling shutter made of 80x1.25 mm machine rolled laths",
+        "unit": "sqm",
+        "qty": 7.5,
+        "rate": 1400.0
+      },
+      {
+        "code": "0974",
+        "desc": "Top cover for rolling shutters 1.25 mm thick",
+        "unit": "metre",
+        "qty": 2.5,
+        "rate": 800.0
+      },
+      {
+        "code": "0975",
+        "desc": "27.5 cm long wire spring grade no 2 for rolling shutters",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 300.0
+      },
+      {
+        "code": "9977",
+        "desc": "CARRIAGE",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 2.55,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.55,
+        "rate": 558.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 679.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 60.58,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.6.2",
+    "unit": "m",
+    "basis": 2.5,
+    "say": 2803.65,
+    "resources": [
+      {
+        "code": "7045",
+        "desc": "Rolling shutters of 80x1.2 mm laths",
+        "unit": "sqm",
+        "qty": 7.5,
+        "rate": 1375.0
+      },
+      {
+        "code": "7047",
+        "desc": "Top cover of Rolling shutters 1.20 mm thick",
+        "unit": "metre",
+        "qty": 2.5,
+        "rate": 560.0
+      },
+      {
+        "code": "0975",
+        "desc": "27.5 cm long wire spring grade no 2 for rolling shutters",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 300.0
+      },
+      {
+        "code": "9977",
+        "desc": "CARRIAGE",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 2.55,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.55,
+        "rate": 558.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 679.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 60.58,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.6.3",
+    "unit": "m",
+    "basis": 2.5,
+    "say": 2654.25,
+    "resources": [
+      {
+        "code": "7044",
+        "desc": "Rolling shutters of 80x0.90 mm laths",
+        "unit": "sqm",
+        "qty": 7.5,
+        "rate": 1300.0
+      },
+      {
+        "code": "7046",
+        "desc": "Top cover of Rolling shutters 0.90 mm thick",
+        "unit": "metre",
+        "qty": 2.5,
+        "rate": 450.0
+      },
+      {
+        "code": "0975",
+        "desc": "27.5 cm long wire spring grade no 2 for rolling shutters",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 300.0
+      },
+      {
+        "code": "9977",
+        "desc": "CARRIAGE",
+        "unit": "L.S.",
+        "qty": 53.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 2.55,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 2.55,
+        "rate": 558.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 679.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 60.58,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.7",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 419.85,
+    "resources": [
+      {
+        "code": "0976",
+        "desc": "Ball bearing for rolling shutters",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 260.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 26.91,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.8.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 1106.55,
+    "resources": [
+      {
+        "code": "0977",
+        "desc": "Extra for mechanical devices chain and cranked operation for operatingrolling shutters : exceeding 10.00 sq.m and upto 16.80 sq.m area of door",
+        "unit": "sqm",
+        "qty": 1.0,
+        "rate": 800.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.8.2",
+    "unit": "sqm",
+    "basis": 16.8,
+    "say": 1106.55,
+    "resources": [
+      {
+        "code": "0978",
+        "desc": "Extra for mechanical devices chain and cranked operation for operating rolling shutters : exceeding 16.80 sq.m area of door",
+        "unit": "sqm",
+        "qty": 1.0,
+        "rate": 800.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.9",
+    "unit": "m",
+    "basis": 2.5,
+    "say": 668.95,
+    "resources": [
+      {
+        "code": "7068",
+        "desc": "Extra for providing grilled rolling shutters with 8 mm dia M.S. rod",
+        "unit": "sqm",
+        "qty": 1.5,
+        "rate": 500.0
+      }
+    ]
+  },
+  {
+    "code": "10.10.1",
+    "unit": "m",
+    "basis": 0.76,
+    "say": 63.0,
+    "resources": [
+      {
+        "code": "4.2.5",
+        "desc": "Rate as per item no 4.2.5 of SH : Concrete work",
+        "unit": "cum",
+        "qty": 0.009,
+        "rate": 8025.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 738.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9977",
+        "desc": "Sundries for carriage of material",
+        "unit": "L.S.",
+        "qty": 67.28,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.10.2",
+    "unit": "m",
+    "basis": 0.76,
+    "say": 31.65,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 558.0
+      },
+      {
+        "code": "9977",
+        "desc": "Sundries for Carriage of material",
+        "unit": "L.S.",
+        "qty": 67.28,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.11.1",
+    "unit": "m",
+    "basis": 1.175,
+    "say": 166.5,
+    "resources": [
+      {
+        "code": "1011",
+        "desc": "Steel glazed door,window/ ventilator, all members like as F7D, F4B, K11 and K12B etc.",
+        "unit": "kg",
+        "qty": 30.0,
+        "rate": 54.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of Steel Door",
+        "unit": "L.S.",
+        "qty": 40.37,
+        "rate": 2.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 679.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.26,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.34,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 15.37,
+        "rate": 2.0
+      },
+      {
+        "code": "10.10.1",
+        "desc": "Rate as per Item No.10.10.1",
+        "unit": "kg",
+        "qty": 30.0,
+        "rate": 63.0
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
+        "unit": "sqm",
+        "qty": 2.44,
+        "rate": 50.7
+      }
+    ]
+  },
+  {
+    "code": "10.11.2",
+    "unit": "m",
+    "basis": 1.175,
+    "say": 106.05,
+    "resources": [
+      {
+        "code": "1011",
+        "desc": "Steel glazed door,window/ ventilator, all members like as F7D, F4B, K11 and K12B etc.",
+        "unit": "kg",
+        "qty": 30.0,
+        "rate": 54.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of Steel Door",
+        "unit": "L.S.",
+        "qty": 40.37,
+        "rate": 2.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 679.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.26,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.34,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 15.37,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.027,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Collie",
+        "unit": "day",
+        "qty": 0.0195,
+        "rate": 558.0
+      },
+      {
+        "code": "0130",
+        "desc": "Mistry",
+        "unit": "day",
+        "qty": 0.0084,
+        "rate": 738.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.0012,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Hire charges of drill machine, scaffolding and sundries",
+        "unit": "L.S.",
+        "qty": 12.22,
+        "rate": 2.0
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
+        "unit": "sqm",
+        "qty": 2.44,
+        "rate": 50.7
+      }
+    ]
+  },
+  {
+    "code": "10.12",
+    "unit": "metre",
+    "basis": 1.0,
+    "say": 45.4,
+    "resources": [
+      {
+        "code": "1143",
+        "desc": "Steel beading size 10 x 10 x 1.6 mm (box type)",
+        "unit": "metre",
+        "qty": 1.0,
+        "rate": 27.0
+      },
+      {
+        "code": "9999",
+        "desc": "Applying priming coat",
+        "unit": "L.S.",
+        "qty": 0.46,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Fixing charges",
+        "unit": "L.S.",
+        "qty": 3.01,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.13.1",
+    "unit": "kg",
+    "basis": 17.5,
+    "say": 106.45,
+    "resources": [
+      {
+        "code": "1007",
+        "desc": "Structurals such as tees,angles channels and R.S. joists",
+        "unit": "quintal",
+        "qty": 0.18,
+        "rate": 4600.0
+      },
+      {
+        "code": "1002",
+        "desc": "Mild steel round bar 12 mm dia and below",
+        "unit": "quintal",
+        "qty": 0.006,
+        "rate": 4500.0
+      },
+      {
+        "code": "1008",
+        "desc": "Flats upto 10 mm in thickness",
+        "unit": "quintal",
+        "qty": 0.002,
+        "rate": 4500.0
+      },
+      {
+        "code": "4.2.5",
+        "desc": "Rate as per item no 4.2.5 of SH : Concrete work",
+        "unit": "cum",
+        "qty": 0.009,
+        "rate": 8025.0
+      },
+      {
+        "code": "0595",
+        "desc": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
+        "unit": "10 Nos",
+        "qty": 0.6,
+        "rate": 80.0
+      },
+      {
+        "code": "9999",
+        "desc": "For screws and nuts and bolts",
+        "unit": "L.S.",
+        "qty": 35.88,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "For applying steel primer",
+        "unit": "L.S.",
+        "qty": 17.94,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 679.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.97,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.13.2",
+    "unit": "kg",
+    "basis": 17.5,
+    "say": 101.65,
+    "resources": [
+      {
+        "code": "1007",
+        "desc": "Structurals such as tees, angles channels and R.S. joists",
+        "unit": "quintal",
+        "qty": 0.18,
+        "rate": 4600.0
+      },
+      {
+        "code": "1002",
+        "desc": "Mild steel round bar 12 mm dia and below",
+        "unit": "quintal",
+        "qty": 0.006,
+        "rate": 4500.0
+      },
+      {
+        "code": "0595",
+        "desc": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
+        "unit": "10 Nos",
+        "qty": 0.6,
+        "rate": 80.0
+      },
+      {
+        "code": "9999",
+        "desc": "For screws and nuts and bolts",
+        "unit": "L.S.",
+        "qty": 35.88,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "For applying steel primer",
+        "unit": "L.S.",
+        "qty": 17.94,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 679.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.97,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.14.1.1",
+    "unit": "metre",
+    "basis": 5.0,
+    "say": 417.6,
+    "resources": [
+      {
+        "code": "4006",
+        "desc": "Pressed steel door frames (mild steel sheet 1.60mm) Profile \"B\" frame",
+        "unit": "metre",
+        "qty": 5.0,
+        "rate": 190.0
+      },
+      {
+        "code": "0595",
+        "desc": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
+        "unit": "10 Nos",
+        "qty": 0.6,
+        "rate": 80.0
+      },
+      {
+        "code": "9999",
+        "desc": "Screws, nuts and bolts",
+        "unit": "L.S.",
+        "qty": 35.88,
+        "rate": 2.0
+      },
+      {
+        "code": "1007",
+        "desc": "Structurals such as tees,angles channels and R.S. joists",
+        "unit": "quintal",
+        "qty": 0.03,
+        "rate": 4600.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.97,
+        "rate": 2.0
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
+        "unit": "sqm",
+        "qty": 2.69,
+        "rate": 50.7
+      }
+    ]
+  },
+  {
+    "code": "10.14.1.2",
+    "unit": "metre",
+    "basis": 5.0,
+    "say": 406.9,
+    "resources": [
+      {
+        "code": "4006",
+        "desc": "Pressed steel door frames (mild steel sheet 1.60mm) Profile \"B\" frame",
+        "unit": "metre",
+        "qty": 5.0,
+        "rate": 190.0
+      },
+      {
+        "code": "9999",
+        "desc": "Deduct sundries for not providing adjustable lugs",
+        "unit": "L.S.",
+        "qty": -20.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0595",
+        "desc": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
+        "unit": "10 Nos",
+        "qty": 0.6,
+        "rate": 80.0
+      },
+      {
+        "code": "9999",
+        "desc": "Screws, nuts and bolts",
+        "unit": "L.S.",
+        "qty": 35.88,
+        "rate": 2.0
+      },
+      {
+        "code": "1007",
+        "desc": "Structurals such as tees,angles channels and R.S. joists",
+        "unit": "quintal",
+        "qty": 0.03,
+        "rate": 4600.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.97,
+        "rate": 2.0
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
+        "unit": "sqm",
+        "qty": 2.69,
+        "rate": 50.7
+      }
+    ]
+  },
+  {
+    "code": "10.14.2.1",
+    "unit": "metre",
+    "basis": 5.0,
+    "say": 444.35,
+    "resources": [
+      {
+        "code": "4007",
+        "desc": "Pressed steel door frames (mild steel sheet 1.60mm) Profile \"C\"",
+        "unit": "metre",
+        "qty": 5.0,
+        "rate": 210.0
+      },
+      {
+        "code": "0595",
+        "desc": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
+        "unit": "10 Nos",
+        "qty": 0.6,
+        "rate": 80.0
+      },
+      {
+        "code": "9999",
+        "desc": "Screws, nuts and bolts",
+        "unit": "L.S.",
+        "qty": 35.88,
+        "rate": 2.0
+      },
+      {
+        "code": "1007",
+        "desc": "Structurals such as tees, angles channels and R.S. joists",
+        "unit": "quintal",
+        "qty": 0.03,
+        "rate": 4600.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.97,
+        "rate": 2.0
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
+        "unit": "sqm",
+        "qty": 2.69,
+        "rate": 50.7
+      }
+    ]
+  },
+  {
+    "code": "10.14.2.2",
+    "unit": "metre",
+    "basis": 5.0,
+    "say": 433.65,
+    "resources": [
+      {
+        "code": "4007",
+        "desc": "Pressed steel door frames (mild steel sheet 1.60mm) Profile \"C\"",
+        "unit": "metre",
+        "qty": 5.0,
+        "rate": 210.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries for not providing adjustable lugs(-)",
+        "unit": "L.S.",
+        "qty": -20.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0595",
+        "desc": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
+        "unit": "10 Nos",
+        "qty": 0.6,
+        "rate": 80.0
+      },
+      {
+        "code": "9999",
+        "desc": "Screws, nuts and bolts",
+        "unit": "L.S.",
+        "qty": 35.88,
+        "rate": 2.0
+      },
+      {
+        "code": "1007",
+        "desc": "Structurals such as tees, angles channels and R.S. joists",
+        "unit": "quintal",
+        "qty": 0.03,
+        "rate": 4600.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.97,
+        "rate": 2.0
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
+        "unit": "sqm",
+        "qty": 2.69,
+        "rate": 50.7
+      }
+    ]
+  },
+  {
+    "code": "10.14.3.1",
+    "unit": "metre",
+    "basis": 5.0,
+    "say": 484.5,
+    "resources": [
+      {
+        "code": "4008",
+        "desc": "Pressed steel door frames (mild steel sheet 1.60mm) Profile \"E\"",
+        "unit": "metre",
+        "qty": 5.0,
+        "rate": 240.0
+      },
+      {
+        "code": "0595",
+        "desc": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
+        "unit": "10 Nos",
+        "qty": 0.6,
+        "rate": 80.0
+      },
+      {
+        "code": "9999",
+        "desc": "Screws, nuts and bolts",
+        "unit": "L.S.",
+        "qty": 35.88,
+        "rate": 2.0
+      },
+      {
+        "code": "1007",
+        "desc": "Structurals such as tees,angles channels and R.S. joists",
+        "unit": "quintal",
+        "qty": 0.03,
+        "rate": 4600.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.97,
+        "rate": 2.0
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
+        "unit": "sqm",
+        "qty": 2.69,
+        "rate": 50.7
+      }
+    ]
+  },
+  {
+    "code": "10.14.3.2",
+    "unit": "metre",
+    "basis": 5.0,
+    "say": 473.8,
+    "resources": [
+      {
+        "code": "4008",
+        "desc": "Pressed steel door frames (mild steel sheet 1.60mm) Profile \"E\"",
+        "unit": "metre",
+        "qty": 5.0,
+        "rate": 240.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries for not providing adjustable lugs (-)",
+        "unit": "L.S.",
+        "qty": -20.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0595",
+        "desc": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
+        "unit": "10 Nos",
+        "qty": 0.6,
+        "rate": 80.0
+      },
+      {
+        "code": "9999",
+        "desc": "Screws, nuts and bolts",
+        "unit": "L.S.",
+        "qty": 35.88,
+        "rate": 2.0
+      },
+      {
+        "code": "1007",
+        "desc": "Structurals such as tees,angles channels and R.S. joists",
+        "unit": "quintal",
+        "qty": 0.03,
+        "rate": 4600.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.97,
+        "rate": 2.0
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
+        "unit": "sqm",
+        "qty": 2.69,
+        "rate": 50.7
+      }
+    ]
+  },
+  {
+    "code": "10.15.1",
+    "unit": "kg",
+    "basis": 7.13,
+    "say": 137.3,
+    "resources": [
+      {
+        "code": "4011",
+        "desc": "Mild steel tubes electric resistant or induction butt welded",
+        "unit": "kilogram",
+        "qty": 7.49,
+        "rate": 47.0
+      },
+      {
+        "code": "1002",
+        "desc": "Mild steel round bar 12 mm dia and below",
+        "unit": "quintal",
+        "qty": 0.006,
+        "rate": 4500.0
+      },
+      {
+        "code": "1008",
+        "desc": "Flats upto 10 mm in thickness",
+        "unit": "quintal",
+        "qty": 0.002,
+        "rate": 4500.0
+      },
+      {
+        "code": "4.2.5",
+        "desc": "Rate as per item no 4.2.5 of SH : Concrete work",
+        "unit": "cum",
+        "qty": 0.009,
+        "rate": 8025.0
+      },
+      {
+        "code": "0595",
+        "desc": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
+        "unit": "10 Nos",
+        "qty": 0.6,
+        "rate": 80.0
+      },
+      {
+        "code": "9999",
+        "desc": "For screws and nuts and bolts",
+        "unit": "L.S.",
+        "qty": 35.88,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "For applying steel primer",
+        "unit": "L.S.",
+        "qty": 17.94,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 679.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 3.64,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.15.2",
+    "unit": "kg",
+    "basis": 7.13,
+    "say": 125.5,
+    "resources": [
+      {
+        "code": "4011",
+        "desc": "Mild steel tubes electric resistant or induction butt welded",
+        "unit": "kilogram",
+        "qty": 7.49,
+        "rate": 47.0
+      },
+      {
+        "code": "1002",
+        "desc": "Mild steel round bar 12 mm dia and below",
+        "unit": "quintal",
+        "qty": 0.006,
+        "rate": 4500.0
+      },
+      {
+        "code": "0595",
+        "desc": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
+        "unit": "10 Nos",
+        "qty": 0.6,
+        "rate": 80.0
+      },
+      {
+        "code": "9999",
+        "desc": "For screws and nuts and bolts",
+        "unit": "L.S.",
+        "qty": 35.88,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "For applying steel primer",
+        "unit": "L.S.",
+        "qty": 17.94,
+        "rate": 2.0
+      },
+      {
+        "code": "9977",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 679.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.08,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 3.64,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.16.1",
+    "unit": "metre",
+    "basis": 8.0,
+    "say": 143.45,
+    "resources": [
+      {
+        "code": "4009",
+        "desc": "Mild steel tubes hot finished welded type",
+        "unit": "kilogram",
+        "qty": 125.0,
+        "rate": 57.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.125,
+        "rate": 92.24
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
+        "unit": "sqm",
+        "qty": 2.8,
+        "rate": 50.7
+      },
+      {
+        "code": "1215",
+        "desc": "Welding by electric plant",
+        "unit": "cm",
+        "qty": 357.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 5.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 80.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.16.2",
+    "unit": "metre",
+    "basis": 8.0,
+    "say": 157.5,
+    "resources": [
+      {
+        "code": "4010",
+        "desc": "Mild steel tubes hot finished seamless type",
+        "unit": "kilogram",
+        "qty": 125.0,
+        "rate": 67.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.125,
+        "rate": 92.24
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
+        "unit": "sqm",
+        "qty": 2.8,
+        "rate": 50.7
+      },
+      {
+        "code": "1215",
+        "desc": "Welding by electric plant",
+        "unit": "cm",
+        "qty": 357.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 5.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 80.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.16.3",
+    "unit": "metre",
+    "basis": 8.0,
+    "say": 129.35,
+    "resources": [
+      {
+        "code": "4011",
+        "desc": "Mild steel tubes electric resistant or induction butt welded",
+        "unit": "kilogram",
+        "qty": 125.0,
+        "rate": 47.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.125,
+        "rate": 92.24
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
+        "unit": "sqm",
+        "qty": 2.8,
+        "rate": 50.7
+      },
+      {
+        "code": "1215",
+        "desc": "Welding by electric plant",
+        "unit": "cm",
+        "qty": 357.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.75,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 5.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 80.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.17",
+    "unit": "m",
+    "basis": 1.0,
+    "say": 171.15,
+    "resources": [
+      {
+        "code": "1003",
+        "desc": "Mild steel round bar above 12 mm dia",
+        "unit": "quintal",
+        "qty": 0.017,
+        "rate": 4400.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.04,
+        "rate": 558.0
+      },
+      {
+        "code": "9988",
+        "desc": "Sundries (Carriage, fixing and painting etc.)",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.18",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 172.25,
+    "resources": [
+      {
+        "code": "4012",
+        "desc": "Circular C.I. Box for ceiling fan",
+        "unit": "each",
+        "qty": 1.0,
+        "rate": 52.0
+      },
+      {
+        "code": "1002",
+        "desc": "Mild steel round bar 12 mm dia and below",
+        "unit": "quintal",
+        "qty": 0.008,
+        "rate": 4500.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.03,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.03,
+        "rate": 558.0
+      },
+      {
+        "code": "9988",
+        "desc": "Sundries (Carriage, fixing and painting etc.)",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.19",
+    "unit": "m",
+    "basis": 2.0,
+    "say": 83.85,
+    "resources": [
+      {
+        "code": "1035",
+        "desc": "Bolts and nuts above 300 mm in length",
+        "unit": "quintal",
+        "qty": 0.019,
+        "rate": 5100.0
+      },
+      {
+        "code": "1010",
+        "desc": "Mild steel plates",
+        "unit": "quintal",
+        "qty": 0.005,
+        "rate": 4800.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.03,
+        "rate": 679.0
+      },
+      {
+        "code": "9988",
+        "desc": "Carriage and labour for fixing",
+        "unit": "L.S.",
+        "qty": 4.55,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.20",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 128.45,
+    "resources": [
+      {
+        "code": "1034",
+        "desc": "Bolts and nuts upto 300 mm in length",
+        "unit": "quintal",
+        "qty": 0.1,
+        "rate": 4800.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.01,
+        "rate": 92.24
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.38,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.38,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 4.55,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.21",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 220.4,
+    "resources": [
+      {
+        "code": "1020",
+        "desc": "Mild steel rivets",
+        "unit": "quintal",
+        "qty": 0.1,
+        "rate": 5000.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.01,
+        "rate": 92.24
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (grade 1)",
+        "unit": "day",
+        "qty": 0.83,
+        "rate": 738.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar (for floor rubbing etc.)",
+        "unit": "day",
+        "qty": 0.83,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 10.79,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.22",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 3.35,
+    "resources": [
+      {
+        "code": "1214",
+        "desc": "Welding by gas plant",
+        "unit": "cm",
+        "qty": 1.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 0.26,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.25.1",
+    "unit": "kg",
+    "basis": 5.331,
+    "say": 93.65,
+    "resources": [
+      {
+        "code": "1007",
+        "desc": "Structurals such as tees,angles channels and R.S. joists",
+        "unit": "quintal",
+        "qty": 3.161,
+        "rate": 4600.0
+      },
+      {
+        "code": "1010",
+        "desc": "Mild steel plates",
+        "unit": "quintal",
+        "qty": 1.103,
+        "rate": 4800.0
+      },
+      {
+        "code": "1549",
+        "desc": "G.I. pipes 40 mm dia",
+        "unit": "metre",
+        "qty": 26.65,
+        "rate": 250.0
+      },
+      {
+        "code": "1003",
+        "desc": "Mild steel round bar above 12 mm dia",
+        "unit": "quintal",
+        "qty": 0.373,
+        "rate": 4400.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.4637,
+        "rate": 92.24
+      },
+      {
+        "code": "2271",
+        "desc": "Carriage of G.I. pipes below 100 mm dia",
+        "unit": "tonne",
+        "qty": 0.0991,
+        "rate": 92.24
+      },
+      {
+        "code": "1215",
+        "desc": "Welding by electric plant",
+        "unit": "cm",
+        "qty": 2320.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 1.85,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 617.0
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
+        "unit": "sqm",
+        "qty": 48.29,
+        "rate": 50.7
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 110.89,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.25.2",
+    "unit": "m",
+    "basis": 1.0,
+    "say": 131.0,
+    "resources": [
+      {
+        "code": "1008",
+        "desc": "Flats upto 10 mm in thickness",
+        "unit": "quintal",
+        "qty": 0.145,
+        "rate": 4500.0
+      },
+      {
+        "code": "1002",
+        "desc": "Mild steel round bar 12 mm dia and below",
+        "unit": "quintal",
+        "qty": 0.084,
+        "rate": 4500.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.0229,
+        "rate": 92.24
+      },
+      {
+        "code": "1215",
+        "desc": "Welding by electric plant 60 cm",
+        "unit": "cm",
+        "qty": 60.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 617.0
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
+        "unit": "sqm",
+        "qty": 0.6,
+        "rate": 50.7
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 4.55,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.26.1",
+    "unit": "kg",
+    "basis": 19.49,
+    "say": 145.65,
+    "resources": [
+      {
+        "code": "4009",
+        "desc": "Mild steel tubes hot finished welded type",
+        "unit": "kilogram",
+        "qty": 20.46,
+        "rate": 57.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.0205,
+        "rate": 92.24
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
+        "unit": "sqm",
+        "qty": 0.82,
+        "rate": 50.7
+      },
+      {
+        "code": "1215",
+        "desc": "Welding by electric plant",
+        "unit": "cm",
+        "qty": 72.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.24,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 12.48,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.26.2",
+    "unit": "kg",
+    "basis": 17.71,
+    "say": 138.15,
+    "resources": [
+      {
+        "code": "4011",
+        "desc": "Mild steel tubes electric resistant or induction butt welded",
+        "unit": "kilogram",
+        "qty": 18.59,
+        "rate": 47.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.0186,
+        "rate": 92.24
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
+        "unit": "sqm",
+        "qty": 0.82,
+        "rate": 50.7
+      },
+      {
+        "code": "1215",
+        "desc": "Welding by electric plant",
+        "unit": "cm",
+        "qty": 72.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.24,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 12.48,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.26.3",
+    "unit": "m",
+    "basis": 5.4,
+    "say": 158.0,
+    "resources": [
+      {
+        "code": "1549",
+        "desc": "G.I. pipes 40 mm dia",
+        "unit": "metre",
+        "qty": 5.67,
+        "rate": 250.0
+      },
+      {
+        "code": "2271",
+        "desc": "Carriage of G.I. pipes below 100 mm dia",
+        "unit": "tonne",
+        "qty": 0.0211,
+        "rate": 92.24
+      },
+      {
+        "code": "13.50.3",
+        "desc": "Rate as per item no 13.50.3 of SH : Finishing",
+        "unit": "sqm",
+        "qty": 0.82,
+        "rate": 50.7
+      },
+      {
+        "code": "1215",
+        "desc": "Welding by electric plant",
+        "unit": "cm",
+        "qty": 72.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.24,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 12.48,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.27.1",
+    "unit": "nos",
+    "basis": 10.0,
+    "say": 103.65,
+    "resources": [
+      {
+        "code": "2506",
+        "desc": "Carben Steel galvanised dash fastner (min 5 micron) of 10 mm dia double threaded 6.8 grade counter sunk head screw comprising of 10 mm dia polyamide PA 6 grade sleave. Size 10mm x 60mm",
+        "unit": "10 nos",
+        "qty": 1.0,
+        "rate": 260.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 558.0
+      },
+      {
+        "code": "9977",
+        "desc": "Sundries for carriage of material",
+        "unit": "L.S.",
+        "qty": 10.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.27.2",
+    "unit": "nos",
+    "basis": 10.0,
+    "say": 109.0,
+    "resources": [
+      {
+        "code": "2507",
+        "desc": "Carben Steel galvanised dash fastner (min5 micron) of 10 mm dia double threaded 6.8 grade counter sunk head screw comprising of 10 mm dia polyamide PA 6 grade sleave. Size 10mm x 80mm",
+        "unit": "10 nos",
+        "qty": 1.0,
+        "rate": 300.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.4,
+        "rate": 558.0
+      },
+      {
+        "code": "9977",
+        "desc": "Sundries for carriage of material",
+        "unit": "L.S.",
+        "qty": 10.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.27.3",
+    "unit": "nos",
+    "basis": 10.0,
+    "say": 134.25,
+    "resources": [
+      {
+        "code": "2508",
+        "desc": "Carben Steel galvanised dash fastner (min 5 micron) of 10 mm dia double threaded 6.8 grade counter sunk head screw comprising of 10 mm dia polyamide PA 6 grade sleave. Size 10mm x 120mm",
+        "unit": "10 nos",
+        "qty": 1.0,
+        "rate": 365.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9977",
+        "desc": "Sundries for carriage of material",
+        "unit": "L.S.",
+        "qty": 10.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.27.4",
+    "unit": "nos",
+    "basis": 10.0,
+    "say": 145.65,
+    "resources": [
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "9977",
+        "desc": "Sundries for carriage of material",
+        "unit": "L.S.",
+        "qty": 10.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.27.5",
+    "unit": "nos",
+    "basis": 10.0,
+    "say": 178.9,
+    "resources": [
+      {
+        "code": "2510",
+        "desc": "Carben Steel galvanised dash fastner (min 5 micron) of 10 mm dia double threaded 6.8 grade counter sunk head screw comprising of 10 mm dia polyamide PA 6 grade sleave. Size 10mm x 160mm",
+        "unit": "10 nos",
+        "qty": 1.0,
+        "rate": 575.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 558.0
+      },
+      {
+        "code": "9977",
+        "desc": "Sundries for Carriage of material",
+        "unit": "L.S.",
+        "qty": 10.0,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.28",
+    "unit": "kg",
+    "basis": 2.0,
+    "say": 575.45,
+    "resources": [
+      {
+        "code": "4001",
+        "desc": "Stainless steel (Grade-304)hollow section round/square tubes",
+        "unit": "kg",
+        "qty": 2.1,
+        "rate": 220.0
+      },
+      {
+        "code": "4002",
+        "desc": "Stainless steel bolts/square bar and plates",
+        "unit": "kg",
+        "qty": 1.0,
+        "rate": 115.0
+      },
+      {
+        "code": "0102",
+        "desc": "Blacksmith 1st class",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "0100",
+        "desc": "Bandhani",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Welding of stainless steel section",
+        "unit": "L.S.",
+        "qty": 30.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Curvaturing, grinding, finishing, buffing",
+        "unit": "L.S.",
+        "qty": 20.0,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries for making good wall and floors",
+        "unit": "L.S.",
+        "qty": 7.5,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.29.1",
+    "unit": "sqm",
+    "basis": 1.54,
+    "say": 709.3,
+    "resources": [
+      {
+        "code": "7029",
+        "desc": "Galvanised wire mesh of average width of aperture 1.4 mm and nominal dia. of wire 0.63 mm",
+        "unit": "sqm",
+        "qty": 1.69,
+        "rate": 250.0
+      },
+      {
+        "code": "9977",
+        "desc": "CARRIAGE",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "1008",
+        "desc": "Flats upto 10 mm in thickness",
+        "unit": "quintal",
+        "qty": 0.0184,
+        "rate": 4500.0
+      },
+      {
+        "code": "9977",
+        "desc": "CARRIAGE",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 679.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 19.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.29.2",
+    "unit": "sqm",
+    "basis": 1.54,
+    "say": 929.55,
+    "resources": [
+      {
+        "code": "8737",
+        "desc": "Stainless steel wire guage (Grade-304) aperture 1.4mm and 0.50 mm dia wire",
+        "unit": "sqm",
+        "qty": 1.69,
+        "rate": 400.0
+      },
+      {
+        "code": "9977",
+        "desc": "CARRIAGE",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "1008",
+        "desc": "Flats upto 10 mm in thickness",
+        "unit": "quintal",
+        "qty": 0.0184,
+        "rate": 4500.0
+      },
+      {
+        "code": "9977",
+        "desc": "CARRIAGE",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd class",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 679.0
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 0.17,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 19.76,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.30.1",
+    "unit": "sqm",
+    "basis": 0.1,
+    "say": 900.55,
+    "resources": [
+      {
+        "code": "2406",
+        "desc": "Float glass sheet of nominal thickness 4 mm (weight not less than 10kg/sqm).",
+        "unit": "sqm",
+        "qty": 1.1,
+        "rate": 300.0
+      },
+      {
+        "code": "9977",
+        "desc": "CARRIAGE",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0119",
+        "desc": "Glazier",
+        "unit": "day",
+        "qty": 0.13,
+        "rate": 679.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, putty, glazing clips, scaffolding etc.",
+        "unit": "L.S.",
+        "qty": 125.58,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.30.2",
+    "unit": "sqm",
+    "basis": 0.1,
+    "say": 1194.85,
+    "resources": [
+      {
+        "code": "2407",
+        "desc": "Float glass sheet of nominal thickness 5.5 mm.(weight not less than 13.50 kg/sqm).",
+        "unit": "sqm",
+        "qty": 1.1,
+        "rate": 500.0
+      },
+      {
+        "code": "9977",
+        "desc": "CARRIAGE",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      },
+      {
+        "code": "0119",
+        "desc": "Glazier",
+        "unit": "day",
+        "qty": 0.13,
+        "rate": 679.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries, putty, glazing clips, scaffolding etc.",
+        "unit": "L.S.",
+        "qty": 125.58,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "10.31",
+    "unit": "kg",
+    "basis": 17.5,
+    "say": 96.2,
+    "resources": [
+      {
+        "code": "1007",
+        "desc": "Structural steel such as tees, angles, channels and R.S. Joists",
+        "unit": "quintal",
+        "qty": 0.18,
+        "rate": 4600.0
+      },
+      {
+        "code": "1008",
+        "desc": "M.S. Flats 3x5 mm for fixing frame 6x0.05= 0.3 Metre @1.18 Kg/m= 0.354 Kg Add wastage @5% = 0.018 Kg Total= 0.37Kg. Say 0.0037 Qunital",
+        "unit": "quintal",
+        "qty": 0.0037,
+        "rate": 4500.0
+      },
+      {
+        "code": "1002",
+        "desc": "M.S. Bars 10mm =1x1 m = 1Metre 1 Metre @0.60Kg/m =0.60Kg + Add wastage @5% = 0.03 Kg. Total =0.63 Kg, say 0.006 Quintal Mild steel round bars 10mm dia and below",
+        "unit": "quintal",
+        "qty": 0.006,
+        "rate": 4500.0
+      },
+      {
+        "code": "9999",
+        "desc": "For applying steel primer",
+        "unit": "L.S.",
+        "qty": 17.94,
+        "rate": 2.0
+      },
+      {
+        "code": "9999",
+        "desc": "Carriage of material",
+        "unit": "L.S.",
+        "qty": 5.33,
+        "rate": 2.0
+      },
+      {
+        "code": "1215",
+        "desc": "Welding by electric plant",
+        "unit": "cm",
+        "qty": 16.0,
+        "rate": 2.0
+      },
+      {
+        "code": "0103",
+        "desc": "Blacksmith 2nd Class",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 679.0
+      },
+      {
+        "code": "0116",
+        "desc": "Fitter (Grade-I)",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 8.97,
+        "rate": 2.0
+      }
+    ]
+  }
+]

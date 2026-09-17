@@ -1,0 +1,3804 @@
+[
+  {
+    "code": "6.1.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 6376.25,
+    "resources": [
+      {
+        "code": "2602",
+        "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 4500.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 276.72
+      },
+      {
+        "code": "3.9",
+        "desc": "Rate as per item No 3.9 of SH: Mortar",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 4010.35
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.37,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "6.1.2",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 6157.45,
+    "resources": [
+      {
+        "code": "2602",
+        "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 4500.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 276.72
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item No.3.11 of SH: Mortar",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3356.15
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.37,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "6.2.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 5495.15,
+    "resources": [
+      {
+        "code": "7900",
+        "desc": "Modular common burnt clay bricks of class designation 7.5",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 4000.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 276.72
+      },
+      {
+        "code": "3.9",
+        "desc": "Rate as per item No 3.9 of SH: Mortar",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 4010.35
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "6.2.2",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 5302.6,
+    "resources": [
+      {
+        "code": "7900",
+        "desc": "Modular common burnt clay bricks of class designation 7.5",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 4000.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 276.72
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per item No 3.11 of SH: Mortar",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 3356.15
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "6.3.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 7722.65,
+    "resources": [
+      {
+        "code": "7901",
+        "desc": "Machine moulded perforated common burnt clay FPS (non modular) bricks of class designation 12.5",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 4700.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 276.72
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per item No 3.11 of SH: Mortar",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3356.15
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.8,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 22.36,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.3.2",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 7501.5,
+    "resources": [
+      {
+        "code": "7902",
+        "desc": "Machine moulded common burnt clay modular perforated bricks of class designation 12.5",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 5200.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 276.72
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per item No 3.11 of SH: Mortar",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 3356.15
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.44,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.44,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.43,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 16.38,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.4.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 7809.25,
+    "resources": [
+      {
+        "code": "2602",
+        "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 4500.0
+      },
+      {
+        "code": "3.9",
+        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 4010.35
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 276.72
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.8,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 22.36,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.4.2",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 236.65,
+    "resources": [
+      {
+        "code": "2602",
+        "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 4500.0
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3356.15
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 276.72
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.8,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 22.36,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      },
+      {
+        "code": "0037",
+        "desc": "Mobile crane",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 7500.0
+      }
+    ]
+  },
+  {
+    "code": "6.6",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 176.25,
+    "resources": [
+      {
+        "code": "1008",
+        "desc": "Flats upto 10 mm in thickness",
+        "unit": "quintal",
+        "qty": 0.054,
+        "rate": 4500.0
+      },
+      {
+        "code": "9999",
+        "desc": "Painting the steel Bitumen",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.005,
+        "rate": 92.24
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.37,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.37,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.92,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Add for use of Core",
+        "unit": "L.S.",
+        "qty": 4.55,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "6.12.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 254.0,
+    "resources": [
+      {
+        "code": "SH: Brick Work",
+        "desc": "sqm",
+        "unit": "2.70",
+        "qty": 798.25,
+        "rate": 2155.28
+      },
+      {
+        "code": "0322",
+        "desc": "Bitumen felt :Type 3 grade 1",
+        "unit": "sqm",
+        "qty": 1.2,
+        "rate": 70.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.12,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.06,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.8",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 749.75,
+    "resources": [
+      {
+        "code": "2602",
+        "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+        "unit": "1000 Nos",
+        "qty": 0.377,
+        "rate": 4500.0
+      },
+      {
+        "code": "3.8",
+        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.181,
+        "rate": 4664.55
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.377,
+        "rate": 276.72
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.72,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.72,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.76,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and scaffolding",
+        "unit": "L.S.",
+        "qty": 7.15,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.29,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.9",
+    "unit": "metre",
+    "basis": 6.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "2602",
+        "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 4500.0
+      },
+      {
+        "code": "3.8",
+        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 4664.55
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 276.72
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.9",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 12352.95,
+    "resources": [
+      {
+        "code": "SH : Reinforced cement concrete work",
+        "desc": "sqm",
+        "unit": "2.25",
+        "qty": 1713.2,
+        "rate": 3854.7
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 18.85,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.53,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.53,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 2.29,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.10",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "2602",
+        "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+        "unit": "1000 Nos",
+        "qty": 0.538,
+        "rate": 4500.0
+      },
+      {
+        "code": "3.8",
+        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 4664.55
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.538,
+        "rate": 276.72
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.9",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 15361.9,
+    "resources": [
+      {
+        "code": "SH : Reinforced cement concrete work",
+        "desc": "sqm",
+        "unit": "2.25",
+        "qty": 1713.2,
+        "rate": 3854.7
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 18.85,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 4.42,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.11",
+    "unit": "m",
+    "basis": 6.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "1197",
+        "desc": "Second class kail wood in scantling",
+        "unit": "10 cudm",
+        "qty": 88.79,
+        "rate": 260.0
+      },
+      {
+        "code": "2204",
+        "desc": "Carriage of Timber",
+        "unit": "cum",
+        "qty": 0.8879,
+        "rate": 118.59
+      },
+      {
+        "code": "1225",
+        "desc": "Mild steel flat strap fitting",
+        "unit": "quintal",
+        "qty": 0.0878,
+        "rate": 4120.0
+      },
+      {
+        "code": "1034",
+        "desc": "Bolts and nuts upto 300 mm in length",
+        "unit": "quintal",
+        "qty": 0.08,
+        "rate": 4800.0
+      },
+      {
+        "code": "2302",
+        "desc": "Carriage of G.I.sheet and accessories",
+        "unit": "tonne",
+        "qty": 0.0168,
+        "rate": 92.24
+      },
+      {
+        "code": "0112",
+        "desc": "Carpenter 2nd class",
+        "unit": "day",
+        "qty": 28.0,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 24.0,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 134.55,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.9",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 560.65,
+    "resources": [
+      {
+        "code": "SH : Reinforced cement concrete work",
+        "desc": "sqm",
+        "unit": "-33.31",
+        "qty": 1713.2,
+        "rate": -57066.69
+      }
+    ]
+  },
+  {
+    "code": "6.12.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 798.25,
+    "resources": [
+      {
+        "code": "2602",
+        "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+        "unit": "1000 Nos",
+        "qty": 0.565,
+        "rate": 4500.0
+      },
+      {
+        "code": "3.8",
+        "desc": "Cement mortar 1:3 (1 cement : 3 coarse sand) (Rate as per item No 3.8)",
+        "unit": "cum",
+        "qty": 0.28,
+        "rate": 4664.55
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.565,
+        "rate": 276.72
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries & Scaffolding",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.45,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.45,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.55,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "6.12.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 773.75,
+    "resources": [
+      {
+        "code": "2602",
+        "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+        "unit": "1000 Nos",
+        "qty": 0.565,
+        "rate": 4500.0
+      },
+      {
+        "code": "3.9",
+        "desc": "Cement mortar 1 : 4 (1 cement : 4 coarse sand) (Rate as per item No 3.9)",
+        "unit": "cum",
+        "qty": 0.28,
+        "rate": 4010.35
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.565,
+        "rate": 276.72
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries & Scaffolding",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.45,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.45,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.55,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "6.13.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 956.6,
+    "resources": [
+      {
+        "code": "2602",
+        "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+        "unit": "1000 Nos",
+        "qty": 0.565,
+        "rate": 4500.0
+      },
+      {
+        "code": "3.8",
+        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.28,
+        "rate": 4664.55
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.565,
+        "rate": 276.72
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries & Scaffolding",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.29,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.13.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 932.1,
+    "resources": [
+      {
+        "code": "2602",
+        "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+        "unit": "1000 Nos",
+        "qty": 0.565,
+        "rate": 4500.0
+      },
+      {
+        "code": "3.9",
+        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.28,
+        "rate": 4010.35
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.565,
+        "rate": 276.72
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries & Scaffolding",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.29,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.14",
+    "unit": "sqm",
+    "basis": 59.83,
+    "say": 20.95,
+    "resources": [
+      {
+        "code": "0037",
+        "desc": "Mobile crane",
+        "unit": "day",
+        "qty": 0.125,
+        "rate": 7500.0
+      }
+    ]
+  },
+  {
+    "code": "6.15",
+    "unit": "nos",
+    "basis": 2.0,
+    "say": 80.1,
+    "resources": [
+      {
+        "code": "1002",
+        "desc": "Mild steel round bar 6 mm dia",
+        "unit": "quintal",
+        "qty": 0.132,
+        "rate": 4500.0
+      },
+      {
+        "code": "2205",
+        "desc": "Carriage of Steel",
+        "unit": "tonne",
+        "qty": 0.0132,
+        "rate": 92.24
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 1.82,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "6.16.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 9651.05,
+    "resources": [
+      {
+        "code": "1984",
+        "desc": "Common burnt clay F.P.S. (non modular) bricks tile class designation 10",
+        "unit": "1000 Nos",
+        "qty": 0.777,
+        "rate": 4500.0
+      },
+      {
+        "code": "3.9",
+        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.4,
+        "rate": 4010.35
+      },
+      {
+        "code": "2207",
+        "desc": "Carriage of Brick tiles",
+        "unit": "1000 Nos",
+        "qty": 0.777,
+        "rate": 166.03
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 4.55,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.54,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "6.16.2",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 9300.9,
+    "resources": [
+      {
+        "code": "1984",
+        "desc": "Common burnt clay F.P.S. (non modular) bricks tile class designation 10",
+        "unit": "1000 Nos",
+        "qty": 0.777,
+        "rate": 4500.0
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.4,
+        "rate": 3356.15
+      },
+      {
+        "code": "2207",
+        "desc": "Carriage of Brick tiles",
+        "unit": "1000 Nos",
+        "qty": 0.777,
+        "rate": 166.03
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 4.55,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.54,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "6.17",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 9716.75,
+    "resources": [
+      {
+        "code": "7904",
+        "desc": "Machine moulded common burnt clay tile bricks of class designation 12.5",
+        "unit": "1000 Nos",
+        "qty": 0.777,
+        "rate": 4900.0
+      },
+      {
+        "code": "2207",
+        "desc": "Carriage of Brick tiles",
+        "unit": "1000 Nos",
+        "qty": 0.777,
+        "rate": 166.03
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.4,
+        "rate": 3356.15
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 4.55,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.54,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "6.18",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 10808.25,
+    "resources": [
+      {
+        "code": "1984",
+        "desc": "Common burnt clay F.P.S. (non modular) bricks tile class designation 10",
+        "unit": "1000 Nos",
+        "qty": 0.777,
+        "rate": 4500.0
+      },
+      {
+        "code": "2207",
+        "desc": "Carriage of Brick tiles",
+        "unit": "1000 Nos",
+        "qty": 0.777,
+        "rate": 166.03
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.4,
+        "rate": 3356.15
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 4.55,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.9,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.8,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 33.8,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "6.20",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "1984",
+        "desc": "Common burnt clay F.P.S. (non modular) bricks tile class designation 10",
+        "unit": "1000 Nos",
+        "qty": 0.777,
+        "rate": 4500.0
+      },
+      {
+        "code": "2207",
+        "desc": "Carriage of Brick tiles",
+        "unit": "1000 Nos",
+        "qty": 0.777,
+        "rate": 166.03
+      },
+      {
+        "code": "3.9",
+        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.35,
+        "rate": 4010.35
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 5.46,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.9",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 15551.35,
+    "resources": [
+      {
+        "code": "SH : Reinforced cement concrete work",
+        "desc": "sqm",
+        "unit": "2.25",
+        "qty": 1713.2,
+        "rate": 3854.7
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 18.85,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.79,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.79,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 3.21,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.21",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "1984",
+        "desc": "Common burnt clay F.P.S. (non modular) bricks tile class designation 10",
+        "unit": "1000 Nos",
+        "qty": 0.791,
+        "rate": 4500.0
+      },
+      {
+        "code": "2207",
+        "desc": "Carriage of Brick tiles",
+        "unit": "1000 Nos",
+        "qty": 0.791,
+        "rate": 166.03
+      },
+      {
+        "code": "3.9",
+        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.35,
+        "rate": 4010.35
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and shuttering",
+        "unit": "L.S.",
+        "qty": 5.46,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.9",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 18567.55,
+    "resources": [
+      {
+        "code": "SH : Reinforced cement concrete work",
+        "desc": "sqm",
+        "unit": "2.25",
+        "qty": 1713.2,
+        "rate": 3854.7
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 18.85,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 1.5,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 5.33,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.22",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 773.25,
+    "resources": [
+      {
+        "code": "1984",
+        "desc": "Common burnt clay F.P.S. (non modular) bricks tile class designation 10",
+        "unit": "1000 Nos",
+        "qty": 0.377,
+        "rate": 4500.0
+      },
+      {
+        "code": "2207",
+        "desc": "Carriage of Brick tiles",
+        "unit": "1000 Nos",
+        "qty": 0.377,
+        "rate": 166.03
+      },
+      {
+        "code": "3.8",
+        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.15,
+        "rate": 4664.55
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries and scaffolding",
+        "unit": "L.S.",
+        "qty": 8.06,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.94,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.94,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.88,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.29,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.4.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 594.15,
+    "resources": [
+      {
+        "code": "SH :- Brick work.",
+        "desc": "cum",
+        "unit": "0.069",
+        "qty": 7809.25,
+        "rate": 538.84
+      },
+      {
+        "code": "9999",
+        "desc": "Extra for delay due to fine work",
+        "unit": "L.S.",
+        "qty": 20.67,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "6.24",
+    "unit": "m",
+    "basis": 0.1,
+    "say": 794.65,
+    "resources": [
+      {
+        "code": "0011",
+        "desc": "Hire charges of Pumpset of capacity 4000 litres/hour.",
+        "unit": "day",
+        "qty": 0.375,
+        "rate": 700.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 4.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.25",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 336.55,
+    "resources": [
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.02,
+        "rate": 679.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.25,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 0.15,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.26.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 6324.3,
+    "resources": [
+      {
+        "code": "2602",
+        "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 4500.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 276.72
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3356.15
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries including steel/wooden strips for making grooves.",
+        "unit": "L.S.",
+        "qty": 16.38,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.35,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.35,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.07,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "6.26.2",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 7832.0,
+    "resources": [
+      {
+        "code": "2602",
+        "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 4500.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 276.72
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3356.15
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries including steel/wooden strips for making grooves.",
+        "unit": "L.S.",
+        "qty": 16.38,
+        "rate": 2.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 558.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.46,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.46,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.6,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 22.36,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "6.27.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 5339.1,
+    "resources": [
+      {
+        "code": "7900",
+        "desc": "Modular common burnt clay bricks of class designation 7.5",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 4000.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 276.72
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 3356.15
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries i/c steel / wooden strips for making grooves",
+        "unit": "L.S.",
+        "qty": 16.38,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "6.27.2",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 6772.15,
+    "resources": [
+      {
+        "code": "7900",
+        "desc": "Modular common burnt clay bricks of class designation 7.5",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 4000.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 276.72
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 3356.15
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries i/c steel / wooden strips for making grooves",
+        "unit": "L.S.",
+        "qty": 16.38,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.44,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.44,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.43,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 22.36,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "6.28.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 5990.7,
+    "resources": [
+      {
+        "code": "1986",
+        "desc": "Common burnt clay modular bricks class designation 12.5",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 5000.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 276.72
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 3356.15
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries including steel/wooden strips for making grooves.",
+        "unit": "L.S.",
+        "qty": 16.38,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "6.28.2",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 7423.7,
+    "resources": [
+      {
+        "code": "1986",
+        "desc": "Common burnt clay modular bricks class designation 12.5",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 5000.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 276.72
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 3356.15
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries including steel/wooden strips for making grooves.",
+        "unit": "L.S.",
+        "qty": 16.38,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.44,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.44,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.43,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 22.36,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "6.29.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 6524.4,
+    "resources": [
+      {
+        "code": "7903",
+        "desc": "Machine moulded common burnt clay FPS (non modular) bricks of class designation 12.5",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 5000.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 276.72
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3356.15
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries i/c steel / wooden strips for making grooves",
+        "unit": "L.S.",
+        "qty": 16.38,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.37,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "6.29.2",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 7900.55,
+    "resources": [
+      {
+        "code": "7903",
+        "desc": "Machine moulded common burnt clay FPS (non modular) bricks of class designation 12.5",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 5000.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 276.72
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3356.15
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries i/c steel / wooden strips for making grooves",
+        "unit": "L.S.",
+        "qty": 16.38,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.44,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.44,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.8,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 22.36,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "6.30.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 6326.15,
+    "resources": [
+      {
+        "code": "7901",
+        "desc": "Machine moulded perforated common burnt clay FPS (non modular) bricks of class designation 12.5",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 4700.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 276.72
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3356.15
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries i/c steel / wooden strips for making grooves",
+        "unit": "L.S.",
+        "qty": 16.38,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.37,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "6.30.2",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 7759.15,
+    "resources": [
+      {
+        "code": "7901",
+        "desc": "Machine moulded perforated common burnt clay FPS (non modular) bricks of class designation 12.5",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 4700.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 276.72
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3356.15
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries i/c steel / wooden strips for making grooves",
+        "unit": "L.S.",
+        "qty": 16.38,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.8,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 22.36,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "6.31.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 6121.0,
+    "resources": [
+      {
+        "code": "7902",
+        "desc": "Machine moulded common burnt clay modular perforated bricks of class designation 12.5",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 5200.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 276.72
+      },
+      {
+        "code": "3.11",
+        "desc": "Cement mortar 1 : 6 (1 cement : 6 coarse sand) (Rate as per item No 3.11)",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 3356.15
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries i/c steel / wooden strips for making grooves",
+        "unit": "L.S.",
+        "qty": 16.38,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "6.31.2",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 7554.0,
+    "resources": [
+      {
+        "code": "7902",
+        "desc": "Machine moulded common burnt clay modular perforated bricks of class designation 12.5",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 5200.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 276.72
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 3356.15
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries i/c steel / wooden strips for making grooves",
+        "unit": "L.S.",
+        "qty": 16.38,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.44,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.44,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.43,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 22.36,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "6.32.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 7971.7,
+    "resources": [
+      {
+        "code": "7008",
+        "desc": "F.P.S.(non modular) clay fly ash bricks class designation 7.5",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 4800.0
+      },
+      {
+        "code": "3.9",
+        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 4010.35
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 276.72
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.8,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 8.97,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.32.2",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 7752.9,
+    "resources": [
+      {
+        "code": "7008",
+        "desc": "F.P.S.(non modular) clay fly ash bricks class designation 7.5",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 4800.0
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 3356.15
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.494,
+        "rate": 276.72
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.8,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 8.97,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.34.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 7473.25,
+    "resources": [
+      {
+        "code": "7737",
+        "desc": "Fly ash bricks conforming to I.S. 12894",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 4300.0
+      },
+      {
+        "code": "3.9",
+        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 4010.35
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 276.72
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.8,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 22.36,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.34.2",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 7280.7,
+    "resources": [
+      {
+        "code": "7737",
+        "desc": "Fly ash bricks conforming to I.S. 12894",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 4300.0
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 3356.15
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 276.72
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.8,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 22.36,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.35.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 8190.0,
+    "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 4010.35
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 276.72
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.8,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 22.36,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.35.2",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 7997.4,
+    "resources": [
+      {
+        "code": "7738",
+        "desc": "Calcium Silicate Bricks machine moulded confirming to I.S. 4139 - 1989",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 5400.0
+      },
+      {
+        "code": "3.11",
+        "desc": "Rate as per Item Number 3.11 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 3356.15
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 276.72
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.47,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.8,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Scaffolding",
+        "unit": "L.S.",
+        "qty": 22.36,
+        "rate": 2.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.36.1",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 6407.35,
+    "resources": [
+      {
+        "code": "7736",
+        "desc": "Extruded burnt flyash clay sewer bricks conforming to I.S 4885 - 1988",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 5400.0
+      },
+      {
+        "code": "3.9",
+        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.22,
+        "rate": 4010.35
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 276.72
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.33,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.18,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "6.37",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "7736",
+        "desc": "Extruded burnt flyash clay sewer bricks conforming to I.S 4885 - 1988",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 5400.0
+      },
+      {
+        "code": "3.3",
+        "desc": "Rate as per item no 3.3 SH Mortar",
+        "unit": "cum",
+        "qty": 0.25,
+        "rate": 4183.05
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.487,
+        "rate": 276.72
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "5.9.9",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 11309.95,
+    "resources": [
+      {
+        "code": "SH : Reinforced cement concrete work",
+        "desc": "sqm",
+        "unit": "2.25",
+        "qty": 1713.2,
+        "rate": 3854.7
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.42,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.42,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.86,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "6.38",
+    "unit": "nos",
+    "basis": 2.0,
+    "say": null,
+    "resources": [
+      {
+        "code": "8655",
+        "desc": "Autoclaved aerated cement (AAC) blocks.",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 2600.0
+      },
+      {
+        "code": "3.9",
+        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.15,
+        "rate": 4010.35
+      },
+      {
+        "code": "2208",
+        "desc": "Carriage of Lime",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 103.77
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.37,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.2,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "5.22.1",
+    "unit": "nos",
+    "basis": 1.0,
+    "say": 8227.35,
+    "resources": [
+      {
+        "code": "SH : Reinforced cement concrete work",
+        "desc": "kg",
+        "unit": "13.20",
+        "qty": 82.1,
+        "rate": 1083.72
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.40",
+    "unit": "kg",
+    "basis": 9.3,
+    "say": 853.5,
+    "resources": [
+      {
+        "code": "8656",
+        "desc": "Gypsum panel 666 X 500 X 100 mm size.",
+        "unit": "sqm",
+        "qty": 10.0,
+        "rate": 480.0
+      },
+      {
+        "code": "8657",
+        "desc": "Bonding plaster for Gypsum panel.",
+        "unit": "kg",
+        "qty": 25.0,
+        "rate": 25.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries & scaffolding",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.5,
+        "rate": 738.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 1.0,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.41",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 129.15,
+    "resources": [
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.73,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.44",
+    "unit": "m",
+    "basis": 10.0,
+    "say": 52.0,
+    "resources": [
+      {
+        "code": "9999",
+        "desc": "Excavation and disposal of surplus earth",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "2602",
+        "desc": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+        "unit": "1000 Nos",
+        "qty": 0.046,
+        "rate": 4500.0
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.046,
+        "rate": 276.72
+      },
+      {
+        "code": "3.4",
+        "desc": "Rate as per Item Number 3.4 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.0036,
+        "rate": 3528.85
+      },
+      {
+        "code": "0155",
+        "desc": "Mason (average)",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 709.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 0.1,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.03,
+        "rate": 617.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      }
+    ]
+  },
+  {
+    "code": "6.45.1",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 941.5,
+    "resources": [
+      {
+        "code": "7737",
+        "desc": "Fly ash bricks conforming to I.S. 12894",
+        "unit": "1000 Nos",
+        "qty": 0.565,
+        "rate": 4300.0
+      },
+      {
+        "code": "3.8",
+        "desc": "Rate as per Item Number 3.8 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.28,
+        "rate": 4664.55
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.565,
+        "rate": 276.72
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries & Scaffolding",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.29,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.45.2",
+    "unit": "sqm",
+    "basis": 10.0,
+    "say": 917.0,
+    "resources": [
+      {
+        "code": "3.9",
+        "desc": "Rate as per Item Number 3.9 of SH: Mortars",
+        "unit": "cum",
+        "qty": 0.28,
+        "rate": 4010.35
+      },
+      {
+        "code": "2201",
+        "desc": "Carriage of Bricks",
+        "unit": "1000 Nos",
+        "qty": 0.565,
+        "rate": 276.72
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries & Scaffolding",
+        "unit": "L.S.",
+        "qty": 13.52,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1st class",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.6,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 2.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0101",
+        "desc": "Bhisti",
+        "unit": "day",
+        "qty": 0.7,
+        "rate": 617.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.29,
+        "rate": 558.0
+      }
+    ]
+  },
+  {
+    "code": "6.47",
+    "unit": "cum",
+    "basis": 1.0,
+    "say": 6636.95,
+    "resources": [
+      {
+        "code": "8655",
+        "desc": "Autoclaved areated cement (AAC) blocks",
+        "unit": "cum",
+        "qty": 1.0,
+        "rate": 2600.0
+      },
+      {
+        "code": "0357",
+        "desc": "Polymer modified adhesive mortar",
+        "unit": "Kg",
+        "qty": 30.0,
+        "rate": 15.0
+      },
+      {
+        "code": "9999",
+        "desc": "Sundries",
+        "unit": "L.S.",
+        "qty": 2.73,
+        "rate": 2.0
+      },
+      {
+        "code": "0123",
+        "desc": "Mason (brick layer) 1 st class",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 738.0
+      },
+      {
+        "code": "0124",
+        "desc": "Mason (brick layer) 2nd class",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 679.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.37,
+        "rate": 558.0
+      },
+      {
+        "code": "0115",
+        "desc": "Coolie",
+        "unit": "day",
+        "qty": 1.13,
+        "rate": 558.0
+      }
+    ]
+  }
+]
