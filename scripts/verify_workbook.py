@@ -33,6 +33,7 @@ FORBIDDEN_365_FUNCS = [
 ]
 
 EXPECTED_SHEETS = [
+    'Vol_1_Cover',
     'Rates_Master', 'Global_Factors', 'Labour_Machinery_Productivity', 'Sundries_Reference',
     'Resolved_Cross_Volume_Items',
     '01_Carriage_of_Materials', '02_Earth_Work', '03_Mortars', '04_Concrete_Work',
@@ -156,13 +157,27 @@ def run_audits():
     total_checks += 1
     print("\n[CHECK 4] Defensive Sheet Protection & Cell Locking (12 Builders)...")
     protection_issues = []
-    trade_sheets = sheet_names[5:]  # Sub-heads 01-12 (5 infrastructure sheets precede them)
+    # Sub-heads 01-12 only. Anchored by name (not a fixed index offset) so an
+    # infrastructure sheet added later (e.g. Vol_1_Cover) can't silently shift
+    # this slice and sweep a non-trade sheet like Resolved_Cross_Volume_Items in.
+    _trade_start = sheet_names.index('01_Carriage_of_Materials')
+    trade_sheets = sheet_names[_trade_start:_trade_start + 12]
+
+    # 02_Earth_Work has its own bespoke "Custom Mode" feature (see its own
+    # D16 cell text): Table 2A's resource rows (R_RES_FIRST-R_RES_LAST,
+    # columns B/F/G) are deliberately left unlocked so a user can press
+    # Delete and type a resource code/qty/rate directly, overriding the
+    # DSR-derived formula. This is a documented feature, not a defect -
+    # exempt exactly those cells, nothing else, from the lock requirement.
+    from scripts.trade_builder_earth import R_RES_FIRST as _EW_RES_FIRST, R_RES_LAST as _EW_RES_LAST
+    _EW_CUSTOM_OVERRIDE_COLS = {2, 6, 7}  # B, F, G
+
     for ts_name in trade_sheets:
         ws = wb[ts_name]
         if not ws.protection.sheet:
             protection_issues.append(f"{ts_name}: Sheet protection is NOT enabled.")
             continue
-            
+
         # Verify unlocked inputs and locked formulas
         unlocked_inputs = 0
         locked_formulas = 0
@@ -170,12 +185,17 @@ def run_audits():
             for cell in row:
                 if str(cell.value or "").startswith("="):
                     if not cell.protection.locked:
-                        protection_issues.append(f"{ts_name} {cell.coordinate}: Formula is UNLOCKED!")
+                        if (ts_name == "02_Earth_Work"
+                                and _EW_RES_FIRST <= cell.row <= _EW_RES_LAST
+                                and cell.column in _EW_CUSTOM_OVERRIDE_COLS):
+                            unlocked_inputs += 1  # documented Custom Mode override cell
+                        else:
+                            protection_issues.append(f"{ts_name} {cell.coordinate}: Formula is UNLOCKED!")
                     else:
                         locked_formulas += 1
                 elif not cell.protection.locked:
                     unlocked_inputs += 1
-                        
+
         print(f"  - {ts_name:25s}: Protected=True, Unlocked Inputs={unlocked_inputs}, Locked Formulas={locked_formulas}")
         
     if not protection_issues:
@@ -195,6 +215,10 @@ def run_audits():
             for _c in _row:
                 if _c.protection is not None and _c.protection.locked is False:
                     if isinstance(_c.value, str) and _c.value.startswith("="):
+                        if (_ws.title == "02_Earth_Work"
+                                and _EW_RES_FIRST <= _c.row <= _EW_RES_LAST
+                                and _c.column in _EW_CUSTOM_OVERRIDE_COLS):
+                            continue  # documented Custom Mode override cell, see CHECK 4
                         exposed.append("%s!%s" % (_ws.title, _c.coordinate))
     if unprotected:
         print("  [FAIL] Sheet protection is off on: %s" % ", ".join(unprotected))
@@ -283,7 +307,16 @@ def run_audits():
         ws = wb[ts_name]
         from scripts.trade_layout import R_AUDIT as STD_AUDIT
         from scripts.trade_builder_carr import R_AUDIT as CARR_AUDIT
-        audit_coord = "B%d" % (CARR_AUDIT if ts_name == "01_Carriage_of_Materials" else STD_AUDIT)
+        from scripts.trade_builder_earth import R_AUDIT as EARTH_AUDIT
+        # 01_Carriage_of_Materials and 02_Earth_Work each have their own bespoke
+        # builder script with its own row/column layout, distinct from the
+        # shared trade_layout.py convention the other 10 sheets use.
+        if ts_name == "01_Carriage_of_Materials":
+            audit_coord = "B%d" % CARR_AUDIT
+        elif ts_name == "02_Earth_Work":
+            audit_coord = "D%d" % EARTH_AUDIT
+        else:
+            audit_coord = "B%d" % STD_AUDIT
         audit_val = str(ws[audit_coord].value or "")
         if not audit_val.startswith("="):
             print(f"  [FAIL] {ts_name} cell {audit_coord} is not a formula: {audit_val}")
@@ -329,8 +362,12 @@ def run_audits():
                                 # Check 255 character limit for string literals
                                 if len(f1.text) > 255:
                                     dv_errors.append(f"{item} sqref={sqref}: formula1 length {len(f1.text)} exceeds Excel 255-char limit!")
-                                # Check defined names
-                                if f1.text.startswith('='):
+                                # Check defined names - only flag formula1 values that are a
+                                # BARE identifier (a genuine named-range reference). A plain
+                                # cell/range address ($AP$109:$AP$115) or a full formula
+                                # (OFFSET(...), MATCH(...)) is resolved by Excel directly and
+                                # never needs to exist in wb.defined_names.
+                                if f1.text.startswith('=') and re.fullmatch(r"[A-Za-z_][A-Za-z0-9_.]*", f1.text[1:]):
                                     dn_target = f1.text[1:]
                                     if dn_target not in wb.defined_names:
                                         dv_errors.append(f"{item} sqref={sqref}: defined name '{dn_target}' not found in workbook defined_names!")
@@ -419,7 +456,13 @@ def run_audits():
                                       R_P2_FIRST, R_P2_LAST, R_KEY, R_NOMEN)
     VALID_IMPACT = {"DRIVES COST", "NOMENCLATURE ONLY", "USER-SUPPLIED COST"}
     panel_ok = True
-    std_builders = [s for s in sheet_names if s[:2].isdigit() and s != "01_Carriage_of_Materials"]
+    # 01_Carriage_of_Materials and 02_Earth_Work each have their own bespoke
+    # builder with a different UI paradigm (Carriage's own simulator; Earth
+    # Work's numbered-Steps decision-tree composer) and never had a "1. PANEL 1"
+    # / "2. PANEL 2" header to begin with - this check only applies to the 10
+    # sheets sharing the generic trade_layout.py convention.
+    std_builders = [s for s in sheet_names
+                    if s[:2].isdigit() and s not in ("01_Carriage_of_Materials", "02_Earth_Work")]
     for name in std_builders:
         ws = wb[name]
         if not str(ws.cell(row=R_P1_HEAD, column=1).value or "").startswith("1. PANEL 1"):

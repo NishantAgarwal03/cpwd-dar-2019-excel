@@ -94,6 +94,9 @@ def build_vol1_cover(wb, styles):
                    'F': 16, 'G': 18, 'H': 42, 'I': 14}.items():
         ws.column_dimensions[col].width = w
 
+    # Static instructions only, nothing here is meant to be edited.
+    lock_sheet(ws)
+
     print('  Built Vol_1_Cover sheet')
 
 

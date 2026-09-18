@@ -123,8 +123,12 @@ def check_cross_volume(wb, verbose=True):
         msgs.append(f"  [PASS] All {len(RESOLVED_ITEMS)} resolved items published as defined names "
                     f"({', '.join(i['key'] for i in RESOLVED_ITEMS)}).")
 
+    # 01_Carriage_of_Materials and 02_Earth_Work each have their own bespoke
+    # builder script with its own row/column layout, distinct from the shared
+    # trade_layout.py convention (R_A_TOTAL/R_W/etc.) the other 10 sheets use -
+    # this generic (W-A) markup-exclusion wiring check only applies to those 10.
     builders = [s for s in wb.sheetnames
-                if s[:2].isdigit() and s != '01_Carriage_of_Materials']
+                if s[:2].isdigit() and s not in ('01_Carriage_of_Materials', '02_Earth_Work')]
     wired = 0
     for name in builders:
         ws = wb[name]
