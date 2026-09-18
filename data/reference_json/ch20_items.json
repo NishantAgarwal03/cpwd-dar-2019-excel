@@ -761,7 +761,7 @@
     "desc": "750 mm dia piles",
     "unit": "m",
     "basis": 15.0,
-    "say": 4482.3,
+    "say": 19670.35,
     "resources": [
       {
         "code": "5.33.1",
@@ -2281,7 +2281,7 @@
   {
     "code": "20.9",
     "desc": "Integrity testing of Pile using Low Strain/ Sonic Integrity Test/ Sonic Echo Test method in accordance with IS 14893 including surface prepa",
-    "unit": "nos",
+    "unit": "pit",
     "basis": 1.0,
     "say": 938.9,
     "resources": [

@@ -2,7 +2,7 @@
   {
     "code": "17.1.1",
     "desc": "White Vitreous china Orissa pattern W.C. pan of size 580x440 mm with integral type foot rests",
-    "unit": "nos",
+    "unit": "pan",
     "basis": 1.0,
     "say": 5421.5,
     "resources": [
@@ -67,7 +67,7 @@
   {
     "code": "17.1.2",
     "desc": "Stainless Steel AISI-304(18/8) Orissa pattern W.C. pan of size 585x480 mm with flush pipe and integrated type foot rests",
-    "unit": "nos",
+    "unit": "pan",
     "basis": 1.0,
     "say": 9836.7,
     "resources": [
@@ -132,7 +132,7 @@
   {
     "code": "17.2.1",
     "desc": "W.C. pan with ISI marked white solid plastic seat and lid",
-    "unit": "nos",
+    "unit": "pan",
     "basis": 1.0,
     "say": 5260.95,
     "resources": [
@@ -197,7 +197,7 @@
   {
     "code": "17.2.2",
     "desc": "W.C. pan with ISI marked black solid plastic seat and lid",
-    "unit": "nos",
+    "unit": "pan",
     "basis": 1.0,
     "say": 5140.55,
     "resources": [
@@ -262,7 +262,7 @@
   {
     "code": "17.3.1",
     "desc": "W.C. pan with ISI marked white solid plastic seat and lid",
-    "unit": "nos",
+    "unit": "pan",
     "basis": 1.0,
     "say": 6685.0,
     "resources": [
@@ -355,7 +355,7 @@
   {
     "code": "17.3.2",
     "desc": "W.C. pan with ISI marked black solid plastic seat and lid",
-    "unit": "nos",
+    "unit": "pan",
     "basis": 1.0,
     "say": 6564.6,
     "resources": [
@@ -448,7 +448,7 @@
   {
     "code": "17.4.1",
     "desc": "One urinal basin with 5 litre white P.V.C. automatic flushing cistern",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 4982.25,
     "resources": [
@@ -534,7 +534,7 @@
   {
     "code": "17.4.2",
     "desc": "Range of two urinal basins with 5 litre white P.V.C. automatic flushing cistern",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 7677.75,
     "resources": [
@@ -620,7 +620,7 @@
   {
     "code": "17.4.3",
     "desc": "Range of three urinal basins with 10litre white P.V.C. automatic flushing cistern",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 10605.3,
     "resources": [
@@ -706,7 +706,7 @@
   {
     "code": "17.4.4",
     "desc": "Range of four urinal basins with 10 litre white P.V.C. automatic flushing cistern",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 14648.5,
     "resources": [
@@ -792,7 +792,7 @@
   {
     "code": "17.5.1",
     "desc": "Single half stall urinal with 5 litre P.V.C. automatic flushing cistern",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 9360.6,
     "resources": [
@@ -878,7 +878,7 @@
   {
     "code": "17.5.2",
     "desc": "Range of two half stall urinals with 5 litre P.V.C. automatic flushing cistern",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 14020.75,
     "resources": [
@@ -964,7 +964,7 @@
   {
     "code": "17.5.3",
     "desc": "Range of three half stall urinals with 10 litre P.V.C. automatic flushing cistern",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 17307.55,
     "resources": [
@@ -1050,7 +1050,7 @@
   {
     "code": "17.5.4",
     "desc": "Range of four half stall urinals with 10 litre P.V.C. automatic flushing cistern",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 20448.85,
     "resources": [
@@ -1136,7 +1136,7 @@
   {
     "code": "17.6.1",
     "desc": "Single squatting plate with 5 litre P.V.C. automatic flushing cistern",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 7240.55,
     "resources": [
@@ -1215,7 +1215,7 @@
   {
     "code": "17.6.2",
     "desc": "Range of two squatting plates with 5 litre P.V.C. automatic flushing cistern",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 10572.45,
     "resources": [
@@ -1294,7 +1294,7 @@
   {
     "code": "17.6.3",
     "desc": "Range of three squatting plates with 10 litre P.V.C. automatic flushing cistern",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 13931.7,
     "resources": [
@@ -1373,7 +1373,7 @@
   {
     "code": "17.6.4",
     "desc": "Range of four squatting plates with 10 litre P.V.C. automatic flushing cistern",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 16718.8,
     "resources": [
@@ -1452,7 +1452,7 @@
   {
     "code": "17.7.1",
     "desc": "White Vitreous China Wash basin size 630x450 mm with a pair of 15 mm C.P. brass pillar taps",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 3087.7,
     "resources": [
@@ -1538,7 +1538,7 @@
   {
     "code": "17.7.2",
     "desc": "White Vitreous China Wash basin size 630x450 mm with a single 15 mm C.P. brass pillar tap",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 2751.3,
     "resources": [
@@ -1624,7 +1624,7 @@
   {
     "code": "17.7.3",
     "desc": "White Vitreous China Wash basin size 550x400 mm with a pair of 15 mm C.P. brass pillar taps",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 2846.9,
     "resources": [
@@ -1710,7 +1710,7 @@
   {
     "code": "17.7.4",
     "desc": "White Vitreous China Flat back wash basin size 550x 400 mm with single 15 mm C.P. brass pillar tap",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 2510.45,
     "resources": [
@@ -1796,7 +1796,7 @@
   {
     "code": "17.7.5",
     "desc": "White Vitreous China Angle back wash basin size 600 x 480 mm with single 15mm C.P. brass pillar tap",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 2751.3,
     "resources": [
@@ -1882,7 +1882,7 @@
   {
     "code": "17.7.6",
     "desc": "White Vitreous China Angle back wash basin size 400 x 400 mm with single 15 mm C.P. brass pillar tap",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 2349.9,
     "resources": [
@@ -1968,7 +1968,7 @@
   {
     "code": "17.7.7",
     "desc": "White Vitreous China Flat back wash basin size 450x 300 mm with single 15mm C.P. brass pillar tap",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 2196.05,
     "resources": [
@@ -2054,7 +2054,7 @@
   {
     "code": "17.7.8",
     "desc": "White Vitreous China Surgeon type wash basin of size 660x460 mm with a pair of 15 mm C.P. brass pillar taps with elbow including operated le",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 4052.35,
     "resources": [
@@ -2140,7 +2140,7 @@
   {
     "code": "17.7.9",
     "desc": "White Vitreous China Surgeon type wash basin of size 660x460 mm with single 15 mm C.P. brass pillar taps with elbow operated levers ISI Mark",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 3417.55,
     "resources": [
@@ -2226,7 +2226,7 @@
   {
     "code": "17.7.10",
     "desc": "Stainless Steel AISI-304(18/8) Round basin 405x355 mm with single 15 mm C.P. brass pillar tap",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 3788.2,
     "resources": [
@@ -2312,9 +2312,9 @@
   {
     "code": "17.7.11",
     "desc": "Stainless Steel AISI-304(18/8) Wash basin 530x345 mm with single 15 mm C.P. brass pillar tap",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
-    "say": 4457.15,
+    "say": 2398.7,
     "resources": [
       {
         "code": "7807",
@@ -2552,7 +2552,7 @@
   {
     "code": "17.8",
     "desc": "Providing and fixing white vitreous china pedestal for wash basin completely recessed at the back for the reception of pipes and fittings.",
-    "unit": "nos",
+    "unit": "pedestal",
     "basis": 1.0,
     "say": 1420.15,
     "resources": [
@@ -2582,7 +2582,7 @@
   {
     "code": "17.9.1",
     "desc": "White glazed fire clay kitchen sink of size 600x450x 250 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 3163.25,
     "resources": [
@@ -2668,7 +2668,7 @@
   {
     "code": "17.10.1.1",
     "desc": "510x1040 mm bowl depth 250 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 5155.95,
     "resources": [
@@ -2733,7 +2733,7 @@
   {
     "code": "17.10.1.2",
     "desc": "510x1040 mm bowl depth 225 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 5851.7,
     "resources": [
@@ -2798,7 +2798,7 @@
   {
     "code": "17.10.1.3",
     "desc": "510x1040 mm bowl depth 200 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 5584.1,
     "resources": [
@@ -2863,7 +2863,7 @@
   {
     "code": "17.10.1.4",
     "desc": "510x1040 mm bowl depth 178 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 5182.7,
     "resources": [
@@ -2928,7 +2928,7 @@
   {
     "code": "17.10.2.1",
     "desc": "610x510 mm bowl depth 200 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 3631.55,
     "resources": [
@@ -2993,7 +2993,7 @@
   {
     "code": "17.10.2.2",
     "desc": "610x460 mm bowl depth 200 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 2828.75,
     "resources": [
@@ -3058,7 +3058,7 @@
   {
     "code": "17.10.2.3",
     "desc": "470x420 mm bowl depth 178 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 2628.1,
     "resources": [
@@ -3123,7 +3123,7 @@
   {
     "code": "17.11.1",
     "desc": "Size 450x300x150 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 4122.55,
     "resources": [
@@ -3223,7 +3223,7 @@
   {
     "code": "17.11.2",
     "desc": "Size 600x450x200 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 5460.45,
     "resources": [
@@ -3323,7 +3323,7 @@
   {
     "code": "17.12.1",
     "desc": "White glazed fire clay draining board of size 600x450x 25 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 1337.8,
     "resources": [
@@ -3388,7 +3388,7 @@
   {
     "code": "17.13.1",
     "desc": "Long pattern W.C. pan of size 580 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 1541.05,
     "resources": [
@@ -3432,7 +3432,7 @@
   {
     "code": "17.13.2",
     "desc": "Orissa pattern W.C. pan of size 580x440 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 2544.5,
     "resources": [
@@ -3476,7 +3476,7 @@
   {
     "code": "17.14.1",
     "desc": "Orissa pattern W.C. pan 580x440 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 842.9,
     "resources": [
@@ -3492,7 +3492,7 @@
   {
     "code": "17.15",
     "desc": "Providing and fixing white vitreous china pedestal type (European type/ wash down type) water closet pan.",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 2276.95,
     "resources": [
@@ -3536,9 +3536,9 @@
   {
     "code": "17.16",
     "desc": "Extra for using coloured pedestal type W.C pan (European type) with low level cistern of same colour instead of white vitreous china W.C pan",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
-    "say": 260.9,
+    "say": 297.55,
     "resources": [
       {
         "code": "7105",
@@ -3573,7 +3573,7 @@
   {
     "code": "17.17.1",
     "desc": "250x130x30 mm",
-    "unit": "nos",
+    "unit": "pair",
     "basis": 1.0,
     "say": 214.6,
     "resources": [
@@ -3596,7 +3596,7 @@
   {
     "code": "17.17.2",
     "desc": "250x125x25 mm",
-    "unit": "nos",
+    "unit": "pair",
     "basis": 1.0,
     "say": 214.6,
     "resources": [
@@ -3626,7 +3626,7 @@
   {
     "code": "17.18.1",
     "desc": "10 litre capacity - White",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 999.95,
     "resources": [
@@ -3663,7 +3663,7 @@
   {
     "code": "17.18.2",
     "desc": "10 litre capacity - coloured",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 971.4,
     "resources": [
@@ -3700,7 +3700,7 @@
   {
     "code": "17.19.1",
     "desc": "10 litre (full flush) capacity-white",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 1839.7,
     "resources": [
@@ -3737,7 +3737,7 @@
   {
     "code": "17.19.2",
     "desc": "10 litre (full flush) capacity-coloured",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 2441.8,
     "resources": [
@@ -3774,7 +3774,7 @@
   {
     "code": "17.20.1",
     "desc": "White solid plastic seat with lid",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 571.0,
     "resources": [
@@ -3797,7 +3797,7 @@
   {
     "code": "17.20.2",
     "desc": "Black solid plastic seat with lid",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 450.6,
     "resources": [
@@ -3820,7 +3820,7 @@
   {
     "code": "17.20.3",
     "desc": "Coloured (other than black & white) solid plastic seat with lid",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 557.65,
     "resources": [
@@ -3843,9 +3843,9 @@
   {
     "code": "17.22",
     "desc": "Providing and fixing G.I. inlet connection for flush pipe connecting with W.C. pan.",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
-    "say": 116.1,
+    "say": 6113.6,
     "resources": [
       {
         "code": "1614",
@@ -3894,7 +3894,7 @@
   {
     "code": "17.23",
     "desc": "Providing and fixing white vitreous china flat back or wall corner type lipped front urinal basin of 430x260x350 mm or 340x410x265 mm sizes ",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 1299.75,
     "resources": [
@@ -3931,7 +3931,7 @@
   {
     "code": "17.24",
     "desc": "Providing and fixing white vitreous china squatting plate urinal with integral rim longitudinal flush pipe.",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 3207.5,
     "resources": [
@@ -3982,7 +3982,7 @@
   {
     "code": "17.25.1",
     "desc": "Flat back wash basin of size 630x450 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 1139.4,
     "resources": [
@@ -4012,7 +4012,7 @@
   {
     "code": "17.25.2",
     "desc": "Flat back wash basin of size 550x400 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 898.6,
     "resources": [
@@ -4042,37 +4042,7 @@
   {
     "code": "17.25.3",
     "desc": "Angle back wash basin of size 600x480 mm",
-    "unit": "nos",
-    "basis": 1.0,
-    "say": 1139.4,
-    "resources": [
-      {
-        "code": "1949",
-        "desc": "Vitreous china angle back wash basin 600x480 mm",
-        "unit": "each",
-        "qty": 1.0,
-        "rate": 725.0
-      },
-      {
-        "code": "9999",
-        "desc": "Fixing charges",
-        "unit": "L.S.",
-        "qty": 53.82,
-        "rate": 2.0
-      },
-      {
-        "code": "9977",
-        "desc": "Carriage of materials",
-        "unit": "L.S.",
-        "qty": 9.49,
-        "rate": 2.0
-      }
-    ]
-  },
-  {
-    "code": "17.25.3",
-    "desc": "Angle back wash basin of size 600x480 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 1139.4,
     "resources": [
@@ -4102,7 +4072,7 @@
   {
     "code": "17.25.4",
     "desc": "Angle back wash basin of size 400x400 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 738.05,
     "resources": [
@@ -4132,7 +4102,7 @@
   {
     "code": "17.25.5",
     "desc": "Flat back wash basin of size 450x300 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 584.15,
     "resources": [
@@ -4162,7 +4132,7 @@
   {
     "code": "17.25.6",
     "desc": "Surgeon type wash basin of size 660x460 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 1507.35,
     "resources": [
@@ -4192,7 +4162,7 @@
   {
     "code": "17.26.1",
     "desc": "White glazed fire clay sink of size 600x450x250 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 1853.65,
     "resources": [
@@ -4222,7 +4192,7 @@
   {
     "code": "17.27.1",
     "desc": "Size 450x300x150 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 2143.95,
     "resources": [
@@ -4252,7 +4222,7 @@
   {
     "code": "17.27.2",
     "desc": "Size 600x450x200 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 3481.9,
     "resources": [
@@ -4282,7 +4252,7 @@
   {
     "code": "17.28.1.1",
     "desc": "32 mm dia",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 87.7,
     "resources": [
@@ -4305,7 +4275,7 @@
   {
     "code": "17.28.1.2",
     "desc": "40 mm dia",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 98.4,
     "resources": [
@@ -4328,7 +4298,7 @@
   {
     "code": "17.28.2.1",
     "desc": "32 mm dia",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 101.1,
     "resources": [
@@ -4351,7 +4321,7 @@
   {
     "code": "17.28.2.2",
     "desc": "40 mm dia",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 101.1,
     "resources": [
@@ -4374,7 +4344,7 @@
   {
     "code": "17.29",
     "desc": "Providing and fixing 100 mm sand cast Iron grating for gully trap.",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 44.6,
     "resources": [
@@ -4397,7 +4367,7 @@
   {
     "code": "17.30",
     "desc": "Providing and fixing in position 25 mm diameter mosquito proof coupling of approved municipal design.",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 45.0,
     "resources": [
@@ -4420,7 +4390,7 @@
   {
     "code": "17.31",
     "desc": "Providing and fixing 600x450 mm beveled edge mirror of superior glass (of approved quality) complete with 6 mm thick hard board ground fixed",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 1283.05,
     "resources": [
@@ -4485,8 +4455,8 @@
   {
     "code": "17.32.1",
     "desc": "Circular shape 450 mm dia",
-    "unit": "sqm",
-    "basis": 0.2025,
+    "unit": "no",
+    "basis": 1.0,
     "say": 1242.0,
     "resources": [
       {
@@ -4550,8 +4520,8 @@
   {
     "code": "17.32.2",
     "desc": "Rectangular shape 453x357 mm",
-    "unit": "sqm",
-    "basis": 0.1617,
+    "unit": "no",
+    "basis": 1.0,
     "say": 1120.25,
     "resources": [
       {
@@ -4615,8 +4585,8 @@
   {
     "code": "17.32.3",
     "desc": "Oval shape 450x350 mm (outer dimensions)",
-    "unit": "5",
-    "basis": 0.157,
+    "unit": "no",
+    "basis": 1.0,
     "say": 1185.6,
     "resources": [
       {
@@ -4680,8 +4650,8 @@
   {
     "code": "17.32.4",
     "desc": "Rectangular shape 1500x450 mm",
-    "unit": "sqm",
-    "basis": 0.675,
+    "unit": "no",
+    "basis": 1.0,
     "say": 1786.55,
     "resources": [
       {
@@ -4745,7 +4715,7 @@
   {
     "code": "17.33",
     "desc": "Providing and fixing 600x120x5 mm glass shelf with edges round off, supported on anodised aluminium angle frame with C.P. brass brackets and",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 841.8,
     "resources": [
@@ -4796,7 +4766,7 @@
   {
     "code": "17.34.1",
     "desc": "C.P. brass",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 583.75,
     "resources": [
@@ -4847,7 +4817,7 @@
   {
     "code": "17.34.2",
     "desc": "Vitreous china",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 426.15,
     "resources": [
@@ -5590,7 +5560,7 @@
   {
     "code": "17.38.1.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 461.65,
     "resources": [
@@ -5620,7 +5590,7 @@
   {
     "code": "17.38.1.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 461.65,
     "resources": [
@@ -5650,7 +5620,7 @@
   {
     "code": "17.38.1.3",
     "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 548.6,
     "resources": [
@@ -5680,7 +5650,7 @@
   {
     "code": "17.38.2.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 371.4,
     "resources": [
@@ -5710,7 +5680,7 @@
   {
     "code": "17.38.2.2",
     "desc": "Sand cast iron S&S as per IS- 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 384.75,
     "resources": [
@@ -5740,7 +5710,7 @@
   {
     "code": "17.38.2.3",
     "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 438.3,
     "resources": [
@@ -5770,7 +5740,7 @@
   {
     "code": "17.39.1.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 381.35,
     "resources": [
@@ -5793,7 +5763,7 @@
   {
     "code": "17.39.1.2",
     "desc": "Sand cast iron S&S as per IS : 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 390.75,
     "resources": [
@@ -5816,7 +5786,7 @@
   {
     "code": "17.39.1.3",
     "desc": "Hubless centrifugally cast (spun) iron pipes epoxy coated inside & outside IS:15905",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 343.9,
     "resources": [
@@ -5839,7 +5809,7 @@
   {
     "code": "17.39.2.1",
     "desc": "Sand cast iron S&S as per IS -1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 309.85,
     "resources": [
@@ -5862,7 +5832,7 @@
   {
     "code": "17.39.2.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 289.75,
     "resources": [
@@ -5885,7 +5855,7 @@
   {
     "code": "17.39.2.3",
     "desc": "Hubless centrifugally cast (spun) iron pipes epoxy coated inside & outside IS:15905",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 242.95,
     "resources": [
@@ -5908,7 +5878,7 @@
   {
     "code": "17.40.1.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 500.45,
     "resources": [
@@ -5931,7 +5901,7 @@
   {
     "code": "17.40.1.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 432.2,
     "resources": [
@@ -5954,7 +5924,7 @@
   {
     "code": "17.40.2.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 395.45,
     "resources": [
@@ -5977,7 +5947,7 @@
   {
     "code": "17.40.2.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 363.35,
     "resources": [
@@ -6000,7 +5970,7 @@
   {
     "code": "17.41.1.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 1016.55,
     "resources": [
@@ -6030,7 +6000,7 @@
   {
     "code": "17.41.1.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 882.75,
     "resources": [
@@ -6060,7 +6030,7 @@
   {
     "code": "17.41.2.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 719.25,
     "resources": [
@@ -6090,7 +6060,7 @@
   {
     "code": "17.41.2.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 692.5,
     "resources": [
@@ -6120,7 +6090,7 @@
   {
     "code": "17.42.1.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 825.55,
     "resources": [
@@ -6143,7 +6113,7 @@
   {
     "code": "17.42.1.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 865.7,
     "resources": [
@@ -6166,7 +6136,7 @@
   {
     "code": "17.42.1.3",
     "desc": "Hubless centrifugally cast (spun) iron pipes epoxy coated inside & outside IS:15905",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 718.55,
     "resources": [
@@ -6189,7 +6159,7 @@
   {
     "code": "17.42.2.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 539.95,
     "resources": [
@@ -6212,7 +6182,7 @@
   {
     "code": "17.42.2.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 647.0,
     "resources": [
@@ -6235,7 +6205,7 @@
   {
     "code": "17.42.2.3",
     "desc": "Hubless centrifugally cast (spun) iron pipes epoxy coated inside & outside IS:15905",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 396.8,
     "resources": [
@@ -6258,7 +6228,7 @@
   {
     "code": "17.43.1.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 602.15,
     "resources": [
@@ -6288,7 +6258,7 @@
   {
     "code": "17.43.1.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 722.55,
     "resources": [
@@ -6318,7 +6288,7 @@
   {
     "code": "17.43.2.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 478.4,
     "resources": [
@@ -6348,7 +6318,7 @@
   {
     "code": "17.43.2.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 549.35,
     "resources": [
@@ -6378,7 +6348,7 @@
   {
     "code": "17.44.1.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 517.85,
     "resources": [
@@ -6401,7 +6371,7 @@
   {
     "code": "17.44.1.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 667.7,
     "resources": [
@@ -6424,7 +6394,7 @@
   {
     "code": "17.44.1.3",
     "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 571.35,
     "resources": [
@@ -6447,7 +6417,7 @@
   {
     "code": "17.44.2.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 400.8,
     "resources": [
@@ -6470,7 +6440,7 @@
   {
     "code": "17.44.2.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 470.4,
     "resources": [
@@ -6493,7 +6463,7 @@
   {
     "code": "17.44.2.3",
     "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 316.55,
     "resources": [
@@ -6516,7 +6486,7 @@
   {
     "code": "17.45.1.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 996.8,
     "resources": [
@@ -6546,7 +6516,7 @@
   {
     "code": "17.45.1.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 1197.5,
     "resources": [
@@ -6576,7 +6546,7 @@
   {
     "code": "17.46.1.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 859.0,
     "resources": [
@@ -6599,7 +6569,7 @@
   {
     "code": "17.46.1.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 1106.55,
     "resources": [
@@ -6622,7 +6592,7 @@
   {
     "code": "17.46.1.3",
     "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 571.35,
     "resources": [
@@ -6645,7 +6615,7 @@
   {
     "code": "17.47.1.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 796.15,
     "resources": [
@@ -6675,7 +6645,7 @@
   {
     "code": "17.47.1.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 916.55,
     "resources": [
@@ -6705,7 +6675,7 @@
   {
     "code": "17.48.1.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 697.1,
     "resources": [
@@ -6728,7 +6698,7 @@
   {
     "code": "17.48.1.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 798.8,
     "resources": [
@@ -6751,7 +6721,7 @@
   {
     "code": "17.48.1.3",
     "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 537.9,
     "resources": [
@@ -6774,7 +6744,7 @@
   {
     "code": "17.49.1.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 772.05,
     "resources": [
@@ -6797,7 +6767,7 @@
   {
     "code": "17.49.1.2",
     "desc": "Sand cast iron S&S as per IS 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 745.3,
     "resources": [
@@ -6820,7 +6790,7 @@
   {
     "code": "17.49.1.3",
     "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 872.4,
     "resources": [
@@ -6843,7 +6813,7 @@
   {
     "code": "17.49.2.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 577.45,
     "resources": [
@@ -6866,7 +6836,7 @@
   {
     "code": "17.49.2.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 597.5,
     "resources": [
@@ -6889,7 +6859,7 @@
   {
     "code": "17.50.1.1",
     "desc": "Sand cast iron S&S as per iron 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 584.75,
     "resources": [
@@ -6912,7 +6882,7 @@
   {
     "code": "17.50.1.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 604.8,
     "resources": [
@@ -6935,7 +6905,7 @@
   {
     "code": "17.50.1.3",
     "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 557.95,
     "resources": [
@@ -6958,7 +6928,7 @@
   {
     "code": "17.50.2.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 453.1,
     "resources": [
@@ -6981,7 +6951,7 @@
   {
     "code": "17.50.2.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 461.05,
     "resources": [
@@ -7004,7 +6974,7 @@
   {
     "code": "17.50.2.3",
     "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 376.75,
     "resources": [
@@ -7027,7 +6997,7 @@
   {
     "code": "17.51.1.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 798.8,
     "resources": [
@@ -7050,7 +7020,7 @@
   {
     "code": "17.51.1.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 1006.2,
     "resources": [
@@ -7073,7 +7043,7 @@
   {
     "code": "17.52.1.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 698.45,
     "resources": [
@@ -7096,7 +7066,7 @@
   {
     "code": "17.52.1.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 765.35,
     "resources": [
@@ -7119,7 +7089,7 @@
   {
     "code": "17.52.1.3",
     "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 611.5,
     "resources": [
@@ -7142,7 +7112,7 @@
   {
     "code": "17.53.1.1",
     "desc": "With 75 mm dia pipe",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 320.55,
     "resources": [
@@ -7165,7 +7135,7 @@
   {
     "code": "17.53.1.2",
     "desc": "With 100 mm dia pipe",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 514.55,
     "resources": [
@@ -7188,7 +7158,7 @@
   {
     "code": "17.53.2.1",
     "desc": "With 75 mm dia pipe",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 437.55,
     "resources": [
@@ -7211,7 +7181,7 @@
   {
     "code": "17.53.2.2",
     "desc": "With 100 mm dia pipe",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 548.6,
     "resources": [
@@ -7234,7 +7204,7 @@
   {
     "code": "17.53.3.1",
     "desc": "With 75 mm dia pipe",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 527.0,
     "resources": [
@@ -7257,9 +7227,9 @@
   {
     "code": "17.53.3.2",
     "desc": "With 100 mm dia pipe",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
-    "say": 656.75,
+    "say": 423.55,
     "resources": [
       {
         "code": "3717",
@@ -7308,7 +7278,7 @@
   {
     "code": "17.54.1.1",
     "desc": "With 75 mm dia pipe",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 329.9,
     "resources": [
@@ -7331,7 +7301,7 @@
   {
     "code": "17.54.2.1",
     "desc": "With 75 mm dia pipe",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 424.45,
     "resources": [
@@ -7354,9 +7324,9 @@
   {
     "code": "17.54.2.2",
     "desc": "With 100 mm dia pipe",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
-    "say": 564.95,
+    "say": 443.65,
     "resources": [
       {
         "code": "3708",
@@ -7405,7 +7375,7 @@
   {
     "code": "17.55.1.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 695.8,
     "resources": [
@@ -7435,7 +7405,7 @@
   {
     "code": "17.55.1.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 595.45,
     "resources": [
@@ -7465,7 +7435,7 @@
   {
     "code": "17.55.2.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 428.9,
     "resources": [
@@ -7495,7 +7465,7 @@
   {
     "code": "17.55.2.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 444.95,
     "resources": [
@@ -7525,7 +7495,7 @@
   {
     "code": "17.56.1.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 355.95,
     "resources": [
@@ -7548,7 +7518,7 @@
   {
     "code": "17.56.1.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 389.4,
     "resources": [
@@ -7571,7 +7541,7 @@
   {
     "code": "17.56.1.3",
     "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 397.4,
     "resources": [
@@ -7594,7 +7564,7 @@
   {
     "code": "17.56.2.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 284.4,
     "resources": [
@@ -7617,7 +7587,7 @@
   {
     "code": "17.56.2.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 309.85,
     "resources": [
@@ -7640,7 +7610,7 @@
   {
     "code": "17.57.1.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 365.3,
     "resources": [
@@ -7663,7 +7633,7 @@
   {
     "code": "17.57.1.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 409.45,
     "resources": [
@@ -7686,7 +7656,7 @@
   {
     "code": "17.57.2.1",
     "desc": "Sand cast iron S&S as per IS - 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 265.7,
     "resources": [
@@ -7709,9 +7679,9 @@
   {
     "code": "17.57.2.2",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
-    "say": 256.3,
+    "say": 363.35,
     "resources": [
       {
         "code": "3739",
@@ -7760,7 +7730,7 @@
   {
     "code": "17.58.1",
     "desc": "100 mm",
-    "unit": "nos",
+    "unit": "joint",
     "basis": 1.0,
     "say": 481.45,
     "resources": [
@@ -7818,7 +7788,7 @@
   {
     "code": "17.58.2",
     "desc": "75 mm",
-    "unit": "nos",
+    "unit": "joint",
     "basis": 1.0,
     "say": 407.9,
     "resources": [
@@ -7876,7 +7846,7 @@
   {
     "code": "17.58.3",
     "desc": "50 mm",
-    "unit": "nos",
+    "unit": "joint",
     "basis": 1.0,
     "say": 329.5,
     "resources": [
@@ -7934,7 +7904,7 @@
   {
     "code": "17.59.1",
     "desc": "100 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 126.5,
     "resources": [
@@ -7957,7 +7927,7 @@
   {
     "code": "17.59.2",
     "desc": "75 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 78.4,
     "resources": [
@@ -7980,7 +7950,7 @@
   {
     "code": "17.59.3",
     "desc": "50 mm",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 72.2,
     "resources": [
@@ -8003,7 +7973,7 @@
   {
     "code": "17.60.1.1",
     "desc": "Sand cast iron S&S as per IS: 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 1512.55,
     "resources": [
@@ -8047,7 +8017,7 @@
   {
     "code": "17.60.1.2",
     "desc": "Sand Cast Iron S&S as per IS: 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 1273.05,
     "resources": [
@@ -8091,7 +8061,7 @@
   {
     "code": "17.60.1.3",
     "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 758.65,
     "resources": [
@@ -8114,7 +8084,7 @@
   {
     "code": "17.60.2.1",
     "desc": "Sand cast iron S&S as per IS - 3989",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 1579.45,
     "resources": [
@@ -8158,7 +8128,7 @@
   {
     "code": "17.60.2.2",
     "desc": "Sand Cast Iron S&S as per IS- 1729",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 1202.15,
     "resources": [
@@ -8202,7 +8172,7 @@
   {
     "code": "17.60.2.3",
     "desc": "Hubless centrifugally cast (spun) iron epoxy coated inside & outside as per IS:15905",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 551.3,
     "resources": [
@@ -8225,7 +8195,7 @@
   {
     "code": "17.61.1",
     "desc": "100 mm dia",
-    "unit": "nos",
+    "unit": "metre",
     "basis": 1.0,
     "say": 555.3,
     "resources": [
@@ -8269,7 +8239,7 @@
   {
     "code": "17.61.2",
     "desc": "75 mm dia",
-    "unit": "nos",
+    "unit": "metre",
     "basis": 1.0,
     "say": 398.7,
     "resources": [
@@ -8313,7 +8283,7 @@
   {
     "code": "17.61.3",
     "desc": "50 mm dia",
-    "unit": "nos",
+    "unit": "metre",
     "basis": 1.0,
     "say": 259.05,
     "resources": [
@@ -8357,7 +8327,7 @@
   {
     "code": "17.62",
     "desc": "Painting C.I. cistern with bitumastic or any other anti-corrosive paint inside and white paint over a coat of zinc chromate yellow primer (o",
-    "unit": "nos",
+    "unit": "cistern",
     "basis": 1.0,
     "say": 768.15,
     "resources": [
@@ -8415,7 +8385,7 @@
   {
     "code": "17.63",
     "desc": "Re-painting C.I. cistern with bitumastic or any other anti-corrosive paint inside and white paint on the outside surface of the cistern, flu",
-    "unit": "nos",
+    "unit": "cistern",
     "basis": 1.0,
     "say": 516.35,
     "resources": [
@@ -8466,7 +8436,7 @@
   {
     "code": "17.64",
     "desc": "Repainting C.I. cistern with synthetic enamel paint of approved colour, brand and manufacture on the outside surface of cistern, flush pipe,",
-    "unit": "nos",
+    "unit": "cistern",
     "basis": 1.0,
     "say": 223.9,
     "resources": [
@@ -8609,7 +8579,7 @@
   {
     "code": "17.67",
     "desc": "Repainting bath tub of size 1700x730x430 mm with enamel paint.",
-    "unit": "nos",
+    "unit": "tub",
     "basis": 1.0,
     "say": 630.55,
     "resources": [
@@ -8646,7 +8616,7 @@
   {
     "code": "17.68.1",
     "desc": "White vitreous china dual purpose WC pan with white solid plastic seat and lid with white vitreous china flushing cistern and C.P. flush ben",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 10023.9,
     "resources": [
@@ -8739,7 +8709,7 @@
   {
     "code": "17.69.1",
     "desc": "Waste coupling 31 mm dia of 79 mm length and 62mm breadth weighing not less than 45 gms",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 99.75,
     "resources": [
@@ -8762,7 +8732,7 @@
   {
     "code": "17.69.2",
     "desc": "Waste coupling 38 mm dia of 83 mm length and 77mm breadth, weighing not less than 60 gms",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 118.5,
     "resources": [
@@ -8785,7 +8755,7 @@
   {
     "code": "17.70.1",
     "desc": "Bottle trap 31mm single piece moulded with height of 270 mm, effective length of tail pipe 260 mm from the centre of the waste coupling, 77 ",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 335.25,
     "resources": [
@@ -8808,7 +8778,7 @@
   {
     "code": "17.70.2",
     "desc": "Bottle trap 38 mm single piece moulded with height of 270 mm, effective length of tail pipe 260 mm from the centre of the waste coupling, 77",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 348.6,
     "resources": [
@@ -8831,7 +8801,7 @@
   {
     "code": "17.71",
     "desc": "Providing and fixing PTMT liquid soap container 109 mm wide, 125 mm high and 112 mm distance from wall of standard shape with bracket of the",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 158.55,
     "resources": [
@@ -8877,7 +8847,7 @@
   {
     "code": "17.73.1",
     "desc": "450 mm long towel rail with total length of 495 mm, 78 mm wide and effective height of 88 mm, weighing not less than 170 gms",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 555.35,
     "resources": [
@@ -8928,7 +8898,7 @@
   {
     "code": "17.73.2",
     "desc": "600 mm long towel rail with total length of 645 mm, width 78 mm and effective height of 88 mm, weighing not less than 190 gms.",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 595.5,
     "resources": [
@@ -8979,7 +8949,7 @@
   {
     "code": "17.74",
     "desc": "Providing and fixing PTMT shelf 440 mm long, 124 mm width and 36 mm height of approved quality and colour, weighing not less than 300 gms.",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 642.3,
     "resources": [
@@ -9030,7 +9000,7 @@
   {
     "code": "17.75",
     "desc": "Providing and fixing PTMT 15 mm Urinal spreader size 95x69x100 mm with 1/2\" BSP thread and shapes, weighing not less than 60 gms.",
-    "unit": "nos",
+    "unit": "no",
     "basis": 1.0,
     "say": 119.75,
     "resources": [
@@ -9088,6 +9058,13 @@
         "rate": 57.05
       },
       {
+        "code": "1007",
+        "desc": "Structurals such as tees, angles channels and R.S. joists",
+        "unit": "quintal",
+        "qty": 0.0686,
+        "rate": 4600.0
+      },
+      {
         "code": "2205",
         "desc": "Carriage of Steel",
         "unit": "tonne",
@@ -9137,6 +9114,13 @@
         "unit": "sqm",
         "qty": 0.71,
         "rate": 57.05
+      },
+      {
+        "code": "1007",
+        "desc": "Structurals such as tees,angles channels and R.S. joists",
+        "unit": "quintal",
+        "qty": 0.1006,
+        "rate": 4600.0
       },
       {
         "code": "2205",
@@ -9190,6 +9174,13 @@
         "rate": 57.05
       },
       {
+        "code": "1007",
+        "desc": "Structurals such as tees,angles channels and R.S. joists",
+        "unit": "quintal",
+        "qty": 0.1326,
+        "rate": 4600.0
+      },
+      {
         "code": "2205",
         "desc": "Carriage of Steel",
         "unit": "tonne",
@@ -9229,7 +9220,7 @@
   {
     "code": "17.78",
     "desc": "Providing and fixing white vitreous china extended wall mounting water closet of size 780x370x690 mm of approved shape including providing &",
-    "unit": "nos",
+    "unit": "pan",
     "basis": 1.0,
     "say": 13852.45,
     "resources": [
@@ -9287,7 +9278,7 @@
   {
     "code": "17.79",
     "desc": "Providing & fixing white vitreous china water less urinal of size 600 x 330 x 315 mm having antibacterial /germs free ceramic surface, fixed",
-    "unit": "nos",
+    "unit": "pan",
     "basis": 1.0,
     "say": 16868.15,
     "resources": [
@@ -9331,7 +9322,7 @@
   {
     "code": "17.80",
     "desc": "Providing and fixing white vitreous china battery based infrared sensor operated urinal of approx. size 610 x 390 x 370 mm having pre & post",
-    "unit": "nos",
+    "unit": "pan",
     "basis": 1.0,
     "say": 6913.9,
     "resources": [

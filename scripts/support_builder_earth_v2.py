@@ -416,7 +416,7 @@ ITEMS = [
 },
 {
  "id":"2.10.1.2","desc":"Excavating trenches of required width for pipes, cables, etc including excavation for sockets, and dressing of sides, ramming of bottoms, depth upto 1.5 m, including getting out the excavated soil, and then returning the soil as required, in layers not exceeding 20 cm in depth, including consolidating each deposited layer by ramming, watering, etc. and disposing of surplus excavated soil as directed, within a lead of 50 m : - All kinds of soil - Pipes, cables etc. exceeding 80 mm dia. but not exceeding 300 mm dia",
- "unit":"metre","base_qty":110,"dsr_rate":315.05,
+ "unit":"metre","base_qty":110,"dsr_rate":364.20,
  "ref_pattern":True,
  "sections":[
   ("REFERENCE ITEMS",[

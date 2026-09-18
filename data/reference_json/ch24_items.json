@@ -65,6 +65,13 @@
         "rate": 43.0
       },
       {
+        "code": "1034",
+        "desc": "Bolts and nuts upto 300 mm in length",
+        "unit": "quintal",
+        "qty": 0.008,
+        "rate": 4800.0
+      },
+      {
         "code": "7346",
         "desc": "Double coupler",
         "unit": "each",

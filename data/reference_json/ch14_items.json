@@ -651,8 +651,8 @@
   {
     "code": "14.4.1",
     "desc": "For door/ window/ clerestory window",
-    "unit": "sqm",
-    "basis": 1.89,
+    "unit": "opening",
+    "basis": 1.0,
     "say": 932.45,
     "resources": [
       {
@@ -1268,6 +1268,13 @@
     "say": 425.1,
     "resources": [
       {
+        "code": "1003",
+        "desc": "Mild steel round bar above 12 mm dia",
+        "unit": "quintal",
+        "qty": 0.00632,
+        "rate": 4400.0
+      },
+      {
         "code": "9999",
         "desc": "Cement concrete 1:2:4 (1 Cement : 2 Coarse sand : 4 graded stone aggregate 20mm nominal size) mortar for rendering or plastering",
         "unit": "L.S.",
@@ -1359,6 +1366,13 @@
         "unit": "day",
         "qty": 0.27,
         "rate": 709.0
+      },
+      {
+        "code": "0308",
+        "desc": "Bhusa",
+        "unit": "quintal",
+        "qty": 0.084,
+        "rate": 500.0
       },
       {
         "code": "0114",
@@ -2309,7 +2323,7 @@
     "desc": "Taking out wind ties from roof including cutting out rusted bolts, nuts etc. and removing materials to any distance within compound and stac",
     "unit": "mtrs",
     "basis": 30.0,
-    "say": 63.0,
+    "say": 4.0,
     "resources": [
       {
         "code": "0103",
@@ -2435,6 +2449,13 @@
         "rate": 50.7
       },
       {
+        "code": "1007",
+        "desc": "Structurals such as tees,angles channels and R.S. joists",
+        "unit": "quintal",
+        "qty": 0.13,
+        "rate": 4600.0
+      },
+      {
         "code": "2205",
         "desc": "Carriage of Steel",
         "unit": "tonne",
@@ -2528,6 +2549,20 @@
         "rate": 62.0
       },
       {
+        "code": "1008",
+        "desc": "Flats upto 10 mm in thickness",
+        "unit": "quintal",
+        "qty": 0.035,
+        "rate": 4500.0
+      },
+      {
+        "code": "1034",
+        "desc": "Bolts and nuts upto 300 mm in length",
+        "unit": "quintal",
+        "qty": 0.006,
+        "rate": 4800.0
+      },
+      {
         "code": "1215",
         "desc": "Welding by electric plant",
         "unit": "cm",
@@ -2612,6 +2647,20 @@
         "unit": "each",
         "qty": 10.0,
         "rate": 62.0
+      },
+      {
+        "code": "1008",
+        "desc": "Flats upto 10 mm in thickness",
+        "unit": "quintal",
+        "qty": 0.1,
+        "rate": 4500.0
+      },
+      {
+        "code": "1034",
+        "desc": "Bolts and nuts upto 300 mm in length",
+        "unit": "quintal",
+        "qty": 0.016,
+        "rate": 4800.0
       },
       {
         "code": "1215",
@@ -3066,9 +3115,9 @@
   {
     "code": "14.27.1",
     "desc": "Second class teak wood",
-    "unit": "nos",
+    "unit": "jaffri",
     "basis": 1.0,
-    "say": 18.0,
+    "say": 4069.7,
     "resources": [
       {
         "code": "9.41.1",
@@ -3242,8 +3291,22 @@
     "desc": "Providing and fixing M.S. round or square bars with M.S. flats at required spacing in wooden frames of windows and clerestory windows.",
     "unit": "kg",
     "basis": 33.67,
-    "say": 0.063,
+    "say": 92.05,
     "resources": [
+      {
+        "code": "1003",
+        "desc": "Mild steel round bar above 12 mm dia",
+        "unit": "quintal",
+        "qty": 0.307,
+        "rate": 4400.0
+      },
+      {
+        "code": "1008",
+        "desc": "Flats upto 10 mm in thickness",
+        "unit": "quintal",
+        "qty": 0.063,
+        "rate": 4500.0
+      },
       {
         "code": "2205",
         "desc": "Carriage of Steel",
@@ -4362,7 +4425,7 @@
     "desc": "Providing and fixing double scaffolding system (cup lock type) on the exterior side, up to seven story height made with 40 mm dia M.S. tube ",
     "unit": "sqm",
     "basis": 202.5,
-    "say": 257.95,
+    "say": 7676.5,
     "resources": [
       {
         "code": "14.72X",
@@ -4419,6 +4482,13 @@
         "unit": "kg",
         "qty": 123.98,
         "rate": 43.0
+      },
+      {
+        "code": "1034",
+        "desc": "Bolts and nuts upto 300 mm in length",
+        "unit": "quintal",
+        "qty": 0.378,
+        "rate": 4800.0
       },
       {
         "code": "7346",
@@ -4501,7 +4571,7 @@
     "desc": "Repair to plaster of thickness 12mm to 20 mm in patches of area 2.5 sqm and under, including cutting the patch in proper shape, raking out j",
     "unit": "sqm",
     "basis": 10.0,
-    "say": 512.0,
+    "say": 0.35,
     "resources": [
       {
         "code": "0772",
@@ -4544,6 +4614,13 @@
         "unit": "L.S.",
         "qty": 15.21,
         "rate": 2.0
+      },
+      {
+        "code": "1301",
+        "desc": "Bleaching powder",
+        "unit": "quintal",
+        "qty": 0.025,
+        "rate": 1800.0
       },
       {
         "code": "2264",
@@ -4690,6 +4767,13 @@
         "unit": "L.S.",
         "qty": 142.5,
         "rate": 2.0
+      },
+      {
+        "code": "1301",
+        "desc": "Bleaching powder",
+        "unit": "quintal",
+        "qty": 0.57,
+        "rate": 1800.0
       },
       {
         "code": "0006",
@@ -5018,8 +5102,8 @@
   {
     "code": "14.85",
     "desc": "Taking out existing wooden door shutter, repair by cutting, painting etc. and refixing of repaired door shutters to existing door frames, in",
-    "unit": "sqm",
-    "basis": 2.02,
+    "unit": "shutter",
+    "basis": 1.0,
     "say": 297.85,
     "resources": [
       {
@@ -5086,6 +5170,13 @@
         "unit": "L.S.",
         "qty": 7.8,
         "rate": 2.0
+      },
+      {
+        "code": "0370",
+        "desc": "Coal (steam)",
+        "unit": "quintal",
+        "qty": 0.174,
+        "rate": 440.0
       },
       {
         "code": "2200",
@@ -5174,6 +5265,13 @@
         "rate": 2.0
       },
       {
+        "code": "0370",
+        "desc": "Coal (steam)",
+        "unit": "quintal",
+        "qty": 0.174,
+        "rate": 440.0
+      },
+      {
         "code": "2200",
         "desc": "Carriage of steam coal",
         "unit": "tonne",
@@ -5258,6 +5356,13 @@
         "unit": "L.S.",
         "qty": 7.8,
         "rate": 2.0
+      },
+      {
+        "code": "0370",
+        "desc": "Coal (steam)",
+        "unit": "quintal",
+        "qty": 0.174,
+        "rate": 440.0
       },
       {
         "code": "2200",
@@ -5536,57 +5641,6 @@
         "desc": "Sundries, brushes, bitumen torch etc",
         "unit": "L.S.",
         "qty": 23.4,
-        "rate": 2.0
-      }
-    ]
-  },
-  {
-    "code": "14.92",
-    "desc": "Extra for covering top of membrane with Geotextile, 120 gsm non woven, 100% polyester of thickness 1 to 1.25 mm bonded to the membrane with ",
-    "unit": "sqm",
-    "basis": 30.0,
-    "say": 99.75,
-    "resources": [
-      {
-        "code": "8207",
-        "desc": "Geotextile 120 gsm membrance",
-        "unit": "sqm",
-        "qty": 31.5,
-        "rate": 45.0
-      },
-      {
-        "code": "9977",
-        "desc": "Carriage of Geotextile",
-        "unit": "L.S.",
-        "qty": 7.8,
-        "rate": 2.0
-      },
-      {
-        "code": "0159",
-        "desc": "Skilled torch operator for laying tack",
-        "unit": "day",
-        "qty": 0.43,
-        "rate": 738.0
-      },
-      {
-        "code": "0130",
-        "desc": "Mistry",
-        "unit": "day",
-        "qty": 0.04,
-        "rate": 738.0
-      },
-      {
-        "code": "0114",
-        "desc": "Beldar",
-        "unit": "day",
-        "qty": 0.65,
-        "rate": 558.0
-      },
-      {
-        "code": "9999",
-        "desc": "Sundries, torch, LPG etc",
-        "unit": "L.S.",
-        "qty": 46.8,
         "rate": 2.0
       }
     ]

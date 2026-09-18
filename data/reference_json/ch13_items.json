@@ -1450,6 +1450,13 @@
         "rate": 2.0
       },
       {
+        "code": "0776",
+        "desc": "Satna lime",
+        "unit": "quintal",
+        "qty": 0.01,
+        "rate": 370.0
+      },
+      {
         "code": "9999",
         "desc": "Indigo gum etc",
         "unit": "L.S.",
@@ -1622,6 +1629,13 @@
         "rate": 617.0
       },
       {
+        "code": "0777",
+        "desc": "Dry hydrated lime (factory made)",
+        "unit": "quintal",
+        "qty": 0.09,
+        "rate": 290.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of lime",
         "unit": "L.S.",
@@ -1762,6 +1776,13 @@
         "unit": "day",
         "qty": 0.01,
         "rate": 617.0
+      },
+      {
+        "code": "0777",
+        "desc": "Dry hydrated lime (factory made)",
+        "unit": "quintal",
+        "qty": 0.09,
+        "rate": 290.0
       },
       {
         "code": "9977",
@@ -2495,50 +2516,6 @@
     ]
   },
   {
-    "code": "13.29.3",
-    "desc": "Raised Band",
-    "unit": "metre",
-    "basis": 10.0,
-    "say": 8.7,
-    "resources": [
-      {
-        "code": "3.4",
-        "desc": "Rate as per SH: 3.4",
-        "unit": "cum",
-        "qty": 0.02,
-        "rate": 3528.85
-      },
-      {
-        "code": "0155",
-        "desc": "Mason (average)",
-        "unit": "day",
-        "qty": 0.42,
-        "rate": 709.0
-      },
-      {
-        "code": "0115",
-        "desc": "Coolie",
-        "unit": "day",
-        "qty": 0.42,
-        "rate": 558.0
-      },
-      {
-        "code": "0101",
-        "desc": "Bhisti",
-        "unit": "day",
-        "qty": 0.06,
-        "rate": 617.0
-      },
-      {
-        "code": "9999",
-        "desc": "Sundries",
-        "unit": "L.S.",
-        "qty": 4.42,
-        "rate": 2.0
-      }
-    ]
-  },
-  {
     "code": "13.29.4",
     "desc": "Moulded Band",
     "unit": "metre",
@@ -3014,6 +2991,13 @@
     "say": 28.55,
     "resources": [
       {
+        "code": "0775",
+        "desc": "Dehradun white lime",
+        "unit": "quintal",
+        "qty": 0.03,
+        "rate": 600.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of lime",
         "unit": "L.S.",
@@ -3058,6 +3042,13 @@
     "say": 11.5,
     "resources": [
       {
+        "code": "0776",
+        "desc": "Satna lime",
+        "unit": "quintal",
+        "qty": 0.01,
+        "rate": 370.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of lime",
         "unit": "L.S.",
@@ -3101,6 +3092,13 @@
     "basis": 10.0,
     "say": 38.95,
     "resources": [
+      {
+        "code": "0775",
+        "desc": "Dehradun white lime",
+        "unit": "quintal",
+        "qty": 0.03,
+        "rate": 600.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of lime",
@@ -3152,6 +3150,13 @@
     "basis": 10.0,
     "say": 38.5,
     "resources": [
+      {
+        "code": "0775",
+        "desc": "Dehradun white lime",
+        "unit": "quintal",
+        "qty": 0.03,
+        "rate": 600.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of lime",
@@ -3816,7 +3821,7 @@
     "desc": "Painting Steel work with Deluxe Multi Surface Paint to give an even shade. Two or more coat applied @ 0.90 ltr/10 sqm over an under coat of ",
     "unit": "sqm",
     "basis": 10.0,
-    "say": 125.8,
+    "say": 146.2,
     "resources": [
       {
         "code": "8504",
@@ -6537,7 +6542,7 @@
     "desc": "Providing and applying white cement based putty of average thickness 1 mm, of approved brand and manufacturer, over the plastered wall surfa",
     "unit": "sqm",
     "basis": 10.0,
-    "say": 14.58,
+    "say": 115.15,
     "resources": [
       {
         "code": "0824",
@@ -7071,6 +7076,13 @@
     "say": 16.75,
     "resources": [
       {
+        "code": "0775",
+        "desc": "Dehradun white lime",
+        "unit": "quintal",
+        "qty": 0.02,
+        "rate": 600.0
+      },
+      {
         "code": "9977",
         "desc": "Carriage of lime",
         "unit": "L.S.",
@@ -7114,6 +7126,13 @@
     "basis": 10.0,
     "say": 10.25,
     "resources": [
+      {
+        "code": "0775",
+        "desc": "Dehradun white lime",
+        "unit": "quintal",
+        "qty": 0.01,
+        "rate": 600.0
+      },
       {
         "code": "9977",
         "desc": "Carriage of lime",

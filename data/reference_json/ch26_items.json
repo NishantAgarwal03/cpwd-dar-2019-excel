@@ -2,8 +2,8 @@
   {
     "code": "26.1",
     "desc": "Providing & fixing in position Phenol bonded Bamboowood flooring with planks of sizes 14mm thick, 1800mm length (minimum) and 130 mm wide(mi",
-    "unit": "m",
-    "basis": 10.0,
+    "unit": "sqm",
+    "basis": 100.0,
     "say": 5279.1,
     "resources": [
       {
@@ -139,8 +139,8 @@
   {
     "code": "26.3",
     "desc": "Providing & fixing in position Phenol bonded Bamboowood wall cladding at all height with planks of sizes 10mm thick, 1800mm length (minimum)",
-    "unit": "m",
-    "basis": 10.0,
+    "unit": "sqm",
+    "basis": 95.0,
     "say": 5559.4,
     "resources": [
       {
@@ -287,7 +287,7 @@
     "desc": "Providing & fixing in position 65 mm thick factory made door frame of Phenol bonded Bamboo wood (superior class, interior use), in approved ",
     "unit": "cudm",
     "basis": 33.0,
-    "say": 254.0,
+    "say": 5066.55,
     "resources": [
       {
         "code": "0111",
@@ -1264,6 +1264,524 @@
         "unit": "Sqm",
         "qty": 300.0,
         "rate": 220.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.18.2",
+    "desc": "Ultimate tensile strength- 150 kN/m",
+    "unit": "Sqm",
+    "basis": 300.0,
+    "say": 362.7,
+    "resources": [
+      {
+        "code": "8963",
+        "desc": "Synthetic Geogrid Ultimate tensile strength- 150 kN/m",
+        "unit": "sqm",
+        "qty": 300.0,
+        "rate": 230.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.18.3",
+    "desc": "Ultimate tensile strength- 200 kN/m",
+    "unit": "Sqm",
+    "basis": 300.0,
+    "say": 495.15,
+    "resources": [
+      {
+        "code": "8964",
+        "desc": "Synthetic Geogrid Ultimate tensile strength- 200 kN/m",
+        "unit": "sqm",
+        "qty": 300.0,
+        "rate": 320.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.18.4",
+    "desc": "Ultimate tensile strength- 250 kN/m",
+    "unit": "Sqm",
+    "basis": 300.0,
+    "say": 546.65,
+    "resources": [
+      {
+        "code": "8965",
+        "desc": "Synthetic Geogrid Ultimate tensile strength- 250 kN/m",
+        "unit": "sqm",
+        "qty": 300.0,
+        "rate": 355.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.18.5",
+    "desc": "Ultimate tensile strength- 300 kN/m",
+    "unit": "Sqm",
+    "basis": 300.0,
+    "say": 561.35,
+    "resources": [
+      {
+        "code": "8966",
+        "desc": "Synthetic Geogrid Ultimate tensile strength- 300 kN/m",
+        "unit": "sqm",
+        "qty": 300.0,
+        "rate": 365.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.18.6",
+    "desc": "Ultimate tensile strength- 350 kN/m",
+    "unit": "Sqm",
+    "basis": 300.0,
+    "say": 568.7,
+    "resources": [
+      {
+        "code": "8967",
+        "desc": "Synthetic Geogrid Ultimate tensile strength- 350 kN/m",
+        "unit": "sqm",
+        "qty": 300.0,
+        "rate": 370.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.18.7",
+    "desc": "Ultimate tensile strength- 400 kN/m",
+    "unit": "Sqm",
+    "basis": 300.0,
+    "say": 723.25,
+    "resources": [
+      {
+        "code": "8968",
+        "desc": "Synthetic Geogrid Ultimate tensile strength- 400 kN/m",
+        "unit": "sqm",
+        "qty": 300.0,
+        "rate": 475.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.18.8",
+    "desc": "Ultimate tensile strength- 500 kN/m",
+    "unit": "Sqm",
+    "basis": 300.0,
+    "say": 811.55,
+    "resources": [
+      {
+        "code": "8969",
+        "desc": "Synthetic Geogrid Ultimate tensile strength- 500 kN/m",
+        "unit": "sqm",
+        "qty": 300.0,
+        "rate": 535.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.18.9",
+    "desc": "Ultimate tensile strength- 600 kN/m",
+    "unit": "Sqm",
+    "basis": 300.0,
+    "say": 833.65,
+    "resources": [
+      {
+        "code": "8970",
+        "desc": "Synthetic Geogrid Ultimate tensile strength- 600 kN/m",
+        "unit": "sqm",
+        "qty": 300.0,
+        "rate": 550.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.18.10",
+    "desc": "Ultimate tensile strength- 700 kN/m",
+    "unit": "Sqm",
+    "basis": 300.0,
+    "say": 1032.3,
+    "resources": [
+      {
+        "code": "8971",
+        "desc": "Synthetic Geogrid Ultimate tensile strength- 700 kN/m",
+        "unit": "sqm",
+        "qty": 300.0,
+        "rate": 685.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.18.11",
+    "desc": "Ultimate tensile strength- 800 kN/m",
+    "unit": "Sqm",
+    "basis": 300.0,
+    "say": 1128.0,
+    "resources": [
+      {
+        "code": "8972",
+        "desc": "Synthetic Geogrid Ultimate tensile strength- 800 kN/m",
+        "unit": "sqm",
+        "qty": 300.0,
+        "rate": 750.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.18.12",
+    "desc": "Ultimate tensile strength- 900 kN/m",
+    "unit": "Sqm",
+    "basis": 300.0,
+    "say": 1348.75,
+    "resources": [
+      {
+        "code": "8973",
+        "desc": "Synthetic Geogrid Ultimate tensile strength- 900 kN/m",
+        "unit": "sqm",
+        "qty": 300.0,
+        "rate": 900.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.18.13",
+    "desc": "Ultimate tensile strength- 1000 kN/m",
+    "unit": "Sqm",
+    "basis": 300.0,
+    "say": 1532.7,
+    "resources": [
+      {
+        "code": "8974",
+        "desc": "Synthetic Geogrid Ultimate tensile strength- 1000 kN/m",
+        "unit": "sqm",
+        "qty": 300.0,
+        "rate": 1025.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.18.14",
+    "desc": "Ultimate tensile strength- 1100 kN/m",
+    "unit": "Sqm",
+    "basis": 300.0,
+    "say": 1495.9,
+    "resources": [
+      {
+        "code": "8975",
+        "desc": "Synthetic Geogrid Ultimate tensile strength- 1100 kN/m",
+        "unit": "sqm",
+        "qty": 300.0,
+        "rate": 1000.0
+      },
+      {
+        "code": "0128",
+        "desc": "Mate",
+        "unit": "day",
+        "qty": 0.36,
+        "rate": 617.0
+      },
+      {
+        "code": "0114",
+        "desc": "Beldar",
+        "unit": "day",
+        "qty": 6.0,
+        "rate": 558.0
+      },
+      {
+        "code": "0139",
+        "desc": "Skilled Beldar",
+        "unit": "day",
+        "qty": 3.0,
+        "rate": 617.0
+      }
+    ]
+  },
+  {
+    "code": "26.18.15",
+    "desc": "Ultimate tensile strength- 1200 kN/m",
+    "unit": "Sqm",
+    "basis": 300.0,
+    "say": 1625.4,
+    "resources": [
+      {
+        "code": "8976",
+        "desc": "Synthetic Geogrid Ultimate tensile strength- 1200 kN/m",
+        "unit": "sqm",
+        "qty": 300.0,
+        "rate": 1088.0
       },
       {
         "code": "0128",
@@ -2328,7 +2846,7 @@
   {
     "code": "26.28.1",
     "desc": "75mm average thickness",
-    "unit": "nos",
+    "unit": "Sqm",
     "basis": 1.0,
     "say": 287.1,
     "resources": [
@@ -2358,7 +2876,7 @@
   {
     "code": "26.28.2",
     "desc": "50mm average thickness",
-    "unit": "nos",
+    "unit": "Sqm",
     "basis": 1.0,
     "say": 194.6,
     "resources": [
@@ -2388,7 +2906,7 @@
   {
     "code": "26.28.3",
     "desc": "25 mm average thickness",
-    "unit": "nos",
+    "unit": "Sqm",
     "basis": 1.0,
     "say": 96.5,
     "resources": [
@@ -3253,7 +3771,7 @@
     "desc": "Providing and inserting 12mm dia galvanised steel injection nipple in honey comb area and along crack line including drilling of holes of re",
     "unit": "Nos",
     "basis": 20.0,
-    "say": 188.0,
+    "say": 191.2,
     "resources": [
       {
         "code": "7922",
@@ -3392,7 +3910,7 @@
     "desc": "Providing and fixing of external wall system on Light gauge steel frame work with . Outer face having 6mm thick heavy duty fiber cement boar",
     "unit": "Sqm",
     "basis": 10.0,
-    "say": 3418.95,
+    "say": 240.55,
     "resources": [
       {
         "code": "0238",
@@ -3643,7 +4161,7 @@
   {
     "code": "26.46",
     "desc": "Providing and fixing in position, 200 mm thick factory made Expanded Polystyrene Core (EPS Core) wall panels consisting of EPS core sandwich",
-    "unit": "x3",
+    "unit": "x",
     "basis": 1.2,
     "say": 3854.6,
     "resources": [
@@ -3687,7 +4205,7 @@
   {
     "code": "26.47",
     "desc": "Providing and fixing in position, 230mm thick factory made Expanded Polystyrene Core (EPS Core) roof/floor panels made of 3 mm dia G.I. wire",
-    "unit": "x3",
+    "unit": "x",
     "basis": 1.2,
     "say": 4144.95,
     "resources": [
@@ -3964,8 +4482,8 @@
   {
     "code": "26.49.1",
     "desc": "Non load bearing panels 50mm thick of required size",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 1166.85,
     "resources": [
       {
@@ -4001,8 +4519,8 @@
   {
     "code": "26.49.2",
     "desc": "Non load bearing panels 60mm thick of required size",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 1321.0,
     "resources": [
       {
@@ -4038,8 +4556,8 @@
   {
     "code": "26.49.3",
     "desc": "Non load bearing panels 75mm thick of required size",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 1605.45,
     "resources": [
       {
@@ -4075,8 +4593,8 @@
   {
     "code": "26.49.4",
     "desc": "Non load bearing panels 90mm thick of required size",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 1915.25,
     "resources": [
       {
@@ -4112,8 +4630,8 @@
   {
     "code": "26.49.5",
     "desc": "Non load bearing panels 100mm thick of required size",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 2258.55,
     "resources": [
       {
@@ -4149,8 +4667,8 @@
   {
     "code": "26.50.1",
     "desc": "Non load bearing panels 50mm thick of required size (minimum 4mm thick fibre cement board)",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 1317.95,
     "resources": [
       {
@@ -4193,8 +4711,8 @@
   {
     "code": "26.50.2",
     "desc": "Non load bearing panels 75mm thick of required size (minimum 5mm thick fibre cement board)",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "sqm",
+    "basis": 10.0,
     "say": 1535.7,
     "resources": [
       {
@@ -4911,7 +5429,7 @@
   {
     "code": "26.66",
     "desc": "Providing and fixing in position, 130 mm thick factory made Expanded Polystyrene Core (EPS Core) wall panels consisting of EPS core sandwich",
-    "unit": "x3",
+    "unit": "x",
     "basis": 1.2,
     "say": 2318.9,
     "resources": [
@@ -5387,8 +5905,8 @@
   {
     "code": "26.73.1.1",
     "desc": "100 mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 10.8,
     "say": 1152.35,
     "resources": [
       {
@@ -5408,9 +5926,9 @@
       {
         "code": "5.35",
         "desc": "Rate as per SH: 5.35",
-        "unit": "L.S.",
-        "qty": 1301.0,
-        "rate": 2.0
+        "unit": "quintal",
+        "qty": 5.4,
+        "rate": 673.3
       },
       {
         "code": "5.41.1",
@@ -5459,8 +5977,8 @@
   {
     "code": "26.73.1.2",
     "desc": "120 mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 12.96,
     "say": 1348.5,
     "resources": [
       {
@@ -5480,9 +5998,9 @@
       {
         "code": "5.35",
         "desc": "Rate as per SH: 5.35",
-        "unit": "L.S.",
-        "qty": 1301.0,
-        "rate": 2.0
+        "unit": "quintal",
+        "qty": 6.48,
+        "rate": 673.3
       },
       {
         "code": "5.41.1",
@@ -5531,8 +6049,8 @@
   {
     "code": "26.73.1.3",
     "desc": "150 mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 16.2,
     "say": 1642.75,
     "resources": [
       {
@@ -5552,9 +6070,9 @@
       {
         "code": "5.35",
         "desc": "Rate as per SH: 5.35",
-        "unit": "L.S.",
-        "qty": 1301.0,
-        "rate": 2.0
+        "unit": "quintal",
+        "qty": 8.1,
+        "rate": 673.3
       },
       {
         "code": "5.41.1",
@@ -5603,8 +6121,8 @@
   {
     "code": "26.73.1.4",
     "desc": "200 mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 20.16,
     "say": 2003.8,
     "resources": [
       {
@@ -5624,9 +6142,9 @@
       {
         "code": "5.35",
         "desc": "Rate as per SH: 5.35",
-        "unit": "L.S.",
-        "qty": 1301.0,
-        "rate": 2.0
+        "unit": "quintal",
+        "qty": 10.08,
+        "rate": 673.3
       },
       {
         "code": "5.41.1",
@@ -5675,8 +6193,8 @@
   {
     "code": "26.73.1.5",
     "desc": "250 mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 25.2,
     "say": 2461.85,
     "resources": [
       {
@@ -5696,9 +6214,9 @@
       {
         "code": "5.35",
         "desc": "Rate as per SH: 5.35",
-        "unit": "L.S.",
-        "qty": 1301.0,
-        "rate": 2.0
+        "unit": "quintal",
+        "qty": 12.6,
+        "rate": 673.3
       },
       {
         "code": "5.41.1",
@@ -5747,8 +6265,8 @@
   {
     "code": "26.73.1.6",
     "desc": "300 mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 30.24,
     "say": 2919.95,
     "resources": [
       {
@@ -5768,9 +6286,9 @@
       {
         "code": "5.35",
         "desc": "Rate as per SH: 5.35",
-        "unit": "L.S.",
-        "qty": 1301.0,
-        "rate": 2.0
+        "unit": "quintal",
+        "qty": 15.12,
+        "rate": 673.3
       },
       {
         "code": "5.41.1",
@@ -5819,8 +6337,8 @@
   {
     "code": "26.73.1.7",
     "desc": "350 mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 35.28,
     "say": 3378.0,
     "resources": [
       {
@@ -5840,9 +6358,9 @@
       {
         "code": "5.35",
         "desc": "Rate as per SH: 5.35",
-        "unit": "L.S.",
-        "qty": 1301.0,
-        "rate": 2.0
+        "unit": "quintal",
+        "qty": 17.64,
+        "rate": 673.3
       },
       {
         "code": "5.41.1",
@@ -5891,8 +6409,8 @@
   {
     "code": "26.73.1.8",
     "desc": "400 mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 40.32,
     "say": 3836.05,
     "resources": [
       {
@@ -5912,9 +6430,9 @@
       {
         "code": "5.35",
         "desc": "Rate as per SH: 5.35",
-        "unit": "L.S.",
-        "qty": 1301.0,
-        "rate": 2.0
+        "unit": "quintal",
+        "qty": 20.16,
+        "rate": 673.3
       },
       {
         "code": "5.41.1",
@@ -5963,8 +6481,8 @@
   {
     "code": "26.73.2.1",
     "desc": "100mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 10.8,
     "say": 17.3,
     "resources": [
       {
@@ -5993,8 +6511,8 @@
   {
     "code": "26.73.2.2",
     "desc": "120mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 12.96,
     "say": 20.8,
     "resources": [
       {
@@ -6023,8 +6541,8 @@
   {
     "code": "26.73.2.3",
     "desc": "150mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 16.2,
     "say": 25.95,
     "resources": [
       {
@@ -6053,8 +6571,8 @@
   {
     "code": "26.73.2.4",
     "desc": "200mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 20.16,
     "say": 32.3,
     "resources": [
       {
@@ -6083,8 +6601,8 @@
   {
     "code": "26.73.2.5",
     "desc": "250mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 25.2,
     "say": 40.4,
     "resources": [
       {
@@ -6113,8 +6631,8 @@
   {
     "code": "26.73.2.6",
     "desc": "300mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 30.24,
     "say": 48.5,
     "resources": [
       {
@@ -6143,8 +6661,8 @@
   {
     "code": "26.73.2.7",
     "desc": "350mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 35.28,
     "say": 56.55,
     "resources": [
       {
@@ -6173,8 +6691,8 @@
   {
     "code": "26.73.2.8",
     "desc": "400mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 40.32,
     "say": 64.65,
     "resources": [
       {
@@ -6203,8 +6721,8 @@
   {
     "code": "26.73.3.1",
     "desc": "100mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 10.8,
     "say": 27.7,
     "resources": [
       {
@@ -6233,8 +6751,8 @@
   {
     "code": "26.73.3.2",
     "desc": "120mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 12.96,
     "say": 33.2,
     "resources": [
       {
@@ -6263,8 +6781,8 @@
   {
     "code": "26.73.3.3",
     "desc": "150mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 16.2,
     "say": 41.55,
     "resources": [
       {
@@ -6293,8 +6811,8 @@
   {
     "code": "26.73.3.4",
     "desc": "200mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 20.16,
     "say": 51.7,
     "resources": [
       {
@@ -6323,8 +6841,8 @@
   {
     "code": "26.73.3.5",
     "desc": "250mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 25.2,
     "say": 64.65,
     "resources": [
       {
@@ -6353,8 +6871,8 @@
   {
     "code": "26.73.3.6",
     "desc": "300mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 30.24,
     "say": 77.6,
     "resources": [
       {
@@ -6383,8 +6901,8 @@
   {
     "code": "26.73.3.7",
     "desc": "350mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 35.28,
     "say": 90.5,
     "resources": [
       {
@@ -6413,8 +6931,8 @@
   {
     "code": "26.73.3.8",
     "desc": "400mm thick hollow core slab",
-    "unit": "nos",
-    "basis": 1.0,
+    "unit": "cum",
+    "basis": 40.32,
     "say": 103.45,
     "resources": [
       {
@@ -6464,9 +6982,9 @@
       {
         "code": "5.35",
         "desc": "Rate as per SH: 5.35",
-        "unit": "sqm",
-        "qty": 1.74,
-        "rate": 284.85
+        "unit": "quintal",
+        "qty": 0.252,
+        "rate": 673.3
       },
       {
         "code": "5.41.1",
@@ -6628,8 +7146,15 @@
     "desc": "Providing & laying in position Prestressing steel strands (low relaxation) on hollow core bed by using mechanical pulling arrangement like R",
     "unit": "Kg",
     "basis": 1740.0,
-    "say": 1740.0,
+    "say": 144.55,
     "resources": [
+      {
+        "code": "0993",
+        "desc": "FY-1860 grade wire strands",
+        "unit": "quintal",
+        "qty": 19.14,
+        "rate": 5700.0
+      },
       {
         "code": "9999",
         "desc": "Strand cutting by cutting saw machine",

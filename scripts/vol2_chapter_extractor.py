@@ -58,17 +58,26 @@ _PAGE_BOILERPLATE_PAT = re.compile(
 
 # Standard 4-digit DSR resource row (code, desc, unit, qty, rate), applied to a
 # single (already line-joined) entry.
+# Shared by both resource-row patterns below - keep this the single source of
+# unit vocabulary so the two patterns can never drift apart again (a missing
+# "metre" here previously caused _REF_PAT to silently drop cross-reference
+# resource rows using the spelled-out unit).
+_UNITS = (
+    r"day|cum|kg|kilogram|cm|nos|litre|ltr|tonne|L\.S\.|Qtl|quintal|metre|m|sqm|Rmt|"
+    r"no|set|pair|each|job|month|hr|test|bag|door\s+area|shutter\s+area"
+)
+
 _RES_PAT = re.compile(
-    r"^(\d{4})\s+(.+?)\s+"
-    r"((?:\d+\s+)?(?:day|cum|kg|kilogram|cm|nos|litre|ltr|tonne|L\.S\.|Qtl|metre|m|sqm|Rmt|no|set|pair|each|job|month|hr|test))\s+"
+    rf"^(\d{{4}})\s+(.+?)\s+"
+    rf"((?:\d+\s+)?(?:{_UNITS}))\s+"
     r"([\d\.]+)\s+([\d,\.]+)",
     re.I,
 )
 
 # Cross-references embedded in a cost buildup: "3.4 Rate as per Item Number ... unit qty rate amount"
 _REF_PAT = re.compile(
-    r"(\d+(?:\.\d+)+[A-Z]?)\s+\(?\s*Rate\s+(?:same\s+)?as\s+per\s+[Ii]tem\s+(?:Number|No\.?)\s*.+?"
-    r"(cum|kg|kilogram|cm|m|nos|tonne|litre|ltr|Qtl|Rmt|sqm|L\.S\.|no|set|pair|each|test)\s+"
+    rf"(\d+(?:\.\d+)+[A-Z]?)\s+\(?\s*Rate\s+(?:same\s+)?as\s+per\s+[Ii]tem\s+(?:Number|No\.?)\s*.+?"
+    rf"({_UNITS})\s+"
     r"([\d\.]+)\s+([\d,\.]+)\s+([\d,\.]+)",
     re.S | re.I,
 )
@@ -90,17 +99,45 @@ def _join_wrapped_lines(block: str) -> list[str]:
     return merged
 
 
+_NUMBER_WORDS = {
+    "a": 1.0, "an": 1.0, "one": 1.0, "two": 2.0, "three": 3.0, "four": 4.0,
+    "five": 5.0, "six": 6.0, "seven": 7.0, "eight": 8.0, "nine": 9.0, "ten": 10.0,
+}
+
+
 def _parse_basis(block: str) -> tuple[float, str]:
-    m = re.search(r"Details?\s+of\s+costs?\s+for", block, re.I)
+    # Accepts "Detail(s) of cost(s) for/of ..." and the bare "Detail cost of ..."
+    # variant (no "of" between "Detail" and "cost"); the trailing for/of is
+    # optional too ("Details of cost 10sqm ...").
+    m = re.search(r"Details?\s+(?:of\s+)?costs?\s+(?:for|of)?\s*", block, re.I)
     if not m:
         return 1.0, "nos"
     window = block[m.end():m.end() + 150]
-    m1 = re.search(r"^\s*([\d\.]+)\s*(\w+)", window)
+    head = window[:100]
+
+    m1 = re.match(r"\s*([\d.]+)\s*([A-Za-z]+)", head)
     if m1:
+        # "10m x 10m = 100 sqm": a leading number+unit immediately followed by
+        # "x <factor>" is one operand of a multiplication, not the basis
+        # itself - the true basis is the product printed after "=".
+        after = head[m1.end():m1.end() + 6]
+        if re.match(r"\s*[xX]\s", after):
+            m_eq = re.search(r"=\s*([\d.]+)\s*([A-Za-z]+)", head)
+            if m_eq:
+                return float(m_eq.group(1)), m_eq.group(2)
         return float(m1.group(1)), m1.group(2)
-    m2 = re.search(r"=\s*([\d\.]+)\s*(\w+)", window)
+
+    m_word = re.match(
+        r"\s*(a|an|one|two|three|four|five|six|seven|eight|nine|ten)\b\s*([A-Za-z]+)",
+        head, re.I,
+    )
+    if m_word:
+        return _NUMBER_WORDS[m_word.group(1).lower()], m_word.group(2)
+
+    m2 = re.search(r"=\s*([\d.]+)\s*([A-Za-z]+)", window)
     if m2:
         return float(m2.group(1)), m2.group(2)
+
     return 1.0, "nos"
 
 
@@ -129,10 +166,14 @@ def extract_chapter(ch: int, pdf_path: Path) -> list:
         end_pos = segments[idx + 1].start() if idx + 1 < len(segments) else len(full)
         block = full[start_pos:end_pos]
 
-        say_m = re.search(r"\bSay\s+([\d,]+\.?\d*)", block)
-        if not say_m:
+        # Use the LAST "Say <amount>" in the block, not the first: an item's
+        # cost buildup can print an intermediate quantity-derivation annotation
+        # phrased as "= 0.43 cum Say 0.43 cum" well before the true final-rate
+        # "Say" line at the end of the block.
+        say_ms = list(re.finditer(r"\bSay\s+([\d,]+\.?\d*)", block, re.I))
+        if not say_ms:
             continue
-        say = float(say_m.group(1).replace(",", ""))
+        say = float(say_ms[-1].group(1).replace(",", ""))
 
         basis, unit = _parse_basis(block)
 
@@ -178,7 +219,21 @@ def extract_chapter(ch: int, pdf_path: Path) -> list:
             "resources": resources,
         })
 
-    return results
+    # Some items whose cost table spans a page break get their header+intro
+    # reprinted verbatim on the next page for readability; that produces a
+    # second, byte-identical entry for the same code. Collapse those, but
+    # keep any same-code entries whose content actually differs (that would
+    # be a real problem worth surfacing, not silently hiding).
+    deduped: list = []
+    seen: dict = {}
+    for item in results:
+        code = item["code"]
+        if code in seen and item == seen[code]:
+            continue
+        seen[code] = item
+        deduped.append(item)
+
+    return deduped
 
 
 def save(ch: int, items: list):

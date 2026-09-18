@@ -169,7 +169,7 @@ def extract_chapter(ch: int, pdf_path: Path) -> list:
         end_pos = segments[idx + 1].start() if idx + 1 < len(segments) else len(full)
         block = full[start_pos:end_pos]
 
-        say_ms = list(re.finditer(r"\bSay\s+([\d,]+\.?\d*)", block))
+        say_ms = list(re.finditer(r"\bSay\s+([\d,]+\.?\d*)", block, re.I))
         if not say_ms:
             continue
         say = float(say_ms[-1].group(1).replace(",", ""))

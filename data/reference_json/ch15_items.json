@@ -2224,6 +2224,13 @@
         "rate": 219.65
       },
       {
+        "code": "0761",
+        "desc": "Fuel wood",
+        "unit": "quintal",
+        "qty": 0.46,
+        "rate": 500.0
+      },
+      {
         "code": "0771",
         "desc": "Kerosene oil",
         "unit": "litre",
@@ -2275,6 +2282,13 @@
         "rate": 219.65
       },
       {
+        "code": "0761",
+        "desc": "Fuel wood",
+        "unit": "quintal",
+        "qty": 1.03,
+        "rate": 500.0
+      },
+      {
         "code": "0771",
         "desc": "Kerosene oil",
         "unit": "litre",
@@ -2324,6 +2338,13 @@
         "unit": "cum",
         "qty": 18.38,
         "rate": 219.65
+      },
+      {
+        "code": "0761",
+        "desc": "Fuel wood",
+        "unit": "quintal",
+        "qty": 1.4,
+        "rate": 500.0
       },
       {
         "code": "0771",
@@ -2384,6 +2405,13 @@
         "rate": 617.0
       },
       {
+        "code": "0761",
+        "desc": "Fuel wood",
+        "unit": "quintal",
+        "qty": 1.4,
+        "rate": 500.0
+      },
+      {
         "code": "0771",
         "desc": "Kerosene oil",
         "unit": "litre",
@@ -2440,6 +2468,13 @@
         "unit": "day",
         "qty": 0.93,
         "rate": 617.0
+      },
+      {
+        "code": "0761",
+        "desc": "Fuel wood",
+        "unit": "quintal",
+        "qty": 3.08,
+        "rate": 500.0
       },
       {
         "code": "0771",
@@ -2615,7 +2650,7 @@
     "desc": "Taking out C.I. cover with frame from R.C.C. top slab of inspection chambers of various sizes including demolishing of R.C.C. work manually/",
     "unit": "man",
     "basis": 1.0,
-    "say": 0.11,
+    "say": 292.25,
     "resources": [
       {
         "code": "0114",
@@ -2652,7 +2687,7 @@
     "desc": "Dismantling of R.C.C. spun vent shaft including excavating the cement concrete pit completely, taking out the shaft, refilling the excavated",
     "unit": "cum",
     "basis": 1.094,
-    "say": 0.92,
+    "say": 3353.9,
     "resources": [
       {
         "code": "0114",
@@ -2743,8 +2778,8 @@
   {
     "code": "15.51",
     "desc": "Dismantling of road gully chamber of various sizes including C.I. grating with frame including stacking of useful materials near the site an",
-    "unit": "cum",
-    "basis": 0.16,
+    "unit": "chamber",
+    "basis": 1.0,
     "say": 686.7,
     "resources": [
       {
@@ -2956,9 +2991,9 @@
   {
     "code": "15.55.1",
     "desc": "120 x 120 cm (outside to outside)",
-    "unit": "cum",
-    "basis": 0.168,
-    "say": 0.22,
+    "unit": "platform",
+    "basis": 1.0,
+    "say": 787.7,
     "resources": [
       {
         "code": "0114",
@@ -3028,9 +3063,9 @@
   {
     "code": "15.55.2",
     "desc": "210 x 120 cm (outside to outside)",
-    "unit": "cum",
-    "basis": 0.243,
-    "say": 0.35,
+    "unit": "platform",
+    "basis": 1.0,
+    "say": 1208.25,
     "resources": [
       {
         "code": "0114",
@@ -3100,9 +3135,9 @@
   {
     "code": "15.55.3",
     "desc": "320 x 120 cm (outside to outside)",
-    "unit": "cum",
-    "basis": 0.336,
-    "say": 0.5,
+    "unit": "platform",
+    "basis": 1.0,
+    "say": 1710.2,
     "resources": [
       {
         "code": "0114",

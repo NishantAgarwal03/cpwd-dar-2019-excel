@@ -752,7 +752,7 @@
   {
     "code": "21.4.1",
     "desc": "With stainless steel cover plate minimum 1.25 mm thickness",
-    "unit": "nos",
+    "unit": "number",
     "basis": 1.0,
     "say": 2412.5,
     "resources": [
@@ -817,7 +817,7 @@
   {
     "code": "21.4.2",
     "desc": "With brass cover plate minimum 1.25 mm thickness",
-    "unit": "nos",
+    "unit": "number",
     "basis": 1.0,
     "say": 2573.05,
     "resources": [
@@ -964,6 +964,13 @@
         "unit": "each",
         "qty": 23.0,
         "rate": 20.0
+      },
+      {
+        "code": "0992",
+        "desc": "Galvanised steel plain sheets",
+        "unit": "quintal",
+        "qty": 0.014,
+        "rate": 5000.0
       },
       {
         "code": "7388",
