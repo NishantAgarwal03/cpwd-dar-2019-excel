@@ -101,7 +101,7 @@ def _load_ch02_items() -> list:
         if it.get("pct_item"):
             items.append({
                 "code": code, "desc": desc, "unit": unit, "basis": basis,
-                "is_pct": True, "pct_value": it.get("dsr_rate"),
+                "is_pct": True, "pct_value": it.get("dsr_rate") if it.get("dsr_rate") is not None else it.get("percent"),
                 "resources": [], "say": None,
             })
             continue
@@ -144,9 +144,14 @@ def _write_item_block(ws, row: int, item: dict, s: dict) -> int:
         note = ws.cell(row=row, column=1, value="Percentage-based item (no resource breakdown in the source document).")
         note.font = s["font_note"]
         ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=5)
-        pv = ws.cell(row=row, column=6, value=(item.get("pct_value") or 0) / 100.0)
-        pv.number_format = s["fmt_percent"]
-        pv.font = s["font_say"]
+        pct_value = item.get("pct_value")
+        if pct_value is None:
+            pv = ws.cell(row=row, column=6, value="N/A (not given in source)")
+            pv.font = s["font_note"]
+        else:
+            pv = ws.cell(row=row, column=6, value=pct_value / 100.0)
+            pv.number_format = s["fmt_percent"]
+            pv.font = s["font_say"]
         pv.fill = s["fill_say"]
         for col in range(1, 7):
             ws.cell(row=row, column=col).border = s["border_thin"]
