@@ -120,13 +120,23 @@
 - Enhanced `.gitignore` to block `logs/`, `*.log`, `*.tmp.*`, `*.tmp.xlsx`, `*_REBUILDING.xlsx`.
 - Cleaned dangling `.tmp.xlsx` and untracked temporary files.
 - Optimized Git repository health: packed 521 loose objects into 1 compact packfile (45.75 MiB -> 36.13 MiB), ran `git gc --prune=now`, and verified 0 corruptions/dangling objects with `git fsck --full`.
+- Comprehensive stale file & folder pruning (2026-09-18):
+  - Removed duplicate local git worktree `.worktrees/cpwd-dar-2019-publication` (198 files, 19 dirs).
+  - Untracked and deleted 32 committed scratch files, cleaned 75+ scratch artifacts/backups from `scratch/`.
+  - Removed 4 abandoned stub test scripts in `scripts/` (`test_chunk.py`, `test_infra.py`, `test_init.py`, `test_setup.py`).
+  - Pruned 6 unreferenced ad-hoc converted workbooks in `data/converted_xlsx/` with zero code references.
+  - Removed redundant `outputs/`, `logs/`, and empty `.claude/` directories.
+  - Purged all `__pycache__` bytecode caches across the codebase.
+  - Packed 397 loose Git objects (`git gc --prune=now`) and pruned 153 empty ref directories (`git pack-refs --all --prune`).
+  - Total reduction: files reduced from 1,011 to 186 (-825 files, -81.6%); folders reduced from 414 to 37 (-377 folders, -91.1%).
+  - Verified 100% integrity: `verify_public_conversion_workbook.py` (zero discrepancies), `test_keyword_engine.py` (6/6 passing in Python 3.11), `git fsck --full` clean.
 
 | Timestamp | Instruction | Status |
 | :--- | :--- | :--- |
 | 2026-09-13 04:45 | Organize repo, perform housekeeping, and check health of git/repo | Completed |
 | 2026-09-13 04:51 | User selected Option B: full architectural data organization, centralized path manager, housekeeping, and git optimization | Completed |
 | 2026-09-18 09:55 | Audit repository for stale/unnecessary files and folders (out of 1,011 files, 414 folders) and plan comprehensive cleanup | Completed |
-| 2026-09-18 10:29 | Execute approved cleanup: prune worktree, pack loose git objects, remove pycache, prune scratch & obsolete converted sheets, and verify integrity | In-Progress |
+| 2026-09-18 10:29 | Execute approved cleanup: prune worktree, pack loose git objects, remove pycache, prune scratch & obsolete converted sheets, and verify integrity | Completed |
 
 ## Subject: DSR_Vol1_Progressive_Keyword_Identification_Engine
 - **Status**: 🟢 Completed
