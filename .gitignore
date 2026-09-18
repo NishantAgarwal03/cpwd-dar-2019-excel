@@ -32,6 +32,9 @@ Desktop.ini
 .vscode/
 .idea/
 
+# Local Git worktrees
+.worktrees/
+
 # Generated output artifacts (regenerable via scripts)
 output/
 outputs/
